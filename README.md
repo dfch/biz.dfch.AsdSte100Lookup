@@ -9,6 +9,7 @@ _A dictionary lookup for [ASD-STE100 Issue 9](https://www.asd-ste100.org/index.h
   - the "Meanings" for these words,
   - the "STE examples" and "Non-STE examples" for these words,
   - the "Alternatives" for the words,
+  - the "Spellings" and "Tenses" in blue,
   - the "Notes" in yellow.
 * The tool lets you use regular expressions as the input.
 * The tool is written in Python (and tested with v3.11.2 on Microsoft Windows 11 and WSLv2 Debian x64).
