@@ -45,6 +45,7 @@ class ColumnIndex(IntEnum):
 
 T = TypeVar("T", bound=StrEnum)
 
+
 def str_to_enum(enum_class: Type[T], value: str) -> T | None:
     """Convert a string to a StrEnum member, case-insensitively, by value."""
     for member in enum_class:
@@ -356,31 +357,6 @@ class DictionaryInfo:
 
     NOTE_MARKER: str = "###"
 
-    OTHER_MEANINGS: str = "For other meanings, use:"
-    YOU_CAN_USE: str = "You can use:"
-    MORE_ACCURATE_VERB: str = "You can use a more accurate verb."
-    YOU_CAN_USE_STAR: str = "You can use"
-    USE_AN_ACCURATE_VERB = "Use an accurate verb."
-    IF_MORE_ACCURATE_CORRECT = (
-        "If it is possible, give accurate and correct conditions."
-    )
-    IF_MORE_ACCURATE = "If it is possible, be accurate."
-    FREQUENTLY_NO_ALTERNATIVE = (
-        "Frequently, an alternative for this word is not necessary."
-    )
-    IF_MORE_ACCURATE_VERB = "If it is possible, give an accurate value."
-    AS_LONG_AS = "as long as"
-    IF_MORE_CLEAR_AND_ACCURATE = (
-        "Do not use this word if more accurate and clear words are available."
-    )
-    NO_OTHER_VERB_FORM = "No other verb forms."
-    DO_NOT_USE_COULD = "Do not use COULD (v) to show possibility"
-    ALSO_USE_DIFFERENT = "You can also use a different construction."
-    RULE_1_12 = "Used in law and regulations. Refer to rule 1.12."
-    USE_IF = "Use IF (conj) for “on the condition that.”"
-    DANGER_SECTION_7 = "“danger” is a technical noun when it identifies a safety instruction. Refer to section 7."
-    USE_SINGULAR = "You can also use the singular."
-
     @staticmethod
     def is_word(value: str | None) -> bool:
         """Determines whether a given string contains an approved word."""
@@ -514,6 +490,7 @@ class App:  # pylint: disable=R0903
         )
 
     def to_colour(self, text: str, value: str, status: str) -> str:
+        """Colourises value in specified text green or red based on status."""
         if WordStatus.APPROVED == status:
             result = Colouriser(text).to_green(value)
         else:
@@ -524,7 +501,7 @@ class App:  # pylint: disable=R0903
     def prompt_user_loop(self) -> None:
         """Main program loop."""
 
-        log.debug("doit1.")
+        log.debug("Entering prompt user loop ...")
 
         dictionary_fullname = Path(__file__).parent / "dictionary.json"
         with open(dictionary_fullname, "r", encoding="utf-8") as f:
@@ -896,253 +873,6 @@ class App:  # pylint: disable=R0903
         )
         return result
 
-    # def process_wordinfo2(self, item: WordInfo) -> Word | None:
-    #     """Processes a WordInfo with 2 lines."""
-
-    #     IDX = 1
-    #     assert item is not None
-    #     assert IDX < len(item.line_infos)
-
-    #     ste_example = ""
-    #     nonste_example = ""
-
-    #     line_info = item.line_infos[IDX]
-    #     tokens = line_info.tokens
-
-    #     log.debug("[%s] tokens: [%s]", item.word.name, tokens)
-
-    #     if line_info.tokens_count > ColumnIndex.STE:
-    #         ste_example = tokens[ColumnIndex.STE].strip()
-
-    #     if line_info.tokens_count > ColumnIndex.NONSTE:
-    #         nonste_example = tokens[ColumnIndex.NONSTE].strip()
-
-    #     meaning_or_alt_value = ""
-    #     if line_info.tokens_count > ColumnIndex.MEANING_ALT:
-    #         meaning_or_alt_value = tokens[ColumnIndex.MEANING_ALT].strip()
-
-    #     result = self.process_wordinfo1(item)
-    #     assert result is not None
-
-    #     if tokens[ColumnIndex.NAME]:
-    #         log.warning(
-    #             "[%s] [%s] IDX_NAME: '%s'",
-    #             item.filename,
-    #             item.word.name,
-    #             tokens[ColumnIndex.NAME],
-    #         )
-
-    #     line_info.is_processed = True
-
-    #     assert not (result.meanings and result.alternatives)
-
-    #     if meaning_or_alt_value.startswith(DictionaryInfo.NOTE_MARKER):
-
-    #         meaning_or_alt_value = meaning_or_alt_value.strip(
-    #             DictionaryInfo.NOTE_MARKER
-    #         )
-    #         assert result.note is not None
-    #         if (
-    #             DictionaryInfo.OTHER_MEANINGS in meaning_or_alt_value
-    #             or DictionaryInfo.YOU_CAN_USE_STAR in meaning_or_alt_value
-    #             or DictionaryInfo.USE_AN_ACCURATE_VERB in meaning_or_alt_value
-    #         ):
-    #             idx_next_line = IDX + 1
-    #             words: list[Word] = []
-    #             for next_line_info in item.line_infos[idx_next_line:]:
-    #                 word = self.extract_word(next_line_info)
-    #                 if word:
-    #                     next_line_info.is_processed = True
-    #                     words.append(word)
-
-    #             result.note.words.extend(words)
-    #             result.note.value = meaning_or_alt_value
-    #             return result
-
-    #         note_or_none = self.extract_simple_note(line_info)
-    #         if note_or_none:
-    #             line_info.is_processed = True
-    #             result.note.value = note_or_none.value
-    #             result.note.ste_example = note_or_none.ste_example
-    #             result.note.nonste_example = note_or_none.nonste_example
-    #             return result
-
-    #     if result.alternatives and DictionaryInfo.is_single_word(meaning_or_alt_value):
-    #         dic_word = DictionaryInfo.get_single_word(meaning_or_alt_value)
-    #         assert dic_word is not None
-
-    #         word = Word(
-    #             status=dic_word.status,
-    #             name=dic_word.name,
-    #             type_=dic_word.type_,
-    #             alternatives=[],
-    #             spellings=[],
-    #             meanings=[],
-    #             ste_example=ste_example,
-    #             nonste_example=nonste_example,
-    #         )
-    #         result.alternatives.append(word)
-
-    #         words = []
-    #         idx_next_line = IDX + 1
-    #         for next_line_info in item.line_infos[idx_next_line:]:
-    #             word = self.extract_word(next_line_info)
-    #             if word:
-    #                 next_line_info.is_processed = True
-    #                 words.append(word)
-    #         result.alternatives.extend(words)
-
-    #         idx_next_line = IDX + 1
-    #         for next_line_info in item.line_infos[idx_next_line:]:
-    #             if next_line_info.is_processed:
-    #                 continue
-    #             note_or_none = self.extract_simple_note(next_line_info)
-    #             if note_or_none:
-    #                 next_line_info.is_processed = True
-    #                 assert result.note
-    #                 result.note.value = note_or_none.value
-    #                 result.note.ste_example = note_or_none.ste_example
-    #                 result.note.nonste_example = note_or_none.nonste_example
-
-    #         return result
-
-    #     if result.meanings:
-    #         if DictionaryInfo.is_word(meaning_or_alt_value):
-    #             log.warning(
-    #                 "[%s] [%s] IDX_MEANING_ALT: '%s'",
-    #                 item.filename,
-    #                 item.word.name,
-    #                 meaning_or_alt_value,
-    #             )
-    #         meaning = WordMeaning(meaning_or_alt_value, ste_example, nonste_example)
-    #         result.meanings.append(meaning)
-
-    #         idx_next_line = IDX + 1
-    #         for next_line_info in item.line_infos[idx_next_line:]:
-    #             if next_line_info.is_processed:
-    #                 continue
-    #             example_or_none = self.extract_ste_nonste(next_line_info)
-    #             if example_or_none:
-    #                 next_line_info.is_processed = True
-    #                 ste_example, nonste_example = example_or_none
-    #                 meaning = WordMeaning(
-    #                     value="", ste_example=ste_example, nonste_example=nonste_example
-    #                 )
-    #                 result.meanings.append(meaning)
-    #         return result
-
-    #     return result
-
-    # def process_wordinfo1(self, item: WordInfo) -> Word | None:
-    #     """Processes a WordInfo with 1 line."""
-
-    #     IDX = 0
-    #     assert item is not None
-    #     assert IDX < len(item.line_infos)
-
-    #     line_info = item.line_infos[IDX]
-    #     tokens = line_info.tokens
-
-    #     log.debug(
-    #         "[%s] name: '%s' (%s) [%s] [%s].",
-    #         item.filename,
-    #         item.word.name,
-    #         item.word.type_,
-    #         item.word.status,
-    #         line_info.tokens_count,
-    #     )
-
-    #     log.debug("[%s] tokens: [%s]", item.word.name, tokens)
-
-    #     meanings: list[WordMeaning] = []
-    #     spellings: list[str] = []
-    #     alternatives: list[Word] = []
-    #     ste_example = ""
-    #     nonste_example = ""
-    #     note = WordNote("")
-
-    #     if line_info.tokens_count > ColumnIndex.STE:
-    #         ste_example = tokens[ColumnIndex.STE].strip()
-
-    #     if line_info.tokens_count > ColumnIndex.NONSTE:
-    #         nonste_example = tokens[ColumnIndex.NONSTE].strip()
-
-    #     if line_info.tokens_count > ColumnIndex.MEANING_ALT:
-
-    #         meaning_or_alt = tokens[ColumnIndex.MEANING_ALT].strip()
-
-    #         # Process NOTE entries.
-    #         if meaning_or_alt.startswith(DictionaryInfo.NOTE_MARKER):
-
-    #             note = WordNote(value=meaning_or_alt.strip(DictionaryInfo.NOTE_MARKER))
-
-    #             note_or_none = self.extract_simple_note(line_info)
-    #             if note_or_none:
-    #                 line_info.is_processed = True
-    #                 if ste_example:
-    #                     note.ste_example = ste_example
-    #                     ste_example = ""
-    #                 if nonste_example:
-    #                     note.nonste_example = nonste_example
-    #                     nonste_example = ""
-
-    #         # Process ALTERNATIVE words.
-    #         elif DictionaryInfo.is_word(meaning_or_alt):
-
-    #             extract = DictionaryInfo.get_word(meaning_or_alt)
-    #             if extract is not None and WordStatus.UNKNOWN != extract.status:
-
-    #                 alt_word = Word(
-    #                     status=extract.status,
-    #                     name=extract.name,
-    #                     type_=extract.type_,
-    #                     alternatives=[],
-    #                     meanings=[],
-    #                     spellings=[],
-    #                     ste_example=ste_example,
-    #                     nonste_example=nonste_example,
-    #                     note=None,
-    #                 )
-    #                 alternatives.append(alt_word)
-    #                 ste_example = ""
-    #                 nonste_example = ""
-
-    #         # Process explanations and meanings.
-    #         else:
-
-    #             meaning = WordMeaning(
-    #                 value=meaning_or_alt,
-    #                 ste_example=ste_example,
-    #                 nonste_example=nonste_example,
-    #             )
-    #             meanings.append(meaning)
-    #             ste_example = ""
-    #             nonste_example = ""
-
-    #     part_of_speech = tokens[ColumnIndex.NAME]
-    #     spellings.extend(DictionaryInfo.get_spellings(part_of_speech))
-
-    #     if line_info.tokens_count > ColumnIndex.MAX_COLUMNS:
-    #         for token in tokens[ColumnIndex.MAX_COLUMNS :]:
-    #             if "" == token.strip():
-    #                 continue
-    #             log.warning("[%s] %s: '%s'", item.filename, item.word.name, token)
-
-    #     result = Word(
-    #         status=item.word.status,
-    #         name=item.word.name,
-    #         type_=item.word.type_,
-    #         meanings=meanings,
-    #         spellings=spellings,
-    #         alternatives=alternatives,
-    #         ste_example=ste_example,
-    #         nonste_example=nonste_example,
-    #         note=note,
-    #     )
-
-    #     line_info.is_processed = True
-    #     return result
-
     def get_next_state(
         self, current_state: WordState, line_info: LineInfo
     ) -> WordState:
@@ -1225,12 +955,6 @@ class App:  # pylint: disable=R0903
         """Processes a WordInfo."""
 
         assert item is not None
-
-        # match len(item.line_infos):
-        #     case 1:
-        #         result = self.process_wordinfo1(item)
-        #     case _:
-        #         result = self.process_wordinfo2(item)
 
         # Process first line_info.
         current_state = WordState.INITIAL
@@ -1449,10 +1173,6 @@ class App:  # pylint: disable=R0903
             newline="\n",
         ) as f:
             json.dump(parsed_words_dicts, f, indent=2)
-
-        # with open("./output.tsv", 'w', encoding="utf-8", newline='\n') as f:
-        #     writer = csv.writer(f, delimiter='\t')
-        #     writer.writerows(items)
 
     def invoke(self) -> None:
         """Main entry point for this class."""
