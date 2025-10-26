@@ -1,0 +1,12 @@
+﻿settle (v)	COLLECT (v) STABLE (adj)	LET THE SEDIMENT COLLECT AT THE BOTTOM OF THE CONTAINER.	Let the sediment settle at the bottom of the container.
+		LET THE INDICATIONS BECOME STABLE.	Let the indications settle.
+sever (v)	CUT (v)	MAKE SURE THAT YOU DO NOT CUT THE CONTROL CABLE.	Make sure you do not sever the control cable.
+several (adj)	SOME (adj)	SOME FUNCTIONS ARE NOT AVAILABLE.	Several functions are not available.
+	###If this alternative is not sufficient, give the range, quantity, number, or minimum value.	SOAK THE FILLER CAPS IN DISTILLED WATER FOR A MINIMUM OF EIGHT HOURS.	Soak the filler caps in distilled water for several hours.
+severe (adj)	DANGEROUS (adj)	THIS ANTISEPTIC CAN BE DANGEROUS FOR YOUR SKIN.	This antiseptic can cause severe skin problems.
+SHAKE (v), SHAKES, SHOOK, SHAKEN	To move or cause to move quickly up and down or from side to side	SHAKE THE CONTAINER.	
+		THE CONTROL COLUMN STARTS TO SHAKE BEFORE A STALL OCCURS.	
+shall (v)	MUST (v)	HOLES MUST NOT HAVE SHARP EDGES.	Holes shall not have sharp edges.
+SHAPE (n)	The contour of an object	THE PATCH MUST BE THE SAME SHAPE AS THE CUTOUT.	
+shape (v)	SHAPE (n)	MAKE THE PATCH THE SAME SHAPE AS THE CUTOUT.	Shape the patch to suit the cutout.
+SHARP (adj) (SHARPER, SHARPEST)	That can cut or make a hole	MAKE A HOLE WITH A SHARP TOOL.	

@@ -1,0 +1,11 @@
+﻿ENTRY (n)	A record of an occurrence	MAKE AN ENTRY IN THE LOG CARD.	
+EQUAL (adj)	The same dimension, quality, quantity, or number	MAKE SURE THAT THERE IS AN EQUAL DISTANCE BETWEEN THE HOLES.	
+equal (v)	SAME (adj)	DIMENSION “X” MUST BE THE SAME AS DIMENSION “Z.”	Dimension X must equal dimension Z.
+	EQUAL (adj)	DIMENSION “X” MUST BE EQUAL TO DIMENSION “Y."	Dimension X must equal dimension Y.
+EQUALLY (adv)	The same dimension, quality, quantity, or number	ADJUST THE TURNBUCKLES EQUALLY.	
+equip (v)	INSTALL (v)	INSTALL THE SHUTOFF VALVES ON EACH HP MANIFOLD.	Equip each HP manifold with shutoff valves.
+EQUIPMENT (n)	The objects or tools used for operation and maintenance	REMOVE ALL THE EQUIPMENT FROM THE WORK AREA.	
+equipped (adj)	HAVE (v)	BE CAREFUL WHEN YOU MOVE JET PIPES OR EXHAUST CONES THAT HAVE INSULATING BLANKETS.	Be careful when handling jet pipes or exhaust cones equipped with insulating blankets.
+EQUIVALENT (adj)	Has the same properties, functions, or values	MATERIALS (REF. No. 2) AND (REF. No. 18) ARE EQUIVALENT.	
+EQUIVALENT (n)	Something that has the same properties, functions, or values	USE CLEANING COMPOUND ARDROX 6025, OR AN EQUIVALENT.	
+ERASE (v), ERASES, ERASED, ERASED	To remove data from a medium	ERASE THE TAPE.	

@@ -1,0 +1,11 @@
+﻿abut (v)	TOUCH (v)	THE BIN TOUCHES THE FORWARD HINGE SURFACE.	The bin abuts the forward hinge surface.
+accelerate (v)	INCREASE (v)	A HIGHER TEMPERATURE INCREASES THE SPEED OF EVAPORATION.	Evaporation is accelerated by a higher temperature.
+	FASTER (adj)	TO MAKE THE CURING PROCESS FASTER, APPLY HEAT TO THE COMPOUND.	The curing process of the compound can be accelerated by heating.
+ACCEPT (v), ACCEPTS, ACCEPTED, ACCEPTED	To make a decision that something is satisfactory	ACCEPT THE RELAY IF IT IS SERVICEABLE.	
+acceptable (adj)	PERMITTED (adj)	A VALUE OF 2 mm IS PERMITTED.	A value of 2 mm is acceptable.
+	SATISFACTORY (adj)	IF THE CONDITION OF THE CAP IS NOT SATISFACTORY, REPLACE IT.	Replace the cap if its condition is not acceptable.
+	SERVICEABLE (adj)	BEFORE YOU INSTALL THE UNIT, MAKE SURE THAT IT IS SERVICEABLE.	Before installation, make sure that the unit is acceptable.
+acceptance (n)	ACCEPT (v)	BEFORE YOU ACCEPT THE UNIT, DO THE SPECIFIED TEST PROCEDURE.	Before acceptance of the unit, do the specified test procedure.
+ACCESS (n)	The ability to go into or near	GET ACCESS TO THE ACCUMULATOR FOR THE No. 1 HYDRAULIC SYSTEM.	
+accessible (adj)	ACCESS (n)	TURN THE COVER UNTIL YOU CAN GET ACCESS TO THE JACKS THAT HAVE + AND - MARKS.	Rotate the cover until the jacks marked by + and -are accessible.
+ACCIDENT (n)	An occurrence that causes injury or damage	TO PREVENT ACCIDENTS, MAKE SURE THAT THE PINS ARE INSTALLED.	

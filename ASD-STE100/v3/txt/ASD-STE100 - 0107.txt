@@ -1,0 +1,11 @@
+﻿foul (v)	CATCH (v)	MAKE SURE THAT THE RODS CANNOT CATCH ON THE FLAPS.	Make sure that the rods cannot foul the flaps.
+	HIT (v)	IF YOU INSTALL THE UPPER DRAG STRUT INCORRECTLY, IT WILL HIT THE LOWER DRAG STRUT DURING RETRACTION.	Do not install the upper drag strut so that it fouls the gear retraction.
+	TOUCH (v)	IF THE BRACKET TOUCHES THE CAM, ADD A SHIM WASHER.	Should the bracket foul the cam, add a shim washer.
+	CLEARANCE (n)	MAKE SURE THAT THE RODS HAVE SUFFICIENT CLEARANCE.	Check that the rods do not foul each other.
+fouled (adj)	DIRTY (adj)	REMOVE ALL DIRTY IGNITER PLUGS.	Remove all fouled igniter plugs.
+	CLOGGED (adj)	REMOVE ALL CLOGGED FILTER ELEMENTS.	Remove all fouled filter elements.
+	CATCH (v)	MAKE SURE THAT THE CABLES DO NOT CATCH ON THE LEVERS.	Make sure that the levers are not fouled by the cables.
+fragile (adj)	EASILY DAMAGED	THE WATER QUANTITY TRANSMITTER IS EASILY DAMAGED.	The water quantity transmitter is fragile.
+FREE (adj)	That can move easily	MAKE SURE THAT THE NUTS ARE FREE TO TURN ON THE SLEEVES.	
+	###Do not use compound adjectives with free, for example, lintfree, dustfree, unless they are technical nouns.	MAKE SURE THAT THERE IS NO DUST ON THE SURFACE.	Make sure that the surface is dustfree.
+free from (adj)	NO (adj)	MAKE SURE THAT THERE IS NO DUST ON THE SURFACE.	Make sure that the surface is free from dust.

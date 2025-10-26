@@ -1,0 +1,12 @@
+﻿RADIAL (adj)	Along a radius	DO A CHECK FOR RADIAL CUTS, CRACKS, OR SPLITS.	
+RADIALLY (adv)	Along a radius	THE FAN BLADES ARE INSTALLED RADIALLY.	
+RADIOACTIVE (adj)	Related to radioactivity	DO A CHECK FOR RADIOACTIVE CONTAMINATION.	
+raise (v)	LIFT (v)	DO NOT LIFT THE COVER MORE THAN THE SPECIFIED CLEARANCE.	Do not raise the cover more than the specified clearance.
+	INCREASE (v)	INCREASE THE TEMPERATURE BY 10 DEG.	Raise the temperature 10 deg.
+	RETRACT (v)	RETRACT THE LANDING GEAR.	Raise the landing gear.
+RANDOM (adj)	Not regular	DURING THIS PROCEDURE, DO RANDOM CHECKS OF THE TIRE PRESSURE.	
+RANDOMLY (adv)	Not regularly	DO THESE CHECKS RANDOMLY.	
+RANGE (n)	The limits within which something operates	THE AUDIO SPECTRUM IS THE FREQUENCY RANGE AT WHICH HUMANS CAN HEAR.	
+rapid (adj)	FAST (adj)	CHEMICAL AGENTS CAUSE FAST DETERIORATION OF PAINTED SURFACES.	Chemical agents cause rapid deterioration of painted surfaces.
+rapidly (adv)	QUICKLY (adv)	QUICKLY TURN THE HANDLE CLOCKWISE.	Rapidly turn the handle clockwise.
+RATE (n)	A measurement of how frequently or how quickly something occurs	MAKE SURE THAT THE FLOW RATE IS CORRECT.	

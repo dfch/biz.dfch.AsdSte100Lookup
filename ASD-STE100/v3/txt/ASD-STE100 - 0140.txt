@@ -1,0 +1,14 @@
+﻿inward (adj)	INNER (adj)	MEASURE THE INNER DIAMETER OF THE HOLE.	Measure the inward diameter of the hole.
+inward (adv)	IN (adv)	MOVE THE DOOR IN AND REARWARD.	Move the door inward and rearward.
+IRREGULAR (adj)	Not regular	IF THE SIGNALS ARE IRREGULAR, REPLACE THE UNIT.	
+irregularity (n)	DAMAGE (n)	THERE MUST BE NO DAMAGE TO THE SURFACE FINISH.	There must be no irregularities in the surface finish.
+	DEFECT (TN)	THERE MUST BE NO DEFECTS IN THE SURFACE FINISH.	There must be no irregularities in the surface finish.
+	IRREGULAR (adj)	IF YOU GET IRREGULAR RESULTS, DO THE TEST AGAIN.	If you get irregularities in the results, do the test again.
+	UNUSUAL (adj)	IF YOU GET UNUSUAL RESULTS, DO THE TEST AGAIN.	If you get irregularities in the results, do the test again.
+IRREGULARLY (adv)	Not regularly	IF THE UNIT RECEIVES THE SIGNALS IRREGULARLY, REPLACE IT.	
+ISOLATE (v), ISOLATES, ISOLATED, ISOLATED	To prevent a supply or connection to	ISOLATE THE ELECTRICAL POWER SUPPLY.	
+isolation (n)	ISOLATE (v)	ISOLATE SYSTEM No. 1 TO DO THE LEAKAGE CHECKS.	Isolation of system No. 1 is necessary to do the leakage checks.
+IT (pron)	1. That refers to a thing that was previously mentioned	CAREFULLY MOVE THE DEFLECTOR UNIT DOWN UNTIL IT ENGAGES.	
+	2. That refers to an explicit or implicit state of affairs or circumstances	IT IS IMPORTANT TO DO THIS ADJUSTMENT CORRECTLY.	
+ITEM (n)	A thing that is determined or specified	LUBRICATE THESE ITEMS WITH GREASE.	
+ITS (adj)	Belonging to a thing	REMOVE THE UNIT AND ITS WIRING.	

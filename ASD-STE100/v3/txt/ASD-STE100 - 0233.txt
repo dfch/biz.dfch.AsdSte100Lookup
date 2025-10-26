@@ -1,0 +1,11 @@
+﻿stamp (v)	PUT (v) (WITH A STAMP [TN] OR STAMPS [TN])	PUT THE TEST DATE ON THE CYLINDER NECK WITH THE APPLICABLE STAMP.	Stamp the test date on the cylinder neck.
+	IDENTIFY (v) (WITH A STAMP [TN] OR STAMPS [TN])	IDENTIFY THE MANUFACTURING DATE ON THE NAMEPLATE WITH THE APPLICABLE STAMP.	Stamp the manufacturing date on the nameplate.
+stand (v)	STAY (v)	STAY AWAY FROM SURFACES THAT MOVE.	Do not stand near moving surfaces.
+STANDARD (adj)	Related to equipment and procedures that are normally used	IN THIS PROCEDURE, USE STANDARD TOOLS.	
+starboard (adj)	RIGHT (adj)	ON THE RIGHT WING, MOVE THE AILERONS UP.	On the starboard wing, move the ailerons up.
+START (n)	The beginning of a movement or operation	MOVEMENT CAN BE SLOW AT THE START.	
+START (v), STARTS, STARTED, STARTED	1. To begin a procedure, movement, or operation	START THE ENGINE.	
+	2. To come into being, activity, or operation	MEASURE THE BEND RADIUS OF THE HOSE FROM THE POINT WHERE THE BEND STARTS.	
+state (n)	CONDITION (n)	EXAMINE THE CONDITION OF THE UNIT.	Examine the state of the unit.
+state (v)	TELL (v)	UNLESS THE MANUFACTURER’S INSTRUCTIONS TELL YOU DIFFERENTLY, DO THE PROCEDURE THAT FOLLOWS.	Unless otherwise stated by the manufacturer, do the following procedure.
+station (v)	PUT (v)	PUT A PERSON NEAR THE FUEL TANK.	Station a person near the fuel tank.

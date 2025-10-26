@@ -1,0 +1,11 @@
+﻿long (adv) (no longer)	NOT... AT THIS TIME (adv)	THIS PROCEDURE IS NOT APPLICABLE AT THIS TIME.	This procedure is no longer applicable.
+	UNTIL...NOT (adv)	ADJUST THE POTENTIOMETER UNTIL YOU DO NOT HEAR A HUM FROM THE LOUDSPEAKER.	Adjust the potentiometer until the loudspeaker no longer hums.
+LONGITUDINAL (adj)	Related to the longitudinal axis	ADJUST THE LONGITUDINAL TRIM SYSTEM.	
+LONGITUDINALLY (adv)	In a longitudinal direction	MOVE THE STAND LONGITUDINALLY.	
+LOOK (v), LOOKS, LOOKED, LOOKED	To use your eyes to see or find	LOOK THROUGH THE INSPECTION WINDOW.	
+LOOP (n)	A circular shape made in a flexible material	MAKE A LOOP OF WIRE AROUND THE UNIT.	
+loop (v)	LOOP (n)	MAKE A LOOP OF WIRE AROUND THE UNIT.	Loop the wire around the unit.
+LOOSE (adj)	1. On, in, but not attached	MAKE SURE THAT YOU REMOVE ALL TOOLS, EQUIPMENT, AND LOOSE OBJECTS FROM THE AIR INTAKE.	
+	2. Not tight	DO A CHECK FOR LOOSE FASTENERS.	
+	###For other meanings, use:		
+	TENSION (TN)	MAKE SURE THAT THERE IS TENSION IN THE CABLES.	Make sure that the cables are not loose.

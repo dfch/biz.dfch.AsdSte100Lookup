@@ -1,0 +1,9 @@
+﻿MOVE (v), MOVES, MOVED, MOVED	To change or cause to change position or location	MAKE SURE THAT THE POINTER MOVES FREELY.
+		MOVE THE VALVE UNTIL IT ALIGNS WITH THE ACTUATOR SHAFT.
+MOVEMENT (n)	A change of position or location	SUDDEN OPERATION OF THE GYRO CAN CAUSE UNWANTED MOVEMENT OF THE HORIZONTAL STABILIZER.
+MUCH (adj) (MORE, MOST)	Of relatively large dimension, value, quantity, or volume	DO NOT APPLY TOO MUCH PRESSURE.
+MUCH (adv)	To a great degree or extent	BE CAREFUL THAT YOU DO NOT TURN THE INNER RACES TOO MUCH.
+MULTIPLY (v), MULTIPLIES, MULTIPLIED, MULTIPLIED	To use multiplication to get a result	MULTIPLY THE INDICATOR VALUE BY THE SCALE VALUE.
+	###For other meanings, use:
+	INCREASE (v)	THE NUMBER OF CRACKS CAN INCREASE.	Cracks can multiply. 
+MUST (v)	Auxiliary modal verb that shows obligation	THE BAT 1 SWITCH MUST BE IN THE ON POSITION.

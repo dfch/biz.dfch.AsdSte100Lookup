@@ -1,0 +1,14 @@
+﻿THIN (adj) (THINNER, THINNEST)	That has a small thickness	APPLY A THIN LAYER OF SEALING COMPOUND ON THE BARE METAL.	
+thin (v)	LIQUID (adj)	ADD SOLVENT TO MAKE THE PAINT MORE LIQUID.	Add solvent to thin the paint.
+THINK (v), THINKS, THOUGHT, THOUGHT	To have an opinion	IF YOU THINK THAT THE WATER WILL FREEZE, ADD ANTIFREEZE.	
+THIS (adj)	Refers to a specified person or thing	DO THIS TEST AT FULL VOLTAGE.	
+THIS (pron)	Function word that shows the person or thing referred to	REFER TO THE FAULT ISOLATION TABLE. THIS TELLS YOU THE PARTS TO REPLACE.	
+	###Refer to section 9, GR-4.
+thorough (adj)	FULL (adj)	DO A FULL CHECK OF THE CONTROL SYSTEM.	Do a thorough check of the control system.
+thoroughly (adv)	FULLY (adv)	DRY THE SURFACE FULLY.	Dry the surface thoroughly.
+THOSE (pron)	Function word that shows the persons or things referred to	WHEN YOU EXAMINE THE PARTS, DISCARD THOSE THAT ARE DAMAGED.	
+thread (v)	PUT (v)	PUT TAPE ON THE ROLLER.	Thread tape on the roller.
+	TURN (v)	TURN THE LOCK NUT ON THE FITTING.	Thread the lock nut on the fitting.
+threaded (adj)	THREAD (TN)	PUT THE END OF THE ROD THAT HAS A THREAD IN THE FITTING.	Put the threaded end of the rod in the fitting.
+THROUGH (adv)	Function word that shows movement into one end or side and out of the other	IF FUMES COME THROUGH, DO THE EMERGENCY PROCEDURE.	
+THROUGH (prep)	Function word that shows movement into one end or side and out of the other	MAKE SURE THAT THE FLUID THAT GOES THROUGH THE TUBE HAS NO BUBBLES.	

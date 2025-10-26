@@ -1,0 +1,14 @@
+﻿APPROXIMATELY (adv)	Almost correct or accurate	DRAIN APPROXIMATELY 2 LITERS OF FUEL.	
+AREA (n)	A specified surface or location	DO NOT SMOKE IN THE WORK AREA.	
+arise (v)	OCCUR (v)	SHOCK LOADING OF THE ENGINE CAN OCCUR DURING A HEAVY LANDING.	Shock loading of the engine can arise from a heavy landing.
+	CAUSE (v)	A HEAVY LANDING CAN CAUSE SHOCK LOADING OF THE ENGINE.	Shock loading of the engine can arise from a heavy landing.
+ARM (v), ARMS, ARMED, ARMED	1. To install armaments	ARM THE AIRCRAFT.	
+	2. To prepare for automatic operation	SET THE SWITCH TO “CLOSE” TO ARM THE CIRCUIT.	
+AROUND (prep)	On all sides of	PUT THE STRAP CLAMPS AROUND THE CYLINDER.	
+	###For other meanings, use:
+	APPROXIMATELY (adv)	THE TEST BENCH IS APPROXIMATELY 10 FEET FROM THE DOOR.	The test bench is around 10 feet from the door.
+arrange (v)	PUT (v)	PUT THE COMPONENTS IN THIS SEQUENCE:	Arrange the components in this order.
+arrangement (n)	CONFIGURATION (TN)	THE CONFIGURATION OF THE INSERTS IS RELATED TO THE DIMENSIONS OF THE CONNECTOR SHELL.	The arrangement of the inserts is related to the dimensions of the connector shell.
+	PREPARE (v)	PREPARE FOR THE LEAK TEST.	Make the arrangements for the leak test.
+arrest (v)	STOP (v)	STOP THE FLOW FOR 10 SECONDS.	Arrest the flow for 10 seconds.
+	HOLD (v)	A COTTER PIN HOLDS THE ATTACHMENT BAR.	A cotter pin arrests the attachment bar.

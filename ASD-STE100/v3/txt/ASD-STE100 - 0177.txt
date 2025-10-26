@@ -1,0 +1,13 @@
+﻿particular (adj)	ONLY APPLICABLE (adv)	THIS PROCEDURE IS ONLY APPLICABLE TO TYPE A PARTS.	This procedure is particular to type A parts.
+	VERY (adv)	THIS STEP IS VERY IMPORTANT.	This step is of particular importance.
+particularly (adv)	VERY (adv)	THIS PRECAUTION IS VERY IMPORTANT.	This precaution is particularly important.
+partly (adv)	NOT FULLY	IF THE VALVE DOES NOT FULLY OPEN, EXAMINE THE POSITIONS OF THE END STOPS ON THE ACTUATOR.	If the valve opens only partly, examine the positions of the end stops on the actuator.
+pass (v)	GO (v)	MAKE SURE THAT THE CABLE GOES ONTO THE PULLEY.	Make sure that the cable passes over the pulley.
+	THROUGH (prep)	PUT THE ANTENNA CABLE THROUGH THE TOP SLOTS.	Pass the antenna cable through the top slots.
+	GIVE (v)	GIVE ONE END OF THE CABLE TO A SECOND PERSON.	Pass one end of the cable to another person.
+passage (n)	FLOW (n)	THE FLOW OF FLUID THROUGH THE VALVE MUST BE CONTINUOUS.	The passage of fluid through the valve must be continuous.
+	HOLE (n)	CAREFULLY PUT THE TUBE THROUGH THE HOLE.	Carefully put the tube through the passage.
+	OPENING (n)	CAREFULLY PUT THE TUBE THROUGH THE OPENING.	Carefully put the tube through the passage.
+past (prep)	AROUND (prep)	IF YOU INSTALL THE SEAL INCORRECTLY, LEAKS CAN OCCUR AROUND THE VALVE.	If you install the seal incorrectly, leaks can occur past the valve.
+	THROUGH (prep)	IF YOU INSTALL THE SEAL INCORRECTLY, THE FLUID WILL GO THROUGH IT.	An incorrect installation of the seal will let fluid go past it.
+PASTE (n)	A wet, flexible mixture or compound	MIX THE MATERIALS UNTIL THEY MAKE A SOLID PASTE.	

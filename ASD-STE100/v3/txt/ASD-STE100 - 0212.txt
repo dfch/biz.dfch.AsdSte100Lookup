@@ -1,0 +1,10 @@
+﻿SAFE (adj) (SAFER, SAFEST)	Not dangerous, disarmed	BEFORE YOU CONTINUE THE WORK, MAKE THE AREA SAFE.	
+SAFELY (adv)	In a safe manner	MAKE SURE THAT THE LADDER IS SAFELY ATTACHED.	
+SAFETY (n)	A condition that is safe	FOR YOUR SAFETY, ALWAYS USE A PROTECTIVE MASK.	
+SAFETY (v), SAFETIES, SAFETIED, SAFETIED	1. To prevent accidental operation	OPEN AND TAG THE CIRCUIT BREAKERS. THEN, SAFETY THEM.	
+	2. To make sure that something does not become loose	SAFETY THE NUT WITH LOCKWIRE.	
+safety-clip (v)	LOCK (v) (WITH A CLIP [TN] OR CLIPS [TN])	LOCK THE TURNBUCKLE ON THE CONTROL ROD WITH A CLIP.	Safety-clip the turnbuckle on the control rod.
+	SAFETY (v) (WITH A CLIP [TN] OR CLIPS [TN])	OPEN AND TAG THE CIRCUIT BREAKER. THEN, SAFETY IT WITH A CLIP.	Open, tag, and safety-clip the circuit breaker.
+safety-wire (v)	LOCK (v) (WITH LOCKWIRE [TN])	LOCK THE COVER TO THE FIRE EXTINGUISHER SWITCH WITH LOCKWIRE.	Safety-wire the cover to the fire extinguisher switch.
+	SAFETY (v) (WITH SAFETY WIRE [TN])	SAFETY THE NUT WITH SAFETY WIRE.	Safety-wire the nut.
+SAME (adj)	Agrees in all details	THE SAME PROCEDURE IS APPLICABLE TO THE TWO UNITS.	

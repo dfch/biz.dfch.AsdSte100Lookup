@@ -1,0 +1,11 @@
+﻿every (adj)	ALL (adj)	REMOVE ALL SAFETY PINS BEFORE FLIGHT.	Every safety pin must be removed before flight.
+	EACH (adj)	SET THE BTRY SWITCH TO “ON" EACH TIME.	It is necessary to set the BTRY switch to ON every time.
+	INTERVAL (n)	DO AN INSPECTION AT INTERVALS OF 20 000 FLIGHT HOURS.	Do an inspection every 20 000 flight hours.
+evidence (n)	INDICATION (n)	IF THERE IS AN INDICATION OF A LEAK, REPLACE THE VALVE.	If there is evidence of a leak, replace the valve.
+	SIGN (n)	ONE SIGN OF A LEAK OF HOT AIR FROM A JOINT IS THAT THE TEMPERATURE INDICATION DECREASES.	Evidence of a leak of hot air from a joint is that the temperature reading drops.
+	SHOW (v)	REPLACE THE INSULATION BLANKETS THAT SHOW CHAFING.	Replace the insulation blankets with evidence of chafing.
+evidence (v)	SHOW (v)	IF THE TEST SHOWS NO FAULT, CONTINUE THE PROCEDURE.	If no fault is evidenced by the test, continue the procedure.
+	FIND (v)	IF YOU DO NOT FIND DAMAGE DURING THE INSPECTION PROCEDURE, ASSEMBLE THE UNIT.	If the inspection does not evidence any damage, assemble the unit.
+evident (adj)	FIND (v)	IF YOU DO NOT FIND DAMAGE, CONTINUE THE INSPECTION.	If no damage is evident, continue the inspection.
+exact (adj)	ACCURATE (adj)	IF THE INDICATION IS NOT ACCURATE, DO THE TEST AGAIN.	If the indication is not exact, do the test again.
+	CORRECT (adj)	IF THE INDICATION IS NOT CORRECT, DO THE TEST AGAIN.	If the indication is not exact, do the test again.

@@ -1,0 +1,12 @@
+﻿SAME (pron)	Agrees in all details	THE ADJUSTMENT OF THE LEFT AND RIGHT ACTUATORS MUST BE THE SAME.
+SAMPLE (n)	A piece or quantity of something that you use for an inspection or test procedure to show that it has specified qualities	GET A SAMPLE OF THE FUEL. THEN, MEASURE ITS SPECIFIC GRAVITY.	
+sample (v)	SAMPLE (n)	GET A SAMPLE OF FUEL. THEN, DO A TEST FOR WATER CONTAMINATION.	Sample and test the fuel for water contamination.
+SATISFACTORILY (adv)	In a satisfactory manner	MAKE SURE THAT THE MICROSWITCHES OPERATE SATISFACTORILY.	
+SATISFACTORY (adj)	Agrees with all that is necessary	A CLEARANCE OF 3 mm IS SATISFACTORY.	
+saturate (v)	SOAK (v)	SOAK THE ELEMENT FOR FOUR HOURS.	Saturate the element for four hours.
+save (v)	KEEP (v)	KEEP THE O-RINGS FOR THE SUBSEQUENT PROCEDURES.	Save the O-rings for the subsequent procedures.
+scan (v)	EXAMINE (v)	EXAMINE THE SURFACE ALONG THE TRAILING EDGE.	Scan the surface along the trailing edge.
+	SCAN (TN)	THE ANTENNA DOES A SCAN THROUGH 80 DEG.	Antenna scans through 80 deg.
+SCHEDULE (v), SCHEDULES, SCHEDULED, SCHEDULED	To plan something in a time or a sequence	SCHEDULE THE CHECKS OF THE TIRES AT REGULAR INTERVALS.	
+scored (adj)	SCORE (TN)	IF THE BEARING RACE HAS SCORES, REPLACE IT.	If the bearing race is scored, replace it.
+scrap (v)	DISCARD (v)	DISCARD THE REMOVED SEAL.	Scrap the removed seal.

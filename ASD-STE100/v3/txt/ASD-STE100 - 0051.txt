@@ -1,0 +1,10 @@
+﻿conform (v)	AGREE (v)	IF THE FLAP EXTENSION DOES NOT AGREE WITH THE POSITION OF THE FLAP CONTROL LEVER, DO THE RIGGING PROCEDURE AGAIN.	If the flap extension does not conform to the setting of the flap control lever, do the rigging procedure again.
+conformance (n)	AGREE (v)	THE INDICATIONS MUST AGREE WITH THOSE IN TABLE 2.	The indications must be in conformance with those in Table 2.
+conformity (n)	AGREE (v)	THE PRECISION OF THE GAUGES MUST AGREE WITH THE APPLICABLE QUALITY STANDARD.	The accuracy of the gauges must be in conformity with the applicable quality standard.
+CONNECT (v), CONNECTS, CONNECTED, CONNECTED	To come together or cause to come together to make one unit or system	CONNECT THE ELECTRICAL CONNECTORS TO THE INSTRUMENT.	
+		PLUG “A” CONNECTS TO SOCKET “B."	
+CONNECTION (n)	That which connects or is connected	MAKE SURE THAT ALL THE FUEL AND AIR CONNECTIONS ARE INSTALLED.	
+consecutive (adj)	ONE AFTER THE OTHER (TN)	DO NOT DO MORE THAN THREE STARTS, ONE AFTER THE OTHER.	Do not do more than three consecutive starts.
+consecutively (adv)	ONE AFTER THE OTHER (TN)	DO THESE STEPS ONE AFTER THE OTHER.	These actions must be done consecutively.
+	SEQUENCE (n)	DO THE WORK STEPS IN SEQUENCE.	Do the work steps consecutively.
+consequence (n)	BECAUSE OF (prep)	BECAUSE OF THIS DEFECT, THE UNIT WILL NOTOPERATE.	As a consequence of this defect, the unit will not operate.

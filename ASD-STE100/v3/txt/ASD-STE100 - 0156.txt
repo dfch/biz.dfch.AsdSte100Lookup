@@ -1,0 +1,12 @@
+﻿match (v)	ALIGN (v)	FOLD THE GIRT ONTO THE CONTAINER UNTIL IT IS ALIGNED WITH THE VELCRO TAPE.	Fold the girt over the container so that the Velcro tape matches.
+	AGREE (v)	MAKE SURE THAT THE SEAL AGREES WITH THE SHAPE OF THE PANEL.	Ensure the seal matches the panel shape.
+mate (v)	CONNECT (v)	CONNECT THE PLUG TO THE RECEPTACLE.	Mate the plug to the receptacle.
+	ENGAGE (v)	ENGAGE THE SPLINES ON THE SHAFT WITH THOSE IN THE GEARBOX.	Mate the splines on the shaft with those in the gearbox.
+	TOGETHER (adv)	PUT THE SMOOTH SURFACES TOGETHER.	Mate the smooth surfaces.
+MATERIAL (n)	A substance from which an item is made, or an item that is necessary to do a task.	BEFORE YOU INSTALL THE SEAL, REMOVE THE UNWANTED MATERIAL.	
+		YOU CAN USE EQUIVALENT ALTERNATIVES FOR THESE MATERIALS.	
+MATING (adj)	Made to touch	APPLY GREASE ON THE MATING SURFACES OF THE STARTER GENERATOR.	
+MATT (adj) (or MATTE)	Not glossy	APPLY MATT PAINT ON THE PANEL.	
+matter (n)	MATERIAL (n)	REMOVE THE GLOSSY MATERIAL FROM THE SURFACE OF THE BLADE.	Remove the glossy matter from the surface of the blade.
+MAXIMUM (adj)	Related to the largest dimension, quantity, number, or value	THE MAXIMUM VALUE THAT THE VOLTMETER SHOWS IS 199.9 V.	
+MAXIMUM (n)	The largest dimension, quantity, number, or value	MOVE THE LEVER A MAXIMUM OF 45 DEG.	

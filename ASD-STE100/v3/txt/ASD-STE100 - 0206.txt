@@ -1,0 +1,13 @@
+﻿request (v)	TELL (v)	TELL THE FIRE SERVICE TO HELP YOU.	Request external fire support.
+	WRITE (v)	WRITE TO THE MANUFACTURER FOR REPAIR INSTRUCTIONS.	Request repair instructions from the manufacturer.
+require (v)	NECESSARY (adj)	DURING THIS PROCEDURE, CLEAN FILTERS ARE NECESSARY.	During this procedure, clean filters are required.
+reseal (v)	SEAL (v)	SEAL THE CONTAINER AGAIN.	Reseal the container.
+reset (v)	SET (v)	SET THE INDICATOR TO A NEW POSITION.	Reset the indicator to a new position.
+residual (adj)	REMAINING (adj)	REMOVE ALL THE REMAINING GREASE.	Remove all residual grease.
+residue (n)	REMAINING (adj)	REMOVE THE REMAINING GREASE.	Remove the grease residues.
+RESISTANT (adj)	That will help to prevent something	THE MATERIAL OF THE SEATS IS RESISTANT TO FIRE.	
+respective (adj)	RELATED (adj)	ATTACH THE CABLES TO THEIR RELATED SHACKLES.	Attach the cables to their respective shackles.
+	CORRECT (adj)	INSTALL THE BOLTS IN THEIR CORRECT POSITIONS.	Install the bolts in their respective positions.
+respectively (adv)	RELATED (adj)	ENGINES 1 AND 2 SUPPLY HOT AIR TO THEIR RELATED WINGS.	Engines 1 and 2 supply the left and right wings respectively with hot air.
+respond (v)	RESULT (n)	IF THE INSTRUMENT DOES NOT GIVE A RESULT, DO A TEST.	If the instrument fails to respond, do a test.
+rest (n)	REMAINING (adj)	THE REMAINING INSTRUCTIONS ARE APPLICABLE ONLY TO APPROVED PERSONNEL.	The rest of these instructions only apply to approved personnel.

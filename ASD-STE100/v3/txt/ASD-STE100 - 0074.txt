@@ -1,0 +1,10 @@
+﻿DIVIDE (v), DIVIDES, DIVIDED, DIVIDED	1. To separate into parts or groups	YOU CAN DIVIDE THE DRAINS INTO THREE GROUPS.	
+		THE PRESSURE LINES DIVIDE AND GO IN DIFFERENT DIRECTIONS.	
+	2. To do mathematical division	TO FIND THE MIDDLE POINT, DIVIDE THE MEASURED CLEARANCE BY TWO.	
+DO (v), DOES, DID, DONE	1. To complete a procedure, task, or step	DO A FUNCTIONAL TEST.	
+	2a. As an auxiliary verb, as part of a negative command or statement	DO NOT BREATHE THE SOLVENT FUMES.	
+	2b. As an auxiliary verb, as part of a question	DOES THE LIGHT COME ON?	
+don (v)	USE (v)	WHEN YOU DO WORK ON FIRE EXTINGUISHERS, USE PROTECTIVE GOGGLES.	You must don protective goggles when working on fire extinguishers.
+	PUT ON (v)	PUT ON THE MASK.	Don the mask.
+doubt (n)	NOT SURE (adj)	IF YOU ARE NOT SURE THAT THE UNIT IS SERVICEABLE, DISCARD IT.	If there are doubts about the serviceability of the unit, discard it.
+	THINK (v)		IF YOU THINK THAT THE RESULTS ARE INCORRECT, DO THE TEST AGAIN.	If you are in doubt about the results, repeat the test.

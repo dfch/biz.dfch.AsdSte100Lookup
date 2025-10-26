@@ -1,0 +1,10 @@
+﻿cool (v)	DECREASE (v)	LET THE TEMPERATURE OF THE COMPONENT DECREASE UNTIL IT IS THE SAME AS THE AMBIENT TEMPERATURE.	Let the temperature of the component cool to ambient.
+	COOL (adj)	WHEN THE BRAKES ARE COOL, OPERATE THE PARKING BRAKE	Apply the parking brake when the brakes have cooled.
+coordinate (v)	SYNCHRONIZED (adj)	MAKE SURE THAT COMPASS SYSTEM 1 AND COMPASS SYSTEM 2 ARE SYNCHRONIZED.	Coordinate compass system 1 and compass system 2.
+COPY (n)	An object made the same as another object	SEND FIVE COPIES OF THE DEFECT REPORT TO THE ENGINEERING AUTHORITY.	
+copy (v)	WRITE (v)	WRITE THE TAIL NUMBER ON THE RECORD FORM.	Copy the tail number on the record form.
+	COPY (n)	MAKE A COPY OF THE DATA THAT IS ON THE IDENTIFICATION PLATE.	Copy the data on the identification plate.
+	RECORD (v)	RECORD THE DATA THAT IS ON THE IDENTIFICATION PLATE.	Copy the data on the identification plate.
+CORNER (n)	The point or the angle made when lines, sides, or edges touch	EXAMINE THE OPENING FOR CRACKS THAT START AT ITS CORNERS.	
+CORRECT (adj)	That agrees with all that is necessary to the maximum	MAKE SURE THAT THE POLARITIES ARE CORRECT.	
+CORRECT (v), CORRECTS, CORRECTED, CORRECTED	To make correct	CORRECT THE TENSION.	

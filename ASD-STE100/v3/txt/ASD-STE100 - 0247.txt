@@ -1,0 +1,11 @@
+﻿THERE (adv)	In that position	IF THE LABEL IS NOT THERE, ATTACH A NEW ONE.	
+THERE (pron)	Function word that starts a sentence or a subordinate clause	THERE ARE THREE MEASUREMENT POINTS ON THE DIAGRAM.	
+		MAKE SURE THAT THERE ARE NO LOOSE OBJECTS.	
+therefore (adv)	THUS (adv)	THIS TORQUE SHAFT CANNOT MOVE INBOARD. THUS, BEFORE YOU REMOVE IT, REMOVE THE OUTBOARD TORQUE SHAFT.	This torque shaft cannot move inboard. Therefore, before you remove it, remove the outboard torque shaft.
+	AS A RESULT (prep)	THIS TORQUE SHAFT CANNOT MOVE INBOARD. AS A RESULT, BEFORE YOU REMOVE IT, REMOVE THE OUTBOARD TORQUE SHAFT.	This torque shaft cannot move inboard. Therefore, before you remove it, remove the outboard torque shaft.
+THESE (adj)	Refers to specified persons or things	REMOVE THESE PARTS FROM THEIR RELATED BOXES.	
+THESE (pron)	Function word that shows the persons or things referred to	THESE ARE SPECIAL TOOLS.	
+THEY (pron)	Function word that shows the persons or things referred to	DENTS ARE NOT PERMITTED IF THEY PREVENT CORRECT OPERATION OF THE PARTS.	
+THICK (adj) (THICKER, THICKEST)	That has a specified or large thickness	INSTALL A SHIM THAT IS 3.5 mm THICK.	
+		APPLY A THICK LAYER OF GREASE ON THE BARE METAL.	
+THICKNESS (n)	The smallest of the three dimensions	THE THICKNESS OF THE PRIMER LAYER MUST BE BETWEEN 0.05 mm AND 0.06 mm.	

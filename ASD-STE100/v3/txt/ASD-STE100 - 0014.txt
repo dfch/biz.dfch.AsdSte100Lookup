@@ -1,0 +1,9 @@
+﻿amend (v)	CHANGE (v)	IF IT IS NECESSARY TO CHANGE THE REPAIR SCHEME, GET THE APPROVAL OF THE DESIGN AUTHORITY.	If it is necessary to amend the Repair Scheme, get the approval of the Design Authority.
+amendment (n)	CHANGE (n)	THE DESIGN AUTHORITY MUST GIVE APPROVAL TO THE CHANGES THAT YOU MAKE TO THE REPAIR SCHEME.	The Design Authority must approve the amendments that you make to the Repair Scheme.
+	CHANGE (v)	IF IT IS NECESSARY TO CHANGE THE REPAIR SCHEME, GET THE APPROVAL OF THE DESIGN AUTHORITY.	If an amendment to the Repair Scheme is necessary, get the approval of the Design Authority.
+among (prep)	IN (prep)	IF THERE ARE METAL PARTICLES IN THE SAMPLES, REPLACE THE PUMP.	If there are metal particles among the samples, replace the pump.
+amount (n)	QUANTITY (n)	MAKE SURE THAT THE QUANTITY OF FUEL IN THE TANK IS NOT MORE THAN 500 LITERS.	Make sure that the amount of fuel in the tank is not more than 500 liters.
+AN (art)	Function word: indefinite article	MAKE AN ENTRY IN THE LOGBOOK.	
+ANALOG (adj)	Of data given by pointers and dials	THE PRE-MOD UNIT HAS ANALOG INDICATORS.	
+analyze (v)	ANALYSIS (TN)	MAKE AN ANALYSIS OF THE OIL.	Analyze the oil sample.
+anchor (v)	ATTACH (v)	THE STRAPS ARE ATTACHED TO A FULL-LENGTH RAIL.	The straps are anchored to a full-length rail.

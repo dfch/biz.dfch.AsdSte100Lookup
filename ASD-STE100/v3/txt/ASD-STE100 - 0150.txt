@@ -1,0 +1,11 @@
+﻿locate (v)	FIND (v)	USE TALCUM POWDER TO FIND EXTERNAL LEAKS.	Use talcum powder to locate external leaks.
+	ENGAGE (v)	ENGAGE THE GEAR WHEEL ON THE SHAFT.	Locate the gear wheel on the shaft.
+	PUT (v)	PUT THE CLAMP IN ITS CORRECT POSITION.	Locate the clamp in its correct position.
+LOCATION (n)	A place or site that you can find	FIGURES 1 THRU 4 SHOW THE LOCATIONS OF THE WALKWAYS.	
+LOCK (v), LOCKS, LOCKED, LOCKED	To attach something, or hold it in position with a locking device	LOCK THE SWITCH. AND REMOVE THE KEY.	
+		BEFORE YOU CONTINUE, MAKE SURE THAT THE SWITCH LOCKS.	
+log (v)	RECORD (v)	RECORD THE COMPASS CORRECTIONS ON THE CARD.	Log the compass corrections on the card.
+LONG (adj) (LONGER, LONGEST)	That has a specified or large length, or a specified or large duration	USE A TUBE WHICH IS 3.3 FEET LONG.	
+		IF THE TUBE IS TOO SHORT, USE A LONGER ONE.	
+		MAKE SURE THAT THE TEST SIGNAL IS NOT LONGER THAN 3 TONES.	
+long [as long as] (conj)	WHILE (conj)	WHILE THE DC SUPPLY IS ON, THE FAN MUST OPERATE.	As long as the DC supply is ON, the fan must operate.

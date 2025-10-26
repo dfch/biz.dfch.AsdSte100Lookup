@@ -1,0 +1,10 @@
+﻿BE (v), IS, WAS, (ARE), (WERE)	1. To occur, exist	IF THERE IS CORROSION ON THE PUMP VANES, REPLACE THE PUMP.	
+	2. To have a property, to be equal to	ACID SOLUTIONS ARE DANGEROUS.	
+	###No other verb forms.			
+BECAUSE (conj)	As a result of	BECAUSE THE FLUID LEVEL IS INCORRECT, THE SYSTEM WILL NOT OPERATE.	
+BECAUSE OF (Prep)	As a result of	IF YOU CANNOT REMOVE A BOLT BECAUSE OF CORROSION, APPLY PENETRATING OIL.	
+BECOME (v), BECOMES, BECAME	To come to be	THE SCREEN BECOMES AVAILABLE.	
+	###No other verb forms.			
+BEFORE (conj)	That precedes a specified time, sequence, or operation	BEFORE YOU DISCONNECT THE COMPONENTS, BLEED THE SYSTEM.	
+BEFORE (prep)	That precedes a specified time, sequence, or operation	THE BAR MOVES DOWN BEFORE 20 SECONDS.	
+begin (v)	START (v)	INCREASE THE PRESSURE UNTIL THE FLOW STARTS AGAIN.	Increase pressure until the flow begins again.

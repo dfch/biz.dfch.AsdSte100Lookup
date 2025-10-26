@@ -1,0 +1,5 @@
+﻿huge (adj)	LARGE (adj)	TO REMOVE THE PAINT STRIPPER, FLUSH THE SURFACE WITH LARGE QUANTITIES OF WATER.	To remove the paint stripper, flush the surface with huge quantities of water.
+hum (v)	HUM (TN)	ADJUST THE POTENTIOMETER UNTIL YOU DO NOT HEAR A HUM FROM THE LOUDSPEAKER.	Adjust the potentiometer until the loudspeaker no longer hums.
+hurt (v)	INJURY (n)	BE CAREFUL WHEN YOU DO THIS PROCEDURE. IF THE UNIT FALLS, IT CAN CAUSE INJURY TO PERSONS.	Be careful when you do this procedure. If the unit falls, it can hurt persons.
+HYDRAULIC (adj)	Related to, or operated by, pressurized liquid	CONNECT THE FITTINGS TO THE HYDRAULIC TEST BENCH.	
+HYDRAULICALLY (adv)	With hydraulic power	MAKE SURE THAT THE LINES ARE HYDRAULICALLY OPERATED.	

@@ -1,0 +1,10 @@
+﻿DISENGAGE (v), DISENGAGES, DISENGAGED, DISENGAGED	To release or become released from something that engages	BEFORE YOU START THE ENGINE, DISENGAGE THE CLUTCH.	
+		IF THERE ISA MALFUNCTION, THE GEARS WILL AUTOMATICALLY DISENGAGE.	
+disinfect (v)	DISINFECTANT (TN)	USE DISINFECTANT TO CLEAN THE MASK ASSEMBLIES.	Disinfect the mask assemblies.
+dismantle (v)	DISASSEMBLE (v)	DISASSEMBLE THE BRAKE UNIT IN THE WORKSHOP.	Dismantle the brake unit in the workshop.
+dispatch (v)	SEND (v)	SEND A REPORT TO THE INSPECTION DEPARTMENT.	Dispatch a report to the Inspection Department.
+disperse (v)	REMOVE (v)	BLOW THROUGH THE TUBES TO REMOVE THE REMAINING FLUID.	Blow through the tubes to disperse the residual fluid.
+displace (v)	MOVE (v)	THE PISTON MOVES THE FLUID.	Fluid is displaced by the piston.
+DISPLAY (n)	A visual indication	A NUMBER IN THE TOP LEFT CORNER OF THE DISPLAY REFERS TO THE RELATED PAGE.	
+display (v)	SHOW (v)	THE COMPASS INDICATORS SHOW THE HEADINGS.	The headings are displayed on the compass indicators.
+dispose of (v)	DISCARD (v)	DISCARD THE USED OIL. REFER TO THE APPLICABLE ENVIRONMENTAL REGULATIONS.	Dispose of the used oil according to the applicable environmental regulations.

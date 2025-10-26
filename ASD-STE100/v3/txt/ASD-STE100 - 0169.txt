@@ -1,0 +1,15 @@
+﻿omit (v)	DO NOT DO (v)	DO NOT DO STEPS 3 THRU 5.	Omit steps 3 to 5.
+	IGNORE (v)	IGNORE STEPS 3 THRU 5.	Omit steps 3 to 5.
+ON (adj)	In operation	MAKE SURE THAT THE BATTERIES ARE ON.	
+ON (adv)	1. In operation	MAKE SURE THAT THE WARNING LIGHT STAYS ON.	
+	2. In contact	MAKE SURE THAT THE LID GOES ON EASILY.	
+ON (prep)	Function word that shows contact, support, direction	PUT THE ASSEMBLED PARTS ON THE SUPPORT FITTING.	
+once (adv)	ONE (TN) TIME	PUSH THE SWITCH ONETIME.	Press the switch once.
+once (conj)	WHEN (conj)	WHEN THE UNIT IS ON ITS MOUNTING, LOCK IT.	Once the unit is on its mounting, lock it.
+ONE (pron)	That refers to a single person or object	IF THE LABEL IS NOT THERE, ATTACH A NEW ONE.	
+	###You can also use this word as a technical noun.
+ONLY (adj)	Nothing more or different	THIS IS THE ONLY APPROVED CONFIGURATION.	
+ONLY (adv)	Exclusively	TO TIGHTEN THE NUTS, USE ONLY A TORQUE WRENCH.	
+ONTO (prep)	To a position on or upon	WHEN YOU LOWER THE PUMP, MOVE IT ONTO THE MOUNTING BRACKETS.	
+opaque (adj)	NOT TRANSPARENT	CLEAN THE PLASTIC SURFACES THAT ARE NOT TRANSPARENT.	Clean the opaque plastic surfaces.
+OPEN (adj)	That lets something go in or out	PUT A PLUG ON THE OPEN END OF EACH PIPE.	

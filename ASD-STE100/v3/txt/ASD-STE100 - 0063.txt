@@ -1,0 +1,12 @@
+﻿DEFLATE (v), DEFLATES, DEFLATED, DEFLATED	To make or become smaller as a result of depressurization	DEFLATE THE TIRE TO A PRESSURE OF 2 bar (29 psi).	
+		IF THE WHEEL TEMPERATURE INCREASES TO MORE THAN 177 DEG., THE CORE OF THE FUSIBLE PLUG MELTS AND THE TIRE DEFLATES.	
+deflect (v)	MOVE (v)	THE BARS MOVE TO THE RIGHT SIDE.	Bars deflect to the right.
+deflection (n)	MOVEMENT (n)	REMOVE ALL THE RIGGING PINS AND EQUIPMENT THAT PREVENT FREE MOVEMENT OF THE CONTROL SURFACES.	Remove all rigging pins and equipment preventing free deflection of control surfaces.
+	POSITION (n)	MAKE SURE THAT THE POSITION IS 23 DEG.	Ensure that deflection is 23 deg.
+	TRAVEL (n)	MAKE SURE THAT THE TRAVEL IS 23 DEG.	Ensure that deflection is 23 deg.
+deformed (adj)	DAMAGED (adj)	THE COVER ON THE GUN CAMERA IS DAMAGED.	The cover on the gun camera is deformed.
+	DEFORMATION (TN)	MAKE SURE THAT THE TUBES HAVE NO DEFORMATION.	Make sure that the tubes are not deformed.
+DEFUEL (v), DEFUELS, DEFUELED, DEFUELED	To remove fuel	DEFUEL THE TANK.	
+defueling (n)	DEFUEL (v)	DEFUEL ONLY IN AN OPEN AREA THAT HAS A GOOD AIRFLOW.	Only do the defueling in an open area that is well-ventilated.
+degrease (v)	GREASE (TN)	REMOVE ALL GREASE FROM THE FAYING SURFACE WITH SOLVENT.	Degrease the faying surface with solvent.
+de-ice (v)	ICE (TN)	REMOVE THE ICE FROM THE WINDOW.	De-ice the window.

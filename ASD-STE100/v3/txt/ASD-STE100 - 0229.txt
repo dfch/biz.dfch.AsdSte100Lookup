@@ -1,0 +1,11 @@
+﻿SOURCE (n)	1. Something that supplies energy or data	THE SOLAR PANEL IS A SATISFACTORY SOURCE OF ENERGY.
+	2. The point where something starts	FIND THE SOURCE OF THE LEAKAGE.	
+SPACE (n)	A distance, area, or volume	PUT THE SEALANT INTO THE SPACE BEHIND THE FLANGE OF THE WATER INJECTOR.	
+space (v)	DISTANCE (n)	MAKE SURE THAT THERE IS AN EQUAL DISTANCE BETWEEN THE HOLES.	Make sure you space the holes equally.
+spacing (n)	DISTANCE (n)	REFER TO FIG. 401 FOR THE DISTANCE BETWEEN RIVETS.	The rivet spacing is given in Fig. 401.
+spanwise (adj)	SPAN (TN)	MAKE SURE THAT THERE ARE NO SIGNS OF MOVEMENT ALONG THE SPAN.	Check for signs of spanwise movement.
+sparingly (adv)	QUANTITY (n)	APPLY A SMALL QUANTITY OF GREASE.	Apply grease sparingly.
+SPARK (n)	A hot, bright particle of a material that burns	DO NOT USE TEST EQUIPMENT THAT CAN CAUSE SPARKS.	
+spark (v)	SPARK (n)	WHEN YOU USE ELECTRICAL EQUIPMENT THAT MAKES SPARKS, USE GOGGLES.	Wear goggles when using electrical equipment that sparks.
+SPEAK (v), SPEAKS, SPOKE, SPOKEN	To use a voice to make words	SPEAK INTO THE MICROPHONE.	
+SPECIAL (adj)	For a specified function	TIGHTEN THE SPECIAL NUT.	

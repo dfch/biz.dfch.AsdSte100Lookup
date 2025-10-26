@@ -1,0 +1,13 @@
+﻿MOOR (v), MOORS, MOORED, MOORED	To hold something in position with ropes and cables	IN BAD WEATHER CONDITIONS, MOOR THE BOAT.	
+MORE (adj)	A large quantity of	ADD MORE SHIMS UNTIL YOU GET THE SPECIFIED CLEARANCE.	
+MORE (adv)	To a larger degree	CORROSION CAN OCCUR MORE EASILY IN THIS AREA THAN IN OTHER AREAS.	
+MOST (adj)	To the largest quantity of	MOST MANUFACTURERS RECOMMEND SYNTHETIC LUBRICANTS.	
+MOST (adv)	To the largest degree	FAULT MESSAGES THAT SHOW IN RED ARE THE MOST IMPORTANT.	
+motion (n)	MOVEMENT (n)	MAKE SURE THAT THE STABILIZER MOVEMENT CONTINUES.	Check that the stabilizer motion continues.
+motor (v)	DRY-MOTOR (TV)	DRY-MOTOR THE ENGINE.	Motor the engine without fuel.
+	WET-MOTOR (TV)	WET-MOTOR THE ENGINE.	Motor the engine without ignition.
+	MOTORING (TN)	DO A MOTORING PROCEDURE.	Motor the engine.
+mount (v)	INSTALL (v)	INSTALL THE MANIFOLD.	Mount the manifold.
+	ATTACH (v)	ATTACH THE SEATS TO THE SEAT TRACKS.	Mount the seats on the seat tracks.
+	PUT (v)	PUT THE WHEEL ON THE AXLE.	Mount the wheel on the axle.
+MOVABLE (adj)	That can move if necessary	TURN THE MOVABLE HALF-COLLAR OF THE SUPPORT.	

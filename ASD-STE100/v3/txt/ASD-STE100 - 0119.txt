@@ -1,0 +1,12 @@
+﻿harden (v)	HARD (adj)	LET THE ADHESIVE BECOME HARD.	Let the adhesive harden.
+	CURE (TV)	LET THE BONDING MATERIAL CURE.	Let the bonding material harden.
+	###Refer to rule 1.12.
+harm (v)	INJURY (n)	BE CAREFUL WHEN YOU CUT LOCKWIRE. IT CAN CAUSE INJURY TO YOUR EYES.	Be careful when you cut lockwire. It can harm your eyes.
+	IRRITATION (TN)	HYDRAULIC FLUID CAN CAUSE SKIN IRRITATION.	Hydraulic fluid can harm your skin.
+	###Refer to rule 1.5.
+harmful (adj)	DANGEROUS (adj)	SOLVENT FUMES ARE DANGEROUS.	Solvent fumes are harmful to your health.
+	INJURY (n)	THIS ADHESIVE COMPOUND CAN CAUSE INJURY TO YOUR SKIN.	This adhesive compound is harmful to your skin.
+harmonize (v)	AGREE (v)	MAKE THE POSITIONS OF THE VALVES AGREE.	Harmonize the positions of the valves.
+	ALIGN (v)	ALIGN THE CENTERLINE ON THE FLUX VALVE.	Harmonize the centerline on the flux valve.
+haul (v)	TOW (v)	BEFORE YOU START THE ENGINE, TOW THE HYDRAULIC CART AWAY FROM THE AIRCRAFT.	Haul the hydraulic cart away from the aircraft before you start the engine.
+	MOVE (v)	BEFORE YOU START THE ENGINE, MOVE THE HYDRAULIC CART AWAY FROM THE AIRCRAFT	Haul the hydraulic cart away from the aircraft before you start the engine.

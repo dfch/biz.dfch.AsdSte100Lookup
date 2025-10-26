@@ -1,0 +1,10 @@
+﻿elapse (v)	TIME (n)	MAKE SURE THAT THE TIME BETWEEN STARTS IS A MINIMUM OF 30 SECONDS.	Check that 30 seconds have elapsed between starts.
+	AFTER (prep)	AFTER 30 SECONDS, DO THE TEST AGAIN.	When 30 seconds have elapsed, do the test again.
+	INTERVAL (n)	AT INTERVALS OF SIX MONTHS, DO THE CHECK OF THE OIL LEVEL.	When six months have elapsed, do the check of the oil level.
+ELECTRIC (adj)	Operated by electricity	IF THE HYDRAULIC PUMP DOES NOT SUPPLY A PRESSURE OF 3000 psi, USE THE ELECTRIC PUMP.	
+ELECTRICAL (adj)	Related to electricity	SUPPLY ELECTRICAL POWER TO THE SYSTEM.	
+ELECTRICALLY (adv)	Related to or operated by electricity	THE SYSTEM IS HYDRAULICALLY OPERATED AND ELECTRICALLY CONTROLLED.	
+ELECTROMAGNETIC (adj)	Related to electromagnetism	THE ELECTROMAGNETIC TEST PROCEDURE USES ELECTROMAGNETIC FORCE.	
+ELECTROMAGNETICALLY (adv)	Related to electromagnetism	THE SYSTEM OPERATES ELECTROMAG-NETICALLY.	
+ELECTRONIC (adj)	Related to or operated by electronics	THIS BAY CONTAINS SOME OF THE ELECTRONIC EQUIPMENT.	
+ELECTRONICALLY (adv)	Related to or operated by electronics	THIS UNIT IS ELECTRONICALLY CONTROLLED.	

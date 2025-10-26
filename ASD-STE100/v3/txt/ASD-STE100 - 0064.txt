@@ -1,0 +1,10 @@
+﻿delay (n)	INTERVAL (n)	BEFORE YOU CONTINUE THE TEST, AN INTERVAL OF 5 MINUTES IS NECESSARY.	A delay of 5 minutes is necessary before continuing with the test.
+	IMMEDIATELY (adv)	THE JAWS OF THE UPLOCK UNIT MUST OPEN IMMEDIATELY.	The jaws of the uplock unit must open with no delay.
+delay (v)	AFTER (prep)	ONLY USE THE STARTER AFTER A PERIOD OF 20 MINUTES.	Use of the starter must be delayed for 20 minutes.
+delete (v)	ERASE (v)	ERASE THE FLIGHT DATA FROM THE SYSTEM.	Delete the flight data from the system.
+	REMOVE (v)	REMOVE THE PENCIL MARKS WITH AN ERASER.	Delete the pencil marks with an eraser.
+delicate (adj)	EASILY DAMAGED (adj)	BE CAREFUL WITH EASILY DAMAGED PARTS.	Be careful with delicate parts.
+deliver (v)	SUPPLY (v)	SET THE RIG TO SUPPLY A PRESSURE OF 800 kPa.	Set the rig so that it delivers a pressure of 800 kPa.
+delivery (n)	SUPPLY (v)	A CENTRIFUGAL PUMP SUPPLIES HYDRAULIC FLUID TO THE UNIT.	Hydraulic fluid delivery to the unit is ensured by a centrifugal pump.
+demand (v)	NECESSARY (adj)	IN THIS CONFIGURATION, A DIFFERENT TEST PROCEDURE IS NECESSARY.	This configuration demands a different test procedure.
+denote (v)	SHOW (v)	FIGURE 2 SHOWS THAT YOU CAN INSTALL AN ALTERNATIVE RELAY.	Figure 2 denotes that an alternative relay may be installed.

@@ -1,0 +1,13 @@
+﻿FEATHER (v), FEATHERS, FEATHERED, FEATHERED	To put a propeller to a position of minimum drag	PUT THE CONDITION LEVER IN THE FTR POSITION TO FEATHER THE PROPELLER.	
+feature (v)	HAVE (v)	THESE NUTS HAVE A FLAT FLANGE.	These nuts feature a flat flange.
+feed (v)	PUT (v)	PUT THE WIRE THROUGH THE CONDUIT.	Feed the wire through the conduit.
+	SUPPLY (v)	SUPPLY COOL AIR TO THE CABIN.	Feed cool air to the cabin.
+FEEL (v), FEELS, FELT, FELT	To touch to find	CAREFULLY LIFT THE MAGNETIC LEVEL INDICATOR UNTIL YOU FEEL THE MAGNETS.	
+few (adj)	SMALL NUMBER (adj)	THIS PROCEDURE IS ONLY FOR REPAIRS THAT INCLUDE A VERY SMALL NUMBER OF RIVETS.	This procedure is only for repairs that include very few rivets.
+	###If it is possible, give an accurate number.
+few (adj) (a few)	SOME (adj)	LET THE ENGINE OPERATE FOR SOME MINUTES.	Let the engine run for a few minutes.
+	###If this alternative is not sufficient, give the range, number, or quantity.	AFTER APPROXIMATELY 5 SECONDS, THE LIGHT COMES ON AGAIN.	After a few seconds, the light comes on again.
+file (v)	REMOVE (v) (WITH A FILE (TN)	DO NOT REMOVE TOO MUCH MATERIAL WITH THE FILE.	Take care not to file too deeply.
+filing (n)	PARTICLE (n)	REMOVE ALL THE METAL PARTICLES.	Remove all the metal filings.
+FILL (v), FILLS, FILLED, FILLED	To put into a container or a space to the maximum level or, if specified, to a given level, pressure, or quantity	FILL THE TANK WITH METHANOL.	
+		MAKE SURE THAT THE RESERVOIR FILLS WITH WATER.	

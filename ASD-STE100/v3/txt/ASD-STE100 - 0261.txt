@@ -1,0 +1,13 @@
+﻿unplug (v)	DISCONNECT (v) PLUG (TN)	DISCONNECT THE SOLDERING IRON.	Unplug the soldering iron.
+		REMOVE THE PLUG FROM THE FUEL LINE.	Unplug the fuel line.
+unprotected (adj)	PROTECTION (n)	WHEN YOU REMOVE THE COVER, THE CONTACTS HAVE NO PROTECTION.	When you remove the cover, the contacts are unprotected.
+unreel (v)	UNWIND (v)	UNWIND THE HOSE.	Unreel the hose.
+unrestricted (adj)	FREE (adj)	THE BALL BEARING MUST BE FREE TO TURN.	Ball bearing rotation must be unrestricted.
+unsafe (adj)	DANGEROUS (adj)	IN THESE CONDITIONS, IT IS DANGEROUS TO REMOVE THE CARTRIDGES FROM THE FIRE EXTINGUISHER BOTTLE.	In these conditions, it is unsafe to remove the cartridges from the fire extinguisher bottle.
+UNSATISFACTORILY (adv)	In an unsatisfactory manner	IF THE ELEVATORS OPERATE UNSATISFACTORILY, MOVE THE CONTROL COLUMN.	
+UNSATISFACTORY (adj)	Not satisfactory	IF THE CONDITION OF THE FILTERS IS UNSATISFACTORY, REPLACE THEM.	
+unscrew (v)	LOOSEN (v)	LOOSEN THE CAPTIVE BOLTS.	Unscrew the captive bolts.
+	TURN (v)	TURN THE END FITTING TO ALIGN THE RIGGING HOLES.	Unscrew the end fitting to align the rigging holes.
+	REMOVE (v)	REMOVE THE NUTS.	Unscrew the nuts.
+UNSERVICEABLE (adj)	Not fit for its purpose	REPLACE THE UNSERVICEABLE BUSHINGS.	
+unstable (adj)	NOT STABLE	IF THE SURFACE IS NOT STABLE, AN ACCIDENT CAN OCCUR.	If the surface is unstable, an accident can occur.

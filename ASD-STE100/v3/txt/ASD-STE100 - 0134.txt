@@ -1,0 +1,13 @@
+﻿inhale (v)	BREATHE (v)	DO NOT BREATHE THE SOLVENT FUMES.	Do not inhale the solvent fumes.
+inhibit (v)	PREVENT (v)	ALODINE PREVENTS CORROSION.	Alodine inhibits corrosion.
+INITIAL (adj)	That is related to the start	MOVE THE LEVER BACK TO ITS INITIAL POSITION.	
+INITIALLY (adv)	At the start	INITIALLY, THE SPEED INCREASES TO 3000 RPM.	
+initiate (v)	START (v)	START THE TEST AT 2000 RPM.	Initiate the test at 2000 rpm.
+inject (v)	PUT (v)	PUT OIL INTO THE GEARBOX WITH A SYRINGE.	Inject oil into the gearbox with a syringe.
+injection (n)	PUT (v)	PUT THE CORROSION PREVENTIVE OIL INTO THE PUMP WITH A SYRINGE.	The injection of the corrosion preventive oil into the pump must be done with a syringe.
+injure (v)	INJURY (n)	MAKE SURE THAT THE END OF THE SAFETY WIRE WILL NOT CAUSE INJURY TO PERSONS.	Make sure that the end of the safety wire will not injure persons.
+INJURY (n)	Damage to a person	BEND THE ENDS OF THE LOCKING WIRE TO PREVENT INJURY.	
+INNER (adj)	Nearer to the center of an object	THE INNER SURFACE OF THE PART IS BLACK.	
+inoperative (adj)	OFF (adj)	BEFORE YOU DRAIN THE FUEL, MAKE SURE THAT THE SYSTEM IS OFF.	Before you drain the fuel, make sure that the system is inoperative.
+	NOT OPERATE (v)	MAKE SURE THAT THE DEMISTING SYSTEM DOES NOT OPERATE.	Make sure that the demisting system is inoperative.
+INPUT (n)	The data, power, or energy put into equipment or a system	THE UNIT COMPARES THE INPUTS FROM THE TWO SENSORS TO THE COMPUTER.	

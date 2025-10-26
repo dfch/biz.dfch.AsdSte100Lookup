@@ -1,0 +1,11 @@
+﻿suitably (adv)	SUFFICIENTLY (adv)	WHEN THE PAINT IS SUFFICIENTLY SOFT, REMOVE IT WITH A PLASTIC SPATULA.	When the paint is suitably soft, remove it with a plastic spatula.
+SUM (n)	The result when you add	CALCULATE THE SUM OF THE LOADS FOR EACH AREA.	
+SUPPLY (n)	Something that is supplied	STOP THE ELECTRICAL POWER SUPPLY.	
+SUPPLY (v), SUPPLIES, SUPPLIED, SUPPLIED	1. To give something that is necessary	SUPPLY ELECTRICAL POWER TO THE AUXILIARY SYSTEM.	
+	2. To make something available for use	THE POWER UNIT SUPPLIES ELECTRICITY TO THE CONTROL SYSTEM.	
+support (n)	SUPPORT (TN)	BEFORE YOU DISCONNECT THE ITEM, PUT A SUPPORT BELOW IT.	Make certain there is adequate support for the item before disconnecting it.
+	HOLD (v)	WHILE YOU DISCONNECT THE COMPONENT, MAKE SURE THAT A PERSON HOLDS IT.	Make certain that someone provides adequate support during component disconnection.
+support (v)	HOLD (v)	HOLD THE SWITCH AND REMOVE THE SCREWS.	Support the switch and remove the screws.
+	SUPPORT (TN)	PUT A SUPPORT BELOW THE PUMP. THEN, REMOVE IT FROM THE DRIVE SHAFT.	Support the pump, then remove it from the drive shaft.
+SURE (adj)	Certain	IF YOU ARE NOT SURE THAT A PART IS SERVICEABLE, DISCARD IT.	
+SURFACE (n)	One or more of the faces of something	CLEAN THE SURFACE WITH A SOFT, DRY CLOTH.	

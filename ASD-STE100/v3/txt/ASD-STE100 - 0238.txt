@@ -1,0 +1,10 @@
+﻿SUBSEQUENTLY (adv)	After an unspecified time	MAKE SURE THAT THE TOOL IS SUBSEQUENTLY AVAILABLE FOR THE INSTALLATION PROCEDURE.
+	###Use THEN (adv) for an occurrence that follows immediately in time or sequence.
+	THEN (adv)	LIFT THE COVER THEN, PULL THE HANDLE.	Lift the cover and subsequently pull the handle.
+subsequent to (prep)	AFTER (conj)	AFTER YOU INSTALL THE COMPONENT, REMOVE THE HANDLING TOOL.	Remove the handling tool subsequent to the installation of the component.
+substance (n)	MATERIAL (n)	THE PRIMER CONTAINS A MATERIAL THAT PREVENTS CORROSION.	The primer contains a substance that prevents corrosion.
+substitute (adj)	EQUIVALENT (adj)	IF THE SPECIFIED MATERIAL IS NOT AVAILABLE, YOU CAN USE AN EQUIVALENT ONE.	A substitute material may be used if the specified one is not available.
+	ALTERNATIVE (adj)	IF THIS SPECIAL TOOL IS NOT AVAILABLE, USE AN ALTERNATIVE METHOD.	If this special tool is not available, use a substitute method.
+substitute (n)	ALTERNATIVE (n)	YOU CAN USE ALTERNATIVES FOR THESE ITEMS.	Equivalent substitutes may be used for these items.
+substitute (v)	REPLACE (v)	DO NOT REPLACE THE SELF-LOCKING NUTS WITH PLAIN NUTS.	Do not substitute the self-locking nuts with plain nuts.
+SUBTRACT (v), SUBTRACTS, SUBTRACTED, SUBTRACTED	To take from a number or quantity	SUBTRACT COEFFICIENT “A” FROM THE INDICATION.

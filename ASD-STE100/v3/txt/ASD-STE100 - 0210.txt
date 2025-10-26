@@ -1,0 +1,14 @@
+﻿rinse (v)	FLUSH (v)	FLUSH THE FILTER WITH HOT WATER.	Rinse the filter in hot running water.
+	REMOVE (v)	REMOVE THE CLEANING AGENT FROM THE SURFACE.	Rinse the cleaning agent from the surface.
+	CLEAN (v)	CLEAN THE WINDOW PANE WITH A LARGE QUANTITY OF WATER.	Rinse the window pane with a large quantity of water.
+ripped (adj)	DAMAGED (adj)	IF THE SEAT COVER IS DAMAGED, REPLACE IT.	If the seat cover is ripped, replace it.
+rise (n)	INCREASE (v)	WHEN A FIRE STARTS, THE TEMPERATURE INCREASES AND CAUSES THE DETECTOR TO OPERATE.	When a fire starts, the temperature rise causes the detector to operate.
+rise (v)	INCREASE (v)	FILL THE STRUT WITH FLUID UNTIL THE PRESSURE INCREASES.	Fill the strut with fuel until the pressure rises.
+RISK (n)	The possibility that something that is dangerous occurs	OBEY THE PRECAUTIONS TO PREVENT THE RISK OF FIRE.	
+rope off (v)	ROPE (TN)	PUT ROPES AROUND THE AREA.	Rope off the area.
+rotary (adj)	TURN (v)	TURN THE GEARS TO ALIGN THEM.	Use a rotary movement to align the gears.
+rotate (v)	TURN (v)	SLOWLY TURN THE VANE.	Slowly rotate the vane.
+rotation (n)	TURN (v)	MAKE SURE THAT THE FAN TURNS FREELY.	Ensure the free rotation of the fan.
+rotational (adj)	TURN (v)	TURN THE GEARS TO ALIGN THEM.	Use a rotational movement to align the gears.
+ROUGH (adj) (ROUGHER, ROUGHEST)	Not smooth	CLEAN THE ROUGH SURFACES CAREFULLY.	
+roughen (v)	ROUGH (adj)	MAKE THE FAYING SURFACES ROUGH.	Roughen the faying surfaces.

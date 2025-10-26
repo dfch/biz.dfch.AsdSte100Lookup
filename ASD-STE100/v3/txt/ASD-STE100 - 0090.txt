@@ -1,0 +1,11 @@
+﻿exception (n)	Note	KEEP ALL THE PARTS THAT ARE SERVICEABLE AND DISCARD THOSE THAT ARE BROKEN.	Keep all parts with the exception of those that are broken.
+		REMOVE ALL SCREWS, BUT NOT THE ONE ON THE LEFT SIDE OF THE FLANGE.	Remove all screws with the exception of the one on the left side of the flange.
+	###To replace this word, use a different construction. Be accurate.
+exceptional (adj)	UNUSUAL (adj)	IF IT IS NECESSARY TO APPLY UNUSUAL FORCE TO OPEN THE UNIT, EXAMINE THE CONTROL LINKAGE.	If exceptional force is needed to open the unit, examine the control linkage.
+exceptionally (adv)	UNUSUALLY (adv)	IF THE TIRE PRESSURE IS UNUSUALLY HIGH, OPEN THE VALVE.	If the tire pressure is exceptionally high, open the valve.
+excess (adj)	TOO MUCH (adj)	DO NOT APPLY TOO MUCH ADHESIVE ON THE GASKET.	Do not apply excess adhesive on the gasket.
+	MORE THAN (adj)	DO NOT PUT MORE THAN THE PERMITTED WEIGHT ON THE TROLLEY.	Do not put excess weight on the trolley.
+	UNWANTED (adj)	REMOVE UNWANTED COMPOUND FROM THE GASKET.	Wipe excess compound from the gasket.
+	NOT NECESSARY (adj)	REMOVE ALL REMAINING SEALANT THAT IS NOT NECESSARY.	Remove all the excess sealant.
+excess (n)	TOO MUCH (adj)	IF YOU USE TOO MUCH PAINT, THE FINISH WILL BE UNSATISFACTORY.	An excess of paint will give a poor finish.
+	MORE THAN (adj)	THE HYDRAULIC PRESSURE MUST NOT BE MORE THAN 200 bar.	The hydraulic pressure must not be in excess of 200 bar.

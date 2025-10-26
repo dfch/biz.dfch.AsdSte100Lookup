@@ -1,0 +1,12 @@
+﻿fasten (v)	ATTACH (v) CONNECT (v)	ATTACH THE TWO STRINGERS TOGETHER WITH RIVETS.	Fasten the two stringers together with rivets.
+		CONNECT THE HOSE TO THE TEST EQUIPMENT.	Fasten the hose to the test equipment.
+fatal (adj)	KILL (v)	HIGH VOLTAGE IN THE ELECTRONIC SYSTEM CAN KILL YOU.	High voltage in the electronic system can be fatal.
+faulty (adj)	DEFECTIVE (adj)	REPLACE ALL DEFECTIVE ELECTRONIC COMPONENTS.	All faulty electronic components must be replaced.
+	INCORRECT (adj)	AN INCORRECT ADJUSTMENT OF THE PRESSURE REGULATOR CAN BE DANGEROUS.	Faulty adjustment of the pressure regulator can be dangerous.
+	UNSERVICEABLE (adj)	REPLACE THE UNSERVICEABLE CONTROL UNIT.	Replace the faulty control unit.
+	UNSATISFACTORY (adj)	UNSATISFACTORY OPERATION OF THE SYSTEM CAN CAUSE DAMAGE.	Faulty operation of the system can cause damage.
+fear (v)	THINK (v)	IF YOU THINK THAT THERE IS A FAULT, DO THE FULL TEST PROCEDURE OF THE UNIT.	Fully test the unit if you fear that there is a fault.
+	MAKE SURE (v)	DO A TEST OF THE UNIT TO MAKE SURE THAT THERE IS NO PROBLEM WITH ITS OPERATION.	Test the unit if you fear that there is a problem with its operation.
+feasible (adj)	POSSIBLE (adj)	IF IT IS NOT POSSIBLE TO USE THE AUTOMATIC CONTROL, DO THE PROCEDURE MANUALLY.	If it is not feasible to use the automatic control, do the manual procedure.
+	CAN (v)	IF YOU CANNOT REMOVE THE BOLT, CUT IT.	If it is not feasible to remove the bolt, you must cut it.
+	CANNOT (v)

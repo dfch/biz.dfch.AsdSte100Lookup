@@ -1,0 +1,13 @@
+﻿glow (v)	BE (v)	MAKE SURE THAT THE INDICATOR LIGHT IS ON.	Make sure that the indicator light glows.
+		ADJUST THE POTENTIOMETER UNTIL THE LIGHT IS DIM.	Adjust the potentiometer until the light glows dimly.
+glue (v)	BOND (v)	BOND THE PATCH TO THE SURFACE WITH THE APPLICABLE GLUE.	Glue the patch to the surface.
+	ATTACH (v)	ATTACH THE PROTECTIVE PLATE TO THE SURFACE WITH ADHESIVE MATERIAL.	Glue the protective plate to the surface.
+GO (v), GOES, WENT	To move to or from something	MAKE SURE THAT THE POINTER GOES OUT OF VIEW.	
+	###No other verb forms.			
+GO OFF (v), GOES OFF, WENT OFF	To become dark when an internal power source is de-energized	THE ANNUNCIATOR LIGHT GOES OFF.	
+	###No other verb forms.			
+GOOD (adj) (BETTER, BEST)	That is satisfactory	THIS MATERIAL GIVES GOOD PROTECTION FROM CORROSION.	
+gouge (v)	GOUGE (TN)	IF A GOUGE OCCURS IN THE BLADE DURING REMOVAL, REPLACE THE BLADE.	If the blade was gouged during removal, replace it.
+govern (v)	CONTROL (v)	THIS COMPONENT CONTROLS THE ENGINE SPEED.	This component governs the engine speed.
+grab (v)	USE (v)	USE A SCREWDRIVER TO RELEASE THE CLIPS.	Grab a screwdriver to release the clips.
+	HOLD (v)	HOLD THE HANDLE.	Grab the handle.

@@ -1,0 +1,11 @@
+﻿urgently (adv)	IMMEDIATELY (adv)	GET MEDICAL AID IMMEDIATELY.	Seek medical aid urgently.
+usage (n)	USE (v)	IF YOU USE INCORRECT THINNERS. PROBLEMS CAN OCCUR DURING OPERATION.	The usage of incorrect thinners can cause problems during operation.
+use (n)	OPERATION (n)	WHEN THE MOTOR IS IN OPERATION, KEEP YOUR HANDS AWAY FROM THE BLADE.	Keep your hands away from the blade when the motor is in use.
+	USE (v)	DURING THIS TASK, USE PROTECTIVE GLOVES.	The use of protective gloves is mandatory during this task.
+USE (v), USES, USED, USED	To make something do its specified function	IN THIS STEP, USE AUXILIARY SCREWS.	
+		USE A SPECIAL CONTAINER FOR STORAGE.	
+		DURING THE CLEANING PROCEDURE, DO NOT USE HIGH PRESSURE.	
+USUAL (adj)	That you use or that occurs most frequently	IF YOU DO NOT GET THE USUAL RESULTS, DO A SYSTEM TEST.	
+USUALLY (adv)	In a usual manner	USUALLY, THE HYDRAULIC FLUID FLOWS INTO THE VALVE THROUGH PORT A.	
+utilization (n)	USE (v)	READ THE INSTRUCTIONS THAT TELL YOU HOW TO USE THE OXYGEN MASK.	Read the oxygen mask instructions for its utilization.
+utilize (v)	USE (v)	THE SOFTWARE USES CACHING TECHNIQUES TO DECREASE DATA RETRIEVAL TIMES.	The software utilizes caching techniques to decrease data retrieval times.

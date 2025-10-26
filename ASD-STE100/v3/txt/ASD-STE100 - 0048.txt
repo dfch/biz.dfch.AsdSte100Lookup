@@ -1,0 +1,11 @@
+﻿complete (adj)	FULL (adj)	EXTEND AND RETRACT THE ACTUATOR THROUGH THREE FULL CYCLES.	Extend and retract the actuator through three complete cycles.
+	ALL (adj)	SEND ALL THE TEST RESULTS TO THE MANUFACTURER.	The complete test results must be sent to the manufacturer.
+	COMPLETED (adj)	THE GREEN INDICATION SHOWS THAT SERVICING IS COMPLETED.	The green indication shows that servicing is complete.
+COMPLETE (v), COMPLETES, COMPLETED, COMPLETED	To bring to an end	COMPLETE THE FUNCTIONAL TEST.	
+COMPLETED (adj)	Successfully brought to an end	SEND THE COMPLETED REPORT TO THE SUPERVISOR FOR APPROVAL.	
+completely (adv)	FULLY (adv)	BEFORE YOU APPLY THE SECOND LAYER, LET THE FIRST LAYER OF PAINT DRY FULLY.	Allow the first layer of paint to dry completely before applying the second layer.
+completion (n)	END (n)	AT THE END OF THIS PROCEDURE, REFER TO 72-00-00, TEST 001.	See 72-00-00, Testing 001 upon completion of this procedure.
+	COMPLETE (v)	TWO HOURS ARE NECESSARY TO COMPLETE THIS TASK.	Completion of the task will require two hours.
+complicated (adj)	NOT EASY (adj)	THIS TEST PROCEDURE IS NOT EASY WITHOUT THE CORRECT EQUIPMENT.	This test procedure is complicated without the right equipment.
+comply (v)	OBEY (v)	WHEN YOU ASSEMBLE THE UNIT, OBEY THIS PROCEDURE.	When you assemble the unit, comply with this procedure.
+	###Used in law and regulations. Refer to rule 1.12.	THE SHIP CERTIFICATE MUST COMPLY WITH ALL THE REQUIREMENTS OF THE AUTHORITIES.	

@@ -1,0 +1,11 @@
+﻿MANUAL (adj)	Operated with the hands	IF THE AUTOMATIC CONTROLS DO NOT OPERATE, USE THE MANUAL PROCEDURE.	
+MANUAL (n)	A publication that gives data related to a special subject	THIS MANUAL GIVES PERFORMANCE DATA.	
+MANUALLY (adv)	With your hands	MOVE THE LEVER MANUALLY.	
+manufacture (v)	MAKE (v)	YOU CAN MAKE THE CLEARING TOOL LOCALLY.	The clearing tool can be manufactured locally.
+MANY (adj) (MORE, MOST)	Of a large number	CORROSION CAN HAVE MANY CAUSES.	
+	###If it is possible, give the range, number, or quantity.
+MARK (n)	Something that you make or is made to show an identification, location, or direction	THE RED MARKS SHOW A MAXIMUM STEERING ANGLE OF 35 DEGREES.	
+mark (v)	IDENTIFY (v)	IDENTIFY THE COMPONENT WITH A CODE TO HELP YOU INSTALL IT AGAIN CORRECTLY.	Mark the component with a code to help you install it again correctly.
+	MARK (n)	PUT MARKS ON THE OUTER TUBE TO SHOW THE CLAMP LOCATIONS.	Mark the clamp locations on the outer tube.
+mask (v)	APPLY (v)	APPLY MASKING TAPE TO THE TRANSPARENT PANEL.	Mask the transparent panel with masking tape.
+MASS (n)	The quantity of matter that is in an object and relates to its weight. The equivalent of inertia	STRUCTURAL OR EQUIPMENT MODIFICATIONS CAN CHANGE THE BASIC MASS AND THE CENTER-OF-GRAVITY COORDINATES.	

@@ -1,0 +1,10 @@
+﻿audible (adj)	HEAR (v)	IF YOU CANNOT HEAR THE ALARM, ADJUST THE VOLUME CONTROL.	If the alarm is not audible, adjust the volume control.
+	LISTEN (v)	LISTEN FOR AIR LEAKAGE FROM THE LINES.	Check the lines for audible air leakage.
+augment (v)	INCREASE (v)	A MIXTURE OF WATER AND METHANOL INCREASES THE POWER OF THE ENGINE.	A mixture of water and methanol augments the power of the engine.
+aurally (adv)	LISTEN (v)	LISTEN TO MAKE SURE THAT THE FLUID FLOWS.	Check aurally to ensure fluid flow.
+	HEAR (v)	YOU CAN HEAR THE WARNING IN THE COCKPIT.	The warning is given aurally in the cockpit.
+authentic (adj)	ACCURATE (adj)	IF THE ADJUSTMENT OF THE STOPS IS NOT CORRECT, THE RESULTS OF THE TEST WILL NOT BE ACCURATE.	If the adjustment of the stops is not correct, the results of the test will not be authentic.
+AUTHORITY (n)	An official organization that gives approval to something	BEFORE YOU CHANGE THE PROCEDURE, GET THE APPROVAL OF THE DESIGN AUTHORITY.	
+authorized (adj)	APPROVED (adj)	ONLY APPROVED PERSONS ARE PERMITTED TO STAY IN THIS AREA.	Only authorized persons are permitted to stay in this area.
+AUTOMATIC (adj)	That operates without other input	THE AUTOMATIC SYSTEM WILL OPEN THE DOORS.	
+AUTOMATICALLY (adv)	That operates without other input	THE FUEL FLOW STOPS AUTOMATICALLY.	

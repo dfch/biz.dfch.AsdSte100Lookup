@@ -1,0 +1,11 @@
+﻿unable (adj)	CANNOT (v)	IF YOU CANNOT TURN If you are unable to turn THE PULLEY, MAKE the pulley, make sure SURE THAT THE PIN IS that the pin is removed. REMOVED.
+unauthorized (adj)	NOT APPROVED	IF YOU ARE NOT APPROVED TO DO THIS WORK, DO NOT DO THIS ENGINE TEST.	If you are unauthorized, do not do this engine test.
+uncap (v)	REMOVE (v) (A CAP [TN] OR CAPS [TN])	REMOVE THE CAPS FROM THE HOSES.	Uncap the hoses.
+unclip (v)	REMOVE (v) (FROM A CLIP [TN] OR CLIPS [TN])	REMOVE THE VISOR FROM THE CLIP.	Unclip the visor.
+uncoil (v)	UNWIND (v)	UNWIND THE CABLES CAREFULLY.	Uncoil the cables carefully.
+uncontaminated (adj)	CLEAN (adj)	MAKE SURE THAT THE HYDRAULIC FLUID IS CLEAN.	Make sure that the hydraulic fluid is uncontaminated.
+	CONTAMINATION (n)	MAKE SURE THAT THERE IS NO CONTAMINATION IN THE FUEL TANKS.	Make sure that the fuel tanks are uncontaminated.
+uncouple (v)	DISCONNECT (v)	DISCONNECT THE TOW BAR FROM THE VEHICLE.	Uncouple the tow bar from the vehicle.
+uncovered (adj)	COVER (TN)	DO NOT PUT A COVER ON THE CONTAINER.	Leave the container uncovered.
+undamaged (adj)	NOT DAMAGED	MAKE SURE THAT THE SKIN IS NOT DAMAGED.	Make sure that the skin is undamaged.
+UNDEMANDED (adj)	That occurs without an apparent cause	IF YOU GET AN UNDEMANDED MOVEMENT, DO A TEST OF THE SYSTEM.	

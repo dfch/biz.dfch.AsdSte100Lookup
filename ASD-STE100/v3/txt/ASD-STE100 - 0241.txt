@@ -1,0 +1,13 @@
+﻿surplus (adj)	UNWANTED (adj)	REMOVE THE UNWANTED GREASE.	Wipe off surplus grease.
+surrounding (adj)	ADJACENT (adj)	CLEAN THE MOUNTING AND THE ADJACENT AREA.	Clean the mounting and the surrounding area.
+	AROUND (prep)	REMOVE ALL SEALANT THAT IS AROUND THE HOLE.	Remove all sealant surrounding the hole.
+survey (v)	EXAMINE (v)	EXAMINE THE SURFACE.	Survey the surface.
+	INSPECTION (n)	DO AN INSPECTION OF THE SURFACE.	Survey the surface.
+suspect (adj)	THINK (v)	IF YOU THINK THAT THE VALVE IS UNSERVICEABLE, REMOVE IT.	Remove the suspect valve.
+suspect (v)	THINK (v)	IF YOU THINK THAT THE POWER UNIT DOES NOT OPERATE CORRECTLY, DO A SYSTEM CHECK.	If you suspect that the power unit does not operate correctly, do a system check.
+suspend (v)	HANG (v)	HANG THE ENGINE IN A FIREPROOF BAY.	Suspend the engine in a fireproof bay.
+	STOP (v)	IF THE CABLE CATCHES, STOP THE PROCEDURE.	If the cable catches, suspend all operations.
+SWALLOW (v), SWALLOWS, SWALLOWED, SWALLOWED	To take through the mouth and esophagus into the stomach	IF YOU SWALLOW NITRIC ACID, DO NOT CAUSE VOMITING. GET MEDICAL AID IMMEDIATELY.	
+	###Use this word for safety instructions only.
+swap (v)	INTERCHANGE (v)	INTERCHANGE THE COMPUTERS 1 AND 2. THEN DO THE TEST AGAIN.	Swap computers 1 and 2. Then do the test again.
+sweep (v)	SCAN (TN)	MAKE A SCAN OF THE FREQUENCY BAND.	Sweep the frequency band.

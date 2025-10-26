@@ -1,0 +1,13 @@
+﻿travel (v)	GO (v)	THE TURNBUCKLE GOES THROUGH A HOLE IN THE BULKHEAD.	The turnbuckle travels through a hole in the bulkhead.
+	MOVE (v)	THE LEVER MOVES THROUGH A 30-DEG. ARC.	The lever travels through a 30-deg. arc.
+treat (v)	APPLY (v)	APPLY WAX TO THE SURFACE.	Treat the surface with wax.
+	TOUCH (v)	BE CAREFUL WHEN YOU TOUCH PRINTED CIRCUIT BOARDS.	Be careful when you treat printed circuit boards.
+trigger (v)	CAUSE (v)	HEAT CAUSES THE PRESSURE TO INCREASE.	Heat triggers a pressure increase.
+	START (v)	THIS SIGNAL STARTS THE OPERATION OF THE TEST SET.	This signal triggers test set operation.
+trim (v)	CUT (v)	CUT THE PATCH TO THE CORRECT DIMENSION.	Trim the patch to fit.
+trip (v)	OPEN (v)	OPEN THE CIRCUIT BREAKER.	Trip the circuit breaker.
+	RELEASE (v)	THE HOLD-ON SWITCH RELEASES.	Hold-on switch trips.
+	CAUSE TO FALL (v)	AN IRREGULAR SURFACE CAN CAUSE YOU TO FALL.	You can trip and fall on an irregular surface.
+troubleshoot (v)	TROUBLESHOOTING (TN)	DO THE TROUBLESHOOTING PROCEDURE ON THE VHF NAVIGATION SYSTEM.	Troubleshoot the VHF navigation system.
+true (adj)	CORRECT (adj)	MAKE SURE THAT THE VALUE SHOWN ON THE INDICATOR IS CORRECT.	Make sure that the indicator reading is true.
+	AGREE (v)	MAKE SURE THAT THE INDICATION ON THE GAUGE AGREES WITH THE QUANTITY OF FUEL THAT IS IN THE TANK.	Make sure that the gauge shows the true quantity of fuel that is in the tank.

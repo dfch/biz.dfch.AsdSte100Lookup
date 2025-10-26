@@ -1,0 +1,9 @@
+﻿visible (adj)	SEE (v)	MAKE SURE THAT YOU CAN SEE THE OIL LEVEL THROUGH THE SIGHT GAUGE.	Make certain that the oil level is visible through the sight gauge.
+	VIEW (n)	WHEN THE INDICATOR COMES INTO VIEW, STOP THE TEST PROCEDURE.	When the indicator is visible, stop the test procedure.
+VISUAL (adj)	That you can see	MAKE SURE THAT THE VISUAL INDICATOR SHOWS THE CORRECT VALUE.	
+VISUALLY (adv)	With the eyes	VISUALLY EXAMINE THE DUCT.	
+vital (adj)	MANDATORY (adj)	IT IS MANDATORY TO OBEY THE SUPPLIER’S MAINTENANCE INTERVALS.	It is vital to obey the supplier’s maintenance intervals.
+VOICE (n)	The sound you make when you speak	SPEAK INTO THE MICROPHONE IN YOUR USUAL VOICE.	
+volatile (adj)	###Use a different construction. Tell the reader what the risk or effect is.	BE CAREFUL WITH THE SOLVENT NEAR FLAMES OR SPARKS. THIS SOLVENT CAN RELEASE FLAMMABLE FUMES.	Be careful with the solvent (this solvent is volatile and can be dangerous).
+VOLUME (n)	1. The space that an object fills	MEASURE THE VOLUME OF THE OIL CAREFULLY.	
+	2. How loud a sound is	TO ADJUST THE VOLUME, USE THE BUTTONS ON THE SIDE OF THE PHONE.	

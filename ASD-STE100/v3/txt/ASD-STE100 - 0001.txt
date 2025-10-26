@@ -1,0 +1,10 @@
+﻿A (art)	Function word: indefinite article	A FUEL PUMP IS INSTALLED IN ZONE 10.	
+abaft (prep)	AFT OF (prep)	THE CONTROL UNIT IS INSTALLED AFT OF THE FLIGHT COMPARTMENT.	The control unit is installed abaft the flight compartment.
+abandon (v)	GO (v)	IF THERE IS AFIRE, IMMEDIATELY GO TO A SAFE AREA.	If there is a fire, immediately abandon the area.
+	STOP (v)	IF THE VALUES ARE INCORRECT, STOP THE TEST PROCEDURE.	If the values are incorrect, abandon the test procedure.
+abate (v)	DECREASE (v)	WHEN THE WIND SPEED DECREASES TO LESS THAN 30 KNOTS, YOU CAN OPEN THE CARGO DOOR.	When the wind speed abates to less than 30 knots, you can open the cargo door.
+ability (n)	CAN (v)	ONE GENERATOR CAN SUPPLY POWER FOR ALL THE SYSTEMS.	One generator has the ability to supply power for all the systems.
+able (adj)	CAN (v)	IF YOU CAN START THE ENGINE, DO THE APPLICABLE TESTS.	If you are able to start the engine, do the applicable tests.
+abnormal (adj)	UNUSUAL (adj)	LISTEN FOR UNUSUAL NOISES.	Listen for abnormal noises.
+	INCORRECT (adj)	IF YOU FIND AN INCORRECT QUANTITY OF AIR FROM THE VENT MAST, DO A SYSTEM TEST.	If you find an abnormal quantity of air from the vent mast, do a system test.
+abnormality (n)	DEFECT (TN)	EXAMINE THE SEAL FOR DEFECTS.	Examine the seal for abnormalities.

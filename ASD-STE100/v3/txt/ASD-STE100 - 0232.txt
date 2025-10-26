@@ -1,0 +1,11 @@
+﻿SPRAY (v) SPRAYS, SPRAYED, SPRAYED	To apply as a spray	DO NOT SPRAY DISINFECTANTS DIRECTLY ONTO THE CARPETS OR INSTRUMENT PANELS.	
+spread (v)	APPLY (v)	APPLY THE COMPOUND EQUALLY.	Spread compound evenly.
+spring (v)	MOVE (v)	MAKE SURE THAT THE PINS DO NOT MOVE OUT OF THE NOTCH.	Make certain that the pins do not spring out of the notch.
+spurious (adj)	UNWANTED (adj)	IF THERE ARE UNWANTED INDICATIONS, DO A TEST.	In the event of spurious indications, do a test
+stability (n)	STABLE (adj)	BEFORE YOU LIFT THE VEHICLE WITH JACKS, MAKE SURE THAT IT IS STABLE.	Before jacking up the vehicle, make sure that its stability is ensured.
+stabilization (n)	STABLE (adj)	WHEN THE TEMPERATURE IS STABLE, MAKE SURE THAT THE OIL PRESSURE DECREASES.	Check that oil pressure drops after stabilization of temperature.
+stabilize (v)	STABLE (adj)	LET THE V-BARS BECOME STABLE.	Allow V-bars to stabilize.
+STABLE (adj)	That does not change or move	MAKE SURE THAT THE TEMPERATURE INDICATIONS ARE STABLE.	
+stage (n)	STEP (n)	DURING THIS STEP, DO NOT REMOVE THE PIN.	Do not remove the pin at this stage.
+stained (adj)	DIRTY (adj)	IF THE CARPET IS DIRTY, CLEAN IT WITH MATERIAL No. 8.	If the carpet is stained, clean it with Material No. 8.
+	STAIN (TN)	IF THERE ARE HYDRAULIC FLUID STAINS ON THE COVER, EXAMINE THE LINE COUPLINGS.	If the cover is stained by hydraulic fluid, check line couplings.

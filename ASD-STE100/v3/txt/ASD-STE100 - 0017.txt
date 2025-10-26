@@ -1,0 +1,11 @@
+﻿APPLICABLE (adj)	Correct or satisfactory for the task	REFER TO THE TABLE THAT FOLLOWS FOR THE APPLICABLE TORQUE VALUES.	
+application (n)	APPLY (v)	APPLY THE SEALANT WITH A WOODEN SPATULA.	The application of sealant must be carried out with a wooden spatula.
+APPLY (v), APPLIES, APPLIED, APPLIED	1. To put or spread something on	APPLY THE SEALING COMPOUND.	
+	2. To use something (for example, pressure, force, load) to cause an effect	APPLY A FORCE OF 100 NON THE END OF THE LEVER.	
+appoint (v)	TELL (v)	TELL TWO PERSONS TO BE PREPARED TO OPERATE THE FIRE EXTINGUISHERS.	Appoint two persons to be prepared to operate the fire extinguishers.
+approach (v)	GO NEAR (v)	IF IT IS NECESSARY TO GO NEAR THE ENGINE EXHAUST, USE EAR PROTECTION.	If it is necessary to approach the engine exhaust, use ear protection.
+appropriate (adj)	APPLICABLE (adj)	LOCK THE WASHER WITH THE APPLICABLE TABS.	Lock the washer with the appropriate tabs.
+APPROVAL (n)	That which permits a person or a thing to do something	BEFORE YOU REPAIR THIS UNIT, GET THE APPROVAL OF THE MANUFACTURER.	
+approve (v)	APPROVAL (n)	APPROVAL FROM THE DESIGN AUTHORITY IS MANDATORY FOR ALL MODIFICATIONS.	All modifications must be approved by the Design Authority.
+APPROVED (adj)	Permitted by an authority	DO THE PROCEDURE IN AN APPROVED AREA.	
+APPROXIMATE (adj)	Almost correct or accurate	AN APPROXIMATE VALUE IS SATISFACTORY.	

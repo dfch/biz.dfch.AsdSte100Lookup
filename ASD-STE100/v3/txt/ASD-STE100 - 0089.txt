@@ -1,0 +1,11 @@
+﻿exactly (adv)	ACCURATELY (adv)	PUT THE REPAIR SHEET ACCURATELY ON THE DAMAGED AREA.	Put the repair sheet exactly on the damaged area.
+	FULLY (adv)	FIND THE BOLT HOLE THAT ALIGNS FULLY WITH ONE OF THE OUTER SLOTS.	Find the bolt hole that aligns exactly with one of the outer slots.
+	CORRECT (adj)	THE SEAL MUST BE OF THE CORRECT DIMENSION FOR THE GROOVE.	The seal must fit the groove exactly.
+examination (n)	EXAMINE (v)	EXAMINE THE BLADE FOR CRACKS.	Do an examination of the blades for cracks.
+	FIND (v)	IF YOU FIND CORROSION, REMOVE IT WITH THE SPECIFIED MATERIAL.	If the examination reveals corrosion, it must be removed with the specified material.
+EXAMINE (v), EXAMINES, EXAMINED, EXAMINED	To look carefully at	EXAMINE THE COMPUTER FOR DAMAGE.	
+EXAMPLE (n)	Something from a group which has the same qualities as the group	FIGURE 2 IS AN EXAMPLE OF A REPAIR PROCEDURE FOR A DAMAGED WEB.	
+exceed (v)	MORE THAN	MAKE SURE THAT THE INDICATION IS NOT MORE THAN 400 KNOTS.	Ensure that the indication does not exceed 400 knots.
+except (prep)	Note	KEEP ALL THE PARTS THAT ARE SERVICEABLE AND DISCARD THOSE THAT ARE BROKEN.	Keep all parts except those that are broken.
+		REMOVE ALL SCREWS, BUT NOT THE ONE ON THE LEFT SIDE OF THE FLANGE.	Remove all screws except the one on the left side of the flange.
+	###To replace this word, use a different construction. Be accurate.

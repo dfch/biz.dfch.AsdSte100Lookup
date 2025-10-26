@@ -1,0 +1,11 @@
+﻿vary (v)	CHANGE (v)	CHANGE THE FREQUENCY AND RECORD THE RESULTS.	Vary the frequency and record the results.
+vent (v)	RELEASE (v)	RELEASE THE PRESSURE.	Vent the pressure.
+	FLOW (v)	LET THE FUEL FLOW FREELY OVERBOARD.	Let the fuel vent freely overboard.
+	OPEN (adj)	MAKE SURE THAT THE TANK IS IN AN OPEN AREA THAT HAS A GOOD AIRFLOW.	Make sure that the tank is in an area that is vented to the atmosphere.
+ventilate (v)	AIRFLOW (n)	MAKE SURE THAT THE AREA WHERE YOU WILL USE THIS SOLVENT HAS GOOD AIRFLOW.	Ventilate the area where this solvent is used.
+ventilation (n)	AIRFLOW (n)	MAKE SURE THAT THE AIRFLOW IS SUFFICIENT.	Make sure that the ventilation is sufficient.
+verify (v)	MAKE SURE (v)	MAKE SURE THAT THE FITTINGS ARE TIGHT.	Verify the tightness of the fittings.
+VERTICAL (adj)	At 90 degrees to the horizon	MEASURE THE VERTICAL DISTANCE BETWEEN THE TWO POINTS ON THE GRAPH.	
+VERTICALLY (adv)	At 90 degrees to the horizon	THE POINTER MOVES VERTICALLY ALONG THE SCALE.	
+VERY (adv)	To a high degree	ADD THE OIL VERY SLOWLY.	
+via (prep)	THROUGH (prep)	GET ACCESS THROUGH THE No. 6 BREAK-IN PANEL.	Get access via No. 6 break-in panel.

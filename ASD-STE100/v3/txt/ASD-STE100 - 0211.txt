@@ -1,0 +1,13 @@
+﻿roughness (n)	ROUGH (adj)	MAKE SURE THAT THE AREA OF THE BOND IS SUFFICIENTLY ROUGH.	Make sure the area of the bond has sufficient roughness.
+round (adj)	CIRCULAR (adj)	REPAIR THE DAMAGE WITH A CIRCULAR PATCH.	Repair the damage with a round patch.
+ROUNDED (adj)	Not angular	WHEN YOU INSTALL THE PART, MAKE SURE THAT THE ROUNDED EDGE IS AGAINST THE STRUCTURE.	
+route (n)	ROUTING (n)	MAKE SURE THAT YOU DO NOT CHANGE THE WIRE ROUTING.	Make sure you do not change the wire routes.
+route (v)	PUT (v)	PUT THE FUELING HOSE ALONG THE GROUND.	Route the fueling hose along the ground.
+	ROUTING (n)	MAKE SURE THAT THE ROUTING OF THE WIRE IS CORRECT.	Make sure that the wiring is correctly routed.
+routine (adj)	USUAL (adj)	IF SUCH FAILURES BECOME USUAL, REPLACE THE UNIT.	If such failures become routine, replace the unit.
+ROUTING (n)	The specified direction that cables, pipes, wires, and other parts of a system must go along	DO NOT CHANGE THE ROUTING OF THE PIPE.	
+ROW (n)	A number of objects in a line	THE PANELS ARE INSTALLED IN ROWS.	
+RUB (v), RUBS, RUBBED, RUBBED	To move or cause something to move with pressure and friction along a surface	RUB THE SURFACE WITH A CLEAN CLOTH.	
+		MAKE SURE THAT THE COILS OF THE OXYGEN HOSE DO NOT RUB TOGETHER.	
+run (v)	OPERATE (v)	OPERATE THE ENGINE AT 100% THRUST.	Run the engine at 100% thrust.
+running (adj)	FLUSH (v)	FLUSH THE PIPES WITH WATER.	Clean the pipes with running water.

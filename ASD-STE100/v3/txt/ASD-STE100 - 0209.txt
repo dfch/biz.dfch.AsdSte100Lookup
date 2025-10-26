@@ -1,0 +1,15 @@
+﻿return (v)	GO (v)	THE PLUNGERS MUST GO BACK TO THE CLOSED POSITION.	Plungers must return to the closed position.
+reusable (adj)	USE (v)	YOU CAN USE THE MIXTURE AGAIN.	The mixture is reusable.
+reuse (v)	USE (v)	IF THE FABRIC IS NOT DAMAGED, USE IT AGAIN.	Reuse the fabric if it is not damaged.
+reveal (v)	SHOW (v)	IF THE FUEL SAMPLE SHOWS FREE WATER, DRAIN THE SYSTEM.	If the fuel sample reveals free water, drain the system.
+reverse (adj)	OPPOSITE (adj)	MOVE THE CONTROL IN THE OPPOSITE DIRECTION.	Move the control in the reverse direction.
+	###This word is part of a technical noun when it refers to rearward thrust.	MANUALLY TURN THE PROPELLER BLADES TO THE FULL REVERSE POSITION.	
+reverse (v)	OPPOSITE (adj)	MOVE THE ROD IN THE OPPOSITE DIRECTION.	Reverse the movement of the rod.
+review (n)	INSPECTION (n)	DO AN INSPECTION OF THE DAMAGED AREA.	Do a review of the damaged area.
+	EXAMINE (v)	EXAMINE THE DAMAGED AREA.	Do a review of the damaged area.
+rewind (v)	WIND (v)	WIND THE CABLE BACK ONTO ITS REEL.	Rewind the cable onto its reel.
+rework (v)	###Refer to technical verbs, manufacturing processes.	EXAMINE FOR SCRATCHES. THEN, LIGHTLY POLISH ALL DAMAGED AREAS.	Examine for scratches and rework all damaged areas.
+rig (v)	ADJUST (v)	ADJUST THE SYSTEM.	Rig the system.
+RIGHT (adj)	On the east side when you look north	DO A FLOW CHECK OF THE PUMP IN THE RIGHT WING TANK.	
+right-hand (adj)	RIGHT (adj)	THE FUEL CONNECTOR IS IN THE RIGHT WING.	The fuel connector is in the right-hand wing.
+RIGID (adj)	That cannot easily bend or change shape	REMOVE THE SCREWS FROM THE RIGID COVER.	

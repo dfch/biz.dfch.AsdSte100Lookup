@@ -1,0 +1,11 @@
+﻿INTERMITTENT (adj)	That stops and starts again, not continuous	THIS CAUSES INTERMITTENT OPERATION OF THE WARNING LIGHTS.	
+INTERMITTENTLY (adv)	In an intermittent manner	THE LIGHT COMES ON INTERMITTENTLY.	
+INTERNAL (adj)	Of, or on, the inner side and inner space	MAKE SURE THAT FUEL COMES OUT OF THE INTERNAL EJECTORS.	
+INTERNALLY (adv)	Of, or on, the inner side and inner space	USE A BORESCOPE TO EXAMINE THE COMBUSTOR INTERNALLY.	
+interrupt (v)	STOP (v)	DO NOT STOP THE TEST.	Do not interrupt the test.
+intersect (v)	INTERSECTION (TN)	DRILL A HOLE AT THE INTERSECTION OF THE TWO LINES.	Drill a hole where the two lines intersect.
+INTERVAL (n)	A distance or gap between two points in space or time	DO THE TEST AT FIVE-MINUTE INTERVALS.	
+INTO (prep)	1. Movement to something and access to it	IF AN OBJECT FALLS INTO THE OPENING, DAMAGE TO THE ENGINE CAN OCCUR.	
+	2. Function word that shows change, condition, result	THE PARTS OF THE STRUCTURE ARE DIVIDED INTO THREE GROUPS.	
+investigate (v)	INVESTIGATION (n)	DO AN INVESTIGATION TO FIND THE CAUSE OF THE FUEL LEAKAGE.	Investigate the cause of the fuel leakage.
+INVESTIGATION (n)	An official and accurate inquiry or research	THE TASK TEAM STARTED THE INVESTIGATION TO FIND THE CAUSE OF THE ACCIDENT.	

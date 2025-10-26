@@ -1,0 +1,12 @@
+﻿disposition (n)	LOCATION (n)	BEFORE YOU START THE ENGINE, MAKE SURE THAT THE FIRE EXTINGUISHERS ARE IN THEIR CORRECT LOCATIONS.	Check the disposition of the fire extinguishers before you start the engine.
+	POSITION (n)	MAKE SURE THAT THE POSITION OF THE SWITCHES IS CORRECT.	Ensure that the switch disposition is correct.
+disregard (v)	IGNORE (v)	DO THE GENERATOR DRIVE TEST, BUT IGNORE STEPS 16 THRU 20.	Perform the generator drive test, but disregard steps 16 thru 20.
+DISTANCE (n)	The dimension between two points or objects	MEASURE THE DISTANCE BETWEEN POINTS “A” AND “B.”	
+distinct (adj)	CLEAR (adj)	MAKE SURE THAT THE SOUND IS CLEAR.	Ensure the sound is distinct.
+distinctly (adv)	CLEARLY (adv)	ADJUST THE VOLUME UNTIL YOU HEAR THE SOUND CLEARLY.	You must adjust the volume until you hear the sound distinctly.
+distort (v)	TWIST (v)	WHEN YOU TURN THE CONNECTORS, DO NOT TWIST THE PIPE.	Do not distort the pipe when turning the connectors.
+distribute (v)	APPLY (v)	APPLY THE LOAD EQUALLY ON THE AREA.	Distribute the load evenly over the area.
+	SUPPLY (v)	THE SYSTEM SUPPLIES HYDRAULIC POWER.	The system distributes hydraulic power.
+distribution (n)	SUPPLY (n)	THE FUEL SUPPLY IS FROM THE COLLECTOR TANKS.	The fuel distribution is from the collector tanks.
+disturb (v)	MOVE (v)	WHEN YOU INSTALL THE DISTRIBUTOR, DO NOT MOVE THE TIMING.	Do not disturb the timing during the distributor installation.
+	CHANGE (v)	DO NOT CHANGE THE SEQUENCE OF THE WORK STEPS IN THE TEST.	Do not disturb the sequence of the work steps in the test.

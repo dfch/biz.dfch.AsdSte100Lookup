@@ -1,0 +1,13 @@
+﻿watch (v)	MONITOR (v)	MONITOR THE SPEED INDICATION CONTINUOUSLY UNTIL THE END OF THE TEST.	Watch the speed indication for the duration of the test.
+	LOOK (v)	LOOK FOR AIR BUBBLES.	Watch for air bubbles.
+watertight (adj)	SEAL (v)	MAKE SURE THAT THE TANK IS SEALED.	Check that the tank is watertight.
+way (n)	PROCEDURE (n)	DO NOT USE OTHER PROCEDURES TO REPLACE THE UNIT.	Do not use other ways to replace the unit.
+WE (pron)	The manufacturer, company, or organization that releases the documentation	WE DO NOT RECOMMEND OTHER ALTERNATIVES.	
+	###Do not use this pronoun for other meanings.		
+WEAK (adj) (WEAKER, WEAKEST)	With small strength, power, or concentration	USE A WEAK CLEANING SOLUTION.	
+weakness (n)	WEAK (adj)	THERE IS A WEAK POINT IN THE STRUT.	There is a point of weakness in the strut.
+WEAR (v), WEARS, WORE, WORN	To become damaged by friction	THE CABLE CAN WEAR QUICKLY IN THIS POSITION.	
+	###For other meanings, use:
+	USE (v)	DURING THE SOLDERING PROCEDURE, USE A PROTECTIVE SHIELD.	During the soldering procedure, wear a protective shield.
+	PUT ON (v)	WHEN YOU USE THE SOLVENT, PUT ON PROTECTIVE CLOTHING.	Wear protective clothing when you use the solvent.
+WEATHER (n)	Conditions of the atmosphere: temperature, moisture, winds, and clouds	STEP 2 IS APPLICABLE ONLY IF THE WEATHER IS WET.	

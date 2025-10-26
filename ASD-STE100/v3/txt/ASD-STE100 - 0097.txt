@@ -1,0 +1,11 @@
+﻿fail (v)	IF ... NOT (conj)	IF YOU DO NOT OBEY THESE INSTRUCTIONS, THERE IS A RISK OF INJURY.	If you fail to comply with these instructions, there is a risk of injury.
+	FAILURE (TN)	IF YOU DO NOTOBEY THE PROCEDURE CORRECTLY, FAILURE OF THE EMERGENCY FLOTATION GEAR CAN OCCUR.	If you do not follow the procedure correctly, the emergency flotation gear can fail.
+	UNSATISFACTORY (adj)	IF THE TEST RESULTS ARE UNSATISFACTORY, DO THE FAULT ISOLATION PROCEDURE.	If the test fails, do the fault isolation procedure.
+failed (adj)	DEFECTIVE (adj)	REPLACE THE DEFECTIVE PUMP.	Replace the failed pump.
+	UNSERVICEABLE (adj)	REPLACE THE UNSERVICEABLE VALVE.	Replace the failed valve.
+failure (n)	IF ... NOT (conj)	IF YOU DO NOT OBEY THESE INSTRUCTIONS, THERE IS A RISK OF INJURY.	Failure to comply with these instructions, will result in a risk of injury.
+	###This word when it means a performance error or loss of serviceability is a technical noun.	CONTAMINATION CAN CAUSE A FAILURE OF THE PUMP.	
+faint (adj)	DIM (adj)	IF THE LIGHT IS TOO DIM, REPLACE THE BATTERY.	If the light is faint, replace the battery.
+	INTENSITY (n)	TURN THE KNOB COUNTERCLOCKWISE TO DECREASE THE INTENSITY OF THE LIGHT.	Turn the knob anticlockwise to make the light fainter.
+	###Refer also to
+	BRIGHT (adj)

@@ -1,0 +1,11 @@
+﻿expose (v)	GET (v)	REMOVE THE COVER ASSEMBLY TO GET ACCESS TO THE LAMP ASSEMBLY.	Remove cover assembly to expose lamp assembly.
+EXTEND (v), EXTENDS, EXTENDED, EXTENDED	To increase, or cause something to increase, in dimension or range	FULLY EXTEND THE JACK RAM.	
+		MAKE SURE THAT THE RODS EXTEND AND RETRACT.	
+EXTENSION (n)	1. The action when something extends	MAKE SURE THAT THE EXTENSION OF THE ACTUATOR IS SMOOTH.	
+	2. The result when something extends	THE TOTAL EXTENSION OF THE PISTON IS 125 mm.	
+extent (n)	DEPTH (n)	MEASURE THE DEPTH OF THE CRACK.	Measure the extent of the crack.
+	LENGTH (n)	MEASURE THE LENGTH OF THE CRACK.	Measure the extent of the crack.
+	WIDTH (n)	MEASURE THE WIDTH OF THE CRACK.	Measure the extent of the crack.
+exterior (n)	EXTERNAL (adj)	EXAMINE THE EXTERNAL SURFACE OF THE CONTAINER.	Examine the exterior of the container.
+EXTERNAL (adj)	Of, or on, the outer side	CONNECT THE EXTERNAL POWER SUPPLY.	
+EXTERNALLY (adv)	Of, or on, the outer side	THE CONTROL BOX IS INSTALLED EXTERNALLY.	

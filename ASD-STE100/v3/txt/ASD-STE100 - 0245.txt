@@ -1,0 +1,11 @@
+﻿tape (v)	TAPE (TN)	ATTACH THE FOIL WITH TAPE TO KEEP IT IN POSITION.	Tape the foil in position.
+TASK (n)	Assigned work or procedure	EACH TASK HAS AN IDENTIFICATION LETTER.	
+taut (adj)	TENSION (TN)	MAKE SURE THAT THE TENSION IN THE CABLES IS CORRECT.	Make sure the cables are taut.
+tear (v)	DAMAGE (n)	BE CAREFUL THAT YOU DO NOT CAUSE DAMAGE TO THE BELLOWS.	Take care you do not tear the bellows.
+technique (n)	METHOD (n)	THIS METHOD GIVES THE BEST RESULTS.	This technique gives the best results.
+TELESCOPIC (adj)	Related to items that retract into each other	INSTALL THE TELESCOPIC LENS IN THE CAMERA.	
+TELL (v), TELLS, TOLD, TOLD	To give an order or supply information	PUT A WARNING NOTICE IN THE ENTRANCE TO TELL VISITORS ABOUT THE SAFETY PRECAUTIONS.	
+		THE COMPUTER TELLS THE TECHNICIAN THE ERROR CODE.	
+TEMPORARILY (adv)	In a temporary manner	ATTACH THE COVER TEMPORARILY.	
+TEMPORARY (adj)	For a short time only, not permanent	THIS INSTALLATION IS ONLY TEMPORARY.	
+tension (v)	TENSION (TN)	ADJUST THE TENSION IN THE CABLES TO THE CORRECT VALUE.	Tension cables to the correct value.

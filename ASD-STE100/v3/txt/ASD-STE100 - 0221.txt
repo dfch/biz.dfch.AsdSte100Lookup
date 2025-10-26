@@ -1,0 +1,12 @@
+﻿sharply (adv)	QUICKLY (adv) SUDDENLY (adv)	QUICKLY PULL THE CABLES TO DISENGAGE THEM.	Sharply pull the cables to disengage them.
+		MOVE THE CONTROL COLUMN FORWARD SUDDENLY.	Move the control column forward sharply.
+shear (v)	BREAK (v)	TIGHTEN THE NUT. CONTINUE UNTIL THE NUT BREAKS.	Tighten the nut until it shears.
+	CUT (v)	DO NOT CUT THE WIRES.	Do not shear the wires.
+SHEET (n)	A piece of material that is thin in relation to its length and width	IF THE SHEETS HAVE DENTS WITH A DEPTH OF MORE THAN 0.5 mm, REMOVE THESE DENTS.	
+shield (v)	PREVENT (v)	PUT ON GOGGLES TO PREVENT INJURY TO YOUR EYES.	Shield your eyes.
+	PROTECTION (n)	GIVE THE CONTROL UNIT PROTECTION FROM DAMAGE.	Shield the control unit from damage.
+shift (v)	MOVE (v)	MOVE THE LEVER FORWARD.	Shift the lever forward.
+SHINY (adj) (SHINIER, SHINIEST)	That can cause a reflection of light	CLEAN THE SHINY AREA OF THE OLEO STRUT.	
+SHOCK (n)	The sudden effect of energy on a person or object	SHOCKS CAN CAUSE DAMAGE TO THE GYROSCOPE.	
+SHORT (adj) (SHORTER, SHORTEST)	That has small length or duration	ATTACH THE SHORT ARM OF THE BELLCRANK TO THE ROD.	
+	###If it is possible, be accurate.	AFTER YOU STOP THE POWER SUPPLY, THE TEMPERATURE DECREASES IN A SHORT TIME. THIS TIME MUST NOT BE MORE THAN 30 SECONDS.	

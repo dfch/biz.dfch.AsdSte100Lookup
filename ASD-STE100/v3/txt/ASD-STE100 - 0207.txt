@@ -1,0 +1,14 @@
+﻿rest (v)	BE (v)	THE VEHICLE MUST BE ON ITS WHEELS.	The vehicle must rest on its wheels.
+	PUT (v)	PUT THE REMOVED PART ON A CLEAN SURFACE.	Rest the removed part on a clean surface.
+restart (v)	START (v)	START THE UNIT AGAIN.	Restart the unit.
+restore (v)	REPAIR (v)	DO NOT REPAIR THE CHROMIC ACID ANODIZING ON THE SKIN PANEL.	Do not restore the chromic acid anodizing on the skin panel.
+	PUT (v)	PUT THE PINS BACK IN THEIR LOCATION.	Restore the pins to their location.
+restrain (v)	HOLD (v)	HOLD THE HOSES IN POSITION.	Restrain the hoses in position.
+	STOP (v)	STOP THE FLUID FLOW.	Restrain all fluid flow.
+	PREVENT (v)	THE STOP PREVENTS THE MOVEMENT OF THE ROD.	The stop restrains the movement of the rod.
+	LIMIT (n)	THE VALVE KEEPS THE AIRFLOW IN LIMITS.	The valve restrains the airflow.
+restrict (v)	DECREASE (v)	THE METERING PLUG DECREASES THE FUEL FLOW.	The metering plug restricts the fuel flow.
+	PREVENT (v)	THE STOP PREVENTS THE MOVEMENT OF THE ROD.	The stop restricts the movement of the rod.
+	ONLY (adv)	USE THESE NUTS ONLY FOR THE TEST.	Restrict the use of these nuts to test only.
+	LIMIT (n)	THE VALVE KEEPS THE AIRFLOW IN LIMITS.	The valve restricts the airflow.
+RESULT (n)	Something that occurs when you do something	IF THESE TESTS DO NOT GIVE THE CORRECT RESULTS, REPLACE THE UNIT.	

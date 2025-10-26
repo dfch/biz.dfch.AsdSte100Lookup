@@ -1,0 +1,14 @@
+﻿shorten (v)	DECREASE (v)	DO NOT DECREASE THE STERILIZATION TIME.	Do not shorten the sterilization time.
+should (v)	MUST (v)	PERSONNEL MUST USE PROTECTIVE CLOTHING.	Personnel should wear protective clothing.
+	IF (conj)	IF A SYSTEM FAILURE OCCURS, STOP OPERATION IMMEDIATELY.	Should a system failure occur, stop operation immediately.
+SHOW (v), SHOWS, SHOWED, SHOWN	1. To cause to be seen	THE INDICATOR SHOWS THE LEVEL OF BATTERY CHARGE.	
+	2. To be in view or come into view	THE SYMBOL SHOWS ON THE SCREEN.	
+shut down (v)	STOP (v)	STOP THE ENGINE.	Shut down the engine.
+SIDE (n)	1. The specified surface or area of an object	LUBRICATE ONE SIDE OF THE WASHER.	
+	2. A location or direction that has a relationship to a center or a line of division	PUSH THE UNITOUT AND THEN MOVE IT TO THE LEFTSIDE.	
+sideways (adv)	SIDE (n)	PUSH THE UNITOUT AND THEN MOVE IT TO THE LEFTSIDE.	Push the unit out and then move it sideways.
+sight (n)	VIEW (n)	TURN THE KNOB TO MAKE THE DISPLAY GO OUT OF VIEW.	Turn the knob to make the display go out of sight.
+sight (v)	LOOK (v)	LOOK ALONG THE SKIN.	Sight along the skin.
+SIGN (n)	The indication of a possible condition	EXAMINE THE SURFACE FOR SIGNS OF INTERNAL DAMAGE.	
+significant (adj)	IMPORTANT (adj)	THIS PROCEDURE IS IMPORTANT FOR THE CORRECT OPERATION OF THE UNIT.	This procedure is significant for the correct operation of the unit.
+silence (v)	STOP (v)	STOP THE ALARM BELL.	Silence the alarm bell.

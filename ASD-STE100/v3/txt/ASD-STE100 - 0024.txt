@@ -1,0 +1,11 @@
+﻿AUXILIARY (adj)	1. That operates in a secondary function	LUBRICANTS FOR THE ENGINE AND THE AUXILIARY EQUIPMENT ARE THE SAME.	
+	2. That gives help	USE AUXILIARY SCREWS TO ASSEMBLE THE UNIT TEMPORARILY.	
+AVAILABLE (adj)	Prepared or supplied for you to use	IF ELECTRICAL POWER IS AVAILABLE, DO A CONTINUITY CHECK.	
+avert (v)	PREVENT (v)	IF THE MICROSWITCH BECOMES UNSERVICEABLE, DEACTIVATE THE ACTUATOR TO PREVENT DAMAGE TO THE VALVE.	If the microswitch becomes unserviceable, deactivate the actuator to avert damage to the valve.
+avoid (v)	PREVENT (v)	TURN THE CONTROLS SLOWLY TO PREVENT DAMAGE.	Turn the controls slowly to avoid damage.
+	DO NOT (v)	DO NOT PUSH ON THE SEALS.	Avoid pushing on the seals.
+aware (adj)	KNOW (v)	ALL PERSONNEL MUST KNOW THE HEALTH RISKS.	All personnel must be aware of the health risks.
+	TELL (v)	TELL ALL PERSONNEL ABOUT THE NEW RULES.	All personnel must be aware of the new rules.
+AWAY FROM (prep)	In or to a different position or direction	DO THE WORK IN AN AREA AWAY FROM EQUIPMENT OR METAL FRAME BUILDINGS.	
+AXIAL (adj)	Related to an axis	DO STEPS 1 THRU 4 TO MAKE SURE THAT NO AXIAL LOAD IS ON THE ROD.	
+AXIALLY (adv)	Related to an axis	APPLY THE LOAD AXIALLY.	

@@ -1,0 +1,13 @@
+﻿FIRE (v), FIRES, FIRED, FIRED	To ignite, or to operate items that contain an explosive material	FIRE THE CARTRIDGES.	
+		WHEN YOU PUSH THE AGENT PUSHBUTTON, THE FIRE EXTINGUISHER CARTRIDGE FIRES.	
+firmly (adv)	TIGHTLY (adv)	HOLD THE CYLINDER TIGHTLY.	Hold the cylinder firmly.
+FIRST (adv)	Before other persons or things	FILL THE INNER TANKS FIRST.	
+FIT (n)	The relation between two related parts, a limit of tolerance	YOU WILL FIND DATA ABOUT FITS AND CLEARANCES IN SECTION 9001.	
+fit (v)	INSTALL (v)	INSTALL THE DUCT.	Fit the duct.
+	ATTACH (v)	ATTACH THE PANEL TO THE STRUCTURE WITH THE BOLTS.	Fit the panel to the structure with the bolts.
+	CORRECT (adj)	MAKE SURE THAT THE REPAIR PLUG HAS THE CORRECT DIMENSIONS.	Ensure the repair plug fits.
+fix (v)	ATTACH (v)	ATTACH THE TRIM WITH DOUBLE-SIDED ADHESIVE TAPE.	Fix the trim with doublesided adhesive tape.
+	SET (v)	SET THE LENGTH OF THE CONTROL ROD AS NECESSARY.	Fix the length of the control rod as required.
+	REPAIR (v)	REPAIR ALL LOOSE OR DAMAGED UPHOLSTERY.	Fix any loose or torn upholstery.
+	INSTALL (v)	INSTALL THE RETAINER BOLTS ON THE RETAINER.	Fix the retainer bolts to the retainer.
+FLAME (n)	Burning gas	IF YOU SEE FLAMES FROM THE EXHAUST PIPE, STOP THE ENGINE.	

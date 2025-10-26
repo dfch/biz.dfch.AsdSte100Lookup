@@ -1,0 +1,9 @@
+﻿providing [that] (conj)	IF (conj)	IF A NEW PART IS INSTALLED, YOU CAN CONTINUE THE OPERATION OF THE MACHINE.	Providing that a new part is installed, you can continue the operation of the machine.
+proximity (n)	NEAR (prep)	DO NOT DO MAINTENANCE WORK NEAR AN ENGINE THAT IS IN OPERATION.	Do not do maintenance work in proximity to a running engine.
+PULL (v), PULLS, PULLED, PULLED	To use a force on something to move it toward the source of the force	PULL THE CABLE DOWN AND AWAY FROM THE BRACKET.	
+	###Use this word together with a preposition or an adverb to show direction.		
+pump (v)	REMOVE (v) (WITH A PUMP [TN])	OPEN THE VALVE. THEN, REMOVE THE OIL FROM THE TANK AN APPLICABLE PUMP.	Open the valve and then pump oil from the tank.
+	MOVE (v) (WITH A PUMP [TN])	WHEN THE VALVE IS OPEN, MOVE OIL FROM THE TANK TO THE CIRCUIT LINE WITH AN APPLICABLE PUMP.	When the valve is open, pump oil from the tank to the circuit lines.
+puncture (v)	HOLE (n)	MAKE SURE THAT YOU DO NOT MAKE A HOLE IN THE BLADDER.	Take care not to puncture the bladder.
+purge (v)	REMOVE (v)	REMOVE UNWANTED MATERIAL FROM THE SYSTEM.	Purge the system.
+purify (v)	CLEAN (v)	CLEAN THE WATER.	Purify the water.

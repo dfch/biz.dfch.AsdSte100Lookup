@@ -1,0 +1,12 @@
+﻿renew (v)	NEW (adj)	USE NEW ADHESIVE TAPE.	Renew the adhesive tape.
+renovate (v)	REPAIR (v)	REPAIR ALL WORN SURFACES.	Renovate all worn surfaces.
+	NEW (adj)	IF THE PAINT ON THE CONTROL BOX IS DAMAGED, APPLY NEW PAINT.	Renovate any damaged paint on the control box.
+repack (v)	PUT (v)	PUT THE ASSEMBLY BACK IN THE BOX.	Repack the assembly in the box.
+	FILL (v)	FILL THE HOLE WITH GREASE AGAIN.	Repack the hole with grease.
+repaint (v)	PAINT (v)	PAINT ALL THE SURFACES AGAIN.	Repaint all the surfaces.
+REPAIR (n)	The act of repairing or the result when something is repaired	AFTER THE REPAIR, APPLY A PROTECTIVE LAYER OF GREASE TO ALL EXTERNAL SURFACES.	
+REPAIR (v), REPAIRS, REPAIRED, REPAIRED	To make an item serviceable	REPAIR THE DEFECTIVE WIRING.	
+repairable (adj)	REPAIR (v)	IT IS POSSIBLE TO REPAIR THIS DAMAGE.	This damage is repairable.
+repeat (v)	AGAIN (adv)	DO STEPS (10) THRU (14) AGAIN.	Repeat steps (10) to (14).
+repeated (adj)	AGAIN AND AGAIN	IF YOU HEAR SIGNALS AGAIN AND AGAIN, DO A CHECK OF THE “AP ENGAGE” BUTTON ON THE FLIGHT MODE PANEL.	If repeated signals are heard, check the AP ENGAGE button on the flight mode panel.
+repeatedly (adv)	AGAIN AND AGAIN	IF THE VOLTAGE DECREASES AGAIN AND AGAIN, ADJUST THE VOLTAGE REGULATOR.	If voltage drops repeatedly, adjust the voltage regulator.

@@ -1,0 +1,13 @@
+﻿snap (v)	MOVE QUICKLY (v)	THE RETAINING CLIP MUST MOVE QUICKLY INTO ITS POSITION.	The retaining clip must snap into its position.
+	BREAK (v)	IF YOU BEND THIS PART TOO MUCH, IT WILL BREAK.	If you bend this part too much, it will snap.
+so [that] (conj)	UNTIL (prep)	ADJUST THE LENGTH OF THE ROD UNTIL YOU GET A MINIMUM CLEARANCE OF 0.1 in.	Adjust the length of rod so that a minimum gap of 0.1 in. is obtained.
+	PREVENT (v)	LOCK THE WHEEL TO PREVENT MOVEMENT.	Lock the wheel so that it does not move.
+SOAK (v), SOAKS, SOAKED, SOAKED	1. To put something into a liquid and keep it there until it is fully wet or soft	SOAK THE FILTER IN THE CLEANING SOLUTION FOR 4 HOURS.	
+	2. To stay in liquid until fully wet or soft.	THE COMPONENT MUST SOAK IN THE SOLUTION FOR A MINIMUM OF 2 HOURS.	
+soapy (adj)	SOAP (TN)	CLEAN THE SURFACE WITH A SOLUTION OF SOAP AND WATER.	Clean the surface using soapy water.
+SOFT (adj) (SOFTER, SOFTEST)	Flexible, not hard	RUB THE SURFACE WITH A SOFT, DRY CLOTH.	
+soften (v)	MAKE...SOFT (v)	PUT THE MATERIAL INTO THE SOLVENT TO MAKE THE COMPOUND SOFT.	Put the material into the solvent to soften the compound.
+soiled (adj)	DIRTY (adj)	DISCARD THE DIRTY RAGS.	Scrap the soiled rags.
+SOLID (adj)	That has the properties of a solid	THE RAILS ARE MADE FROM SOLID BARS.	
+SOLID (n)	Material that is not a gas or a liquid	APPLY HEAT SLOWLY TO THE SOLID TO MONITOR ITS MELTING POINT.	
+solidify (v)	SOLID (adj)	DO NOT LET THE FOAM BECOME SOLID.	Do not allow the foam to solidify.

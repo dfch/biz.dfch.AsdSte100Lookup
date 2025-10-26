@@ -1,0 +1,12 @@
+﻿similar (adj)	EQUIVALENT (adj)	USE THE SPECIFIED MATERIAL OR AN EQUIVALENT ONE.	Use the specified material or a similar one.
+	ALMOST THE SAME (adj)	THE TWO ITEMS HAVE ALMOST THE SAME SHAPE.	The two items are similar in shape.
+SIMULATE (v), SIMULATES, SIMULATED, SIMULATED	To make a condition that is the same as one that can occur in operation	SIMULATE AWHEEL SPEED OF 80 KNOTS.	
+simultaneous (adj)	AT THE SAME TIME	REMOVE THE FILTER ELEMENT AND THE FILTER HOUSING AT THE SAME TIME.	Simultaneous removal of the filter element and the filter housing is obligatory.
+simultaneously (adv)	AT THE SAME TIME	DO THESE TWO STEPS AT THE SAME TIME.	Do these two steps simultaneously.
+SINCE (conj)	Function word that shows: “from some time in the past until a later time or now”	IF IT IS MORE THAN TWO HOURS SINCE YOU MIXED THE COMPOUND, DO NOT USE IT.	
+	###For other meanings, use:
+	BECAUSE (conj)	BE CAREFUL WHEN YOU USE ALODINE, BECAUSE IT IS A DANGEROUS MATERIAL.	Since Alodine is a dangerous material, be careful when you use it.
+situated (adj)	INSTALL (v)	THE TRIM CONTROL KNOB IS INSTALLED ON THE CONTROL PEDESTAL.	The trim control knob is situated on the control pedestal.
+	BE (v)	THE TRIM CONTROL KNOB IS ON THE CONTROL PEDESTAL.	The trim control knob is situated on the control pedestal.
+situation (n)	CONDITION (n)	THE ALGORITHM ADAPTS TO THE NEW CONDITIONS.	The algorithm adapts to the new situation.
+	###Use the plural form.

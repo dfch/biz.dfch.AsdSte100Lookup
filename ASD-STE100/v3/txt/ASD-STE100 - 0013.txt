@@ -1,0 +1,11 @@
+﻿alter (v)	CHANGE (v)	IT IS POSSIBLE THAT THE INSTALLATION OF THE CONNECTOR PINS CHANGED THE ROUTING OF THE CABLE LOOM.	It is possible that the installation of the connector pins altered the routing of the cable loom.
+alteration (n)	CHANGE (v)	IF YOU CHANGE THIS REPAIR PROCEDURE, GET APPROVAL OF THE DESIGN AUTHORITY.	The alteration to this repair procedure must get approval of the Design Authority.
+alternate (adj)	ALTERNATIVE (adj)	AN ALTERNATIVE REPAIR IS AVAILABLE.	An alternate repair is available.
+	EACH SECOND (adj)	EACH SECOND SQUARE IS RED.	Alternate squares are red.
+alternate (v)	THEN (adv)	DO THE PILOTS INSTRUMENT TEST AND THEN THE COPILOT’S TEST.	Alternate between pilot’s and copilot’s instrument test.
+alternately (adv)	IN ONE ...AND THEN THE OTHER (TN)	TO MAKE PIN REMOVAL EASIER, MANUALLY TURN THE CANOPY IN ONE DIRECTION AND THEN IN THE OTHER.	To make pin removal easier, manually turn the canopy alternately in the two directions.
+ALTERNATIVE (adj)	That gives a choice	YOU CAN USE ALTERNATIVE MATERIALS.	
+ALTERNATIVE (n)	One of two or more objects or processes that have the same or almost the same properties or functions	A BIO-BASED FUEL CAN BE AN ALTERNATIVE TO FUELS JET-A1 AND JET-A.	
+alternatively (adv)	ALTERNATIVE (n)	YOU CAN DO TEST B AS AN ALTERNATIVE.	Alternatively, you can do test B.
+ALTHOUGH (conj)	In spite of the fact that	ALTHOUGH THE PRESSURE DECREASES, THE VALVE MUST STAY CLOSED.	
+ALWAYS (adv)	At all times	ALWAYS KEEP THE BRIGHTNESS CONTROL ON THE LCD DISPLAY AT MAXIMUM.	

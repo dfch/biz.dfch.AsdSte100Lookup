@@ -1,0 +1,11 @@
+﻿interference (n)	HIT (v)	IF YOU INSTALL THE UPPER DRAG STRUT WITH THE HEAD DOWN, IT WILL HIT THE LOWER DRAG STRUT DURING RETRACTION.	Placing the upper drag strut upside down causes interference with the lower drag strut.
+	CATCH (v)	MAKE SURE THAT THE RODS CANNOT CATCH ON THE FLAPS.	Make sure that there is no interference between the rods and the flaps.
+	TOUCH (v)	MAKE SURE THAT THE LOCKING WIRE DOES NOT TOUCH THE LEVER.	Ensure that there is no interference between the locking wire and the lever.
+		MAKE SURE THAT YOU DO NOT HEAR INTERFERENCE IN THE 400 Hz BAND.	
+		INTERFERENCE BOLTS ATTACH THE STRAP AND THE BOTTOM SKIN PANEL TO THE TRIFORM MEMBER.	
+	###This word can be a technical noun or part of a technical noun.	
+interior (n)	INTERNALLY (adv)	EXAMINE THE TANK INTERNALLY.	Examine the interior of the tank.
+	INTERNAL (adj)	APPLY A SMALL QUANTITY OF LUBRICANT TO THE INTERNAL SIDE OF THE VALVE HOUSING.	Apply a small quantity of lubricant to the interior of the valve housing.
+intermediate (adj)	MIDDLE (adj)	PUT THE LEVER IN THE MIDDLE POSITION.	Put the lever in intermediate position.
+	BETWEEN (prep) 	WHEN THE INPUT LEVER IS BETWEEN 5 AND 10 mm, MEASURE THE PISTON EXTENSION.	When the input lever is in an intermediate position, measure the piston extension.
+	###Give the limits.

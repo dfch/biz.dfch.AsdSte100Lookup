@@ -1,0 +1,12 @@
+﻿increase (n)	INCREASE (v)	THE TEMPERATURE MUST INCREASE.	There must be an increase in temperature.
+INCREASE (v), INCREASES, INCREASED, INCREASED	To make or become larger or higher in value	INCREASE THE VANE ANGLE TO 90 DEGREES.	
+		MAKE SURE THAT THE TEMPERATURE INCREASES TO 30 °C.	
+INCREMENT (n)	One of a sequence of regular operations done one after the other, to increase or decrease an adjustable quantity	ADJUST THE STOP BOLT IN INCREMENTS OF 5 mm.	
+incur (v)	CAUSE (v)	REMOVAL OF THE UNIT BEFORE 24 HOURS CAN CAUSE DAMAGE.	Removal of the unit before 24 hours can incur damage.
+independent (adj)	INDEPENDENTLY (adv)	THIS UNIT OPERATES INDEPENDENTLY.	The operation of this unit is independent.
+INDEPENDENTLY (adv)	Without a relation with	THE EMERGENCY SYSTEM IS CONTROLLED INDEPENDENTLY.	
+indicate (v)	SHOW (v)	THE POINTER SHOWS ZERO FEET.	The pointer indicates zero feet.
+	IDENTIFY (v)	A 406 MHz DIGITAL SIGNAL IDENTIFIES THE EMERGENCY LOCATOR TRANSMITTER AND ITS LOCATION.	A 406 MHz digital signal indicates the emergency locator transmitter and its location.
+	SPECIFIED (adj)	IF TOLERANCES ARE NOT SPECIFIED, REFER TO GENERAL TOLERANCE VALUES.	If tolerances are not indicated, refer to general tolerance values.
+INDICATION (n)	Something that is shown	MAKE SURE THAT THE INDICATION IS CORRECT.	
+induce (v)	CAUSE (v)	SCRATCHES IN THE WINDSCREEN CAN CAUSE CRACKS.	Scratches in the windscreen may induce cracks.

@@ -1,0 +1,11 @@
+﻿any (adj)	###Frequently, an alternative for this word is not necessary.	IF YOU HAVE QUESTIONS ABOUT THIS DOCUMENT, SEND AN E-MAIL TO THE ADDRESS THAT FOLLOWS:	If you have any questions about this document, send an e-mail to the address that follows:
+any (pron)	ONE (TN)	REMOVE ONE OF THE FOUR BOLTS.	Remove any of the four bolts.
+anytime (adv)	WHEN (conj)	WHEN YOU USE THE EMERGENCY PUMP, RECORD THE TIME OF OPERATION.	Anytime you use the emergency pump, record the time of operation.
+APART (adv)	At a distance (not specified) from	MOVE THE CABLE STRANDS APART.	
+aperture (n)	OPENING (n)	GET ACCESS TO THE CONTROL UNIT THROUGH THE OPENING IN THE SIDE OF THE TANK.	Get access to the control unit through the aperture in the side of the tank.
+apparent (adj)	SEE (v)	IF YOU SEE DISCOLORATION, REPLACE THE PART.	If discoloration is apparent, replace the part.
+	FIND (v)	IF YOU FIND A CRACK, DO THE APPLICABLE REPAIR PROCEDURE.	If a crack is apparent, do the applicable repair procedure.
+appear (v)	SHOW (v)	A WARNING FLAG SHOWS IN THE WINDOW.	A warning flag appears in the window.
+	VIEW (n)	WHEN YOU PULL THE LOWER BEARING DOWN, THE LOWER SEAL COMES INTO VIEW.	The lower seal appears when you pull the lower bearing down.
+	THINK (v)	IF YOU THINK THAT THE ENGINE IS TOO HOT, TURN THE SWITCH TO “OFF.”	If the engine appears to be too hot, turn the switch to off.
+	POSSIBLE (adj)	IF IT IS POSSIBLE THAT THE TEMPERATURE VALUES ARE INCORRECT, DECREASE THE POWER.	If it appears that the temperature values are incorrect, decrease the power.

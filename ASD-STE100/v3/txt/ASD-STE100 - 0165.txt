@@ -1,0 +1,8 @@
+﻿nor (conj)	NOT (adv)	IN THESE CONDITIONS, THE MECHANICAL AND ELECTRICAL PITCH TRIM SYSTEMS WILL NOT OPERATE.	In these conditions, neither the mechanical nor the electrical pitch trim systems will operate.
+normal (adj)	USUAL (adj)	THE “ARMED” POSITION IS THE USUAL POSITION OF THE SWITCH.	The ARMED position is the normal position of the switch.
+	CORRECT (adj)	THE CORRECT PRESSURE FOR OPERATION IS 3000 psi.	Normal operating pressure is 3000 psi.
+normally (adv)	USUALLY (adv)	THE SWITCH IS USUALLY IN THE “STANDBY” POSITION.	The switch is normally in the STANDBY position.
+	CORRECTLY (adv)	IF THE SYSTEM DOES NOT OPERATE CORRECTLY, REFER TO THE FAULT ISOLATION PROCEDURE.	If the system does not operate normally, refer to the fault isolation procedure.
+NOSE (n)	The front end or part, a part that protrudes	PULL THE TRANSPARENT PLASTIC COLLAR AWAY FROM THE NOSE OF THE ELECTRICAL LATCH.	
+NOT (adv)	Adverb of negation	DO NOT LET THE PRESSURE INCREASE TO MORE THAN 3000 psi.	
+NOTCH (n)	An area in the shape of a “V”	MAKE SURE THAT THE BOGIE ROLLERS ARE ALIGNED WITH THE NOTCHES IN THE TRACK.	

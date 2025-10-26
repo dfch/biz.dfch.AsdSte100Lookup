@@ -1,0 +1,13 @@
+﻿TACKY (adj)	Sticky when you touch it	WHEN THE COMPOUND IS TACKY, APPLY THE PATCH.	
+	###No other forms of this adjective
+TAG (v), TAGS, TAGGED, TAGGED	To put a tag on	OPEN AND TAG THE CIRCUIT BREAKERS. THEN, SAFETY THEM.	
+take (v)	REMOVE (v)	REMOVE THE FILTER FROM THE SOLVENT.	Take the filter from the solvent.
+	READ (v)	BEFORE YOU READ THE INDICATIONS, LET THE DIAL BECOME STABLE.	Let the dial become stable before taking readings.
+	GET (v)	GET A SAMPLE OF THE SOLUTION.	Take a sample of the solution.
+	NECESSARY (adj)	TWO HOURS ARE NECESSARY TO COMPLETE THE PROCEDURE.	The procedure takes 2 hours to complete.
+take care (v)	MAKE SURE (v)	DURING THIS STEP, MAKE SURE THAT YOU DO NOT CAUSE DAMAGE TO THE SURFACE.	During this step, take care not to cause damage to the surface.
+	OBEY (v)	WHEN YOU DO WORK WITH HIGH VOLTAGES, OBEY THE SAFETY PRECAUTIONS.	You must take care when you work with high voltages.
+	DO NOT (v)	DO NOT INTERCHANGE THE TWO UNITS.	Take care not to interchange the two units.
+	CAREFUL (adj)	BE CAREFUL WHEN YOU INSTALL THE ELECTRONIC BOARD.	Take care when installing the electronic board.
+talk (v)	SPEAK (v)	SPEAK INTO THE MICROPHONE.	Talk into the microphone.
+TAP (v), TAPS, TAPPED, TAPPED	To hit lightly and quickly	TAP THE BOLT WITH A MALLET.	

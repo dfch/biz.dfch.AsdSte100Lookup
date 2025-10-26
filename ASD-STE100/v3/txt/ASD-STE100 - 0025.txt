@@ -1,0 +1,10 @@
+﻿back (adj)	REAR (adj)	DISCONNECT THE CABLE FROM THE REAR SIDE OF THE INSTRUMENT.	Disconnect the cable from the back side of the instrument.
+BACK (adv)	To an initial condition	MOVE THE ENGINE THROTTLE BACK TO 60% RPM.	
+back (n)	REAR (n)	THE CONTROL UNIT IS AT THE REAR.	The control unit is at the back.
+back and forth (adv)	DIRECTION (n)	MOVE THE SLEEVE IN THE PISTON TO ONE DIRECTION AND THEN BACK AGAIN.	Move the sleeve back and forth in the piston.
+back off (v)	LOOSEN (v)	DO NOT LOOSEN THE NUT TO ALIGN IT.	Do not back off the nut to obtain alignment.
+backup (n)	EMERGENCY (n)	IN AN EMERGENCY, THE ONE-SHOT BATTERY SUPPLIES DC POWER.	The one-shot battery is a backup for the DC electrical supply.
+	AUXILIARY (adj)	USE AUXILIARY SCREWS TO ASSEMBLE THE UNIT TEMPORARILY.	Use some screws as a backup to assemble the unit temporarily.
+backward (adv)	REARWARD (adv)	MOVE THE LEVER REARWARD.	Move the lever backward.
+BAD (adj) (WORSE, WORST)	Not satisfactory	REFER TO CHAPTER 6 FOR INSTRUCTIONS ABOUT HOW TO PARK IN BAD WEATHER CONDITIONS.	
+	###Do not use this word if more accurate and clear words are available.	IF THE LENGTH OF THE CRACK IS MORE THAN THE PERMITTED LIMIT, REPLACE THE PART.	If the crack is bad, replace the part.

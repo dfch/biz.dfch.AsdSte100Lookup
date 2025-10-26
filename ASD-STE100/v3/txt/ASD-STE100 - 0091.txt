@@ -1,0 +1,12 @@
+﻿excessive (adj)	TOO MUCH (adj)	TOO MUCH FORCE CAN CAUSE DAMAGE TO THE SEAL.	Excessive force can damage the seal.
+	MORE THAN (adj)	IF THE PRESSURE IS MORE THAN 1000 kPa, STOP THE TEST.	If the pressure is excessive, stop the test.
+excessively (adv)	TOO MUCH (adj)	BE CAREFUL NOT TO TURN THE INNER RACES TOO MUCH.	Be careful not to excessively rotate the inner races.
+	MORE THAN (adj)	IF THE OIL LEAKAGE IS MORE THAN FIVE DROPS A MINUTE, REJECT THE UNIT.	If oil leaks excessively, reject the unit.
+exchange (v)	INTERCHANGE (v)	INTERCHANGE THE No. 1 AND No. 2 COMPUTERS. THEN DO THE TEST AGAIN.	Exchange the No. 1 and No. 2 computers. Then do the test again.
+	REPLACE (v)	REPLACE THE O-RINGS.	Exchange the O-rings.
+exclude (v)	NOT INCLUDE	THIS PROCEDURE DOES NOT INCLUDE THE REMOVAL OF THE PISTON.	This procedure excludes the removal of the piston.
+	NOT USE	DO NOT USE OXYGEN.	Exclude the use of oxygen.
+excluding (prep)	WITHOUT (prep)	THE WEIGHT OF THE UNIT, WITHOUT THE MOTOR, IS 10 kg.	The weight of the unit, excluding the motor, is 10 kg.
+execute (v)	DO (v)	DO THESE STEPS.	Execute the following operations.
+exempt (adj)	NO (adj)	MAKE SURE THAT THERE ARE NO METAL PARTICLES IN THE OIL.	Ensure the oil is exempt from metal particles.
+	NOT SHOW (v)	MAKE SURE THAT THE SEALS DO NOT SHOW SIGNS OF DETERIORATION.	Ensure the seals are exempt from signs of deterioration.

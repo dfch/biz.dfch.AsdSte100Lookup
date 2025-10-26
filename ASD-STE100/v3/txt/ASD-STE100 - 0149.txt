@@ -1,0 +1,12 @@
+﻿little (adj)	SMALL (adj)	THE DIAMETER OF THE TUBE IS TOO SMALL.	The diameter of the tube is too little.
+	SHORT (adj)	INSTALL A SHORT LENGTH OF NEW TUBE.	Install a little length of new tube.
+	NOT SUFFICIENT (adj)	IF THE PRESSURE IS NOT SUFFICIENT, THE TEST WILL STOP.	If the pressure is too little, the test will stop.
+little [a little] (adj)	SMALL QUANTITY (n)	ADD A SMALL QUANTITY OF DISINFECTANT TO THE SOLUTION.	Add a little disinfectant to the solution.
+little [a little] (adv)	SMALL (adj)	AFTER YOU REMOVE THE NUT, THE RIB CAN MOVE DOWN A SMALL DISTANCE.	After you remove the nut, the rib can move down a little.
+LIVE (adj)	That includes explosive material	SOME MAINTENANCE TASKS ARE NOT PERMITTED ON AIRCRAFT THAT HAVE LIVE AMMUNITION.	
+	###For electrical systems, use:
+	ENERGIZE (v)	THE SYSTEM IS ENERGIZED.	The system has live electrical power.
+load (v)	INSTALL (v)	INSTALL THE SPRING IN THE CARTRIDGE.	Load the spring in the cartridge.
+	LOAD (TN)	PUT THE LOAD ON THE SPRING BALANCE.	Load the spring balance.
+LOCAL (adj)	Applicable to a given location or position	SET THE “LAT” KNOB TO THE LOCAL LATITUDE.	
+LOCALLY (adv)	Applicable to a given location or position	YOU CAN ALSO DO THIS TEST WITH A LOCALLY MADE TOOL.	

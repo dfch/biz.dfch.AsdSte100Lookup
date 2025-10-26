@@ -1,0 +1,11 @@
+﻿drop (v)	FALL (v)	PARTICLES THAT FALL INTO THE INTAKE CAN CAUSE DAMAGE.	Particles that drop into the intake may cause damage.
+	DECREASE (v)	THE PRESSURE DECREASES WHILE THE TIRES BECOME COOL.	The pressure drops as the tires cool.
+DRY (adj)	Without liquid or (DRIER,	moisture DRIEST)	MAKE SURE THAT THE SURFACE IS DRY.
+DRY (v), DRIES, DRIED	To remove liquid or moisture, or to become dry	DRY THE FILTER IN AN OVEN. LET THE PAINT DRY AT THE AMBIENT TEMPERATURE.
+due to (prep)	BECAUSE OF (prep)	BECAUSE OF THE SMALL DIAMETER OF THE HOLE, THE FLOW IS LOW.	Due to the small diameter of the hole, the flow is low.
+BECAUSE (conj)	THE SHAFT MOVED BECAUSE THE ACTUATOR OPERATED.	The shaft moved due to the actuator action.
+dull (adj)	DIM (adj)	THE LAMP COMES ON WITH A DIM LIGHT.	The lamp comes on with a dull light.
+MATT (adj)	THE LETTERS WILL BE MATT BLACK ON WHITE.	The letters will be dull black on a white background.
+duration (n)	DURING (prep)	DO NOT MAKE ADJUSTMENTS DURING THIS TEST.	Do not make adjustments for the duration of this test.
+DURING (prep)	In or for a specified time	MONITOR THE INDICATIONS DURING THE RETRACTION TEST.
+dust (v)	APPLY (v)	APPLY TALCUM POWDER TO THE AREA.	Dust the area withtalcum powder.

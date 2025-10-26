@@ -1,0 +1,12 @@
+﻿TOGETHER (adv)	In one group or position	USE TAPE TO ATTACH THE CABLES TOGETHER.
+	###For other meanings, use:			
+	AT THE SAME TIME (prep)	DISASSEMBLE THE BYPASS VALVE AND THE DUMP VALVE AT THE SAME TIME.	Disassemble the bypass valve and the dump valve together.
+TOLERANCE (n)	A permitted difference from a standard	THE TOLERANCE IS PLUS OR MINUS 0.2 mm.	
+TOO (adv)	More than is necessary or correct	MAKE SURE THAT THE TEMPERATURE IS NOT TOO HIGH.	
+TOOL (n)	An object used to make or do something	REMOVE ALL TOOLS AND EQUIPMENT.	
+TOP (adj)	That is uppermost	A NUMBER IN THE TOP LEFT CORNER OF THE DISPLAY REFERS TO A RELATED PAGE.	
+TOP (n)	The uppermost position	THE VERTICAL STABILIZER IS INSTALLED ON THE TOP OF THE FUSELAGE TAIL SECTION.	
+top off (v)	FILL (v)	FILL THE HYDRAULIC SYSTEM AS NECESSARY.	Top off the hydraulic system as necessary.
+	ADD (v)	ADD FLUID TO THE HYDRAULIC RESERVOIR AS NECESSARY.	Top off the hydraulic reservoir as necessary.
+TORQUE (v), TORQUES, TORQUED, TORQUED	To tighten to a specified torque	TORQUE THE PLUG TO 6 Nm.	
+TOTAL (adj)	All of	THE TOTAL QUANTITY OF FUEL IN THE CENTER TANK IS 5000 lb.	

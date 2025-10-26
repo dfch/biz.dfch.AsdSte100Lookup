@@ -1,0 +1,11 @@
+﻿develop (v)	START (v)	IF A FIRE STARTS, OPERATE THE FIRE SHUTOFF VALVE.	If a fire develops, operate the fire shutoff valve.
+	CAUSE (v)	DO NOT LET HYDRAULIC FLUID STAY ON YOUR SKIN. HYDRAULIC FLUID CAN CAUSE DERMATITIS.	Do not leave hydraulic fluid on your skin, as dermatitis could develop.
+deviate (v)	OBEY (v)	PERSONNEL MUST OBEY THIS PROCEDURE.	Personnel must not deviate from this procedure.
+DEVICE (n)	Something used to do a task	INSTALL THE SAFETY DEVICES.	
+devise (v)	MAKE (v)	IF THE HOLDING FIXTURE IS NOT AVAILABLE, MAKE A SUPPORT FROM THE SHIPPING CONTAINER.	If the holding fixture is not available, devise one from the shipping container.
+	FIND (v)	FIND NEW TROUBLESHOOTING PROCEDURES.	Devise new troubleshooting procedures.
+diagnose (v)	FIND (v)	FIND THE CAUSE OF THE MALFUNCTION.	Diagnose the cause of the malfunction.
+DIAGONALLY (adv)	In a diagonal direction	APPLY THE FIRST LAYER OF TAPE ACROSS THE CUTOUT AND THE SECOND AND THIRD LAYERS DIAGONALLY.	
+diametrically (adv)	OPPOSITE (adj)	MAKE SURE THAT THE TWO OPPOSITE V-GROOVES ALIGN WITH THE RAILS.	Ensure the two diametrically opposed V-grooves are in line with the rails.
+differ (v)	DIFFERENT (adj)	IF THE VALUES ARE DIFFERENT, DO THIS TEST.	If the values differ, do the following test.
+DIFFERENCE (n)	That which is different between two quantities, numbers, or functions	THE DIFFERENCE BETWEEN THE TWO DIMENSIONS MUST NOT BE MORE THAN 0.10 mm.	

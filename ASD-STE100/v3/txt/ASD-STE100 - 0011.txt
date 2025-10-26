@@ -1,0 +1,11 @@
+﻿AGREE (v), AGREES, AGREED, AGREED	To be consistent with	THE INDICATIONS MUST AGREE WITH THE VALUES IN TABLE 1001.	
+ahead (adv)	FORWARD (adv)	WHEN YOU INSTALL THE ANTENNA, THE ALIGNMENT ARROW MUST POINT FORWARD.	When you install the antenna, the alignment arrow must point ahead.
+AID (n)	Help that is given	IF YOU GET THIS CHEMICAL SOLUTION INTO YOUR EYES, GET MEDICAL AID IMMEDIATELY.	
+aid (v)	HELP (v)	APPLY SAND TO THE PLANKS TO HELP WITH TIRE TRACTION.	Apply sand to the planks to aid tire traction.
+aim (v)	POINT (v)	DO NOT POINT THE HOSE AT PERSONS.	Do not aim the hose at persons.
+AIRBORNE (adj)	In, or used in, flight	POSITION 2 OF THE SWITCH GIVES A SIGNAL OF THE AIRCRAFT AIRBORNE CONDITION.	
+air-dry (v)	DRY (v)	DRY THE FILTER IN THE AIR.	Air-dry the filter.
+AIRFLOW (n)	A flow of air	MAKE SURE THAT THE AIRFLOW IS NOT MORE THAN 10 LITERS/MINUTE.	
+alert (v)	TELL (v)	TELL ALL PERSONS TO GO AWAY FROM THE AREA.	Alert all persons to go away from the area.
+ALIGN (v), ALIGNS, ALIGNED, ALIGNED	To put or come into a specified position in relation to a line	ALIGN THE FLANGE HOLES WITH THE STUDS.	
+		ALL THREE BRACKET HOLES MUST ALIGN WITH THE FUEL TUBE.	

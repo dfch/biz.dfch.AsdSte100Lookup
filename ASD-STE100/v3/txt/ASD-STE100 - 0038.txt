@@ -1,0 +1,12 @@
+﻿CATCH (v), CATCHES, CAUGHT, CAUGHT	To stop or prevent the movement of something	THE LUG ON THE PANEL OPENING CATCHES THE BOTTOM OF THE DRAWER.	
+		DO NOT LET THE TOOL CATCH ON THE PANEL.	
+	###For other meanings, use:
+	COLLECT (v)	COLLECT THE LEAKAGE IN A GRADUATED BEAKER.	Catch the leakage in a graduated beaker.
+categorize (v)	CATEGORY (TN)	THE TESTING EQUIPMENT DIVIDES THE FAULTS INTO CATEGORIES.	The testing equipment categorizes the faults.
+CAUSE (n)	Something that brings about a result	DO THE TROUBLESHOOTING PROCEDURE TO FIND THE CAUSE OF THE MALFUNCTION.	
+CAUSE (v), CAUSES, CAUSED, CAUSED	To be the cause of	METAL OBJECTS CAN CAUSE MAGNETIC INTERFERENCE.	
+caution (v)	TELL (v)	TELL ALL PERSONNEL NOT TO SMOKE NEAR FUEL TANKS.	Caution all personnel not to smoke near fuel tanks.
+cautiously (adv)	CAREFULLY (adv)	CAREFULLY FEEL THE HEATER WITH YOUR HANDS TO MAKE SURE THAT IT OPERATES.	Cautiously feel the heater with your hands to make sure that it operates.
+cavity (n)	HOLE (n)	FILL THE HOLE WITH RESIN.	Fill the cavity with resin.
+	SPACE (n)	FILL THE SPACE BETWEEN THE PATCH AND THE ADJACENT STRUCTURE WITH SEALANT.	Fill the cavity between the patch and the adjacent structure with sealant.
+cease (v)	STOP (v)	THE WARNING STOPS AT 17 DEG.	The warning ceases at 17 deg.

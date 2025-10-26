@@ -1,0 +1,12 @@
+﻿communicate (v)	CONTACT (v)	FOR MORE INFORMATION, CONTACT THE MANUFACTURER.	For more information, communicate with the manufacturer.
+	SPEAK (v)	USE A TELEPHONE TO SPEAK WITH THE LINE MANAGER.	Use a telephone to communicate with the line manager.
+	HEAR (v)	MAKE SURE THAT AIR TRAFFIC CONTROL CAN HEAR YOU.	Make sure that you communicate with ATC.
+	COMMUNICATION (n)	MAKE SURE THAT THERE IS COMMUNICATION BETWEEN THE SERVER AND THE PC.	Make sure that the server and the PC can communicate.
+COMMUNICATION (n)	The exchange of information through a common system of symbols, signs, or sounds	COMMUNICATION BETWEEN THESE TWO SYSTEMS IS ENCRYPTED.	
+COMPARE (v), COMPARES, COMPARED, COMPARED	To examine for differences	COMPARE THE TWO VALUES.	
+comparison (n)	COMPARE (v)	COMPARE THE TWO INDICATIONS.	Make a comparison of the two readings.
+COMPATIBLE (adj)	That can operate together satisfactorily or be used together safely	THIS SOFTWARE IS COMPATIBLE ONLY WITH THE SPECIFIED OPERATING SYSTEM.	
+		THE COOLANT IS COMPATIBLE WITH HIGH-PERFORMANCE ALLOYS.	
+compile (v)	MAKE A LIST (v)	MAKE A LIST OF THE NECESSARY TOOLS.	Compile a list of the required tools.
+	RECORD (v)	RECORD THE AILERON MOVEMENTS ON FORM B.	Compile the aileron movements on Form B.
+	COLLECT (v)	COLLECT ALL INSPECTION RECORDS FOR THE COMPONENT.	Compile all inspection records for the component.

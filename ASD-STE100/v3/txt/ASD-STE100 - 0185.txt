@@ -1,0 +1,12 @@
+﻿PREPARE (v), PREPARES, PREPARED, PREPARED	To make or become ready	PREPARE THE TUBE FOR THE LEAK TEST.
+		PREPARE FOR THE ELECTRICAL BONDING PROCEDURE.
+prescribed (adj)	SPECIFIED (adj)	FILL THE CONTAINER WITH THE SPECIFIED COOLANT FLUID.	Fill the container with the prescribed coolant fluid.
+presence (n)	BE (v)	THIS INSPECTION IS NECESSARY WHEN THERE ARE DEFECTS.	This inspection is necessary in the presence of defects.
+present (adj)	BE (v)	IF THERE IS A VOLTAGE AT PIN C OF CONNECTOR F7, THE UNIT IS UNSERVICEABLE.	If a voltage is present at pin C of connector F7, the unit is faulty.
+present (v)	GIVE (v)	THIS SECTION GIVES THE APPLICABLE TORQUE VALUES.	The applicable torque values are presented in this section.
+	SHOW (v)	THE TABLE THAT FOLLOWS SHOWS THE RESULTS OF THE SURVEY.	The results of the survey are presented in the following table.
+preserve (v)	PRESERVATION (TN)	THIS PROCEDURE IS FOR THE PRESERVATION OF STEEL CABLES.	This procedure will preserve the steel cables.
+preset (v)	SET (v)	SET THE TENSION INDICATOR TO ZERO.	Preset the tension indicator to zero.
+press (v)	PUSH (v)	PUSH AND HOLD THE TEST TEST BUTTON.	Press and hold the button.
+PRESSURIZATION (n)	The procedure that supplies or increases the pressure	CONTINUE THE PRESSURIZATION FOR 10 MINUTES.
+PRESSURIZE (v), PRESSURIZES, PRESSURIZED, PRESSURIZED	To supply pressure	PRESSURIZE THE CHAMBER TO 150 psi.

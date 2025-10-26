@@ -1,0 +1,13 @@
+﻿leak (v)	LEAK (n)	IF THERE ARE LEAKS IN THE SYSTEM, REPAIR THEM.	If the system is leaking, repair it.
+LEAKAGE (n)	The quantity of material that goes through a leak	MEASURE THE LEAKAGE FROM THE OUTLET PORT.	
+least (adv)	MINIMUM (adj)	REPAIR THE AREA WITH THE MINIMUM DAMAGE FIRST.	Repair the least damaged area first.
+least [at least] (adv)	MINIMUM (adj)	THE MINIMUM TIME BETWEEN CHECKS IS TWO MINUTES.	The time between checks is at least two minutes.
+	MINIMUM (n)	DO STEPS 13 THRU 16 FOR A MINIMUM OF THREE TIMES.	Do steps 13 thru 16 at least three times.
+leave (v)	KEEP (v)	KEEP THE VENT VALVES OPEN.	Leave the vent valves open.
+	LET .... STAY (v)	LET THE VENT VALVES STAY OPEN.	Leave the vent valves open.
+	GO (v)	IF FUEL SPILLS ON THE GROUND, IMMEDIATELY GO TO A SAFE AREA.	If fuel spills on the ground, immediately leave the contaminated area.
+LEFT (adj)	On the west side when you look north	INSTALL THE CONTROL PANEL IN THE LEFT CONSOLE.	
+left-hand (adj)	LEFT (adj)	SET THE LEFT SWITCH TO “ON.”	Set the left-hand switch to ON.
+legible (adj)	READ (v)	MAKE SURE THAT YOU CAN READ THE IDENTIFICATION PLATES.	Make certain that the identification plates are legible.
+LENGTH (n)	1. The distance from one end to the other end	MEASURE THE LENGTH OF THE JACK RAM.	
+	2. The longer or longest of the three dimensions of an object	THE DIMENSIONS OF THE UNIT ARE: - LENGTH 300 mm -WIDTH	90	mm -THICKNESS 60 mm.	

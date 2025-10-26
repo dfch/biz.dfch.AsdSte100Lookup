@@ -1,0 +1,11 @@
+﻿PROCEDURE (n)	Steps that are in a sequence	THIS SECTION GIVES THE PROCEDURE TO DISASSEMBLE THE COMPONENT FULLY.	
+proceed (v)	CONTINUE (v)	CONTINUE WITH THE ELECTRICAL TEST.	Proceed with the electrical test.
+process [in the process of] (prep)	DURING (prep)	DURING THIS REPAIR, APPLY SUFFICIENT HEAT TO THE UNIT.	Apply sufficient heat to the unit in the process of doing this repair.
+	WHILE (conj)	WHILE YOU DO THIS REPAIR, APPLY SUFFICIENT HEAT TO THE UNIT.	Apply sufficient heat to the unit in the process of doing this repair.
+process (n)	PROCEDURE (n)	THESE TWO ASSEMBLY PROCEDURES ARE ALMOST THE SAME.	These two assembly processes are almost the same.
+	###This word is a technical noun when it means a sequence of changes that occur and cause a result.	CORROSION IS AN ELECTROLYTIC PROCESS.	
+process (v)	DO THE ... PROCEDURE (n)	PUT THE PARTS IN AN ELECTROLYTIC BATH. THEN, DO THE ELECTROPLATING PROCEDURE.	Process the parts in an electrolytic bath.
+produce (v)	CAUSE (v)	ELECTRICAL EQUIPMENT CAN CAUSE INTERFERENCE IN COMMUNICATION.	Electrical equipment can produce interference in communication.
+	GIVE (v)	A DILUTED SOLUTION WILL NOT GIVE YOU THE CORRECT RESULTS.	A diluted solution does not produce the correct results.
+	MAKE (v)	WHEN THE LEVER ENGAGES, IT MAKES A CLICK	The lever produces a click when engaged.
+	SUPPLY (v)	THE POWER UNIT SUPPLIES THE SYSTEM WITH A VOLTAGE OF 28 V DC.	The power unit produces a voltage of 28 V DC.

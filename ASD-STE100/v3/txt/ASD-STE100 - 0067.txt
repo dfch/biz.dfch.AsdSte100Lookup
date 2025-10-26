@@ -1,0 +1,9 @@
+﻿detect (v)	FIND (v)	TO FIND DAMAGE ON WIRES, RUB A CLOTH ALONG THEM.	To detect damage to wires, rub a cloth along them.
+	SENSE (v)	THE COMPUTER SENSES THE DIFFERENCES BETWEEN THE SIGNALS.	The computer detects discrepancies between the signals.
+DETERIORATION (n)	A worse condition	THIS CONDITION WILL CAUSE DETERIORATION OF THE SURFACE.	
+determine (v)	FIND (v)	FIND THE DEFECTS IN THE SYSTEM.	Determine the defects in the system.
+	GIVE (v)	DIMENSIONS 1 AND 2 GIVE THE CORRECT POSITION.	The correct position is determined by dimensions 1 and 2.
+	SELECT (v)	SELECT THE HYDRAULIC SYSTEM THAT YOU WILL PRESSURIZE.	Determine which hydraulic system you will pressurize.
+	CALCULATE (v)	CALCULATE THE DIMENSION OF THE SHIM WITH THIS FORMULA:	Determine the dimension of the shim with this formula:
+detrimental (adj)	DANGEROUS (adj)	HYDRAULIC FLUID IS DANGEROUS FOR YOUR HEALTH.	Hydraulic fluid is detrimental to health.
+	DAMAGE (n)	SMALL QUANTITIES OF SURFACE BLOOMING, WHICH CAN OCCUR ON ITEMS IN STORAGE, DO NOT CAUSE DAMAGE TO THE COMPONENT.	Light surface blooming, which can occur on items in storage, is not detrimental to the component.

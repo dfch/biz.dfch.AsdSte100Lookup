@@ -1,0 +1,11 @@
+﻿real (adj)	AGREE (v)	MAKE SURE THAT THE INDICATION ON THE GAUGE AGREES WITH THE QUANTITY OF FUEL THAT IS IN THE TANK.	Make sure that the gauge shows the real quantity of fuel that is in the tank.
+REAR (adj)	Away from the person who looks or from a reference point	INSTALL THE TWO BOLTS IN THE REAR FITTINGS.	
+REAR (n)	The rear part or rear surface	THE CIRCUIT BREAKERS ARE INSTALLED ON THE REAR OF THE UNIT.	
+rear of (prep)	AFT OF (prep)	THE PUMP IS INSTALLED ON RIB 3, AFT OF THE FRONT SPAR.	The pump is located on rib 3, rear of the front spar.
+	BEHIND (prep)	THE PUMP IS INSTALLED ON RIB 3, BEHIND THE FRONT SPAR.	The pump is located on rib 3, rear of the front spar.
+rearmost (adj)	REAR (n)	YOU CANNOT REMOVE THE HALF CLAMP NEAREST TO THE REAR.	The rearmost half clamp is not removable.
+REARWARD (adv)	In the direction of the rear	PULL THE LEVER REARWARD.	
+reason (n)	CAUSE (n)	FIND THE CAUSE OF THE INCORRECT INDICATION.	Find the reason for the wrong indication.
+	BECAUSE OF (prep)	BECAUSE OF THE POSSIBLE EFFECTS ON YOUR HEALTH, USE ONLY POTABLE WATER.	For health reasons, only use potable water.
+reassemble (v)	ASSEMBLE (v)	ASSEMBLE THE ACTUATOR AGAIN.	Reassemble the actuator.
+rebuild (v)	ASSEMBLE (v)	ASSEMBLE THE UNIT AGAIN.	Rebuild the unit.

@@ -1,0 +1,13 @@
+﻿EXTINGUISH (v), EXTINGUISHES, EXTINGUISHED, EXTINGUISHED	To stop burning	TO EXTINGUISH A FIRE IN THE ENGINE, ACTIVATE THE FIRE SUPPRESSION SYSTEM IMMEDIATELY.
+		WHEN THE FLAME EXTINGUISHES, STOP THE FUEL SUPPLY. 
+	###For lights or lamps, use:
+	GO OFF (v)	THE “AUTO BRK” GOES OFF.	The AUTO BRK PUSHBUTTON LIGHT pushbutton light extinguishes.
+	BE OFF (v)	MAKE SURE THAT THE GREEN LIGHT ON THE PANEL IS OFF.	Make sure that the greenlight on the panel extinguishes.
+extra (adj)	MORE (adj)	THIS MATERIAL GIVES This material provides MORE PROTECTION, extra protection.
+extract (v)	REMOVE (v)	REMOVE THE BOLT. Extract the bolt.
+extreme (adj)	VERY HIGH (adj)	DO NOT APPLY VERY HIGH LOADS.	Do not apply extreme loads.
+	VERY BAD (adj)	WHEN THE WEATHER IS VERY BAD, KEEP THESE PARTS IN A DRY AREA.	In extreme weather conditions, keep these parts in a dry area.
+	VERY COLD (adj)	MAKE SURE THAT YOU KNOW THE RISKS RELATED TO VERY COLD TEMPERATURES.	Make sure that you know the risks related to extreme cold temperatures.
+	VERY HOT (adj)	MAKE SURE THAT YOU KNOW THE RISKS RELATED TO VERY HOT TEMPERATURES.	Make sure that you know the risks related to extreme hot temperatures.
+extremely (adv)	VERY (adv)	IT IS VERY IMPORTANT TO OBEY THE SAFETY PRECAUTIONS.	It is extremely important to observe the safety precautions.
+exude (v)	OUT OF (prep)	MAKE SURE THAT GREASE COMES OUT OF THE JOINT.	Make sure grease exudes from the joint.

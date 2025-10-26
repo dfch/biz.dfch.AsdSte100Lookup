@@ -1,0 +1,13 @@
+﻿beginning (n)	START (n)	YOU CAN GET SLOW MOVEMENT AT THE START.	You can get slow movement at the beginning.
+	SOURCE (n)	FIND THE SOURCE OF THE FUEL LEAKAGE.	Find the beginning of the fuel leak.
+	START (v)	WHEN THE LEVER STARTS TO MOVE, THE MICROSWITCH OPERATES.	At the beginning of the lever movement, the microswitch will operate.
+BEHIND (prep)	In a position at the rear of	THE PUMP IS INSTALLED BEHIND THE HYDRAULIC MOTOR.	
+below (adv)	FOLLOW (v)	OBEY THE SAFETY PRECAUTIONS THAT FOLLOW:	Obey the safety precautions below:
+	THESE (adj)	OBEY THESE SAFETY PRECAUTIONS:	Obey the safety precautions below:
+BELOW (prep)	In (or to) a position farther down than something	THE DATE IS WRITTEN BELOW THE CYLINDER NECK.	
+	###For other meanings, use:		
+	LESS THAN (prep)	MAKE SURE THAT THE DIAMETER OF THE HOLE IS LESS THAN THE SPECIFIED VALUE.	Make sure that the diameter of the hole is below the specified value.
+BEND (n)	The area where something is bent	EXAMINE THE BENDS FOR CRACKS.	
+BEND (v), BENDS, BENT, BENT	To change or cause to change from straight to curved	BEND THE PIPE CAREFULLY.	
+		THESE PARTS CAN EASILY BEND, BREAK OR BECOME INCORRECTLY ALIGNED.	
+beneath (prep)	BELOW (prep)	PUT THE JACK BELOW THE AXLE.	Put the jack beneath the axle.

@@ -1,0 +1,13 @@
+﻿result (v)	CAUSE (v)	AN INCORRECT CONNECTION WILL CAUSE DAMAGE.	An incorrect connection will result in damage.
+	RESULT (n)	REPAIR DAMAGE THAT IS THE RESULT OF CORROSION.	Repair any damage resulting from corrosion.
+resume (v)	START (v)	INCREASE THE PRESSURE UNTIL THE FLOW STARTS AGAIN.	Increase the pressure until the flow resumes.
+	CONTINUE (v)	CONTINUE THE TEST.	Resume the test.
+retain (v)	KEEP (v)	KEEP THE PLUG.	Retain the plug.
+retorque (v)	TORQUE (v)	TORQUE THE FITTING AGAIN.	Retorque the fitting.
+retouch (v)	APPLY (v)	APPLY ENAMEL ON THE AREAS WHERE IT IS MISSING.	Retouch the missing enamel areas.
+	PAINT (v)	PAINT THE DAMAGED LETTERS ON THE LABEL.	Retouch the damaged label letters.
+RETRACT (v), RETRACTS, RETRACTED, RETRACTED	1. To pull in [to]	RETRACT THE LANDING GEAR.	
+	2. To move in [to]	THE NOSE LANDING GEAR RETRACTS INTO THE FUSELAGE.	
+retractable (adj)	RETRACT (v)	THE AIRCRAFT HAS A LANDING GEAR THAT RETRACTS.	The aircraft has a retractable landing gear.
+RETRACTION (n)	The result when something retracts	DURING THE RETRACTION SEQUENCE, MAKE SURE THAT THE LANDING GEAR DOORS CLOSE.	
+return (n)	GO (v)	AFTER THE AILERONS GO BACK TO NEUTRAL, MAKE SURE THAT THEY ARE FLUSH WITH THE FLAPS.	After the return of the ailerons to neutral, check that they are flush with the flaps.

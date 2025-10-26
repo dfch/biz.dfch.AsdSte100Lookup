@@ -1,0 +1,13 @@
+﻿scrape (v)	REMOVE (v) (WITH A SCRAPER [TN])	REMOVE THE REMAINING SEALANT WITH AN APPLICABLE SCRAPER.	Scrape off the old sealant.
+scratched (adj)	SCRATCH (TN)	REPAIR THE SURFACES THAT HAVE SCRATCHES.	Repair the scratched surfaces.
+screw (v)	TURN (v)	CONTINUE TO TURN THE END FITTING UNTIL IT IS IN THE CORRECT POSITION.	Continue screwing the end fitting until it is in the correct position.
+	ATTACH (v)	ATTACH THE STRAPS TO THE PANELS WITH SCREWS.	Screw the straps to the panels.
+	ATTACH [WITH A SCREW] (v)
+	ATTACH [WITH SCREWS] (v)
+scrub (v)	CLEAN [WITH A BRUSH] (v)	CLEAN THE METAL PARTS WITH A BRUSH.	Scrub all metal parts.
+SEAL (n)	Something that prevents access or leaks	APPLY SEALANT TO THE FILLET SEALS.	
+SEAL (v), SEALS, SEALED, SEALED	To prevent access or leaks	SEAL THE OPENINGS WITH POLYETHYLENE.	
+search (v)	EXAMINE (v)	EXAMINE THE SURFACE FOR CRACKS.	Search the surface for cracks.
+seat (v)	INSTALL (v)	INSTALL THEO-RING IN ITS GROOVE ON THE PISTON.	Seat the O-ring in its groove on the piston.
+	AGAINST (prep)	MAKE SURE THAT THE VALVE IS IN ITS CORRECT POSITION AGAINST THE FRAME.	Make sure that the valve is seated on the frame.
+SECONDARY (adj)	Second in importance	THE SECONDARY FILTER REMOVES THE REMAINING CONTAMINATION.	

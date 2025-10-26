@@ -1,0 +1,12 @@
+﻿ask (v)	TELL (v)	TELL THE DRIVER TO SET THE SWITCH TO OFF.	Ask the driver to set the switch to off. 
+SPEAK (v)	SPEAK TO THE LOCAL Ask the local air traffic AIR TRAFFIC	controller. CONTROLLER.
+ASSEMBLE (v), ASSEMBLES, ASSEMBLED, ASSEMBLED	To attach, connect, or put together the parts of something	ASSEMBLE THE VALVE AS FOLLOWS:
+ASSEMBLY (n)	Items that are connected for a specified function	REMOVE THE WHEEL BRAKE ASSEMBLY FROM THE AXLE.
+assess (v)	CALCULATE (v)	CALCULATE THE QUANTITY OF FUEL THAT IS NECESSARY.	Assess the quantity of fuel that is necessary. 
+	ESTIMATE (n)	MAKE AN ESTIMATE OF THE DAMAGE.	Assess the damage. 
+assessment (n)	ESTIMATE (n)	MAKE AN ESTIMATE OF THE DAMAGE.	Carry out an assessment of the damage.
+	CALCULATE (v)	CALCULATE THE NUMBER OF SHIMS THAT ARE NECESSARY.	Do an assessment of the number of shims that are necessary.
+assign (v)	GIVE (v)	GIVE A CODE TO EACH CONNECTOR.	Assign a code to each connector.
+assist (v)	HELP (v)	KEEP THE DATA TO HELP YOU WITH SUBSEQUENT PROCEDURES.	Keep the data to assist subsequent procedures.
+assistance (n)	AID (n)	FOR THIS STEP, MAKE SURE THAT YOU HAVE THE AID OF ONE MORE PERSON.	For this step, you must have the assistance of one more person.
+	HELP (v)	FOR THIS STEP, MAKE SURE THAT ONE PERSON HELPS YOU.	For this step, you must have the assistance of  one person.

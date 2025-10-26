@@ -1,0 +1,13 @@
+﻿affect (v)	EFFECT (n)	MAGNETIC TOOLS HAVE AN UNWANTED EFFECT ON THE COMPASS SYSTEM.	Magnetic tools affect the compass system.
+	###If it is possible, be accurate.	THIS MEDICATION CAN CAUSE DERMATITIS	This medication can affect your skin.
+AFT (adj)	At or nearer to the rear of an air or sea vehicle	THE PUMP IS IN THE AFT CELL OF THE FUSELAGE TANK.	
+AFT (adv)	In the direction of the rear of an air or sea vehicle	MOVE THE THROTTLE AFT.	
+AFTER (conj)	That follows a specified time, sequence, or operation	AFTER YOU INSTALL THE COMPONENT, DO A FUNCTIONAL TEST.	
+AFTER (prep)	That follows a specified time, sequence, or operation	THE BAR MOVES DOWN AFTER 20 SECONDS.	
+AFT OF (prep)	At a position nearer to the rear	THE CONTROL UNIT IS INSTALLED AFT OF THE FLIGHT COMPARTMENT.	
+AGAIN (adv)	One more occurrence	MOVE THE CONTROL STICK BACK TO THE CENTER, AND THEN MOVE IT FORWARD AGAIN.	
+AGAINST (prep)	In contact with	PUT THE ADAPTER IN POSITION AGAINST ITS SUPPORT.	
+AGENT (n)	One of a group of materials made to do a specified task	DO NOT USE THESE CLEANING AGENTS ON HOT SURFACES.	
+aggravate (v)	INCREASE (v)	TIRE WEAR INCREASES WITH HIGH SPEED.	Tire wear is aggravated by high speed.
+agitate (v)	SHAKE (v)	SHAKE THE SOLUTION.	Agitate the solution.
+agitation (n)	SHAKE (v)	IF YOU SHAKE THE SOLUTION, DO NOT USE IT FOR ONE HOUR.	After agitation, do not use the solution for one hour.

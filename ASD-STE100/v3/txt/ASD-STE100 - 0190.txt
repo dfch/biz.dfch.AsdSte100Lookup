@@ -1,0 +1,12 @@
+﻿propagation (n)	INCREASE (v)	IF THE DIMENSION OF A CRACK INCREASES, THE PART CAN BREAK.	Crack propagation can cause the part to break.
+	###If it is possible, give the dimensions or limits.
+	INCREASE (v)	IF THE DEPTH OF A CRACK IS MORE THAN 0.2 mm, REJECT THE PART.	Crack propagation can cause the rejection of the part.
+	INCREASE (v)	IF A CRACK IS LARGER THAN 0.2 mm, REJECT THE PART.	Crack propagation can cause the rejection of the part.
+proper (adj)	CORRECT (adj)	DO A CHECK FOR THE CORRECT OPERATION OF THE UNIT.	Check the unit for proper operation.
+properly (adv)	CORRECTLY (adv)	CLOSE THE DOORS CORRECTLY.	Close the doors properly.
+PROPERTY (n)	A characteristic or attribute of an object	THE MAGNETIC PROPERTIES OF THIS METAL DECREASE AT HIGH TEMPERATURES.	
+PROPORTION (n)	The ratio of something to something else	ALWAYS MIX CLEANING AGENTS WITH COLD WATER IN THE CORRECT PROPORTIONS.	
+	###For other meanings, use:
+	RELATION (n)	THE TEMPERATURE DECREASES IN RELATION TO THE ALTITUDE.	The temperature decreases in proportion to the altitude.
+proportional (adj)	RELATION (n)	THE CENTER OF GRAVITY MOVES IN RELATION TO THE LOADS ON THE WINGS.	Movement of the center of gravity is proportional to the loads on the wings.
+	PROPORTION (n)	MIX THE PIGMENT AND SOLVENT IN THE CORRECT PROPORTIONS.	Mix the correct quantity of pigment proportional to the quantity of solvent.

@@ -1,0 +1,8 @@
+﻿incomplete (adj)	NOT FULL (adj)	IF THE ACTUATOR TRAVEL IS NOT FULL, ADJUST THE RODS AGAIN.	If the actuator travel is incomplete, readjust the rods.
+	NOT COMPLETED (adj)	IF THE ADJUSTMENT IS NOT COMPLETED, THE VALUES SHOWN ON THE INDICATOR WILL BE INCORRECT.	If the adjustment is incomplete, the values shown on the indicator will be incorrect.
+	ALL (adj)	IF YOU DO NOT HAVE ALL THE RESULTS, DO THE TEST AGAIN.	If the results are incomplete, do the test again.
+incorporate (v)	INCLUDE (v)	ALL MODELS INCLUDE A MICROPROCESSOR CONTROL UNIT.	All models incorporate a microprocessor control unit.
+	HAVE (v)	SOME RELAYS HAVE A POTENTIOMETER.	Some relays incorporate a potentiometer.
+incorporation (n)	INCLUDE (v)	THE MANUFACTURER INCLUDED A SECOND DIODE TO INCREASE THE RELIABILITY OF THE MOTOR.	Incorporation of a second diode increased the reliability of the motor.
+INCORRECT (adj)	Not correct	IF THE TRIM TAB ADJUSTMENT IS INCORRECT, DO STEPS 7 THRU 10.	
+INCORRECTLY (adv)	In an incorrect manner	IF YOU SEE THE RED MARK, THE PART IS INSTALLED INCORRECTLY.	

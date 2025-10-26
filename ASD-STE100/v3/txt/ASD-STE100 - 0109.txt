@@ -1,0 +1,10 @@
+﻿fulfill (v)	OBEY (v)	OBEY THE INSTRUCTIONS IN THE TEST PROCEDURE.	Fulfill the instructions in the test procedure.
+		THIS PROCEDURE OBEYS ALL THE REQUIREMENTS OF SERVICE BULLETIN No. 97.	This procedure fulfills all the requirements of Service Bulletin No. 97.
+FULL (adj) (FULLER, FULLEST)	At or related to maximum travel, length, quantity, or detail	MAKE SURE THAT THE RESERVOIR IS FULL.	
+FULLY (adv)	At or related to maximum travel, length, quantity, or detail	TURN THE CONTROL TO THE FULLY CLOSED POSITION.	
+FUNCTION (n)	Action or activity that a person or thing does	THE PRIMARY FUNCTION OF THIS UNIT IS TO CONTROL THE FUEL FLOW.	
+function (v)	OPERATE (v)	THE ELEVATOR CONTROLS MUST OPERATE SMOOTHLY.	The elevator controls must function smoothly.
+	MOVE (v)	THE SYSTEM CONTROLS MUST MOVE FREELY.	The system controls must function freely.
+fundamental (adj)	IMPORTANT (adj)	DURING THIS PROCEDURE, IT IS IMPORTANT TO KEEP ALL PARTS CLEAN.	Cleanliness of all parts is fundamental in this procedure.
+further (adj)	MORE (adj)	IF YOU DO NOT GET THE CORRECT DIMENSION, ADD MORE GASKETS.	If you do not get the correct dimension, add further gaskets.
+further (adv)	MORE (adv)	IF IT IS NECESSARY TO DECREASE THE CABLE TENSION MORE, USE THE TURNBUCKLE.	Cable tension can be further reduced if necessary by means of the turnbuckle.

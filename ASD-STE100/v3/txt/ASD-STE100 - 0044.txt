@@ -1,0 +1,14 @@
+﻿close (adj)	NEAR (prep)	DO NOT USE SOLVENTS NEAR FLAMES OR SPARKS.	Do not use solvents in close contact with flames or sparks.
+CLOSE (v), CLOSES, CLOSED, CLOSED	1. To move together, or to move to a position that stops or prevents materials from going in or out	CLOSE THE INSTRUMENT PANEL.	
+		MAKE SURE THAT THE DOORS CLOSE FULLY.	
+	2. To operate a circuit breaker to make an electrical circuit	MAKE SURE THAT THE CIRCUIT BREAKER IS CLOSED.	
+		MAKE SURE THAT THE CIRCUITBREAKER CLOSES.	
+closely (adv)	CAREFULLY (adv)	CAREFULLY MONITOR THE OPERATION OF THE SYSTEM.	Closely monitor the operation of the system.
+close to (adv)	NEAR (prep)	PUT THE CLINOMETER NEAR THE FUSELAGE CENTERLINE.	Put the clinometer close to the fuselage centerline.
+coat (n)	LAYER (n)	APPLY A LAYER OF SEALANT PR 1440 B2 ON THE SURFACE.	Spread a coat of sealant PR 1440 B2 on the surface.
+coat (v)	LAYER (n)	APPLY A LAYER OF GREASE TO THE BATTERY CABLES.	Coat the battery cables with grease.
+coating (n)	LAYER (n)	THE METAL HAS A LAYER OF PLASTIC ON IT TO PREVENT CORROSION.	The metal has a coating of plastic on it to prevent corrosion.
+cock (v)	SET (v)	SET THE RACK HOOKS.	Cock the rack hooks.
+CODE (n)	A sequence of symbols, letters, and/or numbers used for identification	EACH ELECTRICAL SYSTEM HAS A CODE TO IDENTIFY IT.	
+code (v)	IDENTIFY (v)	IDENTIFY THE CABLES WITH A CODE.	Code the cables.
+	CODE (n)	PUT A CODE ON THE CABLES.	Code the cables.

@@ -1,0 +1,12 @@
+﻿OPPOSITE (adj)	1. In the other direction	THE RESET DEVICE OPERATES IN THE OPPOSITE DIRECTION.
+	2. Across from	THE BOLTS ARE ON THE OPPOSITE SIDE OF THE FLANGE.	
+OPPOSITE (prep)	Across from	THE UNIT IS IN THE WHEEL BAY OPPOSITE THE LANDING GEAR.	
+option (n)	ALTERNATIVE (n)	FOR THIS TASK, YOU HAVE THESE ALTERNATIVES:	For this task, you have these options:
+	POSSIBLE (adj)	IF IT IS POSSIBLE, DO THE INSPECTION IN DAYLIGHT.	If you have the option, do the inspection in daylight.
+	CAN (v)	IF YOU CAN, DO THE INSPECTION IN DAYLIGHT.	If you have the option, do the inspection in daylight.
+OPTIONAL (adj)	Not mandatory	THIS TOOL IS OPTIONAL.	
+OR (conj)	Function word that shows a choice	DO NOT TOUCH THE HIGH TENSION LEADS OR THE IGNITER PLUGS.	
+	###Do not use this word with the meaning of otherwise. Use a different construction.	MAKE SURE THAT THE L-SHAPED SEAL STAYS BONDED. IF THE SEAL DOES NOT STAY BONDED, A LEAK CAN OCCUR.	Make sure that the L-shaped seal stays bonded, or a leak can occur.
+order (n)	SEQUENCE (n)	DO THE WEIGHING PROCEDURE IN THIS SEQUENCE:	Do the weighing procedure in the following order:
+order (v)	TELL (v)	TELL ALL PERSONNEL TO GO OUT OF THE MAINTENANCE AREA.	Order all personnel out of the maintenance area.
+	ORDER (TN)	SEND AN ORDER FOR THE SPECIFIED PAINT DIRECTLY TO THE MANUFACTURER.	Order the required paint directly from the manufacturer.

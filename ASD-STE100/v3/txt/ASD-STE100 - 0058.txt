@@ -1,0 +1,13 @@
+﻿critical (adj)	VERY IMPORTANT (adj)	THE CONDITION OF THE UNIT IS VERY IMPORTANT FOR ITS PERFORMANCE.	The condition of the unit is critical to its performance.
+	CAREFUL (adj)	MAKE A CAREFUL ESTIMATE OF THE DAMAGED AREA.	Make a critical estimate of the damaged area.
+cross (v)	ACROSS (adv)	DO NOT GO ACROSS THE SAFETY LINE.	Do not cross the safety line.
+	CORRECTLY (adv)	CONNECT THE WIRES CORRECTLY.	Do not cross the wires.
+curvature (n)	BEND (n)	THE BEND IN THE PIPE MUST HAVE A 30 mm RADIUS.	The curvature of the pipe must have a 30 mm radius.
+	CURVE (n)	THE RADIUS OF THE CURVE MUST BE A MINIMUM OF 8 mm.	The radius of the curvature must be a minimum of 8 mm.
+	RADIUS (TN)	BEND THE PIPE TO THE CORRECT RADIUS.	Bend the pipe to the correct curvature.
+CURVE (n)	The shape of something which is bent but which has no angles	THE RADIUS OF THE CURVE MUST BEA MINIMUM OF 8 mm.	
+curve (v)	MAKE A CURVE (n)	BEND THE STRIP OF METAL TO MAKE A CURVE.	Curve the strip of metal.
+CUT (v), CUTS, CUT, CUT	1. To divide into parts	CUT THE CABLE INTO THREE EQUAL LENGTHS.	
+	2. To remove with a sharp tool	CUT AND DISCARD THE LOCKWIRE.	
+CYCLE (n)	One complete sequence of operation	SET THE SWITCH TO THREE CYCLES A MINUTE.	
+cycle (v)	CYCLE (n)	OPERATE THE ACTUATOR THROUGH THREE CYCLES.	Cycle the actuator three times.

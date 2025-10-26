@@ -1,0 +1,10 @@
+﻿CORRECTION (n)	A change to make something correct	DO NOT MAKE THE CORRECTION AT THIS HEADING.	
+CORRECTLY (adv)	In a correct manner	MAKE SURE THAT THE CIRCLIP IS CORRECTLY INSTALLED.	
+correctness (n)	CORRECT (adj)	THIS ADJUSTMENT MUST BE CORRECT.	The correctness of this adjustment is important.
+	CORRECTLY (adv)	IT IS IMPORTANT TO DO THIS ADJUSTMENT CORRECTLY.	The correctness of this adjustment is important.
+correspond (v)	AGREE (v)	MAKE SURE THAT THE POSITION OF THE CLAMP AGREES WITH THE POSITION THAT YOU RECORDED DURING THE REMOVAL PROCEDURE.	Make sure that the position of the clamp corresponds to the position recorded during the removal procedure.
+	SAME (adj)	WHEN THE TWO GAUGES SHOW THE SAME INDICATION, CLOSE THE VALVE.	Close the valve when the indications on the two gauges correspond.
+	DIFFERENT (adj)	IF THE TWO INDICATIONS ARE DIFFERENT, DO THE TEST AGAIN.	If the two indications do not correspond, repeat the test.
+corresponding (adj)	RELATED (adj)	THE RELATED CAUTION LIGHT MUST GO OFF AFTER 30 SECONDS.	The corresponding caution light shall go off after 30 seconds.
+corrode (v)	CORROSION (TN)	THIS MATERIAL CAUSES CORROSION OF SURFACES WITH NO PROTECTION.	This material corrodes unprotected surfaces.
+corrosive (adj)	CORROSION (TN)	HYDRAULIC FLUID CAN CAUSE CORROSION.	Hydraulic fluid is corrosive.

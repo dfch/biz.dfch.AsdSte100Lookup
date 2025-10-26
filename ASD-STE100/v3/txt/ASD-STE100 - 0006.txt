@@ -1,0 +1,14 @@
+﻿accuracy (n)	PRECISION (n)	THE PRECISION OF THE ADJUSTMENT CAN CHANGE.	The accuracy of the adjustment can vary.
+ACCURATE (adj)	Exact	THE ADJUSTMENT MUST BE ACCURATE.	
+ACCURATELY (adv)	Exactly	PUT THE REPAIR SHEET ACCURATELY ON THE DAMAGED AREA.	
+achieve (v)	GET (v)	SET THE CONTROL TO GET MAXIMUM THRUST.	Set the control to achieve maximum thrust.
+acquire (v)	GET (v)	THE COMPUTER GETS THIS DATA FROM FIVE SENSORS.	The computer acquires this data from five sensors.
+acrid (adj)	DANGEROUS (adj)	THIS MATERIAL RELEASES DANGEROUS FUMES WHEN IT TOUCHES HOT SURFACES.	On contact with hot surfaces, this material produces acrid fumes.
+ACROSS (prep)	From one side to the other side	SAFETY THE CLAMP BLOCK ACROSS THE CONTROL LEVER FORKS WITH SAFETY WIRE.	
+act (v)	###Use an accurate verb.	THE HYDRAULIC FLUID FLOW OPENS THE VALVE.	The hydraulic fluid flow acts on the valve.
+action (n)	STEP (n)	DO THE STEPS THAT FOLLOW:	Do the following actions:
+	PROCEDURE (n)	DO NOT DO THIS PROCEDURE IN THE HANGAR.	This action must not be done in the hangar:
+	TASK (n)	DO THIS TASK OUTDOORS.	Do this action outdoors.
+ACTIVATE (v)	To make a system, function, or feature ready for operation	THE AUTOPILOT ACTIVATES THE APPROACH MODE.	
+	###For other meanings, use:
+	START (v)	START THE MOTOR.	Activate the motor.

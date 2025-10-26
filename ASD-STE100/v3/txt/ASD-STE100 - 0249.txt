@@ -1,0 +1,13 @@
+﻿throughout (prep)	DURING (prep)	MAKE SURE THAT THE DOORS ARE CLOSED DURING THE TEST.	Make sure that the doors are closed throughout the test.
+THRU (prep)	From a point in a sequence to another	DO STEPS 4 THRU 10 AGAIN.	
+THUS (adv)	For that reason	THIS BOILER CONTROLLER IS APPLICABLE TO ALL SYSTEMS. THUS, IT CAN ALSO CONTROL THERMAL OIL HEATERS.	
+	###For other meanings, use:
+	FOLLOW (v)	CALCULATE THE THICKNESS OF THE SHIM AS FOLLOWS: T=X-Y.	The thickness of the shim is thus calculated: T=X-Y.
+tie (v)	ATTACH (v)	ATTACH THE THREADING CORD TO THE NEW CABLE.	Tie the threading cord to the new cable.
+TIGHT (adj) (TIGHTER, TIGHTEST)	Not free	MAKE SURE THAT THE NUTS ARE TIGHT.	
+	###For other meanings, use:
+	SEAL (v)	MAKE SURE THAT THE FUEL TANK IS SEALED.	Make sure that the fuel tank is tight.
+	TENSION (TN)	MAKE SURE THAT THERE IS TENSION IN THE LOCKWIRE.	Make sure that the lockwire is tight.
+TIGHTEN (v), TIGHTENS, TIGHTENED, TIGHTENED	To cause to be tight	TIGHTEN THE SCREWS.	
+TIGHTLY (adv)	In a tight manner	HOLD THE CYLINDER TIGHTLY.	
+till (conj)	UNTIL (conj)	MOVE THE LEVER UNTIL IT TOUCHES THE STOP.	Move the lever till it hits the stop.

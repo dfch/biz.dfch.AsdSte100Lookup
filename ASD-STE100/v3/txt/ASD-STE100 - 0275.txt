@@ -1,0 +1,5 @@
+﻿wrap (v)	PUT (v)	PUT THE PART IN OILPAPER.	Wrap the part in oilpaper.
+	WIND (v)	WIND MASKING TAPE AROUND THE PART.	Wrap masking tape around the part.
+WRITE (v), WRITES, WROTE, WRITTEN	To record data or information as words, letters, or symbols	WRITE THE TEST DATE ON THE CERTIFICATE.
+wrong (adj)	INCORRECT (adj)	IDENTIFY THE BELLCRANK AND SHAFT WITH MARKS. THESE MARKS WILL PREVENT AN INCORRECT INSTALLATION.	Mark the bellcrank and shaft to prevent wrong installation.
+wrongly (adv)	INCORRECTLY (adv)	IF THE HOSES ARE INCORRECTLY INSTALLED, DAMAGE CAN OCCUR.	Damage can occur if hoses are wrongly installed.
