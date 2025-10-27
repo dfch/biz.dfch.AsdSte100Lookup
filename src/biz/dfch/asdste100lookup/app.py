@@ -480,7 +480,7 @@ class App:  # pylint: disable=R0903
     _VERSION_REQUIRED_MINOR = 11
 
     # Note: also adjust in pyproject.toml
-    _VERSION = "1.0.0"
+    _VERSION = "1.0.1-beta"
     _PROG_NAME = "scnfmixr"
 
     def __init__(self):
@@ -501,7 +501,16 @@ class App:  # pylint: disable=R0903
     def prompt_user_loop(self) -> None:
         """Main program loop."""
 
-        log.debug("Entering prompt user loop ...")
+        log.debug("Starting to parse source data ...")
+
+        print(
+            f"AsdSte100Lookup (A dictionary lookup tool for ASD-STE100), v{self._VERSION}\n"
+            "Copyright 2025 Ronald Rink. Licensed under GPLv3.\n"
+            "ASD-STE100 Simplified Technical English "
+            "(Standard for Technical Documentation) Issue 9.\n"
+            "Copyright 2025 European Aerospace, Security and Defence Industry"
+            ", https://www.asd-europe.org.",
+        )
 
         dictionary_fullname = Path(__file__).parent / "dictionary.json"
         with open(dictionary_fullname, "r", encoding="utf-8") as f:
@@ -1182,5 +1191,5 @@ class App:  # pylint: disable=R0903
         # Elegant!
         root_dir = Path(__file__).resolve().parent.parent.parent.parent.parent
         path = root_dir.joinpath("ASD-STE100/v3/txt")
-        self.parse_source(path=path)
+        # self.parse_source(path=path)
         self.prompt_user_loop()

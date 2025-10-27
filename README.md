@@ -15,7 +15,7 @@ _A dictionary lookup for [ASD-STE100 Issue 9](https://www.asd-ste100.org/index.h
 * The tool is written in Python (and tested with v3.11.2 on Microsoft Windows 11 and WSLv2 Debian x64).
 * The tool
   - Copyright by (c) 2025 Ronald Rink.
-  - Licensed under "GNU Plublic License v3" (GPLv3)
+  - Licensed under "GNU General Public License v3" (GPLv3)
 * ASD-STE100
   - Copyright by (c) [ASD](https://www.asd-europe.org/).
 * I am in no way afiliated with ASD. ASD does not endorse my work.
