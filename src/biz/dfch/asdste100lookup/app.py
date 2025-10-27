@@ -541,27 +541,30 @@ class App:  # pylint: disable=R0903
             table.add_column("Non-STE Example")
 
             matching_words = {}
-            for word in dictionary:
-                if re.search(prompt, word.name, re.IGNORECASE):
-                    matching_words[id(word)] = word
-                    continue
-
-                for spelling in word.spellings:
-                    if re.search(prompt, spelling, re.IGNORECASE):
+            try:
+                for word in dictionary:
+                    if re.search(prompt, word.name, re.IGNORECASE):
                         matching_words[id(word)] = word
                         continue
 
-                if word.ste_example and re.search(
-                    prompt, word.ste_example, re.IGNORECASE
-                ):
-                    matching_words[id(word)] = word
-                    continue
+                    for spelling in word.spellings:
+                        if re.search(prompt, spelling, re.IGNORECASE):
+                            matching_words[id(word)] = word
+                            continue
 
-                if word.nonste_example and re.search(
-                    prompt, word.nonste_example, re.IGNORECASE
-                ):
-                    matching_words[id(word)] = word
-                    continue
+                    if word.ste_example and re.search(
+                        prompt, word.ste_example, re.IGNORECASE
+                    ):
+                        matching_words[id(word)] = word
+                        continue
+
+                    if word.nonste_example and re.search(
+                        prompt, word.nonste_example, re.IGNORECASE
+                    ):
+                        matching_words[id(word)] = word
+                        continue
+            except re.error as ex:
+                log.error("Invalid regex: '%s'", ex)
 
             rows: list[TableRow] = []
             for word in matching_words.values():
@@ -1191,5 +1194,5 @@ class App:  # pylint: disable=R0903
         # Elegant!
         root_dir = Path(__file__).resolve().parent.parent.parent.parent.parent
         path = root_dir.joinpath("ASD-STE100/v3/txt")
-        # self.parse_source(path=path)
+        self.parse_source(path=path)
         self.prompt_user_loop()
