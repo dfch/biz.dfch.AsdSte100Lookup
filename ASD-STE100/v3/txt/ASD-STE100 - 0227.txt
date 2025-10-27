@@ -1,6 +1,6 @@
 ﻿snap (v)	MOVE QUICKLY (v)	THE RETAINING CLIP MUST MOVE QUICKLY INTO ITS POSITION.	The retaining clip must snap into its position.
 	BREAK (v)	IF YOU BEND THIS PART TOO MUCH, IT WILL BREAK.	If you bend this part too much, it will snap.
-so [that] (conj)	UNTIL (prep)	ADJUST THE LENGTH OF THE ROD UNTIL YOU GET A MINIMUM CLEARANCE OF 0.1 in.	Adjust the length of rod so that a minimum gap of 0.1 in. is obtained.
+so that (conj)	UNTIL (prep)	ADJUST THE LENGTH OF THE ROD UNTIL YOU GET A MINIMUM CLEARANCE OF 0.1 in.	Adjust the length of rod so that a minimum gap of 0.1 in. is obtained.
 	PREVENT (v)	LOCK THE WHEEL TO PREVENT MOVEMENT.	Lock the wheel so that it does not move.
 SOAK (v), SOAKS, SOAKED, SOAKED	1. To put something into a liquid and keep it there until it is fully wet or soft	SOAK THE FILTER IN THE CLEANING SOLUTION FOR 4 HOURS.	
 	2. To stay in liquid until fully wet or soft.	THE COMPONENT MUST SOAK IN THE SOLUTION FOR A MINIMUM OF 2 HOURS.	

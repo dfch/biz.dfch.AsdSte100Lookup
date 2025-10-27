@@ -44702,7 +44702,7 @@
   },
   {
     "status": "rejected",
-    "name": "provided [that]",
+    "name": "provided that",
     "type_": "conj",
     "meanings": [],
     "spellings": [],
@@ -44730,7 +44730,7 @@
   },
   {
     "status": "rejected",
-    "name": "providing [that]",
+    "name": "providing that",
     "type_": "conj",
     "meanings": [],
     "spellings": [],
@@ -53659,7 +53659,7 @@
   },
   {
     "status": "rejected",
-    "name": "so [that]",
+    "name": "so that",
     "type_": "conj",
     "meanings": [],
     "spellings": [],
@@ -65213,16 +65213,21 @@
     "status": "rejected",
     "name": "yet",
     "type_": "adv",
-    "meanings": [
+    "meanings": [],
+    "spellings": [],
+    "alternatives": [
       {
-        "value": "AT THIS TIME",
+        "status": "approved",
+        "name": "AT THIS TIME",
+        "type_": "adv",
+        "meanings": [],
+        "spellings": [],
+        "alternatives": [],
         "ste_example": "DO NOT REMOVE THE FIXTURE COVER AT THIS TIME.",
         "nonste_example": "Do not remove the fixture cover yet.",
         "note": null
       }
     ],
-    "spellings": [],
-    "alternatives": [],
     "ste_example": null,
     "nonste_example": null,
     "note": {

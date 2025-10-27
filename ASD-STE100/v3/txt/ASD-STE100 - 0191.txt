@@ -6,4 +6,4 @@ PROTECTIVE (adj)	That gives protection	REMOVE THE PROTECTIVE LAYER.
 PROTRUDE (v) PROTRUDES PROTRUDED PROTRUDED	To be farther forward or out from an adjacent surface	IF THE POP-OUT INDICATOR PROTRUDES, REPLACE THE FILTER ELEMENT.	
 provide (v)	GIVE (v)	THIS SECTION GIVES THE PROCEDURES FOR THE STORAGE FO THE COMPONENT.	This section provides the procedures for the storage of the component.
 	SUPPLY (v)	THE HYDRAULIC SYSTEM SUPPLIES PRESSURE FOR THE OPERATION OF THE FLIGHT CONTROLS.	The hydraulic system provides pressure for operating the flight controls.
-provided [that] (conj)	IF (conj)	IF A REPLACEMENT PART IS AVAILABLE, REPLACE THE DAMAGED SHIELD.	Provided that a replacement part is available, replace the damaged shield.
+provided that (conj)	IF (conj)	IF A REPLACEMENT PART IS AVAILABLE, REPLACE THE DAMAGED SHIELD.	Provided that a replacement part is available, replace the damaged shield.

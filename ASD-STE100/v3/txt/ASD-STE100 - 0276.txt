@@ -1,6 +1,6 @@
 ﻿YES (adv)	Function word that shows the positive answer to a question	DOES THE LIGHT COME ON? YES OR NO?	
 yet (conj)	BUT (conj)	TIGHTEN THE NUTS, BUT KEEP THEM SUFFICIENTLY LOOSE TO REMOVE THEM WITH YOUR HAND.	The nuts should be tightened, yet loose enough to remove by hand.
-yet (adv)	AT THIS TIME	DO NOT REMOVE THE FIXTURE COVER AT THIS TIME.	Do not remove the fixture cover yet.
+yet (adv)	AT THIS TIME (adv)	DO NOT REMOVE THE FIXTURE COVER AT THIS TIME.	Do not remove the fixture cover yet.
 YOU (pron)	The reader or the user	YOU CAN CONTINUE THE TEST.	
 		HOT SURFACES CAN BURN YOU.	
 YOUR (adj)	Related to the reader or the user	IF YOU GET SOLVENT IN YOUR EYES, FLUSH THEM IMMEDIATELY WITH WATER.	

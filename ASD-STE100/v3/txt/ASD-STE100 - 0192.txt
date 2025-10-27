@@ -1,4 +1,4 @@
-﻿providing [that] (conj)	IF (conj)	IF A NEW PART IS INSTALLED, YOU CAN CONTINUE THE OPERATION OF THE MACHINE.	Providing that a new part is installed, you can continue the operation of the machine.
+﻿providing that (conj)	IF (conj)	IF A NEW PART IS INSTALLED, YOU CAN CONTINUE THE OPERATION OF THE MACHINE.	Providing that a new part is installed, you can continue the operation of the machine.
 proximity (n)	NEAR (prep)	DO NOT DO MAINTENANCE WORK NEAR AN ENGINE THAT IS IN OPERATION.	Do not do maintenance work in proximity to a running engine.
 PULL (v), PULLS, PULLED, PULLED	To use a force on something to move it toward the source of the force	PULL THE CABLE DOWN AND AWAY FROM THE BRACKET.	
 	###Use this word together with a preposition or an adverb to show direction.		
