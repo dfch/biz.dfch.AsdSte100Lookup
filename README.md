@@ -26,4 +26,4 @@ _A dictionary lookup for [ASD-STE100 Issue 9](https://www.asd-ste100.org/index.h
 
 <img width="2809" height="1577" alt="image" src="https://github.com/user-attachments/assets/e1d4a29a-fb53-4a44-a6f1-299fb787994e" />
 
-<img width="2800" height="1393" alt="image" src="https://github.com/user-attachments/assets/39dc08e2-31e9-4288-95ff-e589445b0e44" />
+<img width="2800" height="1393" alt="image" src="https://github.com/user-attachments/assets/0c1f5e81-df76-451b-8834-a73e32b09d20" />
