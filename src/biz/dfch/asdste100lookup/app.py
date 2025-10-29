@@ -480,7 +480,7 @@ class App:  # pylint: disable=R0903
     _VERSION_REQUIRED_MINOR = 11
 
     # Note: also adjust in pyproject.toml
-    _VERSION = "1.0.1-beta"
+    _VERSION = "1.0.2-beta"
     _PROG_NAME = "scnfmixr"
 
     def __init__(self):
@@ -798,56 +798,6 @@ class App:  # pylint: disable=R0903
             nonste_example = tokens[ColumnIndex.NONSTE]
 
         return (ste_example.strip(), nonste_example.strip())
-
-    def extract_simple_note(self, line_info: LineInfo) -> WordNote | None:
-        """Extracts a simple one-liner WordNote from LineInfo."""
-
-        assert line_info is not None
-
-        tokens = line_info.tokens
-
-        if line_info.tokens_count <= ColumnIndex.MEANING_ALT:
-            return None
-
-        meaning_or_alt = tokens[ColumnIndex.MEANING_ALT].strip()
-        if not meaning_or_alt.startswith(DictionaryInfo.NOTE_MARKER):
-            return None
-
-        meaning_or_alt = meaning_or_alt.strip(DictionaryInfo.NOTE_MARKER)
-        result = WordNote(meaning_or_alt)
-
-        ste_example = ""
-        if line_info.tokens_count > ColumnIndex.STE:
-            ste_example = tokens[ColumnIndex.STE]
-            result.ste_example = ste_example
-
-        nonste_example = ""
-        if line_info.tokens_count > ColumnIndex.NONSTE:
-            nonste_example = tokens[ColumnIndex.NONSTE]
-            result.nonste_example = nonste_example
-
-        return (
-            result
-            if any(
-                s in meaning_or_alt
-                for s in [
-                    DictionaryInfo.IF_MORE_ACCURATE_CORRECT,
-                    DictionaryInfo.IF_MORE_ACCURATE,
-                    DictionaryInfo.IF_MORE_ACCURATE_VERB,
-                    DictionaryInfo.FREQUENTLY_NO_ALTERNATIVE,
-                    DictionaryInfo.AS_LONG_AS,
-                    DictionaryInfo.IF_MORE_CLEAR_AND_ACCURATE,
-                    DictionaryInfo.IF_MORE_CLEAR_AND_ACCURATE,
-                    DictionaryInfo.NO_OTHER_VERB_FORM,
-                    DictionaryInfo.DO_NOT_USE_COULD,
-                    DictionaryInfo.ALSO_USE_DIFFERENT,
-                    DictionaryInfo.USE_IF,
-                    DictionaryInfo.DANGER_SECTION_7,
-                    DictionaryInfo.USE_SINGULAR,
-                ]
-            )
-            else None
-        )
 
     def extract_word(self, line_info: LineInfo) -> Word | None:
         """Extracts a Word from LineInfo."""
@@ -1194,5 +1144,5 @@ class App:  # pylint: disable=R0903
         # Elegant!
         root_dir = Path(__file__).resolve().parent.parent.parent.parent.parent
         path = root_dir.joinpath("ASD-STE100/v3/txt")
-        self.parse_source(path=path)
+        # self.parse_source(path=path)
         self.prompt_user_loop()
