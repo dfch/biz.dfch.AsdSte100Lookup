@@ -4,7 +4,7 @@
 	GO OFF (v)	THE “AUTO BRK” GOES OFF.	The AUTO BRK PUSHBUTTON LIGHT pushbutton light extinguishes.
 	BE OFF (v)	MAKE SURE THAT THE GREEN LIGHT ON THE PANEL IS OFF.	Make sure that the greenlight on the panel extinguishes.
 extra (adj)	MORE (adj)	THIS MATERIAL GIVES This material provides MORE PROTECTION, extra protection.
-extract (v)	REMOVE (v)	REMOVE THE BOLT. Extract the bolt.
+extract (v)	REMOVE (v)	REMOVE THE BOLT.	Extract the bolt.
 extreme (adj)	VERY HIGH (adj)	DO NOT APPLY VERY HIGH LOADS.	Do not apply extreme loads.
 	VERY BAD (adj)	WHEN THE WEATHER IS VERY BAD, KEEP THESE PARTS IN A DRY AREA.	In extreme weather conditions, keep these parts in a dry area.
 	VERY COLD (adj)	MAKE SURE THAT YOU KNOW THE RISKS RELATED TO VERY COLD TEMPERATURES.	Make sure that you know the risks related to extreme cold temperatures.

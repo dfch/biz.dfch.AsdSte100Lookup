@@ -39,12 +39,21 @@ _A dictionary lookup for [ASD-STE100 Issue 9](https://www.asd-ste100.org/index.h
 
     b. The result is in the directory with the name `sub`. The name of the exutable is `AsdSte100Lookup` or `AsdSte100Lookup.exe`.
 
-```
+```bash
 (venv) <prj-root> $ pyinstaller --clean --onefile --name AsdSte100Lookup \
   --add-data "./src/logging.conf:." \
   --add-data "./src/biz/dfch/asdste100lookup:./biz/dfch/asdste100lookup/" \
   -p "./src" \
   -p "./src/biz" \
+  ./src/biz/__main__.py
+```
+
+```bash
+(venv) <prj-root> $ pyinstaller --clean --onefile --name AsdSte100Lookup `
+  --add-data "./src/logging.conf:." `
+  --add-data "./src/biz/dfch/asdste100lookup:./biz/dfch/asdste100lookup/" `
+  -p "./src" `
+  -p "./src/biz" `
   ./src/biz/__main__.py
 ```
 

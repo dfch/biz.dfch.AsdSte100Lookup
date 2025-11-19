@@ -1,7 +1,7 @@
 ﻿leak (v)	LEAK (n)	IF THERE ARE LEAKS IN THE SYSTEM, REPAIR THEM.	If the system is leaking, repair it.
 LEAKAGE (n)	The quantity of material that goes through a leak	MEASURE THE LEAKAGE FROM THE OUTLET PORT.	
 least (adv)	MINIMUM (adj)	REPAIR THE AREA WITH THE MINIMUM DAMAGE FIRST.	Repair the least damaged area first.
-least [at least] (adv)	MINIMUM (adj)	THE MINIMUM TIME BETWEEN CHECKS IS TWO MINUTES.	The time between checks is at least two minutes.
+at least (adv)	MINIMUM (adj)	THE MINIMUM TIME BETWEEN CHECKS IS TWO MINUTES.	The time between checks is at least two minutes.
 	MINIMUM (n)	DO STEPS 13 THRU 16 FOR A MINIMUM OF THREE TIMES.	Do steps 13 thru 16 at least three times.
 leave (v)	KEEP (v)	KEEP THE VENT VALVES OPEN.	Leave the vent valves open.
 	LET .... STAY (v)	LET THE VENT VALVES STAY OPEN.	Leave the vent valves open.

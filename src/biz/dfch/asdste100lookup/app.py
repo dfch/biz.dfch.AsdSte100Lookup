@@ -17,6 +17,7 @@
 
 from __future__ import annotations
 
+import argparse
 from dataclasses import asdict, dataclass, field
 from enum import auto, StrEnum, IntEnum, Enum
 import json
@@ -31,6 +32,8 @@ from biz.dfch.logging import log
 from biz.dfch.version import Version
 
 from .colouriser import Colouriser
+
+DICTIONARY_FILE = "dictionary.json"
 
 
 class ColumnIndex(IntEnum):
@@ -479,15 +482,18 @@ class App:  # pylint: disable=R0903
     _VERSION_REQUIRED_MAJOR = 3
     _VERSION_REQUIRED_MINOR = 11
 
-    # Note: also adjust in pyproject.toml
-    _VERSION = "1.0.2-beta"
-    _PROG_NAME = "scnfmixr"
+    _parser: argparse.ArgumentParser
+    _args: argparse.Namespace
 
-    def __init__(self):
+    def __init__(self, parser: argparse.ArgumentParser):
 
         Version().ensure_minimum_version(
             self._VERSION_REQUIRED_MAJOR, self._VERSION_REQUIRED_MINOR
         )
+
+        assert isinstance(parser, argparse.ArgumentParser)
+        self._parser = parser
+        self._args = parser.parse_args()
 
     def to_colour(self, text: str, value: str, status: str) -> str:
         """Colourises value in specified text green or red based on status."""
@@ -503,16 +509,27 @@ class App:  # pylint: disable=R0903
 
         log.debug("Starting to parse source data ...")
 
-        print(
-            f"AsdSte100Lookup (A dictionary lookup tool for ASD-STE100), v{self._VERSION}\n"
-            "Copyright 2025 Ronald Rink. Licensed under GPLv3.\n"
-            "ASD-STE100 Simplified Technical English "
-            "(Standard for Technical Documentation) Issue 9.\n"
-            "Copyright 2025 European Aerospace, Security and Defence Industry"
-            ", https://www.asd-europe.org.",
-        )
+        # print(
+        #     "AsdSte100Lookup (a dictionary lookup tool for ASD-STE100)"
+        #     ", "
+        #     f"v{self._VERSION}"
+        #     ".\n"
+        #     "Copyright 2025 Ronald Rink. Licensed under GPLv3"
+        #     ". "
+        #     "https://github.com/dfch/biz.dfch.AsdSte100Lookup"
+        #     ".\n"
+        #     "ASD-STE100 Simplified Technical English "
+        #     "(Standard for Technical Documentation) Issue 9."
+        #     "\n"
+        #     "Copyright 2025 Aerospace, Security and Defence "
+        #     "Industries Association of Europe (ASD)"
+        #     ". "
+        #     "https://www.asd-europe.org"
+        #     ".",
+        # )
 
-        dictionary_fullname = Path(__file__).parent / "dictionary.json"
+        current_folder = Path(__file__).parent
+        dictionary_fullname = current_folder / DICTIONARY_FILE
         with open(dictionary_fullname, "r", encoding="utf-8") as f:
             dictionary_json = json.load(f)
 
@@ -533,7 +550,6 @@ class App:  # pylint: disable=R0903
                 break
 
             # Create the table
-            # table = Table(title=f"Results: '{prompt}'")
             table = Table()
             table.add_column("Word", no_wrap=True, min_width=16)
             table.add_column("Meaning/ALTERNATIVE", min_width=16)
@@ -649,6 +665,7 @@ class App:  # pylint: disable=R0903
                         nwords = [Word(**entry) for entry in note.words]
 
                         if row.description or row.ste_example or row.nonste_example:
+
                             row = TableRow()
                             rows.append(row)
 
@@ -687,6 +704,8 @@ class App:  # pylint: disable=R0903
 
             if rows:
                 for row in rows:
+                    if row.description:
+                        row.description = row.description.replace("\u200b", "")
                     # log.debug(f"'{row.word}', '{row.description}', '{row.ste_example}', '{row.nonste_example}'")
                     table.add_row(
                         row.word or "",
@@ -1109,7 +1128,9 @@ class App:  # pylint: disable=R0903
         files = [
             f
             for f in path.iterdir()
-            if (f.is_file() and f.name.startswith(prefix) and f.suffix == extension)
+            if (f.is_file() and
+                f.name.startswith(prefix) and
+                f.suffix == extension)
         ]
 
         word_infos: list[WordInfo] = []
@@ -1127,9 +1148,10 @@ class App:  # pylint: disable=R0903
             words.append(word)
             log.debug("word: [%s]", word)
 
+        current_folder = Path(__file__).parent
         parsed_words_dicts = [asdict(entry) for entry in words]
         with open(
-            file="./biz/dfch/asdste100lookup/dictionary.json",
+            file=(current_folder / DICTIONARY_FILE),
             mode="w",
             encoding="utf-8",
             newline="\n",
@@ -1139,10 +1161,31 @@ class App:  # pylint: disable=R0903
     def invoke(self) -> None:
         """Main entry point for this class."""
 
-        log.debug("Invoke.")
+        if self._args.command is None:
+            self._args.command = "dictionary"
+            self._args.input = None
+            self._args.log_level = "ERROR"
 
-        # Elegant!
-        root_dir = Path(__file__).resolve().parent.parent.parent.parent.parent
-        path = root_dir.joinpath("ASD-STE100/v3/txt")
-        # self.parse_source(path=path)
-        self.prompt_user_loop()
+        # Set the log level
+        from .args import Args  # pylint: disable=C0415
+
+        log_level = Args.get_effective_log_level_name(self._args)
+        import logging  # pylint: disable=C0415
+
+        for handler in logging.getLogger().handlers:
+            handler.setLevel(log_level)
+
+        print(self._parser.description)
+        print(self._parser.epilog)
+
+        if self._args.command == "dictionary":
+            self.prompt_user_loop()
+
+        if self._args.command == "parse":
+            # Elegant!
+            root_dir = Path(__file__).resolve(
+                ).parent.parent.parent.parent.parent
+            import_path = self._args.path
+            path = root_dir.joinpath(import_path)
+            self.parse_source(path=path)
+            self.prompt_user_loop()

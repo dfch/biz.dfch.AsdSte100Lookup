@@ -29,11 +29,14 @@ def main():
     # DFTODO: Currently, we define the relative part hard coded. It is
     # important that we create the I18n instance before any imports to log.
     # Maye we find a better solution for this in some time.
-    from biz.dfch.i18n import I18n  # pylint: disable=C0415
+    from biz.dfch.i18n import I18n  # pylint: disable=C0415, E0401
     I18n.Factory.create("biz/dfch/asdste100lookup")
 
-    from biz.dfch.asdste100lookup.app import App  # pylint: disable=C0415
-    App().invoke()
+    from biz.dfch.asdste100lookup.args import Args  # pylint: disable=C0415, E0401 # noqa: E501
+    parser = Args().invoke()
+
+    from biz.dfch.asdste100lookup.app import App  # pylint: disable=C0415, E0401 # noqa: E501
+    App(parser).invoke()
 
 
 if __name__ == "__main__":

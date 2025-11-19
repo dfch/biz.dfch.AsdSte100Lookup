@@ -22348,8 +22348,8 @@
         "meanings": [],
         "spellings": [],
         "alternatives": [],
-        "ste_example": "REMOVE THE BOLT. Extract the bolt.",
-        "nonste_example": "",
+        "ste_example": "REMOVE THE BOLT.",
+        "nonste_example": "Extract the bolt.",
         "note": null
       }
     ],
@@ -33732,7 +33732,7 @@
   },
   {
     "status": "rejected",
-    "name": "least [at least]",
+    "name": "at least",
     "type_": "adv",
     "meanings": [],
     "spellings": [],
