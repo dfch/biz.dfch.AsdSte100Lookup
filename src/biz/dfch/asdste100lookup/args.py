@@ -26,7 +26,7 @@ class Args:
     """
 
     # Note: also adjust in pyproject.toml
-    _VERSION = "1.0.4-beta"
+    _VERSION = "1.1.1"
     _PROG_NAME = "AsdSte100Lookup"
 
     _parser: argparse.ArgumentParser
@@ -105,27 +105,33 @@ class Args:
         parse_parser = subparsers.add_parser(
             "parse", parents=[common], help="Parses input dictionary files."
         )
+
+        parse_path_default = "ASD-STE100/v3/txt"
         parse_parser.add_argument(
             "-p",
             "--path",
-            default="ASD-STE100/v3/txt",
+            default=parse_path_default,
             required=False,
-            help="Path with dictionary files (default: 'ASD-STE100/v3/txt').",
+            help="Path with dictionary files "
+            f"(default: '{parse_path_default}').",
         )
 
+        parse_prefix_default = "ASD-STE100 - "
         parse_parser.add_argument(
             "--prefix",
-            default="ASD-STE100 - ",
+            default=parse_prefix_default,
             required=False,
-            help="Prefix of files in path (default: 'ASD-STE100 - ').",
+            help="Prefix of files in path "
+            f"(default: '{parse_prefix_default}').",
         )
-
+        parse_extension_default = ".txt"
         parse_parser.add_argument(
             "-ext",
             "--extension",
-            default=".txt",
+            default=parse_extension_default,
             required=False,
-            help="Extension of files in path (default: '.txt').",
+            help="Extension of files in path "
+            f"(default: '{parse_extension_default}').",
         )
 
         parse_parser.add_argument(
