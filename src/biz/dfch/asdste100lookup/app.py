@@ -33,8 +33,6 @@ from biz.dfch.version import Version
 
 from .colouriser import Colouriser
 
-DICTIONARY_FILE = "dictionary.json"
-
 
 class ColumnIndex(IntEnum):
     """Represent the column index in the source."""
@@ -504,32 +502,18 @@ class App:  # pylint: disable=R0903
 
         return result
 
-    def prompt_user_loop(self) -> None:
+    def prompt_user_loop(
+        self,
+        dictionary_file_name: str
+    ) -> None:
         """Main program loop."""
+
+        assert dictionary_file_name is not None and "" != dictionary_file_name
 
         log.debug("Starting to parse source data ...")
 
-        # print(
-        #     "AsdSte100Lookup (a dictionary lookup tool for ASD-STE100)"
-        #     ", "
-        #     f"v{self._VERSION}"
-        #     ".\n"
-        #     "Copyright 2025 Ronald Rink. Licensed under GPLv3"
-        #     ". "
-        #     "https://github.com/dfch/biz.dfch.AsdSte100Lookup"
-        #     ".\n"
-        #     "ASD-STE100 Simplified Technical English "
-        #     "(Standard for Technical Documentation) Issue 9."
-        #     "\n"
-        #     "Copyright 2025 Aerospace, Security and Defence "
-        #     "Industries Association of Europe (ASD)"
-        #     ". "
-        #     "https://www.asd-europe.org"
-        #     ".",
-        # )
-
         current_folder = Path(__file__).parent
-        dictionary_fullname = current_folder / DICTIONARY_FILE
+        dictionary_fullname = current_folder / dictionary_file_name
         with open(dictionary_fullname, "r", encoding="utf-8") as f:
             dictionary_json = json.load(f)
 
@@ -1116,12 +1100,14 @@ class App:  # pylint: disable=R0903
         path: Path,
         prefix: str,
         extension: str,
+        dictionary_file_name: str
     ) -> None:
         """Parse OCR dictionary files."""
 
         assert path is not None and isinstance(path, Path)
         assert prefix is not None and "" != prefix
         assert extension is not None and "" != extension
+        assert dictionary_file_name is not None and "" != dictionary_file_name
 
         log.debug("Parsing files in '%s' ...", path)
 
@@ -1151,7 +1137,7 @@ class App:  # pylint: disable=R0903
         current_folder = Path(__file__).parent
         parsed_words_dicts = [asdict(entry) for entry in words]
         with open(
-            file=(current_folder / DICTIONARY_FILE),
+            file=(current_folder / dictionary_file_name),
             mode="w",
             encoding="utf-8",
             newline="\n",
@@ -1161,36 +1147,34 @@ class App:  # pylint: disable=R0903
     def invoke(self) -> None:
         """Main entry point for this class."""
 
-        if self._args.command is None:
-            self._args.command = "dictionary"
-            self._args.input = None
-            self._args.log_level = "ERROR"
-
-        # Set the log level
+        # Set the effective log level.
         from .args import Args  # pylint: disable=C0415
-
         log_level = Args.get_effective_log_level_name(self._args)
         import logging  # pylint: disable=C0415
-
         for handler in logging.getLogger().handlers:
             handler.setLevel(log_level)
 
+        # Print program information.
+        log.debug(self._parser.description)
         print(self._parser.description)
+        log.debug(self._parser.epilog)
         print(self._parser.epilog)
 
         if self._args.command == "dictionary":
-            self.prompt_user_loop()
+            dictionary_file_name = self._args.input
+            self.prompt_user_loop(dictionary_file_name=dictionary_file_name)
 
         if self._args.command == "parse":
-            # Elegant!
+            # How elegant!
             root_dir = Path(__file__).resolve(
                 ).parent.parent.parent.parent.parent
             import_path = self._args.path
             path = root_dir.joinpath(import_path)
             prefix = self._args.prefix
             extension = self._args.extension
+            dictionary_file_name = self._args.output
             self.parse_source(
                 path=path,
                 prefix=prefix,
-                extension=extension)
-            self.prompt_user_loop()
+                extension=extension,
+                dictionary_file_name=dictionary_file_name)

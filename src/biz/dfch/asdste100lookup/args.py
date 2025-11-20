@@ -51,13 +51,14 @@ class Args:
             "-l",
             dest="log_level",
             choices=self.LOG_LEVEL_CHOICES,
-            help=f"Logging level (default: {self.DEFAULT_LOG_LEVEL})",
+            default=self.DEFAULT_LOG_LEVEL,
+            help=f"Logging level (default: {self.DEFAULT_LOG_LEVEL}).",
         )
         common.add_argument(
             "-v",
             action="count",
             default=0,
-            help="Increase verbosity (-v = WARNING, -vv = INFO, -vvv = DEBUG)",
+            help="Increase verbosity (-v = WARNING, -vv = INFO, -vvv = DEBUG).",
         )
 
         self._parser = argparse.ArgumentParser(
@@ -83,7 +84,19 @@ class Args:
         )
 
         subparsers = self._parser.add_subparsers(
-            dest="command", help="Available commands"
+            dest="command", help="Available commands."
+        )
+
+        dictionary_parser = subparsers.add_parser(
+            "dictionary", parents=[common], help="Queries the dictionary."
+        )
+
+        dictionary_parser.add_argument(
+            "-i",
+            "--input",
+            default="dictionary.json",
+            required=False,
+            help="Name of the dictionary file to read entries from.",
         )
 
         parse_parser = subparsers.add_parser(
@@ -112,10 +125,12 @@ class Args:
             help="Extension of files in path.",
         )
 
-        _ = subparsers.add_parser(
-            "dictionary",
-            parents=[common],
-            help="Queries the dictionary."
+        parse_parser.add_argument(
+            "-o",
+            "--output",
+            default="dictionary.json",
+            required=False,
+            help="Name of the dictionary file to save entries to.",
         )
 
     @staticmethod
@@ -125,8 +140,12 @@ class Args:
         result = Args.DEFAULT_LOG_LEVEL
 
         # Explicit specification of --log-level takes precedence.
-        if args.log_level:
+        if hasattr(args, "log_level") and args.log_level:
             result = args.log_level.upper()
+            return result
+
+        # Return default log level if no "-v" is specified.
+        if not hasattr(args, "v"):
             return result
 
         # Otherwise map verbosity count to log level.
@@ -138,11 +157,8 @@ class Args:
             result = "INFO"
             return result
 
-        if args.v == 1:
-            result = "WARNING"
-            return result
-
-        # Otherwise return default log level.
+        # if args.v == 1:
+        result = "WARNING"
         return result
 
     def invoke(self) -> argparse.ArgumentParser:
