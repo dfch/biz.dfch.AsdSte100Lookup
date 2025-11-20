@@ -41,7 +41,9 @@ class Args:
         "DEBUG",
         "NOTSET",
     ]
-    DEFAULT_LOG_LEVEL = "ERROR"
+    _DEFAULT_LOG_LEVEL = "ERROR"
+
+    _DICTIONARY_FILE = "dictionary.json"
 
     def __init__(self):
 
@@ -51,8 +53,8 @@ class Args:
             "-l",
             dest="log_level",
             choices=self.LOG_LEVEL_CHOICES,
-            default=self.DEFAULT_LOG_LEVEL,
-            help=f"Logging level (default: {self.DEFAULT_LOG_LEVEL}).",
+            # default=self._DEFAULT_LOG_LEVEL,
+            help=f"Logging level (default: {self._DEFAULT_LOG_LEVEL}).",
         )
         common.add_argument(
             "-v",
@@ -94,9 +96,10 @@ class Args:
         dictionary_parser.add_argument(
             "-i",
             "--input",
-            default="dictionary.json",
+            default=self._DICTIONARY_FILE,
             required=False,
-            help="Name of the dictionary file to read entries from.",
+            help="Name of the dictionary file to read entries from "
+            f"(default: {self._DICTIONARY_FILE}).",
         )
 
         parse_parser = subparsers.add_parser(
@@ -107,14 +110,14 @@ class Args:
             "--path",
             default="ASD-STE100/v3/txt",
             required=False,
-            help="Path with dictionary files.",
+            help="Path with dictionary files (default: 'ASD-STE100/v3/txt').",
         )
 
         parse_parser.add_argument(
             "--prefix",
             default="ASD-STE100 - ",
             required=False,
-            help="Prefix of files in path.",
+            help="Prefix of files in path (default: 'ASD-STE100 - ').",
         )
 
         parse_parser.add_argument(
@@ -122,22 +125,23 @@ class Args:
             "--extension",
             default=".txt",
             required=False,
-            help="Extension of files in path.",
+            help="Extension of files in path (default: '.txt').",
         )
 
         parse_parser.add_argument(
             "-o",
             "--output",
-            default="dictionary.json",
+            default=self._DICTIONARY_FILE,
             required=False,
-            help="Name of the dictionary file to save entries to.",
+            help="Name of the dictionary file to save entries to "
+            f"(default: {self._DICTIONARY_FILE}).",
         )
 
     @staticmethod
     def get_effective_log_level_name(args) -> str:
         """Returns the effective log level name."""
 
-        result = Args.DEFAULT_LOG_LEVEL
+        result = Args._DEFAULT_LOG_LEVEL
 
         # Explicit specification of --log-level takes precedence.
         if hasattr(args, "log_level") and args.log_level:
@@ -157,8 +161,10 @@ class Args:
             result = "INFO"
             return result
 
-        # if args.v == 1:
-        result = "WARNING"
+        if args.v == 1:
+            result = "WARNING"
+            return result
+
         return result
 
     def invoke(self) -> argparse.ArgumentParser:
