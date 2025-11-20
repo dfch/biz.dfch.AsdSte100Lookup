@@ -1114,8 +1114,8 @@ class App:  # pylint: disable=R0903
     def parse_source(
         self,
         path: Path,
-        prefix: str = "ASD-STE100 - ",
-        extension: str = ".txt",
+        prefix: str,
+        extension: str,
     ) -> None:
         """Parse OCR dictionary files."""
 
@@ -1187,5 +1187,10 @@ class App:  # pylint: disable=R0903
                 ).parent.parent.parent.parent.parent
             import_path = self._args.path
             path = root_dir.joinpath(import_path)
-            self.parse_source(path=path)
+            prefix = self._args.prefix
+            extension = self._args.extension
+            self.parse_source(
+                path=path,
+                prefix=prefix,
+                extension=extension)
             self.prompt_user_loop()

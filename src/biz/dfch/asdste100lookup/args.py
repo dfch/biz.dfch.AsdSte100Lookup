@@ -97,6 +97,21 @@ class Args:
             help="Path with dictionary files.",
         )
 
+        parse_parser.add_argument(
+            "--prefix",
+            default="ASD-STE100 - ",
+            required=False,
+            help="Prefix of files in path.",
+        )
+
+        parse_parser.add_argument(
+            "-ext",
+            "--extension",
+            default=".txt",
+            required=False,
+            help="Extension of files in path.",
+        )
+
         _ = subparsers.add_parser(
             "dictionary",
             parents=[common],
