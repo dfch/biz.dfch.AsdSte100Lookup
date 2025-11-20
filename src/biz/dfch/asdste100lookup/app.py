@@ -20,10 +20,11 @@ from __future__ import annotations
 import argparse
 from dataclasses import asdict, dataclass, field
 from enum import auto, StrEnum, IntEnum, Enum
+from itertools import zip_longest
 import json
 from pathlib import Path
 import re
-from typing import Type, TypeVar
+from typing import cast, Type, TypeVar
 from rich.console import Console
 from rich.table import Table
 
@@ -117,8 +118,8 @@ class Word:
     meanings: list[WordMeaning]
     spellings: list[str]
     alternatives: list[Word]
-    ste_example: str | None = None
-    nonste_example: str | None = None
+    ste_example: list[str] = field(default_factory=list)
+    nonste_example: list[str] = field(default_factory=list)
     note: WordNote | None = None
 
 
@@ -502,6 +503,20 @@ class App:  # pylint: disable=R0903
 
         return result
 
+    def _get_first_or_item(self, item: str | list[str] | None) -> str | None:
+        """
+        Retrieves the first item of a list or the element itself.
+        Returns None if list or element is empty.
+        """
+
+        if item is None:
+            return None
+
+        if isinstance(item, list):
+            return item[0] if item else None
+
+        return item
+
     def prompt_user_loop(
         self,
         dictionary_file_name: str
@@ -552,17 +567,22 @@ class App:  # pylint: disable=R0903
                             matching_words[id(word)] = word
                             continue
 
-                    if word.ste_example and re.search(
-                        prompt, word.ste_example, re.IGNORECASE
+                    if self._get_first_or_item(word.ste_example) and re.search(
+                        prompt,
+                        cast(str, self._get_first_or_item(word.ste_example)),
+                        re.IGNORECASE
                     ):
                         matching_words[id(word)] = word
                         continue
 
-                    if word.nonste_example and re.search(
-                        prompt, word.nonste_example, re.IGNORECASE
+                    if self._get_first_or_item(word.nonste_example) and re.search(
+                        prompt,
+                        cast(str, self._get_first_or_item(word.nonste_example)),
+                        re.IGNORECASE
                     ):
                         matching_words[id(word)] = word
                         continue
+
             except re.error as ex:
                 log.error("Invalid regex: '%s'", ex)
 
@@ -580,9 +600,11 @@ class App:  # pylint: disable=R0903
                             word.name,
                             word.status,
                         )
-                    if word.ste_example:
+                    if self._get_first_or_item(word.ste_example):
                         row.ste_example = self.to_colour(
-                            word.ste_example, prompt, word.status
+                            cast(str, self._get_first_or_item(
+                                word.ste_example)),
+                            prompt, word.status
                         )
                 else:
                     if word.name:
@@ -591,9 +613,11 @@ class App:  # pylint: disable=R0903
                             word.name,
                             word.status,
                         )
-                    if word.nonste_example:
+                    if self._get_first_or_item(word.nonste_example):
                         row.nonste_example = self.to_colour(
-                            word.nonste_example, prompt, WordStatus.REJECTED
+                            cast(str, self._get_first_or_item(
+                                word.nonste_example)),
+                            prompt, WordStatus.REJECTED
                         )
 
                 if word.spellings:
@@ -628,15 +652,43 @@ class App:  # pylint: disable=R0903
                             rows.append(row)
 
                         row.description = self.to_colour(
-                            f"{alt.name.upper()} ({alt.type_})", alt.name, alt.status
+                            f"{alt.name.upper()} ({alt.type_})",
+                            alt.name,
+                            alt.status
                         )
-                        if alt.ste_example:
-                            row.ste_example = self.to_colour(
-                                alt.ste_example, alt.name, alt.status
+
+                        # Process examples pairwise.
+                        ste_list = alt.ste_example if isinstance(
+                            alt.ste_example, list) else (
+                                [] if alt.ste_example is None
+                                else [alt.ste_example]
                             )
-                        if alt.nonste_example:
+                        nonste_list = alt.nonste_example if isinstance(
+                            alt.nonste_example, list) else (
+                                [] if alt.nonste_example is None
+                                else [alt.nonste_example]
+                            )
+                        for i, (ste, nonste) in enumerate(
+                                zip_longest(ste_list,
+                                            nonste_list, fillvalue=' ')):
+
+                            if 0 == i:
+                                row.ste_example = self.to_colour(
+                                    ste, alt.name, alt.status
+                                )
+                                row.nonste_example = self.to_colour(
+                                    nonste, word.name, WordStatus.REJECTED
+                                )
+                                continue
+
+                            row = TableRow()
+                            rows.append(row)
+
+                            row.ste_example = self.to_colour(
+                                ste, alt.name, alt.status
+                            )
                             row.nonste_example = self.to_colour(
-                                alt.nonste_example, word.name, WordStatus.REJECTED
+                                nonste, word.name, WordStatus.REJECTED
                             )
 
                 if word.note:
@@ -663,13 +715,17 @@ class App:  # pylint: disable=R0903
                                 nword.name,
                                 nword.status,
                             )
-                            if nword.ste_example:
+                            if self._get_first_or_item(nword.ste_example):
                                 row.ste_example = self.to_colour(
-                                    nword.ste_example, nword.name, WordStatus.APPROVED
+                                    cast(str, self._get_first_or_item(
+                                        nword.ste_example)),
+                                    nword.name, WordStatus.APPROVED
                                 )
-                            if nword.nonste_example:
+                            if self._get_first_or_item(nword.nonste_example):
                                 row.nonste_example = self.to_colour(
-                                    nword.nonste_example, word.name, WordStatus.REJECTED
+                                    cast(str, self._get_first_or_item(
+                                        nword.nonste_example)),
+                                    nword.name, WordStatus.REJECTED
                                 )
                     elif note.value:
                         row = TableRow()
@@ -690,7 +746,9 @@ class App:  # pylint: disable=R0903
                 for row in rows:
                     if row.description:
                         row.description = row.description.replace("\u200b", "")
-                    # log.debug(f"'{row.word}', '{row.description}', '{row.ste_example}', '{row.nonste_example}'")
+                    log.debug(f"'{row.word}', '{row.description}', "
+                              f"'{row.ste_example}', "
+                              f"'{row.nonste_example}'")
                     table.add_row(
                         row.word or "",
                         row.description or "",
@@ -927,7 +985,8 @@ class App:  # pylint: disable=R0903
         line_info = item.line_infos[0]
         next_state = self.get_next_state(current_state, line_info)
         log.debug(
-            f"[{item.filename}] [{current_state.name} --> {next_state.name}] @ {line_info.get_type().name}: {line_info.line}"
+            f"[{item.filename}] [{current_state.name} --> {next_state.name}] @ "
+            f"{line_info.get_type().name}: {line_info.line}"
         )
         assert WordState.ERROR != next_state
         previous_state = current_state
@@ -967,9 +1026,13 @@ class App:  # pylint: disable=R0903
                     meanings=[],
                     spellings=[],
                     alternatives=[],
-                    ste_example=ste or "",
-                    nonste_example=non_ste or "",
+                    ste_example=[],
+                    nonste_example=[],
                 )
+                if ste:
+                    alternative.ste_example.append(ste)
+                if non_ste:
+                    alternative.nonste_example.append(non_ste)
                 xyz = Word(
                     status=item.word.status,
                     type_=item.word.type_,
@@ -1046,9 +1109,14 @@ class App:  # pylint: disable=R0903
                         meanings=[],
                         spellings=[],
                         alternatives=[],
-                        ste_example=ste or "",
-                        nonste_example=non_ste or "",
+                        ste_example=[],
+                        nonste_example=[],
                     )
+                    if ste:
+                        alternative.ste_example.append(ste)
+                    if non_ste:
+                        alternative.nonste_example.append(non_ste)
+
                     xyz.alternatives.append(alternative)
                 case WordState.ALTERNATIVE_EXAMPLE:
                     log.warning(
@@ -1059,6 +1127,10 @@ class App:  # pylint: disable=R0903
                         item.word.type_,
                         xyz.alternatives[-1].name,
                     )
+                    if ste:
+                        xyz.alternatives[-1].ste_example.append(ste)
+                    if non_ste:
+                        xyz.alternatives[-1].nonste_example.append(non_ste)
                 case WordState.NOTE_ALTERNATIVE:
                     assert description
                     assert xyz.note
@@ -1072,9 +1144,13 @@ class App:  # pylint: disable=R0903
                         meanings=[],
                         spellings=[],
                         alternatives=[],
-                        ste_example=ste or "",
-                        nonste_example=non_ste or "",
+                        ste_example=[],
+                        nonste_example=[],
                     )
+                    if ste:
+                        alternative.ste_example.append(ste)
+                    if non_ste:
+                        alternative.nonste_example.append(non_ste)
                     xyz.note.words.append(alternative)
                 case WordState.NOTE_ALTERNATIVE_EXAMPLE:
                     assert xyz.note
