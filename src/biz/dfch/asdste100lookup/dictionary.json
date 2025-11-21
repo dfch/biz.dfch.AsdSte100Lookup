@@ -63874,22 +63874,40 @@
     "status": "rejected",
     "name": "swing",
     "type_": "v",
-    "meanings": [
+    "meanings": [],
+    "spellings": [],
+    "alternatives": [
       {
-        "value": "MOVE (v) CALIBRATE (v)",
-        "ste_example": "MOVE THE SHOCK ABSORBERS INTO THEIR CORRECT POSITIONS.",
-        "nonste_example": "Swing the shock absorbers into their correct positions.",
+        "status": "approved",
+        "name": "MOVE",
+        "type_": "v",
+        "meanings": [],
+        "spellings": [],
+        "alternatives": [],
+        "ste_example": [
+          "MOVE THE SHOCK ABSORBERS INTO THEIR CORRECT POSITIONS."
+        ],
+        "nonste_example": [
+          "Swing the shock absorbers into their correct positions."
+        ],
         "note": null
       },
       {
-        "value": "\u200b",
-        "ste_example": "YOU CAN CALIBRATE ALL THE COMPASS SYSTEMS AT THE SAME TIME.",
-        "nonste_example": "All compass systems may be swung simultaneously.",
+        "status": "approved",
+        "name": "CALIBRATE",
+        "type_": "v",
+        "meanings": [],
+        "spellings": [],
+        "alternatives": [],
+        "ste_example": [
+          "YOU CAN CALIBRATE ALL THE COMPASS SYSTEMS AT THE SAME TIME."
+        ],
+        "nonste_example": [
+          "All compass systems may be swung simultaneously."
+        ],
         "note": null
       }
     ],
-    "spellings": [],
-    "alternatives": [],
     "ste_example": [],
     "nonste_example": [],
     "note": {
