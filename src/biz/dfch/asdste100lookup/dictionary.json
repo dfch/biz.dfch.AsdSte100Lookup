@@ -50808,10 +50808,10 @@
         "spellings": [],
         "alternatives": [],
         "ste_example": [
-          "MAKE SURE THAT THE Avoid an erroneous EXHAUST FROM THE reading caused by GROUND CART DOES exhaust from ground NOT CAUSE AN"
+          "MAKE SURE THAT THE EXHAUST FROM THE GROUND CART DOES NOT CAUSE AN INCORRECT INDICATION."
         ],
         "nonste_example": [
-          "cart. INCORRECT INDICATION."
+          "Avoid an erroneous reading caused by exhaust from ground cart."
         ],
         "note": null
       }
@@ -50840,10 +50840,10 @@
         "spellings": [],
         "alternatives": [],
         "ste_example": [
-          "AFTER THE"
+          "AFTER THE INSPECTION, ADJUST THE LINKAGE AGAIN."
         ],
         "nonste_example": [
-          "Readjust the linkage INSPECTION, ADJUST after the inspection. THE LINKAGE AGAIN."
+          "Readjust the linkage after the inspection."
         ],
         "note": null
       }
@@ -50872,10 +50872,10 @@
         "spellings": [],
         "alternatives": [],
         "ste_example": [
-          "MAKE SURE THAT THE Make sure that the CONTROL SYSTEM IS control system is in an PREPARED FOR"
+          "MAKE SURE THAT THE CONTROL SYSTEM IS PREPARED FOR OPERATION."
         ],
         "nonste_example": [
-          "operational ready state. OPERATION."
+          "Make sure that the control system is in an operational ready state."
         ],
         "note": null
       }
@@ -50904,10 +50904,10 @@
         "spellings": [],
         "alternatives": [],
         "ste_example": [
-          "PREPARE THE"
+          "PREPARE THE REMOVAL KIT FOR THE REMOVAL OF THE STRUT."
         ],
         "nonste_example": [
-          "Ready the removal kit for REMOVAL KIT FOR the removal of the strut. THE REMOVAL OF THE STRUT."
+          "Ready the removal kit for the removal of the strut."
         ],
         "note": null
       }

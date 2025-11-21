@@ -4,7 +4,7 @@ INSTRUMENT (n)	An item which measures and/or shows	ALL THE INSTRUMENTS ARE ON TH
 insufficient (adj)	NOT SUFFICIENT	IF THIS STEP IS NOT SUFFICIENT TO STOP THE LEAKAGE, REPLACE THE ACTUATOR.	If this step is insufficient to stop the leakage, replace the actuator.
 INSULATION (n)	A material that helps to prevent the movement of energy	MAKE SURE THAT YOU DO NOT CAUSE DAMAGE TO THE INSULATION.	
 insure (v)	MAKE SURE (v)	MAKE SURE THAT THE WORK BENCH IS CLEAN.	Insure that the work bench is clean.
-intact (adj)	NOT DAMAGED	MAKE SURE THAT THE WINDSCREEN IS NOT DAMAGED.	Make sure the windscreen is intact.
+intact (adj)	NOT DAMAGED (adj)	MAKE SURE THAT THE WINDSCREEN IS NOT DAMAGED.	Make sure the windscreen is intact.
 integral (adj)	PART (n)	THE PIN IS A PART OF THE PUMP.	The pin is integral with the pump.
 INTENSITY (n)	The quantity of strength, force, or energy	OPERATE THE DIMMER SWITCH AND MAKE SURE THAT THE INTENSITY OF THE LIGHT CHANGES.	
 INTERCHANGE (v), INTERCHANGES, INTERCHANGED, INTERCHANGED	To put or use each of two things in the place of the other without change	INTERCHANGE THE No. 1 AND No. 2 COMPUTERS. THEN DO THE TEST AGAIN.	

@@ -7,5 +7,5 @@ uncontaminated (adj)	CLEAN (adj)	MAKE SURE THAT THE HYDRAULIC FLUID IS CLEAN.	Ma
 	CONTAMINATION (n)	MAKE SURE THAT THERE IS NO CONTAMINATION IN THE FUEL TANKS.	Make sure that the fuel tanks are uncontaminated.
 uncouple (v)	DISCONNECT (v)	DISCONNECT THE TOW BAR FROM THE VEHICLE.	Uncouple the tow bar from the vehicle.
 uncovered (adj)	COVER (TN)	DO NOT PUT A COVER ON THE CONTAINER.	Leave the container uncovered.
-undamaged (adj)	NOT DAMAGED	MAKE SURE THAT THE SKIN IS NOT DAMAGED.	Make sure that the skin is undamaged.
+undamaged (adj)	NOT DAMAGED (adj)	MAKE SURE THAT THE SKIN IS NOT DAMAGED.	Make sure that the skin is undamaged.
 UNDEMANDED (adj)	That occurs without an apparent cause	IF YOU GET AN UNDEMANDED MOVEMENT, DO A TEST OF THE SYSTEM.	

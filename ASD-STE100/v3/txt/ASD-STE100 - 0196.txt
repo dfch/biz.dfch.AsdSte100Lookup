@@ -4,7 +4,7 @@ reach (v)	GET (v)	WHEN YOU GET THE When the correct CORRECT PRESSURE, pressure i
 	BE (v)	WHEN THE FLAPS ARE AT THE 30 DEGREE POSITION, INSTALL THE RIGGING PIN.	When the flaps reach the 30 degree position, install the rigging pin.
 reactivate (v)	ACTIVATE (v)	ACTIVATE THE MODE AGAIN.	Reactivate the mode.
 READ (v), READS, READ, READ	To come to know information with the eyes or electronically	READ THE INDICATORS ON THE CONTROL PANEL.
-reading (n)	INDICATION (n)	MAKE SURE THAT THE Avoid an erroneous EXHAUST FROM THE reading caused by GROUND CART DOES exhaust from ground NOT CAUSE AN	cart. INCORRECT INDICATION.
-readjust (v)	ADJUST (v)	AFTER THE	Readjust the linkage INSPECTION, ADJUST after the inspection. THE LINKAGE AGAIN.
-ready (adj)	PREPARE (v)	MAKE SURE THAT THE Make sure that the CONTROL SYSTEM IS control system is in an PREPARED FOR	operational ready state. OPERATION.
-ready (v)	PREPARE (v)	PREPARE THE	Ready the removal kit for REMOVAL KIT FOR the removal of the strut. THE REMOVAL OF THE STRUT.
+reading (n)	INDICATION (n)	MAKE SURE THAT THE EXHAUST FROM THE GROUND CART DOES NOT CAUSE AN INCORRECT INDICATION.	Avoid an erroneous reading caused by exhaust from ground cart.
+readjust (v)	ADJUST (v)	AFTER THE INSPECTION, ADJUST THE LINKAGE AGAIN.	Readjust the linkage after the inspection.
+ready (adj)	PREPARE (v)	MAKE SURE THAT THE CONTROL SYSTEM IS PREPARED FOR OPERATION.	Make sure that the control system is in an operational ready state.
+ready (v)	PREPARE (v)	PREPARE THE REMOVAL KIT FOR THE REMOVAL OF THE STRUT.	Ready the removal kit for the removal of the strut.

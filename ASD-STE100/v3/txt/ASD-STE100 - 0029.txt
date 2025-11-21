@@ -10,4 +10,5 @@ blank (v)	SEAL (v)	SEAL THE HOSE.	Blank the hose.
 	CAP (TN)	PUT A CAP ON THE CONNECTOR.	Blank the connector.
 	COVER (TN)	PUT A COVER ON THE OUTLET PORT.	Blank the outlet port.
 BLEED (v), BLEEDS, BLED, BLED	To let a gas out of	BLEED THE SPEEDBRAKE HYDRAULIC SYSTEM.	
+	###Use DRAIN (v) for liquids.
 blend (v)	MIX (v)	MIX THE ADHESIVE WITH THE HARDENER.	Blend the adhesive with the hardener.
