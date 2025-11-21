@@ -7685,10 +7685,10 @@
     "ste_example": [],
     "nonste_example": [],
     "note": {
-      "value": "",
+      "value": "Use DRAIN (v) for liquids.",
       "words": [],
-      "ste_example": null,
-      "nonste_example": null
+      "ste_example": "",
+      "nonste_example": ""
     }
   },
   {
@@ -35636,16 +35636,25 @@
     "status": "rejected",
     "name": "intact",
     "type_": "adj",
-    "meanings": [
+    "meanings": [],
+    "spellings": [],
+    "alternatives": [
       {
-        "value": "NOT DAMAGED",
-        "ste_example": "MAKE SURE THAT THE WINDSCREEN IS NOT DAMAGED.",
-        "nonste_example": "Make sure the windscreen is intact.",
+        "status": "approved",
+        "name": "NOT DAMAGED",
+        "type_": "adj",
+        "meanings": [],
+        "spellings": [],
+        "alternatives": [],
+        "ste_example": [
+          "MAKE SURE THAT THE WINDSCREEN IS NOT DAMAGED."
+        ],
+        "nonste_example": [
+          "Make sure the windscreen is intact."
+        ],
         "note": null
       }
     ],
-    "spellings": [],
-    "alternatives": [],
     "ste_example": [],
     "nonste_example": [],
     "note": {
@@ -67847,16 +67856,25 @@
     "status": "rejected",
     "name": "undamaged",
     "type_": "adj",
-    "meanings": [
+    "meanings": [],
+    "spellings": [],
+    "alternatives": [
       {
-        "value": "NOT DAMAGED",
-        "ste_example": "MAKE SURE THAT THE SKIN IS NOT DAMAGED.",
-        "nonste_example": "Make sure that the skin is undamaged.",
+        "status": "approved",
+        "name": "NOT DAMAGED",
+        "type_": "adj",
+        "meanings": [],
+        "spellings": [],
+        "alternatives": [],
+        "ste_example": [
+          "MAKE SURE THAT THE SKIN IS NOT DAMAGED."
+        ],
+        "nonste_example": [
+          "Make sure that the skin is undamaged."
+        ],
         "note": null
       }
     ],
-    "spellings": [],
-    "alternatives": [],
     "ste_example": [],
     "nonste_example": [],
     "note": {
