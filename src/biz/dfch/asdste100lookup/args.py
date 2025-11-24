@@ -26,7 +26,7 @@ class Args:
     """
 
     # Note: also adjust in pyproject.toml
-    _VERSION = "1.2.1"
+    _VERSION = "1.3.0"
     _PROG_NAME = "AsdSte100Lookup"
 
     _parser: argparse.ArgumentParser
@@ -101,6 +101,16 @@ class Args:
             help="Name of the dictionary file to read entries from "
             f"(default: {self._DICTIONARY_FILE}).",
         )
+
+        rules_parser = subparsers.add_parser(
+            "rules", parents=[common], help="Shows the rules."
+        )
+        rules_group = rules_parser.add_mutually_exclusive_group()
+        rules_group.add_argument("--list", action="store_true", help="Shows all rules.")  
+        rules_group.add_argument("--id", type=str, help="Shows rules by specified id (regex match).")
+        rules_group.add_argument("--section", type=str, help="Shows rules by specified section (regex match).")
+        rules_group.add_argument("--category", type=str, help="Shows rules by specified category (regex match).")
+        rules_parser.add_argument("--summary", action="store_true", help="Shows only the summary of a rule.")
 
         parse_parser = subparsers.add_parser(
             "parse", parents=[common], help="Parses input dictionary files."

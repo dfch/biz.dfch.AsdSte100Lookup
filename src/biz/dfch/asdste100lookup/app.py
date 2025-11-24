@@ -20,19 +20,114 @@ from __future__ import annotations
 import argparse
 from dataclasses import asdict, dataclass, field
 from enum import auto, StrEnum, IntEnum, Enum
+from io import StringIO
 from itertools import zip_longest
 import json
 from pathlib import Path
 import re
-from typing import cast, Type, TypeVar
+from typing import Any, cast, Type, TypeVar
+from rich import box
 from rich.console import Console
+from rich.markdown import Markdown
+from rich.panel import Panel
 from rich.table import Table
+from rich.theme import Theme
 
 # from biz.dfch.i18n import LanguageCode
 from biz.dfch.logging import log
 from biz.dfch.version import Version
 
 from .colouriser import Colouriser
+
+
+class MarkDownUtils():
+    """Support class for working with `MarkDown()`."""
+
+    @staticmethod
+    def get_max_width(value: str) -> int:
+        """Returns the maximum character width of a text rendered with `MarkDown()`."""
+
+        if not value or "" == value:
+            return 0
+
+        md = Markdown(value)
+        console = Console(file=StringIO())
+        console.print(md)
+        io: StringIO = cast(StringIO, console.file)
+        rendered = io.getvalue()
+        lines = rendered.splitlines()
+
+        result = max((len(line.rstrip()) for line in lines), default=0)
+
+        return result
+
+    @staticmethod
+    def to_panel(value: str = "", title: str = "", style: str = "green") -> Panel:
+        """Converts a markdown to text to a `Panel`."""
+
+        if value is None:
+            value = ""
+
+        assert style is not None and "" != style
+
+        md = Markdown(value)
+
+        max_length = MarkDownUtils.get_max_width(value)
+
+        padding_height = 0
+        padding_width = 1
+        border_width = 1
+        width = max_length + 2 * padding_width + 2 * border_width + 2
+
+        result = Panel(
+            md,
+            title=title,
+            width=width,
+            title_align="left",
+            border_style=style,
+            expand=False,
+            padding=(padding_height, padding_width)
+        )
+
+        return result
+
+
+class RuleContentType(StrEnum):
+    """Represents all possible rule content types."""
+    TEXT = "text"
+    DEFAULT = TEXT
+    STE = "ste_example"
+    NONSTE = "nonste_example"
+    NOTE = "note"
+    GOOD = "good"
+    BAD = "bad"
+    GENERAL = "general"
+    COMMENT = "comment"
+    EXAMPLE = "example"
+
+
+@dataclass
+class RuleContentTypeBase():
+    """Base class for all rule contents."""
+    data: Any
+    type_: RuleContentType = RuleContentType.DEFAULT
+
+    def parse(self) -> str:
+        """Parses a rule content into markdown."""
+        return ""
+
+
+@dataclass
+class Rule:
+    """Represents a ASD-STE100 rule."""
+    type_: str
+    id_: str
+    ref: str
+    section: str
+    category: str
+    name: str
+    summary: str
+    contents: list[RuleContentTypeBase] = field(default_factory=list)
 
 
 class ColumnIndex(IntEnum):
@@ -1239,6 +1334,105 @@ class App:  # pylint: disable=R0903
         if self._args.command == "dictionary":
             dictionary_file_name = self._args.input
             self.prompt_user_loop(dictionary_file_name=dictionary_file_name)
+            return
+
+        if self._args.command == "rules":
+
+            rule_theme = Theme({
+                # "markdown.h1": "bold magenta",
+                "markdown.code" : "red",
+                "markdown.h2": "bold cyan",
+            })
+            console = Console(theme=rule_theme)
+
+            # Load rules file.
+            current_folder = Path(__file__).parent
+            rules_fullname = current_folder / "rules.json"
+            with open(rules_fullname, "r", encoding="utf-8") as f:
+                rules_data = json.load(f)
+
+            rule_objects = [Rule(**rule_object) for rule_object in rules_data]
+            for rule in rule_objects:
+
+                if self._args.id:
+                    if not re.search(self._args.id, rule.id_, re.IGNORECASE):
+                        continue
+
+                if self._args.section:
+                    if not re.search(self._args.section, rule.section, re.IGNORECASE):
+                        continue
+
+                if self._args.category:
+                    if not re.search(self._args.category, rule.category, re.IGNORECASE):
+                        continue
+
+                p = Panel(f"[black]{rule.name}[/black]", title=f"Rule {rule.id_}", title_align="left", subtitle=f"{rule.section}, {rule.category}", subtitle_align="left", border_style="bright_black", style="on bright_yellow", padding=(1, 1), box=box.HEAVY_EDGE)
+                p = Panel(
+                    Markdown(rule.name),
+                    title=f"Rule {rule.id_}",
+                    title_align="left",
+                    subtitle=f"{rule.section}, {rule.category}, {rule.ref}",
+                    subtitle_align="left",
+                    border_style="bright_yellow",
+                    padding=(1, 1),
+                    box=box.HEAVY_EDGE
+                )
+                console.print(p)
+                md = Markdown(f"**{rule.summary}**")
+                console.print("")
+                console.print(md)
+                console.print("")
+
+                if self._args.summary:
+                    continue
+
+                for contents in [RuleContentTypeBase(**c) for c in rule.contents]:
+                    # print(contents.type_)
+                    match contents.type_:
+                        case RuleContentType.TEXT:
+                            md = Markdown(contents.data)
+                            console.print(md)
+                            console.print("")
+                        case RuleContentType.EXAMPLE:
+                            txt = f"[green]{contents.data}[/green]"
+                            console.print(Panel(txt, title="STE", title_align="left", expand=False))
+                            console.print("")
+                        case RuleContentType.STE:
+                            # txt = f"[green]{contents.data}[/green]"
+                            # console.print(Panel(txt, title="STE", title_align="left", expand=False))
+                            # console.print("")
+                            panel = MarkDownUtils.to_panel(contents.data, title="STE", style="green")
+                            console.print(panel)
+                            console.print("")
+                        case RuleContentType.NONSTE:
+                            # txt = f"[red]{contents.data}[/red]"
+                            # console.print(Panel(txt, title="Non-STE", title_align="left", expand=False))
+                            # console.print("")
+                            panel = MarkDownUtils.to_panel(contents.data, title="Non-STE", style="red")
+                            console.print(panel)
+                            console.print("")
+                        case RuleContentType.NOTE:
+                            md = Markdown(contents.data)
+                            console.print(Panel(md, title="💡", title_align="left", border_style="yellow", expand=False))
+                            console.print("")
+                        case RuleContentType.GOOD:
+                            panel = MarkDownUtils.to_panel(contents.data, title="Example", style="green")
+                            console.print(panel)
+                            console.print("")
+                        case RuleContentType.GENERAL:
+                            panel = MarkDownUtils.to_panel(contents.data, title="Example", style="blue")
+                            console.print(panel)
+                            console.print("")
+                        case RuleContentType.COMMENT:
+                            md = Markdown(f"_{contents.data}_")
+                            console.print(md)
+                            console.print("")
+                        case _:
+                            console.print("default")
+                            md = Markdown(contents.data)
+                            console.print(md)
+                            console.print("")
+            return
 
         if self._args.command == "parse":
             # How elegant!
@@ -1254,3 +1448,4 @@ class App:  # pylint: disable=R0903
                 prefix=prefix,
                 extension=extension,
                 dictionary_file_name=dictionary_file_name)
+            return

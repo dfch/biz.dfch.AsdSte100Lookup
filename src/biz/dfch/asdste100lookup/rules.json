@@ -1,0 +1,2248 @@
+[
+    {
+        "type_": "rule",
+        "id_": "1.1",
+        "ref": "Issue 9 page 1-1-2",
+        "section": "Words",
+        "category": "Which words can you use?",
+        "name": "Use words that are:  \n - Approved in the dictionary  \n - Technical nouns  \n - Technical verbs.",
+        "summary": "Simplified Technical English (STE) has a controlled dictionary (part 2) that gives the words most frequently used in technical writing. You can also use words that are not in the dictionary if you can include them in the specified categories of technical nouns and technical verbs.",
+        "contents": [
+            {
+                "type_": "text",
+                "data": "A technical noun is a noun term that refers to a specified concept and is applicable to a subject field. A technical verb is a verb term that also refers to a specified concept or process and is applicable to a subject field."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Examples"
+            }
+            ,
+            {
+                "type_": "good",
+                "data": "- The word **use** is an approved verb in the dictionary.  \n - The word **engine** is a technical noun.  \n - The word **ream** is a technical verb."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "The dictionary also gives a selection of words that are not approved, with examples that show how to use alternative words."
+            }
+            ,
+            {
+                "type_": "note",
+                "data": "In the context of [ISO 1087:2019](https://www.iso.org/standard/62330.html), 'subject fields' refer to specific domains or areas of knowledge that have specialized vocabularies."
+            }
+            ,
+            {
+                "type_": "note",
+                "data": "Technical nouns and technical verbs are usually included in your company glossary or technology database. Always refer to these sources, and the to specified rules in this section, for the correct selection of words."
+            }
+        ]
+    },
+    {
+        "type_": "rule",
+        "id_": "1.2",
+        "ref": "Issue 9 page 1-1-2",
+        "section": "Words",
+        "category": "Part of speech",
+        "name": "Use approved words from the dictionary only as the specified part of speech.",
+        "summary": "In the dictionary, each approved word has a specified part of speech. When you use an approved word, make sure that you use it only as the specified part of speech.",
+        "contents": [
+            {
+                "type_": "text",
+                "data": "# Examples"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "**Test** is an approved noun, but not an approved verb."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "**Test** B is an alternative to **test** A."
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "`Test` the system for leaks."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "Do the leak **test** of the system."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "Do a **test** for leaks in the system."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "**Dim** is an approved adjective, but not an approved verb."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "A **dim** light comes on."
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "`Dim` the lights."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "Set the lights to the **dim** position."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "Some words are approved as more than one part of speech. For example, “clean” is an approved verb and an approved adjective. The position of the word in the sentence shows its function (and its meaning) because verbs and adjectives have different positions."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "**Clean** the inner surface of the container."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(**Clean** is a verb here.)"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "Make sure that the area is **clean**."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(**Clean** is an adjective here.)"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "**Acceptable** is an adjective that is not approved. The dictionary gives three approved alternatives that have the same part of speech. You can use one of these alternatives to replace the word **acceptable** in the sentence with a word-for-word replacement."
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "A value of 2 mm is `acceptable`."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "A value of 2 mm is **permitted**."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "**Operable** is an adjective that is not approved. The dictionary gives an approved alternative that has a different part of speech: **operate** as a verb. Thus, you must use a different sentence construction."
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "Make sure that the valve is `operable`."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "Make sure that the valve can **operate**."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "When you replace a word, always make sure that the approved alternative you select does not change the meaning of the sentence. If the meaning changes, select a different word or use a different sentence construction."
+            }
+            ,
+            {
+                "type_": "note",
+                "data": "Each word in the dictionary has its part of speech in parentheses, abbreviated as specified in the introduction to the dictionary."
+            }
+            ,
+            {
+                "type_": "note",
+                "data": "If a word that you want to use is not in the dictionary:  \n - Find that word in an English dictionary.  \n - Find which is the best synonym that is approved in the STE dictionary.  \n - Use the approved STE word or find a different sentence construction with other approved words."
+            }
+        ]
+    },
+    {
+        "type_": "rule",
+        "id_": "1.3",
+        "ref": "Issue 9 page 1-1-4",
+        "section": "Words",
+        "category": "Approved meaning",
+        "name": "Use approved words only with their approved meanings.",
+        "summary": "Each approved word in the dictionary has a specified approved meaning. Some of these words can have more restricted meanings compared with their meanings in standard English. Always use the approved words only with their approved meanings.",
+        "contents": [
+            {
+                "type_": "text",
+                "data": "# Examples"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "The approved meaning of the verb **follow** is **come after**, **go after**."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "Do the procedures that **follow**:"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "**Follow** the green lights to the nearest staircase."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "You cannot use the verb **follow** with other meanings that are not approved."
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "`Follow` the safety instructions."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "In this sentence, always use **obey** with the approved meaning *to do that which the procedures or instructions tell you*."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "**Obey** safety instructions."
+            }
+        ]
+    },
+    {
+        "type_": "rule",
+        "id_": "1.4",
+        "ref": "Issue 9 page 1-1-4",
+        "section": "Words",
+        "category": "Forms of verbs and adjectives",
+        "name": "Use only the approved forms of verbs and adjectives.",
+        "summary": "The dictionary gives each approved verb together with its approved forms. The dictionary also gives the approved adjectives in their base form, together with their comparative and superlative forms in parentheses where applicable.",
+        "contents": [
+            {
+                "type_": "text",
+                "data": "# Example - Verbs"
+            }
+            ,
+            {
+                "type_": "good",
+                "data": "**REMOVE** (v),  \n REMOVES,  \n REMOVED,  \n REMOVED"
+            }
+            ,
+            {
+                "type_": "good",
+                "data": "| Infinitive form  | Imperative form  | Simple present tense | Simple past tense | Past participle form |  \n | :------- | :------- | :------- | :------- | :------- |  \n |     |     |     |     | (as an adjective) |  \n |     |     |     |     |  \n | (To) **Remove** | **Remove** | **Remove**, **Removes** | **Removed** | **Removed** |"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "The past participle form of the verb is usually the same as the simple past tense. Thus, the dictionary gives it two times."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Example - Adjectives"
+            }
+            ,
+            {
+                "type_": "good",
+                "data": "**SLOW** (adj),  \n SLOWER,  \n SLOWEST"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "This word tells you that you can use the approved adjective “slow” as follows:"
+            }
+            ,
+            {
+                "type_": "good",
+                "data": "| Base form  | Comparative form  | Superlative form |  \n | :------- | :------- | :------- |  \n |     |     |     |  \n |     |     |     |  \n | **Slow** | **Slower** | **Slowest** |"
+            }
+        ]
+    },
+    {
+        "type_": "rule",
+        "id_": "1.5",
+        "ref": "Issue 9 page 1-1-5",
+        "section": "Words",
+        "category": "Technical nouns",
+        "name": "You can use words that you can include in a technical noun category.",
+        "summary": "A technical noun is a noun term that refers to a specified concept and is applicable to a subject field.",
+        "contents": [
+            {
+                "type_": "text",
+                "data": "The dictionary does not include technical nouns because there are too many, and each subject field uses different technical nouns for their texts."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "You can find many of these technical nouns in your company glossary or terminology database. STE gives you a list of categories, with examples, to help you:  \n - Select technical nouns to put in your company glossary or terminology database.  \n - Select technical nouns correctly."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "You can use technical nouns in a procedural and descriptive writing if you can include them in or more of these twenty-two categories."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "1. Official parts information  \n Terms that refer to all design items. For example, technical nouns included in illustrated parts catalogs or engineering drawings."
+            }
+            ,
+            {
+                "type_": "good",
+                "data": "bolt, cable, clip, conductor, contact, engine, ferry tank, filter, hatch, hazard lights, indicator light, logo, oil seal, lubricated seal, pipe, propeller, retractor link, screw, switch, transceiver"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "2. Vehicles and machines, and locations on them  \n Terms that refer to all types of vehicles and machines., and the locations that are part of these units."
+            }
+            ,
+            {
+                "type_": "good",
+                "data": "aircraft, aircraft carrier, airframe, bicycle, cabin, car, cargo compartment, cargo hold, cockpit, deck, engine room, fuselage, helicopert, gallery, lifeboat, overhead panel, ship, submarine, tank, train, truck, wing, wing root"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "3. Tools and support equipment, their parts, and locations on them  \n Terms that refer to all types of tools, support equipment, their parts, and locations that are part of these items.."
+            }
+            ,
+            {
+                "type_": "good",
+                "data": "access ladder, blade, brush, cap, chock, clamp, cover, display, drill, file, gauge (gage), graduated beaker, handle, jack, label, rigging pin, roller, rope, rung, shaft, stand, tag, test rig, torque wrench, trestle"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "4. Materials, consumables, and unwanted material  \n Terms that refer to materials, consumable items, and other substances that can cause contamination or malfunctions."
+            }
+            ,
+            {
+                "type_": "good",
+                "data": "acid, adhesive, aluminum alloy, ammunition, compound, copper, debris, detergent, dirt, disinfectant, dust, foam, foreign object, fuel, grease, hazardous substances, hazardous waste, metal, metallic coating, oil, paint, penetrant spray, plastic, primer, sealant, sealing, soap, stainless steel, tape, waste, water, wire"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "5. Facilities, infrastructure, and logistic procedures  \n Terms that refer to the management, structure, and operations of physical facilities, infrastructure systems, and logistic procedures. For example, areas for utility systems, transportation networks, storage, distribution processes, and operational logistic workflows."
+            }
+            ,
+            {
+                "type_": "good",
+                "data": "airport, apron, base, building, camp, dock, engine shop floor, flight simulator, gate, handling, hangar, packaging, packing, port, service bay, shipping, shop, store, storage, transport"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "6. Systems, components and circuits, their functions, configurations, and parts  \n Terms that refer to the structure, operation, composition, and system design."
+            }
+            ,
+            {
+                "type_": "good",
+                "data": "air conditioning, amplifying circuit, armament, audio, aural warning system, collapsed position, exhaust, flight management, hardware, inhibiting signal, injection, inlet, input frequency, latch, pedal, power unit, pump, reverse mode, reverse position, standby mode, upright position, vent"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "7. Mathematical, scientific, engineering terms, and formulas  \n Terms that refer to concepts, design, calculations, or methodologies."
+            }
+            ,
+            {
+                "type_": "good",
+                "data": "acceleration, allowance, astronomy, atom, average, biochemistry, biology, biome, burr, capacitance, carbon, category, cavitation, center, circle, coefficient, combination, configuration, conversion, count, critical temperature, curve, cycle, defect, degree, deceleration, density, diameter, displacement, duty cycle, elapsed time, electricity, energy, exponent, failure, ferry flight, flutter, force, fumes, genetics, geology, geophysics, graph, gravity, hardness, heat treatment, idle speed, ignition, inhibition, instrumentation, interference, issue, light, line replaceable unit, load, loss, measurement, modification, momentum, motoring, overhaul, oversized hole, oxygen, performance, phase, polarity, power, pressure, process, radius, rating, ratio, reduction, relative angular position, resistance, scan, shutdown, signal, specific gravity, stall, standard, steam, stiffness, strength, suction, temperature, tension, thread, tightness, torque, toxic property, vapor, voltage, water vapor, 'C = (A - B) - 0.063 mm"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "8. Navigation and geographic terms  \n Terms that refer to positions, directions, or locations related to mapping, routing, or spatial orientation."
+            }
+            ,
+            {
+                "type_": "good",
+                "data": "air, altitude, attitude, axis, bank, clearance, climb, coordinates, critical approach, datum, delay, deviation, drag, east, France, glideslope, gradient, heading, landing, leeway, Lima, north, pitch, roll, skid, south, west"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "9. Numbers, units of measurement and time (and their symbols)  \n Terms that refer to quantitative data, measurements, or time-related information."
+            }
+            ,
+            {
+                "type_": "good",
+                "data": "92, 303, ampere (A), degree (°), first (1st), half (1/2), hour (h), kilogram (kg), knot, liter (L or I), meter (m), mile, minute ('), month, ohm (Q), one, one-quarter (1/4), second (''), second (s), second (2nd), square inch (sq.in.), spring, third (3rd), three, year, winter, zero"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "10. Quoted text  \n Terms that refer to texts that you cannot change in technical writing. For example, texts on placards, labels, signs, markings, and display units."
+            }
+            ,
+            {
+                "type_": "good",
+                "data": "abort button, EXIT sign, INOP system, OXYGEN pushbutton switch, ON position, NEXT button, FAULT legend, NO STEP marking, FASTEN SAFETY BELT sign, WEAR PROTECTIVE CLOTHING sign"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "11. Professional roles, individuals, groups, organizations, and geopolitical entities  \n Terms that refer to professional functions, names of persons, organizations, companies, teams, sovereign states, or entities related to processes, responsibilities, or decision-making."
+            }
+            ,
+            {
+                "type_": "good",
+                "data": "air traffic control, British Broadcasting Corporation (BBC), captain, commander, copilot, crew, crew chief, European Aviation Safety Agency (EASA), Federal Aviation Administration (FAA), John Kirkman, manufacturer, operator, Transport Canada Civil Aviation (TCCA), United States of America (USA)"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "12. Parts of the body  \n Terms that refer to anatomical features or functions related to medical, biological, or ergonomic contexts."
+            }
+            ,
+            {
+                "type_": "good",
+                "data": "blood, digestive system, ear, eyes, hair, hand, head, lung, mouth, respiratory tract, skin, stomach"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "13. Common personal effects, food, and beverages  \n Terms that refer to everyday personal items and types of food and beverage."
+            }
+            ,
+            {
+                "type_": "good",
+                "data": "beans, bread, cigarette lighter, clothing, coffee, flour, footwear, high-heeled shoes, jewelry, lipstick, matches, milk, mineral water, nail scissors, perfume, pizza, shampoo, wine"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "14. Medical terms  \n Terms that refer to medical conditions, procedures, or anatomical structures."
+            }
+            ,
+            {
+                "type_": "good",
+                "data": "allergy, aspirin, asthma, blood poisoning, breathing, circulation, dermatitis, diabetes, dizziness, female, hallucination, headache, heart rate, irritation, male, medication, nausea, pneumonia, pregnancy, pulse, skin irritation, virus"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "15. Official documents, parts of documentation, standards, and guidelines  \n Terms that refer to different types of official documents and their structural parts. For example, manuals, technical records, standards, specifications, and regulations requirements."
+            }
+            ,
+            {
+                "type_": "good",
+                "data": "Acceptance Test, Activation/Deactivation, Allowable Damage, attention, caution, chapter, Checklist, Class, Cleaning, Compass Correction Card, danger, data module, Description and Operation, diagram, engine logbook, Federal Aviation Regulations, Fault Isolation, figure, flowchart, font, Functional Test, Ice and Rain Protection, Inspection/Check, issue, language policy, letter, maintenance planning, maintenance practice, maintenance records, Normal Braking, note, notice, packaging, page, paragraph, parentheses, post-flight report, post-mod, pre-mod, prerequisite, preservation, reference, Removal/lnstallation, Required Conditions, Repair Scheme, recommendation, revision, section, Service Bulletin, Standard Practices Manual, storage, Structural Repair Manual, table, test procedure, training material, Transportation, valid welding certificate, warning"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "16. Environmental and operational conditions  \n Terms that refer to external factors and operating parameters that are related to systems or processes."
+            }
+            ,
+            {
+                "type_": "good",
+                "data": "atmosphere, cloud, day, daylight, ice, hail, humidity, lightning, moisture, night, rain, relative humidity, sand, snow, storm, turbulence, volcanic ash, wind"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "17. Colors  \n Terms that refer to colors that identify color-related properties, or show color attributes in different contexts."
+            }
+            ,
+            {
+                "type_": "good",
+                "data": "beige, black, cyan blue, dark brown, gray, green, magenta, light green, orange, red, white, yellow"
+            }
+            ,
+            {
+                "type_": "note",
+                "data": "Colors are adjectives, but STE identifies them as technical nouns. Comparative and superlative forms of color (for example, blacker, the blackest) are not permitted in STE."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "18. Damage terms  \n Terms that refer to types of defects or degradation and give information about malfunctions."
+            }
+            ,
+            {
+                "type_": "good",
+                "data": "buckle, chafing, corrosion, crack, crack propagation, deformation, dent, discoloration, distortion, erosion, fracture, fraying, galling, kink, nick, score, scratch, stain, spurious fault message"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "19. Computer science, information and communication technology  \n Terms that refer to technological concepts, systems, or components in this subject field."
+            }
+            ,
+            {
+                "type_": "good",
+                "data": "add-in, add-on, AI, arrow, artificial intelligence, authentication, backup, backup file, bookmark, chatbot, content, cursor, cybersecurity, database, deep learning, dialog check box, digitalization, digitization, e-mail, embedding, field, file, firewall, hallucination, HTML, icon, interface, internet, laptop, large language model, local operation, machine learning, memory, menu, metadata, mouse, network, operating system, phone, plug-in, pre-loaded software, preset value, prompt engineering, remote operation, screen, search engine, smartphone, status bar, store, tablet, token, toolbar, touchscreen, tweet, tuning, update, voice mail, XML"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "20. Civil and military operations  \n Terms that refer to concepts and activities, service delivery, product management, and customer and life-cycle support in civil and military operations."
+            }
+            ,
+            {
+                "type_": "good",
+                "data": "armed forces, assault, bomb, bullet, checkpoint, combat plan, contractor, customer, customer support, customer service, deployment, echelon, ejection seat, end item, end user, evacuation, formation, ground zero, gun, Integrated Product Support (IPS), know-how, lifecycle, machine gun, maintenance concept, mission, obsolescence, operator, Original Equipment Manufacturer (OEM), patrol"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "21. Law and regulations  \n Terms that refer to legal and regulatory texts. For example, contracts, warranty texts, certificates, standards and specifications, and legal papers."
+            }
+            ,
+            {
+                "type_": "good",
+                "data": "action, ambiguity, appeal, arbitration, bankruptcy, communication, competence, compliance, concession, contract, court, damages, explanation, explanatory text, impeachment, jury, law, judgement, jurisdiction, purpose, recommendation, scope, serious incident, serious offense, signature, statute, term, trade, waiver, wording"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "22. Animals, plants, and other life forms  \n Terms that refer to biological entities in technical and environmental contexts."
+            }
+            ,
+            {
+                "type_": "good",
+                "data": "bacteria, bird, cassowary, cat, conifer, cow, dog, emu, fern, ferret, fungi, horse, insect, leopard, monkey, moss, mouse, pocket gopher, rose, termite, wombat"
+            }
+            ,
+            {
+                "type_": "note",
+                "data": "The technical nouns in their related categories are only examples. Rule 1.5 does not give a full list of all possible technical nouns. The listed words in each category have uppercase letters only when necessary. For example, official identification, titles, and abbreviations."
+            }
+        ]
+    },
+    {
+        "type_": "rule",
+        "id_": "1.6",
+        "ref": "Issue 9 page 1-1-9",
+        "section": "Words",
+        "category": "Technical nouns",
+        "name": "Use a word that is not approved in the dictionary, only when it is a technical noun or part of a technical noun.",
+        "summary": "The dictionary includes some words that you cannot use because they are not approved. But if you can put these words into an applicable category of technical nouns, you can use them as technical nouns in some contexts.",
+        "contents": [
+            {
+                "type_": "text",
+                "data": "# Examples"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "The word **base** is not approved in the dictionary and its alternative is **bottom (n)**."
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "Make sure that the two spigots at the base of the unit engage."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(**Base** is not permitted when it is related to a surface.)"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "Make sure that the two spigots at the bottom of the unit engage."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "But you can use **base** as a technical noun."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "The base of the triangle is 5 cm."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(**Base** is a technical noun, category 7, mathematical, scientific, engineering terms, and formulas.)"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "The same word **base** can go into different categories of technical nouns. This condition occurs when you use the word **base** with different meanings in different contexts."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Example:"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "Access to the **base** is permitted between 9 a.m. and 6 p.m."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(**Base** is a technical noun, category 5, facilities, infrastructure, and logistic procedures.)"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "`Backup` is not approved in the dictionary and its alternatives are **emergency (n)** and **auxiliary (adj)**. But you can use **backup** as a technical noun."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Example:"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "Do the **backup** of the computer at regular intervals."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(**Backup** is a technical noun, category 19, computer science, information and communication technology.)"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "**Backup** is a one-word technical noun. But you can also write **backup file**, a two-word technical noun."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Examples:"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "Keep the **backup file** in a safe area."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(**Backup file** is a technical noun, category 19, computer science, information and communication technology.)"
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "For this procedure, make sure that one person is available as `backup`."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(`Backup` is not permitted and you cannot use it in this context.)"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "Two persons are necessary to do this procedure."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(Different sentence construction)"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "**Main** is a word that is not approved, and its alternative is **primary (adj)**."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Examples:"
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "The laptop has these `main parts`:"
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(`Main part` is not a technical noun, and it is correct to replace **main** with **primary**.)"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "The laptop has these **primary parts**:"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "But you can use **main** as part of a technical noun."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "Retract the **main landing gear**."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(**Main landing gear** is a technical noun. It is incorrect to replace `main` with **primary** here, because `primary landing gear` is not the technical noun that is approved in your company, industry, or subject field.)"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "If a word is not in the dictionary, you can use it if it is part of a technical noun. In the example that follows, **angular** and **position** are approved but **relative** is not in the dictionary."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Example:"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "This procedure gives instructions to identify the **relative angular positions** of the power-turbine rotor disks."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(You can use **relative** as part of a technical noun, category 7, mathematical, scientific, engineering terms, and formulas.)"
+            }
+        ]
+    }
+    ,
+    {
+        "type_": "rule",
+        "id_": "1.7",
+        "ref": "Issue 9 page 1-nnn",
+        "section": "Words",
+        "category": "Technical nouns",
+        "name": "Do not use words that are technical nouns as verbs.",
+        "summary": "Use a technical noun only as a noun or as an adjective that is part of a different technical noun. Do not use the same word as a verb.",
+        "contents": [
+            {
+                "type_": "text",
+                "data": "# Examples:"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "**Oil** is a technical noun, category 4, materials, consumables, and unwanted material. Do not use **oil** as a verb. Use a different sentence construction that lets you use **oil** as a technical noun."
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "`Oil` the steel surfaces."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "Apply **oil** to the steel surfaces."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "**Snow** is a technical noun, category 16, environmental and operational conditions. Do not use **snow** as a verb. Use a different sentence construction that lets you use **snow** as a technical noun."
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "If you think it will `snow`, make sure that the vehicle is in the applicable configuration."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "If you think that **snow** will fall, make sure that the vehicle is in the applicable configuration."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "**_Words that can be technical nouns and technical verbs_**"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "In some contexts, the same word can be a technical noun and a technical verb. This condition occurs when you can put this word in a technical noun category (rule 1.5) and in a technical verb category (rule 1.12)."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Examples in STE:"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "If the surface is hard, use a carbide **drill**."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(**Drill** is a technical noun, rule 1.5, category 3, tools and support equipment, their parts, and location on them.)"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "**Drill** a hole at the intersection of the two lines."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(**Drill** is a technical verb, rule 1.12, category 1 a), manufacturing processes, remove material.)"
+            }
+        ]
+    }
+    ,
+    {
+        "type_": "rule",
+        "id_": "1.8",
+        "ref": "Issue 9 page 1-nnn",
+        "section": "Words",
+        "category": "Technical nouns",
+        "name": "Use technical nouns that are approved in your company, industry, or subject field.",
+        "summary": "If your company, industry, or subject field, has an approved technical noun for a system, component, part, or process, use that technical noun. Usually, such technical nouns are included in official parts information and in company documentation.",
+        "contents": [
+            {
+                "type_": "text",
+                "data": "# Example:"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "The front panel of the phone has a touchscreen and a home button."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(**Touchscreen** and **home button** are technical nouns that are approved in your company, industry, or subject field.)"
+            }
+        ]
+    }
+    ,
+    {
+        "type_": "rule",
+        "id_": "1.9",
+        "ref": "Issue 9 page 1-nnn",
+        "section": "Words",
+        "category": "Technical nouns",
+        "name": "When you must select a technical noun, use one which is short and easy to understand.",
+        "summary": "When there is no technical noun that is approved in your company, industry, or subject field, select one that is short (not more than three words) and easy to understand.",
+        "contents": [
+            {
+                "type_": "text",
+                "data": "# Example:"
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "Remove the four stainless steel pan head machine screws (10) that attach the metallic machined flange (15) to the front housing cover (20)."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "Remove the four screws (10) that attach the flange (15) to the cover (20)."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "In this example, it is sufficient to use the words **screws**, **flange**, and **cover**. This is because these parts have index numbers, and the related illustration clearly identifies them. Differently, add one or two adjectives to the noun to help your reader understand."
+            }
+        ]
+    }
+    ,
+    {
+        "type_": "rule",
+        "id_": "1.10",
+        "ref": "Issue 9 page 1-nnn",
+        "section": "Words",
+        "category": "Technical nouns",
+        "name": "Do not use regional, slang, or jargon words as technical nouns.",
+        "summary": "There can be technical words that only persons in confined regions or geographical areas use. These words are not easy to understand for persons who are from a different region or area.",
+        "contents": [
+            {
+                "type_": "text",
+                "data": "When you select technical nouns, always use well-known words."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "This rule is also applicable to technical slang or jargon words. If only a small number of persons understand a word, it will cause confusion and non-effective communication."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Examples:"
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "During logging operations, attach a `choker` to the heavy machinery to hold the logs in their position."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(A `choker` is a type of cable used in logging operations to attach logs during transportation. It is a term used in some regions of North America and Canada, Northern Europe, and New Zealand. Its meaning is not immediately clear to the reader.)"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "During logging operations, attach a **cable** to the heavy machinery to hold the logs in their position."
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "After the firmware update, do not `brick` the router."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(`Brick` is technical slang in information technology, with the meaning of **to make a device non-operational**. Its meaning is not immediately clear to the reader.)"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "After the firmware update, do not **set the router to OFF**."
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "Remove your `gear` from the work area."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(`Gear` is technical jargon that refers to tools and equipment, and its meaning is not immediately clear to the reader.)"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "Remove your **tools and equipment** from the work area."
+            }
+        ]
+    }
+    ,
+    {
+        "type_": "rule",
+        "id_": "1.11",
+        "ref": "Issue 9 page 1-nnn",
+        "section": "Words",
+        "category": "Technical nouns",
+        "name": "Do not use different technical nouns for the same item.",
+        "summary": "When you select a technical noun, do not use a different technical noun in other parts of your text to refer to the same item.",
+        "contents": [
+            {
+                "type_": "text",
+                "data": "# Example:"
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "1. Make sure that the servo control unit is in the open position.  \n 2. Do the operational test of the actuator.  \n 3. Disconnect the control unit from the test rig."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "1. Make sure that the actuator is in the open position.  \n 2. Do the operational test of the actuator.  \n 3. Disconnect the actuator from the test rig."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "In the non-STE example, `servo control unit`, `actuator`, and `control unit` refer to the same item. Use the technical noun that is approved in your company, industry, or subject field. If, as in the example, the technical noun is **actuator**, then always use this technical noun in your text."
+            }
+        ]
+    }
+    ,
+    {
+        "type_": "rule",
+        "id_": "1.12",
+        "ref": "Issue 9 page 1-1-13",
+        "section": "Words",
+        "category": "Technical verbs",
+        "name": "You can use verbs that you can include in a technical verb category.",
+        "summary": "A technical verb is a verb term that refers to a specified concept or process and is applicable to a subject field.",
+        "contents": [
+            {
+                "type_": "text",
+                "data": "The dictionary does not include technical verbs because there are too many, and each subject field uses different technical verbs for their texts."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "You can find many of these technical verbs in your company glossary or terminology database. STE gives you a list of categories, with examples, to help you:  \n - Select technical verbs to put in your company glossary or terminology database.  \n - Use technical verbs correctly."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "Technical verbs must obey the same rules as other approved verbs in STE. Refer to section 3."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "You can use technical verbs in procedural and descriptive texts if you can include them in one or more of these four categories."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "1. Manufacturing processes  \n Terms that give instructions and information to:"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "    a) Remove material:"
+            }
+            ,
+            {
+                "type_": "good",
+                "data": "drill, grind, mill, ream, unsolder"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "    b) Add material:"
+            }
+            ,
+            {
+                "type_": "good",
+                "data": "flame, insulate, remetal, retread"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "    c) Attach material:"
+            }
+            ,
+            {
+                "type_": "good",
+                "data": "braze, crimp, solder, weld"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "    d) Change the mechanical strength, the structure, or the physical properties of a material:"
+            }
+            ,
+            {
+                "type_": "good",
+                "data": "anneal, cure, decay, freeze, heat-treat, magnetize, normalize, vaporize"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "    e) Change the surface finish of a material:"
+            }
+            ,
+            {
+                "type_": "good",
+                "data": "buff, burnish, dress, passivate, plate, polish"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "    f) Change the shape of a material:"
+            }
+            ,
+            {
+                "type_": "good",
+                "data": "blend, cast, extrude, spin, stamp"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "2. Computer processes and applications  \n Terms that give instructions and information for:"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "    a) Input and output processes:"
+            }
+            ,
+            {
+                "type_": "good",
+                "data": "click, digitize, enter, press, print, swipe, tap, type"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "    b) User interface and application processes:"
+            }
+            ,
+            {
+                "type_": "good",
+                "data": "clear, close, copy, cut, delete, deselect, disable, drag, drag and drop, enable, encrypt, erase, filter, highlight, invalidate, maximize, minimize, navigate, open, paste, save, scroll, sort, store, tweet, validate, zoom in, zoom out"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "    c) System operations:"
+            }
+            ,
+            {
+                "type_": "good",
+                "data": "abort, boot, communicate, debug, download, format, install, load, manage, process, reboot, update, upgrade, upload"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "3. Instructions and information for applicable subject fields  \n Terms that give instructions and information in these contexts:"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "    a) Engineering, mathematical, and scientific"
+            }
+            ,
+            {
+                "type_": "good",
+                "data": "bisect, compensate for, convert, detect, float, modulate, radiate, transform, sink"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "    b) Medical"
+            }
+            ,
+            {
+                "type_": "good",
+                "data": "disinfect, intubate, operate, prescribe, sanitize, sterilize"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "    c) Civil and military operations"
+            }
+            ,
+            {
+                "type_": "good",
+                "data": "aim, arm, detect, disable, dry-motor, enable, explode, fire, inhibit, intercept, lase, load, lock on, unlatch, unload, wet-motor, parachute"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "    d) Navigation"
+            }
+            ,
+            {
+                "type_": "good",
+                "data": "approach, descend, deviate, fly, hover, land, maintain, navigate, retrim, take off, trim, respond, taxi"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "    e) Automotive and railway"
+            }
+            ,
+            {
+                "type_": "good",
+                "data": "accelerate, brake, couple, crank, crash, decouple, dispatch, drift, inflate, park, qualify, steer"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "    f) Energy, oil, and gas"
+            }
+            ,
+            {
+                "type_": "good",
+                "data": "compress, distill, drill, emit, extract, inject, pump"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "4. Law and regulations  \n Terms that give instructions and information only for legal and regulatory texts. For example, contracts, warranty texts, certificates, standards and specifications, and legal papers."
+            }
+            ,
+            {
+                "type_": "good",
+                "data": "acknowledge, comply with, communicate, conform to, describe, enforce, explain, meet (a requirement), inform, modify, notify, omit, regulate, sign, supersede, understand, waive (for inspection and requirements)"
+            }
+            ,
+            {
+                "type_": "note",
+                "data": "The technical verbs in their related categories are only examples. Rule 1.12 does not give a full list of all possible technical verbs."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "If there is an approved verb in the dictionary that accurately gives the instruction or the information, use the approved verb. Do not use a technical verb if it is possible to write the same sentence with the words (verbs and other related words) that are approved in the dictionary."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Examples:"
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "If you `detect` broken wires, repair them."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(`Detect` is not approved and cannot be a technical verb in this context.)"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "If you **find** broken wires, repair them."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "But you can write:"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "The security scanner **detects** metal objects."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(**Detect** is the correct technical verb in this context.)"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "If you must use technical verbs, use only technical verbs that are correct in your context. Do not use technical verbs that are general or not clear."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Example:"
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "`Machine` the hole until it has a diameter of 8.00 +/- 0.003 mm."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "**Ream** the hole until it has a diameter of 8.00 +/- 0.003 mm."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "Do not use a technical verb if it is not necessary. If it is possible, use a verb that is approved in the dictionary and an applicable technical noun."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Examples:"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "**Clamp** is a technical noun, category 1, official parts information. Do not use `clamp` as a technical verb."
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "`Clamp` the cable in position."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "Put **clamps** on the cable to hold it in position."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "**Grease** is a technical noun, category 4, materials, consumables, and unwanted material. Do not use `grease` as a technical verb."
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "`Grease` the fasteners."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "Apply **grease** to the fasteners."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "**Wire** is a technical noun, category 1, official parts information. Do not use `wire` as a technical verb."
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "`Wire` the cable to the structure."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "Attach the cable to the structure with **wire**."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "**_Words that are not approved but that can be technical verbs_**"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "The dictionary includes some words that, although not approved, can be technical verbs if you can put them in the specified categories."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Examples:"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "**Enter** your password."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "**Enter** is a technical verb, category 2 a), computer processes and applications, input and output processes.)"
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "Do not `enter` the engine test area without approval."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(`Enter` is not permitted when it is in a different context.)"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "Do not **go** into the engine test area without approval."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "If the tower does not `**respond**, use a different channel."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(**Respond** is a technical verb, category 3 d), instructions and information for applicable subject fields, navigation.)"
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "If the instrument fails to `respond`, do a test."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(**Respond** is not permitted when it is in a different context.)"
+            }
+        ]
+    }
+    ,
+    {
+        "type_": "rule",
+        "id_": "1.13",
+        "ref": "Issue 9 page 1-1-16",
+        "section": "Words",
+        "category": "Technical verbs",
+        "name": "Do not use technical verbs as nouns.",
+        "summary": "In English, words that look the same do not always have the same function in a sentence. Use technical verbs only as verbs, not as nouns.",
+        "contents": [
+            {
+                "type_": "text",
+                "data": "# Example:"
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "Give the hole 0.20-inch `ream`."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "**Ream** the hole to a 0.20-inch dimension."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "But you can use the past participle form of technical verbs as adjectives."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Example:"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "Lubricate the **reamed** hole."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(The adjective **reamed** is the past participle form of the technical verb **ream**. **Reamed hole** is a technical noun.)"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "**_Words that can be technical verbs and technical nouns_**"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "In some contexts, the same word can be a technical verb and a technical noun. This condition occurs when you can put this word in a technical verb category (rule 1.12) and in a technical noun category (rule 1.5)."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Example:"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "Make sure that the **plate** is not damaged."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(**Plate** is a technical noun, category 1, official parts information.)"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "There are two methods to **plate** the ring nut (2)."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(**Plate** is a technical verb, category 1 c), manufacturing processes, attach material.)"
+            }
+        ]
+    }
+    ,
+    {
+        "type_": "rule",
+        "id_": "1.14",
+        "ref": "Issue 9 page 1-1-17",
+        "section": "Words",
+        "category": "Spelling",
+        "name": "Use American English spelling unless other official directives tell you differently.",
+        "summary": "Use the spelling specified in the STE dictionary (American English spelling).",
+        "contents": [
+            {
+                "type_": "text",
+                "data": "Use a different spelling only if other technical publication specifications, style guides, contracts, or other official directives are applicable."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Examples:"
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "The door is made of carbon `fibre` reinforced plastic."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(`Fibre` is British English spelling.)"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "The door is made of carbon-**fiber**-reinforced plastic."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(**Fiber** is American English spelling.)"
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "Change the `colour` of the display."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(`Colour` is British English spelling.)"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "Change the **color** of the display."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(**Color** is American English spelling.)"
+            }
+            ,
+            {
+                "type_": "note",
+                "data": "If there is quoted text that has British English spelling, for example on a computer screen, do not change the spelling. Keep the quoted text as it is. Refer to Rule 8.6 which tells you how to use quoted texts correctly."
+            }
+        ]
+    }
+    ,
+    {
+        "type_": "rule",
+        "id_": "2.1",
+        "ref": "Issue 9 page 1-2-1",
+        "section": "Multi-word nouns",
+        "category": "Multi-word nouns",
+        "name": "Write multi-word nouns of no more than three words.",
+        "summary": "In English, you can use one or more words to describe or modify a noun.",
+        "contents": [
+            {
+                "type_": "text",
+                "data": "Technical texts can contain long groups of words that have the function of one part of speech in a sentence. Usually, these groups of words are made of nouns and/or adjectives and are the subject or the object in a sentence. Such groups of words are known as multi-word nouns."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# General examples:"
+            }
+            ,
+            {
+                "type_": "general",
+                "data": "Horizontal cylinder pivot bearing"
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(a multi-word noun of 4 words)"
+            }
+            ,
+            {
+                "type_": "general",
+                "data": "Stainless steel corrosion protection strips"
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(a multi-word noun of 5 words)"
+            }
+            ,
+            {
+                "type_": "general",
+                "data": "Actuator operating rod"
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(a multi-word noun of 3 words)"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "Long multi-word nouns are not easy to understand because the words in the multi-word noun can connect to each other differently. The main noun, or head noun of the group, is usually the last word of the multi-word noun. When the connections between words are not clear, ambiguity occurs. As a result, short multi-word nouns are easier to understand."
+            }
+            ,
+            {
+                "type_": "general",
+                "data": "Runway light connection"
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(This example shows a short multi-word noun (3 words). The main noun is **connection**.)"
+            }
+            ,
+            {
+                "type_": "general",
+                "data": "Runway light connection resistance calibration"
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(This example shows a long multi-word noun (5 words). The main noun is **calibration**)."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "The long multi-word noun in the example does not tell the reader the relation between **runway** and **calibration**. The reader must understand four modifiers before the main noun **calibration**."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "Long multi-word nouns can cause problems for non-native English readers because, in some languages, the main noun comes first in the multi-word noun. When a multi-word noun has more words, it is less clear."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "To help your reader, keep multi-word nouns to a maximum of _three words_."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "To keep multi-word nouns short, you can use prepositions (for example, **of**, **on**, **in**, and **for**) and explain the multi-word nouns."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Examples:"
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "Runway light connection resistance calibration."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(5 words)"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "Calibration of the resistance of the runway light connection."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(1 word, 1 word, and 3 words)"
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "Install the forward. turbine overheat thermgcouple terminal tags."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(6 words)"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "Install the terminal tags on the forward overheat thermocouple of the turbine."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(2 words and 3 words)"
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "Remove the engine transmission housing attachment bolts."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(5 words)"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "Remove the bolts that attach the transmission housing to the engine."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(1 word, 1 word, 2 words, and 1 word)"
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "Adjust to obtain door operating rod, alignment with the attachment point."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(4 words)"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "Adjust the door operating rod until it aligns with the attachment point."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(3 words and 1 word)"
+            }
+        ]
+    }
+    ,
+    {
+        "type_": "rule",
+        "id_": "2.2",
+        "ref": "Issue 9 page 1-2-2",
+        "section": "Multi-word nouns",
+        "category": "Multi-word nouns",
+        "name": "When a technical noun has more than three words, write it in full. Then, you can use one of these methods to make the technical noun clear:  \n - Give a shorter form of the technical noun.  \n - Use hyphens (-) between words that you use as one unit.",
+        "summary": "A long multi-word noun can be a long technical noun, or it can be a combination of shorter technical nouns. Freguently, it is not possible to divide technical nouns into smaller parts because they are the technical nouns that your company, industry, or subject field uses. Thus, you must write technical nouns as they are, in their approved form.",
+        "contents": [
+            {
+                "type_": "text",
+                "data": "**_Method 1 - Shorter form of technical nouns_**"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "If a long technical noun comes from an official document (for example, an engineering drawing or an illustrated parts catalog), write it in full the first time that it occurs in the text. Then, if it is possible, explain the technical noun and in the remaining text of your document, use a shorter form or an approved abbreviation."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Examples in STE:"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "Before you do this procedure, engage the ramp service door safety connector pin (the pin that holds the ramp service door, referred to in this procedure as the **safety connector pin**)."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "In this example, you write **ramp service door safety connector pin** in full. Then, after an explanation, you give a shorter technical noun: **safety connector pin.** This shorter technical noun has three words and obeys rule 2.1."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "The Main Fuel Metering Unit (MFMU) is an aluminum alloy unit that includes a Main Engine Control Unit (MECU) and a Distribution Block (DB). The MFMU is installed in the engine bypass duct and operates in the engine fuel system. The function of the MFMU is to meter and supply the fuel from the Main Engine Fuel Pump (MEFP) to the fuel manifolds and the starter jets. The Digital Engine Control Unit (DECU) sends electrical signals to operate the MFMU."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "In this example, the explanation is not necessary because the text gives all the necessary information about the unit. You write all official technical nouns that include more than three nouns in full the first time that they occur. Then, in the remaining parts of the text, you use their related approved abbreviations."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "If an approved technical noun includes three words or less, it is not necessary to use abbreviations."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Example:"
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "The primary parts of the valve are:  \n - The DA (8)  \n - The PVA (15)  \n - The BA (17)  \n - The VB (20)."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "The primary parts of the valve are:  \n - The diaphragm assembly (8)  \n - The poppet valve assembly (15)  \n - The bush assembly (17)  \n - The valve body (20)."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "You can use abbreviations that come from your official company documentation but be careful. A text full of abbreviations in a procedure, although shorter, is not easy to read."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Example:"
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "A. Remove the DA (8) from the VB (20).  \n B. Remove the PVA (15) from its seat.  \n C. Remove the BA (17) from the VB (20)."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "A. Remove the diaphragm assembly (8) from the valve body (20).  \n B. Remove the poppet valve assembly (15) from its seat.  \n C. Remove the bush assembly (17) from the valve body (20)."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "**_Method 2 - Hyphens (-) between the words that you use as one unit_**"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "A hyphen is a punctuation mark that connects words or parts of words. You can use hyphens between words to show how related words operate as one unit. This method will make the multi-word nouns that you use agree with rule 2.1. Hyphenated words always count as one word."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Examples in STE:"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "Make sure that the cutoff-switch power connection is safe."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(3 words)"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "Inspection of the lavatory rapid-decompression device."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(3 words)"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "Make sure that you do not connect words which are not related, because this hyphen will change the meaning of the multi-word noun. If you are not sure, only explain the multi-word noun. Then, use a shorter form, or an official approved abbreviation."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "If an approved technical noun includes hyphens, do not change it. If it is too long, write it in full the first time it occurs and then use the recommended method (shorter technical nouns) specified in this rule."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "Do not use hyphens to make groups of more than three words. If you use hyphens for all the words, this multi-word noun will not be easy to read and understand."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Example:"
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "Move the main-gear-door-retraction-winch handle."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(2 words, but not correct)"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "Move the main-gear-door retraction-winch handle."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(3 words)"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "If an approved technical noun includes three words or less (for example **poppet valve assembly** and **diaphragm assembly**), it is not necessary to use hyphens."
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "A. Remove the diaphragm-assembly (8) from the valve body (20).  \n B. Remove the poppet-valve assembly (15) from its seat."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "A. Remove the diaphragm assembly (8) from the valve body (20).  \n B. Remove the poppet valve assembly (15) from its seat."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "But, if an approved technical noun includes a hyphen (for example **inward-outward valve**), do not remove the hyphen. Keep the technical noun that comes from your official company documentation."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Example:"
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "The inward outward valve is part of the fuel system."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "The inward-outward valve is part of the fuel system."
+            }
+        ]
+    }
+    ,
+    {
+        "type_": "rule",
+        "id_": "3.1",
+        "ref": "Issue 9 page 1-3-1",
+        "section": "Verbs",
+        "category": "Verb forms and tenses of verbs",
+        "name": "Only use the verb forms that are given in the dictionary.",
+        "summary": "The STE dictionary gives you the verb forms that you can use for each approved verb.",
+        "contents": [
+            {
+                "type_": "text",
+                "data": "# Example"
+            }
+            ,
+            {
+                "type_": "good",
+                "data": "REMOVE (v)  \n REMOVES,  \n REMOVED,  \n REMOVED"
+            }
+            ,
+            {
+                "type_": "good",
+                "data": "**GIVE** (v)  \n GIVES,  \n GAVE,  \n GIVEN"
+            }
+            ,
+            {
+                "type_": "note",
+                "data": "The introduction to the dictionary in part 2 gives you more information about the verb forms and how to use the approved verbs."
+            }
+        ]
+    },
+    {
+        "type_": "rule",
+        "id_": "3.2",
+        "ref": "Issue 9 page 1-3-2",
+        "section": "Verbs",
+        "category": "Verb forms and tenses of verbs",
+        "name": "Use only these verb forms and tenses of verbs:\n * The infinitive form \n * The imperative form (command form) \n * The simple present tense \n * The simple past tense \n * The simple future tense \n * The past participle form (as an adjective).",
+        "summary": "Use only the verbs forms and the tenses of verbs that are approved.",
+        "contents": [
+            {
+                "type_": "text",
+                "data": "# Example"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "| Infinitive form  | Imperative form | Simple present tense | Simple past tense | Simple future tense | Past participle form |  \n | :------- | :------- | :------- | :------- | :------- | :------- |  \n | (base form) | (command form) |    |    |    | (as an adjective) |  \n |     |     |     |     |     |     |  \n | (To) **Adjust** | **Adjust** + object | You/we/they **adjust** | You/we/they **adjusted** | You/we/they will **adjust** | The **adjusted** linkage |  \n |     |     |     |     |     |     |  \n | (regular verb) |     | It **adjusts** | It **adjusted** | It will **adjust** |     |  \n |     |     |     |     |     |     |  \n |     |     |     |     |     |     |  \n | (To) **Give** | **Give** + object | You/we/they **give** | You/we/they **gave** | You/we/they **give** | The **given** information |  \n |     |     |     |     |     |     |  \n | (irregular verb) |     | It **gives** | It **gave** | It will **give** |     |  \n "
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "Do not use other forms and tenses that are not approved, for example:  \n - The present perfect (have/has `adjusted`)  \n - The past perfect (had `adjusted`)  \n - The present/past progressive (is/was `adjusting`)  \n - And all other complex verb constructions."
+            }
+        ]
+    }
+    ,
+    {
+        "type_": "rule",
+        "id_": "3.3",
+        "ref": "Issue 9 page 1-3-2",
+        "section": "Verbs",
+        "category": "Verb forms and tenses of verbs",
+        "name": "Use the past participle form as an adjective.",
+        "summary": "When you use the past participle form as an adjective, it shows the condition of something. This is not passive voice.",
+        "contents": [
+            {
+                "type_": "text",
+                "data": "Use the past participle form of a verb as an adjective as follows:  \n - Before a noun  \n - After a verb form of the verbs **to be**, **to become**, or **to stay**."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "Do not use the past participle form if it is not in the dictionary."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Examples:"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "Examine all parts of the **disassembled** **unit** for damage."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(**Disassembled** is an adjective before the noun **unit.** It shows the condition of the unit.)"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "When the unit **is** fully **disassembled**, clean all the parts."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(**Disassembled** is an adjective after the verb **to be** that shows the condition of the unit.)"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "There are also approved adjectives in the dictionary that are the past participle form of verbs that are not approved. For example, **permitted,** and **damaged.** Their approved part of speech in the dictionary is **(adj)** and thus you can use them."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Examples in STE:"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "Do not put more than the **permitted** weight on the trolley."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "Make sure that the mating surfaces are not **damaged**."
+            }
+        ]
+    }
+    ,
+    {
+        "type_": "rule",
+        "id_": "3.4",
+        "ref": "Issue 9 page 1-3-3",
+        "section": "Verbs",
+        "category": "Verb forms and tenses of verbs",
+        "name": "Do not use auxiliary verbs to make complex verb constructions.",
+        "summary": "Do not use the past participle form as a verb form together with the auxiliary verb **_have_**. This construction will make a tense that is not approved.",
+        "contents": [
+            {
+                "type_": "text",
+                "data": "# Example:"
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "The operator `has adjusted` the linkage."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(The present perfect tense is not approved.)"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "The operator **adjusted** the linkage."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(The simple past tense is approved.)"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "Some complex verb constructions include other auxiliary verbs with the past participle form as a verb. Sentences with these constructions become complex sentences in the passive voice."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Examples:"
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "The seat `is to be installed` before you install the cushion."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "Before you install the cushion, **install the seat**."
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "Non-STE: The volume control `can be adjusted`."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "**You can adjust** the volume control."
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "The temperature `must be adjusted`."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "**Adjust** the temperature."
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "The sleeve `will be adjusted` by the robot."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "The robot **will adjust** the sleeve."
+            }
+        ]
+    }
+    ,
+    {
+        "type_": "rule",
+        "id_": "3.5",
+        "ref": "Issue 9 page 1-3-4",
+        "section": "Verbs",
+        "category": "Verb forms and tenses of verbs",
+        "name": "Use the **-ing** form of a verb only as a technical noun or as a modifier in a technical noun.",
+        "summary": "In English, words that have an _-ing_ form can have different functions in a sentence (different parts of speech).",
+        "contents": [
+            {
+                "type_": "text",
+                "data": "# General examples:"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "Words that have an **-ing** form can be _part of a verb_ to describe an action in the present."
+            }
+            ,
+            {
+                "type_": "general",
+                "data": "Be careful while the door **is opening**."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "They can also be _adjectives_."
+            }
+            ,
+            {
+                "type_": "general",
+                "data": "An **opening** door can be dangerous."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "They can be _nouns or parts of noun phrases_."
+            }
+            ,
+            {
+                "type_": "general",
+                "data": "**Opening a door** can be dangerous."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "They can make _long groups of modifiers, noun phrases, and dependent clauses_."
+            }
+            ,
+            {
+                "type_": "general",
+                "data": "**A mechanic opening a door without obeying the specified safety precautions** can easily cause injury to persons **standing near the door**."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "These different functions for words that have an **-ing** form can freguently cause ambiguity or long, complex sentences. Thus, words that have an **-ing** form are usually not permitted."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Examples:"
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "When you are `doing` this procedure, obey all the safety precautions."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "When you **do** this procedure, obey all the safety precautions."
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "Mechanics `wearing` insufficient protective clothing and `opening` containers `containing` hazardous materials in areas where there is a lack of ventilation, `using` inappropriate tools without `observing` the manufacturer's instructions, are in danger of `coming` into contact with these materials and thus `suffering` from skin irritation and `breathing` problems."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "Before you use dangerous materials, obey these precautions:  \n (1) **Read** the manufacturer's instructions.  \n (2) Make sure that **there is** sufficient airflow in the work area.  \n (3) **Put on** a face mask and protective clothing.  \n (4) Get the correct tools **to open** the containers for these materials.  \n If you do not obey these precautions, injury to your skin and your lungs can occur."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "**_Words that have an **-ing** form and are technical nouns or parts of technical nouns_**"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "You can use a word that has an **-ing** form as a technical noun (for example, in procedural titles or headings)."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Examples:"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "Cleaning, Testing and Fault Isolation, Handling, Packaging, Shipping, Troubleshooting"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "You can also use the **-ing** form of a verb as a modifier in a technical noun. This modifier is an adjective that is related to the function of a system, component, part, tool, material, or equipment."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Examples:"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "Air-conditioning system, degreasing agent, grinding wheel, polishing disc, sanding machine, switching relay, welding torch"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "**_Approved words that have an **-ing** form_**"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "Only a small number of approved words in the dictionary have an **-ing** form. They are:  \n - Nouns (lighting, opening, routing, and servicing)  \n - Adjectives (mating, missing, and remaining)  \n - A pronoun (something)  \n - A preposition (during)."
+            }
+        ]
+    }
+    ,
+    {
+        "type_": "rule",
+        "id_": "3.6",
+        "ref": "Issue 9 page 1-3-nnn",
+        "section": "Verbs",
+        "category": "Active voice",
+        "name": "Use the active voice. In descriptive writing, you can use the passive voice only when the agent is unknown.",
+        "summary": "nnn",
+        "contents": [
+            {
+                "type_": "text",
+                "data": "nnn"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "nnn"
+            }
+        ]
+    }
+    ,
+    {
+        "type_": "rule",
+        "id_": "3.7",
+        "ref": "Issue 9 page 1-3-nnn",
+        "section": "Verbs",
+        "category": "How to describe an action",
+        "name": "Use an approved verb to describe an action, not a noun or other parts of speech.",
+        "summary": "nnn",
+        "contents": [
+            {
+                "type_": "text",
+                "data": "nnn"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "nnn"
+            }
+        ]
+    }
+]
