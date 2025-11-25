@@ -22943,22 +22943,40 @@
     "status": "rejected",
     "name": "evaluation",
     "type_": "n",
-    "meanings": [
+    "meanings": [],
+    "spellings": [],
+    "alternatives": [
       {
-        "value": "EXAMINE (v) ANALYSIS (TN)",
-        "ste_example": "EXAMINE THE DAMAGE.",
-        "nonste_example": "Do an evaluation of the damage.",
+        "status": "approved",
+        "name": "EXAMINE",
+        "type_": "v",
+        "meanings": [],
+        "spellings": [],
+        "alternatives": [],
+        "ste_example": [
+          "EXAMINE THE DAMAGE."
+        ],
+        "nonste_example": [
+          "Do an evaluation of the damage."
+        ],
         "note": null
       },
       {
-        "value": "\u200b",
-        "ste_example": "MAKE AN ANALYSIS OF THE TEST RESULTS.",
-        "nonste_example": "Do an evaluation of the test results.",
+        "status": "approved",
+        "name": "ANALYSIS",
+        "type_": "TN",
+        "meanings": [],
+        "spellings": [],
+        "alternatives": [],
+        "ste_example": [
+          "MAKE AN ANALYSIS OF THE TEST RESULTS."
+        ],
+        "nonste_example": [
+          "Do an evaluation of the test results."
+        ],
         "note": null
       }
     ],
-    "spellings": [],
-    "alternatives": [],
     "ste_example": [],
     "nonste_example": [],
     "note": {
