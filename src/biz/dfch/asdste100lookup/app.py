@@ -97,6 +97,7 @@ class RuleContentType(StrEnum):
     TEXT = "text"
     DEFAULT = TEXT
     STE = "ste_example"
+    NOT_RECOMMENDED = "not_recommended"
     NONSTE = "nonste_example"
     NOTE = "note"
     GOOD = "good"
@@ -1405,10 +1406,11 @@ class App:  # pylint: disable=R0903
                             console.print(panel)
                             console.print("")
                         case RuleContentType.NONSTE:
-                            # txt = f"[red]{contents.data}[/red]"
-                            # console.print(Panel(txt, title="Non-STE", title_align="left", expand=False))
-                            # console.print("")
                             panel = MarkDownUtils.to_panel(contents.data, title="Non-STE", style="red")
+                            console.print(panel)
+                            console.print("")
+                        case RuleContentType.NOT_RECOMMENDED:
+                            panel = MarkDownUtils.to_panel(contents.data, title="Not recommended", style="red")
                             console.print(panel)
                             console.print("")
                         case RuleContentType.NOTE:

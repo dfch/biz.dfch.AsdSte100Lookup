@@ -1725,12 +1725,12 @@
             ,
             {
                 "type_": "nonste_example",
-                "data": "The primary parts of the valve are:  \n - The DA (8)  \n - The PVA (15)  \n - The BA (17)  \n - The VB (20)."
+                "data": "The primary parts of the valve are:  \n - The `DA` (8)  \n - The `PVA` (15)  \n - The `BA` (17)  \n - The `VB` (20)."
             }
             ,
             {
                 "type_": "ste_example",
-                "data": "The primary parts of the valve are:  \n - The diaphragm assembly (8)  \n - The poppet valve assembly (15)  \n - The bush assembly (17)  \n - The valve body (20)."
+                "data": "The primary parts of the valve are:  \n - The **diaphragm assembly** (8)  \n - The **poppet valve assembly** (15)  \n - The **bush assembly** (17)  \n - The **valve body** (20)."
             }
             ,
             {
@@ -1745,12 +1745,12 @@
             ,
             {
                 "type_": "nonste_example",
-                "data": "A. Remove the DA (8) from the VB (20).  \n B. Remove the PVA (15) from its seat.  \n C. Remove the BA (17) from the VB (20)."
+                "data": "A. Remove the `DA` (8) from the `VB` (20).  \n B. Remove the `PVA` (15) from its seat.  \n C. Remove the `BA` (17) from the `VB` (20)."
             }
             ,
             {
                 "type_": "ste_example",
-                "data": "A. Remove the diaphragm assembly (8) from the valve body (20).  \n B. Remove the poppet valve assembly (15) from its seat.  \n C. Remove the bush assembly (17) from the valve body (20)."
+                "data": "A. Remove the **diaphragm assembly** (8) from the **valve body** (20).  \n B. Remove the **poppet valve assembly** (15) from its seat.  \n C. Remove the **bush assembly** (17) from the **valve body** (20)."
             }
             ,
             {
@@ -1770,7 +1770,7 @@
             ,
             {
                 "type_": "ste_example",
-                "data": "Make sure that the cutoff-switch power connection is safe."
+                "data": "Make sure that the **cutoff-switch power connection** is safe."
             }
             ,
             {
@@ -1780,7 +1780,7 @@
             ,
             {
                 "type_": "ste_example",
-                "data": "Inspection of the lavatory rapid-decompression device."
+                "data": "Inspection of the **lavatory rapid-decompression device**."
             }
             ,
             {
@@ -1810,7 +1810,7 @@
             ,
             {
                 "type_": "nonste_example",
-                "data": "Move the main-gear-door-retraction-winch handle."
+                "data": "Move the `main-gear-door-retraction-winch` handle."
             }
             ,
             {
@@ -1820,7 +1820,7 @@
             ,
             {
                 "type_": "ste_example",
-                "data": "Move the main-gear-door retraction-winch handle."
+                "data": "Move the **main-gear-door retraction-winch handle**."
             }
             ,
             {
@@ -1835,12 +1835,12 @@
             ,
             {
                 "type_": "nonste_example",
-                "data": "A. Remove the diaphragm-assembly (8) from the valve body (20).  \n B. Remove the poppet-valve assembly (15) from its seat."
+                "data": "A. Remove the `diaphragm-assembly` (8) from the valve body (20).  \n B. Remove the `poppet-valve assembly` (15) from its seat."
             }
             ,
             {
                 "type_": "ste_example",
-                "data": "A. Remove the diaphragm assembly (8) from the valve body (20).  \n B. Remove the poppet valve assembly (15) from its seat."
+                "data": "A. Remove the **diaphragm assembly** (8) from the valve body (20).  \n B. Remove the **poppet valve assembly** (15) from its seat."
             }
             ,
             {
@@ -1855,12 +1855,12 @@
             ,
             {
                 "type_": "nonste_example",
-                "data": "The inward outward valve is part of the fuel system."
+                "data": "The `inward outward valve` is part of the fuel system."
             }
             ,
             {
                 "type_": "ste_example",
-                "data": "The inward-outward valve is part of the fuel system."
+                "data": "The **inward-outward valve** is part of the fuel system."
             }
         ]
     }
@@ -2207,10 +2207,448 @@
     {
         "type_": "rule",
         "id_": "3.6",
-        "ref": "Issue 9 page 1-3-nnn",
+        "ref": "Issue 9 page 1-3-5",
         "section": "Verbs",
         "category": "Active voice",
         "name": "Use the active voice. In descriptive writing, you can use the passive voice only when the agent is unknown.",
+        "summary": "Technical texts consist of procedural writing and descriptive writing. When you write in STE, _always use the active voice_. In descriptive writing, the passive voice is permitted _only_ when the agent (the person or thing that does the action) is unknown.",
+        "contents": [
+            {
+                "type_": "text",
+                "data": "**_What is active voice?_**"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "In the active voice, the subject of the sentence does the action of the sentence (**A** does **B**). Thus, the grammatical subject (A) is also the logical subject (agent)."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "**_What is passive voice?_**"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "In the passive voice, the subject of the sentence receives the action (**B** is done by **A**). Here, the grammatical subject is B, and the logical subject, or agent, is A."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# General examples:"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "The manufacturer **gives** the safety procedures."
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "The safety procedures `are given` by the manufacturer."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "The side stay **holds** the main gear leg."
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "The main gear leg `is held` by the side stay."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "**_How do you know if a sentence is in the passive voice?_**"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "The best test for the passive voice is to think of the question _by whom or by what?_ (the agent). If your text gives you an answer to this question, then the text is in the passive voice. When a sentence contains the preposition **by,** it is a good indication that the sentence is in the passive voice. The object of the preposition **by** is then the agent and you can use the agent as the subject of a sentence in the active voice. In the examples that follow, the underlined text identifies the agent."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "In each of the passive examples, you can think of the question **by whom or by what?**"
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "The safety procedures are given by `the manufacturer`.  _(Passive)_"
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "The main gear leg is held by `the side stay`.  _(Passive)_"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "But a passive construction does not always contain an agent."
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "The dimensions are given in the table.  _(Passive)_"
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "The main gear leg is held in its position.  _(Passive)_"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "A sentence in the active voice always has a grammatical subject (the agent), but in the passive sentence in the example below, the agent is unknown (and we do not know the cause of data corruption). In the active sentence, the agent (**transmission**) is incorrect (**transmission** is not the cause of data corruption), and the meaning of the sentence is different. Thus, the active sentence becomes technically incorrect."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Example:"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "During transmission, the data **was corrupted**. _(Passive)_"
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(Correct, the agent is unknown.)"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "During transmission, something corrupted the data. _(Active)_"
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(Correct, you do not know the identity of **something,** but you can use it as the agent.)"
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "Transmission corrupted the data. _(Active)_"
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(Incorrect, **transmission** is not the correct agent.)"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "In the example, if you use the word **something** (_a thing that is not determined or specified_) as the agent, the active voice will be technically correct."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "**_How do you change a sentence that is in the passive voice to the active voice?_**"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "To change a sentence from the passive voice to the active voice, you can use one of these four methods:"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "- Method 1"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "When the sentence gives the agent (usually the object of the preposition **by**), put the agent at the start of the sentence. Then, use the agent as the subject. The subject must always be the noun that does the action in the sentence, as shown in the diagram that follows:"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "&nbsp; **Passive voice**                                     Agent (!= Subject)  \n +--------------------+   +--------------------+   +--------------------+  \n | `The main gear leg`  |   | `is held by`         |   | `the side stay`.     |  \n +--------------------+   +--------------------+   +--------------------+  \n &nbsp;       |                          |                    |                 \n &nbsp;        \\                         |                   /                  \n &nbsp;         ------------------------ | -----------------------              \n &nbsp;                                  |                 /      \\             \n &nbsp;           .....................  | ................        |            \n &nbsp;          /                       |                         |            \n &nbsp;         |                        |                         |            \n &nbsp;         v                        v                         v            \n +--------------------+   +--------------------+   +--------------------+  \n | **The side stay**      |   | **holds**              |   | **the main gear leg**. |  \n +--------------------+   +--------------------+   +--------------------+  \n &nbsp; Subject (== Agent)                                                      \n &nbsp; **Active voice**"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Example:"
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "The circuits are connected by a `switching relay`. _(Passive)_"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "A **switching relay** connects the circuits. _(Active)_"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "- Method 2"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "Change an infinitive verb to an active verb."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Example:"
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "These values `are used by` the computer `to calculate` the energy consumption. _(Passive)_"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "The computer **calculates** the energy consumption from these values. _(Active)_"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "The construction `are used by` gives no important information here. Thus, you can use the verb **calculate** to write the sentence in the active voice."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "- Method 3"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "In procedural writing, change the verb to the imperative (_command_) form."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Examples:"
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "The test `can be continued` by the operator. _(Passive)_"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "**Continue** the test. _(Active)_"
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "Oil and grease `are to be removed` with a degreasing agent. _(Passive)_"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "**Remove** oil and grease with a degreasing agent. _(Active)_"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "- Method 4"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "When the agent (the person or thing that does the action) is not given in the sentence, you can use the pronouns **you** or **we** as subjects in the active form. If the agent is the reader, use **you**. If the agent is your company, or organization, use **we**."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Examples:"
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "On the ground, the valve `can be opened` with the override handle. _(Passive)_"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "On the ground, **you can open** the valve with the override handle. _(Active)_"
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "Additives `are not used` in this type of fuel. _(Passive)_"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "**We do not use** additives in this type of fuel. _(Active)_"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "This type of fuel **does not contain** additives. _(Active)_"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "When you find complex sentences in the passive voice that include auxiliary verbs, decide if you want to write a procedural sentence or a descriptive sentence."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Examples:"
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "The volume control `can be adjusted`."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "Adjust the volume control. _(Procedural sentence)_"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "You can adjust the volume control. _(Descriptive sentence)_"
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "The oil temperature `must be adjusted` before the start of the test."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "Before you start the test, adjust the oil temperature. _(Procedural sentence)_"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "Before the start of the test, the operator must adjust the oil temperature. _(Descriptive sentence)_"
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "The valve `will be adjusted` during the test."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "During the test, adjust the valve. _(Procedural sentence)_"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "NOTE: You will adjust the valve during the test. _(Descriptive sentence)_"
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "Non-STE: The component `is to be instajled` before you do the test."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "Before you do the test, install the component. _(Procedural sentence)_"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "Before the test, the operator must install the component. _(Descriptive sentence)_"
+            }
+        ]
+    }
+    ,
+    {
+        "type_": "rule",
+        "id_": "3.7",
+        "ref": "Issue 9 page 1-3-9",
+        "section": "Verbs",
+        "category": "How to describe an action",
+        "name": "Use an approved verb to describe an action, not a noun or other parts of speech.",
+        "summary": "There can be different solutions to give the same information in STE. If there is an approved verb that describes an action, use the approved verb. Verbs describe actions more clearly than nouns or other parts of speech.",
+        "contents": [
+            {
+                "type_": "text",
+                "data": "# Examples:"
+            }
+            ,
+            {
+                "type_": "not_recommended",
+                "data": "The ohmmeter `gives an indication` of 450 ohms."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "The ohmmeter **shows** 450 ohms."
+            }
+            ,
+            {
+                "type_": "not_recommended",
+                "data": "Before `the removal` of the unit, make sure that the power supply is OFF."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "Before **you remove** the unit, make sure that the power supply is OFF."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "In the examples, all sentences are in STE but those with direct verbs describe the action more clearly."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "If a word is not approved as a verb in the dictionary, do not use it as a verb. Use a different sentence construction to give the same information."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Example:"
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "`Check` the laptop battery."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "Do a **check** of the laptop battery."
+            }
+        ]
+    }
+    ,
+    {
+        "type_": "rule",
+        "id_": "4.1",
+        "ref": "Issue 9 page 1-4-1",
+        "section": "Sentences",
+        "category": "Short sentences and clear sentence structures",
+        "name": "Write short and clear sentences.",
+        "summary": "Write short and clear sentences that give accurate instructions and information.",
+        "contents": [
+            {
+                "type_": "text",
+                "data": "nnn"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "nnn"
+            }
+        ]
+    }
+    ,
+    {
+        "type_": "rule",
+        "id_": "4.2",
+        "ref": "Issue 9 page 1-4-3",
+        "section": "Sentences",
+        "category": "Short sentences and clear sentence structures",
+        "name": "Do not omit words or use contractions to make your sentences shorter.",
         "summary": "nnn",
         "contents": [
             {
@@ -2227,11 +2665,53 @@
     ,
     {
         "type_": "rule",
-        "id_": "3.7",
-        "ref": "Issue 9 page 1-3-nnn",
-        "section": "Verbs",
-        "category": "How to describe an action",
-        "name": "Use an approved verb to describe an action, not a noun or other parts of speech.",
+        "id_": "4.3",
+        "ref": "Issue 9 page 1-4-4",
+        "section": "Sentences",
+        "category": "Vertical lists",
+        "name": "Use a vertical list for complex texts.",
+        "summary": "nnn",
+        "contents": [
+            {
+                "type_": "text",
+                "data": "nnn"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "nnn"
+            }
+        ]
+    }
+    ,
+    {
+        "type_": "rule",
+        "id_": "4.4",
+        "ref": "Issue 9 page 1-4-7",
+        "section": "Sentences",
+        "category": "Connecting words and connecting phrases",
+        "name": "Use connecting words and connecting phrases to connect sentences that contain related topics.",
+        "summary": "nnn",
+        "contents": [
+            {
+                "type_": "text",
+                "data": "nnn"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "nnn"
+            }
+        ]
+    }
+    ,
+    {
+        "type_": "rule",
+        "id_": "4.5",
+        "ref": "Issue 9 page 1-4-8",
+        "section": "Sentences",
+        "category": "Articles and demonstrative adjectives",
+        "name": "When applicable, use an article (the, a, an) or a demonstrative adjective (this, these) before a noun or a multi-word noun.",
         "summary": "nnn",
         "contents": [
             {
