@@ -1316,6 +1316,132 @@ class App:  # pylint: disable=R0903
         ) as f:
             json.dump(parsed_words_dicts, f, indent=2)
 
+    def on_parse(self) -> None:
+        """This is the handler for the `dictionary` command."""
+
+        # How elegant!
+        root_dir = Path(__file__).resolve(
+            ).parent.parent.parent.parent.parent
+        import_path = self._args.path
+        path = root_dir.joinpath(import_path)
+        prefix = self._args.prefix
+        extension = self._args.extension
+        dictionary_file_name = self._args.output
+        self.parse_source(
+            path=path,
+            prefix=prefix,
+            extension=extension,
+            dictionary_file_name=dictionary_file_name)
+        return
+
+    def on_rules(self) -> None:
+        """This is the handler for the `rules` command."""
+
+        rule_theme = Theme({
+            # "markdown.h1": "bold magenta",
+            # "markdown.h2": "bold cyan",
+            "markdown.code": "red",
+        })
+        console = Console(theme=rule_theme)
+
+        # Load rules file.
+        current_folder = Path(__file__).parent
+        rules_fullname = current_folder / "rules.json"
+        with open(rules_fullname, "r", encoding="utf-8") as f:
+            rules_data = json.load(f)
+
+        rule_objects = [Rule(**rule_object) for rule_object in rules_data]
+        for rule in rule_objects:
+
+            if self._args.id:
+                if not re.search(self._args.id, rule.id_, re.IGNORECASE):
+                    continue
+
+            if self._args.section:
+                if not re.search(self._args.section, rule.section, re.IGNORECASE):
+                    continue
+
+            if self._args.category:
+                if not re.search(self._args.category, rule.category, re.IGNORECASE):
+                    continue
+
+            p = Panel(f"[black]{rule.name}[/black]", title=f"Rule {rule.id_}", title_align="left", subtitle=f"{rule.section}, {rule.category}", subtitle_align="left", border_style="bright_black", style="on bright_yellow", padding=(1, 1), box=box.HEAVY_EDGE)
+            p = Panel(
+                Markdown(rule.name),
+                title=f"Rule {rule.id_}",
+                title_align="left",
+                subtitle=f"{rule.section}, {rule.category}, {rule.ref}",
+                subtitle_align="left",
+                border_style="bright_yellow",
+                padding=(1, 1),
+                box=box.HEAVY_EDGE
+            )
+            console.print(p)
+            md = Markdown(f"**{rule.summary}**")
+            console.print("")
+            console.print(md)
+            console.print("")
+
+            if self._args.summary:
+                continue
+
+            for contents in [RuleContentTypeBase(**c) for c in rule.contents]:
+                # print(contents.type_)
+                match contents.type_:
+                    case RuleContentType.TEXT:
+                        md = Markdown(contents.data)
+                        console.print(md)
+                        console.print("")
+                    case RuleContentType.EXAMPLE:
+                        txt = f"[green]{contents.data}[/green]"
+                        console.print(Panel(txt, title="STE", title_align="left", expand=False))
+                        console.print("")
+                    case RuleContentType.STE:
+                        # txt = f"[green]{contents.data}[/green]"
+                        # console.print(Panel(txt, title="STE", title_align="left", expand=False))
+                        # console.print("")
+                        panel = MarkDownUtils.to_panel(contents.data, title="STE", style="green")
+                        console.print(panel)
+                        console.print("")
+                    case RuleContentType.NONSTE:
+                        panel = MarkDownUtils.to_panel(contents.data, title="Non-STE", style="red")
+                        console.print(panel)
+                        console.print("")
+                    case RuleContentType.NOT_RECOMMENDED:
+                        panel = MarkDownUtils.to_panel(contents.data, title="Not recommended", style="red")
+                        console.print(panel)
+                        console.print("")
+                    case RuleContentType.NOTE:
+                        md = Markdown(contents.data)
+                        console.print(Panel(md, title="💡", title_align="left", border_style="yellow", expand=False))
+                        console.print("")
+                    case RuleContentType.GOOD:
+                        panel = MarkDownUtils.to_panel(contents.data, title="Example", style="green")
+                        console.print(panel)
+                        console.print("")
+                    case RuleContentType.GENERAL:
+                        panel = MarkDownUtils.to_panel(contents.data, title="Example", style="blue")
+                        console.print(panel)
+                        console.print("")
+                    case RuleContentType.COMMENT:
+                        md = Markdown(f"_{contents.data}_")
+                        console.print(md)
+                        console.print("")
+                    case _:
+                        console.print("default")
+                        md = Markdown(contents.data)
+                        console.print(md)
+                        console.print("")
+        return
+
+    def on_dictionary(self) -> None:
+        """This is the handler for the `dictionary` command."""
+
+        dictionary_file_name = self._args.input
+        self.prompt_user_loop(dictionary_file_name=dictionary_file_name)
+
+        return
+
     def invoke(self) -> None:
         """Main entry point for this class."""
 
@@ -1333,121 +1459,13 @@ class App:  # pylint: disable=R0903
         print(self._parser.epilog)
 
         if self._args.command == "dictionary":
-            dictionary_file_name = self._args.input
-            self.prompt_user_loop(dictionary_file_name=dictionary_file_name)
+            self.on_dictionary()
             return
 
         if self._args.command == "rules":
-
-            rule_theme = Theme({
-                # "markdown.h1": "bold magenta",
-                "markdown.code" : "red",
-                "markdown.h2": "bold cyan",
-            })
-            console = Console(theme=rule_theme)
-
-            # Load rules file.
-            current_folder = Path(__file__).parent
-            rules_fullname = current_folder / "rules.json"
-            with open(rules_fullname, "r", encoding="utf-8") as f:
-                rules_data = json.load(f)
-
-            rule_objects = [Rule(**rule_object) for rule_object in rules_data]
-            for rule in rule_objects:
-
-                if self._args.id:
-                    if not re.search(self._args.id, rule.id_, re.IGNORECASE):
-                        continue
-
-                if self._args.section:
-                    if not re.search(self._args.section, rule.section, re.IGNORECASE):
-                        continue
-
-                if self._args.category:
-                    if not re.search(self._args.category, rule.category, re.IGNORECASE):
-                        continue
-
-                p = Panel(f"[black]{rule.name}[/black]", title=f"Rule {rule.id_}", title_align="left", subtitle=f"{rule.section}, {rule.category}", subtitle_align="left", border_style="bright_black", style="on bright_yellow", padding=(1, 1), box=box.HEAVY_EDGE)
-                p = Panel(
-                    Markdown(rule.name),
-                    title=f"Rule {rule.id_}",
-                    title_align="left",
-                    subtitle=f"{rule.section}, {rule.category}, {rule.ref}",
-                    subtitle_align="left",
-                    border_style="bright_yellow",
-                    padding=(1, 1),
-                    box=box.HEAVY_EDGE
-                )
-                console.print(p)
-                md = Markdown(f"**{rule.summary}**")
-                console.print("")
-                console.print(md)
-                console.print("")
-
-                if self._args.summary:
-                    continue
-
-                for contents in [RuleContentTypeBase(**c) for c in rule.contents]:
-                    # print(contents.type_)
-                    match contents.type_:
-                        case RuleContentType.TEXT:
-                            md = Markdown(contents.data)
-                            console.print(md)
-                            console.print("")
-                        case RuleContentType.EXAMPLE:
-                            txt = f"[green]{contents.data}[/green]"
-                            console.print(Panel(txt, title="STE", title_align="left", expand=False))
-                            console.print("")
-                        case RuleContentType.STE:
-                            # txt = f"[green]{contents.data}[/green]"
-                            # console.print(Panel(txt, title="STE", title_align="left", expand=False))
-                            # console.print("")
-                            panel = MarkDownUtils.to_panel(contents.data, title="STE", style="green")
-                            console.print(panel)
-                            console.print("")
-                        case RuleContentType.NONSTE:
-                            panel = MarkDownUtils.to_panel(contents.data, title="Non-STE", style="red")
-                            console.print(panel)
-                            console.print("")
-                        case RuleContentType.NOT_RECOMMENDED:
-                            panel = MarkDownUtils.to_panel(contents.data, title="Not recommended", style="red")
-                            console.print(panel)
-                            console.print("")
-                        case RuleContentType.NOTE:
-                            md = Markdown(contents.data)
-                            console.print(Panel(md, title="💡", title_align="left", border_style="yellow", expand=False))
-                            console.print("")
-                        case RuleContentType.GOOD:
-                            panel = MarkDownUtils.to_panel(contents.data, title="Example", style="green")
-                            console.print(panel)
-                            console.print("")
-                        case RuleContentType.GENERAL:
-                            panel = MarkDownUtils.to_panel(contents.data, title="Example", style="blue")
-                            console.print(panel)
-                            console.print("")
-                        case RuleContentType.COMMENT:
-                            md = Markdown(f"_{contents.data}_")
-                            console.print(md)
-                            console.print("")
-                        case _:
-                            console.print("default")
-                            md = Markdown(contents.data)
-                            console.print(md)
-                            console.print("")
+            self.on_rules()
             return
 
         if self._args.command == "parse":
-            # How elegant!
-            root_dir = Path(__file__).resolve(
-                ).parent.parent.parent.parent.parent
-            import_path = self._args.path
-            path = root_dir.joinpath(import_path)
-            prefix = self._args.prefix
-            extension = self._args.extension
-            dictionary_file_name = self._args.output
-            self.parse_source(
-                path=path,
-                prefix=prefix,
-                extension=extension,
-                dictionary_file_name=dictionary_file_name)
+            self.on_parse()
             return
