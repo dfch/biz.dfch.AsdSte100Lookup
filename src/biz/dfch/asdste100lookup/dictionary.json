@@ -48678,16 +48678,25 @@
     "status": "rejected",
     "name": "probability",
     "type_": "n",
-    "meanings": [
+    "meanings": [],
+    "spellings": [],
+    "alternatives": [
       {
-        "value": "RISK(n)",
-        "ste_example": "TO DECREASE THE RISK OF FIRE, OBEY THE SAFETY PRECAUTIONS.",
-        "nonste_example": "Obey the safety precautions to decrease the probability of fire.",
+        "status": "approved",
+        "name": "RISK",
+        "type_": "n",
+        "meanings": [],
+        "spellings": [],
+        "alternatives": [],
+        "ste_example": [
+          "TO DECREASE THE RISK OF FIRE, OBEY THE SAFETY PRECAUTIONS."
+        ],
+        "nonste_example": [
+          "Obey the safety precautions to decrease the probability of fire."
+        ],
         "note": null
       }
     ],
-    "spellings": [],
-    "alternatives": [],
     "ste_example": [],
     "nonste_example": [],
     "note": {
@@ -48701,22 +48710,40 @@
     "status": "rejected",
     "name": "probable",
     "type_": "adj",
-    "meanings": [
+    "meanings": [],
+    "spellings": [],
+    "alternatives": [
       {
-        "value": "VERY POSSIBLE",
-        "ste_example": "IF YOU DO NOT SAFETY THE DOOR, IT IS VERY POSSIBLE THAT STRONG WINDS WILL CAUSE DAMAGE TO THE STRUCTURE.",
-        "nonste_example": "If you do not safety the door, damage to the structure due to strong winds is probable.",
+        "status": "approved",
+        "name": "VERY POSSIBLE",
+        "type_": "adj",
+        "meanings": [],
+        "spellings": [],
+        "alternatives": [],
+        "ste_example": [
+          "IF YOU DO NOT SAFETY THE DOOR, IT IS VERY POSSIBLE THAT STRONG WINDS WILL CAUSE DAMAGE TO THE STRUCTURE."
+        ],
+        "nonste_example": [
+          "If you do not safety the door, damage to the structure due to strong winds is probable."
+        ],
         "note": null
       },
       {
-        "value": "RISK(n)",
-        "ste_example": "IF YOU DO NOT SAFETY THE DOOR, THERE IS A RISK THAT STRONG WINDS WILL CAUSE DAMAGE TO THE STRUCTURE.",
-        "nonste_example": "If you do not safety the door, damage to the structure due to strong winds is probable.",
+        "status": "approved",
+        "name": "RISK",
+        "type_": "n",
+        "meanings": [],
+        "spellings": [],
+        "alternatives": [],
+        "ste_example": [
+          "IF YOU DO NOT SAFETY THE DOOR, THERE IS A RISK THAT STRONG WINDS WILL CAUSE DAMAGE TO THE STRUCTURE."
+        ],
+        "nonste_example": [
+          "If you do not safety the door, damage to the structure due to strong winds is probable."
+        ],
         "note": null
       }
     ],
-    "spellings": [],
-    "alternatives": [],
     "ste_example": [],
     "nonste_example": [],
     "note": {
