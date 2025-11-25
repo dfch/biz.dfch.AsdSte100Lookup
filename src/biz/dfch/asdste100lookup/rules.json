@@ -15,7 +15,7 @@
             ,
             {
                 "type_": "text",
-                "data": "# Examples"
+                "data": "# Examples:"
             }
             ,
             {
@@ -50,7 +50,7 @@
         "contents": [
             {
                 "type_": "text",
-                "data": "# Examples"
+                "data": "# Examples:"
             }
             ,
             {
@@ -180,7 +180,7 @@
         "contents": [
             {
                 "type_": "text",
-                "data": "# Examples"
+                "data": "# Examples:"
             }
             ,
             {
@@ -535,7 +535,7 @@
         "contents": [
             {
                 "type_": "text",
-                "data": "# Examples"
+                "data": "# Examples:"
             }
             ,
             {
@@ -1876,7 +1876,7 @@
         "contents": [
             {
                 "type_": "text",
-                "data": "# Example"
+                "data": "# Example:"
             }
             ,
             {
@@ -1906,7 +1906,7 @@
         "contents": [
             {
                 "type_": "text",
-                "data": "# Example"
+                "data": "# Example:"
             }
             ,
             {
@@ -2632,12 +2632,107 @@
         "contents": [
             {
                 "type_": "text",
-                "data": "nnn"
+                "data": "In _procedures_, give short and clear instructions directly to the reader (imperative form)."
             }
             ,
             {
                 "type_": "text",
-                "data": "nnn"
+                "data": "# Example:"
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "To remove the cover assembly (9), first remove the four screws (10) that attach the cover (11) to the housing (12), and then, after taking the cover (11) off the housing (12), remove the preformed packing (13) and throw it away."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "Remove the cover assembly (9) as follows:  \n A. Remove the four screws (10) that attach the cover (11) to the housing (12).  \n B. Remove the cover (11) from the housing (12).  \n C. Remove and discard the preformed packing (13)."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "In a _descriptive text_, make sure that each sentence has only one topic (subject or idea) and does not contain the imperative form. Then, in the sentences that follow, gradually give information about that topic."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Example:"
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "The side stay assembly has two folding toggles hinged together and attached with hinges between the main gear strut and the side stay bracket."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(This sentence contains more than one topic. To make this information clearer, you can write a new sentence for each topic.)"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "**The side stay assembly** has two folding toggles. **The folding toggles** are attached together with hinges. **These folding toggles** are also attached with hinges between the main gear strut and the side stay bracket."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(The new text has three sentences, and each sentence has its topic. Refer to the underlined text for the specified subjects in each sentence.)"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "_For the two types of writing_, always make sure that your text is not abstract. Make sure that it clearly shows how to do a task or how a system operates. Be accurate. Do not give information that is not accurate or can have different meanings."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Examples:"
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "No leaks are permitted."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(This sentence does not tell the reader about the action.)"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "Make sure that there are no leaks."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(This sentence directly tells the reader about the action.)"
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "Different temperatures will change the cure time."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(This is an abstract sentence because it contains no information about how the cure time changes.)"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "When the temperature increases, the cure time will decrease."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(This sentence tells the reader the correct information about how the cure time changes. To make your writing more accurate, give the specified temperatures and the related cure times.)"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "The cure time is 2 hours at a temperature of 20 °C."
             }
         ]
     }
@@ -2649,16 +2744,116 @@
         "section": "Sentences",
         "category": "Short sentences and clear sentence structures",
         "name": "Do not omit words or use contractions to make your sentences shorter.",
-        "summary": "nnn",
+        "summary": "Each sentence must have all its parts. When you write sentences, do not omit words or use contractions (for example, _don't_, _isn't_, _aren't_). If you do that, your sentence will be shorter, but it will not be easier to read. Write all the words in full.",
         "contents": [
             {
                 "type_": "text",
-                "data": "nnn"
+                "data": "Do not omit _nouns_ to make short sentences. It will not be easy for the reader to understand the meaning of the sentence."
             }
             ,
             {
                 "type_": "text",
-                "data": "nnn"
+                "data": "# Example:"
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "`Can be` a maximum of five inches long."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "**Cracks can have** a maximum length of five inches."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "Do not omit _verbs_ because the reader will not understand the action."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Example:"
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "`Rotary switch to` INPUT."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "**Set the rotary switch to** INPUT."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "Do not omit the _subject_ because the reader will not understand the action."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Examples:"
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "`If installed`, remove the shims."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "**If shims are installed**, remove them."
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "_WARNING_: MAKE SURE THAT THE POTABLE WATER SYSTEM IS NOT PRESSURIZED. `IF NOT`, THIS CAN CAUSE INJURY TO PERSONS."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "_WARNING_: MAKE SURE THAT THE POTABLE WATER SYSTEM IS NOT PRESSURIZED. **A PRESSURIZED SYSTEM** CAN CAUSE INJURY TO PERSONS."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "Do not omit _articles_ to make the sentence shorter because omitted articles can cause ambiguity."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Examples:"
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "Remove the bolt and stop."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "Remove the bolt and **the** stop."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "Do not omit _parts of words_ to make _contractions_ because contractions will not be easy to understand."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Example:"
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "If your hands are wet, `don't` touch the USB power adapter."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "If your hands are wet, **do not** touch the USB power adapter."
             }
         ]
     }
@@ -2670,16 +2865,156 @@
         "section": "Sentences",
         "category": "Vertical lists",
         "name": "Use a vertical list for complex texts.",
-        "summary": "nnn",
+        "summary": "When your sentence is long and you must include many different items (for example, a list of components, parts, or documents) or actions, you can put them in a vertical list. Vertical lists make long and complex texts much easier to read and understand.",
         "contents": [
             {
                 "type_": "text",
-                "data": "nnn"
+                "data": "**_When you make a vertical list:_**"
             }
             ,
             {
                 "type_": "text",
-                "data": "nnn"
+                "data": "- Put a colon (:) at the end of the first sentence, before the first item in the vertical list.  \n - Identify each item in the vertical list with a number, letter, punctuation mark, or symbol. For example, you can use:  \n     - A dash (-)  \n     - A bullet point (•)  \n     - A letter (a, b, c...)  \n     - A number (1,2, 3...).  \n - Start each item in the vertical list with an uppercase letter.  \n - Where applicable, use an article before the noun that is the subject of each item in the vertical list.  \n - Put a period at the end of an item in the vertical list if it is a full sentence.  \n - Do not put a period at the end of an item in the vertical list if it is not a full sentence.  \n - Do not put a comma or a semicolon at the end of an item in the vertical list.  \n - Put a period at the end of the last item in the vertical list."
+            }
+            ,
+            {
+                "type_": "note",
+                "data": "To know which marks or symbols to use, refer to the applicable specifications for technical publications, style guides, and other official directives."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Examples:"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "In the two examples that follow, the vertical lists give a list of parts and documents. Dashes and bullet points identify each of these parts and documents."
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "The wheel assembly comprises the tire, the tube, the spokes, the spoke fittings, the valve, and the hub."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "The wheel assembly has these parts:  \n - The tire  \n - The tube  \n - The spokes  \n - The spoke fittings  \n - The valve  \n - The hub."
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "The report must include each of the following: a completed REC-1 form, a three-view drawing of the unit, a photograph of the unit, a copy of the source data."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "In the two examples that follow, the vertical lists give a procedure and a description. Letters and numbers identify each work step."
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "If the RAT is retracted, remove the tag, open the isolating valves and, ensuring that there is no possibility of fouling, slowly extend the RAT to its full stroke. Close the isolating valves; tag 'DO NOT OPERATE'. Release the DOWN pressure."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "If the Ram Air Turbine (RAT) is retracted:  \n 1. Remove the tag.  \n 2. Open the isolating valves.  \n 3. Slowly and fully extend the RAT and make sure that it does not touch other parts.  \n 4. Close the isolating valves.  \n 5. Tag the isolating valves with 'DO NOT OPERATE'.  \n 6. Release the DOWN pressure."
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "During the final movement of the landing gear retraction, the door operating bar located on the leg contacts and turns the latch, withdrawing the roller from the slot and the second roller entraps the door operating bar."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "When the landing gear retracts:  \n 1. The door operating bar on the leg touches and turns the latch.  \n 2. The roller moves out of the slot.  \n 3. The second roller keeps the door operating bar in position."
+            }
+            ,
+            {
+                "type_": "note",
+                "data": "You can use vertical lists in procedural and descriptive writings, but you cannot mix the two types of writings in the same vertical list."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "In safety instructions, include negative commands (DO NOT) where necessary for each item in the vertical list. This method will make the safety instruction more direct and easier to understand."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Example:"
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "_CAUTION_: WHEN YOU GET ACCESS TO THE REAR FUSELAGE THROUGH THE ACCESS PANEL, `DO NOT`:  \n - `PUT` YOUR FEET ON THE APU LINE.  \n - `USE` THE APU LINE AS A HANDLE."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "_CAUTION_: WHEN YOU GET ACCESS TO THE REAR FUSELAGE THROUGH THE ACCESS PANEL:  \n - **DO NOT** PUT YOUR FEET ON THE APU LINE.  \n - **DO NOT** USE THE APU LINE AS A HANDLE."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "Always make sure that each item in the vertical list connects clearly and correctly to the first part of the vertical list (the text that is before the colon)."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Example:"
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "Do not use acetone for cleaning these parts after the repair:  \n &nbsp;    - the service cabinet  \n &nbsp;    - the toilet shrouds with the supports,  \n &nbsp;    - parts made of polycarbonate."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "After the repair, do not use acetone to clean:  \n - The service cabinet  \n - The toilet shrouds  \n - The toilet shroud supports  \n - Parts made of polycarbonate."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "Always make sure that the layout of your vertical list is easy to read. In the example that follows, there is a second vertical list included in the primary vertical list. Use the same level for all items in the vertical list."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Example:"
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "Remove these parts:  \n - The four screws (3)  \n - The four washers (4)  \n - The flange (2) that includes:  \n     - The two O-rings (6)  \n     - The seals (7)  \n - The shims (8)  \n - The spring (9)."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "Remove these parts:  \n - The four screws (3)  \n - The four washers (4)  \n - The flange (2) (that includes the two O-rings (6) and the seals (7))  \n - The shims (8)  \n - The spring (9)."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "An item in a vertical list can contain a verb and not be a full sentence. Then, you do not use a period at the end of that item."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Example:"
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "The middle part of the reservoir has the components that follow:  \n - One check valve that prevents the backflow of fluid.  \n - One air relief valve that opens at a pressure of 25 psi.  \n - One transfer pipe connected to the pressurization manifold."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "The middle part of the reservoir has the components that follow:  \n - One check valve that prevents the backflow of fluid  \n - One air relief valve that opens at a pressure of 25 psi  \n - One transfer pipe connected to the pressurization manifold."
             }
         ]
     }
@@ -2691,16 +3026,81 @@
         "section": "Sentences",
         "category": "Connecting words and connecting phrases",
         "name": "Use connecting words and connecting phrases to connect sentences that contain related topics.",
-        "summary": "nnn",
+        "summary": "Connecting words and connecting phrases connect a topic in one sentence with an idea in a sentence that follows.",
         "contents": [
             {
                 "type_": "text",
-                "data": "nnn"
+                "data": "In a _descriptive text_, connecting words and connecting phrases give your writing a logical structure and give information that is easy to understand."
             }
             ,
             {
                 "type_": "text",
-                "data": "nnn"
+                "data": "Some of the _connecting words_ that are approved in the dictionary are **and**, **but**, **then**, and **thus**."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "**As a result** and **at the same time** are examples of _connecting phrases_ that you can use."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Examples in STE:"
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(Refer to the **underlined** connecting words and connecting phrases.)"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "The localizer course aligns with the centerline of the runway. **And** the glideslope path is at a constant angle to the threshold of the runway."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "These safety precautions are the minimum necessary for work in the pit lane. **But** the local regulations can give other necessary safety precautions."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "If the pressure increases, it changes the electrical currents in the transmitter. **Thus**, the power unit supplies currents to the indicator on the related panel."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "When the hydraulic pressure is released, the seguence valve moves to the open position. **As a result**, the actuators are connected to the hydraulic return."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "You can also use demonstrative adjectives as connecting words to connect ideas in related sentences."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "In _procedures_, you can use these _connecting words_ when an explanation is necessary after a work step. Connecting words can also be necessary in safety instructions to connect related sentences or make the text clear."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Examples in STE:"
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(Refer to **underlined** connecting words.)"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "Tag the disassembled parts. **This** method will help you during the subseguent procedures."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "_WARNING_: ALWAYS USE PROTECTIVE EQUIPMENT IN THIS AREA. **THIS** PRECAUTION WILL PREVENT INJURY."
             }
         ]
     }
@@ -2712,16 +3112,596 @@
         "section": "Sentences",
         "category": "Articles and demonstrative adjectives",
         "name": "When applicable, use an article (the, a, an) or a demonstrative adjective (this, these) before a noun or a multi-word noun.",
-        "summary": "nnn",
+        "summary": "Articles and demonstrative adjectives show the position of nouns and multi-word nouns in the sentence. Use articles and demonstrative adjectives correctly and do not omit them to make the text shorter.",
         "contents": [
             {
                 "type_": "text",
-                "data": "nnn"
+                "data": "# Examples:"
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "Turn shaft assembly."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "Turn **the** shaft assembly."
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "Data module tells you how to operate unit."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "**This** data module tells you how to operate the unit."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "You can use equivalent alternatives for **these** items."
             }
             ,
             {
                 "type_": "text",
-                "data": "nnn"
+                "data": "It is not always correct English to put an article before a noun. Do not use articles in general statements or concepts."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Examples in STE:"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "**Solvents** can cause damage to **paint**."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(No articles before **solvents** or **paint.** The context does not give a specified solvent or paint.)"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "The machine operates with **high efficiency**."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(No article before **high efficiency.** The sentence refers to a general concept.)"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "This software increases **performance**."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(No article before **performance** because it refers to an abstract quality.)"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "In short sentences, it can be clearer to use articles before all nouns."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "Install **the** nuts (2) and **the** bolts (3)."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "But sentences that contain a long series of items are clearer when you use the article only before the first noun in the series."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "Discard **the** O-rings (3), gaskets (4), seals (7), and washers (9)."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "When you use the article in a series of items, always make sure that adjectives do not cause ambiguity."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "Install **the new** O-rings (15), spacers (14), nut (13), and safety pin (12)."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(The article in this instruction tells you that all items in the series are new.)"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "Install **the new** O-rings (15), **the** spacers (14), **the** nut (13), and **the** safety pin (12)."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(The articles in this instruction tell you that only the O-rings (15) are new.)"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "A definite article is incorrect before a noun when an alphanumeric identifier comes after it. This is because the alphanumeric identifier shows that it is a proper noun."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Example:"
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "Tag the circuit breaker 36L7. _(Incorrect)_"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "Tag circuit breaker 36L7. _(Correct)_"
+            }
+            ,
+            {
+                "type_": "note",
+                "data": "If you are not sure about how to use the articles correctly in your writing, refer to a comprehensive grammar book, for example, [**Practical English Usage** by Michael Swan](https://elt.oup.com/catalogue/items/global/grammar_vocabulary/practical_english_usage_4th_edition). This type of resource gives clear explanations on grammar topics, which include how and when to use articles correctly in your text."
+            }
+        ]
+    }
+    ,
+    {
+        "type_": "rule",
+        "id_": "5.1",
+        "ref": "Issue 9 page 1-5-1",
+        "section": "Prcedural writing",
+        "category": "Sentences",
+        "name": "Write short sentences. Use a maximum of 20 words in each sentence.",
+        "summary": "Procedures give instructions that tell you how to do a task. Long sentences in work steps are not easy to understand.",
+        "contents": [
+            {
+                "type_": "text",
+                "data": "In STE, the maximum length of a sentence for procedures is 20 words."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "Warnings, cautions, and other safety instructions must also obey this rule."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Examples in STE:"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "Install the three auxiliary screws (2) in the flange of the motor assembly (9)."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(This sentence has 14 words.)"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "_CAUTION_: WHEN YOU REMOVE THE SHROUD (26), BE CAREFUL NOT TO CAUSE DAMAGE TO THE SURFACE OF THE FLANGE ASSEMBLY (22)."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(This sentence has 20 words.)"
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "Put preservation oil into the unit through the vent hole until the oil level is approximately 6 mm (0.24 inches) below the surface of the flange cover."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(This sentence has 25 words.)"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "Put preservation oil into the unit through the vent hole. Continue until the oil level is approximately 6 mm (0.24 in) below the surface of the flange cover."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(The first sentence has 10 words. The second sentence has 16 words.)"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "In the last STE example, the long sentence is divided into two shorter sentences, which are easier to read. You cannot divide this instruction into two different work steps, because the two actions occur at the same time."
+            }
+            ,
+            {
+                "type_": "note",
+                "data": "Section 8 gives all the rules about word count."
+            }
+            ,
+            {
+                "type_": "note",
+                "data": "Notes (rule 5.5) do not obey rule 5.1. Notes are important in procedures, but they contain information only. Thus, the maximum length of a sentence in a note is 25 words."
+            }
+        ]
+    }
+    ,
+    {
+        "type_": "rule",
+        "id_": "5.2",
+        "ref": "Issue 9 page 1-5-2",
+        "section": "Prcedural writing",
+        "category": "Verbs in procedures",
+        "name": "Write only one instruction in each sentence unless two or more actions occur at the same time.",
+        "summary": "If there are too many instructions in a sentence, the sentence is not easy to read and understand. Write only one instruction in each sentence and clearly show (usually with numbers or letters) the sequence of the work steps. You can use as many work steps as you want in a procedure.",
+        "contents": [
+            {
+                "type_": "text",
+                "data": "# Examples:"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "1. Set the TEST switch to the middle position.  \n 2. Make sure that all the switches on the control panel are OFF."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(Two work steps)"
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "Set the TEST switch to the middle position and release the SHORT-CIRCUIT TEST switch."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "1. Set the TEST switch to the middle position.  \n 2. Release the SHORT-CIRCUIT TEST switch."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(The original sentence is divided into two different work steps because the two actions do not occur at the same time.)"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "You can write more than one instruction in a sentence when two actions occur at the same time."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Examples in STE:"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "**Hold** the panel in its open position and **install** the fastener."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "Slowly **extend** the rod fully and **make sure** that it does not touch other parts."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "**Cut** and **remove** the wire."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "**Remove** and **discard** the seal."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "You can write more than one sentence in a work step:  \n - When actions occur at the same time  \n - When a result occurs immediately after an action."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Examples in STE:"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "**Make sure** that the locking torque of each of the four bolts (6) is a minimum of 0.30 Nm. **Then, torque** each of the four bolts (6) to 4.20 Nm."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(During a torque procedure, the torque action immediately follows the check of the locking torque in one action. Thus, you cannot divide the sentence into two different work steps.)"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "**Measure the leakage** from the outlet port. **The leakage must not be more than** 0.5 cc/minute."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(The second sentence here gives the limit for the result of the test. The work step occurs in one action, and you cannot divide the sentence into two different work steps.)"
+            }
+        ]
+    }
+    ,
+    {
+        "type_": "rule",
+        "id_": "5.3",
+        "ref": "Issue 9 page 1-5-3",
+        "section": "Prcedural writing",
+        "category": "Verbs in procedures",
+        "name": "Write instructions in the imperative (command) form.",
+        "summary": "An instruction tells the reader to do something. Write the verb in the imperative (command) form.",
+        "contents": [
+            {
+                "type_": "text",
+                "data": "# Examples in STE:"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "**Set** the switch to ON."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "**Remove** the four bolts."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "**Increase** the pressure to 60 psi."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "**Inflate** the tires."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "**Install** the new O-ring."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "The imperative form gives the reader a clear instruction. If you use other types of sentence structure, you can cause ambiguity. Thus, the reader will not know:  \n - If it is important to do a work step.  \n - If a different person did the work step.  \n - If a different person must do the work step in the future."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Examples:"
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "The test can be continued."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "**Continue** the test."
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "Oil and grease are to be removed with a degreasing agent."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "**Remove** oil and grease with a degreasing agent."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "Do not use the verb **must** before the imperative form, unless the instruction is very important for safety (for example, in a safety instruction) or when you give an important condition."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Example:"
+            }
+            ,
+            {
+                "type_": "not_recommended",
+                "data": "Before you remove the clamp, `you must disconnect` the hose."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "Before you remove the clamp, **disconnect** the hose."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "_WARNING_: IF YOU **MUST** CUT THE WIRE, ALWAYS USE A PROTECTIVE MASK. PIECES OF WIRES CAN CAUSE INJURY."
+            }
+        ]
+    }
+    ,
+    {
+        "type_": "rule",
+        "id_": "5.4",
+        "ref": "Issue 9 page 1-5-4",
+        "section": "Prcedural writing",
+        "category": "Descriptive statements in instructions",
+        "name": "When there is a condition that the reader must know about first, start the instruction with a descriptive statement. Then, divide that descriptive statement from the command with a comma.",
+        "summary": "If a special condition is necessary for a work step, the reader must know the condition first.",
+        "contents": [
+            {
+                "type_": "text",
+                "data": "_Write the condition first in the sentence_, and then use a _comma_ to show the end of the condition, and the start of the instruction."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Examples:"
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "Set the switch to NORMAL when the light comes on."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "**When the light comes on**, set the switch to NORMAL."
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "Apply the primer when the surface is dry."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "**When the surface is dry**, apply the primer."
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "Disconnect the Constant Speed Drive (CSD) from the gearbox, if it does not operate correctly."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "**If the Constant Speed Drive (CSD) does not operate correctly**, disconnect it from the gearbox."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "_The comma is important_. Be careful when you use it because the position of the comma can change the meaning of your sentence."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Examples in STE:"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "If the Constant Speed Drive (CSD) **does not operate correctly,** disconnect it from the gearbox."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "If the Constant Speed Drive (CSD) **does not operate,** correctly disconnect it from the gearbox."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "The two sentences in the examples are correct, _but their meanings are different_. In the first sentence, the comma after **correctly** shows that the adverb modifies the verb **operate.** In the second sentence, the comma after **operate** shows that the adverb modifies the verb **disconnect.**"
+            }
+        ]
+    }
+    ,
+    {
+        "type_": "rule",
+        "id_": "5.5",
+        "ref": "Issue 9 page 1-5-5",
+        "section": "Prcedural writing",
+        "category": "Notes",
+        "name": "Write notes only to give information, not instructions.",
+        "summary": "Notes only give information to help the reader during a procedure. They contain descriptive text and obey the rules for descriptive writing.",
+        "contents": [
+            {
+                "type_": "text",
+                "data": "Notes must not give instructions, requirements, or limits."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Examples in STE:"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "_NOTE_: The gyroscope will become stable after approximately 15 seconds."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "_NOTE_: It is not necessary to remove the nameplate (33) from the flange (27)."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "_NOTE_: You can use equivalent alternatives for these items."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "A note can have one or more sentences. Each sentence in a note can have a maximum of 25 words."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Examples in STE:"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "_NOTE_: During the subsequent test, you get the cracking pressure when the fuel flow from the CROSS FEED port is more than 5 cc/minute."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(One sentence, 22 words.)"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "_NOTE_: The data collection is not completed. Thus, the statistics module can give incorrect results."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(Two sentences, 6 words and 8 words.)"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "Do not use the imperative form in a note. If you use the imperative form, the note becomes an instruction for a work step."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Example:"
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "_NOTE_: `Make sure` that the avionics ventilation system continues to operate correctly."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(This text is not a note because it contains the imperative form.)"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "6. **Make sure** that the avionics ventilation system continues to operate correctly."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(This is work step number 6 in the applicable procedure.)"
             }
         ]
     }
