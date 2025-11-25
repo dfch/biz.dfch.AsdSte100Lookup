@@ -66004,16 +66004,25 @@
     "status": "rejected",
     "name": "time",
     "type_": "v",
-    "meanings": [
+    "meanings": [],
+    "spellings": [],
+    "alternatives": [
       {
-        "value": "TIME(n)",
-        "ste_example": "MEASURE THE TIME THAT IS NECESSARY FOR THE PRESSURE TO DECREASE.",
-        "nonste_example": "Time the pressure decay.",
+        "status": "approved",
+        "name": "TIME",
+        "type_": "n",
+        "meanings": [],
+        "spellings": [],
+        "alternatives": [],
+        "ste_example": [
+          "MEASURE THE TIME THAT IS NECESSARY FOR THE PRESSURE TO DECREASE."
+        ],
+        "nonste_example": [
+          "Time the pressure decay."
+        ],
         "note": null
       }
     ],
-    "spellings": [],
-    "alternatives": [],
     "ste_example": [],
     "nonste_example": [],
     "note": {
