@@ -40028,16 +40028,25 @@
     "status": "rejected",
     "name": "maladjusted",
     "type_": "adj",
-    "meanings": [
+    "meanings": [],
+    "spellings": [],
+    "alternatives": [
       {
-        "value": "INCORRECTLY ADJUSTED",
-        "ste_example": "IF THE WARNING LIGHT ISON WHEN THE DOOR IS CLOSED, THE MICROSWITCH IS INCORRECTLY ADJUSTED.",
-        "nonste_example": "If the warning light is on when the door is closed, the microswitch is maladjusted.",
+        "status": "approved",
+        "name": "INCORRECTLY ADJUSTED",
+        "type_": "adj",
+        "meanings": [],
+        "spellings": [],
+        "alternatives": [],
+        "ste_example": [
+          "IF THE WARNING LIGHT ISON WHEN THE DOOR IS CLOSED, THE MICROSWITCH IS INCORRECTLY ADJUSTED."
+        ],
+        "nonste_example": [
+          "If the warning light is on when the door is closed, the microswitch is maladjusted."
+        ],
         "note": null
       }
     ],
-    "spellings": [],
-    "alternatives": [],
     "ste_example": [],
     "nonste_example": [],
     "note": {

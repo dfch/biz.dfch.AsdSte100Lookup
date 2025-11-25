@@ -3,7 +3,7 @@
 		TILT THE FITTING TO MAKE THE BARREL NUT FALL OUT OF IT.	
 make certain (v)	MAKE SURE (v)	MAKE SURE THAT THE VALVE IS OPEN.	Make certain that the valve is open.
 MAKE SURE (v), MAKES SURE, MADE SURE, MADE SURE	To verify and/or do the necessary steps	MAKE SURE THAT NO LEAK DETECTION FLUID GOES INTO THE OXYGEN SYSTEM.	
-maladjusted (adj)	INCORRECTLY ADJUSTED	IF THE WARNING LIGHT ISON WHEN THE DOOR IS CLOSED, THE MICROSWITCH IS INCORRECTLY ADJUSTED.	If the warning light is on when the door is closed, the microswitch is maladjusted.
+maladjusted (adj)	INCORRECTLY ADJUSTED (adj)	IF THE WARNING LIGHT ISON WHEN THE DOOR IS CLOSED, THE MICROSWITCH IS INCORRECTLY ADJUSTED.	If the warning light is on when the door is closed, the microswitch is maladjusted.
 MALFUNCTION (n)	Incorrect operation	REFER TO TABLE 104 TO CORRECT THE MALFUNCTION.	
 MANDATORY (adj)	That which you must do, use, or obey	THIS SERVICE BULLETIN IS MANDATORY.	
 	###If you want to use this word in procedures, think about a necessary safety instruction.	BEFORE YOU GO INTO THE LABORATORY, PUT ON PROTECTIVE CLOTHING.	It is mandatory to wear protective clothing in the laboratory.
