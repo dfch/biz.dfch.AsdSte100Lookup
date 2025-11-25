@@ -43035,16 +43035,25 @@
     "status": "rejected",
     "name": "now",
     "type_": "adv",
-    "meanings": [
+    "meanings": [],
+    "spellings": [],
+    "alternatives": [
       {
-        "value": "AT THIS TIME",
-        "ste_example": "DO NOT TIGHTEN THE NUTS AT THIS TIME.",
-        "nonste_example": "Do not tighten the nuts now.",
+        "status": "approved",
+        "name": "AT THIS TIME",
+        "type_": "adv",
+        "meanings": [],
+        "spellings": [],
+        "alternatives": [],
+        "ste_example": [
+          "DO NOT TIGHTEN THE NUTS AT THIS TIME."
+        ],
+        "nonste_example": [
+          "Do not tighten the nuts now."
+        ],
         "note": null
       }
     ],
-    "spellings": [],
-    "alternatives": [],
     "ste_example": [],
     "nonste_example": [],
     "note": {
