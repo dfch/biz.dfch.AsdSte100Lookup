@@ -106,11 +106,11 @@ class Args:
             "rules", parents=[common], help="Shows the rules."
         )
         rules_group = rules_parser.add_mutually_exclusive_group()
-        rules_group.add_argument("--list", action="store_true", help="Shows all rules.")  
-        rules_group.add_argument("--id", type=str, help="Shows rules by specified id (regex match).")
-        rules_group.add_argument("--section", type=str, help="Shows rules by specified section (regex match).")
-        rules_group.add_argument("--category", type=str, help="Shows rules by specified category (regex match).")
-        rules_parser.add_argument("--summary", action="store_true", help="Shows only the summary of a rule.")
+        rules_group.add_argument("--list", action="store_true", help="Shows all rules.")  # noqa: disable=E0501
+        rules_group.add_argument("--id", type=str, help="Shows rules by specified id (regex match).")  # noqa: disable=E0501
+        rules_group.add_argument("--section", type=str, help="Shows rules by specified section (regex match).")  # noqa: disable=E0501
+        rules_group.add_argument("--category", type=str, help="Shows rules by specified category (regex match).")  # noqa: disable=E0501
+        rules_parser.add_argument("--summary", action="store_true", help="Shows only the summary of a rule.")  # noqa: disable=E0501
 
         parse_parser = subparsers.add_parser(
             "parse", parents=[common], help="Parses input dictionary files."

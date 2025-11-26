@@ -19,33 +19,29 @@ from __future__ import annotations
 
 import argparse
 from dataclasses import asdict
-from itertools import zip_longest
 import json
 from pathlib import Path
 import re
-from typing import cast
 
 from dacite import from_dict, Config
 from rich import box
 from rich.console import Console
 from rich.markdown import Markdown
 from rich.panel import Panel
-from rich.table import Table
 from rich.theme import Theme
 
-# from biz.dfch.i18n import LanguageCode
-from biz.dfch.logging import log
-from biz.dfch.version import Version
+from biz.dfch.logging import log  # pylint: disable=E0401
+from biz.dfch.version import Version  # pylint: disable=E0401
+from .empty_command import EmptyCommand
 
 from .column_index import ColumnIndex
-from .colouriser import Colouriser
 from .dictionary_info import DictionaryInfo
 from .line_info import LineInfo
 from .line_info_type import LineInfoType
+from .main_prompt import MainPrompt
 from .markdown_utils import MarkDownUtils
 from .rule import Rule
 from .rule_content_type import RuleContentType
-from .table_row import TableRow
 from .technical_word_category import TechnicalWordCategory
 from .word import Word
 from .word_info import WordInfo
@@ -99,46 +95,9 @@ class App:  # pylint: disable=R0903
         self._parser = parser
         self._args = parser.parse_args()
 
-    def to_colour(self, text: str, value: str, status: str) -> str:
-        """Colourises value in specified text green or red based on status."""
-        if WordStatus.APPROVED == status:
-            result = Colouriser(text).to_green(value)
-        elif WordStatus.CUSTOM == status:
-            result = Colouriser(text).to_darkergreen(value)
-        else:
-            result = Colouriser(text).to_red(value)
-
-        return result
-
-    def _get_first_or_item(self, item: str | list[str] | None) -> str | None:
-        """
-        Retrieves the first `item` of a list or the `item` itself.
-        If `item` is `None` or the list is empty, `None` is returned.
-
-        Args:
-            item (str | list[str] | None): A list of strings or a string.
-
-        Returns:
-            (str | None): - The first `item` in the list, if it is a list
-                - The `item`, if it is not a list
-                - None, if `item` or the list is empty.
-        """
-
-        if item is None:
-            return None
-
-        if isinstance(item, list):
-            return item[0] if item else None
-
-        return item
-
     def _get_technical_words_internal(
-            self,
-            rules: list[Rule],
-            rule_id: str,
-            prefix: str,
-            type_: WordType
-        ) -> list[Word]:
+        self, rules: list[Rule], rule_id: str, prefix: str, type_: WordType
+    ) -> list[Word]:
         """Returns all technical nouns from rule R1.5."""
 
         assert isinstance(rules, list)
@@ -154,7 +113,7 @@ class App:  # pylint: disable=R0903
         contents = [d for d in rule.contents if d.type_ in ("text", "good")]
         for content in contents:
             if RuleContentType.TEXT == content.type_:
-                match = re.match(r'^(?P<category>\d+)\.', content.data.strip())
+                match = re.match(r"^(?P<category>\d+)\.", content.data.strip())
                 if not match:
                     continue
                 current_category = f"{prefix}{match.group('category')}"
@@ -182,282 +141,48 @@ class App:  # pylint: disable=R0903
 
         return result
 
-    def _get_technical_words(self) -> list[Word]:
+    def _get_technical_words(self, rules: list[Rule]) -> list[Word]:
         """Returns all technical nouns and verbs from rules R1.5 and R1.12."""
+
+        assert isinstance(rules, list)
 
         result: list[Word] = []
 
-        current_folder = Path(__file__).parent
-        rules_fullname = current_folder / self._rules_file_name
-        rules = self._load_rules(rules_fullname)
-
         result = self._get_technical_words_internal(
-            rules,
-            rule_id="R1.5",
-            prefix="TN",
-            type_=WordType.TECHNICAL_NOUN)
+            rules, rule_id="R1.5", prefix="TN", type_=WordType.TECHNICAL_NOUN
+        )
 
-        result.extend(self._get_technical_words_internal(
-            rules,
-            rule_id="R1.12",
-            prefix="TV",
-            type_=WordType.TECHNICAL_VERB))
+        result.extend(
+            self._get_technical_words_internal(
+                rules, rule_id="R1.12", prefix="TV", type_=WordType.TECHNICAL_VERB
+            )
+        )
 
         return result
 
-#     def prompt_show_help(self, console: Console) -> None:
-#         """Shows the help text."""
-
-#         assert isinstance(console, Console)
-    
-#         console.print(f"""?   This help text.
-# category:
-# """)
-
-    def prompt_user_loop(self, dictionary: list[Word]) -> None:
+    def prompt_user_loop(
+        self,
+        dictionary: list[Word],
+        rules: list[Rule],
+    ) -> None:
         """Main program loop."""
 
         assert isinstance(dictionary, list)
         for item in dictionary:
             assert isinstance(item, Word)
 
+        prompt = MainPrompt()
         console = Console()
         while True:
-            prompt = input(f"[{len(dictionary)}] Enter search term: ").strip()
-            if prompt is None or "" == prompt:
-                log.debug("Exiting ...")
-                break
+            text = input(f"[{len(dictionary)}] Enter search term: ").strip()
 
-            # Create the table
-            table = Table()
-            table.add_column("Word", no_wrap=True, min_width=16)
-            table.add_column("Meaning/ALTERNATIVE", min_width=16)
-            table.add_column("STE Example")
-            table.add_column("Non-STE Example")
+            command = prompt.parse(text)
+            command.invoke(console=console, dictionary=dictionary, rules=rules)
+            if not isinstance(command, EmptyCommand):
+                continue
 
-            matching_words: dict[int, Word] = {}
-            try:
-                for word in dictionary:
-                    if re.search(prompt, word.name, re.IGNORECASE):
-                        matching_words[id(word)] = word
-                        continue
-
-                    for spelling in word.spellings:
-                        if re.search(prompt, spelling, re.IGNORECASE):
-                            matching_words[id(word)] = word
-                            continue
-
-                    if self._get_first_or_item(word.ste_example) and re.search(
-                        prompt,
-                        cast(str, self._get_first_or_item(word.ste_example)),
-                        re.IGNORECASE,
-                    ):
-                        matching_words[id(word)] = word
-                        continue
-
-                    if self._get_first_or_item(word.nonste_example) and re.search(
-                        prompt,
-                        cast(str, self._get_first_or_item(word.nonste_example)),
-                        re.IGNORECASE,
-                    ):
-                        matching_words[id(word)] = word
-                        continue
-
-            except re.error as ex:
-                log.error("Invalid regex: '%s'", ex)
-
-            rows: list[TableRow] = []
-            for word in matching_words.values():
-
-                row = TableRow()
-                rows.append(row)
-
-                if WordStatus.APPROVED == word.status:
-                    if word.name:
-                        row.word = self.to_colour(
-                            f"{word.name.upper()} ({word.type_})",
-                            word.name,
-                            word.status,
-                        )
-                    if self._get_first_or_item(word.ste_example):
-                        row.ste_example = self.to_colour(
-                            cast(str, self._get_first_or_item(word.ste_example)),
-                            prompt,
-                            word.status,
-                        )
-                elif WordStatus.REJECTED == word.status:
-                    if word.name:
-                        row.word = self.to_colour(
-                            f"{word.name.lower()} ({word.type_})",
-                            word.name,
-                            word.status,
-                        )
-                    if self._get_first_or_item(word.nonste_example):
-                        row.nonste_example = self.to_colour(
-                            cast(str, self._get_first_or_item(word.nonste_example)),
-                            prompt,
-                            word.status,
-                        )
-                elif WordStatus.CUSTOM == word.status:
-                    if word.name:
-                        row.word = self.to_colour(
-                            f"{word.name.upper()} ({word.type_})",
-                            word.name,
-                            word.status,
-                        )
-                    if self._get_first_or_item(word.ste_example):
-                        row.ste_example = self.to_colour(
-                            cast(str, self._get_first_or_item(word.ste_example)),
-                            prompt,
-                            word.status,
-                        )
-                else:
-                    log.error(f"Word '{word.name} with status '{word.status}' found.")
-                    continue
-
-                if word.spellings:
-                    colourised_spellings: list[str] = [
-                        str(Colouriser(x, "blue")) for x in word.spellings
-                    ]
-
-                    spellings = "\n".join(colourised_spellings)
-                    row.word = f"{row.word}\n{spellings}"
-
-                if word.meanings:
-                    meanings = word.meanings
-                    for meaning in meanings:
-                        if row.ste_example or row.nonste_example:
-                            row = TableRow()
-                            rows.append(row)
-                        row.description = meaning.value
-                        if meaning.ste_example:
-                            row.ste_example = self.to_colour(
-                                meaning.ste_example, word.name, word.status
-                            )
-                        if meaning.nonste_example:
-                            row.nonste_example = self.to_colour(
-                                meaning.nonste_example, word.name, WordStatus.REJECTED
-                            )
-
-                if word.alternatives:
-                    alternatives = word.alternatives
-                    for alt in alternatives:
-                        if row.description:
-                            row = TableRow()
-                            rows.append(row)
-
-                        row.description = self.to_colour(
-                            f"{alt.name.upper()} ({alt.type_})", alt.name, alt.status
-                        )
-
-                        # Process examples pairwise.
-                        ste_list = (
-                            alt.ste_example
-                            if isinstance(alt.ste_example, list)
-                            else ([] if alt.ste_example is None else [alt.ste_example])
-                        )
-                        nonste_list = (
-                            alt.nonste_example
-                            if isinstance(alt.nonste_example, list)
-                            else (
-                                []
-                                if alt.nonste_example is None
-                                else [alt.nonste_example]
-                            )
-                        )
-                        for i, (ste, nonste) in enumerate(
-                            zip_longest(ste_list, nonste_list, fillvalue=" ")
-                        ):
-
-                            if 0 == i:
-                                row.ste_example = self.to_colour(
-                                    ste, alt.name, alt.status
-                                )
-                                row.nonste_example = self.to_colour(
-                                    nonste, word.name, WordStatus.REJECTED
-                                )
-                                continue
-
-                            row = TableRow()
-                            rows.append(row)
-
-                            row.ste_example = self.to_colour(ste, alt.name, alt.status)
-                            row.nonste_example = self.to_colour(
-                                nonste, word.name, WordStatus.REJECTED
-                            )
-
-                if word.note:
-                    if isinstance(word.note, WordNote):
-                        note = word.note
-                    else:
-                        note = word.note
-
-                    if note.words:
-                        nwords = note.words
-
-                        if row.description or row.ste_example or row.nonste_example:
-
-                            row = TableRow()
-                            rows.append(row)
-
-                        row.description = str(Colouriser(note.value, "yellow"))
-
-                        for nword in nwords:
-                            row = TableRow()
-                            rows.append(row)
-                            row.description = self.to_colour(
-                                f"{nword.name} ({nword.type_})",
-                                nword.name,
-                                nword.status,
-                            )
-                            if self._get_first_or_item(nword.ste_example):
-                                row.ste_example = self.to_colour(
-                                    cast(
-                                        str, self._get_first_or_item(nword.ste_example)
-                                    ),
-                                    nword.name,
-                                    WordStatus.APPROVED,
-                                )
-                            if self._get_first_or_item(nword.nonste_example):
-                                row.nonste_example = self.to_colour(
-                                    cast(
-                                        str,
-                                        self._get_first_or_item(nword.nonste_example),
-                                    ),
-                                    nword.name,
-                                    WordStatus.REJECTED,
-                                )
-                    elif note.value:
-                        row = TableRow()
-                        row.description = str(Colouriser(note.value, "yellow"))
-                        if note.ste_example:
-                            row.ste_example = self.to_colour(
-                                note.ste_example, word.name, WordStatus.APPROVED
-                            )
-                        if note.nonste_example:
-                            row.nonste_example = self.to_colour(
-                                note.nonste_example, word.name, WordStatus.REJECTED
-                            )
-                        rows.append(row)
-
-                rows.append(TableRow())
-
-            if rows:
-                for row in rows:
-                    if row.description:
-                        row.description = row.description.replace("\u200b", "")
-                    log.debug(
-                        f"'{row.word}', '{row.description}', "
-                        f"'{row.ste_example}', "
-                        f"'{row.nonste_example}'"
-                    )
-                    table.add_row(
-                        row.word or "",
-                        row.description or "",
-                        row.ste_example or "",
-                        row.nonste_example or "",
-                    )
-                console.print(table)
+            log.debug("Exiting ...")
+            break
 
     def process_file(self, file: Path) -> tuple[list[LineInfo], list[WordInfo]]:
         """Parses a single OCR dictionary file."""
@@ -507,14 +232,14 @@ class App:  # pylint: disable=R0903
                 line_info.line,
             )
 
-            # for index, token in enumerate(line_info.tokens):
-            #     log.debug("[%s/%s] '%s'", index, line_info.tokens_count, token)
+            for index, token in enumerate(line_info.tokens):
+                log.debug("[%s/%s] '%s'", index, line_info.tokens_count, token)
 
             line_infos.append(line_info)
 
         word_info: WordInfo = WordInfo(file.name)
         for index, line_info in enumerate(line_infos):
-            # log.debug("[%s] [%s] '%s'", word_info.filename, index, line_info.line)
+            log.debug("[%s] [%s] '%s'", word_info.filename, index, line_info.line)
             if 0 == index:
                 assert line_info.is_start_of_word
 
@@ -1093,6 +818,8 @@ class App:  # pylint: disable=R0903
         log.debug("Starting to parse source data ...")
 
         current_folder = Path(__file__).parent
+
+        # Load STE dictionary.
         dictionary_fullname = current_folder / dictionary_file_name
         with open(dictionary_fullname, "r", encoding="utf-8") as f:
             dictionary_json = json.load(f)
@@ -1103,12 +830,16 @@ class App:  # pylint: disable=R0903
         ]
         dictionary = sorted(word_list, key=lambda e: e.name.lower())
 
-        techncal_words = self._get_technical_words()
-        dictionary.extend(techncal_words)
+        # Load rules.
+        rules_fullname = current_folder / self._rules_file_name
+        rules = self._load_rules(rules_fullname)
 
+        # Load technical words and add them to the ditionary.
+        techncal_words = self._get_technical_words(rules)
+        dictionary.extend(techncal_words)
         dictionary = sorted(dictionary, key=lambda e: e.name.lower())
 
-        self.prompt_user_loop(dictionary=dictionary)
+        self.prompt_user_loop(dictionary=dictionary, rules=rules)
 
         return
 
