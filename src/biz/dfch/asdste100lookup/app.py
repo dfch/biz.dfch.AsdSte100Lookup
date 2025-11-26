@@ -18,7 +18,6 @@
 from __future__ import annotations
 
 import argparse
-from dacite import from_dict, Config
 from dataclasses import asdict, dataclass, field
 from enum import auto, StrEnum, IntEnum, Enum
 from io import StringIO
@@ -27,6 +26,9 @@ import json
 from pathlib import Path
 import re
 from typing import Any, cast, Type, TypeVar
+
+from dacite import from_dict, Config
+
 from rich import box
 from rich.console import Console
 from rich.markdown import Markdown
@@ -38,6 +40,8 @@ from rich.theme import Theme
 from biz.dfch.logging import log
 from biz.dfch.version import Version
 
+from .word_status import WordStatus
+from .word_type import WordType
 from .colouriser import Colouriser
 
 
@@ -156,32 +160,6 @@ def str_to_enum(enum_class: Type[T], value: str) -> T | None:
     )
 
 
-class WordType(StrEnum):
-    """ASD-STE100 Issue 9 word types; cf. page 2-0-4f."""
-
-    UNKNOWN = "unknown"
-    NOUN = "n"
-    VERB = "v"
-    ADJECTIVE = "adj"
-    ADVERB = "adv"
-    PRONOUN = "pron"
-    ARTICLE = "art"
-    PREPOSITION = "prep"
-    CONJUNCTION = "conj"
-    PREFIX = "prefix"
-    TECHNICAL_NAME = "TN"
-    TECHNICAL_VERB = "TV"
-
-
-class WordStatus(StrEnum):
-    """Represents the status of a word."""
-
-    UNKNOWN = "unknown"
-    APPROVED = "approved"
-    REJECTED = "rejected"
-
-
-# @dataclass(frozen=True)
 @dataclass
 class WordNote:
     """Represents the ASD-STE100 note in the dictionary."""
