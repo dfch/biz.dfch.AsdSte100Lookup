@@ -16,8 +16,11 @@
 """RuleCommand class."""
 
 from dataclasses import dataclass
+import re
 
+from .rule_renderer import RuleRenderer
 from .command_base import CommandBase
+from .rule import Rule
 
 
 @dataclass
@@ -27,6 +30,13 @@ class RuleCommand(CommandBase):
     def invoke(self, console, dictionary, rules) -> None:
         super().invoke(console, dictionary, rules)
 
-        console.print(
-            f"Now even worse! 😢😢😢 You want to get information about a rule ('{self.value}'). ☹️ Unfortunately, this function is not yet implemented."
-        )
+        selected_rules: list[Rule] = []
+        for rule in rules:
+            if re.search(self.value, rule.id_, re.IGNORECASE):
+                selected_rules.append(rule)
+                continue
+
+        RuleRenderer().show(
+            console=console,
+            rules=selected_rules,
+            is_summary_only=False)

@@ -24,24 +24,21 @@ from pathlib import Path
 import re
 
 from dacite import from_dict, Config
-from rich import box
 from rich.console import Console
-from rich.markdown import Markdown
-from rich.panel import Panel
 from rich.theme import Theme
 
 from biz.dfch.logging import log  # pylint: disable=E0401
 from biz.dfch.version import Version  # pylint: disable=E0401
-from .empty_command import EmptyCommand
 
 from .column_index import ColumnIndex
+from .empty_command import EmptyCommand
 from .dictionary_info import DictionaryInfo
 from .line_info import LineInfo
 from .line_info_type import LineInfoType
 from .main_prompt import MainPrompt
-from .markdown_utils import MarkDownUtils
 from .rule import Rule
 from .rule_content_type import RuleContentType
+from .rule_renderer import RuleRenderer
 from .technical_word_category import TechnicalWordCategory
 from .word import Word
 from .word_info import WordInfo
@@ -60,6 +57,14 @@ class App:  # pylint: disable=R0903
     _VERSION_REQUIRED_MINOR = 11
 
     _rules_file_name = "rules.json"
+
+    _rule_theme = Theme(
+        {
+            # "markdown.h1": "bold magenta",
+            # "markdown.h2": "bold cyan",
+            "markdown.code": "red",
+        }
+    )
 
     _dictionary_config = Config(
         strict=True,
@@ -172,7 +177,8 @@ class App:  # pylint: disable=R0903
             assert isinstance(item, Word)
 
         prompt = MainPrompt()
-        console = Console()
+        console = Console(theme=self._rule_theme)
+
         while True:
             text = input(f"[{len(dictionary)}] Enter search term: ").strip()
 
@@ -686,127 +692,37 @@ class App:  # pylint: disable=R0903
     def on_rules(self) -> None:
         """This is the handler for the `rules` command."""
 
-        rule_theme = Theme(
-            {
-                # "markdown.h1": "bold magenta",
-                # "markdown.h2": "bold cyan",
-                "markdown.code": "red",
-            }
-        )
-        console = Console(theme=rule_theme)
+        console = Console(theme=self._rule_theme)
 
         current_folder = Path(__file__).parent
         rules_fullname = current_folder / self._rules_file_name
         rules = self._load_rules(rules_fullname)
 
+        selected_rules: list[Rule] = []
         for rule in rules:
 
+            if self._args.list:
+                selected_rules.append(rule)
+                continue
+
             if self._args.id:
-                if not re.search(self._args.id, rule.id_, re.IGNORECASE):
+                if re.search(self._args.id, rule.id_, re.IGNORECASE):
+                    selected_rules.append(rule)
                     continue
 
             if self._args.section:
-                if not re.search(self._args.section, rule.section, re.IGNORECASE):
+                if re.search(self._args.section, rule.section, re.IGNORECASE):
+                    selected_rules.append(rule)
                     continue
 
             if self._args.category:
-                if not re.search(self._args.category, rule.category, re.IGNORECASE):
+                if re.search(self._args.category, rule.category, re.IGNORECASE):
+                    selected_rules.append(rule)
                     continue
 
-            p = Panel(
-                f"[black]{rule.name}[/black]",
-                title=f"Rule {rule.id_}",
-                title_align="left",
-                subtitle=f"{rule.section}, {rule.category}",
-                subtitle_align="left",
-                border_style="bright_black",
-                style="on bright_yellow",
-                padding=(1, 1),
-                box=box.HEAVY_EDGE,
-            )
-            p = Panel(
-                Markdown(rule.name),
-                title=f"Rule {rule.id_}",
-                title_align="left",
-                subtitle=f"{rule.section}, {rule.category}, {rule.ref}",
-                subtitle_align="left",
-                border_style="bright_yellow",
-                padding=(1, 1),
-                box=box.HEAVY_EDGE,
-            )
-            console.print(p)
-            md = Markdown(f"**{rule.summary}**")
-            console.print("")
-            console.print(md)
-            console.print("")
-
-            if self._args.summary:
-                continue
-
-            for content in rule.contents:
-                match content.type_:
-                    case RuleContentType.TEXT:
-                        md = Markdown(content.data)
-                        console.print(md)
-                        console.print("")
-                    case RuleContentType.EXAMPLE:
-                        txt = f"[green]{content.data}[/green]"
-                        console.print(
-                            Panel(txt, title="STE", title_align="left", expand=False)
-                        )
-                        console.print("")
-                    case RuleContentType.STE:
-                        panel = MarkDownUtils.to_panel(
-                            content.data, title="STE", style="green"
-                        )
-                        console.print(panel)
-                        console.print("")
-                    case RuleContentType.NONSTE:
-                        panel = MarkDownUtils.to_panel(
-                            content.data, title="Non-STE", style="red"
-                        )
-                        console.print(panel)
-                        console.print("")
-                    case RuleContentType.NOT_RECOMMENDED:
-                        panel = MarkDownUtils.to_panel(
-                            content.data, title="Not recommended", style="red"
-                        )
-                        console.print(panel)
-                        console.print("")
-                    case RuleContentType.NOTE:
-                        md = Markdown(content.data)
-                        console.print(
-                            Panel(
-                                md,
-                                title="💡",
-                                title_align="left",
-                                border_style="yellow",
-                                expand=False,
-                            )
-                        )
-                        console.print("")
-                    case RuleContentType.GOOD:
-                        panel = MarkDownUtils.to_panel(
-                            content.data, title="Example", style="green"
-                        )
-                        console.print(panel)
-                        console.print("")
-                    case RuleContentType.GENERAL:
-                        panel = MarkDownUtils.to_panel(
-                            content.data, title="Example", style="blue"
-                        )
-                        console.print(panel)
-                        console.print("")
-                    case RuleContentType.COMMENT:
-                        md = Markdown(f"_{content.data}_")
-                        console.print(md)
-                        console.print("")
-                    case _:
-                        console.print("default")
-                        md = Markdown(content.data)
-                        console.print(md)
-                        console.print("")
-        return
+        RuleRenderer().show(
+            console=console, rules=selected_rules, is_summary_only=self._args.summary
+        )
 
     def on_dictionary(self) -> None:
         """This is the handler for the `dictionary` command."""
@@ -840,8 +756,6 @@ class App:  # pylint: disable=R0903
         dictionary = sorted(dictionary, key=lambda e: e.name.lower())
 
         self.prompt_user_loop(dictionary=dictionary, rules=rules)
-
-        return
 
     def invoke(self) -> None:
         """Main entry point for this class."""
