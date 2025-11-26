@@ -13,23 +13,18 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-"""WordType enumeration."""
+"""WordInfo class."""
 
-from enum import StrEnum
+from dataclasses import dataclass, field
+
+from .dictionary_word import DictionaryWord
+from .line_info import LineInfo
 
 
-class WordType(StrEnum):
-    """ASD-STE100 Issue 9 word types; cf. page 2-0-4f."""
+@dataclass
+class WordInfo:
+    """Contains information about a word in the dictionary."""
 
-    UNKNOWN = "unknown"
-    NOUN = "n"
-    VERB = "v"
-    ADJECTIVE = "adj"
-    ADVERB = "adv"
-    PRONOUN = "pron"
-    ARTICLE = "art"
-    PREPOSITION = "prep"
-    CONJUNCTION = "conj"
-    PREFIX = "prefix"
-    TECHNICAL_NOUN = "TN"
-    TECHNICAL_VERB = "TV"
+    filename: str
+    word: DictionaryWord = field(default_factory=DictionaryWord)
+    line_infos: list[LineInfo] = field(default_factory=list)

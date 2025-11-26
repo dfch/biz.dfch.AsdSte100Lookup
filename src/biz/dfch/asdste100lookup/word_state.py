@@ -13,23 +13,27 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-"""WordType enumeration."""
+"""WordState enum."""
 
-from enum import StrEnum
+from enum import Enum, auto
 
 
-class WordType(StrEnum):
-    """ASD-STE100 Issue 9 word types; cf. page 2-0-4f."""
+class WordState(Enum):
+    """Represents the state of a Word."""
 
-    UNKNOWN = "unknown"
-    NOUN = "n"
-    VERB = "v"
-    ADJECTIVE = "adj"
-    ADVERB = "adv"
-    PRONOUN = "pron"
-    ARTICLE = "art"
-    PREPOSITION = "prep"
-    CONJUNCTION = "conj"
-    PREFIX = "prefix"
-    TECHNICAL_NOUN = "TN"
-    TECHNICAL_VERB = "TV"
+    INITIAL = auto()
+    ERROR = auto()
+
+    WORD_MEANING = auto()
+    WORD_ALTERNATIVE = auto()
+    WORD_NOTE = auto()
+
+    ALTERNATIVE = auto()
+    ALTERNATIVE_EXAMPLE = auto()
+
+    MEANING = auto()
+    MEANING_EXAMPLE = auto()
+
+    NOTE = auto()
+    NOTE_ALTERNATIVE = auto()
+    NOTE_ALTERNATIVE_EXAMPLE = auto()

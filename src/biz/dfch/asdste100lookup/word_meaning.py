@@ -13,23 +13,22 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-"""WordType enumeration."""
+"""WordMeaning class."""
 
-from enum import StrEnum
+from __future__ import annotations
+
+from dataclasses import dataclass
+from typing import TYPE_CHECKING
+
+if TYPE_CHECKING:
+    from .word_note import WordNote
 
 
-class WordType(StrEnum):
-    """ASD-STE100 Issue 9 word types; cf. page 2-0-4f."""
+@dataclass(frozen=True)
+class WordMeaning:
+    """Represents the ASD-STE100 defined meaning of a word."""
 
-    UNKNOWN = "unknown"
-    NOUN = "n"
-    VERB = "v"
-    ADJECTIVE = "adj"
-    ADVERB = "adv"
-    PRONOUN = "pron"
-    ARTICLE = "art"
-    PREPOSITION = "prep"
-    CONJUNCTION = "conj"
-    PREFIX = "prefix"
-    TECHNICAL_NOUN = "TN"
-    TECHNICAL_VERB = "TV"
+    value: str
+    ste_example: str | None = None
+    nonste_example: str | None = None
+    note: WordNote | None = None

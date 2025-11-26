@@ -18,17 +18,14 @@
 from __future__ import annotations
 
 import argparse
-from dataclasses import asdict, dataclass, field
-from enum import auto, StrEnum, IntEnum, Enum
-from io import StringIO
+from dataclasses import asdict
 from itertools import zip_longest
 import json
 from pathlib import Path
 import re
-from typing import Any, cast, Type, TypeVar
+from typing import cast
 
 from dacite import from_dict, Config
-
 from rich import box
 from rich.console import Console
 from rich.markdown import Markdown
@@ -40,514 +37,23 @@ from rich.theme import Theme
 from biz.dfch.logging import log
 from biz.dfch.version import Version
 
+from .column_index import ColumnIndex
+from .colouriser import Colouriser
+from .dictionary_info import DictionaryInfo
+from .line_info import LineInfo
+from .line_info_type import LineInfoType
+from .markdown_utils import MarkDownUtils
+from .rule import Rule
+from .rule_content_base import RuleContentBase
+from .rule_content_type import RuleContentType
+from .table_row import TableRow
+from .word import Word
+from .word_info import WordInfo
+from .word_meaning import WordMeaning
+from .word_note import WordNote
+from .word_state import WordState
 from .word_status import WordStatus
 from .word_type import WordType
-from .colouriser import Colouriser
-
-
-class MarkDownUtils():
-    """Support class for working with `MarkDown()`."""
-
-    @staticmethod
-    def get_max_width(value: str) -> int:
-        """Returns the maximum character width of a text rendered with `MarkDown()`."""
-
-        if not value or "" == value:
-            return 0
-
-        md = Markdown(value)
-        console = Console(file=StringIO())
-        console.print(md)
-        io: StringIO = cast(StringIO, console.file)
-        rendered = io.getvalue()
-        lines = rendered.splitlines()
-
-        result = max((len(line.rstrip()) for line in lines), default=0)
-
-        return result
-
-    @staticmethod
-    def to_panel(value: str = "", title: str = "", style: str = "green") -> Panel:
-        """Converts a markdown to text to a `Panel`."""
-
-        if value is None:
-            value = ""
-
-        assert style is not None and "" != style
-
-        md = Markdown(value)
-
-        max_length = MarkDownUtils.get_max_width(value)
-
-        padding_height = 0
-        padding_width = 1
-        border_width = 1
-        width = max_length + 2 * padding_width + 2 * border_width + 2
-
-        result = Panel(
-            md,
-            title=title,
-            width=width,
-            title_align="left",
-            border_style=style,
-            expand=False,
-            padding=(padding_height, padding_width)
-        )
-
-        return result
-
-
-class RuleContentType(StrEnum):
-    """Represents all possible rule content types."""
-    TEXT = "text"
-    DEFAULT = TEXT
-    STE = "ste_example"
-    NOT_RECOMMENDED = "not_recommended"
-    NONSTE = "nonste_example"
-    NOTE = "note"
-    GOOD = "good"
-    BAD = "bad"
-    GENERAL = "general"
-    COMMENT = "comment"
-    EXAMPLE = "example"
-
-
-@dataclass
-class RuleContentTypeBase():
-    """Base class for all rule contents."""
-    data: Any
-    type_: RuleContentType = RuleContentType.DEFAULT
-
-    def parse(self) -> str:
-        """Parses a rule content into markdown."""
-        return ""
-
-
-@dataclass
-class Rule:
-    """Represents a ASD-STE100 rule."""
-    type_: str
-    id_: str
-    ref: str
-    section: str
-    category: str
-    name: str
-    summary: str
-    contents: list[RuleContentTypeBase] = field(default_factory=list)
-
-
-class ColumnIndex(IntEnum):
-    """Represent the column index in the source."""
-
-    NAME = 0
-    MEANING_ALT = 1
-    STE = 2
-    NONSTE = 3
-    MAX_COLUMNS = 4
-
-
-T = TypeVar("T", bound=StrEnum)
-
-
-def str_to_enum(enum_class: Type[T], value: str) -> T | None:
-    """Convert a string to a StrEnum member, case-insensitively, by value."""
-    for member in enum_class:
-        if member.value.lower() == value.lower():
-            return member
-
-    raise ValueError(
-        f"Invalid value: '{value}'.",
-    )
-
-
-@dataclass
-class WordNote:
-    """Represents the ASD-STE100 note in the dictionary."""
-
-    value: str
-    # word: Word | None = None  # forward reference
-    words: list[Word] = field(default_factory=list)  # forward reference
-    ste_example: str | None = None
-    nonste_example: str | None = None
-
-
-@dataclass(frozen=True)
-class WordMeaning:
-    """Represents the ASD-STE100 defined meaning of a word."""
-
-    value: str
-    ste_example: str | None = None
-    nonste_example: str | None = None
-    note: WordNote | None = None
-
-
-@dataclass(frozen=True)
-class Word:
-    """
-    Represents either an approved or rejected word from the ASD-STE100 standard.
-    """
-
-    status: WordStatus
-    name: str
-    type_: WordType
-    meanings: list[WordMeaning]
-    spellings: list[str]
-    alternatives: list[Word]
-    ste_example: list[str] = field(default_factory=list)
-    nonste_example: list[str] = field(default_factory=list)
-    note: WordNote | None = None
-
-
-@dataclass
-class TableRow:
-    """Represents a single row in the table."""
-
-    word: str | None = None
-    description: str | None = None
-    ste_example: str | None = None
-    nonste_example: str | None = None
-
-
-@dataclass
-class LineInfo:
-    """Contains information about a line in the dictionary."""
-
-    is_start_of_word: bool = False
-    line: str = ""
-    tokens: list[str] = field(default_factory=list)
-    tokens_count: int = 0
-    is_processed: bool = False
-
-    def _get_token(self, index: ColumnIndex) -> str | None:
-
-        if len(self.tokens) <= index:
-            return None
-
-        result = self.tokens[index].strip()
-        return result or None
-
-    def get_type(self) -> LineInfoType:
-        """Returns the LineInfoType of the specified LineInfo."""
-
-        if self.tokens_count <= ColumnIndex.NAME:
-            return LineInfoType.ERROR
-
-        name = self.get_name()
-        description = self.get_description()
-        ste = self.get_ste()
-        nonste = self.get_nonste()
-
-        # The first token is not empty.
-        # Possible types are:
-        #   LineInfoType.WORD_MEANING
-        #   LineInfoType.WORD_ALTERNATIVE
-        #   LineInfoType.WORD_NOTE
-        if name:
-
-            # A note in the name column is an error.
-            if name.startswith(DictionaryInfo.NOTE_MARKER):
-                return LineInfoType.ERROR
-
-            # An value in the name column, that is not a word, is an error.
-            if not DictionaryInfo.is_word(name):
-                return LineInfoType.ERROR
-
-            # The first token is a word.
-            # Possible types are:
-            #   LineInfoType.WORD_MEANING
-            #   LineInfoType.WORD_ALTERNATIVE
-            #   LineInfoType.WORD_NOTE
-
-            # A word in the name column, that has an empty description column, is an error.
-            if not description:
-                return LineInfoType.ERROR
-
-            # The first token is a word.
-            # The second token is not empty.
-            # The second token is a note.
-            # Possible types are:
-            #   LineInfoType.WORD_NOTE
-            if description.startswith(DictionaryInfo.NOTE_MARKER):
-                return LineInfoType.NOTE
-
-            # The first token is a word.
-            # The second token is not empty.
-            # The second token is a word.
-            # Possible types are:
-            #   LineInfoType.WORD_ALTERNATIVE
-            if DictionaryInfo.is_single_word(description):
-                return LineInfoType.ALTERNATIVE
-
-            # The first token is a word.
-            # The second token is not empty.
-            # The second token is not a word.
-            # Possible types are:
-            #   LineInfoType.WORD_MEANING
-            return LineInfoType.MEANING
-
-        # The first token is empty.
-        # Possible types are:
-        #   LineInfoType.WORD_MEANING
-        #   LineInfoType.WORD_ALTERNATIVE
-        #   LineInfoType.WORD_NOTE
-        #   LineInfoType.EXAMPLE
-
-        # The first token is empty.
-        # The second token is not empty.
-        # Possible types are:
-        #   LineInfoType.WORD_MEANING
-        #   LineInfoType.WORD_ALTERNATIVE
-        #   LineInfoType.WORD_NOTE
-        if description:
-
-            # The first token is empty.
-            # The second token is not empty.
-            # The second token is a note.
-            # Possible types are:
-            #   LineInfoType.WORD_NOTE
-            if description.startswith(DictionaryInfo.NOTE_MARKER):
-                return LineInfoType.NOTE
-
-            # The first token is empty.
-            # The second token is not empty.
-            # The second token is a word.
-            # Possible types are:
-            #   LineInfoType.WORD_ALTERNATIVE
-            if DictionaryInfo.is_single_word(description):
-                return LineInfoType.ALTERNATIVE
-
-            # The first token is empty.
-            # The second token is not empty.
-            # The second token is a not word.
-            # Possible types are:
-            #   LineInfoType.WORD_MEANING
-            return LineInfoType.MEANING
-
-        # The first token is empty.
-        # The second token is empty.
-        # Possible types are:
-        #   LineInfoType.EXAMPLE
-
-        # The first token is empty.
-        # The second token is empty.
-        # The third token is not empty.
-        # Possible types are:
-        #   LineInfoType.EXAMPLE
-        if ste:
-            return LineInfoType.EXAMPLE
-
-        # The first token is empty.
-        # The second token is empty.
-        # The third token is empty.
-        # The fourth token is not empty.
-        # Possible types are:
-        #   LineInfoType.EXAMPLE
-        if nonste:
-            return LineInfoType.EXAMPLE
-
-        # An empty value in all four columns is an error.
-        return LineInfoType.ERROR
-
-    def get_name(self) -> str | None:
-        """Returns the name part or None of LineInfo."""
-        return self._get_token(ColumnIndex.NAME)
-
-    def get_description(self) -> str | None:
-        """Returns the meaning or alt part or None of LineInfo."""
-        return self._get_token(ColumnIndex.MEANING_ALT)
-
-    def get_ste(self) -> str | None:
-        """Returns the ste_example part or None of LineInfo."""
-        return self._get_token(ColumnIndex.STE)
-
-    def get_nonste(self) -> str | None:
-        """Returns the nonste_example part or None of LineInfo."""
-        return self._get_token(ColumnIndex.NONSTE)
-
-
-@dataclass
-class DictionaryWord:
-    """Represents a word from the dictionary."""
-
-    name: str = ""
-    type_: WordType = WordType.UNKNOWN
-    status: WordStatus = WordStatus.UNKNOWN
-
-
-@dataclass
-class WordInfo:
-    """Contains information about a word in the dictionary."""
-
-    filename: str
-    word: DictionaryWord = field(default_factory=DictionaryWord)
-    line_infos: list[LineInfo] = field(default_factory=list)
-
-
-class WordState(Enum):
-    """Represents the state of a Word."""
-
-    INITIAL = auto()
-    ERROR = auto()
-
-    WORD_MEANING = auto()
-    WORD_ALTERNATIVE = auto()
-    WORD_NOTE = auto()
-
-    ALTERNATIVE = auto()
-    ALTERNATIVE_EXAMPLE = auto()
-
-    MEANING = auto()
-    MEANING_EXAMPLE = auto()
-
-    NOTE = auto()
-    NOTE_ALTERNATIVE = auto()
-    NOTE_ALTERNATIVE_EXAMPLE = auto()
-
-
-class LineInfoType(Enum):
-    """Represents the type of a LineInfo"""
-
-    ERROR = auto()
-    MEANING = auto()
-    ALTERNATIVE = auto()
-    NOTE = auto()
-    EXAMPLE = auto()
-
-
-class DictionaryInfo:
-    """Provides utility functions for categorising text."""
-
-    # _pattern = re.compile(r"[^\(]+ \(\w+\)")
-    _pattern = re.compile(r"^([^\(]+) \((\w+)\),?")
-    _pattern_single_word = re.compile(r"^([^\(]+) \((\w+)\)$")
-
-    _pattern_with_spellings = re.compile(
-        r"""
-        ^(\w+)               # 1. head word (e.g., WEAK)
-        \s+\((\w+)\)         # 2. type in parentheses (e.g., adj)
-        (?:\s+\(([^)]+)\))?  # 3. optional second parens (e.g., WEAKER, WEAKEST)
-        (?:,\s*(.*))?        # 4. optional comma suffix (e.g., WALKS, WALKED, WALKED)
-        $
-    """,
-        re.VERBOSE,
-    )
-
-    NOTE_MARKER: str = "###"
-
-    @staticmethod
-    def is_word(value: str | None) -> bool:
-        """Determines whether a given string contains an approved word."""
-
-        result: bool = False
-
-        if value is None or "" == value:
-            return result
-
-        if DictionaryInfo._pattern.match(value):
-            result = True
-
-        return result
-
-    @staticmethod
-    def is_single_word(value: str | None) -> bool:
-        """Determines whether a given string is a word."""
-
-        result: bool = False
-
-        if value is None or "" == value:
-            return result
-
-        if DictionaryInfo._pattern_single_word.match(value):
-            result = True
-
-        return result
-
-    @staticmethod
-    def get_word(value: str | None) -> DictionaryWord | None:
-        """Extracts the word information from a valid word."""
-
-        if value is None or "" == value:
-            return None
-
-        result: DictionaryWord = DictionaryWord()
-
-        match = DictionaryInfo._pattern.match(value)
-        if not match:
-            return None
-
-        result.name = match.group(1).strip()
-        type_ = str_to_enum(WordType, match.group(2))
-        assert type_ is not None
-        result.type_ = type_
-
-        if result.name.isupper():
-            result.status = WordStatus.APPROVED
-        elif result.name.islower():
-            result.status = WordStatus.REJECTED
-        else:
-            result.status = WordStatus.UNKNOWN
-
-        return result
-
-    @staticmethod
-    def get_single_word(value: str | None) -> DictionaryWord | None:
-        """Extracts the word information from a single word."""
-
-        if value is None or "" == value:
-            return None
-
-        result: DictionaryWord = DictionaryWord()
-
-        match = DictionaryInfo._pattern_single_word.fullmatch(value.strip())
-        if not match:
-            return None
-
-        result.name = match.group(1).strip()
-        type_ = str_to_enum(WordType, match.group(2))
-        assert type_ is not None
-        result.type_ = type_
-
-        if result.name.isupper():
-            result.status = WordStatus.APPROVED
-        elif result.name.islower():
-            result.status = WordStatus.REJECTED
-        else:
-            result.status = WordStatus.UNKNOWN
-
-        return result
-
-    @staticmethod
-    def get_note(value: str | None) -> str:
-        """Extracts the note from a string."""
-        return (value or "").strip(DictionaryInfo.NOTE_MARKER)
-
-    @staticmethod
-    def get_spellings(value: str | None) -> list[str]:
-        """Extracts the spellings from a string."""
-
-        result: list[str] = []
-
-        if value is None or "" == value:
-            return result
-
-        match = DictionaryInfo._pattern_with_spellings.match(value)
-        if not match:
-            return result
-
-        word_name = match.group(1)
-        assert word_name is not None and "" != word_name
-        word_type = match.group(2)
-        assert word_type is not None and "" != word_type
-
-        spellings_conjugated = match.group(3)  # from (WEAKER, WEAKEST)
-        spellings_declinated = match.group(4)  # from ", WALKS, WALKED, WALKED"
-
-        if spellings_conjugated:
-            result += [w.strip() for w in spellings_conjugated.split(",")]
-        if spellings_declinated:
-            result += [w.strip() for w in spellings_declinated.split(",")]
-
-        return result
 
 
 class App:  # pylint: disable=R0903
@@ -555,6 +61,28 @@ class App:  # pylint: disable=R0903
 
     _VERSION_REQUIRED_MAJOR = 3
     _VERSION_REQUIRED_MINOR = 11
+
+    _rules_file_name = "rules.json"
+
+    _dictionary_config = Config(
+        strict=True,
+        type_hooks={
+            WordStatus: WordStatus,
+            WordType: WordType,
+        },
+        forward_references={
+            Word.__name__: Word,
+            WordMeaning.__name__: WordMeaning,
+            WordNote.__name__: WordNote,
+        },
+    )
+
+    _rules_config = Config(
+        strict=True,
+        type_hooks={
+            RuleContentType: RuleContentType,
+        },
+    )
 
     _parser: argparse.ArgumentParser
     _args: argparse.Namespace
@@ -624,12 +152,16 @@ class App:  # pylint: disable=R0903
                 WordStatus: WordStatus,
                 WordType: WordType,
             },
-            strict=True
+            forward_references={
+                Word.__name__: Word,
+                WordMeaning.__name__: WordMeaning,
+                WordNote.__name__: WordNote,
+            }
         )
-        word_list = [from_dict(
-            data_class=Word,
-            data=item,
-            config=dacite_config) for item in dictionary_json]
+        word_list = [
+            from_dict(data_class=Word, data=item, config=dacite_config)
+            for item in dictionary_json
+        ]
         dictionary = sorted(word_list, key=lambda e: e.name.lower())
 
         console = Console()

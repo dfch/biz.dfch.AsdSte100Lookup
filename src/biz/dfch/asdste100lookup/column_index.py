@@ -13,23 +13,16 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-"""WordType enumeration."""
+"""ColumnIndex enum."""
 
-from enum import StrEnum
+from enum import IntEnum
 
 
-class WordType(StrEnum):
-    """ASD-STE100 Issue 9 word types; cf. page 2-0-4f."""
+class ColumnIndex(IntEnum):
+    """Represents the column index in the source."""
 
-    UNKNOWN = "unknown"
-    NOUN = "n"
-    VERB = "v"
-    ADJECTIVE = "adj"
-    ADVERB = "adv"
-    PRONOUN = "pron"
-    ARTICLE = "art"
-    PREPOSITION = "prep"
-    CONJUNCTION = "conj"
-    PREFIX = "prefix"
-    TECHNICAL_NOUN = "TN"
-    TECHNICAL_VERB = "TV"
+    NAME = 0
+    MEANING_ALT = 1
+    STE = 2
+    NONSTE = 3
+    MAX_COLUMNS = 4

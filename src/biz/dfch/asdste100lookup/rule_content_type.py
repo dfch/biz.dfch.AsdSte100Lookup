@@ -13,23 +13,22 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-"""WordType enumeration."""
+"""RuleContentType enum."""
 
 from enum import StrEnum
 
 
-class WordType(StrEnum):
-    """ASD-STE100 Issue 9 word types; cf. page 2-0-4f."""
+class RuleContentType(StrEnum):
+    """Represents all possible rule content types."""
 
-    UNKNOWN = "unknown"
-    NOUN = "n"
-    VERB = "v"
-    ADJECTIVE = "adj"
-    ADVERB = "adv"
-    PRONOUN = "pron"
-    ARTICLE = "art"
-    PREPOSITION = "prep"
-    CONJUNCTION = "conj"
-    PREFIX = "prefix"
-    TECHNICAL_NOUN = "TN"
-    TECHNICAL_VERB = "TV"
+    TEXT = "text"
+    DEFAULT = TEXT
+    STE = "ste_example"
+    NOT_RECOMMENDED = "not_recommended"
+    NONSTE = "nonste_example"
+    NOTE = "note"
+    GOOD = "good"
+    BAD = "bad"
+    GENERAL = "general"
+    COMMENT = "comment"
+    EXAMPLE = "example"
