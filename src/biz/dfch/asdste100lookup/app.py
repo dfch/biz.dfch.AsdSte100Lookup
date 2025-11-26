@@ -721,13 +721,16 @@ class App:  # pylint: disable=R0903
                     continue
 
         RuleRenderer().show(
-            console=console, rules=selected_rules, is_summary_only=self._args.summary
+            console=console,
+            rules=selected_rules,
+            is_summary_only=self._args.summary
         )
 
-    def on_dictionary(self) -> None:
+    def on_dictionary(self, dictionary_file_name: str) -> None:
         """This is the handler for the `dictionary` command."""
 
-        dictionary_file_name = self._args.input
+        assert isinstance(
+            dictionary_file_name, str) and "" != dictionary_file_name.strip()
 
         assert dictionary_file_name is not None and "" != dictionary_file_name
 
@@ -741,7 +744,9 @@ class App:  # pylint: disable=R0903
             dictionary_json = json.load(f)
 
         word_list = [
-            from_dict(data_class=Word, data=item, config=self._dictionary_config)
+            from_dict(data_class=Word,
+                      data=item,
+                      config=self._dictionary_config)
             for item in dictionary_json
         ]
         dictionary = sorted(word_list, key=lambda e: e.name.lower())
@@ -775,14 +780,17 @@ class App:  # pylint: disable=R0903
         log.debug(self._parser.epilog)
         print(self._parser.epilog)
 
-        if self._args.command == "dictionary":
-            self.on_dictionary()
+        if self._args.command == "parse":
+            self.on_parse()
             return
 
         if self._args.command == "rules":
             self.on_rules()
             return
 
-        if self._args.command == "parse":
-            self.on_parse()
+        if self._args.command == "dictionary":
+            self.on_dictionary(self._args.input)
             return
+
+        # Until we find a better solution ...
+        self.on_dictionary(Args._DICTIONARY_FILE)
