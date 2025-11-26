@@ -128,10 +128,7 @@ class App:  # pylint: disable=R0903
 
         return item
 
-    def prompt_user_loop(
-        self,
-        dictionary_file_name: str
-    ) -> None:
+    def prompt_user_loop(self, dictionary_file_name: str) -> None:
         """Main program loop."""
 
         assert dictionary_file_name is not None and "" != dictionary_file_name
@@ -143,26 +140,42 @@ class App:  # pylint: disable=R0903
         with open(dictionary_fullname, "r", encoding="utf-8") as f:
             dictionary_json = json.load(f)
 
-        assert isinstance(dictionary_json, list)
-        for word in dictionary_json:
-            assert isinstance(word, dict)
-
-        dacite_config = Config(
-            type_hooks={
-                WordStatus: WordStatus,
-                WordType: WordType,
-            },
-            forward_references={
-                Word.__name__: Word,
-                WordMeaning.__name__: WordMeaning,
-                WordNote.__name__: WordNote,
-            }
-        )
         word_list = [
-            from_dict(data_class=Word, data=item, config=dacite_config)
+            from_dict(
+                data_class=Word,
+                data=item,
+                config=self._dictionary_config)
             for item in dictionary_json
         ]
         dictionary = sorted(word_list, key=lambda e: e.name.lower())
+
+        current_folder = Path(__file__).parent
+        rules_fullname = current_folder / self._rules_file_name
+        rules = self._load_rules(rules_fullname)
+
+        rule = next((r for r in rules if r.id_ == "R1.5"), None)
+        assert isinstance(rule, Rule)
+
+        category_word_lists = [d.data for d in rule.contents if d.type_ == "good"]
+        for category_words in category_word_lists:
+            category_word_list = category_words.split(", ")
+
+            for word in category_word_list:
+                new_note = WordNote(value="See category 22.")
+                new_word = Word(
+                    status=WordStatus.APPROVED,
+                    name=word.strip(),
+                    type_=WordType.TECHNICAL_NOUN,
+                    meanings=[WordMeaning(value="Lorem ipsum")],
+                    spellings=[],
+                    alternatives=[],
+                    ste_example=[],
+                    nonste_example=[],
+                    note=new_note,
+                )
+                dictionary.append(new_word)
+
+        dictionary = sorted(dictionary, key=lambda e: e.name.lower())
 
         console = Console()
         while True:
@@ -193,7 +206,7 @@ class App:  # pylint: disable=R0903
                     if self._get_first_or_item(word.ste_example) and re.search(
                         prompt,
                         cast(str, self._get_first_or_item(word.ste_example)),
-                        re.IGNORECASE
+                        re.IGNORECASE,
                     ):
                         matching_words[id(word)] = word
                         continue
@@ -201,7 +214,7 @@ class App:  # pylint: disable=R0903
                     if self._get_first_or_item(word.nonste_example) and re.search(
                         prompt,
                         cast(str, self._get_first_or_item(word.nonste_example)),
-                        re.IGNORECASE
+                        re.IGNORECASE,
                     ):
                         matching_words[id(word)] = word
                         continue
@@ -225,9 +238,9 @@ class App:  # pylint: disable=R0903
                         )
                     if self._get_first_or_item(word.ste_example):
                         row.ste_example = self.to_colour(
-                            cast(str, self._get_first_or_item(
-                                word.ste_example)),
-                            prompt, word.status
+                            cast(str, self._get_first_or_item(word.ste_example)),
+                            prompt,
+                            word.status,
                         )
                 else:
                     if word.name:
@@ -238,9 +251,9 @@ class App:  # pylint: disable=R0903
                         )
                     if self._get_first_or_item(word.nonste_example):
                         row.nonste_example = self.to_colour(
-                            cast(str, self._get_first_or_item(
-                                word.nonste_example)),
-                            prompt, WordStatus.REJECTED
+                            cast(str, self._get_first_or_item(word.nonste_example)),
+                            prompt,
+                            WordStatus.REJECTED,
                         )
 
                 if word.spellings:
@@ -275,25 +288,27 @@ class App:  # pylint: disable=R0903
                             rows.append(row)
 
                         row.description = self.to_colour(
-                            f"{alt.name.upper()} ({alt.type_})",
-                            alt.name,
-                            alt.status
+                            f"{alt.name.upper()} ({alt.type_})", alt.name, alt.status
                         )
 
                         # Process examples pairwise.
-                        ste_list = alt.ste_example if isinstance(
-                            alt.ste_example, list) else (
-                                [] if alt.ste_example is None
-                                else [alt.ste_example]
-                            )
-                        nonste_list = alt.nonste_example if isinstance(
-                            alt.nonste_example, list) else (
-                                [] if alt.nonste_example is None
+                        ste_list = (
+                            alt.ste_example
+                            if isinstance(alt.ste_example, list)
+                            else ([] if alt.ste_example is None else [alt.ste_example])
+                        )
+                        nonste_list = (
+                            alt.nonste_example
+                            if isinstance(alt.nonste_example, list)
+                            else (
+                                []
+                                if alt.nonste_example is None
                                 else [alt.nonste_example]
                             )
+                        )
                         for i, (ste, nonste) in enumerate(
-                                zip_longest(ste_list,
-                                            nonste_list, fillvalue=' ')):
+                            zip_longest(ste_list, nonste_list, fillvalue=" ")
+                        ):
 
                             if 0 == i:
                                 row.ste_example = self.to_colour(
@@ -307,9 +322,7 @@ class App:  # pylint: disable=R0903
                             row = TableRow()
                             rows.append(row)
 
-                            row.ste_example = self.to_colour(
-                                ste, alt.name, alt.status
-                            )
+                            row.ste_example = self.to_colour(ste, alt.name, alt.status)
                             row.nonste_example = self.to_colour(
                                 nonste, word.name, WordStatus.REJECTED
                             )
@@ -340,15 +353,20 @@ class App:  # pylint: disable=R0903
                             )
                             if self._get_first_or_item(nword.ste_example):
                                 row.ste_example = self.to_colour(
-                                    cast(str, self._get_first_or_item(
-                                        nword.ste_example)),
-                                    nword.name, WordStatus.APPROVED
+                                    cast(
+                                        str, self._get_first_or_item(nword.ste_example)
+                                    ),
+                                    nword.name,
+                                    WordStatus.APPROVED,
                                 )
                             if self._get_first_or_item(nword.nonste_example):
                                 row.nonste_example = self.to_colour(
-                                    cast(str, self._get_first_or_item(
-                                        nword.nonste_example)),
-                                    nword.name, WordStatus.REJECTED
+                                    cast(
+                                        str,
+                                        self._get_first_or_item(nword.nonste_example),
+                                    ),
+                                    nword.name,
+                                    WordStatus.REJECTED,
                                 )
                     elif note.value:
                         row = TableRow()
@@ -369,9 +387,11 @@ class App:  # pylint: disable=R0903
                 for row in rows:
                     if row.description:
                         row.description = row.description.replace("\u200b", "")
-                    log.debug(f"'{row.word}', '{row.description}', "
-                              f"'{row.ste_example}', "
-                              f"'{row.nonste_example}'")
+                    log.debug(
+                        f"'{row.word}', '{row.description}', "
+                        f"'{row.ste_example}', "
+                        f"'{row.nonste_example}'"
+                    )
                     table.add_row(
                         row.word or "",
                         row.description or "",
@@ -795,11 +815,7 @@ class App:  # pylint: disable=R0903
         return result
 
     def parse_source(
-        self,
-        path: Path,
-        prefix: str,
-        extension: str,
-        dictionary_file_name: str
+        self, path: Path, prefix: str, extension: str, dictionary_file_name: str
     ) -> None:
         """Parse OCR dictionary files."""
 
@@ -813,9 +829,7 @@ class App:  # pylint: disable=R0903
         files = [
             f
             for f in path.iterdir()
-            if (f.is_file() and
-                f.name.startswith(prefix) and
-                f.suffix == extension)
+            if (f.is_file() and f.name.startswith(prefix) and f.suffix == extension)
         ]
 
         word_infos: list[WordInfo] = []
@@ -847,8 +861,7 @@ class App:  # pylint: disable=R0903
         """This is the handler for the `dictionary` command."""
 
         # How elegant!
-        root_dir = Path(__file__).resolve(
-            ).parent.parent.parent.parent.parent
+        root_dir = Path(__file__).resolve().parent.parent.parent.parent.parent
         import_path = self._args.path
         path = root_dir.joinpath(import_path)
         prefix = self._args.prefix
@@ -858,27 +871,50 @@ class App:  # pylint: disable=R0903
             path=path,
             prefix=prefix,
             extension=extension,
-            dictionary_file_name=dictionary_file_name)
+            dictionary_file_name=dictionary_file_name,
+        )
         return
+
+    def _load_rules(
+            self,
+            file_path_and_name: Path
+            ) -> list[Rule]:
+        """Loads rules from file."""
+
+        assert isinstance(file_path_and_name, Path)
+
+        # Load rules file.
+        with open(file_path_and_name, "r", encoding="utf-8") as f:
+            rules_json = json.load(f)
+
+        # Deserialise.
+        rules = [
+            from_dict(data_class=Rule, data=item, config=self._rules_config)
+            for item in rules_json
+        ]
+
+        # Sort alphabetically.
+        result = sorted(rules, key=lambda e: e.id_.lower())
+
+        return result
 
     def on_rules(self) -> None:
         """This is the handler for the `rules` command."""
 
-        rule_theme = Theme({
-            # "markdown.h1": "bold magenta",
-            # "markdown.h2": "bold cyan",
-            "markdown.code": "red",
-        })
+        rule_theme = Theme(
+            {
+                # "markdown.h1": "bold magenta",
+                # "markdown.h2": "bold cyan",
+                "markdown.code": "red",
+            }
+        )
         console = Console(theme=rule_theme)
 
-        # Load rules file.
         current_folder = Path(__file__).parent
-        rules_fullname = current_folder / "rules.json"
-        with open(rules_fullname, "r", encoding="utf-8") as f:
-            rules_json = json.load(f)
+        rules_fullname = current_folder / self._rules_file_name
+        rules = self._load_rules(rules_fullname)
 
-        rule_objects = [Rule(**rule_object) for rule_object in rules_json]
-        for rule in rule_objects:
+        for rule in rules:
 
             if self._args.id:
                 if not re.search(self._args.id, rule.id_, re.IGNORECASE):
@@ -892,7 +928,17 @@ class App:  # pylint: disable=R0903
                 if not re.search(self._args.category, rule.category, re.IGNORECASE):
                     continue
 
-            p = Panel(f"[black]{rule.name}[/black]", title=f"Rule {rule.id_}", title_align="left", subtitle=f"{rule.section}, {rule.category}", subtitle_align="left", border_style="bright_black", style="on bright_yellow", padding=(1, 1), box=box.HEAVY_EDGE)
+            p = Panel(
+                f"[black]{rule.name}[/black]",
+                title=f"Rule {rule.id_}",
+                title_align="left",
+                subtitle=f"{rule.section}, {rule.category}",
+                subtitle_align="left",
+                border_style="bright_black",
+                style="on bright_yellow",
+                padding=(1, 1),
+                box=box.HEAVY_EDGE,
+            )
             p = Panel(
                 Markdown(rule.name),
                 title=f"Rule {rule.id_}",
@@ -901,7 +947,7 @@ class App:  # pylint: disable=R0903
                 subtitle_align="left",
                 border_style="bright_yellow",
                 padding=(1, 1),
-                box=box.HEAVY_EDGE
+                box=box.HEAVY_EDGE,
             )
             console.print(p)
             md = Markdown(f"**{rule.summary}**")
@@ -912,51 +958,67 @@ class App:  # pylint: disable=R0903
             if self._args.summary:
                 continue
 
-            for contents in [RuleContentTypeBase(**c) for c in rule.contents]:
-                # print(contents.type_)
-                match contents.type_:
+            for content in rule.contents:
+                match content.type_:
                     case RuleContentType.TEXT:
-                        md = Markdown(contents.data)
+                        md = Markdown(content.data)
                         console.print(md)
                         console.print("")
                     case RuleContentType.EXAMPLE:
-                        txt = f"[green]{contents.data}[/green]"
-                        console.print(Panel(txt, title="STE", title_align="left", expand=False))
+                        txt = f"[green]{content.data}[/green]"
+                        console.print(
+                            Panel(txt, title="STE", title_align="left", expand=False)
+                        )
                         console.print("")
                     case RuleContentType.STE:
-                        # txt = f"[green]{contents.data}[/green]"
-                        # console.print(Panel(txt, title="STE", title_align="left", expand=False))
-                        # console.print("")
-                        panel = MarkDownUtils.to_panel(contents.data, title="STE", style="green")
+                        panel = MarkDownUtils.to_panel(
+                            content.data, title="STE", style="green"
+                        )
                         console.print(panel)
                         console.print("")
                     case RuleContentType.NONSTE:
-                        panel = MarkDownUtils.to_panel(contents.data, title="Non-STE", style="red")
+                        panel = MarkDownUtils.to_panel(
+                            content.data, title="Non-STE", style="red"
+                        )
                         console.print(panel)
                         console.print("")
                     case RuleContentType.NOT_RECOMMENDED:
-                        panel = MarkDownUtils.to_panel(contents.data, title="Not recommended", style="red")
+                        panel = MarkDownUtils.to_panel(
+                            content.data, title="Not recommended", style="red"
+                        )
                         console.print(panel)
                         console.print("")
                     case RuleContentType.NOTE:
-                        md = Markdown(contents.data)
-                        console.print(Panel(md, title="💡", title_align="left", border_style="yellow", expand=False))
+                        md = Markdown(content.data)
+                        console.print(
+                            Panel(
+                                md,
+                                title="💡",
+                                title_align="left",
+                                border_style="yellow",
+                                expand=False,
+                            )
+                        )
                         console.print("")
                     case RuleContentType.GOOD:
-                        panel = MarkDownUtils.to_panel(contents.data, title="Example", style="green")
+                        panel = MarkDownUtils.to_panel(
+                            content.data, title="Example", style="green"
+                        )
                         console.print(panel)
                         console.print("")
                     case RuleContentType.GENERAL:
-                        panel = MarkDownUtils.to_panel(contents.data, title="Example", style="blue")
+                        panel = MarkDownUtils.to_panel(
+                            content.data, title="Example", style="blue"
+                        )
                         console.print(panel)
                         console.print("")
                     case RuleContentType.COMMENT:
-                        md = Markdown(f"_{contents.data}_")
+                        md = Markdown(f"_{content.data}_")
                         console.print(md)
                         console.print("")
                     case _:
                         console.print("default")
-                        md = Markdown(contents.data)
+                        md = Markdown(content.data)
                         console.print(md)
                         console.print("")
         return
@@ -974,8 +1036,10 @@ class App:  # pylint: disable=R0903
 
         # Set the effective log level.
         from .args import Args  # pylint: disable=C0415
+
         log_level = Args.get_effective_log_level_name(self._args)
         import logging  # pylint: disable=C0415
+
         for handler in logging.getLogger().handlers:
             handler.setLevel(log_level)
 
