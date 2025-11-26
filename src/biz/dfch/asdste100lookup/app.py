@@ -44,13 +44,14 @@ from .line_info import LineInfo
 from .line_info_type import LineInfoType
 from .markdown_utils import MarkDownUtils
 from .rule import Rule
-from .rule_content_base import RuleContentBase
 from .rule_content_type import RuleContentType
 from .table_row import TableRow
+from .technical_word_category import TechnicalWordCategory
 from .word import Word
 from .word_info import WordInfo
 from .word_meaning import WordMeaning
 from .word_note import WordNote
+from .word_source import WordSource
 from .word_state import WordState
 from .word_status import WordStatus
 from .word_type import WordType
@@ -69,6 +70,7 @@ class App:  # pylint: disable=R0903
         type_hooks={
             WordStatus: WordStatus,
             WordType: WordType,
+            TechnicalWordCategory: TechnicalWordCategory,
         },
         forward_references={
             Word.__name__: Word,
@@ -101,6 +103,8 @@ class App:  # pylint: disable=R0903
         """Colourises value in specified text green or red based on status."""
         if WordStatus.APPROVED == status:
             result = Colouriser(text).to_green(value)
+        elif WordStatus.CUSTOM == status:
+            result = Colouriser(text).to_darkergreen(value)
         else:
             result = Colouriser(text).to_red(value)
 
@@ -128,54 +132,94 @@ class App:  # pylint: disable=R0903
 
         return item
 
-    def prompt_user_loop(self, dictionary_file_name: str) -> None:
-        """Main program loop."""
+    def _get_technical_words_internal(
+            self,
+            rules: list[Rule],
+            rule_id: str,
+            prefix: str,
+            type_: WordType
+        ) -> list[Word]:
+        """Returns all technical nouns from rule R1.5."""
 
-        assert dictionary_file_name is not None and "" != dictionary_file_name
+        assert isinstance(rules, list)
+        for rule in rules:
+            assert isinstance(rule, Rule)
 
-        log.debug("Starting to parse source data ...")
+        result: list[Word] = []
 
-        current_folder = Path(__file__).parent
-        dictionary_fullname = current_folder / dictionary_file_name
-        with open(dictionary_fullname, "r", encoding="utf-8") as f:
-            dictionary_json = json.load(f)
+        rule = next((r for r in rules if r.id_ == rule_id))
+        assert isinstance(rule, Rule)
 
-        word_list = [
-            from_dict(
-                data_class=Word,
-                data=item,
-                config=self._dictionary_config)
-            for item in dictionary_json
-        ]
-        dictionary = sorted(word_list, key=lambda e: e.name.lower())
+        current_category: str = ""
+        contents = [d for d in rule.contents if d.type_ in ("text", "good")]
+        for content in contents:
+            if RuleContentType.TEXT == content.type_:
+                match = re.match(r'^(?P<category>\d+)\.', content.data.strip())
+                if not match:
+                    continue
+                current_category = f"{prefix}{match.group('category')}"
+                continue
+
+            category_word_list = content.data.split(", ")
+            for category_word in category_word_list:
+                note = WordNote(
+                    value=f"See '{WordSource.STE100_9}' ({current_category})."
+                )
+                word = Word(
+                    status=WordStatus.CUSTOM,
+                    source=WordSource.STE100_9,
+                    category=TechnicalWordCategory(current_category),
+                    name=category_word.strip(),
+                    type_=type_,
+                    meanings=[],
+                    spellings=[],
+                    alternatives=[],
+                    ste_example=[],
+                    nonste_example=[],
+                    note=note,
+                )
+                result.append(word)
+
+        return result
+
+    def _get_technical_words(self) -> list[Word]:
+        """Returns all technical nouns and verbs from rules R1.5 and R1.12."""
+
+        result: list[Word] = []
 
         current_folder = Path(__file__).parent
         rules_fullname = current_folder / self._rules_file_name
         rules = self._load_rules(rules_fullname)
 
-        rule = next((r for r in rules if r.id_ == "R1.5"), None)
-        assert isinstance(rule, Rule)
+        result = self._get_technical_words_internal(
+            rules,
+            rule_id="R1.5",
+            prefix="TN",
+            type_=WordType.TECHNICAL_NOUN)
 
-        category_word_lists = [d.data for d in rule.contents if d.type_ == "good"]
-        for category_words in category_word_lists:
-            category_word_list = category_words.split(", ")
+        result.extend(self._get_technical_words_internal(
+            rules,
+            rule_id="R1.12",
+            prefix="TV",
+            type_=WordType.TECHNICAL_VERB))
 
-            for word in category_word_list:
-                new_note = WordNote(value="See category 22.")
-                new_word = Word(
-                    status=WordStatus.APPROVED,
-                    name=word.strip(),
-                    type_=WordType.TECHNICAL_NOUN,
-                    meanings=[WordMeaning(value="Lorem ipsum")],
-                    spellings=[],
-                    alternatives=[],
-                    ste_example=[],
-                    nonste_example=[],
-                    note=new_note,
-                )
-                dictionary.append(new_word)
+        return result
 
-        dictionary = sorted(dictionary, key=lambda e: e.name.lower())
+#     def prompt_show_help(self, console: Console) -> None:
+#         """Shows the help text."""
+
+#         assert isinstance(console, Console)
+    
+#         console.print(f"""?   This help text.
+# category:
+# """)
+
+    def prompt_user_loop(self, dictionary: list[Word]) -> None:
+        """Main program loop."""
+
+        assert isinstance(dictionary, list)
+        for item in dictionary:
+            assert isinstance(item, Word)
 
         console = Console()
         while True:
@@ -227,9 +271,34 @@ class App:  # pylint: disable=R0903
 
                 row = TableRow()
                 rows.append(row)
-                is_approved = WordStatus.APPROVED == word.status
 
-                if is_approved:
+                if WordStatus.APPROVED == word.status:
+                    if word.name:
+                        row.word = self.to_colour(
+                            f"{word.name.upper()} ({word.type_})",
+                            word.name,
+                            word.status,
+                        )
+                    if self._get_first_or_item(word.ste_example):
+                        row.ste_example = self.to_colour(
+                            cast(str, self._get_first_or_item(word.ste_example)),
+                            prompt,
+                            word.status,
+                        )
+                elif WordStatus.REJECTED == word.status:
+                    if word.name:
+                        row.word = self.to_colour(
+                            f"{word.name.lower()} ({word.type_})",
+                            word.name,
+                            word.status,
+                        )
+                    if self._get_first_or_item(word.nonste_example):
+                        row.nonste_example = self.to_colour(
+                            cast(str, self._get_first_or_item(word.nonste_example)),
+                            prompt,
+                            word.status,
+                        )
+                elif WordStatus.CUSTOM == word.status:
                     if word.name:
                         row.word = self.to_colour(
                             f"{word.name.upper()} ({word.type_})",
@@ -243,18 +312,8 @@ class App:  # pylint: disable=R0903
                             word.status,
                         )
                 else:
-                    if word.name:
-                        row.word = self.to_colour(
-                            f"{word.name.lower()} ({word.type_})",
-                            word.name,
-                            word.status,
-                        )
-                    if self._get_first_or_item(word.nonste_example):
-                        row.nonste_example = self.to_colour(
-                            cast(str, self._get_first_or_item(word.nonste_example)),
-                            prompt,
-                            WordStatus.REJECTED,
-                        )
+                    log.error(f"Word '{word.name} with status '{word.status}' found.")
+                    continue
 
                 if word.spellings:
                     colourised_spellings: list[str] = [
@@ -531,11 +590,12 @@ class App:  # pylint: disable=R0903
             status=dict_word.status,
             name=dict_word.name,
             type_=dict_word.type_,
+            source=WordSource.STE100_9,
             meanings=[],
             spellings=[],
             alternatives=[],
-            ste_example=ste_example,
-            nonste_example=nonste_example,
+            ste_example=[ste_example],
+            nonste_example=[nonste_example],
         )
         return result
 
@@ -652,8 +712,9 @@ class App:  # pylint: disable=R0903
                 )
                 xyz = Word(
                     status=item.word.status,
-                    type_=item.word.type_,
                     name=item.word.name,
+                    type_=item.word.type_,
+                    source=WordSource.STE100_9,
                     meanings=[meanning],
                     spellings=spellings,
                     alternatives=[],
@@ -666,6 +727,7 @@ class App:  # pylint: disable=R0903
                     status=alt_word.status,
                     name=alt_word.name,
                     type_=alt_word.type_,
+                    source=WordSource.STE100_9,
                     meanings=[],
                     spellings=[],
                     alternatives=[],
@@ -678,8 +740,9 @@ class App:  # pylint: disable=R0903
                     alternative.nonste_example.append(non_ste)
                 xyz = Word(
                     status=item.word.status,
-                    type_=item.word.type_,
                     name=item.word.name,
+                    type_=item.word.type_,
+                    source=WordSource.STE100_9,
                     meanings=[],
                     spellings=spellings,
                     alternatives=[alternative],
@@ -688,8 +751,9 @@ class App:  # pylint: disable=R0903
             case WordState.WORD_NOTE:
                 xyz = Word(
                     status=item.word.status,
-                    type_=item.word.type_,
                     name=item.word.name,
+                    type_=item.word.type_,
+                    source=WordSource.STE100_9,
                     meanings=[],
                     spellings=spellings,
                     alternatives=[],
@@ -749,6 +813,7 @@ class App:  # pylint: disable=R0903
                         status=alt_word.status,
                         name=alt_word.name,
                         type_=alt_word.type_,
+                        source=WordSource.STE100_9,
                         meanings=[],
                         spellings=[],
                         alternatives=[],
@@ -784,6 +849,7 @@ class App:  # pylint: disable=R0903
                         status=alt_word.status,
                         name=alt_word.name,
                         type_=alt_word.type_,
+                        source=WordSource.STE100_9,
                         meanings=[],
                         spellings=[],
                         alternatives=[],
@@ -875,10 +941,7 @@ class App:  # pylint: disable=R0903
         )
         return
 
-    def _load_rules(
-            self,
-            file_path_and_name: Path
-            ) -> list[Rule]:
+    def _load_rules(self, file_path_and_name: Path) -> list[Rule]:
         """Loads rules from file."""
 
         assert isinstance(file_path_and_name, Path)
@@ -888,13 +951,10 @@ class App:  # pylint: disable=R0903
             rules_json = json.load(f)
 
         # Deserialise.
-        rules = [
+        result = [
             from_dict(data_class=Rule, data=item, config=self._rules_config)
             for item in rules_json
         ]
-
-        # Sort alphabetically.
-        result = sorted(rules, key=lambda e: e.id_.lower())
 
         return result
 
@@ -1027,7 +1087,28 @@ class App:  # pylint: disable=R0903
         """This is the handler for the `dictionary` command."""
 
         dictionary_file_name = self._args.input
-        self.prompt_user_loop(dictionary_file_name=dictionary_file_name)
+
+        assert dictionary_file_name is not None and "" != dictionary_file_name
+
+        log.debug("Starting to parse source data ...")
+
+        current_folder = Path(__file__).parent
+        dictionary_fullname = current_folder / dictionary_file_name
+        with open(dictionary_fullname, "r", encoding="utf-8") as f:
+            dictionary_json = json.load(f)
+
+        word_list = [
+            from_dict(data_class=Word, data=item, config=self._dictionary_config)
+            for item in dictionary_json
+        ]
+        dictionary = sorted(word_list, key=lambda e: e.name.lower())
+
+        techncal_words = self._get_technical_words()
+        dictionary.extend(techncal_words)
+
+        dictionary = sorted(dictionary, key=lambda e: e.name.lower())
+
+        self.prompt_user_loop(dictionary=dictionary)
 
         return
 

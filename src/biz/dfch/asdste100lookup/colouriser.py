@@ -94,6 +94,13 @@ class Colouriser:
 
         return self._colourise(pattern, "green", is_bright)
 
+    def to_darkergreen(self, pattern: str, is_bright: bool = False) -> str:
+        """Creates a colorized string in green."""
+
+        assert pattern is not None and "" != pattern
+
+        return self._colourise(pattern, "dark_green", is_bright)
+
     def to_yellow(self, pattern: str, is_bright: bool = False) -> str:
         """Creates a colorized string in yellow."""
 

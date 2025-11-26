@@ -13,15 +13,14 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-"""WordStatus enumeration."""
+"""WordSource enum."""
 
 from enum import StrEnum
 
 
-class WordStatus(StrEnum):
-    """Represents the status of a word."""
+class WordSource(StrEnum):
+    """Defines common word sources."""
 
-    UNKNOWN = "unknown"
-    CUSTOM = "custom"
-    APPROVED = "approved"
-    REJECTED = "rejected"
+    UNKNOWN = "Unknown"
+    STE100_9 = "STE100:9"
+
