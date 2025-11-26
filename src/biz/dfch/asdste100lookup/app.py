@@ -18,6 +18,7 @@
 from __future__ import annotations
 
 import argparse
+from dacite import from_dict, Config
 from dataclasses import asdict, dataclass, field
 from enum import auto, StrEnum, IntEnum, Enum
 from io import StringIO
@@ -601,8 +602,16 @@ class App:  # pylint: disable=R0903
 
     def _get_first_or_item(self, item: str | list[str] | None) -> str | None:
         """
-        Retrieves the first item of a list or the element itself.
-        Returns None if list or element is empty.
+        Retrieves the first `item` of a list or the `item` itself.
+        If `item` is `None` or the list is empty, `None` is returned.
+
+        Args:
+            item (str | list[str] | None): A list of strings or a string.
+
+        Returns:
+            (str | None): - The first `item` in the list, if it is a list
+                - The `item`, if it is not a list
+                - None, if `item` or the list is empty.
         """
 
         if item is None:
@@ -632,10 +641,18 @@ class App:  # pylint: disable=R0903
         for word in dictionary_json:
             assert isinstance(word, dict)
 
-        dictionary = [Word(**entry) for entry in dictionary_json]
-        dictionary = sorted(
-            [Word(**entry) for entry in dictionary_json], key=lambda e: e.name.lower()
+        dacite_config = Config(
+            type_hooks={
+                WordStatus: WordStatus,
+                WordType: WordType,
+            },
+            strict=True
         )
+        word_list = [from_dict(
+            data_class=Word,
+            data=item,
+            config=dacite_config) for item in dictionary_json]
+        dictionary = sorted(word_list, key=lambda e: e.name.lower())
 
         console = Console()
         while True:
@@ -651,7 +668,7 @@ class App:  # pylint: disable=R0903
             table.add_column("STE Example")
             table.add_column("Non-STE Example")
 
-            matching_words = {}
+            matching_words: dict[int, Word] = {}
             try:
                 for word in dictionary:
                     if re.search(prompt, word.name, re.IGNORECASE):
@@ -725,7 +742,7 @@ class App:  # pylint: disable=R0903
                     row.word = f"{row.word}\n{spellings}"
 
                 if word.meanings:
-                    meanings = [WordMeaning(**entry) for entry in word.meanings]
+                    meanings = word.meanings
                     for meaning in meanings:
                         if row.ste_example or row.nonste_example:
                             row = TableRow()
@@ -741,7 +758,7 @@ class App:  # pylint: disable=R0903
                             )
 
                 if word.alternatives:
-                    alternatives = [Word(**entry) for entry in word.alternatives]
+                    alternatives = word.alternatives
                     for alt in alternatives:
                         if row.description:
                             row = TableRow()
@@ -791,10 +808,10 @@ class App:  # pylint: disable=R0903
                     if isinstance(word.note, WordNote):
                         note = word.note
                     else:
-                        note = WordNote(**word.note)
+                        note = word.note
 
                     if note.words:
-                        nwords = [Word(**entry) for entry in note.words]
+                        nwords = note.words
 
                         if row.description or row.ste_example or row.nonste_example:
 
@@ -1348,9 +1365,9 @@ class App:  # pylint: disable=R0903
         current_folder = Path(__file__).parent
         rules_fullname = current_folder / "rules.json"
         with open(rules_fullname, "r", encoding="utf-8") as f:
-            rules_data = json.load(f)
+            rules_json = json.load(f)
 
-        rule_objects = [Rule(**rule_object) for rule_object in rules_data]
+        rule_objects = [Rule(**rule_object) for rule_object in rules_json]
         for rule in rule_objects:
 
             if self._args.id:
