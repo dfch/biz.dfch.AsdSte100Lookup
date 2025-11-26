@@ -1,6 +1,6 @@
 ﻿drop (v)	FALL (v)	PARTICLES THAT FALL INTO THE INTAKE CAN CAUSE DAMAGE.	Particles that drop into the intake may cause damage.
 	DECREASE (v)	THE PRESSURE DECREASES WHILE THE TIRES BECOME COOL.	The pressure drops as the tires cool.
-DRY (adj)	Without liquid or (DRIER,	moisture DRIEST)	MAKE SURE THAT THE SURFACE IS DRY.
+DRY (adj) (DRIER, DRIEST)	Without liquid or moisture	MAKE SURE THAT THE SURFACE IS DRY.
 DRY (v), DRIES, DRIED	To remove liquid or moisture, or to become dry	DRY THE FILTER IN AN OVEN. LET THE PAINT DRY AT THE AMBIENT TEMPERATURE.
 due to (prep)	BECAUSE OF (prep)	BECAUSE OF THE SMALL DIAMETER OF THE HOLE, THE FLOW IS LOW.	Due to the small diameter of the hole, the flow is low.
 BECAUSE (conj)	THE SHAFT MOVED BECAUSE THE ACTUATOR OPERATED.	The shaft moved due to the actuator action.

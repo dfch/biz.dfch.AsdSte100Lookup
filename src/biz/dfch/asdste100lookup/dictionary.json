@@ -20316,13 +20316,16 @@
     "type_": "adj",
     "meanings": [
       {
-        "value": "Without liquid or (DRIER,",
-        "ste_example": "moisture DRIEST)",
-        "nonste_example": "MAKE SURE THAT THE SURFACE IS DRY.",
+        "value": "Without liquid or moisture",
+        "ste_example": "MAKE SURE THAT THE SURFACE IS DRY.",
+        "nonste_example": "",
         "note": null
       }
     ],
-    "spellings": [],
+    "spellings": [
+      "DRIER",
+      "DRIEST"
+    ],
     "alternatives": [],
     "ste_example": [],
     "nonste_example": [],
