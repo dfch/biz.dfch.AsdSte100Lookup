@@ -27,8 +27,8 @@ from dacite import from_dict, Config
 from rich.console import Console
 from rich.theme import Theme
 
-from biz.dfch.logging import log  # pylint: disable=E0401
-from biz.dfch.version import Version  # pylint: disable=E0401
+from biz.dfch.logging import log
+from biz.dfch.version import Version
 
 from .column_index import ColumnIndex
 from .empty_command import EmptyCommand
@@ -159,7 +159,9 @@ class App:  # pylint: disable=R0903
 
         result.extend(
             self._get_technical_words_internal(
-                rules, rule_id="R1.12", prefix="TV", type_=WordType.TECHNICAL_VERB
+                rules, rule_id="R1.12",
+                prefix="TV",
+                type_=WordType.TECHNICAL_VERB
             )
         )
 
@@ -246,7 +248,12 @@ class App:  # pylint: disable=R0903
 
         word_info: WordInfo = WordInfo(file.name)
         for index, line_info in enumerate(line_infos):
-            log.debug("[%s] [%s] '%s'", word_info.filename, index, line_info.line)
+            log.debug(
+                "[%s] [%s] '%s'",
+                word_info.filename,
+                index,
+                line_info.line
+            )
             if 0 == index:
                 assert line_info.is_start_of_word
 
@@ -634,7 +641,9 @@ class App:  # pylint: disable=R0903
         files = [
             f
             for f in path.iterdir()
-            if (f.is_file() and f.name.startswith(prefix) and f.suffix == extension)
+            if (f.is_file() and
+                f.name.startswith(prefix) and
+                f.suffix == extension)
         ]
 
         word_infos: list[WordInfo] = []
