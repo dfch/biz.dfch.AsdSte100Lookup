@@ -38,5 +38,5 @@ class RuleCommand(CommandBase):
 
         RuleRenderer().show(
             console=console,
-            rules=selected_rules,
+            rules=selected_rules,  # pylint: disable=R0801
             is_summary_only=False)

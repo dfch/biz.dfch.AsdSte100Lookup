@@ -50,7 +50,7 @@ class DictionaryInfo:
         ^(\w+)               # 1. head word (e.g., WEAK)
         \s+\((\w+)\)         # 2. type in parentheses (e.g., adj)
         (?:\s+\(([^)]+)\))?  # 3. optional second parens (e.g., WEAKER, WEAKEST)
-        (?:,\s*(.*))?        # 4. optional comma suffix (e.g., WALKS, WALKED, WALKED)  # noqa: disable:E501
+        (?:,\s*(.*))?        # 4. optional comma suffix (e.g., WALKS, WALKED, WALKED)  # noqa: disable:E501  # pylint: disable=C0301
         $
     """,
         re.VERBOSE,

@@ -31,7 +31,7 @@ from .unknown_command import UnknownCommand
 from .command_base import CommandBase
 
 
-class MainPrompt:
+class MainPrompt:  # pylint: disable=R0903
     """Represents the main prompt processing."""
 
     _parser: argparse.ArgumentParser

@@ -23,4 +23,3 @@ class WordSource(StrEnum):
 
     UNKNOWN = "Unknown"
     STE100_9 = "STE100:9"
-

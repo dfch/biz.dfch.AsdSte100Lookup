@@ -25,7 +25,7 @@ from .rule import Rule
 from .rule_content_type import RuleContentType
 
 
-class RuleRenderer:
+class RuleRenderer:  # pylint: disable=R0903
     """Shows STE100 rules on the console."""
 
     def show(

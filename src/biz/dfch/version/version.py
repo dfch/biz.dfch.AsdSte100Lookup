@@ -25,7 +25,7 @@
 import sys
 
 
-class Version:
+class Version:  # pylint: disable=R0903
     """Version class ensuring minimum Python interpreter version."""
 
     def ensure_minimum_version(self, major: int = 3, minor: int = 11) -> None:

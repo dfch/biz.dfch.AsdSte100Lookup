@@ -420,8 +420,12 @@ class App:  # pylint: disable=R0903
         line_info = item.line_infos[0]
         next_state = self.get_next_state(current_state, line_info)
         log.debug(
-            f"[{item.filename}] [{current_state.name} --> {next_state.name}] @ "
-            f"{line_info.get_type().name}: {line_info.line}"
+            "[%s] [%s --> %s] @ %s: %s",
+            item.filename,
+            current_state.name,
+            next_state.name,
+            line_info.get_type().name,
+            line_info.line
         )
         assert WordState.ERROR != next_state
         previous_state = current_state
@@ -505,9 +509,12 @@ class App:  # pylint: disable=R0903
         for line_info in item.line_infos[1:]:
             next_state = self.get_next_state(current_state, line_info)
             log.debug(
-                f"[{item.filename}] "
-                f"[{current_state.name} --> {next_state.name}] "
-                f"@ {line_info.get_type().name}: {line_info.line}"
+                "[%s] [%s --> %s] @ %s: %s",
+                item.filename,
+                current_state.name,
+                next_state.name,
+                line_info.get_type().name,
+                line_info.line
             )
             assert WordState.ERROR != next_state
             previous_state = current_state
@@ -671,7 +678,6 @@ class App:  # pylint: disable=R0903
             extension=extension,
             dictionary_file_name=dictionary_file_name,
         )
-        return
 
     def _load_rules(self, file_path_and_name: Path) -> list[Rule]:
         """Loads rules from file."""
@@ -794,4 +800,4 @@ class App:  # pylint: disable=R0903
             return
 
         # Until we find a better solution ...
-        self.on_dictionary(Args._DICTIONARY_FILE)
+        self.on_dictionary(Args._DICTIONARY_FILE)  # pylint: disable=W0212

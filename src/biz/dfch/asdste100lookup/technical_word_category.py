@@ -15,6 +15,8 @@
 
 """TechnicalWordCategory enum."""
 
+# pylint: disable=line-too-long
+
 from enum import StrEnum
 
 
