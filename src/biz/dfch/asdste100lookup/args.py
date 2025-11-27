@@ -26,7 +26,7 @@ class Args:
     """
 
     # Note: also adjust in pyproject.toml
-    _VERSION = "1.3.0"
+    _VERSION = "1.3.1"
     _PROG_NAME = "AsdSte100Lookup"
 
     _parser: argparse.ArgumentParser
