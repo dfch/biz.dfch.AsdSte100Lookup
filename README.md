@@ -1,5 +1,6 @@
 # biz.dfch.AsdSte100Lookup
 
+[![ADS-STE100: Issue 9](https://img.shields.io/badge/ADS--STE100-Issue%209-blue.svg)](https://www.asd-ste100.org/)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 ![Python](https://img.shields.io/badge/python-3.11%20%7C%203.12-blue.svg)
 [![Pylint](https://github.com/dfch/biz.dfch.AsdSte100Lookup/actions/workflows/pylint.yml/badge.svg)](https://github.com/dfch/biz.dfch.AsdSte100Lookup/actions/workflows/pylint.yml)
