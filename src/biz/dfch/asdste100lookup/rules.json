@@ -3703,6 +3703,577 @@
                 "type_": "comment",
                 "data": "(This is work step number 6 in the applicable procedure.)"
             }
+            ,
+            {
+                "type_": "text",
+                "data": "If you include instructions in a note, it is possible that the reader will not see the information. If the information given in a note is important to prevent damage or injury, you must give such information in a safety instruction."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Examples:"
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "_NOTE_: When you connect the lines, do not bend them too much. If you bend the lines too much, you can cause damage to them."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(This text is not a note. It is a safety instruction.)"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "_CAUTION_: WHEN YOU CONNECT THE LINES, DO NOT BEND THEM TOO MUCH. IF YOU BEND THE LINES TOO MUCH, YOU CAN CAUSE DAMAGE TO THEM."
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "_NOTE_: Before closing the hatch, it is mandatory to ensure that no persons are in the crew rest compartment. When the hatch is closed, there is no airflow to the compartment and therefore there is a risk of suffocation."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(Although the non-STE text does not contain the imperative form, it is not a note. It is a safety instruction.)"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "_WARNING_: BEFORE YOU CLOSE THE HATCH, MAKE SURE THAT NO PERSONS ARE IN THE CREW REST COMPARTMENT. WHEN THE HATCH IS CLOSED, THERE IS NO AIRFLOW TO THE COMPARTMENT AND THERE IS A RISK OF SUFFOCATION."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "Do not use a note to give limits, tolerances, or results of a work step. This information must come directly after the related action in the work step."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Examples:"
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "B. Measure the leakage from the outlet port.  \n _NOTE_: The leakage must not be more than 0.5 cc/minute."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(This note gives a limit that is important for the work step.)"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "B. Measure the leakage from the outlet port. The leakage must not be more than 0.5 cc/minute."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(This work step is correct. It gives the action first and then the related limit.)"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "**_How to use notes correctly_**"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "When you write a procedure, and this procedure contains notes, do this test:  \n - Carefully read the procedure without the notes.  \n - Make sure that the reader can do the procedure correctly without the notes."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "A satisfactory result of this test tells you that you used the notes correctly."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "If important information is missing from the procedure and this information is in a note:  \n - Remove the information from the note.  \n - Write the missing information in a work step.  \n - Include this new work step where applicable in the procedure.  \n - Do the test again until you are fully sure that the reader can do the procedure without the notes."
+            }
+            ,
+            {
+                "type_": "note",
+                "data": "In STE, you use notes in procedures. You can write notes in descriptions only if the notes are necessary for illustrations or tables that are parts of such descriptions."
+            }
+        ]
+    }
+    ,
+    {
+        "type_": "rule",
+        "id_": "R6.1",
+        "ref": "Issue 9 page 1-6-1",
+        "section": "Descriptive writing",
+        "category": "Content structure",
+        "name": "Give information gradually.",
+        "summary": "In a descriptive text, give information gradually and make sure that each sentence contains only one subject. If you give too much information too quickly, your text will not be easy to understand, and it will be necessary for the reader to read it again.",
+        "contents": [
+            {
+                "type_": "text",
+                "data": "# Example:"
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "Instrument Landing System  \n  \n During the approach to the runway, deviation pointers in the course indicators give commands to fly up or down and left or right. This information comes from the VHF transceivers, which are part of the Instrument Landing System. This helps the pilot during the landing approach. When the pilot responds to the commands, the aircraft can be flown over the runway centerline (localizer) and at a fixed angle (glideslope) to the runway threshold. The localizer signals are processed by the transceiver and data are transmitted to Air Traffic Control."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "The STE text that follows shows how you can use short sentences to write a clear text that gives information gradually. Each sentence contains only one subject in underlined texts."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "Instrument Landing System  \n  \n The **Instrument Landing System** (the system) on the aircraft shows data that helps the pilot during the approach to the runway. **This system** shows the pilot the deviations from the localizer course and the glideslope path. **The localizer course** aligns with the centerline of the runway. And **the glideslope** path is at a constant angle to the threshold of the runway. During the approach to the runway, **deviation pointers** in the course indicators show the pilot in which direction the aircraft must go:  \n - Left or right (for the localizer)  \n - Up or down (for the glideslope).  \n  \n **This data** about deviations from the localizer course and glideslope path comes from two VHF transceivers. **These transceivers** transmit this data to Air Traffic Control."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "The STE text is divided into two paragraphs and has a logical structure:  \n - The first paragraph has five sentences.  \n - The second paragraph has two sentences."
+            }
+        ]
+    }
+    ,
+    {
+        "type_": "rule",
+        "id_": "R6.2",
+        "ref": "Issue 9 page 1-6-2",
+        "section": "Descriptive writing",
+        "category": "Content structure",
+        "name": "Use key words and key phrases to give your text a logical structure.",
+        "summary": "_Key words_ are words that occur in a text to connect different ideas, and _key phrases_ are phrases that have the same function.",
+        "contents": [
+            {
+                "type_": "text",
+                "data": "These key words and key phrases show how information in a text is related and give the text a logical structure."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "You can also use _connecting words_ and _connecting phrases_ to help the reader understand the logical flow of ideas in the text. Connecting words and connecting phrases have the function of traffic signs, which tell the reader if the information is new, different, or a result of previous information. Examples of approved connecting words are: **and**, **but**, **then**, **thus**, and examples of connecting phrases are **as a result**, and **at the same time**."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "The example that follows is the STE text of the example for rule 6.1. In the text, you can see how the underlined key words and key phrases connect sentences and their related ideas. This makes the text much easier to read and understand."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "When you use key words and key phrases, make sure that you do not change them in your text. The same terminology will keep your text clear and correct."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "| Sentence 1 | Sentence 2 |  \n |----------|----------|  \n | The Instrument Landing **System** (the system) on the aircraft **shows** data that helps the **pilot** during the approach to the runway. | This **system** **shows** the **pilot** the deviations from the localizer course and the glideslope path. |  "
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "Sentence 2 uses the key words **system**, **show**, and **pilot** again to add more information about sentence 1."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "| Sentence 2 | Sentences 3 and 4 |  \n |----------|----------|  \n | This system shows the pilot the deviations from the **localizer course** and the **glideslope path**. | The **localizer course** aligns with the centerline of the runway. And the **glideslope path** is at a constant angle to the threshold of the runway. |  "
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "Sentences 3 and 4 use the key words **localizer course** and **glideslope path** again and add new information."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "| Sentence 3 | Sentence 4 |  \n |----------|----------|  \n | The **localizer** course aligns with the centerline of the **runway**. | And the **glideslope** path is at a constant angle to the threshold of the **runway**. |  "
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "Sentences 3 and 4 also include the key word **runway**, which refers back to sentence 1."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "| Sentences 3 and 4 | Sentence 5 |  \n |----------|----------|  \n | The **localizer** course aligns with the centerline of the **runway**. And the **glideslope** path is at a constant angle to the threshold of the runway. | During the approach to the **runway**, deviation pointers in the course indicators show the pilot in which direction the aircraft must go: |  \n |     | - Left or right (for the **localizer**) |  \n |     | - Up or down (for the **glideslope**).  |  "
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "Sentence 5 also connects to the previous sentences 3 and 4 with the key word **runway** again. Then, sentence 5 gives more information about the function of indicators for the localizer and the glideslope."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "| Sentence 2 | Sentence 5 |  \n |----------|----------|  \n | This system **shows the pilot** the **deviations** from the **localizer** course and the **glideslope** path. | During the approach to the runway, **deviation** pointers in the course indicators **show the pilot** in which direction the aircraft must go: |  \n |     | - Left or right (for the **localizer**) |  \n |     | - Up or down (for the **glideslope**). |  "
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "Key words and key phrases (for example, **show(s) the pilot**) give a logical connection between sentences 2 and 5."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "| Sentence 1 | Sentence 5 |  \n |----------|----------|  \n | The Instrument Landing System in the aircraft **shows** data that helps the **pilot** **during the approach to the runway**. | **During the approach to the runway**, deviation pointers in the course indicators **show the pilot** in which direction the aircraft must go: |  \n |     | - Left or right (for the localizer) |  \n |     | - Up or down (for the glideslope). |  "
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "Sentences 1 and 5 are also connected to make a logical paragraph."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "Sentence 5 also uses the key phrase **during the approach to the runway** from sentence 1 again to refer to the initial sentence and give more information about it. When you use the same key words and key phrases again, the sentences have a logical connection. If you use different terminology, your text will not be easy to read."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "There is also a logical connection between the two paragraphs."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "_Paragraph 1_ (Sentences 1 thru 5): **deviation**, **data**, **localizer**, **glideslope**"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "_Paragraph 2_ (Sentences 6 and 7): This **data** about **deviations** from the **localizer course and glideslope path** comes from two VHF transceivers. These transceivers transmit this **data** to Air Traffic Control."
+            }
+        ]
+    }
+    ,
+    {
+        "type_": "rule",
+        "id_": "R6.3",
+        "ref": "Issue 9 page 1-6-4",
+        "section": "Descriptive writing",
+        "category": "Sentences",
+        "name": "Write short sentences. Use a maximum of 25 words in each sentence.",
+        "summary": "Good technical writing uses short sentences for complex topics. Short sentences give a clear structure to your writing and make information easier to understand.",
+        "contents": [
+            {
+                "type_": "text",
+                "data": "In descriptive writing, the maximum sentence length is 25 words. This is because descriptive text is more complex than procedural text."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Examples:"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "During the approach to the runway, deviation pointers in the course indicators show the pilot in which direction the aircraft must go."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(22 words)"
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "A smartphone is a cellular telephone that has an integrated computer and many other functions, such as an operating system, internet browsing as well as the ability to run software applications."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(31 words)"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "A smartphone is a cellular telephone that has an integrated computer and many other functions. It includes an operating system and an internet browser, and it can also operate software applications."
+            }
+            ,
+            {
+                "type_": "comment",
+                "data": "(Sentence 1 has 15 words and sentence 2 has 16 words.)"
+            }
+        ]
+    }
+    ,
+    {
+        "type_": "rule",
+        "id_": "R6.4",
+        "ref": "Issue 9 page 1-6-5",
+        "section": "Descriptive writing",
+        "category": "Paragraphs",
+        "name": "Use paragraphs to show related information.",
+        "summary": "In procedures, work steps usually have numbers and letters to show their sequence. In descriptive writing, paragraphs keep related information together and give a logical sequence to the text.",
+        "contents": [
+            {
+                "type_": "text",
+                "data": "In STE, a paragraph starts with a **topic sentence** which tells the reader about the topic of that paragraph. Then, the sentences that follow the topic sentence explain it, or give more information related to it."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "In the example, the underlined topic sentence at the start of each paragraph helps the reader understand the content of the paragraph and its topic. When a new paragraph starts, the reader knows that there will be a new topic or different information in that paragraph."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Example:"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "1. **Lightning Strike**  \n     A. General  \n   1. **A lightning strike can cause damage to the aircraft**. The damage usually occurs at the attachment points. The attachment points include:  \n       - The nose of the fuselage  \n       - The tail section  \n       - The propellers  \n       - The wing tips  \n       - The tips of the stabilizer  \n       - The trailing edge of the stabilizer  \n       - The antennas  \n       - The static dischargers.  \n   2. **From the attachment points, the lightning strike usually goes aft through the structure of the aircraft**. The high current of the lightning strike can cause damage to the mechanical systems of the aircraft. Thus, a permanent or a temporary malfunction of the electrical and electronic eguipment and systems can occur.  \n   3. **If a lightning strike occurs, it is necessary to do an inspection of the aircraft for damage**. The maintenance personnel must do this inspection before the next flight."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "The example has three short paragraphs, which give the text a clear structure and make it easy for the reader to understand."
+            }
+        ]
+    }
+    ,
+    {
+        "type_": "rule",
+        "id_": "R6.5",
+        "ref": "Issue 9 page 1-6-6",
+        "section": "Descriptive writing",
+        "category": "Paragraphs",
+        "name": "Make sure that each paragraph has only one topic.",
+        "summary": "In descriptive writing, paragraphs describe topics, and it is important that each paragraph has only one topic. The topic sentence is the first and most important sentence in a paragraph. The topic sentence gives new information and makes a logical connection between the new information and previous information. To make a logical connection in a paragraph, the topic sentence usually contains a key word and/or a connecting word or connecting phrase.",
+        "contents": [
+            {
+                "type_": "text",
+                "data": "From the topic sentences, the reader will understand the contents of your text and will find the applicable information quickly. If the reader writes down each of the topic sentences from a text, they will make a good outline of its content. The other sentences in each paragraph give the information a logical structure and add more information on the topic of the paragraph."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "If you refer to the STE text in the example for rules 6.1 and 6.2 again, you can see that the text is divided into two paragraphs:  \n - Paragraph 1 (sentences 1 thru 5) - The topic is: **Data to help the pilot**.  \n - Paragraph 2 (sentences 6 and 7) - The topic is: **How this data is transmitted**."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "In the example that follows, the underlined topic sentence at the start of each paragraph helps the reader understand the content that the paragraph explains. More information then follows gradually and connects correctly to the information in the text."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Example:"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "**Instrument Landing System**  \n  \n The **Instrument Landing System (the system) on the aircraft shows data that helps the pilot** during the approach to the runway. This system shows the pilot the deviations from the localizer course and the glideslope path. **The localizer course** aligns with the centerline of the runway. And **the glideslope** path is at a constant angle to the threshold of the runway. During the approach to the runway, **deviation pointers** in the course indicators show the pilot in which direction the aircraft must go:  \n - Left or right (for the localizer)  \n - Up or down (for the glideslope).  \n  \n **This data about deviations from the localizer course and glideslope path comes from two VHF transceivers**. These transceivers transmit this data to Air Traffic Control."
+            }
+        ]
+    }
+    ,
+    {
+        "type_": "rule",
+        "id_": "R6.6",
+        "ref": "Issue 9 page 1-6-7",
+        "section": "Descriptive writing",
+        "category": "Paragraphs",
+        "name": "Make sure that no paragraph has more than six sentences.",
+        "summary": "Paragraphs divide a text into logical units and help keep the reader's attention. If paragraphs are too long, they cannot have this function. Do not put different topics in the same paragraph. If a paragraph has more than six sentences, divide it into two smaller paragraphs. This structure will make your text easier to read.",
+        "contents": [
+            {
+                "type_": "text",
+                "data": "# Example:"
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "**Description of the fuel manifold** (refer to figure 10001)  \n The fuel manifold (1) has these primary parts:  \n - Two motorized fuel shut-off valves (referred to in this manual as a **shut-off valve**)  \n - A pressure transducer (2)  \n - Three fittings (10), (13) and (15). _(one paragraph, 1 sentence)_  \n  \n The shut-off valve operates in the valve body (21). The valve body (21) has:  \n - An aluminum alloy ball (27)  \n - A retaining ring (31)  \n - Two seals (26)  \n - A spring (25). _(one paragraph, 2 sentences)_  \n  \n  The spring (25) holds the ball (27) in position to prevent internal leakage. The preformed packings (18), (2) and (30) are installed on the seals (26), the shaft (28), and in the valve body. They prevent external leakage. One of the two seals (26), on which the spring (25) operates, has the function of a relief valve. It operates when the pressure applied in the opposite direction is more than a set value. _(one paragraph, 5 sentences)_  \n  \n The actuator assembly (4) is of a rotary type. A DC motor, which has a permanent high-speed magnet, supplies power to the actuator. Micro-switches in the actuator de-energize it at the end of travel. They also send signals to the fuel control panel to show the operation condition of the valve. A micro-relay controls the direction of shaft rotation and an electrical connector connects the actuator assembly to the aircraft electrical supply. _(one paragraph, 4 sentences)_  \n  \n The pressure transducer (2) is installed downstream of the shut-off valve (in the RH engine line). The fitting (10) connects the pressure transducer (2) to the fuel manifold (1). A lockwire safeties the pressure transducer (2). The pressure transducer (2) has an electrical connector that connects it to the Fuel Management System of the aircraft. _(one paragraph, 4 sentences)_  \n  \n Three fittings (10), (13), and (15) connect the two shut-off valves and the pressure transducer (2). They attach the fuel manifold (1) to the aircraft structure. _(one paragraph, 2 sentences)_"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "The example has short paragraphs, which give the text a clear structure and make it easy for the reader to understand."
+            }
+        ]
+    }
+    ,
+    {
+        "type_": "rule",
+        "id_": "R7.0",
+        "ref": "Issue 9 page 1-7-1",
+        "section": "Safety instructions",
+        "category": "Definitions",
+        "name": "Definitions",
+        "summary": "_Safety instructions_ tell the readers that procedures or work steps in procedures can be dangerous or cause damage. Usually, descriptive writing does not include safety instructions, unless these instructions are quoted text, or a descriptive text that includes safety risks.",
+        "contents": [
+            {
+                "type_": "text",
+                "data": "The words and definitions that follow agree with the specifications for technical publications that are applicable to aerospace and defense:  \n - A **warning** tells the reader that there is a risk of injury or death.  \n - A **caution** tells the reader that there is a risk of damage to objects."
+            }
+            ,
+            {
+                "type_": "note",
+                "data": "It is possible that other industries or domains use different words or categories for safety instructions.  \n If you use different words (for example, **danger,** **attention,** or **notice**) or graphical symbols, always make sure that the content obeys rules 7.1 thru 7.3. For more information, refer to:  \n - International Organization for Standardization. (2018). Occupational health and safety management systems — Requirements with guidance for use (ISO 45001:2018).  \n - American National Standards Institute. (2024). ANSI Z535 series.  \n - International Organization for Standardization. (2024). Graphical symbols — Safety colours and safety signs — Parts 1 — International Organization for Standardization. (2024). Graphical symbols — Safety colours and safety signs — Parts 1 thru 4 (ISO 3864)."
+            }
+        ]
+    }
+    ,
+    {
+        "type_": "rule",
+        "id_": "R7.1",
+        "ref": "Issue 9 page 1-7-2",
+        "section": "Safety instructions",
+        "category": "How to write safety instructions",
+        "name": "Use an applicable word (for example, **warning** or **caution**) to identify the level of risk.",
+        "summary": "nnn",
+        "contents": [
+            {
+                "type_": "text",
+                "data": "Use a word (for example, **warning** or **caution**) or, when applicable, a symbol, to immediately show your reader the level of the related risk."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Examples in STE:"
+            }
+            ,
+            {
+                "type_": "note",
+                "data": "All examples in this section are in uppercase letters, but STE does not give rules for formatting. Refer to the applicable specifications for technical publications, style guides, and other official directives."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "**WARNING**: BEFORE YOU FILL THE LIQUID OXYGEN SYSTEM, PUT ON A FACE MASK AND PROTECTIVE CLOTHING. LIQUID OXYGEN CAN CAUSE IRRITATION OF THE RESPIRATORY TRACT AND EYE IRRITATION."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "**WARNING**: ALWAYS KEEP YOUR HANDS AND FEET AWAY FROM THE BLADE. WHEN THE MOTOR OPERATES, THE BLADE TURNS AND CAN CAUSE INJURY."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "**CAUTION**: BEFORE YOU OPERATE THE GROUND TEST UNIT, MAKE SURE THAT THE PRESSURE REGULATOR IS SET TO ZERO. THIS PRECAUTION WILL PREVENT DAMAGE TO THE UNIT."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "**CAUTION**: DO NOT USE BLEACH OR CLEANSERS THAT CONTAIN CHLORINE TO CLEAN THE UNIT. THESE CLEANING AGENTS CAN CAUSE CORROSION."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "Do an accurate risk analysis to identify the level of risk. Then, make a decision:  \n - If there is a risk of injury or death, use a **warning.**  \n - If there is a risk of damage to machines, tools, or equipment, use a **caution.**  \n - If there are the two levels of risk together, use a **warning.**"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "# Examples:"
+            }
+            ,
+            {
+                "type_": "nonste_example",
+                "data": "**CAUTION**: EXTREME CLEANLINESS OF OXYGEN TUBES IS IMPERATIVE."
+            }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "**WARNING**: MAKE SURE THAT THE OXYGEN TUBES ARE FULLY CLEAN. OXYGEN AND GREASE MAKE AN EXPLOSIVE MIXTURE. AN EXPLOSION CAN CAUSE INJURY OR DEATH."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "In the non-STE example, the safety instruction is a caution. But if you know about oxygen systems, you also know that oxygen mixed with other materials can cause explosions. Because there is a risk of injury or death here, you must identify this safety instruction as a warning."
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "Compare the wording in the two safety instructions. The non-STE safety instruction is an abstract sentence and only makes a general statement. The warning in STE gives clear and correct information about how to decrease the risk of explosion. The warning contains the words **explosion**, **injury**, and **death** to make the reader clearly understand how important this safety instruction is."
+            }
+        ]
+    }
+    ,
+    {
+        "type_": "rule",
+        "id_": "R7.2",
+        "ref": "Issue 9 page 1-7-nnn",
+        "section": "Safety instructions",
+        "category": "How to write safety instructions",
+        "name": "Start a safety instruction with a clear and accurate command or condition.",
+        "summary": "nnn",
+        "contents": [
+            {
+                "type_": "text",
+                "data": "nnn"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "nnn"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "nnn"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "nnn"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "nnn"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "nnn"
+            }
+        ]
+    }
+    ,
+    {
+        "type_": "rule",
+        "id_": "R7.3",
+        "ref": "Issue 9 page 1-7-nnn",
+        "section": "Safety instructions",
+        "category": "How to write safety instructions",
+        "name": "Give an explanation to show the risk or possible result.",
+        "summary": "nnn",
+        "contents": [
+            {
+                "type_": "text",
+                "data": "nnn"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "nnn"
+            }
+        ]
+    }
+    ,
+    {
+        "type_": "rule",
+        "id_": "R7.nnn",
+        "ref": "Issue 9 page 1-7-nnn",
+        "section": "nnn",
+        "category": "nnn",
+        "name": "nnn",
+        "summary": "nnn",
+        "contents": [
+            {
+                "type_": "text",
+                "data": "nnn"
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "nnn"
+            }
         ]
     }
 ]
