@@ -1,4 +1,4 @@
-name: Pylint
+name: Pylint and unittest
 
 on: [push]
 
@@ -26,3 +26,7 @@ jobs:
       run: |
         export PYTHONPATH="$PYTHONPATH:$(pwd)/src"
         pylint $(git ls-files '*.py') || true
+    - name: Run unit tests
+      run: |
+        export PYTHONPATH="$PYTHONPATH:$(pwd)/src"  
+        python -m unittest discover -v -s tests -t . -p "test_*.py"
