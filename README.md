@@ -2,7 +2,7 @@
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 ![Python](https://img.shields.io/badge/python-3.11%20%7C%203.12-blue.svg)
-[![Pylint](../actions/workflows/pylint.yml/badge.svg)](../actions/workflows/pylint.yml)
+[![Pylint](https://github.com/dfch/biz.dfch.AsdSte100Lookup/actions/workflows/pylint.yml/badge.svg)](https://github.com/dfch/biz.dfch.AsdSte100Lookup/actions/workflows/pylint.yml)
 
 _A dictionary lookup for [ASD-STE100 Issue 9](https://www.asd-ste100.org/index.html) manual_
 
