@@ -2,15 +2,17 @@
 
 _A dictionary lookup for [ASD-STE100 Issue 9](https://www.asd-ste100.org/index.html) manual_
 
-* The program uses the dictionary words from the [ASD-STE100 Issue 9](https://www.asd-ste100.org/index.html) manual.
-* The program lets you lookup words from that manual and shows
-  - the "Approved" words in green, and "Rejected" words in red,
-  - the "Type" of the words,
-  - the "Meanings" for these words,
-  - the "STE examples" and "Non-STE examples" for these words,
-  - the "Alternatives" for the words,
-  - the "Spellings" and "Tenses" in blue,
-  - the "Notes" in yellow.
+* The program uses the dictionary words from the standard [ASD-STE100 Issue 9](https://www.asd-ste100.org/index.html) manual.
+* The program lets you lookup dictionary words, technical nouns and technical verbs from that standard and shows
+  - the "Approved" words in green, "Rejected" words in red, "Technical" word in dark green
+  - the "Type" of the words
+  - the "Meanings" for these words
+  - the "STE examples" and "Non-STE examples" for these words
+  - the "Alternatives" for the words
+  - the "Spellings" and "Tenses" of these words in blue
+  - the "Notes" in yellow
+* The program also lets you lookup rules from the standard.
+
 * The program lets you use regular expressions as the input.
 * The program is written in Python (and tested with v3.11.2 on Microsoft Windows 11 and WSLv2 Debian x64).
 * The program
