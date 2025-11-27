@@ -16,7 +16,6 @@
 """SaveCommand class."""
 
 from dataclasses import dataclass
-import tempfile
 from pathlib import Path
 
 from .command_base import CommandBase
