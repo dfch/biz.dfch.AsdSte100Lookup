@@ -17,13 +17,16 @@
 
 from __future__ import annotations
 import argparse
+from pathlib import Path
 import shlex
+import tempfile
 
 
 from .category_command import CategoryCommand
 from .rule_command import RuleCommand
 from .empty_command import EmptyCommand
 from .help_command import HelpCommand
+from .save_command import SaveCommand
 from .unknown_command import UnknownCommand
 from .command_base import CommandBase
 
@@ -71,6 +74,17 @@ class MainPrompt:
             help="This command shows the specified rule.",
         )
 
+        file_name = Path(tempfile.gettempdir()) / "asdste100.svg"
+        group.add_argument(
+            "-s",
+            "--save",
+            dest="save",
+            type=str,
+            nargs="?",
+            const=str(file_name),
+            help="This command saves the last output to a file.",
+        )
+
         return parser
 
     def parse(self, text: str) -> CommandBase:
@@ -81,7 +95,7 @@ class MainPrompt:
 
         text = text.strip()
 
-        if text in ["?", "-h"]:
+        if text in ["?", "-h", "--help"]:
             return HelpCommand(self._parser.format_help())
 
         # First, split the input line into args.
@@ -100,5 +114,7 @@ class MainPrompt:
             return CategoryCommand(ns.category)
         if ns.rule is not None:
             return RuleCommand(ns.rule)
+        if ns.save is not None:
+            return SaveCommand(ns.save)
 
         return UnknownCommand(text)

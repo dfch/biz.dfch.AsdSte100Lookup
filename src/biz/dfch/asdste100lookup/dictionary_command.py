@@ -69,7 +69,7 @@ class DictionaryCommand(CommandBase):
         return item
 
     def show(self, items: list[Word], prompt: str) -> Table:
-        """Shows the specified words on the console."""
+        """Creates a table of the specified words."""
 
         assert isinstance(items, list)
         assert isinstance(prompt, str)

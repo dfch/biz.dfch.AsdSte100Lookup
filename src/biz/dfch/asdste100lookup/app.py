@@ -177,13 +177,14 @@ class App:  # pylint: disable=R0903
             assert isinstance(item, Word)
 
         prompt = MainPrompt()
-        console = Console(theme=self._rule_theme)
+        console = Console(theme=self._rule_theme, record=True)
 
         while True:
             text = input(f"[{len(dictionary)}] Enter search term: ").strip()
 
             command = prompt.parse(text)
             command.invoke(console=console, dictionary=dictionary, rules=rules)
+
             if not isinstance(command, EmptyCommand):
                 continue
 
