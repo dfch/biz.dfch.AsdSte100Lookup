@@ -36,11 +36,11 @@ from .main_prompt import MainPrompt
 from .rule import Rule
 from .rule_content_type import RuleContentType
 from .rule_renderer import RuleRenderer
+from .rule_technical_word_parser import RuleTechnicalWordsParser
 from .technical_word_category import TechnicalWordCategory
 from .word import Word
 from .word_meaning import WordMeaning
 from .word_note import WordNote
-from .word_source import WordSource
 from .word_status import WordStatus
 from .word_type import WordType
 
@@ -95,77 +95,6 @@ class App:  # pylint: disable=R0903
         self._parser = parser
         self._args = parser.parse_args()
 
-    def _get_technical_words_internal(
-        self, rules: list[Rule], rule_id: str, prefix: str, type_: WordType
-    ) -> list[Word]:
-        """Returns all technical nouns from rule R1.5."""
-
-        assert isinstance(rules, list)
-        for rule in rules:
-            assert isinstance(rule, Rule)
-
-        result: list[Word] = []
-
-        rule = next((r for r in rules if r.id_ == rule_id))
-        assert isinstance(rule, Rule)
-
-        current_category: str = ""
-        contents = [d for d in rule.contents if d.type_ in ("text", "good")]
-        for content in contents:
-            if RuleContentType.TEXT == content.type_:
-                match = re.match(r"^(?P<category>\d+)\.", content.data.strip())
-                if not match:
-                    continue
-                current_category = f"{prefix}{match.group('category')}"
-                continue
-
-            category_word_list = content.data.split(", ")
-            for category_word in category_word_list:
-                note = WordNote(
-                    value=f"See '{WordSource.STE100_9}' ({current_category})."
-                )
-                word = Word(
-                    status=WordStatus.CUSTOM,
-                    source=WordSource.STE100_9,
-                    category=TechnicalWordCategory(current_category),
-                    name=category_word.strip(),
-                    type_=type_,
-                    meanings=[],
-                    spellings=[],
-                    alternatives=[],
-                    ste_example=[],
-                    nonste_example=[],
-                    note=note,
-                )
-                result.append(word)
-
-        return result
-
-    def _get_technical_words(self, rules: list[Rule]) -> list[Word]:
-        """Returns all technical nouns and verbs from rules R1.5 and R1.12."""
-
-        assert isinstance(rules, list)
-
-        result: list[Word] = []
-
-        result = self._get_technical_words_internal(
-            rules,
-            rule_id="R1.5",
-            prefix="TN",
-            type_=WordType.TECHNICAL_NOUN
-        )
-
-        result.extend(
-            self._get_technical_words_internal(
-                rules,
-                rule_id="R1.12",
-                prefix="TV",
-                type_=WordType.TECHNICAL_VERB
-            )
-        )
-
-        return result
-
     def prompt_user_loop(
         self,
         dictionary: list[Word],
@@ -191,64 +120,6 @@ class App:  # pylint: disable=R0903
 
             log.debug("Exiting ...")
             break
-
-    # @staticmethod
-    # def extract_ste_nonste(line_info: LineInfo) -> tuple[str, str] | None:
-    #     """Extracts ste and non ste examples from LineInfo."""
-    #     assert line_info is not None
-
-    #     tokens = line_info.tokens
-
-    #     if line_info.tokens_count <= ColumnIndex.MEANING_ALT:
-    #         return None
-
-    #     ste_example = ""
-    #     if line_info.tokens_count > ColumnIndex.STE:
-    #         ste_example = tokens[ColumnIndex.STE]
-
-    #     nonste_example = ""
-    #     if line_info.tokens_count > ColumnIndex.NONSTE:
-    #         nonste_example = tokens[ColumnIndex.NONSTE]
-
-    #     return (ste_example.strip(), nonste_example.strip())
-
-    # @staticmethod
-    # def extract_word(line_info: LineInfo) -> Word | None:
-    #     """Extracts a Word from LineInfo."""
-
-    #     assert line_info is not None
-
-    #     tokens = line_info.tokens
-
-    #     if line_info.tokens_count <= ColumnIndex.MEANING_ALT:
-    #         return None
-
-    #     meaning_or_alt = tokens[ColumnIndex.MEANING_ALT].strip()
-
-    #     dict_word = DictionaryInfo.get_single_word(meaning_or_alt)
-    #     if not dict_word:
-    #         return None
-
-    #     ste_example = ""
-    #     if line_info.tokens_count > ColumnIndex.STE:
-    #         ste_example = tokens[ColumnIndex.STE]
-
-    #     nonste_example = ""
-    #     if line_info.tokens_count > ColumnIndex.NONSTE:
-    #         nonste_example = tokens[ColumnIndex.NONSTE]
-
-    #     result = Word(
-    #         status=dict_word.status,
-    #         name=dict_word.name,
-    #         type_=dict_word.type_,
-    #         source=WordSource.STE100_9,
-    #         meanings=[],
-    #         spellings=[],
-    #         alternatives=[],
-    #         ste_example=[ste_example],
-    #         nonste_example=[nonste_example],
-    #     )
-    #     return result
 
     def on_parse(self) -> None:
         """This is the handler for the `dictionary` command."""
@@ -316,14 +187,17 @@ class App:  # pylint: disable=R0903
                     continue
 
         RuleRenderer().show(
-            console=console, rules=selected_rules, is_summary_only=self._args.summary
+            console=console,
+            rules=selected_rules,
+            is_summary_only=self._args.summary
         )
 
     def on_dictionary(self, dictionary_file_name: str) -> None:
         """This is the handler for the `dictionary` command."""
 
         assert (
-            isinstance(dictionary_file_name, str) and "" != dictionary_file_name.strip()
+            isinstance(dictionary_file_name, str) and
+            "" != dictionary_file_name.strip()
         )
 
         assert dictionary_file_name is not None and "" != dictionary_file_name
@@ -338,7 +212,9 @@ class App:  # pylint: disable=R0903
             dictionary_json = json.load(f)
 
         word_list = [
-            from_dict(data_class=Word, data=item, config=self._dictionary_config)
+            from_dict(data_class=Word,
+                      data=item,
+                      config=self._dictionary_config)
             for item in dictionary_json
         ]
         dictionary = sorted(word_list, key=lambda e: e.name.lower())
@@ -348,7 +224,7 @@ class App:  # pylint: disable=R0903
         rules = self._load_rules(rules_fullname)
 
         # Load technical words and add them to the ditionary.
-        techncal_words = self._get_technical_words(rules)
+        techncal_words = RuleTechnicalWordsParser().invoke(rules)
         dictionary.extend(techncal_words)
         dictionary = sorted(dictionary, key=lambda e: e.name.lower())
 
