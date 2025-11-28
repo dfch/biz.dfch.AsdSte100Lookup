@@ -7,3 +7,4 @@ join (v)	BOND (v)	USE ADHESIVE No. 35 TO BOND METAL TO METAL.	Use adhesive No. 3
 	CONNECT (v)	CONNECT THE HOSE TO THE PIPE WITH A CLIP.	Join the hose to the pipe with a clip.
 JOINT (n)	The area at which two surfaces or edges touch or are attached	SEAL THE JOINT WITH SEALING COMPOUND.	
 just (adv)	IMMEDIATELY (adv)	KEEP THE RING IMMEDIATELY ABOVE THE JACK COLLARS.	Keep the ring just above the jack collars.
+	ONLY (adv)	ONLY APPLY VERY LIGHT PRESSURE TO THE SURFACE.	Just apply very light pressure to the surface.

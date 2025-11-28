@@ -41035,6 +41035,23 @@
           "Keep the ring just above the jack collars."
         ],
         "note": null
+      },
+      {
+        "status": "approved",
+        "name": "ONLY",
+        "type_": "adv",
+        "meanings": [],
+        "spellings": [],
+        "alternatives": [],
+        "source": "STE100:9",
+        "category": "0",
+        "ste_example": [
+          "ONLY APPLY VERY LIGHT PRESSURE TO THE SURFACE."
+        ],
+        "nonste_example": [
+          "Just apply very light pressure to the surface."
+        ],
+        "note": null
       }
     ],
     "source": "STE100:9",
