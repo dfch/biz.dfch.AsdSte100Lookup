@@ -453,7 +453,7 @@ class App:  # pylint: disable=R0903
                     ste_example=ste or "",
                     nonste_example=non_ste or "",
                 )
-                xyz = Word(
+                result = Word(
                     status=item.word.status,
                     name=item.word.name,
                     type_=item.word.type_,
@@ -481,7 +481,7 @@ class App:  # pylint: disable=R0903
                     alternative.ste_example.append(ste)
                 if non_ste:
                     alternative.nonste_example.append(non_ste)
-                xyz = Word(
+                result = Word(
                     status=item.word.status,
                     name=item.word.name,
                     type_=item.word.type_,
@@ -492,7 +492,7 @@ class App:  # pylint: disable=R0903
                     note=WordNote(value=""),
                 )
             case WordState.WORD_NOTE:
-                xyz = Word(
+                result = Word(
                     status=item.word.status,
                     name=item.word.name,
                     type_=item.word.type_,
@@ -511,7 +511,7 @@ class App:  # pylint: disable=R0903
                     f"[{previous_state}] --> [{current_state}] "
                     f"@ {line_info.get_type().name}: '{line_info}'"
                 )
-        assert xyz
+        assert result
 
         for line_info in item.line_infos[1:]:
             next_state = self.get_next_state(current_state, line_info)
@@ -533,24 +533,24 @@ class App:  # pylint: disable=R0903
             match current_state:
                 case WordState.NOTE:
                     assert description
-                    assert xyz.note
-                    xyz.note.value = DictionaryInfo.get_note(description)
-                    xyz.note.ste_example = ste or ""
-                    xyz.note.nonste_example = non_ste or ""
+                    assert result.note
+                    result.note.value = DictionaryInfo.get_note(description)
+                    result.note.ste_example = ste or ""
+                    result.note.nonste_example = non_ste or ""
                 case WordState.MEANING:
                     meanning = WordMeaning(
                         value=description or "",
                         ste_example=ste or "",
                         nonste_example=non_ste or "",
                     )
-                    xyz.meanings.append(meanning)
+                    result.meanings.append(meanning)
                 case WordState.MEANING_EXAMPLE:
                     meanning = WordMeaning(
                         value=description or "\u200b",
                         ste_example=ste or "",
                         nonste_example=non_ste or "",
                     )
-                    xyz.meanings.append(meanning)
+                    result.meanings.append(meanning)
                 case WordState.ALTERNATIVE:
                     assert description
                     alt_word = DictionaryInfo.get_single_word(description)
@@ -571,7 +571,7 @@ class App:  # pylint: disable=R0903
                     if non_ste:
                         alternative.nonste_example.append(non_ste)
 
-                    xyz.alternatives.append(alternative)
+                    result.alternatives.append(alternative)
                 case WordState.ALTERNATIVE_EXAMPLE:
                     log.warning(
                         "[%s] ALTERNATIVE_EXAMPLE '%s (%s)': "
@@ -579,15 +579,15 @@ class App:  # pylint: disable=R0903
                         item.filename,
                         item.word.name,
                         item.word.type_,
-                        xyz.alternatives[-1].name,
+                        result.alternatives[-1].name,
                     )
                     if ste:
-                        xyz.alternatives[-1].ste_example.append(ste)
+                        result.alternatives[-1].ste_example.append(ste)
                     if non_ste:
-                        xyz.alternatives[-1].nonste_example.append(non_ste)
+                        result.alternatives[-1].nonste_example.append(non_ste)
                 case WordState.NOTE_ALTERNATIVE:
                     assert description
-                    assert xyz.note
+                    assert result.note
                     assert description
                     alt_word = DictionaryInfo.get_single_word(description)
                     assert alt_word
@@ -606,16 +606,16 @@ class App:  # pylint: disable=R0903
                         alternative.ste_example.append(ste)
                     if non_ste:
                         alternative.nonste_example.append(non_ste)
-                    xyz.note.words.append(alternative)
+                    result.note.words.append(alternative)
                 case WordState.NOTE_ALTERNATIVE_EXAMPLE:
-                    assert xyz.note
+                    assert result.note
                     log.warning(
                         "[%s] NOTE_ALTERNATIVE_EXAMPLE '%s (%s)': "
                         "alternative '%s' has multiple examples.",
                         item.filename,
                         item.word.name,
                         item.word.type_,
-                        xyz.note.words[-1].name,
+                        result.note.words[-1].name,
                     )
                 case _:
                     raise ValueError(
@@ -623,7 +623,6 @@ class App:  # pylint: disable=R0903
                         f"@ {line_info.get_type().name}: '{line_info}'"
                     )
 
-        result = xyz
         return result
 
     def parse_source(
