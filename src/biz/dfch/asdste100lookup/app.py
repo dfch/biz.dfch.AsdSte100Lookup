@@ -194,7 +194,8 @@ class App:  # pylint: disable=R0903
             log.debug("Exiting ...")
             break
 
-    def process_file(self, file: Path) -> tuple[list[LineInfo], list[WordInfo]]:
+    @staticmethod
+    def process_file(file: Path) -> tuple[list[LineInfo], list[WordInfo]]:
         """Parses a single OCR dictionary file."""
 
         assert file is not None and isinstance(file, Path)
@@ -283,7 +284,8 @@ class App:  # pylint: disable=R0903
 
         return result
 
-    def extract_ste_nonste(self, line_info: LineInfo) -> tuple[str, str] | None:
+    @staticmethod
+    def extract_ste_nonste(line_info: LineInfo) -> tuple[str, str] | None:
         """Extracts ste and non ste examples from LineInfo."""
         assert line_info is not None
 
@@ -302,7 +304,8 @@ class App:  # pylint: disable=R0903
 
         return (ste_example.strip(), nonste_example.strip())
 
-    def extract_word(self, line_info: LineInfo) -> Word | None:
+    @staticmethod
+    def extract_word(line_info: LineInfo) -> Word | None:
         """Extracts a Word from LineInfo."""
 
         assert line_info is not None
@@ -339,8 +342,9 @@ class App:  # pylint: disable=R0903
         )
         return result
 
+    @staticmethod
     def get_next_state(
-        self, current_state: WordState, line_info: LineInfo
+        current_state: WordState, line_info: LineInfo
     ) -> WordState:
         """Returns the next state based on the current state and line_info."""
 
@@ -417,7 +421,8 @@ class App:  # pylint: disable=R0903
 
         return next_state
 
-    def process_wordinfo(self, item: WordInfo) -> Word | None:
+    @staticmethod
+    def process_wordinfo(item: WordInfo) -> Word | None:
         """Processes a WordInfo."""
 
         assert item is not None
@@ -426,7 +431,7 @@ class App:  # pylint: disable=R0903
         current_state = WordState.INITIAL
         assert 0 < len(item.line_infos)
         line_info = item.line_infos[0]
-        next_state = self.get_next_state(current_state, line_info)
+        next_state = App.get_next_state(current_state, line_info)
         log.debug(
             "[%s] [%s --> %s] @ %s: %s",
             item.filename,
@@ -515,7 +520,7 @@ class App:  # pylint: disable=R0903
         assert result
 
         for line_info in item.line_infos[1:]:
-            next_state = self.get_next_state(current_state, line_info)
+            next_state = App.get_next_state(current_state, line_info)
             log.debug(
                 "[%s] [%s --> %s] @ %s: %s",
                 item.filename,
@@ -626,8 +631,9 @@ class App:  # pylint: disable=R0903
 
         return result
 
+    @staticmethod
     def parse_source(
-        self, path: Path, prefix: str, extension: str, dictionary_file_name: str
+        path: Path, prefix: str, extension: str, dictionary_file_name: str
     ) -> None:
         """Parse OCR dictionary files."""
 
@@ -649,13 +655,13 @@ class App:  # pylint: disable=R0903
         word_infos: list[WordInfo] = []
         for file in files:
 
-            _, info = self.process_file(file)
+            _, info = App.process_file(file)
             word_infos.extend(info)
 
         words: list[Word] = []
         for word_info in word_infos:
 
-            word = self.process_wordinfo(word_info)
+            word = App.process_wordinfo(word_info)
             if word is None:
                 continue
             words.append(word)
