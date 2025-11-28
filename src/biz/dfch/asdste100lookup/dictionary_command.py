@@ -204,10 +204,8 @@ class DictionaryCommand(CommandBase):
                         )
 
             if word.note:
-                if isinstance(word.note, WordNote):
-                    note = word.note
-                else:
-                    note = word.note
+                assert isinstance(word.note, WordNote)
+                note = word.note
 
                 if note.words:
                     nwords = note.words
