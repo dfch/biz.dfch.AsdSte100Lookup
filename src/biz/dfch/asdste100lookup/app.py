@@ -31,6 +31,7 @@ from biz.dfch.logging import log
 from biz.dfch.version import Version
 
 from .column_index import ColumnIndex
+from .constant import Constant
 from .empty_command import EmptyCommand
 from .dictionary_info import DictionaryInfo
 from .line_info import LineInfo
@@ -807,5 +808,4 @@ class App:  # pylint: disable=R0903
             self.on_dictionary(self._args.input)
             return
 
-        # Until we find a better solution ...
-        self.on_dictionary(Args._DICTIONARY_FILE)  # pylint: disable=W0212
+        self.on_dictionary(Constant.DICTIONARY_FILE)

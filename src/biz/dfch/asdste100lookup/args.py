@@ -19,15 +19,13 @@ from __future__ import annotations
 
 import argparse
 
+from .constant import Constant
+
 
 class Args:
     """
     Definition and handling of supported command line arguments.
     """
-
-    # Note: also adjust in pyproject.toml
-    _VERSION = "1.3.1"
-    _PROG_NAME = "AsdSte100Lookup"
 
     _parser: argparse.ArgumentParser
 
@@ -42,8 +40,6 @@ class Args:
         "NOTSET",
     ]
     _DEFAULT_LOG_LEVEL = "ERROR"
-
-    _DICTIONARY_FILE = "dictionary.json"
 
     def __init__(self):
 
@@ -64,12 +60,12 @@ class Args:
         )
 
         self._parser = argparse.ArgumentParser(
-            description=f"{self._PROG_NAME}, "
-            f"v{self._VERSION}"
+            description=f"{Constant.PROG_NAME}, "
+            f"v{Constant._VERSION}"
             ". "
             "A dictionary lookup tool for ASD-STE100.",
             formatter_class=argparse.RawDescriptionHelpFormatter,
-            prog=self._PROG_NAME,
+            prog=Constant.PROG_NAME,
             epilog="Copyright 2025 Ronald Rink, "
             "https://github.com/dfch/biz.dfch.AsdSte100Lookup"
             ". "
@@ -96,10 +92,10 @@ class Args:
         dictionary_parser.add_argument(
             "-i",
             "--input",
-            default=self._DICTIONARY_FILE,
+            default=Constant.DICTIONARY_FILE,
             required=False,
             help="Name of the dictionary file to read entries from "
-            f"(default: {self._DICTIONARY_FILE}).",
+            f"(default: {Constant.DICTIONARY_FILE}).",
         )
 
         rules_parser = subparsers.add_parser(
@@ -109,8 +105,7 @@ class Args:
         rules_group.add_argument(
             "--list",
             action="store_true",
-            help="Shows all rules."
-        )
+            help="Shows all rules.")
         rules_group.add_argument(
             "--id",
             type=str,
@@ -119,12 +114,12 @@ class Args:
         rules_group.add_argument(
             "--section",
             type=str,
-            help="Shows rules by specified section (regex match)."
-            )
+            help="Shows rules by specified section (regex match).",
+        )
         rules_group.add_argument(
             "--category",
             type=str,
-            help="Shows rules by specified category (regex match)."
+            help="Shows rules by specified category (regex match).",
         )
         rules_parser.add_argument(
             "--summary",
@@ -167,10 +162,10 @@ class Args:
         parse_parser.add_argument(
             "-o",
             "--output",
-            default=self._DICTIONARY_FILE,
+            default=Constant.DICTIONARY_FILE,
             required=False,
             help="Name of the dictionary file to save entries to "
-            f"(default: {self._DICTIONARY_FILE}).",
+            f"(default: {Constant.DICTIONARY_FILE}).",
         )
 
     @staticmethod
