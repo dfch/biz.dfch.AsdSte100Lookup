@@ -39,19 +39,8 @@ class RuleRenderer:  # pylint: disable=R0903
         for rule in rules:
 
             p = Panel(
-                f"[black]{rule.name}[/black]",
-                title=f"Rule {rule.id_}",
-                title_align="left",
-                subtitle=f"{rule.section}, {rule.category}",
-                subtitle_align="left",
-                border_style="bright_black",
-                style="on bright_yellow",
-                padding=(1, 1),
-                box=box.HEAVY_EDGE,
-            )
-            p = Panel(
                 Markdown(rule.name),
-                title=f"Rule {rule.id_}",
+                title=f"{rule.type_.capitalize()} {rule.id_}",
                 title_align="left",
                 subtitle=f"{rule.section}, {rule.category}, {rule.ref}",
                 subtitle_align="left",
