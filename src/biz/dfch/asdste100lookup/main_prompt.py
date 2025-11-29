@@ -25,6 +25,7 @@ import tempfile
 from .category_command import CategoryCommand
 from .rule_command import RuleCommand
 from .empty_command import EmptyCommand
+from .exit_command import ExitCommand
 from .help_command import HelpCommand
 from .save_command import SaveCommand
 from .unknown_command import UnknownCommand
@@ -82,7 +83,14 @@ class MainPrompt:  # pylint: disable=R0903
             type=str,
             nargs="?",
             const=str(file_name),
-            help="This command saves the last output to a file.",
+            help="This command saves the last console output to a file.",
+        )
+
+        group.add_argument(
+            "--exit",
+            dest="exit",
+            action="store_true",
+            help="This command stops the programme.",
         )
 
         return parser
@@ -116,5 +124,7 @@ class MainPrompt:  # pylint: disable=R0903
             return RuleCommand(ns.rule)
         if ns.save is not None:
             return SaveCommand(ns.save)
+        if ns.exit is not None:
+            return ExitCommand(ns.exit)
 
         return UnknownCommand(text)
