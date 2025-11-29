@@ -555,7 +555,7 @@
             ,
             {
                 "type_": "nonste_example",
-                "data": "Make sure that the two spigots at the base of the unit engage."
+                "data": "Make sure that the two spigots at the ``base`` of the unit engage."
             }
             ,
             {
