@@ -390,7 +390,7 @@
             ,
             {
                 "type_": "good",
-                "data": "92, 303, ampere (A), degree (°), first (1st), half (1/2), hour (h), kilogram (kg), knot, liter (L or I), meter (m), mile, minute ('), month, ohm (Q), one, one-quarter (1/4), second (''), second (s), second (2nd), square inch (sq.in.), spring, third (3rd), three, year, winter, zero"
+                "data": "92, 303, ampere (A), degree (°), first (1st), half (1/2), hour (h), kilogram (kg), knot, liter (L or I), meter (m), mile, minute ('), month, ohm (Ω), one, one-quarter (1/4), second (''), second (s), second (2nd), square inch (sq.in.), spring, third (3rd), three, year, winter, zero"
             }
             ,
             {
