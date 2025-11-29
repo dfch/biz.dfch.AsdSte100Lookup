@@ -13,30 +13,28 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-"""RuleCommand class."""
+"""EraseConsoleBufferCommand class."""
 
+from abc import abstractmethod
 from dataclasses import dataclass
-import re
 
-from .rule_renderer import RuleRenderer
-from .erase_console_buffer_command import EraseConsoleBufferCommand
+from rich.console import Console
+
+from .command_base import CommandBase
 from .rule import Rule
+from .word import Word
 
 
 @dataclass
-class RuleCommand(EraseConsoleBufferCommand):
-    """Represents the rule command."""
+class EraseConsoleBufferCommand(CommandBase):
+    """Represents the command that erases the console export buffer."""
 
-    def invoke(self, console, dictionary, rules) -> None:
-        super().invoke(console, dictionary, rules)
+    @abstractmethod
+    def invoke(
+        self, console: Console, dictionary: list[Word], rules: list[Rule]
+    ) -> None:
+        """Erases the console export buffer."""
 
-        selected_rules: list[Rule] = []
-        for rule in rules:
-            if re.search(self.value, rule.id_, re.IGNORECASE):
-                selected_rules.append(rule)
-                continue
+        super().invoke(console=console, dictionary=dictionary, rules=rules)
 
-        RuleRenderer().show(
-            console=console,
-            rules=selected_rules,  # pylint: disable=R0801
-            is_summary_only=False)
+        _ = console.export_svg(clear=True)

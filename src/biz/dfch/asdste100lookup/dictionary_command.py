@@ -24,7 +24,7 @@ from rich.table import Table
 from biz.dfch.logging import log  # pylint: disable=E0401
 
 from .colouriser import Colouriser
-from .command_base import CommandBase
+from .erase_console_buffer_command import EraseConsoleBufferCommand
 from .table_row import TableRow
 from .word import Word
 from .word_note import WordNote
@@ -32,7 +32,7 @@ from .word_status import WordStatus
 
 
 @dataclass
-class DictionaryCommand(CommandBase):
+class DictionaryCommand(EraseConsoleBufferCommand):
     """Shows dictionary words on the console."""
 
     def to_colour(self, text: str, value: str, status: str) -> str:
@@ -261,12 +261,12 @@ class DictionaryCommand(CommandBase):
             for row in rows:
                 if row.description:
                     row.description = row.description.replace("\u200b", "")
-                log.debug(  
+                log.debug(
                     "'%s', '%s', '%s', '%s'",
                     row.word,
                     row.description,
                     row.ste_example,
-                    row.nonste_example
+                    row.nonste_example,
                 )
                 result.add_row(
                     row.word or "",

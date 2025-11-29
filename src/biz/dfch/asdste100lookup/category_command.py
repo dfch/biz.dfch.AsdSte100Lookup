@@ -58,9 +58,6 @@ class CategoryCommand(DictionaryCommand):
         cat_descriptions = sorted(cat_descriptions)
         info = '\n'.join(cat_descriptions)
 
-        # Clear recording buffer before next output.
-        _ = console.export_svg(clear=True)
-
         console.print(info)
         console.print(result)
         print(info)

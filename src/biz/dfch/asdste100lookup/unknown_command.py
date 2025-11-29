@@ -66,9 +66,6 @@ class UnknownCommand(DictionaryCommand):
         result = self.show(
             items=list(matching_words.values()), prompt=self.value)
 
-        # Clear recording buffer before next output.
-        _ = console.export_svg(clear=True)
-
         if 0 == len(result.rows):
             console.print("No match.")
         else:
