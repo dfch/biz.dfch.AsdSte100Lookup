@@ -1896,7 +1896,7 @@
             ,
             {
                 "type_": "good",
-                "data": "REMOVE (v)  \n REMOVES,  \n REMOVED,  \n REMOVED"
+                "data": "**REMOVE** (v)  \n REMOVES,  \n REMOVED,  \n REMOVED"
             }
             ,
             {
