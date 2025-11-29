@@ -315,12 +315,12 @@
             ,
             {
                 "type_": "text",
-                "data": "2. Vehicles and machines, and locations on them  \n Terms that refer to all types of vehicles and machines., and the locations that are part of these units."
+                "data": "2. Vehicles and machines, and locations on them  \n Terms that refer to all types of vehicles and machines, and the locations that are part of these units."
             }
             ,
             {
                 "type_": "good",
-                "data": "aircraft, aircraft carrier, airframe, bicycle, cabin, car, cargo compartment, cargo hold, cockpit, deck, engine room, fuselage, helicopert, gallery, lifeboat, overhead panel, ship, submarine, tank, train, truck, wing, wing root"
+                "data": "aircraft, aircraft carrier, airframe, bicycle, cabin, car, cargo compartment, cargo hold, cockpit, deck, engine room, fuselage, helicopter, galley, lifeboat, overhead panel, ship, submarine, tank, train, truck, wing, wing root"
             }
             ,
             {
