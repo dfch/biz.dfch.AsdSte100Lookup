@@ -1348,6 +1348,11 @@
                 "type_": "comment",
                 "data": "(**Respond** is not permitted when it is in a different context.)"
             }
+            ,
+            {
+                "type_": "ste_example",
+                "data": "If the instrument does not operate correcty, do a test."
+            }
         ]
     }
     ,
