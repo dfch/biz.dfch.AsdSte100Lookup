@@ -272,6 +272,11 @@
                 "type_": "good",
                 "data": "| Base form  | Comparative form  | Superlative form |  \n | :------- | :------- | :------- |  \n |     |     |     |  \n |     |     |     |  \n | **Slow** | **Slower** | **Slowest** |"
             }
+            ,
+            {
+                "type_": "text",
+                "data": "Adjectives that make their comparative and superlative forms with **more** and **most** do not have these forms in the dictionary. This is because **more** and **most** are approved words."
+            }
         ]
     },
     {
