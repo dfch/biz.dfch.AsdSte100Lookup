@@ -100,7 +100,7 @@
             ,
             {
                 "type_": "text",
-                "data": "Some words are approved as more than one part of speech. For example, “clean” is an approved verb and an approved adjective. The position of the word in the sentence shows its function (and its meaning) because verbs and adjectives have different positions."
+                "data": "Some words are approved as more than one part of speech. For example, **clean** is an approved verb and an approved adjective. The position of the word in the sentence shows its function (and its meaning) because verbs and adjectives have different positions."
             }
             ,
             {
