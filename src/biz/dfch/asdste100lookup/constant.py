@@ -23,7 +23,7 @@ class Constant:
     """System-wide constants."""
 
     # Note: also adjust in pyproject.toml.
-    _VERSION = "1.3.1"
+    _VERSION = "1.4.0-beta1"
     PROG_NAME = "AsdSte100Lookup"
 
     DICTIONARY_FILE = "dictionary.json"

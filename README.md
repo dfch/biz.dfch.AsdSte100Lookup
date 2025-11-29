@@ -27,6 +27,36 @@ _A dictionary lookup for [ASD-STE100 Issue 9](https://www.asd-ste100.org/index.h
   - Copyright by (c) [ASD](https://www.asd-europe.org/).
 * I am in no way afiliated with ASD. ASD does not endorse my work.
 
+## Setting up VSCode
+
+In addition to my *user* `settings.json` this is the project specific `settings.json`:
+
+```json
+{
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        "tests",
+        "-t",
+        ".",
+        "-p",
+        "test_*.py"
+    ],
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}/src"
+    ],
+    "python.autoComplete.extraPaths": [
+        "${workspaceFolder}/src"
+    ],
+    "python.testing.pytestEnabled": false,
+    "python.testing.unittestEnabled": true
+}
+```
+
+This is mainly used to:
+* enable the tests find the `src`
+* auto-complete modules starting with `biz....`
+
 ## Build as one-file executable
 
 1. Download the files from the repository into a directory on your system. We refer to this directory as `<prj-root>`.
