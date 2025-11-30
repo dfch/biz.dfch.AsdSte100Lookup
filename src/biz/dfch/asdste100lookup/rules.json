@@ -4318,12 +4318,12 @@
             ,
             {
                 "type_": "ste_example",
-                "data": "**WARNING**: DO NOT SWALLOW THE SOLVENT. ALWAYS MAKE SURE THAT YOU KNOW THE SAFETY PRECAUTIONS AND FIRST AID INSTRUCTIONS FOR SOLVENTS. **SOLVENTS ARE POISONOUS AND CAN CAUSE INJURY OR DEATH**"
+                "data": "**WARNING**: DO NOT SWALLOW THE SOLVENT. ALWAYS MAKE SURE THAT YOU KNOW THE SAFETY PRECAUTIONS AND FIRST AID INSTRUCTIONS FOR SOLVENTS. **SOLVENTS ARE POISONOUS AND CAN CAUSE INJURY OR DEATH**."
             }
             ,
             {
                 "type_": "ste_example",
-                "data": "**CAUTION**: DO NOT USE BLEACH OR CLEANSERS THAT CONTAIN CHLORINE TO CLEAN THE UNIT. **THESE CLEANING AGENTS CAN CAUSE CORROSION**"
+                "data": "**CAUTION**: DO NOT USE BLEACH OR CLEANSERS THAT CONTAIN CHLORINE TO CLEAN THE UNIT. **THESE CLEANING AGENTS CAN CAUSE CORROSION**."
             }
             ,
             {
@@ -4349,7 +4349,7 @@
         "contents": [
             {
                 "type_": "text",
-                "data": "STE does not give you rules about general punctuation. For more information, refer to official reference books. For example:  \n - The Chicago Manual of Style. (2024). The Chicago manual of style (18th ed.).  \n - Sabin, W. A. (2011). The Gregg reference manual: A manual of style, grammar, usage, and formatting (10th ed.).  \n - U.S. Government Publishing Office. (2020). U.S. Government Publishing Office style manual.  \n - Swan, M. (2017). Practical English usage (4th ed.).  \n - Kirkman, J. (2006). Punctuation matters: Advice on punctuation for scientific and technical writing."
+                "data": "STE does not give you rules about general punctuation. For more information, refer to official reference books. For example:  \n - [The Chicago Manual of Style. (2024). The Chicago manual of style (18th ed.)](https://press.uchicago.edu/ucp/books/book/chicago/C/bo213648716.html).  \n - [Sabin, W. A. (2011). The Gregg reference manual: A manual of style, grammar, usage, and formatting (10th ed.)](https://www.mheducation.ca/product/the-gregg-reference-manual-9781264928033-can-group).  \n - [U.S. Government Publishing Office. (2020). U.S. Government Publishing Office style manual](https://www.govinfo.gov/app/details/GPO-STYLEMANUAL-2016).  \n - [Swan, M. (2017). Practical English usage (4th ed.)](https://elt.oup.com/catalogue/items/global/grammar_vocabulary/practical_english_usage_4th_edition/?cc=gb&selLanguage=en).  \n - [Kirkman, J. (2006). Punctuation matters: Advice on punctuation for scientific and technical writing](https://www.biblio.com/book/punctuation-matters-advice-punctuation-scientific-technical/d/1462300223)."
             }
         ]
     }
