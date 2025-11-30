@@ -3131,7 +3131,7 @@
             ,
             {
                 "type_": "ste_example",
-                "data": "Tag the disassembled parts. **This** method will help you during the subseguent procedures."
+                "data": "Tag the disassembled parts. **This** method will help you during the subsequent procedures."
             }
             ,
             {
@@ -3296,7 +3296,7 @@
         "type_": "rule",
         "id_": "R5.1",
         "ref": "Issue 9 page 1-5-1",
-        "section": "Prcedural writing",
+        "section": "Procedural writing",
         "category": "Sentences",
         "name": "Write short sentences. Use a maximum of 20 words in each sentence.",
         "summary": "Procedures give instructions that tell you how to do a task. Long sentences in work steps are not easy to understand.",
@@ -3377,7 +3377,7 @@
         "type_": "rule",
         "id_": "R5.2",
         "ref": "Issue 9 page 1-5-2",
-        "section": "Prcedural writing",
+        "section": "Procedural writing",
         "category": "Verbs in procedures",
         "name": "Write only one instruction in each sentence unless two or more actions occur at the same time.",
         "summary": "If there are too many instructions in a sentence, the sentence is not easy to read and understand. Write only one instruction in each sentence and clearly show (usually with numbers or letters) the sequence of the work steps. You can use as many work steps as you want in a procedure.",
@@ -3478,7 +3478,7 @@
         "type_": "rule",
         "id_": "R5.3",
         "ref": "Issue 9 page 1-5-3",
-        "section": "Prcedural writing",
+        "section": "Procedural writing",
         "category": "Verbs in procedures",
         "name": "Write instructions in the imperative (command) form.",
         "summary": "An instruction tells the reader to do something. Write the verb in the imperative (command) form.",
@@ -3574,7 +3574,7 @@
         "type_": "rule",
         "id_": "R5.4",
         "ref": "Issue 9 page 1-5-4",
-        "section": "Prcedural writing",
+        "section": "Procedural writing",
         "category": "Descriptive statements in instructions",
         "name": "When there is a condition that the reader must know about first, start the instruction with a descriptive statement. Then, divide that descriptive statement from the command with a comma.",
         "summary": "If a special condition is necessary for a work step, the reader must know the condition first.",
@@ -3650,7 +3650,7 @@
         "type_": "rule",
         "id_": "R5.5",
         "ref": "Issue 9 page 1-5-5",
-        "section": "Prcedural writing",
+        "section": "Procedural writing",
         "category": "Notes",
         "name": "Write notes only to give information, not instructions.",
         "summary": "Notes only give information to help the reader during a procedure. They contain descriptive text and obey the rules for descriptive writing.",
