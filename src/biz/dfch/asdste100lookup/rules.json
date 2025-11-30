@@ -2939,6 +2939,11 @@
             }
             ,
             {
+                "type_": "ste_example",
+                "data": "The report must include:  \n - A complete REC-1 form  \n - A three-view drawing of the unit  \n - A photograph of the unit  \n - A copy of the source data."
+            }
+            ,
+            {
                 "type_": "text",
                 "data": "In the two examples that follow, the vertical lists give a procedure and a description. Letters and numbers identify each work step."
             }
