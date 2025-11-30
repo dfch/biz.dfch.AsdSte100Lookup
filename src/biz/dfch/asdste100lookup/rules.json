@@ -4745,7 +4745,7 @@
             ,
             {
                 "type_": "ste_example",
-                "data": "The resistance must be 10 Q.   _(5 words)_  \n The resistance must be 10 ohms.   _(5 words)_"
+                "data": "The resistance must be 10 Ω.   _(5 words)_  \n The resistance must be 10 ohms.   _(5 words)_"
             }
             ,
             {
