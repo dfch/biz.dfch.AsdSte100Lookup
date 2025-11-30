@@ -74,7 +74,7 @@ This is mainly used to:
 
     a. This command builds the program into a single executable file for your operating system. This includes the Python runtime.
 
-    b. The result is in the directory with the name `sub`. The name of the exutable is `AsdSte100Lookup` or `AsdSte100Lookup.exe`.
+    b. The result is in the directory with the name `dist`. The name of the exutable is `AsdSte100Lookup` or `AsdSte100Lookup.exe`.
 
 ```bash
 (venv) <prj-root> $ pyinstaller --clean --onefile --name AsdSte100Lookup \
