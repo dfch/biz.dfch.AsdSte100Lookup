@@ -5972,7 +5972,7 @@
         "section": "Writing Practices",
         "category": "General recommendations",
         "name": "The pronoun **this**",
-        "summary": "When you use the pronoun **this** in a sentence, make sure that the reader knows the item the pronoun refers to. If **this** can refer to more than one item, give the applicable context again.",
+        "summary": "When you use the pronoun _this_ in a sentence, make sure that the reader knows the item the pronoun refers to. If **this** can refer to more than one item, give the applicable context again.",
         "contents": [
             {
                 "type_": "text",
