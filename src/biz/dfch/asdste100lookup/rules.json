@@ -5986,7 +5986,7 @@
             ,
             {
                 "type_": "text",
-                "data": "(Which is the cause of damage to the probe? The cover in the locked condition? Or the cover in the unlocked condition?)"
+                "data": "_(Which is the cause of damage to the probe? The cover in the locked condition? Or the cover in the unlocked condition?)_"
             }
             ,
             {
