@@ -4067,7 +4067,7 @@
             ,
             {
                 "type_": "text",
-                "data": "In the example, the underlined topic sentence at the start of each paragraph helps the reader understand the content of the paragraph and its topic. When a new paragraph starts, the reader knows that there will be a new topic or different information in that paragraph."
+                "data": "In the example, the **underlined** topic sentence at the start of each paragraph helps the reader understand the content of the paragraph and its topic. When a new paragraph starts, the reader knows that there will be a new topic or different information in that paragraph."
             }
             ,
             {
