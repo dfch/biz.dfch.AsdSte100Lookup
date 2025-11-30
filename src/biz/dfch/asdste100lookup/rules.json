@@ -5981,7 +5981,12 @@
             ,
             {
                 "type_": "not_recommended",
-                "data": "Make sure that the cover is not locked (this can cause damage to the probe). (Which is the cause of damage to the probe? The cover in the locked condition? Or the cover in the unlocked condition?)"
+                "data": "Make sure that the cover is not locked (this can cause damage to the probe). "
+            }
+            ,
+            {
+                "type_": "text",
+                "data": "(Which is the cause of damage to the probe? The cover in the locked condition? Or the cover in the unlocked condition?)"
             }
             ,
             {
