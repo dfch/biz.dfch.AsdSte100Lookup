@@ -3106,7 +3106,7 @@
             ,
             {
                 "type_": "ste_example",
-                "data": "When the hydraulic pressure is released, the seguence valve moves to the open position. **As a result**, the actuators are connected to the hydraulic return."
+                "data": "When the hydraulic pressure is released, the sequence valve moves to the open position. **As a result**, the actuators are connected to the hydraulic return."
             }
             ,
             {
