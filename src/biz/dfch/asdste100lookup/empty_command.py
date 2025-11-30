@@ -27,4 +27,4 @@ class EmptyCommand(CommandBase):
     def invoke(self, console, dictionary, rules) -> None:
         super().invoke(console, dictionary, rules)
 
-        console.print("Exiting prompt ...")
+        console.print("Exiting ...")
