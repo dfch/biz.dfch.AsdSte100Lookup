@@ -20,6 +20,7 @@ from __future__ import annotations
 import argparse
 import json
 from pathlib import Path
+import random
 import re
 
 from dacite import from_dict, Config
@@ -30,6 +31,7 @@ from biz.dfch.logging import log
 from biz.dfch.version import Version
 
 from .constant import Constant
+from .command_base import CommandBase
 from .dictionary_files_parser import DictionaryFilesParser
 from .empty_command import EmptyCommand
 from .main_prompt import MainPrompt
@@ -38,6 +40,7 @@ from .rule_content_type import RuleContentType
 from .rule_renderer import RuleRenderer
 from .rule_technical_word_parser import RuleTechnicalWordsParser
 from .technical_word_category import TechnicalWordCategory
+from .unknown_command import UnknownCommand
 from .word import Word
 from .word_meaning import WordMeaning
 from .word_note import WordNote
@@ -108,6 +111,17 @@ class App:  # pylint: disable=R0903
 
         prompt = MainPrompt()
         console = Console(theme=self._rule_theme, record=True)
+
+        # Display a random word at startup.
+        while True:
+            word = random.choice(dictionary)
+            if (word.status == WordStatus.APPROVED or
+                    WordStatus.REJECTED):
+                break
+
+        text = word.name
+        command: CommandBase = UnknownCommand(text)
+        command.invoke(console=console, dictionary=[word], rules=rules)
 
         while True:
             text = input(f"[{len(dictionary)}] Enter search term: ").strip()
