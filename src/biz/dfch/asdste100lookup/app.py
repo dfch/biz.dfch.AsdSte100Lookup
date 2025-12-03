@@ -115,8 +115,7 @@ class App:  # pylint: disable=R0903
         # Display a random word at startup.
         while True:
             word = random.choice(dictionary)
-            if (word.status == WordStatus.APPROVED or
-                    WordStatus.REJECTED):
+            if word.status in (WordStatus.APPROVED, WordStatus.REJECTED):
                 break
 
         text = word.name
