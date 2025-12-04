@@ -112,15 +112,19 @@ class App:  # pylint: disable=R0903
         prompt = MainPrompt()
         console = Console(theme=self._rule_theme, record=True)
 
-        # Display a random word at startup.
-        while True:
-            word = random.choice(dictionary)
-            if word.status in (WordStatus.APPROVED, WordStatus.REJECTED):
-                break
+        if not (
+            hasattr(self._args, 'no_random_word') and 
+            self._args.no_random_word
+        ):
+            # Display a random word at startup.
+            while True:
+                word = random.choice(dictionary)
+                if word.status in (WordStatus.APPROVED, WordStatus.REJECTED):
+                    break
 
-        text = word.name
-        command: CommandBase = UnknownCommand(text)
-        command.invoke(console=console, dictionary=[word], rules=rules)
+            text = word.name
+            command: CommandBase = UnknownCommand(text)
+            command.invoke(console=console, dictionary=[word], rules=rules)
 
         while True:
             text = input(f"[{len(dictionary)}] Enter search term: ").strip()

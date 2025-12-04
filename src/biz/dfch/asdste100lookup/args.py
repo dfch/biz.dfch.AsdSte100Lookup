@@ -98,6 +98,12 @@ class Args:
             f"(default: {Constant.DICTIONARY_FILE}).",
         )
 
+        dictionary_parser.add_argument(
+            "--no-random-word",
+            action="store_true",
+            help="Prevent display of random word at startup.",
+        )
+
         rules_parser = subparsers.add_parser(
             "rules", parents=[common], help="Shows the rules."
         )
