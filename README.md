@@ -5,6 +5,18 @@
 ![Python](https://img.shields.io/badge/python-3.11%20%7C%203.12-blue.svg)
 [![Pylint and unittest](https://github.com/dfch/biz.dfch.AsdSte100Lookup/actions/workflows/ci.yml/badge.svg)](https://github.com/dfch/biz.dfch.AsdSte100Lookup/actions/workflows/ci.yml)
 
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=dfch_biz.dfch.AsdSte100Lookup&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=dfch_biz.dfch.AsdSte100Lookup)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=dfch_biz.dfch.AsdSte100Lookup&metric=bugs)](https://sonarcloud.io/summary/new_code?id=dfch_biz.dfch.AsdSte100Lookup)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=dfch_biz.dfch.AsdSte100Lookup&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=dfch_biz.dfch.AsdSte100Lookup)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=dfch_biz.dfch.AsdSte100Lookup&metric=coverage)](https://sonarcloud.io/summary/new_code?id=dfch_biz.dfch.AsdSte100Lookup)
+[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=dfch_biz.dfch.AsdSte100Lookup&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=dfch_biz.dfch.AsdSte100Lookup)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=dfch_biz.dfch.AsdSte100Lookup&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=dfch_biz.dfch.AsdSte100Lookup)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=dfch_biz.dfch.AsdSte100Lookup&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=dfch_biz.dfch.AsdSte100Lookup)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=dfch_biz.dfch.AsdSte100Lookup&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=dfch_biz.dfch.AsdSte100Lookup)
+[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=dfch_biz.dfch.AsdSte100Lookup&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=dfch_biz.dfch.AsdSte100Lookup)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=dfch_biz.dfch.AsdSte100Lookup&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=dfch_biz.dfch.AsdSte100Lookup)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=dfch_biz.dfch.AsdSte100Lookup&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=dfch_biz.dfch.AsdSte100Lookup)
+
 _A dictionary lookup for [ASD-STE100 Issue 9](https://www.asd-ste100.org/index.html) manual_
 
 * The program uses the dictionary words from the standard [ASD-STE100 Issue 9](https://www.asd-ste100.org/index.html) manual.
