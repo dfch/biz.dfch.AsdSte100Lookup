@@ -49,7 +49,6 @@ class Args:
             "-l",
             dest="log_level",
             choices=self.LOG_LEVEL_CHOICES,
-            # default=self._DEFAULT_LOG_LEVEL,
             help=f"Logging level (default: {self._DEFAULT_LOG_LEVEL}).",
         )
         common.add_argument(

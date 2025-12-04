@@ -59,8 +59,6 @@ class Colouriser:
         # (?i) - case-insensitive
         # \b\w*pattern\w*\b - words with the pattern inside
 
-        # regex = re.compile(rf"(?i)\b\w*{pattern}\w*\b")
-        # regex = re.compile(rf"(?i)\b\w*{pattern}\w*\b(?![.,;:])")
         regex = re.compile(rf"(?i)\b(\w*{pattern}\w*)\b")
 
         # Replace matching words with colored version
