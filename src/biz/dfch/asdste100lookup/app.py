@@ -113,7 +113,7 @@ class App:  # pylint: disable=R0903
         console = Console(theme=self._rule_theme, record=True)
 
         if not (
-            hasattr(self._args, 'no_random_word') and 
+            hasattr(self._args, 'no_random_word') and
             self._args.no_random_word
         ):
             # Display a random word at startup.
