@@ -17,7 +17,11 @@
 
 # pylint: disable=line-too-long
 
+from __future__ import annotations
 from enum import StrEnum
+import re
+
+from biz.dfch.logging import log
 
 
 class TechnicalWordCategory(StrEnum):
@@ -52,10 +56,11 @@ class TechnicalWordCategory(StrEnum):
     TV_INSTRUCTIONS_INFORMATION = "TV3"
     TV_LAW_REGULATIONS = "TV4"
 
-    def get_description(self) -> str:
-        """Returns the descriptive text of the category."""
+    @staticmethod
+    def get_descriptions() -> dict[TechnicalWordCategory, str]:
+        """Returns a map of all word category descriptions."""
 
-        descriptions: dict[TechnicalWordCategory, str] = {
+        result: dict[TechnicalWordCategory, str] = {
             TechnicalWordCategory.DEFAULT: "Not a technical noun or verb",
 
             TechnicalWordCategory.OFFICIAL_PARTS: "Official parts information",
@@ -86,5 +91,31 @@ class TechnicalWordCategory(StrEnum):
             TechnicalWordCategory.TV_INSTRUCTIONS_INFORMATION: "Instructions and information for applicable subject fields",  # noqa: disable=E0501
             TechnicalWordCategory.TV_LAW_REGULATIONS: "Law and regulations",
         }
+
+        return result
+
+    @staticmethod
+    def get_matching_keys(pattern: str) -> list[TechnicalWordCategory]:
+        """pass"""
+
+        assert isinstance(pattern, str) and "" != pattern.strip()
+
+        try:
+            regex = re.compile(pattern, re.IGNORECASE)
+        except re.error as ex:
+            log.error("Invalid regex: '%s'", ex)
+
+            return []
+
+        result = [key for key, value in
+                  TechnicalWordCategory.get_descriptions().items()
+                  if regex.search(value)]
+
+        return result
+
+    def get_description(self) -> str:
+        """Returns the descriptive text of the category."""
+
+        descriptions = TechnicalWordCategory.get_descriptions()
 
         return descriptions[self]

@@ -30,6 +30,9 @@ class CommandBase(ABC):
 
     value: str
 
+    def __init__(self, value: str):
+        self.value = value
+
     @abstractmethod
     def invoke(
         self, console: Console, dictionary: list[Word], rules: list[Rule]

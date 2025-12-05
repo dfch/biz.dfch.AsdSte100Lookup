@@ -22,18 +22,22 @@ import shlex
 import tempfile
 
 
-from .category_command import CategoryCommand
-from .rule_command import RuleCommand
+from .command_base import CommandBase
 from .empty_command import EmptyCommand
 from .exit_command import ExitCommand
 from .help_command import HelpCommand
+from .rule_command import RuleCommand
 from .save_command import SaveCommand
 from .unknown_command import UnknownCommand
-from .command_base import CommandBase
+from .word_category_command import (
+    WordCategoryCommand,
+    WordCategoryCommandQueryType)
 
 
 class MainPrompt:  # pylint: disable=R0903
     """Represents the main prompt processing."""
+
+    _start_of_command = "!"
 
     _parser: argparse.ArgumentParser
 
@@ -50,22 +54,40 @@ class MainPrompt:  # pylint: disable=R0903
     def _build_parser(self) -> argparse.ArgumentParser:
         """Builds the argument parser for the main prompt."""
 
-        parser = MainPrompt.SuppressErrorMessageArgumentParser(
+        result = MainPrompt.SuppressErrorMessageArgumentParser(
             prog="Main-prompt",
             description="Enter a search term (regular expression) "
-            "or press <ENTER> to exit.",
+            "or press <ENTER> to exit. "
+            f"Or start a command with '{self._start_of_command}' "
+            "(eg. '! save').",
             add_help=True,
         )
 
-        group = parser.add_mutually_exclusive_group()
-
-        group.add_argument(
-            "-c",
-            "--category",
-            dest="category",
-            type=str,
-            help="This command shows all words from the specified category.",
+        subparsers_action = result.add_subparsers(
+            dest="command",
+            required=True,
+            help="Available commands."
         )
+        category_parser = subparsers_action.add_parser(
+            "category",
+            aliases=["c"],
+            help="This command shows all words from the specified category."
+        )
+
+        category_parser_args = category_parser.add_mutually_exclusive_group(
+            required=True)
+        category_parser_args.add_argument(
+            "--id",
+            help="Id (short name) of the word category to query.",
+        )
+
+        category_parser_args.add_argument(
+            "-n",
+            "--name",
+            help="Name of the word category to query.",
+        )
+
+        group = result.add_mutually_exclusive_group()
 
         group.add_argument(
             "-r",
@@ -93,7 +115,7 @@ class MainPrompt:  # pylint: disable=R0903
             help="This command stops the programme.",
         )
 
-        return parser
+        return result
 
     def parse(self, text: str) -> CommandBase:
         """Parses a line of text into a command."""
@@ -106,7 +128,12 @@ class MainPrompt:  # pylint: disable=R0903
         if text in ["?", "-h", "--help"]:
             return HelpCommand(self._parser.format_help())
 
+        # If the line does not starts with '!', we expect a dictionary lookup.
+        if not text.startswith(self._start_of_command):
+            return UnknownCommand(text)
+
         # First, split the input line into args.
+        text = text.strip(self._start_of_command)
         try:
             args = shlex.split(text)
         except ValueError:
@@ -119,11 +146,21 @@ class MainPrompt:  # pylint: disable=R0903
         # the user types in something else than a defined command or argument.
         # In that case, we want to parse the contents and display a word from
         # the dicionary. This is intended.
-        except SystemExit:  # NOSONAR
-            return UnknownCommand(text)
+        except SystemExit as ex:  # NOSONAR
+            if "0" == str(ex):
+                return HelpCommand("")
 
-        if ns.category is not None:
-            return CategoryCommand(ns.category)
+            return HelpCommand(self._parser.format_help())
+
+        if ns.command is not None:
+            if ns.command in ["category", "c"]:
+                if ns.name is not None:
+                    return WordCategoryCommand(
+                        WordCategoryCommandQueryType.NAME, ns.name)
+                if ns.id is not None:
+                    return WordCategoryCommand(
+                        WordCategoryCommandQueryType.ID, ns.id)
+
         if ns.rule is not None:
             return RuleCommand(ns.rule)
         if ns.save is not None:
