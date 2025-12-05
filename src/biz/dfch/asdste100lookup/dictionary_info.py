@@ -45,6 +45,8 @@ class DictionaryInfo:
     _pattern = re.compile(r"^([^\(]+) \((\w+)\),?")
     _pattern_single_word = re.compile(r"^([^\(]+) \((\w+)\)$")
 
+    # Suppress sonar warning. If the user types in a too complex regex and the
+    # programs cannot handle it, this is the fault of the user.
     _pattern_with_spellings = re.compile(
         r"""
         ^(\w+)               # 1. head word (e.g., WEAK)
@@ -54,7 +56,7 @@ class DictionaryInfo:
         $
     """,
         re.VERBOSE,
-    )
+    )  # NOSONAR
 
     NOTE_MARKER: str = "###"
 

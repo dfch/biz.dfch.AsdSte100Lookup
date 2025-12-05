@@ -116,7 +116,9 @@ class App:  # pylint: disable=R0903
         ):
             # Display a random word at startup.
             while True:
-                word = random.choice(dictionary)
+                # Suppress Sonar warning. This randon function is not used in a
+                # security relevant context.
+                word = random.choice(dictionary)  # NOSONAR
                 if word.status in (WordStatus.APPROVED, WordStatus.REJECTED):
                     break
 
