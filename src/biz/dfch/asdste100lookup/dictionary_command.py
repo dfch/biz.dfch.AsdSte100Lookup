@@ -309,22 +309,21 @@ class DictionaryCommand(EraseConsoleBufferCommand):
 
             rows.append(TableRow())
 
-        if rows:
-            for row in rows:
-                if row.description:
-                    row.description = row.description.replace("\u200b", "")
-                log.debug(
-                    "'%s', '%s', '%s', '%s'",
-                    row.word,
-                    row.description,
-                    row.ste_example,
-                    row.nonste_example,
-                )
-                result.add_row(
-                    row.word or "",
-                    row.description or "",
-                    row.ste_example or "",
-                    row.nonste_example or "",
-                )
+        for row in rows:
+            if row.description:
+                row.description = row.description.replace("\u200b", "")
+            log.debug(
+                "'%s', '%s', '%s', '%s'",
+                row.word,
+                row.description,
+                row.ste_example,
+                row.nonste_example,
+            )
+            result.add_row(
+                row.word or "",
+                row.description or "",
+                row.ste_example or "",
+                row.nonste_example or "",
+            )
 
         return result
