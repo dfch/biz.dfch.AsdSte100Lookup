@@ -87,7 +87,7 @@ class DictionaryCommand(EraseConsoleBufferCommand):
             row = TableRow()
             rows.append(row)
 
-            if WordStatus.APPROVED == word.status:
+            if word.status in [WordStatus.APPROVED, WordStatus.CUSTOM]:
                 if word.name:
                     row.word = self.to_colour(
                         f"{word.name.upper()} ({word.type_})",
@@ -110,19 +110,6 @@ class DictionaryCommand(EraseConsoleBufferCommand):
                 if self._get_first_or_item(word.nonste_example):
                     row.nonste_example = self.to_colour(
                         cast(str, self._get_first_or_item(word.nonste_example)),
-                        prompt,
-                        word.status,
-                    )
-            elif WordStatus.CUSTOM == word.status:
-                if word.name:
-                    row.word = self.to_colour(
-                        f"{word.name.upper()} ({word.type_})",
-                        word.name,
-                        word.status,
-                    )
-                if self._get_first_or_item(word.ste_example):
-                    row.ste_example = self.to_colour(
-                        cast(str, self._get_first_or_item(word.ste_example)),
                         prompt,
                         word.status,
                     )
