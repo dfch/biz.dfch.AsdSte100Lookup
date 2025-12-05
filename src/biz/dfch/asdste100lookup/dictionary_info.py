@@ -29,7 +29,8 @@ T = TypeVar("T", bound=StrEnum)
 
 def str_to_enum(enum_class: Type[T], value: str) -> T | None:
     """Convert a string to a StrEnum member, case-insensitively, by value."""
-    for member in enum_class:
+    # SONAR falsely complains, that enum_class is not iterable.
+    for member in enum_class:  # NOSONAR
         if member.value.lower() == value.lower():
             return member
 
