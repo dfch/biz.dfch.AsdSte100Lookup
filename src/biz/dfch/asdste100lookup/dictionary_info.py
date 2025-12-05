@@ -20,6 +20,7 @@ import re
 from typing import Type, TypeVar
 
 from .dictionary_word import DictionaryWord
+from .utils import get_value_or_default
 from .word_status import WordStatus
 from .word_type import WordType
 
@@ -145,7 +146,7 @@ class DictionaryInfo:
     @staticmethod
     def get_note(value: str | None) -> str:
         """Extracts the note from a string."""
-        return (value or "").strip(DictionaryInfo.NOTE_MARKER)
+        return (get_value_or_default(value)).strip(DictionaryInfo.NOTE_MARKER)
 
     @staticmethod
     def get_spellings(value: str | None) -> list[str]:

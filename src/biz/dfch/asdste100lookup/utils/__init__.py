@@ -13,20 +13,10 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-"""Constant class."""
+"""utils package."""
 
-from dataclasses import dataclass
+from .string_utils import get_value_or_default
 
-
-@dataclass
-class Constant:
-    """System-wide constants."""
-
-    # Note: also adjust in pyproject.toml.
-    _VERSION = "1.4.2"
-    PROG_NAME = "AsdSte100Lookup"
-
-    BLOCKING_WHITE_SPACE = "\u200b"
-
-    DICTIONARY_FILE = "dictionary.json"
-    RULES_FILE = "rules.json"
+__all__ = [
+    "get_value_or_default",
+]

@@ -21,9 +21,11 @@ from pathlib import Path
 
 from biz.dfch.logging import log
 
+from .constant import Constant
 from .dictionary_info import DictionaryInfo
 from .line_info import LineInfo
 from .line_info_type import LineInfoType
+from .utils import get_value_or_default
 from .word import Word
 from .word_info import WordInfo
 from .word_meaning import WordMeaning
@@ -163,8 +165,8 @@ class DictionaryFilesParser:
             case WordState.WORD_MEANING:
                 meanning = WordMeaning(
                     value=description,
-                    ste_example=ste or "",
-                    nonste_example=non_ste or "",
+                    ste_example=get_value_or_default(ste),
+                    nonste_example=get_value_or_default(non_ste),
                 )
                 result = Word(
                     status=item.word.status,
@@ -215,8 +217,8 @@ class DictionaryFilesParser:
                     alternatives=[],
                     note=WordNote(
                         value=DictionaryInfo.get_note(description),
-                        ste_example=ste or "",
-                        nonste_example=non_ste or "",
+                        ste_example=get_value_or_default(ste),
+                        nonste_example=get_value_or_default(non_ste),
                     ),
                 )
             case _:
@@ -248,20 +250,20 @@ class DictionaryFilesParser:
                     assert description
                     assert result.note
                     result.note.value = DictionaryInfo.get_note(description)
-                    result.note.ste_example = ste or ""
-                    result.note.nonste_example = non_ste or ""
+                    result.note.ste_example = get_value_or_default(ste)
+                    result.note.nonste_example = get_value_or_default(non_ste)
                 case WordState.MEANING:
                     meanning = WordMeaning(
-                        value=description or "",
-                        ste_example=ste or "",
-                        nonste_example=non_ste or "",
+                        value=get_value_or_default(description),
+                        ste_example=get_value_or_default(ste),
+                        nonste_example=get_value_or_default(non_ste),
                     )
                     result.meanings.append(meanning)
                 case WordState.MEANING_EXAMPLE:
                     meanning = WordMeaning(
-                        value=description or "\u200b",
-                        ste_example=ste or "",
-                        nonste_example=non_ste or "",
+                        value=description or Constant.BLOCKING_WHITE_SPACE,
+                        ste_example=get_value_or_default(ste),
+                        nonste_example=get_value_or_default(non_ste),
                     )
                     result.meanings.append(meanning)
                 case WordState.ALTERNATIVE:

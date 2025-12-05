@@ -24,8 +24,10 @@ from rich.table import Table
 from biz.dfch.logging import log  # pylint: disable=E0401
 
 from .colouriser import Colouriser
+from .constant import Constant
 from .erase_console_buffer_command import EraseConsoleBufferCommand
 from .table_row import TableRow
+from .utils import get_value_or_default
 from .word import Word
 from .word_note import WordNote
 from .word_status import WordStatus
@@ -311,7 +313,8 @@ class DictionaryCommand(EraseConsoleBufferCommand):
 
         for row in rows:
             if row.description:
-                row.description = row.description.replace("\u200b", "")
+                row.description = row.description.replace(
+                    Constant.BLOCKING_WHITE_SPACE, "")
             log.debug(
                 "'%s', '%s', '%s', '%s'",
                 row.word,
@@ -320,10 +323,10 @@ class DictionaryCommand(EraseConsoleBufferCommand):
                 row.nonste_example,
             )
             result.add_row(
-                row.word or "",
-                row.description or "",
-                row.ste_example or "",
-                row.nonste_example or "",
+                get_value_or_default(row.word),
+                get_value_or_default(row.description),
+                get_value_or_default(row.ste_example),
+                get_value_or_default(row.nonste_example),
             )
 
         return result
