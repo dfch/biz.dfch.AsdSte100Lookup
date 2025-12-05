@@ -36,6 +36,36 @@ from .word_status import WordStatus
 class DictionaryFilesParser:
     """Methods related to parsing dictionary files."""
 
+    def _process_lines(self, lines: list[str]) -> list[LineInfo]:
+
+        result: list[LineInfo] = []
+
+        for line in lines:
+            line_info = LineInfo()
+            line_info.line = line.strip("\ufeff")
+            line_info.tokens = line_info.line.split("\t")
+            line_info.tokens_count = len(line_info.tokens)
+            if not line_info.tokens:
+                continue
+
+            token = line_info.tokens[0]
+            if DictionaryInfo.is_word(token):
+                line_info.is_start_of_word = True
+
+            log.debug(
+                "[%s] [%s] %s",
+                line_info.tokens_count,
+                line_info.is_start_of_word,
+                line_info.line,
+            )
+
+            for index, token in enumerate(line_info.tokens):
+                log.debug("[%s/%s] '%s'", index, line_info.tokens_count, token)
+
+            result.append(line_info)
+
+        return result
+
     def process_file(self, file: Path) -> tuple[list[LineInfo], list[WordInfo]]:
         """Parses a single OCR dictionary file."""
 
@@ -65,29 +95,7 @@ class DictionaryFilesParser:
             )
             return result
 
-        for line in lines:
-            line_info = LineInfo()
-            line_info.line = line.strip("\ufeff")
-            line_info.tokens = line_info.line.split("\t")
-            line_info.tokens_count = len(line_info.tokens)
-            if not line_info.tokens:
-                continue
-
-            token = line_info.tokens[0]
-            if DictionaryInfo.is_word(token):
-                line_info.is_start_of_word = True
-
-            log.debug(
-                "[%s] [%s] %s",
-                line_info.tokens_count,
-                line_info.is_start_of_word,
-                line_info.line,
-            )
-
-            for index, token in enumerate(line_info.tokens):
-                log.debug("[%s/%s] '%s'", index, line_info.tokens_count, token)
-
-            line_infos.append(line_info)
+        line_infos.extend(self._process_lines(lines))
 
         word_info: WordInfo = WordInfo(file.name)
         for index, line_info in enumerate(line_infos):
