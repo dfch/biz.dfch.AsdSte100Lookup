@@ -34,7 +34,6 @@ class RuleCommand(EraseConsoleBufferCommand):
         for rule in rules:
             if re.search(self.value, rule.id_, re.IGNORECASE):
                 selected_rules.append(rule)
-                continue
 
         RuleRenderer().show(
             console=console,
