@@ -17,9 +17,9 @@
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=dfch_biz.dfch.AsdSte100Lookup&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=dfch_biz.dfch.AsdSte100Lookup)
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=dfch_biz.dfch.AsdSte100Lookup&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=dfch_biz.dfch.AsdSte100Lookup)
 
-_A dictionary lookup for [ASD-STE100 Issue 9](https://www.asd-ste100.org/index.html) manual_
+_A dictionary lookup for [ASD-STE100 Issue 9](https://www.asd-ste100.org/index.html) standard_
 
-* The program uses the dictionary words from the standard [ASD-STE100 Issue 9](https://www.asd-ste100.org/index.html) manual.
+* The program uses the dictionary words from the standard [ASD-STE100 Issue 9](https://www.asd-ste100.org/index.html).
 * The program lets you lookup dictionary words, technical nouns and technical verbs from that standard and shows
   - the "Approved" words in green, "Rejected" words in red, "Technical" word in dark green
   - the "Type" of the words
