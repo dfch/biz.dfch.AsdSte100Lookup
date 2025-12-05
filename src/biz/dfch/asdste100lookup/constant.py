@@ -27,3 +27,4 @@ class Constant:
     PROG_NAME = "AsdSte100Lookup"
 
     DICTIONARY_FILE = "dictionary.json"
+    RULES_FILE = "rules.json"

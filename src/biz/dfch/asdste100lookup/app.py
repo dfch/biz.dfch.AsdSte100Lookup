@@ -54,8 +54,6 @@ class App:  # pylint: disable=R0903
     _VERSION_REQUIRED_MAJOR = 3
     _VERSION_REQUIRED_MINOR = 11
 
-    _rules_file_name = "rules.json"
-
     _rule_theme = Theme(
         {
             # "markdown.h1": "bold magenta",
@@ -178,7 +176,7 @@ class App:  # pylint: disable=R0903
         console = Console(theme=self._rule_theme)
 
         current_folder = Path(__file__).parent
-        rules_fullname = current_folder / self._rules_file_name
+        rules_fullname = current_folder / Constant.RULES_FILE
         rules = self._load_rules(rules_fullname)
 
         selected_rules: list[Rule] = []
@@ -237,7 +235,7 @@ class App:  # pylint: disable=R0903
         dictionary = sorted(word_list, key=lambda e: e.name.lower())
 
         # Load rules.
-        rules_fullname = current_folder / self._rules_file_name
+        rules_fullname = current_folder / Constant.RULES_FILE
         rules = self._load_rules(rules_fullname)
 
         # Load technical words and add them to the ditionary.
