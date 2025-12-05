@@ -41,7 +41,6 @@ def str_to_enum(enum_class: Type[T], value: str) -> T | None:
 class DictionaryInfo:
     """Provides utility functions for categorising text."""
 
-    # _pattern = re.compile(r"[^\(]+ \(\w+\)")
     _pattern = re.compile(r"^([^\(]+) \((\w+)\),?")
     _pattern_single_word = re.compile(r"^([^\(]+) \((\w+)\)$")
 
