@@ -68,12 +68,19 @@ class DictionaryCommand(EraseConsoleBufferCommand):
 
         return item
 
-    def _process_note(self, word: Word, row: TableRow) -> list[TableRow]:
-        result: list[TableRow] = []
+    def _process_note(
+            self,
+            word: Word,
+            row: TableRow
+    ) -> list[TableRow]:
 
         assert isinstance(word, Word)
         assert isinstance(row, TableRow)
         assert isinstance(word.note, WordNote)
+        assert word.note
+
+        result: list[TableRow] = []
+
         note = word.note
 
         if note.words:
@@ -123,6 +130,67 @@ class DictionaryCommand(EraseConsoleBufferCommand):
                     note.nonste_example, word.name, WordStatus.REJECTED
                 )
             result.append(row)
+
+        return result
+
+    def _process_alternatives(
+            self,
+            word: Word,
+            row: TableRow
+    ) -> list[TableRow]:
+
+        assert isinstance(word, Word)
+        assert isinstance(row, TableRow)
+        assert word.alternatives
+
+        result: list[TableRow] = []
+
+        alternatives = word.alternatives
+        for alt in alternatives:
+            if row.description:
+                row = TableRow()
+                result.append(row)
+
+            row.description = self.to_colour(
+                f"{alt.name.upper()} ({alt.type_})",
+                alt.name, alt.status
+            )
+
+            # Process examples pairwise.
+            if isinstance(alt.ste_example, list):
+                ste_list = alt.ste_example
+            elif alt.ste_example is None:
+                ste_list = []
+            else:
+                ste_list = [alt.ste_example]
+
+            if isinstance(alt.nonste_example, list):
+                nonste_list = alt.nonste_example
+            elif alt.nonste_example is None:
+                nonste_list = []
+            else:
+                nonste_list = [alt.nonste_example]
+
+            for i, (ste, nonste) in enumerate(
+                zip_longest(ste_list, nonste_list, fillvalue=" ")
+            ):
+
+                if 0 == i:
+                    row.ste_example = self.to_colour(
+                        ste, alt.name, alt.status)
+                    row.nonste_example = self.to_colour(
+                        nonste, word.name, WordStatus.REJECTED
+                    )
+                    continue
+
+                row = TableRow()
+                result.append(row)
+
+                row.ste_example = self.to_colour(
+                    ste, alt.name, alt.status)
+                row.nonste_example = self.to_colour(
+                    nonste, word.name, WordStatus.REJECTED
+                )
 
         return result
 
@@ -203,52 +271,7 @@ class DictionaryCommand(EraseConsoleBufferCommand):
                         )
 
             if word.alternatives:
-                alternatives = word.alternatives
-                for alt in alternatives:
-                    if row.description:
-                        row = TableRow()
-                        rows.append(row)
-
-                    row.description = self.to_colour(
-                        f"{alt.name.upper()} ({alt.type_})",
-                        alt.name, alt.status
-                    )
-
-                    # Process examples pairwise.
-                    if isinstance(alt.ste_example, list):
-                        ste_list = alt.ste_example
-                    elif alt.ste_example is None:
-                        ste_list = []
-                    else:
-                        ste_list = [alt.ste_example]
-
-                    if isinstance(alt.nonste_example, list):
-                        nonste_list = alt.nonste_example
-                    elif alt.nonste_example is None:
-                        nonste_list = []
-                    else:
-                        nonste_list = [alt.nonste_example]
-
-                    for i, (ste, nonste) in enumerate(
-                        zip_longest(ste_list, nonste_list, fillvalue=" ")
-                    ):
-
-                        if 0 == i:
-                            row.ste_example = self.to_colour(
-                                ste, alt.name, alt.status)
-                            row.nonste_example = self.to_colour(
-                                nonste, word.name, WordStatus.REJECTED
-                            )
-                            continue
-
-                        row = TableRow()
-                        rows.append(row)
-
-                        row.ste_example = self.to_colour(
-                            ste, alt.name, alt.status)
-                        row.nonste_example = self.to_colour(
-                            nonste, word.name, WordStatus.REJECTED
-                        )
+                rows.extend(self._process_alternatives(word, row))
 
             if word.note:
                 rows.extend(self._process_note(word, row))
