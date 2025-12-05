@@ -1,7 +1,7 @@
 ﻿instead of (prep)	ALTERNATIVE (n)	YOU CAN USE A CLEAN PLASTIC BAG AS AN ALTERNATIVE TO THE SPECIFIED CONTAINER.	You can use a clean plastic bag instead of the specified container.
 INSTRUCTION (n)	A command that you must obey	IF YOU DO NOTOBEY THIS INSTRUCTION, DAMAGE CAN OCCUR.	
 INSTRUMENT (n)	An item which measures and/or shows	ALL THE INSTRUMENTS ARE ON THE LEFT QUARTER PANEL.	
-insufficient (adj)	NOT SUFFICIENT	IF THIS STEP IS NOT SUFFICIENT TO STOP THE LEAKAGE, REPLACE THE ACTUATOR.	If this step is insufficient to stop the leakage, replace the actuator.
+insufficient (adj)	NOT SUFFICIENT (adj)	IF THIS STEP IS NOT SUFFICIENT TO STOP THE LEAKAGE, REPLACE THE ACTUATOR.	If this step is insufficient to stop the leakage, replace the actuator.
 INSULATION (n)	A material that helps to prevent the movement of energy	MAKE SURE THAT YOU DO NOT CAUSE DAMAGE TO THE INSULATION.	
 insure (v)	MAKE SURE (v)	MAKE SURE THAT THE WORK BENCH IS CLEAN.	Insure that the work bench is clean.
 intact (adj)	NOT DAMAGED (adj)	MAKE SURE THAT THE WINDSCREEN IS NOT DAMAGED.	Make sure the windscreen is intact.

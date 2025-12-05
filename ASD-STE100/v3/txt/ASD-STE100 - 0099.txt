@@ -1,5 +1,5 @@
-﻿fasten (v)	ATTACH (v) CONNECT (v)	ATTACH THE TWO STRINGERS TOGETHER WITH RIVETS.	Fasten the two stringers together with rivets.
-		CONNECT THE HOSE TO THE TEST EQUIPMENT.	Fasten the hose to the test equipment.
+﻿fasten (v)	ATTACH (v)	ATTACH THE TWO STRINGERS TOGETHER WITH RIVETS.	Fasten the two stringers together with rivets.
+	CONNECT (v)	CONNECT THE HOSE TO THE TEST EQUIPMENT.	Fasten the hose to the test equipment.
 fatal (adj)	KILL (v)	HIGH VOLTAGE IN THE ELECTRONIC SYSTEM CAN KILL YOU.	High voltage in the electronic system can be fatal.
 faulty (adj)	DEFECTIVE (adj)	REPLACE ALL DEFECTIVE ELECTRONIC COMPONENTS.	All faulty electronic components must be replaced.
 	INCORRECT (adj)	AN INCORRECT ADJUSTMENT OF THE PRESSURE REGULATOR CAN BE DANGEROUS.	Faulty adjustment of the pressure regulator can be dangerous.

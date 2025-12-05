@@ -1,5 +1,5 @@
-﻿still (adv)	STAY (v) CONTINUE (v)	MAKE SURE THAT THE “OVHT” LIGHT STAYS ON.	Make sure that the “OVHT” light is still illuminated.
-		MAKE SURE THAT THE ROTOR CONTINUES TO TURN.	Make sure that the rotor still turns.
+﻿still (adv)	STAY (v)	MAKE SURE THAT THE “OVHT” LIGHT STAYS ON.	Make sure that the “OVHT” light is still illuminated.
+	CONTINUE (v)	MAKE SURE THAT THE ROTOR CONTINUES TO TURN.	Make sure that the rotor still turns.
 stimulate (v)	INCREASE (v)	INCREASE THE AIRFLOW.	Stimulate the airflow.
 stir (v)	MIX (v)	MIX THE BONDING MATERIAL WITH A SPATULA.	Stir the bonding material with a spatula.
 STOP (v), STOPS, STOPPED, STOPPED	1. To cause the end of a procedure, movement, or an operation	STOP THE ENGINE.	

@@ -26754,22 +26754,44 @@
     "status": "rejected",
     "name": "exclude",
     "type_": "v",
-    "meanings": [
+    "meanings": [],
+    "spellings": [],
+    "alternatives": [
       {
-        "value": "NOT INCLUDE",
-        "ste_example": "THIS PROCEDURE DOES NOT INCLUDE THE REMOVAL OF THE PISTON.",
-        "nonste_example": "This procedure excludes the removal of the piston.",
+        "status": "approved",
+        "name": "NOT INCLUDE",
+        "type_": "v",
+        "meanings": [],
+        "spellings": [],
+        "alternatives": [],
+        "source": "STE100:9",
+        "category": "0",
+        "ste_example": [
+          "THIS PROCEDURE DOES NOT INCLUDE THE REMOVAL OF THE PISTON."
+        ],
+        "nonste_example": [
+          "This procedure excludes the removal of the piston."
+        ],
         "note": null
       },
       {
-        "value": "NOT USE",
-        "ste_example": "DO NOT USE OXYGEN.",
-        "nonste_example": "Exclude the use of oxygen.",
+        "status": "approved",
+        "name": "NOT USE",
+        "type_": "v",
+        "meanings": [],
+        "spellings": [],
+        "alternatives": [],
+        "source": "STE100:9",
+        "category": "0",
+        "ste_example": [
+          "DO NOT USE OXYGEN."
+        ],
+        "nonste_example": [
+          "Exclude the use of oxygen."
+        ],
         "note": null
       }
     ],
-    "spellings": [],
-    "alternatives": [],
     "source": "STE100:9",
     "category": "0",
     "ste_example": [],
@@ -28838,22 +28860,44 @@
     "status": "rejected",
     "name": "fasten",
     "type_": "v",
-    "meanings": [
+    "meanings": [],
+    "spellings": [],
+    "alternatives": [
       {
-        "value": "ATTACH (v) CONNECT (v)",
-        "ste_example": "ATTACH THE TWO STRINGERS TOGETHER WITH RIVETS.",
-        "nonste_example": "Fasten the two stringers together with rivets.",
+        "status": "approved",
+        "name": "ATTACH",
+        "type_": "v",
+        "meanings": [],
+        "spellings": [],
+        "alternatives": [],
+        "source": "STE100:9",
+        "category": "0",
+        "ste_example": [
+          "ATTACH THE TWO STRINGERS TOGETHER WITH RIVETS."
+        ],
+        "nonste_example": [
+          "Fasten the two stringers together with rivets."
+        ],
         "note": null
       },
       {
-        "value": "\u200b",
-        "ste_example": "CONNECT THE HOSE TO THE TEST EQUIPMENT.",
-        "nonste_example": "Fasten the hose to the test equipment.",
+        "status": "approved",
+        "name": "CONNECT",
+        "type_": "v",
+        "meanings": [],
+        "spellings": [],
+        "alternatives": [],
+        "source": "STE100:9",
+        "category": "0",
+        "ste_example": [
+          "CONNECT THE HOSE TO THE TEST EQUIPMENT."
+        ],
+        "nonste_example": [
+          "Fasten the hose to the test equipment."
+        ],
         "note": null
       }
     ],
-    "spellings": [],
-    "alternatives": [],
     "source": "STE100:9",
     "category": "0",
     "ste_example": [],
@@ -39179,22 +39223,44 @@
     "status": "rejected",
     "name": "insert",
     "type_": "v",
-    "meanings": [
+    "meanings": [],
+    "spellings": [],
+    "alternatives": [
       {
-        "value": "PUT (v) ENGAGE (v)",
-        "ste_example": "PUT THE SLEEVE INTO THE OPENING.",
-        "nonste_example": "Insert the sleeve into the opening.",
+        "status": "approved",
+        "name": "PUT",
+        "type_": "v",
+        "meanings": [],
+        "spellings": [],
+        "alternatives": [],
+        "source": "STE100:9",
+        "category": "0",
+        "ste_example": [
+          "PUT THE SLEEVE INTO THE OPENING."
+        ],
+        "nonste_example": [
+          "Insert the sleeve into the opening."
+        ],
         "note": null
       },
       {
-        "value": "\u200b",
-        "ste_example": "MAKE SURE THAT THE SHAFT ENGAGES IN THE MATING PART.",
-        "nonste_example": "Check that the shaft is inserted in the mating part.",
+        "status": "approved",
+        "name": "ENGAGE",
+        "type_": "v",
+        "meanings": [],
+        "spellings": [],
+        "alternatives": [],
+        "source": "STE100:9",
+        "category": "0",
+        "ste_example": [
+          "MAKE SURE THAT THE SHAFT ENGAGES IN THE MATING PART."
+        ],
+        "nonste_example": [
+          "Check that the shaft is inserted in the mating part."
+        ],
         "note": null
       }
     ],
-    "spellings": [],
-    "alternatives": [],
     "source": "STE100:9",
     "category": "0",
     "ste_example": [],
@@ -39589,16 +39655,27 @@
     "status": "rejected",
     "name": "insufficient",
     "type_": "adj",
-    "meanings": [
+    "meanings": [],
+    "spellings": [],
+    "alternatives": [
       {
-        "value": "NOT SUFFICIENT",
-        "ste_example": "IF THIS STEP IS NOT SUFFICIENT TO STOP THE LEAKAGE, REPLACE THE ACTUATOR.",
-        "nonste_example": "If this step is insufficient to stop the leakage, replace the actuator.",
+        "status": "approved",
+        "name": "NOT SUFFICIENT",
+        "type_": "adj",
+        "meanings": [],
+        "spellings": [],
+        "alternatives": [],
+        "source": "STE100:9",
+        "category": "0",
+        "ste_example": [
+          "IF THIS STEP IS NOT SUFFICIENT TO STOP THE LEAKAGE, REPLACE THE ACTUATOR."
+        ],
+        "nonste_example": [
+          "If this step is insufficient to stop the leakage, replace the actuator."
+        ],
         "note": null
       }
     ],
-    "spellings": [],
-    "alternatives": [],
     "source": "STE100:9",
     "category": "0",
     "ste_example": [],
@@ -55367,7 +55444,7 @@
         "source": "STE100:9",
         "category": "0",
         "ste_example": [
-          "THIS SECTION GIVES THE PROCEDURES FOR THE STORAGE FO THE COMPONENT."
+          "THIS SECTION GIVES THE PROCEDURES FOR THE STORAGE OF THE COMPONENT."
         ],
         "nonste_example": [
           "This section provides the procedures for the storage of the component."
@@ -59317,16 +59394,27 @@
     "status": "rejected",
     "name": "repeated",
     "type_": "adj",
-    "meanings": [
+    "meanings": [],
+    "spellings": [],
+    "alternatives": [
       {
-        "value": "AGAIN AND AGAIN",
-        "ste_example": "IF YOU HEAR SIGNALS AGAIN AND AGAIN, DO A CHECK OF THE \u201cAP ENGAGE\u201d BUTTON ON THE FLIGHT MODE PANEL.",
-        "nonste_example": "If repeated signals are heard, check the AP ENGAGE button on the flight mode panel.",
+        "status": "approved",
+        "name": "AGAIN AND AGAIN",
+        "type_": "adj",
+        "meanings": [],
+        "spellings": [],
+        "alternatives": [],
+        "source": "STE100:9",
+        "category": "0",
+        "ste_example": [
+          "IF YOU HEAR SIGNALS AGAIN AND AGAIN, DO A CHECK OF THE \u201cAP ENGAGE\u201d BUTTON ON THE FLIGHT MODE PANEL."
+        ],
+        "nonste_example": [
+          "If repeated signals are heard, check the AP ENGAGE button on the flight mode panel."
+        ],
         "note": null
       }
     ],
-    "spellings": [],
-    "alternatives": [],
     "source": "STE100:9",
     "category": "0",
     "ste_example": [],
@@ -59342,16 +59430,27 @@
     "status": "rejected",
     "name": "repeatedly",
     "type_": "adv",
-    "meanings": [
+    "meanings": [],
+    "spellings": [],
+    "alternatives": [
       {
-        "value": "AGAIN AND AGAIN",
-        "ste_example": "IF THE VOLTAGE DECREASES AGAIN AND AGAIN, ADJUST THE VOLTAGE REGULATOR.",
-        "nonste_example": "If voltage drops repeatedly, adjust the voltage regulator.",
+        "status": "approved",
+        "name": "AGAIN AND AGAIN",
+        "type_": "adj",
+        "meanings": [],
+        "spellings": [],
+        "alternatives": [],
+        "source": "STE100:9",
+        "category": "0",
+        "ste_example": [
+          "IF THE VOLTAGE DECREASES AGAIN AND AGAIN, ADJUST THE VOLTAGE REGULATOR."
+        ],
+        "nonste_example": [
+          "If voltage drops repeatedly, adjust the voltage regulator."
+        ],
         "note": null
       }
     ],
-    "spellings": [],
-    "alternatives": [],
     "source": "STE100:9",
     "category": "0",
     "ste_example": [],
@@ -69010,22 +69109,44 @@
     "status": "rejected",
     "name": "still",
     "type_": "adv",
-    "meanings": [
+    "meanings": [],
+    "spellings": [],
+    "alternatives": [
       {
-        "value": "STAY (v) CONTINUE (v)",
-        "ste_example": "MAKE SURE THAT THE \u201cOVHT\u201d LIGHT STAYS ON.",
-        "nonste_example": "Make sure that the \u201cOVHT\u201d light is still illuminated.",
+        "status": "approved",
+        "name": "STAY",
+        "type_": "v",
+        "meanings": [],
+        "spellings": [],
+        "alternatives": [],
+        "source": "STE100:9",
+        "category": "0",
+        "ste_example": [
+          "MAKE SURE THAT THE \u201cOVHT\u201d LIGHT STAYS ON."
+        ],
+        "nonste_example": [
+          "Make sure that the \u201cOVHT\u201d light is still illuminated."
+        ],
         "note": null
       },
       {
-        "value": "\u200b",
-        "ste_example": "MAKE SURE THAT THE ROTOR CONTINUES TO TURN.",
-        "nonste_example": "Make sure that the rotor still turns.",
+        "status": "approved",
+        "name": "CONTINUE",
+        "type_": "v",
+        "meanings": [],
+        "spellings": [],
+        "alternatives": [],
+        "source": "STE100:9",
+        "category": "0",
+        "ste_example": [
+          "MAKE SURE THAT THE ROTOR CONTINUES TO TURN."
+        ],
+        "nonste_example": [
+          "Make sure that the rotor still turns."
+        ],
         "note": null
       }
     ],
-    "spellings": [],
-    "alternatives": [],
     "source": "STE100:9",
     "category": "0",
     "ste_example": [],

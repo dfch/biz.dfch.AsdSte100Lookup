@@ -1,5 +1,5 @@
-﻿insert (v)	PUT (v) ENGAGE (v)	PUT THE SLEEVE INTO THE OPENING.	Insert the sleeve into the opening.
-		MAKE SURE THAT THE SHAFT ENGAGES IN THE MATING PART.	Check that the shaft is inserted in the mating part.
+﻿insert (v)	PUT (v)	PUT THE SLEEVE INTO THE OPENING.	Insert the sleeve into the opening.
+	ENGAGE (v)	MAKE SURE THAT THE SHAFT ENGAGES IN THE MATING PART.	Check that the shaft is inserted in the mating part.
 inside (adj)	INNER (adj)	CLEAN THE INNER SURFACE OF THE CONTAINER.	Clean the inside surface of the container.
 inside (n)	INNER (adj)	PAINT THE INNER SURFACE OF THE PUMP ASSEMBLY.	Paint the inside surface of the pump assembly.
 inside (prep)	IN (prep)	THERE MUST BE LUBRICANT IN THE HOLE.	There must be lubricant inside the hole.

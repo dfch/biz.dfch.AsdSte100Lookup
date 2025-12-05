@@ -8,5 +8,5 @@ REPAIR (n)	The act of repairing or the result when something is repaired	AFTER T
 REPAIR (v), REPAIRS, REPAIRED, REPAIRED	To make an item serviceable	REPAIR THE DEFECTIVE WIRING.	
 repairable (adj)	REPAIR (v)	IT IS POSSIBLE TO REPAIR THIS DAMAGE.	This damage is repairable.
 repeat (v)	AGAIN (adv)	DO STEPS (10) THRU (14) AGAIN.	Repeat steps (10) to (14).
-repeated (adj)	AGAIN AND AGAIN	IF YOU HEAR SIGNALS AGAIN AND AGAIN, DO A CHECK OF THE “AP ENGAGE” BUTTON ON THE FLIGHT MODE PANEL.	If repeated signals are heard, check the AP ENGAGE button on the flight mode panel.
-repeatedly (adv)	AGAIN AND AGAIN	IF THE VOLTAGE DECREASES AGAIN AND AGAIN, ADJUST THE VOLTAGE REGULATOR.	If voltage drops repeatedly, adjust the voltage regulator.
+repeated (adj)	AGAIN AND AGAIN (adj)	IF YOU HEAR SIGNALS AGAIN AND AGAIN, DO A CHECK OF THE “AP ENGAGE” BUTTON ON THE FLIGHT MODE PANEL.	If repeated signals are heard, check the AP ENGAGE button on the flight mode panel.
+repeatedly (adv)	AGAIN AND AGAIN (adj)	IF THE VOLTAGE DECREASES AGAIN AND AGAIN, ADJUST THE VOLTAGE REGULATOR.	If voltage drops repeatedly, adjust the voltage regulator.
