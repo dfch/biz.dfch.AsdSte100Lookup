@@ -115,7 +115,11 @@ class MainPrompt:  # pylint: disable=R0903
         # Second, try to parse it into the defined arguments.
         try:
             ns = self._parser.parse_args(args)
-        except SystemExit:
+        # Suppress SONAR warning, as we expect this exception from ArgParse, if
+        # the user types in something else than a defined command or argument.
+        # In that case, we want to parse the contents and display a word from
+        # the dicionary. This is intended.
+        except SystemExit:  # NOSONAR
             return UnknownCommand(text)
 
         if ns.category is not None:
