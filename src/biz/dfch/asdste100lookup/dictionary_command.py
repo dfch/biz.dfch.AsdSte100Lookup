@@ -157,18 +157,20 @@ class DictionaryCommand(EraseConsoleBufferCommand):
                     )
 
                     # Process examples pairwise.
-                    ste_list = (
-                        alt.ste_example
-                        if isinstance(alt.ste_example, list)
-                        else ([] if alt.ste_example is None
-                              else [alt.ste_example])
-                    )
-                    nonste_list = (
-                        alt.nonste_example
-                        if isinstance(alt.nonste_example, list)
-                        else ([] if alt.nonste_example is None
-                              else [alt.nonste_example])
-                    )
+                    if isinstance(alt.ste_example, list):
+                        ste_list = alt.ste_example
+                    elif alt.ste_example is None:
+                        ste_list = []
+                    else:
+                        ste_list = [alt.ste_example]
+
+                    if isinstance(alt.nonste_example, list):
+                        nonste_list = alt.nonste_example
+                    elif alt.nonste_example is None:
+                        nonste_list = []
+                    else:
+                        nonste_list = [alt.nonste_example]
+
                     for i, (ste, nonste) in enumerate(
                         zip_longest(ste_list, nonste_list, fillvalue=" ")
                     ):
