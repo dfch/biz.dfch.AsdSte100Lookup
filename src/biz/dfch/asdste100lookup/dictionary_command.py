@@ -68,6 +68,64 @@ class DictionaryCommand(EraseConsoleBufferCommand):
 
         return item
 
+    def _process_note(self, word: Word, row: TableRow) -> list[TableRow]:
+        result: list[TableRow] = []
+
+        assert isinstance(word, Word)
+        assert isinstance(row, TableRow)
+        assert isinstance(word.note, WordNote)
+        note = word.note
+
+        if note.words:
+            nwords = note.words
+
+            if row.description or row.ste_example or row.nonste_example:
+
+                row = TableRow()
+                result.append(row)
+
+            row.description = str(Colouriser(note.value, "yellow"))
+
+            for nword in nwords:
+                row = TableRow()
+                result.append(row)
+                row.description = self.to_colour(
+                    f"{nword.name} ({nword.type_})",
+                    nword.name,
+                    nword.status,
+                )
+                if self._get_first_or_item(nword.ste_example):
+                    row.ste_example = self.to_colour(
+                        cast(str, self._get_first_or_item(
+                            nword.ste_example)),
+                        nword.name,
+                        WordStatus.APPROVED,
+                    )
+                if self._get_first_or_item(nword.nonste_example):
+                    row.nonste_example = self.to_colour(
+                        cast(
+                            str,
+                            self._get_first_or_item(
+                                nword.nonste_example),
+                        ),
+                        nword.name,
+                        WordStatus.REJECTED,
+                    )
+        elif note.value:
+            row = TableRow()
+            row.description = str(Colouriser(note.value, "yellow"))
+            if note.ste_example:
+                row.ste_example = self.to_colour(
+                    note.ste_example, word.name, WordStatus.APPROVED
+                )
+            if note.nonste_example:
+                row.nonste_example = self.to_colour(
+                    note.nonste_example, word.name, WordStatus.REJECTED
+                )
+            result.append(row)
+
+        return result
+
     def show(self, items: list[Word], prompt: str) -> Table:
         """Creates a table of the specified words."""
 
@@ -193,56 +251,7 @@ class DictionaryCommand(EraseConsoleBufferCommand):
                         )
 
             if word.note:
-                assert isinstance(word.note, WordNote)
-                note = word.note
-
-                if note.words:
-                    nwords = note.words
-
-                    if row.description or row.ste_example or row.nonste_example:
-
-                        row = TableRow()
-                        rows.append(row)
-
-                    row.description = str(Colouriser(note.value, "yellow"))
-
-                    for nword in nwords:
-                        row = TableRow()
-                        rows.append(row)
-                        row.description = self.to_colour(
-                            f"{nword.name} ({nword.type_})",
-                            nword.name,
-                            nword.status,
-                        )
-                        if self._get_first_or_item(nword.ste_example):
-                            row.ste_example = self.to_colour(
-                                cast(str, self._get_first_or_item(
-                                    nword.ste_example)),
-                                nword.name,
-                                WordStatus.APPROVED,
-                            )
-                        if self._get_first_or_item(nword.nonste_example):
-                            row.nonste_example = self.to_colour(
-                                cast(
-                                    str,
-                                    self._get_first_or_item(
-                                        nword.nonste_example),
-                                ),
-                                nword.name,
-                                WordStatus.REJECTED,
-                            )
-                elif note.value:
-                    row = TableRow()
-                    row.description = str(Colouriser(note.value, "yellow"))
-                    if note.ste_example:
-                        row.ste_example = self.to_colour(
-                            note.ste_example, word.name, WordStatus.APPROVED
-                        )
-                    if note.nonste_example:
-                        row.nonste_example = self.to_colour(
-                            note.nonste_example, word.name, WordStatus.REJECTED
-                        )
-                    rows.append(row)
+                rows.extend(self._process_note(word, row))
 
             rows.append(TableRow())
 
