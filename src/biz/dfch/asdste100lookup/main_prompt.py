@@ -17,6 +17,7 @@
 
 from __future__ import annotations
 import argparse
+from datetime import datetime
 from pathlib import Path
 import shlex
 import tempfile
@@ -135,18 +136,30 @@ class MainPrompt:  # pylint: disable=R0903
             help="Display only a brief overview of matching rules.",
         )
 
-        group = result.add_mutually_exclusive_group()
-
-        file_name = Path(tempfile.gettempdir()) / "asdste100.svg"
-        group.add_argument(
-            "-s",
-            "--save",
-            dest="save",
-            type=str,
-            nargs="?",
-            const=str(file_name),
-            help="This command saves the last console output to a file.",
+        save_parser = subparsers_action.add_parser(
+            self._save_command_names[0],
+            aliases=self._save_command_names[1:],
+            help="This command writes the last console output to a file.",
         )
+
+        save_parser_args = save_parser.add_mutually_exclusive_group(
+            required=True
+        )
+
+        save_parser_args.add_argument(
+            "-n",
+            "--name",
+            help="Give the name of the file.",
+        )
+
+        save_parser_args.add_argument(
+            "-a",
+            "--auto",
+            action="store_true",
+            help="Automatically select a unique name for the file.",
+        )
+
+        group = result.add_mutually_exclusive_group()
 
         group.add_argument(
             "--exit",
@@ -213,12 +226,16 @@ class MainPrompt:  # pylint: disable=R0903
 
             if ns.command in self._save_command_names:
                 if ns.name is not None:
-                    pass
+                    return SaveCommand(ns.name)
+                if ns.auto is not None and ns.auto:
+                    prefix = "asdste100"
+                    extension = ".svg"
+                    now = datetime.now()
+                    iso8601 = now.strftime("%Y-%m-%d-%H-%M-%S")
+                    file_name = f"{prefix}-{iso8601}{extension}"
+                    file_fullname = Path(tempfile.gettempdir()) / file_name
+                    return SaveCommand(str(file_fullname))
 
-        # if ns.rule is not None:
-        #     return RuleCommand(ns.rule)
-        if ns.save is not None:
-            return SaveCommand(ns.save)
         if ns.exit is not None:
             return ExitCommand(ns.exit)
 
