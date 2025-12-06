@@ -94,7 +94,10 @@ class WordCategory(StrEnum):
 
     @staticmethod
     def get_matching_keys(pattern: str) -> list[WordCategory]:
-        """pass"""
+        """
+        Returns all word categories where `pattern` matchs the text from
+        the description.
+        """
 
         assert isinstance(pattern, str) and "" != pattern.strip()
 
