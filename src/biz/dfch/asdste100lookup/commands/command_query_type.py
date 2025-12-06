@@ -19,7 +19,7 @@ from enum import Enum, auto
 
 
 class CommandQueryType(Enum):
-    """Specifies the query types for commands`."""
+    """Specifies the query types for commands."""
 
     ID = auto()
     NAME = auto()
