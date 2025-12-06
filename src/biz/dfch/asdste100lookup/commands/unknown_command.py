@@ -24,6 +24,8 @@ from biz.dfch.logging import log  # pylint: disable=E0401
 from ..word import Word
 
 from .dictionary_command import DictionaryCommand
+from .filter_command import FilterCommand
+from .word_filter import WordFilter
 
 
 @dataclass
@@ -35,6 +37,9 @@ class UnknownCommand(DictionaryCommand):
 
         matching_words: dict[int, Word] = {}
         try:
+            _filter = WordFilter(FilterCommand.get_filter())
+            dictionary = _filter.invoke(dictionary)
+
             for word in dictionary:
                 if re.search(self.value, word.name, re.IGNORECASE):
                     matching_words[id(word)] = word
@@ -65,7 +70,8 @@ class UnknownCommand(DictionaryCommand):
             log.error("Invalid regex: '%s'", ex)
 
         result = self.show(
-            items=list(matching_words.values()), prompt=self.value)
+            items=list(matching_words.values()), prompt=self.value
+        )
 
         if 0 == len(result.rows):
             console.print("No match.")

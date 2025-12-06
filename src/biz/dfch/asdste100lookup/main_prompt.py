@@ -26,11 +26,17 @@ from .commands.command_base import CommandBase
 from .commands.command_query_type import CommandQueryType
 from .commands.empty_command import EmptyCommand
 from .commands.exit_command import ExitCommand
+from .commands.filter_command import FilterCommand
 from .commands.help_command import HelpCommand
 from .commands.rule_command import RuleCommand
 from .commands.save_command import SaveCommand
 from .commands.unknown_command import UnknownCommand
 from .commands.word_category_command import WordCategoryCommand
+from .commands.word_filter_type import WordFilterType
+
+from .word_category import WordCategory
+from .word_type import WordType
+from .word_status import WordStatus
 
 
 class MainPrompt:  # pylint: disable=R0903
@@ -165,6 +171,75 @@ class MainPrompt:  # pylint: disable=R0903
             help="This command stops the programme.",
         )
 
+        filter_parser = subparsers_action.add_parser(
+            self._filter_command_names[0],
+            aliases=self._filter_command_names[1:],
+            help="Modifies the filter for dictionary queries.",
+        )
+
+        filter_parser_args = filter_parser.add_mutually_exclusive_group(
+            required=True
+        )
+
+        filter_parser_args.add_argument(
+            "-l",
+            "--list",
+            action="store_true",
+            help="Show all filters.",
+        )
+
+        filter_parser_args.add_argument(
+            "-r",
+            "--reset",
+            action="store_true",
+            help="Resets all filters.",
+        )
+
+        filter_parser_args.add_argument(
+            "-t",
+            "--type",
+            "--word_type",
+            metavar="TYPE",
+            type=lambda s: s.lower(),
+            choices=[item.value.lower() for item in WordType],
+            help="Sets the filter for word type. "
+            f"{[item.value.lower() for item in WordType]}.",
+        )
+
+        filter_parser_args.add_argument(
+            "-s",
+            "--status",
+            metavar="STATUS",
+            type=lambda s: s.lower(),
+            choices=[item.value.lower() for item in WordStatus],
+            help="Sets the filter for word status: "
+            f"{[item.value.lower() for item in WordStatus]}.",
+        )
+
+        filter_parser_args.add_argument(
+            "-src",
+            "--source",
+            type=str,
+            help="Sets the filter for word source.",
+        )
+
+        filter_parser_args.add_argument(
+            "-c",
+            "--category",
+            metavar="CAT",
+            type=lambda s: s.lower(),
+            choices=[item.value.lower() for item in WordCategory],
+            help="Sets the filter for word category: "
+            f"{[item.value.lower() for item in WordCategory]}.",
+        )
+
+        filter_parser_args.add_argument(
+            "-n",
+            "--note",
+            type=str,
+            help="Sets the filter for words with a note.",
+        )
+
         return result
 
     def parse(self, text: str) -> CommandBase:
@@ -235,5 +310,23 @@ class MainPrompt:  # pylint: disable=R0903
 
             if ns.command in self._exit_command_names:
                 return ExitCommand(ns.command)
+
+            if ns.command in self._filter_command_names:
+                if ns.reset is not None and ns.reset:
+                    return FilterCommand(WordFilterType.RESET, "")
+                if ns.list is not None and ns.list:
+                    return FilterCommand(WordFilterType.LIST, "")
+                if ns.type is not None:
+                    return FilterCommand(WordFilterType.TYPE, ns.type)
+                if ns.status is not None:
+                    return FilterCommand(WordFilterType.STATUS, ns.status)
+                if ns.category is not None:
+                    return FilterCommand(WordFilterType.CATEGORY, ns.category)
+                if ns.source is not None:
+                    return FilterCommand(WordFilterType.SOURCE, ns.source)
+                if ns.note is not None:
+                    return FilterCommand(WordFilterType.NOTE, ns.note)
+
+                raise ValueError("Invalid command option.")
 
         return UnknownCommand(text)

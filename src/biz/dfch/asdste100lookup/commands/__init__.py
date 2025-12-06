@@ -20,11 +20,15 @@ from .dictionary_command import DictionaryCommand
 from .empty_command import EmptyCommand
 from .erase_console_buffer_command import EraseConsoleBufferCommand
 from .exit_command import ExitCommand
+from .filter_command import FilterCommand
 from .help_command import HelpCommand
 from .rule_command import RuleCommand
 from .save_command import SaveCommand
 from .unknown_command import UnknownCommand
 from .word_category_command import WordCategoryCommand
+from .word_filter import WordFilter
+from .word_filter_type import WordFilterType
+
 
 __all__ = [
     "CommandBase",
@@ -32,9 +36,12 @@ __all__ = [
     "EmptyCommand",
     "EraseConsoleBufferCommand",
     "ExitCommand",
+    "FilterCommand",
     "HelpCommand",
     "RuleCommand",
     "SaveCommand",
     "UnknownCommand",
     "WordCategoryCommand",
+    "WordFilter",
+    "WordFilterType",
 ]
