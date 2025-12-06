@@ -21,8 +21,9 @@ from typing import cast
 
 from biz.dfch.logging import log  # pylint: disable=E0401
 
+from ..word import Word
+
 from .dictionary_command import DictionaryCommand
-from .word import Word
 
 
 @dataclass

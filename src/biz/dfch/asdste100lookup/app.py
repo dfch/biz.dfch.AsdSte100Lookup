@@ -30,17 +30,18 @@ from rich.theme import Theme
 from biz.dfch.logging import log
 from biz.dfch.version import Version
 
+from .commands.command_base import CommandBase
+from .commands.empty_command import EmptyCommand
+from .commands.unknown_command import UnknownCommand
+
 from .constant import Constant
-from .command_base import CommandBase
 from .dictionary_files_parser import DictionaryFilesParser
-from .empty_command import EmptyCommand
 from .main_prompt import MainPrompt
 from .rule import Rule
 from .rule_content_type import RuleContentType
 from .rule_renderer import RuleRenderer
 from .rule_technical_word_parser import RuleTechnicalWordsParser
 from .technical_word_category import TechnicalWordCategory
-from .unknown_command import UnknownCommand
 from .word import Word
 from .word_meaning import WordMeaning
 from .word_note import WordNote

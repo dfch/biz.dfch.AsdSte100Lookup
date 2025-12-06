@@ -22,16 +22,15 @@ import shlex
 import tempfile
 
 
-from .command_base import CommandBase
-from .empty_command import EmptyCommand
-from .exit_command import ExitCommand
-from .help_command import HelpCommand
-from .rule_command import RuleCommand
-from .save_command import SaveCommand
-from .unknown_command import UnknownCommand
-from .word_category_command import (
-    WordCategoryCommand,
-    WordCategoryCommandQueryType)
+from .commands.command_base import CommandBase
+from .commands.empty_command import EmptyCommand
+from .commands.exit_command import ExitCommand
+from .commands.help_command import HelpCommand
+from .commands.rule_command import RuleCommand
+from .commands.save_command import SaveCommand
+from .commands.unknown_command import UnknownCommand
+from .commands.word_category_command import WordCategoryCommand
+from .commands.word_category_command import WordCategoryCommandQueryType
 
 
 class MainPrompt:  # pylint: disable=R0903

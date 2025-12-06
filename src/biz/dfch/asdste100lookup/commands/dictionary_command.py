@@ -23,14 +23,15 @@ from rich.table import Table
 
 from biz.dfch.logging import log  # pylint: disable=E0401
 
-from .colouriser import Colouriser
-from .constant import Constant
+from ..colouriser import Colouriser
+from ..constant import Constant
+from ..table_row import TableRow
+from ..utils import get_value_or_default
+from ..word import Word
+from ..word_note import WordNote
+from ..word_status import WordStatus
+
 from .erase_console_buffer_command import EraseConsoleBufferCommand
-from .table_row import TableRow
-from .utils import get_value_or_default
-from .word import Word
-from .word_note import WordNote
-from .word_status import WordStatus
 
 
 @dataclass

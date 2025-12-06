@@ -13,29 +13,36 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-"""RuleCommand class."""
+"""CommandBase class."""
 
+from abc import ABC, abstractmethod
 from dataclasses import dataclass
-import re
 
-from .rule_renderer import RuleRenderer
-from .erase_console_buffer_command import EraseConsoleBufferCommand
-from .rule import Rule
+from rich.console import Console
+
+from ..rule import Rule
+from ..word import Word
 
 
 @dataclass
-class RuleCommand(EraseConsoleBufferCommand):
-    """Represents the rule command."""
+class CommandBase(ABC):
+    """Represents a base command with a single parameter."""
 
-    def invoke(self, console, dictionary, rules) -> None:
-        super().invoke(console, dictionary, rules)
+    value: str
 
-        selected_rules: list[Rule] = []
+    def __init__(self, value: str):
+        self.value = value
+
+    @abstractmethod
+    def invoke(
+        self, console: Console, dictionary: list[Word], rules: list[Rule]
+    ) -> None:
+        """Invokes the command."""
+
+        assert isinstance(console, Console)
+        assert isinstance(dictionary, list)
+        for word in dictionary:
+            assert isinstance(word, Word)
+        assert isinstance(rules, list)
         for rule in rules:
-            if re.search(self.value, rule.id_, re.IGNORECASE):
-                selected_rules.append(rule)
-
-        RuleRenderer().show(
-            console=console,
-            rules=selected_rules,  # pylint: disable=R0801
-            is_summary_only=False)
+            assert isinstance(rule, Rule)

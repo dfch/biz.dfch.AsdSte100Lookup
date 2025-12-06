@@ -13,36 +13,29 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-"""CommandBase class."""
+"""EraseConsoleBufferCommand class."""
 
-from abc import ABC, abstractmethod
+from abc import abstractmethod
 from dataclasses import dataclass
 
 from rich.console import Console
 
-from .rule import Rule
-from .word import Word
+from ..rule import Rule
+from ..word import Word
+
+from .command_base import CommandBase
 
 
 @dataclass
-class CommandBase(ABC):
-    """Represents a base command with a single parameter."""
-
-    value: str
-
-    def __init__(self, value: str):
-        self.value = value
+class EraseConsoleBufferCommand(CommandBase):
+    """Represents the command that erases the console export buffer."""
 
     @abstractmethod
     def invoke(
         self, console: Console, dictionary: list[Word], rules: list[Rule]
     ) -> None:
-        """Invokes the command."""
+        """Erases the console export buffer."""
 
-        assert isinstance(console, Console)
-        assert isinstance(dictionary, list)
-        for word in dictionary:
-            assert isinstance(word, Word)
-        assert isinstance(rules, list)
-        for rule in rules:
-            assert isinstance(rule, Rule)
+        super().invoke(console=console, dictionary=dictionary, rules=rules)
+
+        _ = console.export_svg(clear=True)

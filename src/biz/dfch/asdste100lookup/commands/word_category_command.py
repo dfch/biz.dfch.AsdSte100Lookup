@@ -21,9 +21,10 @@ import re
 
 from biz.dfch.logging import log  # pylint: disable=E0401
 
+from ..technical_word_category import TechnicalWordCategory
+from ..word import Word
+
 from .dictionary_command import DictionaryCommand
-from .technical_word_category import TechnicalWordCategory
-from .word import Word
 
 
 class WordCategoryCommandQueryType(Enum):
