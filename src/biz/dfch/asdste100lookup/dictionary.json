@@ -8557,7 +8557,7 @@
     "ste_example": [],
     "nonste_example": [],
     "note": {
-      "value": "Use DRAIN (v) for liquids.",
+      "value": "Use DRAIN (v) for liquids. (dfch)",
       "words": [],
       "ste_example": "",
       "nonste_example": ""
@@ -22683,33 +22683,25 @@
           "Due to the small diameter of the hole, the flow is low."
         ],
         "note": null
-      }
-    ],
-    "source": "STE100:9",
-    "category": "0",
-    "ste_example": [],
-    "nonste_example": [],
-    "note": {
-      "value": "",
-      "words": [],
-      "ste_example": null,
-      "nonste_example": null
-    }
-  },
-  {
-    "status": "approved",
-    "name": "BECAUSE",
-    "type_": "conj",
-    "meanings": [
+      },
       {
-        "value": "THE SHAFT MOVED BECAUSE THE ACTUATOR OPERATED.",
-        "ste_example": "The shaft moved due to the actuator action.",
-        "nonste_example": "",
+        "status": "approved",
+        "name": "BECAUSE",
+        "type_": "conj",
+        "meanings": [],
+        "spellings": [],
+        "alternatives": [],
+        "source": "STE100:9",
+        "category": "0",
+        "ste_example": [
+          "THE SHAFT MOVED BECAUSE THE ACTUATOR OPERATED."
+        ],
+        "nonste_example": [
+          "The shaft moved due to the actuator action."
+        ],
         "note": null
       }
     ],
-    "spellings": [],
-    "alternatives": [],
     "source": "STE100:9",
     "category": "0",
     "ste_example": [],
@@ -25235,22 +25227,44 @@
     "status": "rejected",
     "name": "erect",
     "type_": "v",
-    "meanings": [
+    "meanings": [],
+    "spellings": [],
+    "alternatives": [
       {
-        "value": "ASSEMBLE (v) BECOME STABLE",
-        "ste_example": "BEFORE YOU LIFT THE GEARBOX, ASSEMBLE THE MOVABLE HOIST.",
-        "nonste_example": "Erect the movable hoist before lifting the gearbox.",
+        "status": "approved",
+        "name": "ASSEMBLE",
+        "type_": "v",
+        "meanings": [],
+        "spellings": [],
+        "alternatives": [],
+        "source": "STE100:9",
+        "category": "0",
+        "ste_example": [
+          "BEFORE YOU LIFT THE GEARBOX, ASSEMBLE THE MOVABLE HOIST."
+        ],
+        "nonste_example": [
+          "Erect the movable hoist before lifting the gearbox."
+        ],
         "note": null
       },
       {
-        "value": "\u200b",
-        "ste_example": "LET THE VERTICAL GYRO BECOME STABLE.",
-        "nonste_example": "Give the vertical gyro time to erect.",
+        "status": "approved",
+        "name": "BECOME STABLE",
+        "type_": "v",
+        "meanings": [],
+        "spellings": [],
+        "alternatives": [],
+        "source": "STE100:9",
+        "category": "0",
+        "ste_example": [
+          "LET THE VERTICAL GYRO BECOME STABLE."
+        ],
+        "nonste_example": [
+          "Give the vertical gyro time to erect."
+        ],
         "note": null
       }
     ],
-    "spellings": [],
-    "alternatives": [],
     "source": "STE100:9",
     "category": "0",
     "ste_example": [],
@@ -29706,16 +29720,44 @@
     "status": "rejected",
     "name": "finger-tighten",
     "type_": "v",
-    "meanings": [
+    "meanings": [],
+    "spellings": [],
+    "alternatives": [
       {
-        "value": "TIGHTEN ... WITH YOUR FINGERS",
-        "ste_example": "TIGHTEN THE NUT WITH YOUR FINGERS.",
-        "nonste_example": "Finger-tighten the nut.",
+        "status": "approved",
+        "name": "TIGHTEN",
+        "type_": "v",
+        "meanings": [],
+        "spellings": [],
+        "alternatives": [],
+        "source": "STE100:9",
+        "category": "0",
+        "ste_example": [
+          "TIGHTEN THE NUT WITH YOUR FINGERS."
+        ],
+        "nonste_example": [
+          "Finger-tighten the nut."
+        ],
+        "note": null
+      },
+      {
+        "status": "approved",
+        "name": "TIGHTEN ... WITH YOUR FINGERS",
+        "type_": "v",
+        "meanings": [],
+        "spellings": [],
+        "alternatives": [],
+        "source": "STE100:9",
+        "category": "0",
+        "ste_example": [
+          "TIGHTEN THE NUT WITH YOUR FINGERS."
+        ],
+        "nonste_example": [
+          "Finger-tighten the nut."
+        ],
         "note": null
       }
     ],
-    "spellings": [],
-    "alternatives": [],
     "source": "STE100:9",
     "category": "0",
     "ste_example": [],
@@ -58448,16 +58490,27 @@
     "status": "rejected",
     "name": "reinforce",
     "type_": "v",
-    "meanings": [
+    "meanings": [],
+    "spellings": [],
+    "alternatives": [
       {
-        "value": "MAKE ... STRONGER",
-        "ste_example": "DOUBLERS MAKE THE JOINT STRONGER.",
-        "nonste_example": "Doublers reinforce the joint.",
+        "status": "approved",
+        "name": "MAKE ... STRONGER",
+        "type_": "v",
+        "meanings": [],
+        "spellings": [],
+        "alternatives": [],
+        "source": "STE100:9",
+        "category": "0",
+        "ste_example": [
+          "DOUBLERS MAKE THE JOINT STRONGER."
+        ],
+        "nonste_example": [
+          "Doublers reinforce the joint."
+        ],
         "note": null
       }
     ],
-    "spellings": [],
-    "alternatives": [],
     "source": "STE100:9",
     "category": "0",
     "ste_example": [],
@@ -67538,22 +67591,44 @@
     "status": "rejected",
     "name": "specific",
     "type_": "adj",
-    "meanings": [
+    "meanings": [],
+    "spellings": [],
+    "alternatives": [
       {
-        "value": "APPROVED (adj) SPECIFIED (adj)",
-        "ste_example": "USE APPROVED TOOLS TO PREVENT POSSIBLE DAMAGE.",
-        "nonste_example": "Use specific tools to preclude the possibility of damage.",
+        "status": "approved",
+        "name": "APPROVED",
+        "type_": "adj",
+        "meanings": [],
+        "spellings": [],
+        "alternatives": [],
+        "source": "STE100:9",
+        "category": "0",
+        "ste_example": [
+          "USE APPROVED TOOLS TO PREVENT POSSIBLE DAMAGE."
+        ],
+        "nonste_example": [
+          "Use specific tools to preclude the possibility of damage."
+        ],
         "note": null
       },
       {
-        "value": "\u200b",
-        "ste_example": "THESE AREAS HAVE SPECIFIED DAMAGE LIMITS.",
-        "nonste_example": "These areas have specific damage limits.",
+        "status": "approved",
+        "name": "SPECIFIED",
+        "type_": "adj",
+        "meanings": [],
+        "spellings": [],
+        "alternatives": [],
+        "source": "STE100:9",
+        "category": "0",
+        "ste_example": [
+          "THESE AREAS HAVE SPECIFIED DAMAGE LIMITS."
+        ],
+        "nonste_example": [
+          "These areas have specific damage limits."
+        ],
         "note": null
       }
     ],
-    "spellings": [],
-    "alternatives": [],
     "source": "STE100:9",
     "category": "0",
     "ste_example": [],
@@ -67838,16 +67913,27 @@
     "status": "rejected",
     "name": "spin",
     "type_": "v",
-    "meanings": [
+    "meanings": [],
+    "spellings": [],
+    "alternatives": [
       {
-        "value": "TURN ... QUICKLY",
-        "ste_example": "TURN THE WHEEL QUICKLY WITH YOUR HAND.",
-        "nonste_example": "Spin the wheel by hand.",
+        "status": "approved",
+        "name": "TURN ... QUICKLY",
+        "type_": "v",
+        "meanings": [],
+        "spellings": [],
+        "alternatives": [],
+        "source": "STE100:9",
+        "category": "0",
+        "ste_example": [
+          "TURN THE WHEEL QUICKLY WITH YOUR HAND."
+        ],
+        "nonste_example": [
+          "Spin the wheel by hand."
+        ],
         "note": null
       }
     ],
-    "spellings": [],
-    "alternatives": [],
     "source": "STE100:9",
     "category": "0",
     "ste_example": [],
@@ -76428,16 +76514,27 @@
     "status": "rejected",
     "name": "unnecessary",
     "type_": "adj",
-    "meanings": [
+    "meanings": [],
+    "spellings": [],
+    "alternatives": [
       {
-        "value": "NOT NECESSARY",
-        "ste_example": "REMOVE THE GROUND EQUIPMENT THAT IS NOT NECESSARY.",
-        "nonste_example": "Remove the unnecessary ground equipment.",
+        "status": "approved",
+        "name": "NOT NECESSARY",
+        "type_": "adj",
+        "meanings": [],
+        "spellings": [],
+        "alternatives": [],
+        "source": "STE100:9",
+        "category": "0",
+        "ste_example": [
+          "REMOVE THE GROUND EQUIPMENT THAT IS NOT NECESSARY."
+        ],
+        "nonste_example": [
+          "Remove the unnecessary ground equipment."
+        ],
         "note": null
       }
     ],
-    "spellings": [],
-    "alternatives": [],
     "source": "STE100:9",
     "category": "0",
     "ste_example": [],

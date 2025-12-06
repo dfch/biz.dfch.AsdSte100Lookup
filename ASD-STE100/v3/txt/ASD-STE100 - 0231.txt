@@ -1,6 +1,6 @@
 ﻿spillage (n)	CONTAMINATION (n)	FIND THE AREA OF MERCURY CONTAMINATION.	Find the area of the mercury spillage.
 	SPILL (v)		IF ACID SPILLS, CLEAN THE AREA.	After acid spillage, clean the area.
-spin (v)	TURN ... QUICKLY	TURN THE WHEEL QUICKLY WITH YOUR HAND.	Spin the wheel by hand.
+spin (v)	TURN ... QUICKLY (v)	TURN THE WHEEL QUICKLY WITH YOUR HAND.	Spin the wheel by hand.
 splash (v)	GET (v)	IF YOU GET FLUID IN YOUR EYES, GET MEDICAL AID.	If fluid splashes into eyes, get medical aid.
 splined (adj)	SPLINE (TN)	THE DRIVE SHAFT HAS SPLINES.	The drive shaft is splined.
 split (adj)	DAMAGED (adj)	REPLACE DAMAGED COVERS.	Split covers must be replaced.

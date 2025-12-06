@@ -1,5 +1,5 @@
-﻿erect (v)	ASSEMBLE (v) BECOME STABLE	BEFORE YOU LIFT THE GEARBOX, ASSEMBLE THE MOVABLE HOIST.	Erect the movable hoist before lifting the gearbox.
-		LET THE VERTICAL GYRO BECOME STABLE.	Give the vertical gyro time to erect.
+﻿erect (v)	ASSEMBLE (v)	BEFORE YOU LIFT THE GEARBOX, ASSEMBLE THE MOVABLE HOIST.	Erect the movable hoist before lifting the gearbox.
+	BECOME STABLE (v)	LET THE VERTICAL GYRO BECOME STABLE.	Give the vertical gyro time to erect.
 erratic (adj)	IRREGULAR (adj)	THE OPERATION OF THE COMPASS IS IRREGULAR.	The compass is erratic.
 ERROR (n)	The difference from that which is correct or accurate	IF THE ERROR IS MORE THAN 3 DEG., CALIBRATE THE COMPASS.	
 escape (v)	DEFLATE (v)	DEFLATE THE TIRE.	Let the air escape from the tire.

@@ -2,7 +2,7 @@
 	CONTROL (n)	THE TEMPERATURE CONTROL IS AUTOMATIC.	The regulation of temperature is automatic.
 	CONTROL (v)	A SENSOR CONTROLS THE TEMPERATURE IN THE COMPARTMENT.	The regulation of temperature in the compartment is effected by a sensor.
 reinflate (v)	INFLATE (v)	INFLATE THE TIRE AGAIN.	Reinflate the tire.
-reinforce (v)	MAKE ... STRONGER	DOUBLERS MAKE THE JOINT STRONGER.	Doublers reinforce the joint.
+reinforce (v)	MAKE ... STRONGER (v)	DOUBLERS MAKE THE JOINT STRONGER.	Doublers reinforce the joint.
 reinstall (v)	INSTALL (v)	AFTER YOU ADJUST THE UNIT, INSTALL THE COVER AGAIN.	Reinstall the cover after you adjust the unit.
 reinstallation (n)	INSTALLATION (n)	ONLY APPROVED PERSONNEL CAN DO THE INSTALLATION PROCEDURE.	This reinstallation must be performed by qualified personnel.
 REJECT (v), REJECTS, REJECTED, REJECTED	To make a decision that something is unsatisfactory	REJECT THE PARTS THAT ARE DAMAGED.	
