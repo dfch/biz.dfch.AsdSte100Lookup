@@ -41,7 +41,7 @@ from .rule import Rule
 from .rule_content_type import RuleContentType
 from .rule_renderer import RuleRenderer
 from .rule_technical_word_parser import RuleTechnicalWordsParser
-from .technical_word_category import TechnicalWordCategory
+from .word_category import WordCategory
 from .word import Word
 from .word_meaning import WordMeaning
 from .word_note import WordNote
@@ -72,7 +72,7 @@ class App:  # pylint: disable=R0903
         type_hooks={
             WordStatus: WordStatus,
             WordType: WordType,
-            TechnicalWordCategory: TechnicalWordCategory,
+            WordCategory: WordCategory,
         },
         forward_references={
             Word.__name__: Word,
@@ -119,12 +119,14 @@ class App:  # pylint: disable=R0903
             hasattr(self._args, "no_random_word") and self._args.no_random_word
         ):
             # Display a random word at startup.
-            while True:
-                # Suppress Sonar warning. This randon function is not used in a
-                # security relevant context.
-                word = random.choice(dictionary)  # NOSONAR
-                if word.status in (WordStatus.APPROVED, WordStatus.REJECTED):
-                    break
+            words = [
+                word
+                for word in dictionary
+                if word.category == WordCategory.DEFAULT
+            ]
+            # Suppress Sonar warning. This randon function is not used in a
+            # security relevant context.
+            word = random.choice(words)  # NOSONAR
 
             text = word.name
             command: CommandBase = UnknownCommand(text)

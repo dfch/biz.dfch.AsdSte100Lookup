@@ -20,7 +20,7 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 from typing import TYPE_CHECKING
 
-from .technical_word_category import TechnicalWordCategory
+from .word_category import WordCategory
 from .word_status import WordStatus
 from .word_type import WordType
 from .word_source import WordSource
@@ -43,7 +43,7 @@ class Word:
     spellings: list[str]
     alternatives: list[Word]
     source: str = WordSource.UNKNOWN
-    category: TechnicalWordCategory = TechnicalWordCategory.DEFAULT
+    category: WordCategory = WordCategory.DEFAULT
     ste_example: list[str] = field(default_factory=list)
     nonste_example: list[str] = field(default_factory=list)
     note: WordNote | None = None

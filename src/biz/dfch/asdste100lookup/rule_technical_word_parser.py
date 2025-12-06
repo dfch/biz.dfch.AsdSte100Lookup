@@ -19,7 +19,7 @@ import re
 
 from .rule import Rule
 from .rule_content_type import RuleContentType
-from .technical_word_category import TechnicalWordCategory
+from .word_category import WordCategory
 from .word import Word
 from .word_note import WordNote
 from .word_source import WordSource
@@ -62,7 +62,7 @@ class RuleTechnicalWordsParser:
                 word = Word(
                     status=WordStatus.CUSTOM,
                     source=WordSource.STE100_9,
-                    category=TechnicalWordCategory(current_category),
+                    category=WordCategory(current_category),
                     name=category_word.strip(),
                     type_=type_,
                     meanings=[],
@@ -84,10 +84,7 @@ class RuleTechnicalWordsParser:
         result: list[Word] = []
 
         result = self.get_technical_words(
-            rules,
-            rule_id="R1.5",
-            prefix="TN",
-            type_=WordType.TECHNICAL_NOUN
+            rules, rule_id="R1.5", prefix="TN", type_=WordType.TECHNICAL_NOUN
         )
 
         result.extend(
@@ -95,7 +92,7 @@ class RuleTechnicalWordsParser:
                 rules,
                 rule_id="R1.12",
                 prefix="TV",
-                type_=WordType.TECHNICAL_VERB
+                type_=WordType.TECHNICAL_VERB,
             )
         )
 

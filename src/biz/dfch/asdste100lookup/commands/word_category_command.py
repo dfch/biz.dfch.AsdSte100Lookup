@@ -20,7 +20,7 @@ import re
 
 from biz.dfch.logging import log  # pylint: disable=E0401
 
-from ..technical_word_category import TechnicalWordCategory
+from ..word_category import WordCategory
 from ..word import Word
 
 from .command_query_type import CommandQueryType
@@ -42,7 +42,7 @@ class WordCategoryCommand(DictionaryCommand):
         super().invoke(console, dictionary, rules)
 
         if CommandQueryType.NAME == self.type_:
-            keys = TechnicalWordCategory.get_matching_keys(self.value)
+            keys = WordCategory.get_matching_keys(self.value)
 
         if CommandQueryType.ID == self.type_:
             regex = re.compile(self.value, re.IGNORECASE)
@@ -73,9 +73,7 @@ class WordCategoryCommand(DictionaryCommand):
         categories = {word.category for word in words}
         cat_descriptions: list[str] = []
         for c in categories:
-            cat_descriptions.append(
-                f"{c}: {TechnicalWordCategory(c).get_description()}"
-            )
+            cat_descriptions.append(f"{c}: {WordCategory(c).get_description()}")
         cat_descriptions = sorted(cat_descriptions)
         info = "\n".join(cat_descriptions)
 
