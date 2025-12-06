@@ -115,30 +115,38 @@ class DictionaryCommand(EraseConsoleBufferCommand):
         row.description = str(Colouriser(note.value, "yellow"))
 
         for nword in nwords:
-            row = TableRow()
-            result.append(row)
-            row.description = self.to_colour(
-                f"{nword.name} ({nword.type_})",
-                nword.name,
-                nword.status,
+            result.extend(self._process_nword(nword))
+
+        return result
+
+    def _process_nword(self, word: Word) -> list[TableRow]:
+
+        assert isinstance(word, Word)
+
+        result: list[TableRow] = []
+
+        row = TableRow()
+        result.append(row)
+        row.description = self.to_colour(
+            f"{word.name} ({word.type_})",
+            word.name,
+            word.status,
+        )
+        if self._get_first_or_item(word.ste_example):
+            row.ste_example = self.to_colour(
+                cast(str, self._get_first_or_item(word.ste_example)),
+                word.name,
+                WordStatus.APPROVED,
             )
-            if self._get_first_or_item(nword.ste_example):
-                row.ste_example = self.to_colour(
-                    cast(str, self._get_first_or_item(
-                        nword.ste_example)),
-                    nword.name,
-                    WordStatus.APPROVED,
-                )
-            if self._get_first_or_item(nword.nonste_example):
-                row.nonste_example = self.to_colour(
-                    cast(
-                        str,
-                        self._get_first_or_item(
-                            nword.nonste_example),
-                    ),
-                    nword.name,
-                    WordStatus.REJECTED,
-                )
+        if self._get_first_or_item(word.nonste_example):
+            row.nonste_example = self.to_colour(
+                cast(
+                    str,
+                    self._get_first_or_item(word.nonste_example),
+                ),
+                word.name,
+                WordStatus.REJECTED,
+            )
 
         return result
 
