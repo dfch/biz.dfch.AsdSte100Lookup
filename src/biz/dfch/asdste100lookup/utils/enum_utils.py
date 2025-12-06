@@ -13,12 +13,15 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-"""string_utils."""
+"""enum_utils."""
 
 
-def get_value_or_default(value, default: str = ""):
-    """
-    Returns `value` if `value` is not `None`. Otherwise returns `default`.
-    """
+def enum_key_from_value(enum_cls, value: str):
+    """Returns an Enum key based on case-insenstivie value."""
 
-    return value or default
+    value_comparison = value.casefold()
+    for m in enum_cls:
+        if m.value.casefold() == value_comparison:
+            return m.name
+
+    raise KeyError(f"Invalid value for '{enum_cls.__name__}': '{value!r}'.")
