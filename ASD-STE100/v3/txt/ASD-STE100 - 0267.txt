@@ -1,0 +1,9 @@
+﻿vibrate (v)	VIBRATION (n)	IF THERE IS VIBRATION IN THE UNIT, DISCONNECT THE POWER SUPPLY.	If the unit vibrates, cut the power.
+VIBRATION (n)	Regular movement from a center position	PRESSURE SURGES AND VIBRATION CAN CAUSE WEAR ON THE HOSES.	
+vicinity (n)	NEAR (prep)	MAKE SURE THAT SOLVENTS ARE NOT NEAR THE ENGINE EXHAUST.	Make sure that solvents are not in the vicinity of the engine exhaust.
+	ADJACENT (adj)	DO AN INSPECTION OF THE DAMAGE AND OF THE ADJACENT AREA.	Do an inspection of the damage and of the immediate vicinity.
+VIEW (n)	The ability to see something	MAKE SURE THAT YOU HAVE A SATISFACTORY VIEW OF ALL COMPONENTS.	
+view (v)	SEE (v)	THE BOLT WILL BEAT THE 2 O'CLOCK POSITION WHEN SEEN FROM THE REAR.	The bolt will be at 2 o'clock when viewed from the rear.
+	LOOK (v)	THE BOLT WILL BEAT THE 2 O’CLOCK POSITION WHEN YOU LOOKAT THE PUMP FROM THE REAR.	The bolt will be at 2 o'clock when viewed from the rear.
+vigorous (adj)	FORCE (TN)	WHEN YOU CLEAN THE CARPET, DO NOT USE TOO MUCH FORCE ON THE BRUSH. TOO MUCH FORCE CAN CAUSE DAMAGE TO THE CARPET.	Vigorous cleaning with a brush can cause damage to the carpet.
+vigorously (adv)	FORCE (TN)	WHEN YOU MOVE THE CONTROL WHEEL, DO NOT APPLY TOO MUCH FORCE.	Do not move the control wheel too vigorously.

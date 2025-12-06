@@ -1,0 +1,11 @@
+﻿inadvertently (adv)	ACCIDENTALLY (adv)	IF YOU ACCIDENTALLY PUT TOO MUCH FUEL IN THE TANK, OPEN THE DRAIN VALVE.	If the tank is inadvertently overfilled, open the drain valve.
+INBOARD (adj)	Nearer to the longitudinal axis	REMOVE THE INBOARD FAIRING OF THE FLAP HINGE.	
+INBOARD (adv)	In or to a position nearer to the longitudinal axis	THE LANDING GEAR RETRACTS INBOARD INTO THE BAY.	
+INBOARD OF (Prep)	At a position nearer to the longitudinal axis	PUT THE ACCESS PLATFORM IN POSITION BELOW THE ACCESS PANEL THAT IS INBOARD OF THE FLAP TRACK.	
+INCIDENT (n)	An important occurrence that can cause damage or have dangerous results	RECORD ALL INCIDENTS OF WATER FOUND IN THE FUEL.	
+incline (n)	SLOPE (n)	YOU CAN ADJUST THE SLOPE OF THE RAMP.	You can adjust the incline of the ramp.
+INCLUDE (v), INCLUDES, INCLUDED, INCLUDED	To make, or to be, part of	THIS CHAPTER INCLUDES THE PROCEDURES FOR THE REMOVAL OF THE COMPONENTS.	
+including (prep)	THRU (prep)	DO TESTS 4 THRU 8 AGAIN.	Repeat from test 4 up to and including test 8.
+	WITH (prep)	SEND THE DEFECTIVE COVER, WITH THE OIL SAMPLES, TO THE REPAIR CENTER.	Return the defective cover, including the oil samples, to the repair center.
+incompatible (adj)	NOT COMPATIBLE	THIS SOFTWARE IS NOT COMPATIBLE WITH OTHER OPERATING SYSTEMS.	This software is incompatible with other operating systems.
+		THIS COOLANT IS NOT COMPATIBLE WITH ALUMINUM ALLOYS.	This coolant is incompatible with aluminum alloys.

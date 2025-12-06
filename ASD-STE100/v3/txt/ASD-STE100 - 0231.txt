@@ -1,0 +1,12 @@
+﻿spillage (n)	CONTAMINATION (n)	FIND THE AREA OF MERCURY CONTAMINATION.	Find the area of the mercury spillage.
+	SPILL (v)		IF ACID SPILLS, CLEAN THE AREA.	After acid spillage, clean the area.
+spin (v)	TURN ... QUICKLY (v)	TURN THE WHEEL QUICKLY WITH YOUR HAND.	Spin the wheel by hand.
+splash (v)	GET (v)	IF YOU GET FLUID IN YOUR EYES, GET MEDICAL AID.	If fluid splashes into eyes, get medical aid.
+splined (adj)	SPLINE (TN)	THE DRIVE SHAFT HAS SPLINES.	The drive shaft is splined.
+split (adj)	DAMAGED (adj)	REPLACE DAMAGED COVERS.	Split covers must be replaced.
+split (v)	DIVIDE (v)	DIVIDE THE ELECTRICAL LOAD BETWEEN THE TWO BUS BARS.	Split the electrical load between the two bus bars.
+	BREAK (v)	WHEN YOU APPLY THE MAXIMUM TEST PRESSURE, MAKE SURE THAT THE HOUSING DOES NOT BREAK	Make sure that the housing does not split when you apply the maximum test pressure.
+spot (n)	MARK (n)	A RED MARK ON THE PIN IDENTIFIES THE LUBRICATION POINT.	A red spot on the pin identifies the lubrication point.
+	STAIN (TN)	REMOVE ALL STAINS FROM THE CARPET WITH SOAP AND WARM WATER.	Remove any spots from the carpet with soap and warm water.
+spot (v)	FIND (v)	IF YOU FIND CORROSION IN THIS AREA, USE REPAIR SCHEME No. 3.	If you spot corrosion in this area, use repair scheme No. 3.
+SPRAY (n)	A jet of very small drops of liquid	THE SEALANT IS RESISTANT TO SALT SPRAY.	

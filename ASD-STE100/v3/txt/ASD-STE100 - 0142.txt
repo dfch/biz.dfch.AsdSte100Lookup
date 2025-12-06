@@ -1,0 +1,8 @@
+﻿KEEP (v), KEEPS, KEPT, KEPT	To continue to have or hold	KEEP THE COMPOUND INA CLOSED CONTAINER.	
+key (v)	REFER (v)	THE ILLUSTRATION REFERS TO EACH STEP.	The illustration will be keyed to each of the steps.
+	KEY (TN)	INSTALL THE KEY BETWEEN THE PULLEY AND THE SHAFT.	The pulley must be keyed to the shaft.
+KILL (v), KILLS, KILLED, KILLED	To cause death	HIGH VOLTAGES CAN KILL YOU.	
+kind (n)	TYPE (n)	YOU CAN USE TWO TYPES OF SEALING COMPOUND.	Two kinds of sealing compound can be used.
+kink (v)	KINK (TN)	DO NOT MAKE KINKS IN THE CABLES.	Do not kink the cables.
+knock (v)	HIT (v)	HIT THE CLAMPON THE RIGHT SIDE WITH A HAMMER.	Knock the clamp on the right side with a hammer.
+KNOW (v), KNOWS, KNEW, KNOWN	To be sure of data, to have data ready to use	IF YOU KNOW THE CLEARANCE, YOU CAN CALCULATE THE THICKNESS OF THE WASHER.	

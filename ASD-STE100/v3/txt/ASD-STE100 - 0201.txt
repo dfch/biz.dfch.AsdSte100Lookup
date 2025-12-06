@@ -1,0 +1,10 @@
+﻿reflect (v)	REFLECTION (n)	THE RETICLE IMAGE MAKES A REFLECTION ON THE BOTTOM SURFACE OF THE GLASS.	The reticle image reflects on the bottom surface of the glass.
+REFLECTION (n)	Something that occurs when energy comes against a surface which sends it back	A CLEAN SURFACE GIVES A BETTER REFLECTION.	
+REFUEL (v), REFUELS, REFUELED, REFUELED	To supply with fuel	REFUEL THE VEHICLE.	
+register (v)	SHOW (v)	ADJUST THE “SET +40” CONTROL UNTIL THE POINTER SHOWS +40.	Adjust the “SET +40” control until the pointer registers +40.
+regrease (v)	APPLY (v)	APPLY GREASE TO THE ROD AGAIN.	Regrease the rod.
+	MORE (adj)	PUT MORE GREASE ON THE JOINT UNTIL YOU CAN MOVE IT.	Regrease the joint until you can move it.
+REGULAR (adj)	At specified or equal intervals	THE COMPUTER GIVES REGULAR INPUTS TO THE CONTROL SYSTEM.	
+REGULARLY (adv)	In a regular manner	IF THE FAILURE OCCURS REGULARLY, DO A SYSTEM TEST.	
+regulate (v)	CONTROL (v)	CONTROL THE ELECTRICAL CURRENT.	Regulate the electrical current.
+	ADJUST (v)	ADJUST THE TIRE PRESSURE AS NECESSARY.	Regulate the tire pressure as necessary.

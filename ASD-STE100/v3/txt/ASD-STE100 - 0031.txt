@@ -1,0 +1,12 @@
+﻿BOND (v), BONDS, BONDED, BONDED	1. To make an electrical bond	THE STATIC DISCHARGER IS ELECTRICALLY BONDED TO THE FRAME.	
+	2. To attach firmly or become firmly attached with another material	IF THE FILLER BONDS TO THE TOOL, MAKE THE TOOL MOIST WITH COLD WATER.	
+		WHEN YOU BOND THE MATERIALS, APPLY A THIRD LAYER OF ADHESIVE.	
+both (adj)	THE TWO (TN)	ATTACH THE TWO ENDS OF THE HOSE.	Attach both ends of the hose.
+BOTTOM (adj)	That is lowermost	REMOVE THE BOTTOM BOLT.	
+BOTTOM (n)	The lowermost position	THE DRAIN PLUG IS AT THE BOTTOM OF THE UNIT.	
+bottom (v)	TOUCH (v)	OPEN THE DOOR UNTIL IT TOUCHES THE FLOOR.	Open the door until it bottoms on the floor.
+bounds (n)	LIMIT (n)	MAKE SURE THAT THE CLEARANCE IS IN THE LIMITS.	Make sure that the clearance is in bounds.
+brace (v)	HOLD (v)	SUPPORT STRUTS HOLD THE FLOOR STRUCTURE IN POSITION.	Support struts brace the floor structure.
+	STRONG (adj)	REINFORCEMENT PLATES MAKE THE LAP JOINTS STRONGER.	Reinforcement plates brace the lap joints.
+branch (v)	DIVIDE (v)	THE PRESSURE LINES DIVIDE IN DIFFERENT DIRECTIONS.	The pressure lines branch in different directions.
+breadth (n)	WIDTH (n)	THE WIDTH OF THE MATERIAL MUST BE LARGER THAN 10 mm.	The breadth of the material must be larger than 10 mm.

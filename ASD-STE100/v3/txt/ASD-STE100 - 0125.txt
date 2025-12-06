@@ -1,0 +1,11 @@
+﻿identical (adj)	SAME (adj)	THE SAME PROCEDURE IS APPLICABLE TO THE TWO VHF SETS.	The procedure is identical for both VHF sets.
+IDENTIFICATION (n)	Something that identifies an object	MAKE SURE THAT THE NAMEPLATE SHOWS THE CORRECT IDENTIFICATION OF THE UNIT.	
+IDENTIFY (v), IDENTIFIES, IDENTIFIED, IDENTIFIED	1. To use a specified code or marking to supply with an identity	IDENTIFY THE WIRES WITH SLEEVES OF DIFFERENT COLORS.	
+	2. To show an identity	A 406 MHz DIGITAL SIGNAL IDENTIFIES THE EMERGENCY LOCATOR TRANSMITTER AND ITS LOCATION.	
+	###For other meanings, use:
+	FIND (v)	FIND THE DAMAGED AREAS.	Identify the damaged areas.
+idle (v)	IDLE (TN)	OPERATE THE ENGINE AT IDLE FOR 20 MINUTES.	Idle the engine for 20 minutes.
+IF (conj)	In the event that, on the condition that, in case of	IF YOU USE A REPLACEMENT FAIRING PLATE, CUT IT UNTIL YOU GET THE CORRECT MATING DIMENSION.	
+ignite (v)	IGNITION (TN)	FUEL GOES THROUGH THE ATOMIZERS INTO THE COMBUSTION CHAMBER, WHERE IGNITION OCCURS.	Fuel passes through the atomizers to the combustion chamber, where it is ignited.
+IGNORE (v), IGNORES, IGNORED, IGNORED	Not to think about something, not to do something about	IGNORE THE VIBRATION INDICATIONS.	
+		SELECT “CANCEL” TO IGNORE ALL CHANGES.	

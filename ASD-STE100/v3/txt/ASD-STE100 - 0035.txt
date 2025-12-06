@@ -1,0 +1,9 @@
+﻿CALCULATE (v), CALCULATES, CALCULATED, CALCULATED	To find a result by mathematics	CALCULATE THE PERCENTAGE WITH THE APPLICABLE FORMULA.	
+calculation (n)	CALCULATE (v)	THE SYSTEM CALCULATES DATA THAT ARE APPLICABLE ONLY TO A TYPE B UNIT.	Data from the system calculations apply only to a Type B unit.
+CALIBRATE (v), CALIBRATES, CALIBRATED, CALIBRATED	To measure and adjust the precision of something	CALIBRATE THE THERMOMETER TO THE CELSIUS SCALE.	
+CALIBRATION (n)	The procedure that calibrates	WRITE THE RESULTS OF THE CALIBRATION ON THE CORRECTION CHART.	
+call (v)	TELL (v)	TELL THE RAMP AGENT TO REMOVE THE CHOCKS.	Call the ramp agent to remove the chocks.
+CAN (v), CAN, COULD	Auxiliary modal verb that means to be possible, to be able to, or to be permitted to	A MIXTURE OF FUEL AND OXYGEN CAN CAUSE AN EXPLOSION.	
+		YOU CAN CLEAN THE DRAIN HOLES WITH THE CLEANING TOOL.	
+		YOU CAN OPERATE THE VEHICLE AFTER THE INSPECTION IS COMPLETED.	
+	###Do not use COULD (v) to show possibility	IF YOU DO NOT OBEY THIS WARNING, AN EXPLOSION CAN OCCUR.	If you do not obey this warning, an explosion could occur.

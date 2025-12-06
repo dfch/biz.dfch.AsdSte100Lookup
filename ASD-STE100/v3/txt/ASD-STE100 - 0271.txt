@@ -1,0 +1,11 @@
+﻿weep (n)	LEAKAGE (n)	IF THERE IS FUEL LEAKAGE FROM THE COUPLINGS, REJECT THE UNIT.	If there are fuel weeps from the couplings, reject the unit.
+WEIGH (v), WEIGHS, WEIGHED, WEIGHED	1. To measure the weight of something	WEIGH THE TWO PARTS OF THE COMPOUND.	
+	2. To have a specified weight	THE UNIT WEIGHS 20 kg.	
+WEIGHT (n)	The force caused when gravity acts on the mass of an object	THE BASIC WEIGHT OF THE UNIT DOES NOT INCLUDE THE PROTECTIVE COVERS.	
+well (adv)	CORRECTLY (adv)	MAKE SURE THAT THE BEARING IS CORRECTLY INSTALLED.	Make sure that the bearing is well seated.
+	GOOD (adj)	THERE MUST BE A GOOD AIRFLOW IN THE WORKAREA.	The work area must be well ventilated.
+	FULLY (adv)	MAKE SURE THAT ALL LABORATORY EQUIPMENT IS FULLY CLEAN.	All laboratory equipment must be well cleaned.
+WET (adj) (WETTER, WETTEST)	That has liquid on it, in it, or absorbed into it	DRY THE WET SURFACES.	
+WHEN (conj)	At the time that or during	WHEN THE PISTON MOVEMENT STOPS, MEASURE THE TRAVEL.	
+whenever (conj)	WHEN (conj)	WHEN THE PRESSURE IS MORE THAN 7000 kPa, STOP THE TEST.	Stop the test whenever the pressure is more than 7000 kPa.
+WHERE (conj)	At, to, or in which location	CLEAN THE AREA WHERE YOU APPLIED THE SEALANT.	

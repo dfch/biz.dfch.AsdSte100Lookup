@@ -1,0 +1,12 @@
+﻿label (v)	IDENTIFY (v)	IDENTIFY THE COMPONENT WITH A CODE TO HELP YOU INSTALL IT AGAIN CORRECTLY.	Label the component with a code to help you install it again correctly.
+	LABEL (TN)	PUT A LABEL ON THE RELAY ASSEMBLY.	Label the relay assembly.
+lack (n)	NOT SUFFICIENT (adj)	DAMAGE CAN OCCUR TO THE PUMP IF THERE IS NOT SUFFICIENT OIL IN THE RESERVOIR.	Damage can occur to the pump if there is a lack of oil in the reservoir.
+LAMINATED (adj)	Made of laminations	THIS PANEL IS MADE OF LAMINATED CARBON FIBER.	
+LAMINATION (n)	Layers of one or more materials bonded together	IF THE LAMINATION IS DAMAGED, REPLACE THE PANEL.	
+land (v)	LANDING (TN)	AFTER A HEAVY LANDING, DO THE HEAVY LANDING INSPECTION.	If the aircraft landed heavily, do the Heavy Landing Inspection.
+LARGE (adj) (LARGER, LARGEST)	More than average in dimension, quantity, or capacity	CLEAN YOUR SKIN WITH A LARGE QUANTITY OF CLEAN WATER.	
+LAST (adj)	That comes at the end	IMMEDIATELY AFTER THE LAST FLIGHT OF THE DAY, INSTALL ALL COVERS.	
+LAST (adv)	After other persons or things	FILL THE OUTER TANKS LAST.	
+last (v)	CONTINUE (v)	THE SIGNALS CONTINUE FOR 0.8 SECONDS.	The signals last 0.8 seconds.
+LATCH (v), LATCHES, LATCHED, LATCHED	To hold something in position with a latching device	MAKE SURE THAT YOU LATCH THE DOOR CORRECTLY.	
+		MAKE SURE THAT THE DOOR LATCHES CORRECTLY.	

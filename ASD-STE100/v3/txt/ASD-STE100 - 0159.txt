@@ -1,0 +1,12 @@
+﻿MINIMUM (adj)	Related to the smallest dimension, quantity, number, or value	MAKE SURE THAT THE FLUID IN THE RESERVOIR IS ABOVE THE MINIMUM LEVEL.	
+MINIMUM (n)	The smallest dimension, quantity, number, or value	LET THE PAINT DRY FOR A MINIMUM OF 1 HOUR.	
+minor (adj)	SMALL (adj)	YOU CAN IGNORE SMALL DIFFERENCES IN TEMPERATURE.	Minor differences in temperature can be ignored.
+MINUS (prep)	With the subtraction of	INCREASE THE PRESSURE IN THE SHOCK ABSORBER TO 85.5 bar, PLUS OR MINUS 2.7 bar.	
+miscellaneous (adj)	OTHER (adj)	REMOVE THE TOOLS AND THE OTHER RELATED ITEMS.	Remove the tools and the related miscellaneous items.
+	ALL (adj)	REMOVE ALL EQUIPMENT.	Remove miscellaneous equipment.
+misrigged (adj)	INCORRECTLY ADJUSTED	IF THE MARKS ARE NOT ALIGNED, THE LINKAGE IS INCORRECTLY ADJUSTED.	If the marks are not aligned, the linkage is misrigged.
+MISSING (adj)	That is not there	IF SEALS ARE MISSING, INSTALL NEW SEALS.	
+mix (n)	MIXTURE (n)	THE POTLIFE OF THE MIXTURE IS APPROXIMATELY 4 HOURS.	The potlife of the mix is approximately 4 hours.
+MIX (v), MIXES, MIXED, MIXED	1. To put together two or more materials to become one	MIX THE COMPOUND.	
+	2. To become combined	IF FUEL AND WATER MIX, CONTAMINATION CAN OCCUR.	
+MIXTURE (n)	The result that you get when you mix materials	DO NOT USE THIS MIXTURE WHEN THE TEMPERATURE IS LESS THAN 15 °C.	

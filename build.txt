@@ -1,0 +1,1 @@
+pyinstaller --clean --onefile --name AsdSte100Lookup --add-data "./src/logging.conf:." --add-data "./src/biz/dfch/asdste100lookup:./biz/dfch/asdste100lookup/" -p "./src" -p "./src/biz" ./src/biz/__main__.py

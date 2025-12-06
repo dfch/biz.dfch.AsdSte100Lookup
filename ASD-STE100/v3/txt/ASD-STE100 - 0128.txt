@@ -1,0 +1,10 @@
+﻿impossible (adj)	NOT POSSIBLE (adj)	THUS, IT IS NOT POSSIBLE TO GIVE A STANDARD VALUE.	Thus, it is impossible to give a standard value.
+	CANNOT (v)	YOU CANNOT FILL THE CONTAINERS WHILE THEY ARE INSTALLED ON THE AIRCRAFT.	It is impossible to recharge containers while installed on aircraft.
+impregnate (v)	SOAK (v)	SOAK THE FILTER ELEMENTS IN OIL.	The filter elements must be impregnated with oil.
+impression (n)	THINK (v)	IF YOU THINK THAT A TIRE HAS LOW PRESSURE, DO THE STEPS THAT FOLLOW:	If you have the impression that a tire has low pressure, do the steps that follow:
+improper (adj)	INCORRECT (adj)	INCORRECT ADJUSTMENT OF THE STOP BOLTS ON THE RUDDER PEDALS CAN CAUSE DAMAGE.	Improper adjustment of the stop bolts on the rudder pedals can cause damage.
+improperly (adv)	INCORRECTLY (adv)	IF THE HINGE IS INCORRECTLY ADJUSTED, YOU CANNOT CLOSE THE PANEL.	If the hinge is improperly adjusted, the panel will not close.
+improve (v)	BETTER (adj)	DO NOT ADJUST THE PARTS AGAIN TO MAKE THEIR POSITION BETTER.	Do not readjust the parts to improve their position.
+impurity (n)	UNWANTED MATERIAL (n)	USE A FILTER TO REMOVE UNWANTED MATERIAL FROM THE HYDRAULIC OIL.	Filter the hydraulic oil to remove impurities.
+	CONTAMINATION (n)	CONTAMINATION CAN CAUSE A FAILURE.	Impurities may cause a failure.
+IN (adv)	To, or into a location or position	MAKE SURE THAT THE SWITCHES ARE PUSHED IN.	

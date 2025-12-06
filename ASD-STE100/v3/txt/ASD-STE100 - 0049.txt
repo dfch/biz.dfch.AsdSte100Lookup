@@ -1,0 +1,12 @@
+﻿COMPONENT (n)	A part, subassembly, or unit that has a specified function	CLEAN THESE COMPONENTS WITH APPROVED SOLVENTS.	
+comprehensive (adj)	FULL (adj)	DO A FULL INSPECTION OF THE FAIRING.	Do a comprehensive inspection of the fairing.
+COMPRESS (v), COMPRESSES, COMPRESSED, COMPRESSED	To decrease or cause to decrease in dimension or volume	COMPRESS THE SPRING AND CAREFULLY INSTALL THE COVER.	
+		WHEN THE SPRING COMPRESSES, THE VALVE OPENS.	
+comprise (v)	HAVE (v)	THE VALVE ASSEMBLY HAS THESE PARTS:	The valve assembly comprises these parts:
+	CONTAIN (v)	EACH SURVIVAL KIT CONTAINS THESE ITEMS.	Each survival kit comprises these items.
+compulsory (adj)	MANDATORY (adj)	BEFORE YOU INSTALL A NEW COMPONENT, IT IS MANDATORY TO REPLACE THE FILTER.	Before you install a new component, it is compulsory to replace the filter.
+compute (v)	CALCULATE (v)	CALCULATE THE VOLTAGE IN THE CIRCUIT.	Compute the voltage in the circuit.
+concentrate (v)	ALL (adj)	ALL THE WEIGHT MUST BE ON THE SPAR TIP.	The weight must be concentrated on the spar tip-
+CONCENTRATION (n)	The strength of something contained in a mixture	IN A HIGH CONCENTRATION, THIS MATERIAL IS POISONOUS.	
+CONCENTRIC (adj)	That has a common center	THE EXTERNAL DIAMETER MUST BE CONCENTRIC TO THE INTERNAL DIAMETER.	
+concern (v)	APPLICABLE (adj)	THIS PROCEDURE IS APPLICABLE ONLY TO A TYPE B UNIT.	This procedure only concerns a Type B unit.

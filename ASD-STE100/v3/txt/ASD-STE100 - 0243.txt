@@ -1,0 +1,3 @@
+﻿SYNCHRONIZED (adj)	1. That operates at the same time	MAKE SURE THAT THE TWO ROTORS ARE SYNCHRONIZED.
+	2. That agrees with	MAKE SURE THAT THE TIMER IS SYNCHRONIZED WITH THE GPS CLOCK.
+SYSTEM (n)	An assembly of related parts to do a specified operation	DO NOT FILL THE SYSTEM DIRECTLY FROM A HIGH-PRESSURE CYLINDER.

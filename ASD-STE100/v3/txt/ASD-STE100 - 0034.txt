@@ -1,0 +1,7 @@
+﻿burst (v)	BREAK (v)	IF THE DISK BREAKS, STOP THE SUPPLY.	If the disk bursts, switch off the supply.
+BUT (conj)	On the contrary	TIGHTEN THE NUTS, BUT DO NOT TORQUE THEM AT THIS TIME.	
+butt (v)	TOUCH (v)	THE WIRE MUST TOUCH THE REAR OF THE CONTACT.	The wire must butt against the rear of the contact.
+BY (prep)	Mathematical function word	DIVIDE THE VALUE BY TWO.	
+		INCREASE THE TEMPERATURE BY 10 DEGREES.	
+by means of (prep)	WITH (prep)	PRESSURIZE THE SYSTEM TO 150 bar WITH THE HAND PUMP.	By means of the hand pump, pressurize the system to 150 bar.
+BYPASS (v), BYPASSES, BYPASSED, BYPASSED	To change a circuit so that it goes past something instead of through it	IN THIS CONFIGURATION, THE HYDRAULIC PRESSURE BYPASSES THE VALVE.	

@@ -1,0 +1,10 @@
+﻿grip (v)	HOLD (v)	HOLD THE HANDLE LIGHTLY WITH ONE HAND.	Grip the handle lightly with one hand.
+GROOVE (n)	A long channel that is not wide	INSTALL THE O-RING IN ITS GROOVE ON THE PISTON.	
+GROUND (n)	The surface of the earth	YOU CAN ONLY DO THIS PROCEDURE ON THE GROUND.	
+GROUND (v), GROUNDS, GROUNDED, GROUNDED	To connect to the ground or to a large object of zero potential	GROUND THE FUEL TANKS.	
+GROUP (n)	Objects that are related	THIS GROUP OF SEALING COMPOUNDS IS ALSO APPLICABLE IN AN EMERGENCY.	
+grow (v)	BECOME (v)	IF THE BATTERY BECOMES TOO HOT, DISCONNECT IT.	If the battery grows too hot, disconnect it.
+guard (v)	GUARD (TN)	MAKE SURE THAT THE GUARDS ARE INSTALLED ON THE SWITCHES.	Make sure that the switches are guarded.
+guide (v)	PUT (v)	PUT THE CABLE THROUGH THE GROMMET.	Guide the cable through the grommet.
+	MOVE (v)	WHILE YOU LOWER THE PUMP, MOVE IT ONTO THE MOUNTING BRACKET.	As you lower the pump, guide it onto the mounting bracket.
+gush (v)	FLOW (n)	IF YOU TURN THE HANDLE TO “FULL,” THERE WILL BEA STRONG FLOW OF WATER FROM THE OUTLET.	If you turn the valve handle to FULL, water will gush from the outlet.

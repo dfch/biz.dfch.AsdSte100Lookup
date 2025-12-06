@@ -1,0 +1,11 @@
+﻿PREVENT (v), PREVENTS, PREVENTED, PREVENTED	To make sure that something does not occur	TO PREVENT DAMAGE TO THE ENGINE, IMMEDIATELY INSTALL PROTECTIVE COVERS ON ALL OPENINGS.	
+prevent from (v)	LET (v)	DO NOT LET THE DOOR OPEN.	Prevent the door from opening.
+preventive (adj)	PREVENT (v)	THIS COATING PREVENTS CORROSION.	This coating is a preventive measure for corrosion.
+PREVIOUS (adj)	That goes before in an unspecified time or sequence	IF YOU SELECTED “YES” IN A PREVIOUS STEP, GO TO PARAGRAPH 7.5.	
+	###Be accurate. Use LAST (adj) for the event that occurs immediately before in time or sequence.
+	LAST (adj)	DO THE LAST INSPECTION AGAIN.	Do the previous inspection again.
+PREVIOUSLY (adv)	Before, earlier, in the past	THIS SOFTWARE FINDS TERMS FROM PREVIOUSLY TRANSLATED FILES.	
+primarily (adv)	PRIMARY (adj)	THE PRIMARY FUNCTION OF THE HYDRAULIC SYSTEM IS TO SUPPLY THE PRESSURE TO OPERATE THE FLIGHT CONTROLS.	The hydraulic system primarily supplies the pressure to operate the flight controls.
+PRIMARY (adj)	First in importance	THE PRIMARY FUNCTION OF THE POWER UNIT IS TO SUPPLY ELECTRICAL POWER.	
+prime (v)	FILL (v)	FILL THE FILLER HOSE WITH WATER.	Prime the filler hose with water.
+	PUT (v)	PUT FUEL IN THE FUEL PUMP.	Prime the fuel pump.

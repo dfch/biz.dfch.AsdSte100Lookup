@@ -1,0 +1,12 @@
+﻿dent (v)	DENT (TN)	DO NOT MAKE DENTS IN THE BELLOWS.	Do not dent the bellows.
+depend (v)	IF (conj)	THE TENSION IN THE CABLES DECREASES IF THE TEMPERATURE INCREASES.	Cable tension changes depending on the temperature.
+deplete (v)	DECREASE (v)	DO NOT OPERATE THE BRAKES TO DECREASE THE PRESSURE IN THE ACCUMULATORS.	Do not deplete accumulators by operating the brakes.
+DEPLOY (v), DEPLOYS, DEPLOYED, DEPLOYED	To move or cause to move from a specified position of storage and into operation	WHEN THE THRUST REVERSER DEPLOYS, KEEP PERSONNEL AWAY FROM THE AIRCRAFT.	
+		DEPLOY THE SLIDE RAFT.	
+deposit (n)	PARTICLE (n)	IF THERE ARE METAL PARTICLES IN THE OIL FILTER, EXAMINE THE FILTER ELEMENT FOR WEAR.	If there are metal deposits in the oil filter, check the filter element for wear.
+	CONTAMINATION (n)	FLUSH THE PIPES TO REMOVE CONTAMINATION.	Flush the pipes to remove deposits.
+depress (v)	PUSH (v)	PUSH THE BUTTON AND THEN RELEASE IT.	Depress and release the button.
+depressurize (v)	PRESSURE (TN)	RELEASE THE PRESSURE FROM THE HYDRAULIC SYSTEM.	Depressurize the hydraulic system.
+DEPTH (n)	The distance from the top down, from the surface down, from the front surface to the rear surface	MEASURE THE DEPTH OF THE DENT AS SHOWN IN FIGURE 4.	
+describe (v)	GIVE (v)	THIS SECTION GIVES THE PROCEDURES FOR THE LEAK TEST OF THE SYSTEM.	This section describes the procedures for testing the system for leaks.
+deselect (v)	CANCEL (v)	PUSH THE BUTTON TO CANCEL THE FREEZE MODE.	Press the button to deselect the freeze mode.

@@ -1,0 +1,11 @@
+﻿associated (adj)	CORRECT (adj)	INSTALL THE DUMP VALVE AND THE CORRECT GASKET.	Install the dump valve with the associated gasket.
+	RELATED (adj)	REMOVE THE PANELS FROM THE RELATED DOORS.	Remove the panels from the associated doors.
+	ITS (adj)	REMOVE THE BOLT AND ITS WASHER.	Remove the bolt and the associated washer.
+	THEIR (adj)	REMOVE THE EIGHT BOLTS AND THEIR WASHERS.	Remove the eight bolts and the associated washers.
+assume (v)	THINK (v)	IF YOU THINK THAT YOU CAN REPAIR THE DAMAGE, REFER TO THE REPAIR SECTION.	If damage is assumed to be repairable, refer to the repair section.
+assure (v)	MAKE SURE (v)	USE A PLUMB LINE TO MAKE SURE THAT THE WALL IS VERTICAL.	Use a plumb line to assure that the wall is vertical.
+as to (prep)	ABOUT (prep)	REFER TO TABLE 7001 FOR INFORMATION ABOUT HOW THE PIVOT ASSEMBLY IS MADE.	Refer to Table 7001 for information as to the construction of the pivot assembly.
+asymmetric (adj)	NOT SYMMETRICAL (adj)	IF THE RESULT THAT YOU GET IS NOT SYMMETRICAL, DO A RIGGING TEST.	If you get an asymmetric result, do a rigging test.
+AT (prep)	Function word that shows the location, position, direction, or time that something occurs	DISCONNECT THE HOSE AT THE PITOT HEAD.	
+		AT APPROXIMATELY 300 KNOTS, THE LIGHT COMES ON.	
+		WITH THE NOSEWHEEL AT 30 DEG. TO THE CENTER LINE, SET THE LEVER TO “UP.”

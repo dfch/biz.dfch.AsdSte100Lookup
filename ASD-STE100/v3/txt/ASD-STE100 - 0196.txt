@@ -1,0 +1,10 @@
+﻿re- (prefix)	###In general, use the word AGAIN (adv) or BACK (adv) with the basic word to replace words that have “re-” as a prefix.
+reach (v)	GET (v)	WHEN YOU GET THE When the correct CORRECT PRESSURE, pressure is reached, CLOSE THE VALVE. close the valve.
+	TOUCH (v)	MAKE SURE THAT THE EXTENSION BAR TOUCHES THE TARGET PLATE.	Make sure that the extension bar reaches the target plate.
+	BE (v)	WHEN THE FLAPS ARE AT THE 30 DEGREE POSITION, INSTALL THE RIGGING PIN.	When the flaps reach the 30 degree position, install the rigging pin.
+reactivate (v)	ACTIVATE (v)	ACTIVATE THE MODE AGAIN.	Reactivate the mode.
+READ (v), READS, READ, READ	To come to know information with the eyes or electronically	READ THE INDICATORS ON THE CONTROL PANEL.
+reading (n)	INDICATION (n)	MAKE SURE THAT THE EXHAUST FROM THE GROUND CART DOES NOT CAUSE AN INCORRECT INDICATION.	Avoid an erroneous reading caused by exhaust from ground cart.
+readjust (v)	ADJUST (v)	AFTER THE INSPECTION, ADJUST THE LINKAGE AGAIN.	Readjust the linkage after the inspection.
+ready (adj)	PREPARE (v)	MAKE SURE THAT THE CONTROL SYSTEM IS PREPARED FOR OPERATION.	Make sure that the control system is in an operational ready state.
+ready (v)	PREPARE (v)	PREPARE THE REMOVAL KIT FOR THE REMOVAL OF THE STRUT.	Ready the removal kit for the removal of the strut.

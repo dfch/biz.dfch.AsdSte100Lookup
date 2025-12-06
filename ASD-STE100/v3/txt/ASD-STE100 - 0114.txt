@@ -1,0 +1,10 @@
+﻿get to (v)	BE (v)	THE MOTOR STOPS WHEN THE LIMIT SWITCHES ARE AT THE END OF THEIR TRAVEL.	The motor stops when the limit switches get to the end of their travel.
+	GO (v)	GO TO THE TOOL ROOM FOR THE NECESSARY TOOLS.	Get to the tool room for the necessary tools.
+	INCREASE (v)	WHEN THE TEMPERATURE OF THE VENTILATION AIR INCREASES TO 27 °C, THE DISCHARGE VALVE OPENS.	When the temperature of the ventilation air gets to 27 °C, the discharge valve opens.
+GIVE (v), GIVES, GAVE, GIVEN	To provide	THIS SECTION GIVES THE CLEANING PROCEDURES FOR THE DISASSEMBLED PARTS.	
+gleam (v)	SHINY (adj)	POLISH THE SURFACE WITH A SOFT CLOTH UNTIL IT BECOMES SHINY.	Polish the surface with a soft cloth until it gleams.
+glitch (n)	ERROR (n)	IF THERE IS AN ERROR IN THE SYSTEM, THE SCREEN SHOWS: “NO GO.”	If there is a glitch in the system, the screen shows: NO GO.
+	FAILURE (TN)	IF THERE ISA FAILURE IN THE SYSTEM, THE SCREEN SHOWS: “NO GO.”	If there is a glitch in the system, the screen shows: NO GO.
+	UNSERVICEABLE (adj)	IF THE SYSTEM IS UNSERVICEABLE, THE SCREEN SHOWS: “NO GO.”	If there is a glitch in the system, the screen shows: NO GO.
+gloss (n)	SHINY (adj)	POLISH THE SURFACE UNTIL IT IS VERY SHINY.	Polish the surface to a high gloss.
+GLOSSY (adj) (GLOSSIER, GLOSSIEST)	Smooth and shiny	APPLY THE PATCH WITH THE MATT SIDE AGAINST THE GLOSSY SURFACE.	

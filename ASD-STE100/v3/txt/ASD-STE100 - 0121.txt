@@ -1,0 +1,12 @@
+﻿heat (v)	HEAT (n)	USE HEAT TO INCREASE THE TEMPERATURE OF THE OIL TO 40 °C.	Heat the oil to 40 °C.
+	HOT (adj)	WHEN THE OIL IS HOT, IT FLOWS FREELY.	When you heat the oil, it flows freely.
+HEAVY (adj) (HEAVIER, HEAVIEST)	That has a large mass, weight, or force	A SUPPORT WILL BE NECESSARY BECAUSE THE CONTROL UNIT IS HEAVY.	
+HEIGHT (n)	The vertical distance	THE HEIGHT FROM THE GROUND TO THE TOP OF THE FIN CAN CHANGE.	
+heighten (v)	INCREASE (v)	STRONG WINDS WILL INCREASE THE RISK OF DAMAGE.	Strong winds will heighten the risk of damage.
+help (n)	AID (n)	GET MEDICAL AID IMMEDIATELY.	You must get medical help immediately.
+HELP (v), HELPS, HELPED, HELPED	To make something easier or better	PETROLATUM HELPS TO PREVENT CORROSION OF THE TERMINALS.	
+helpful (adj)	HELP (v)	RECORD THE LOCKWIRE POSITIONS. THIS INFORMATION WILL HELP YOU DURING THE ASSEMBLY PROCEDURE.	Record the lockwire positions. This will be helpful during the assembly procedure.
+HERE (adv)	In this position	TO DOWNLOAD THE FILE, CLICK HERE.	
+hesitation (n)	SMOOTHLY (adv)	MAKE SURE THAT THE SOLENOID OPERATES SMOOTHLY.	Make sure that the solenoid operates without hesitation.
+	CORRECTLY (adv)	THE VALVE MUST OPERATE CORRECTLY.	The valve must operate without hesitation.
+	IMMEDIATELY (adv)	WHEN YOU OPEN THE CIRCUIT BREAKER, THE LIGHT MUST COME ON IMMEDIATELY.	When you open the circuit breaker, the light must come on without hesitation.

@@ -1,0 +1,13 @@
+﻿terminate (v)	STOP (v)	STOP THE TEST AFTER 2 SECONDS.	Terminate the test after 2 seconds.
+TERTIARY (adj)	Third in importance	THERE ARE THREE CLASSES OF STRUCTURE: PRIMARY, SECONDARY, AND TERTIARY.	
+TEST (n)	The procedure where an object or system is operated to make sure that its performance and/or function is correct	DISCONNECT ALL THE SYSTEMS WHICH ARE NOT NECESSARY FOR THE TEST.	
+test (v)	TEST (n)	DO A FUNCTIONAL TEST OF THE SOFTWARE.	Functionally test the software.
+THAN (conj)	Function word that you use with comparative adjectives or adverbs	MAKE SURE THAT THE TOTAL ANGLE IS SMALLER THAN 20 DEG.	
+		CORROSION CAN OCCUR MORE EASILY IN THIS AREA THAN IN OTHER AREAS.	
+THAT (conj)	Function word that starts a subordinate clause	MAKE SURE THAT THE SURFACE IS CLEAN.	
+	###Refer to section 9, GR-1.		
+THAT (pron)	Function word that shows the person or thing referred to	EXAMINE THE UNIT TO SEE IF THAT IS THE PROBLEM.	
+THE (art)	Function word: definite article	REMOVE THE SEVEN FLEXIBLE HOSES.	
+THEIR (adj)	Belonging to persons or things	WRITE TO THE MANUFACTURERS FOR THEIR REPAIR SCHEMES.	
+THEM (pron)	Function word that shows the persons or things referred to	IF THE SURFACES ARE DIRTY, CLEAN THEM.	
+THEN (adv)	Immediately after in time or sequence	LIFT THE COVER. THEN, PULL THE HANDLE.	

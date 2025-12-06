@@ -1,0 +1,12 @@
+﻿later (adj)	SUBSEQUENT (adj) THEN (adv)	A SUBSEQUENT REPAIR WILL BE FOR THE NEW CONFIGURATION.	A later repair will be for the new configuration.
+		DO THIS STEP FIRST. THEN, DISCONNECT THE CABLES.	Do this step first. At a later time, disconnect the cables.
+later (adv)	SUBSEQUENTLY (adv)	MAKE SURE THAT THE TOOL IS SUBSEQUENTLY AVAILABLE FOR THE INSTALLATION PROCEDURE.	Make sure that the tool is available later for the installation procedure.
+	WHEN (conj)	DO STEPS (3) THRU (5). DO STEP (6) WHEN THE AILERON MOVEMENT STOPS.	Do steps (3) to (5). Do step (6) later.
+	###If it is possible, give the condition or time.
+	AFTER (prep)	THE BAR MOVES DOWN AFTER 20 SECONDS.	The bar moves down later.
+LATERAL (adj)	Related to or on the side	ADJUST THE LATERAL LEVEL.	
+LATERALLY (adv)	In a lateral direction	PUSH THE UNITOUT, AND THEN MOVE IT LATERALLY.	
+lay (v)	PUT (v)	PUT COVERS ON THE FLOOR.	Lay covers on the floor.
+LAYER (n)	A material applied to a surface or put on, or below, a second material	APPLY A THIN LAYER OF SEALING COMPOUND ON THE BARE METAL.	
+lead (v)	PUT (v)	PUT THE TELEFLEX CABLE THROUGH THE BULKHEAD.	Lead the Teleflex cable through the bulkhead.
+LEAK (n)	A crack, gap or hole which lets fluid or light go into or come out of something	EXAMINE THE SWIVEL COUPLINGS FOR LEAKS.	

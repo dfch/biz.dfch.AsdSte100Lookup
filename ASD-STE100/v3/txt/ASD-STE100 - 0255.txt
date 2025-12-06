@@ -1,0 +1,14 @@
+﻿TRY (v), TRIES, TRIED, TRIED	To make an effort to do something	TRY TO MOVE THE CONTROL COLUMN.	
+tuck (v)	PUT (v)	PUT THE HEADSTRAP INTO THE FACE PIECE.	Tuck the headstrap into the face piece.
+TUNE (v), TUNES, TUNED, TUNED	To adjust equipment to the best performance	TUNE ADF 1 TO A KNOWN FREQUENCY.	
+TURN (n)	One full cycle of movement around an axis	LET THE PRESSURE BECOME STABLE AFTER EACH TURN OF THE ADJUSTMENT SCREW.	
+TURN (v), TURNS, TURNED, TURNED	To move or cause to move around an axis or a point	TURN THE CONTROL CLOCKWISE.	
+		THE BEARING TURNS AT 1500 RPM.	
+turn off (v)	SET (v)	SET THE COMPUTER TO “OFF.”	Turn off the computer.
+	STOP (v)	STOP THE COMPUTER.	Turn off the computer.
+	DE-ENERGIZE (v)	DE-ENERGIZE THE ELECTRICAL SYSTEM.	Turn the electrical system off.
+turn on (v)	SET (v)	SET THE POWER TO “ON.”	Turn on the power.
+	START (v)	START THE POWER.	Turn on the power.
+	ENERGIZE (v)	ENERGIZE THE ELECTRICAL SYSTEM.	Turn the electrical system on.
+turn over (v)	TURN (v)	TURN THE DISPLAY PANEL UNTIL YOU HAVE ACCESS TO THE CABLE.	Turn the display panel over to access the cable.
+twice (adv)	TWO (TN)	DO THIS PROCEDURE TWO TIMES.	Do this procedure twice.

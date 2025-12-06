@@ -1,0 +1,12 @@
+﻿pack (v)	PUT (v)	PUT THE ASSEMBLY INTO THE BOX.	Pack the assembly into the box.
+	FILL (v)	FILL THE GROOVE WITH GREASE.	Pack grease into the groove.
+PAINT (v), PAINTS, PAINTED, PAINTED	To apply paint to something	PAINT ALL THE SURFACES.	
+PAIR (n)	Two objects that are the same or almost the same, and/or that you use together	MEASURE THE DISTANCE BETWEEN EACH PAIR OF AXLES.	
+PARALLEL (adj)	Along lines that stay a constant distance apart at all points	MAKE SURE THAT THE SURFACE IS PARALLEL TO THE AXIS OF THE SHAFT.	
+PARK (v), PARKS, PARKED, PARKED	To stop a vehicle and to let it stay in one position on the ground	PARK THE CAR IN THE PERMITTED AREA.	
+PART (n)	1. A constituent of an object, machine, component, assembly, or equipment	REPLACE THE DEFECTIVE PARTS.	
+	2. A piece or section of a whole	REFER TO PART 2 FOR THE APPLICABLE PROCEDURE.	
+part (v)	DISCONNECT (v)	DISCONNECT THE PIPES.	Part the pipes.
+partial (adj)	NOT FULLY (adv)	IF THE RODS DO NOT FULLY EXTEND, ADJUST THEM AGAIN.	If only partial extension of the rods occurs, do the adjustment again.
+partially (adv)	NOT FULLY (adv)	IF THE FLAPS DO NOT FULLY EXTEND, DO THE TEST AGAIN.	If the flaps only partially extend, do the test again.
+PARTICLE (n)	A very small piece of material	IF THERE ARE METAL PARTICLES IN THE DISASSEMBLED PUMP, FIND THE SOURCE OF CONTAMINATION.	

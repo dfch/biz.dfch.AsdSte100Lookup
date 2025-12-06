@@ -1,0 +1,11 @@
+﻿persist (v)	CONTINUE (v)	IF THE FAULT MESSAGE CONTINUES, PUSH THE AUDIO CANCEL SWITCH ON THE TEST PANEL.	If the fault message persists, push the AUDIO CANCEL switch on the test panel.
+persistent (adj)	CONTINUOUS (adj)	IF YOU HEAR CONTINUOUS BACKGROUND NOISE, FIND THE CAUSE.	If you hear persistent background noise, find the cause.
+PERSON (n)	A human being	WHEN YOU DO WORK IN ISOLATED LOCATIONS, MAKE SURE THAT THERE IS ALWAYS A PERSON NEAR YOU.	
+PERSONNEL (n)	Persons employed in a group or organization	TELL YOUR PERSONNEL ABOUT THESE NEW REGULATIONS.	
+pertinent (adj)	APPLICABLE (adj)	MAKE SURE THAT YOU HAVE ALL THE APPLICABLE DOCUMENTS.	Make sure that you have all the pertinent documents.
+picket (v)	MOOR (v)	IF STRONG WINDS OCCUR, MOOR THE VEHICLE.	Picket the vehicle in strong winds.
+PIECE (n)	A quantity or segment of a whole that you can use on its own, or that can operate as an individual item	REMOVE ALL PIECES OF THE BROKEN SEAL.	
+pierced (adj)	HOLE (n)	MAKE SURE THAT THERE ARE NO HOLES IN THE MEMBRANE.	Make sure that the membrane is not pierced.
+placard (v)	PUT (v) (A PLACARD [TN])	BEFORE YOU START THE TEST, PUT A PLACARD ON THE CONTROLS.	Placard the controls before you start the test.
+place (n)	POSITION (n)	MAKE SURE THAT ALL COVERS ARE IN THEIR POSITION.	Ensure that covers are in place.
+	AREA (n)	REPAIR THE DAMAGED AREAS.	Repair the damaged places.

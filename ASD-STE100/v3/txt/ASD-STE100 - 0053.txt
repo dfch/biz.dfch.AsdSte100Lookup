@@ -1,0 +1,10 @@
+﻿CONTAIN (v), CONTAINS, CONTAINED, CONTAINED	To have in something or hold in something	EACH SURVIVAL KIT CONTAINS THESE ITEMS:	
+CONTAINER (n)	Something that holds fluids, materials, or objects	PUT THE CONTAINER BELOW THE DRAIN PLUG.	
+contaminant (n)	CONTAMINATION (n)	THIS FILTER REMOVES ALL CONTAMINATION FROM THE AIR SUPPLY.	This filter removes all contaminants from the air supply.
+contaminated (adj)	DIRTY (adj)	REPLACE THE DIRTY OIL.	Contaminated oil must be replaced.
+	CONTAMINATION (n)	REMOVE ALL CONTAMINATION FROM THE HYDRAULIC FLUID WITH A CLASS 5 FILTER.	Filter the contaminated hydraulic fluid through a Class 5 filter.
+CONTAMINATION (n)	Unwanted change of the original condition of a material because of chemical or physical agents or a material that causes such a change	DUST CAN CAUSE CONTAMINATION ON ALL FILTERS.	
+CONTENTS (n)	Something that is in a container	EXAMINE THE CONTENTS OF THE BOX FOR MISSING ITEMS.	
+contiguous (adj)	ADJACENT (adj)	REMOVE THE SENSOR TO GET ACCESS TO THE ADJACENT STRUCTURE.	Remove the sensor to get access to the contiguous structure.
+CONTINUE (v), CONTINUES, CONTINUED, CONTINUED	To stay or keep in current condition or operation	CONTINUE THE TEST.	
+		IF THE LOW PRESSURE CONDITION CONTINUES, REPLACE THE UNIT.	

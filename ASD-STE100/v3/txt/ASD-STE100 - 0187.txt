@@ -1,0 +1,10 @@
+﻿principal (adj)	PRIMARY (adj)	THE PRIMARY FUNCTION OF THE SYSTEM IS TO SUPPLY ELECTRICAL POWER TO THE CONTROL PANEL.	The principal function of the system is to supply electrical power to the control panel.
+prior to (prep)	BEFORE (conj)	BEFORE YOU DISCONNECT THE HOSES, DRAIN THE SYSTEM.	Drain the system prior to disconnecting the hoses.
+priority (n)	IMPORTANT (adj)	THIS PROCEDURE IS VERY IMPORTANT.	This procedure has high priority.
+	BEFORE (prep)	BEFORE YOU FILL THE OUTER TANK, FILL THE INNER TANK.	The inner tank filling procedure has priority over the outer tank filling procedure.
+	FIRST (adv)	DURING THE PROCEDURE THAT FOLLOWS, REPAIR THE UPPER FLANGE FIRST.	During the following repair procedure, the upper flange has priority.
+probability (n)	RISK (n)	TO DECREASE THE RISK OF FIRE, OBEY THE SAFETY PRECAUTIONS.	Obey the safety precautions to decrease the probability of fire.
+probable (adj)	VERY POSSIBLE (adj)	IF YOU DO NOT SAFETY THE DOOR, IT IS VERY POSSIBLE THAT STRONG WINDS WILL CAUSE DAMAGE TO THE STRUCTURE.	If you do not safety the door, damage to the structure due to strong winds is probable.
+	RISK (n)	IF YOU DO NOT SAFETY THE DOOR, THERE IS A RISK THAT STRONG WINDS WILL CAUSE DAMAGE TO THE STRUCTURE.	If you do not safety the door, damage to the structure due to strong winds is probable.
+probe (v)	FIND (v) (WITH A PROBE [TN])	FIND THE BLOCKAGE IN THE TUBE WITH AN APPLICABLE PROBE.	Probe the tube to find the blockage.
+PROBLEM (n)	Something that is difficult and for which you must find the correct answer	IF YOU FIND A PROBLEM DURING THE TEST, REFER TO THE FAULT ISOLATION TABLE.	

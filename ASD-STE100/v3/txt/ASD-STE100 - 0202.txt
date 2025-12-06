@@ -1,0 +1,12 @@
+﻿regulation (n)	ADJUSTMENT (n)	THE TEMPERATURE ADJUSTMENT IS AUTOMATIC.	The regulation of temperature is automatic.
+	CONTROL (n)	THE TEMPERATURE CONTROL IS AUTOMATIC.	The regulation of temperature is automatic.
+	CONTROL (v)	A SENSOR CONTROLS THE TEMPERATURE IN THE COMPARTMENT.	The regulation of temperature in the compartment is effected by a sensor.
+reinflate (v)	INFLATE (v)	INFLATE THE TIRE AGAIN.	Reinflate the tire.
+reinforce (v)	MAKE ... STRONGER (v)	DOUBLERS MAKE THE JOINT STRONGER.	Doublers reinforce the joint.
+reinstall (v)	INSTALL (v)	AFTER YOU ADJUST THE UNIT, INSTALL THE COVER AGAIN.	Reinstall the cover after you adjust the unit.
+reinstallation (n)	INSTALLATION (n)	ONLY APPROVED PERSONNEL CAN DO THE INSTALLATION PROCEDURE.	This reinstallation must be performed by qualified personnel.
+REJECT (v), REJECTS, REJECTED, REJECTED	To make a decision that something is unsatisfactory	REJECT THE PARTS THAT ARE DAMAGED.	
+rejection (n)	REJECT (v)	IF THE TEST IS NOT SATISFACTORY, REJECT THE COMPONENT.	Rejection is mandatory if the test proves the component to be defective.
+relate (v)	RELATED (adj)	THE PROCEDURES ARE RELATED TO THE SYSTEM TEST.	The procedures relate to the system test.
+RELATED (adj)	That has a relation	CLEAN THE BALLS OF THE ELECTRICAL LATCH AND ITS RELATED SOCKETS.	
+RELATION (n)	The connection between two or more things caused by their functions, values, or conditions	THE RELATION BETWEEN THE TWO CONTROL SYSTEMS KEEPS THE AIRCRAFT STABLE.	

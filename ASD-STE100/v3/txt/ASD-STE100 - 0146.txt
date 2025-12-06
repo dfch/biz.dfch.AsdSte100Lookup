@@ -1,0 +1,14 @@
+﻿lengthen (v)	INCREASE (v)	DO NOT TRY TO INCREASE THE LENGTH OF THIS ROD.	Do not try to lengthen this rod.
+LESS (adj)	Of smaller dimension, value, quantity, volume, or number	THE FLOW RATE MUST NOT BE LESS THAN 4.0 GPM.	
+	###No other forms of this adjective.
+LET (v), LETS, LET	To give opportunity	LET THE ADHESIVE BECOME TACKY.	
+	###No other verb forms.			
+lethal (adj)	KILL(v)	THE ELECTRICAL DISCHARGE FROM THESE POWER UNITS CAN KILL YOU.	The electrical discharge from these power units can be lethal.
+LEVEL (adj)	Horizontal to a known datum	PARK THE VEHICLE ON LEVEL GROUND.	
+LEVEL (n)	A horizontal line, plane, surface, or condition	FILL THE TANK TO THE CORRECT LEVEL (REFER TO FIG. 105).	
+level (v)	LEVEL (adj)	MAKE THE AIRCRAFT LEVEL.	Level the aircraft.
+liberal (adj)	LARGE (adj)	CLEAN THE WINDOW WITH LARGE QUANTITIES OF WATER AND SOAP.	Clean the window with liberal quantities of water and soap.
+	THICK (adj)	APPLY A THICK LAYER OF THE COMPOUND.	Apply a liberal amount of the compound.
+liberally (adv)	LARGE (adj)	APPLY A LARGE QUANTITY OF THE SOLUTION.	Apply the solution liberally.
+	THICK (adj)	APPLY A THICK LAYER OF THE COMPOUND.	Apply the compound liberally.
+lie (v)	BE (v)	THE OTHER PART OF THE CLIP IS ALONG THE BARREL.	The other part of the clip lies along the barrel.

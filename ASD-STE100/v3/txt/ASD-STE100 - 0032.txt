@@ -1,0 +1,10 @@
+﻿break (n)	STOP (v)	IF THE TRANSMISSION STOPS, CANCEL THE TEST.	If there is a break in the transmission, cancel the test.
+BREAK (v), BREAKS, BROKE, BROKEN	To cause to separate or become separated into parts by force	BREAK THE BOND OF THE SEALANT.	
+		IF THE SHEAR PIN BREAKS, DO AN INSPECTION OF THE TOWBAR.	
+breakdown (n)	STOP (v)	IF THE PRESSURE SUPPLY STOPS, CANCEL THE TEST.	If there is a breakdown in the pressure supply, cancel the test.
+BREATHE (v), BREATHES, BREATHED, BREATHED	To get gas into or out of the lungs	DO NOT BREATHE THE SOLVENT FUMES.	
+		BREATHE INTO THE OXYGEN MASK.	
+BRIGHT (adj) (BRIGHTER, BRIGHTEST)	That gives much light	THE NAVIGATION LIGHTS CHANGE FROM DIM TO BRIGHT.	
+BRIGHTLY (adv)	In a bright manner	THE LIGHTS COME ON BRIGHTLY.	
+brilliance (n)	INTENSITY (n)	SET THE INTENSITY TO THE MINIMUM.	Set the brilliance to the minimum.
+	BRIGHT (adj)	TURN THE BRT CONTROL CLOCKWISE TO MAKE THE DISPLAY BRIGHTER.	Turn the BRT CONTROL clockwise to increase the display brilliance.

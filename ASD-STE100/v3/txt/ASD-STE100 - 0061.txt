@@ -1,0 +1,9 @@
+﻿decay (v)	DECREASE (v)	WHEN THE ENGINE SPEED DECREASES TO 500 RPM, STOP THE ENGINE.	When the engine speed decays to 500 rpm, stop the engine.
+decelerate (v)	DECREASE (v)	MAKE SURE THAT THE ENGINE SPEED DECREASES TO 500 RPM.	Make sure that the engine decelerates to 500 rpm.
+	SLOWER (adj)	TO MAKE THE CURING PROCESS SLOWER, DECREASE THE HEAT THAT YOU APPLY TO THE COMPOUND.	The curing process of the compound can be decelerated by decreasing the heat applied.
+decide (v)	SELECT (v)	SELECT THE HYDRAULIC SYSTEM THAT YOU WILL PRESSURIZE.	Decide which hydraulic system you will pressurize.
+	DECISION (n)	IF YOUR DECISION IS NOT TO REPLACE THE UNIT, MONITOR ITS TEMPERATURE FORA MINIMUM OF 15 CYCLES.	If you decide not to replace the existing unit, watch its temperature for at least 15 cycles.
+DECISION (n)	The result after you think about a problem	MAKE A DECISION ABOUT WHICH PROCEDURE YOU WILL USE.	
+decontamination (n)	REMOVE CONTAMINATION (n)	REMOVE THE CONTAMINATION FROM THE INSTRUMENTS AND MEDICAL EQUIPMENT.	Do the decontamination of the instruments and medical equipment.
+	CLEAN (v)	CLEAN THE AIRCRAFT IN AN APPROVED AREA.	The decontamination of the aircraft shall be done in an authorized area.
+decrease (n)	DECREASE (v)	THE PRESSURE MUST DECREASE BY MORE THAN 2 bar.	There must be a decrease in pressure of more than 2 bar.

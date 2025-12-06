@@ -1,0 +1,13 @@
+﻿STRAIGHT (adj) (STRAIGHTER, STRAIGHTEST)	Without curves or bends	MAKE SURE THAT THE STRAIGHT PART OF THE RIGGING PIN IS SMOOTH.	
+straighten (v)	STRAIGHT (adj)	DO NOT TRY TO MAKE THE BENDS IN THE CABLE STRAIGHT.	Do not try to straighten the bends in the cable.
+strain (v)	FILTER (TN)	BEFORE YOU USE THE OIL, PUT IT THROUGH A FILTER.	Strain the oil before use.
+	STRAIN (TN)	DO NOT PUT STRAIN ON THE BELLOWS.	Do not strain bellows.
+strap (v)	ATTACH (v) (WITH STRAPS [TN])	ATTACH THE CABLES TO THE STRUCTURE WITH AN APPLICABLE STRAP.	Strap the cables to the structure.
+stress (v)	FORCE (TN)	DO NOT PUT TOO MUCH FORCE ON THE DUCTING.	Do not stress the ducting unnecessarily.
+strictly (adv)	FULLY (adv)	FULLY OBEY THE SAFETY PRECAUTIONS.	Strictly obey the safety precautions.
+strike (v)	HIT (v)	MAKE SURE THAT THE SLING DOES NOT HIT THE SURFACE.	Make certain that the sling does not strike the surface.
+STRIP (n)	A piece of material that is long and thin, but not wide	PUT A STRIP OF ADHESIVE TAPE ALONG THE INSULATION BLANKET.	
+strip (v)	REMOVE (v)	REMOVE THE INSULATION FROM THE WIRE.	Strip the insulation from the wire.
+STRIPE (n)	A line on a surface which is a different color	THE FLAG HAS RED AND WHITE STRIPES.	
+striped (adj)	STRIPE (n)	THE FLAG HAS RED AND WHITE STRIPES.	The flag is striped red and white.
+stroke (n)	TRAVEL (n)	TO BLEED THE BRAKING SYSTEM, OPERATE THE HAND PUMP HANDLE THROUGH ITS FULL TRAVEL.	Bleed the braking system by applying full strokes to the hand pump handle.

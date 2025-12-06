@@ -1,0 +1,32 @@
+name: Pylint and unittest
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    permissions:
+      contents: read
+      pull-requests: write
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12"]
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v3
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        pip install pylint
+    - name: Analysing the code with pylint
+      run: |
+        export PYTHONPATH="$PYTHONPATH:$(pwd)/src"
+        pylint $(git ls-files '*.py') || true
+    - name: Run unit tests
+      run: |
+        export PYTHONPATH="$PYTHONPATH:$(pwd)/src"
+        python -m unittest discover -v -s tests -t . -p "test_*.py"

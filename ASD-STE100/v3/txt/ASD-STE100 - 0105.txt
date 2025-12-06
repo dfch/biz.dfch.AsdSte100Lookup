@@ -1,0 +1,12 @@
+﻿FOLLOW (v), FOLLOWS, FOLLOWED, FOLLOWED	To come after, to go after	THIS TEST FOLLOWS THE INSTALLATION OF THE HP PUMP.	
+		DO THE PROCEDURE THAT FOLLOWS.	
+		FOLLOW THE GREEN LIGHTS TO THE NEAREST STAIRCASE.	
+	###For other meanings, use:
+	OBEY (v)	WHEN YOU USE THIS MATERIAL, OBEY THE MANUFACTURER’S INSTRUCTIONS.	When you use this material, follow the manufacturer’s instructions.
+following (adj)	THESE (adj)	MAKE SURE THAT THESE CIRCUIT BREAKERS ARE CLOSED.	Make sure that the following circuit breakers are closed.
+	FOLLOW (v)	OBEY THE PRECAUTIONS THAT FOLLOW.	Obey the following precautions.
+FOR (prep)	Function word that shows purpose, intent, time, result, or the object of an action	LET THE POTTING COMPOUND DRY FOR ONE HOUR.	
+		OBEY THE REMOVAL PROCEDURES FOR THE COMPONENTS.	
+FOR EXAMPLE (prep)	Used to introduce something chosen as a typical case	WHEN YOU REMOVE THE STUD, USE APPLICABLE TOOLS. FOR EXAMPLE, USE A PLASTIC MALLET AND A PUNCH.	
+forbidden (adj)	DO NOT (adj)	DO NOT INSTALL MORE THAN TWO WASHERS FOR EACH BOLT.	It is forbidden to install more than two washers for each bolt.
+	NOT PERMITTED (adj)	SHARP OBJECTS ARE NOT PERMITTED IN THIS AREA.	Sharp objects are forbidden in this area.

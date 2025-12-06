@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://d-fens.ch/schemas/grammar-rule.json",
+  "title": "Grammar Rule",
+  "type": "object",
+  "required": ["version", "id", "name", "text", "explanation", "examples"],
+  "properties": {
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$",
+      "description": "Semantic version of the rule definition (e.g., 9.0.0)."
+    },
+    "id": {
+      "type": "string",
+      "description": "Identifier for the rule."
+    },
+    "name": {
+      "type": "string",
+      "description": "Short, descriptive name of the rule."
+    },
+    "text": {
+      "type": "string",
+      "description": "The official text of the rule."
+    },
+    "explanation": {
+      "type": "string",
+      "description": "Explanation and rationale for the rule."
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Optional tags for grouping, scoping, or filtering rules."
+    },
+    "note": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Notes to the examples section."
+    },
+    "examples": {
+      "type": "array",
+      "minItems": 1,
+      "description": "Example sets illustrating correct and incorrect usage.",
+      "items": {
+        "type": "object",
+        "required": ["description", "ste", "nonste"],
+        "properties": {
+          "description": {
+            "type": "string",
+            "description": "Description of this example set."
+          },
+          "note": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Notes to this example set."
+          },
+          "ste": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": ["text"],
+              "properties": {
+                "text": { "type": "string" },
+                "explanation": { "type": "string" }
+              },
+              "additionalProperties": false
+            },
+            "description": "Compliant (STE) examples."
+          },
+          "nonste": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": ["text"],
+              "properties": {
+                "text": { "type": "string" },
+                "explanation": { "type": "string" }
+              },
+              "additionalProperties": false
+            },
+            "description": "Non-compliant (non-STE) examples."
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

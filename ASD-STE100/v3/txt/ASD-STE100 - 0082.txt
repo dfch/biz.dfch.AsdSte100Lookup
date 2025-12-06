@@ -1,0 +1,12 @@
+﻿eliminate (v)	REMOVE (v)	REMOVE ALL SHARP EDGES.	Eliminate all sharp edges.
+	STOP (v)	PUT A BAG OF DESICCANT IN THE PACKAGE TO STOP CONDENSATION.	Put a bag of desiccant in the package to eliminate condensation.
+	PREVENT (v)	PUT A BAG OF DESICCANT IN THE PACKAGE TO PREVENT CONDENSATION.	Put a bag of desiccant in the package to eliminate condensation.
+EMERGENCY (n)	A condition that occurs suddenly and is dangerous	IN AN EMERGENCY, BREAK THE GLASS.	
+emit (v)	FROM (prep)	THE VAPORS FROM THIS MATERIAL ARE DANGEROUS TO THE SKIN.	The vapors that this material emits are dangerous to the skin.
+employ (v)	USE (v)	TYPE B UNITS USE A LOOSE COLLAR.	Type B units employ a loose collar.
+	HAVE (v)	THIS ASSEMBLY MACHINE HAS ROBOTIC ARMS.	This assembly machine employs robotic arms.
+EMPTY (adj)	Without contents	MAKE SURE THAT THE RESERVOIR IS EMPTY.	
+empty (v)	REMOVE (v)	REMOVE ALL FUEL FROM THE FUEL TANKS.	Empty the fuel tanks.
+enable (v)	LET (v)	THE DISASSEMBLY FIXTURE LETS YOU DISASSEMBLE THE MODULE.	The disassembly fixture enables you to disassemble the module.
+encircle (v)	AROUND (prep)	PUT SEALANT AROUND EACH SCREW HOLE.	Encircle each screw hole with sealant.
+enclosed (adj)	CLOSED (adj)	IF YOU USE SOLVENT IN A CLOSED SPACE, MAKE SURE THAT THERE IS GOOD AIRFLOW IN THE WORK AREA.	The work area must be well-ventilated if solvent is used in an enclosed space.

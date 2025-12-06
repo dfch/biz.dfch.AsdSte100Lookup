@@ -1,0 +1,9 @@
+﻿secure (adj)	TIGHT (adj)	MAKE SURE THAT THE BOLTS ARE TIGHT.	Make sure that the bolts are secure.
+	SAFE (adj)	BEFORE YOU LIFT THE PLATFORM, MAKE SURE THAT IT IS SAFE.	Make sure that the platform is secure before you lift it.
+	CORRECTLY (adv)	MAKE SURE THAT THE BRACKETS ARE CORRECTLY ATTACHED.	Check the brackets for secure attachment.
+secure (v)	ATTACH (v)	REMOVE THE BOLTS THAT ATTACH THE UNIT.	Remove the bolts that secure the unit.
+	SAFETY (v)	SAFETY THE PULLEY GUARD PINS WITH SPLIT PINS.	Secure the pulley guard pins with split pins.
+securely (adv)	CORRECTLY (adv)	MAKE SURE THAT THE BRACKETS ARE CORRECTLY ATTACHED.	Make sure that the brackets are securely attached.
+	SAFELY (adv)	MAKE SURE THAT THE LADDER IS SAFELY ATTACHED.	Make sure the ladder is securely attached.
+	TIGHT (adj)	MAKE SURE THAT THE BOLTS ARE TIGHT.	Make sure that the bolts are securely installed.
+security (n)	CORRECTLY (adv)	MAKE SURE THAT THE COMPONENTS ARE CORRECTLY ATTACHED.	Check the security of the components.

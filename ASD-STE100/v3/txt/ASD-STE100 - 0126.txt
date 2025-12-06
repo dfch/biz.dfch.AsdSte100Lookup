@@ -1,0 +1,12 @@
+﻿ILLUMINATE (v), ILLUMINATES, ILLUMINATED, ILLUMINATED	To make something visible with an external light source	THE EMERGENCY LIGHTS COME ON TO ILLUMINATE THE EVACUATION PATH.	
+	###For lights or lamps, use:		
+	COME ON (v)	WHEN THE PRESSURE LIGHT COMES ON, READ THE VALUE ON THE PRESSURE GAUGE.	When the pressure light illuminates, read the value on the pressure gauge.
+		MAKE SURE THAT THE LAMP COMES ON.	Ensure the lamp illuminates.
+	BE ON (v)	MAKE SURE THAT THE LAMP IS ON.	Ensure the lamp is illuminated.
+immediate (adj)	IMMEDIATELY (adv)	MAKE SURE THAT THE SPEEDBRAKE RETRACTS IMMEDIATELY.	Check the speedbrake for immediate retraction.
+IMMEDIATELY (adv)	Without a gap of time or space	MAKE SURE THAT THE EMERGENCY LIGHT IMMEDIATELY GOES BACK TO ’’OFF.”	
+immerse (v)	SOAK (v)	SOAK THE FILTER IN THE CLEANING SOLUTION FOR 4 HOURS.	Immerse the filter in the cleaning solution for 4 hours.
+	PUT FULLY INTO (v)	PUT THE FILTER FULLY INTO THE SOLVENT.	Immerse the filter in solvent.
+immobilize (v)	LOCK (v)	LOCK THE PULLEY WITH THE RIGGING PIN.	Immobilize the pulley with the rigging pin.
+	PREVENT MOVEMENT (n)	WHEN YOU REPAIR THE UNIT, PREVENT MOVEMENT OF THE ASSEMBLIES.	Immobilize the assemblies when repairing the unit.
+impact (n)	HIT (v)	MAKE SURE THAT METAL OBJECTS DO NOT HIT THE MATING SURFACE.	Avoid impact between metal objects and the mating surface.

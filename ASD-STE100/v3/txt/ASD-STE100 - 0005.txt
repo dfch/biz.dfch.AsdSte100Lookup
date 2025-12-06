@@ -1,0 +1,11 @@
+﻿ACCIDENTAL (adj)	That does not occur on purpose	TO PREVENT ACCIDENTAL OPERATION OF THE SYSTEM, INSTALL THE SAFETY LOCK.	
+ACCIDENTALLY (adv)	That does not occur on purpose	IF YOU ACCIDENTALLY MOVE THE LEVER, SET THE SYSTEM TO THE NEUTRAL POSITION AGAIN.	
+accommodate (v)	LET (v)	DIFFERENT LENGTHS OF STUDS LET YOU ATTACH DIFFERENT THICKNESSES OF SKIN.	Studs are available in different lengths to accommodate different thicknesses of skin.
+accomplish (v)	DO (v)	DO THIS TASK FIRST.	This task must be accomplished first.
+	###You can use a more accurate verb.
+	COMPLETE (v)	THE PERSONNEL MUST COMPLETE THIS TASK IN 30 MINUTES.	The personnel must accomplish this task in 30 minutes.
+according to (prep)	REFER (v)	TO CALIBRATE THE TEST SET, REFER TO THE MANUFACTURER'S INSTRUCTIONS.	Calibrate the test set according to the manufacturer's instructions.
+account for (v)	MAKE SURE (v)	MAKE SURE THAT YOU REMOVE ALL TOOLS AND EQUIPMENT.	All tools and equipment must be accounted for.
+accumulate (v)	COLLECT (v)	IF WATER COLLECTS IN THE FILLER LINE, DRAIN IT.	If water accumulates in the filler line, drain it.
+accumulation (n)	QUANTITY (n)	REMOVE LARGE QUANTITIES OF CONTAMINATION.	Large accumulations of contamination must be removed.
+	COLLECT (v)	IF FUEL COLLECTS FREQUENTLY, EXAMINE THE PIPE FOR LEAKS.	If accumulation of fuel is frequent, examine the pipe for leaks.

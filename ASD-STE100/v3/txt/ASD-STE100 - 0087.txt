@@ -1,0 +1,12 @@
+﻿evaluation (n)	EXAMINE (v)	EXAMINE THE DAMAGE.	Do an evaluation of the damage.
+	ANALYSIS (TN)	MAKE AN ANALYSIS OF THE TEST RESULTS.	Do an evaluation of the test results.
+evaporate (v)	DRY (v)	LET THE COMPOUND DRY.	Allow the solvent to evaporate from the compound.
+even (adj)	SMOOTH (adj)	A GUIDE ROD IS ATTACHED TO THE METAL BELLOWS DISC FOR A SMOOTH MOVEMENT OF THE BELLOWS.	A guide rod is attached to the metal bellows disc for an even movement of the bellows.
+	SAME (adj)	APPLY THE SAME LOAD ON THE TWO BRAKES.	Braking must be even on the two brakes.
+	FLAT (adj)	MAKE SURE THAT THE SURFACE IS FLAT.	Ensure the surface is even.
+	FLUSH (adj)	MAKE SURE THAT THE FASTENER HEADS ARE FLUSH WITH THE SKIN.	Make sure that the fastener heads are even with the skin.
+	LEVEL (adj)	MAKE SURE THAT THE MARK ON THE BOLT IS LEVEL WITH THE MARK ON THE HANDLE.	Make sure that the mark on the bolt is even with the mark on the handle.
+evenly (adv)	GRADUALLY (adv)	INCREASE THE TEMPERATURE GRADUALLY.	Increase the temperature evenly.
+	EQUALLY (adv)	APPLY THE LOAD EQUALLY ON THE AREA.	Apply the load evenly on the area.
+event (n)	IF (conj)	IF THE PRESSURE DECREASES SUDDENLY, CLOSE THE VALVE.	In the event of a sudden dropping of pressure, close the valve.
+eventually (adv)	SOMETIME	IF THE CABLE RUBS, IT WILL BREAK AFTER SOMETIME.	If the cable chafes, it will eventually break.

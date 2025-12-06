@@ -1,0 +1,15 @@
+﻿product (n)	WHEN YOU CLEAN THIS UNIT, USE THE CORRECT SOLVENT.	When you clean this unit, use the correct product.
+		TRICHLOROETHANE IS A DANGEROUS MATERIAL.	This product is dangerous.
+	###Be accurate. If it is possible, use the name of the product.
+profile (n)	CONTOUR (n)	MAKE SURE THAT THE CONTOUR OF THE TEMPLATE IS THE SAME.	Make sure that the profile of the template is the same.
+program (n)	SEQUENCE (n)	DISASSEMBLE THE ROTOR IN THIS SEQUENCE:	Disassemble the rotor according to the following program:
+progress (n)	CONTINUE (v)	MAKE SURE THAT THE TEST CONTINUES SATISFACTORILY.	Monitor the progress of the test.
+	###Also refer to
+	IN PROGRESS (adv)
+progress (v)	CONTINUE (v)	YOU CAN CONTINUE THE TEST.	You can progress with the test.
+progressive (adj)	GRADUALLY (adv)	GRADUALLY TORQUE THE NUT.	Apply progressive torque to the nut.
+progressively (adv)	GRADUALLY (adv)	TORQUE THE BOLTS GRADUALLY.	Torque the bolts progressively.
+prohibit (v)	PREVENT (v)	PUT A WARNING NOTICE ON THE PANEL TO PREVENT OPERATION OF THE CONTROLS.	Display a warning notice on the panel prohibiting the operation of the controls.
+	TELL [NOT TO] (v)	TELL THE PERSONNEL NOT TO USE ASBESTOS PARTS.	Prohibit the use of asbestos parts.
+prolonged (adj)	LONG (adj)	OPERATION OF THE MOTOR FOR LONG PERIODS CAN CAUSE DAMAGE TO IT.	Prolonged motor operation can cause damage.
+prompt (adj)	IMMEDIATELY (adv)	IF YOU SWALLOW SOLVENT, DO NOT CAUSE VOMITING. GET MEDICAL AID IMMEDIATELY.	Prompt action is required if you swallow solvent.

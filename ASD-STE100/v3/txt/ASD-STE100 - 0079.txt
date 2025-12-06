@@ -1,0 +1,11 @@
+﻿EASILY (adv)	Without difficulty	OXIDATION OCCURS VERY EASILY.	
+EASY (adj) (EASIER, EASIEST)	Without difficulty	USE THE LEFT OPENING FOR EASY ACCESS.	
+EAT (v), EATS, ATE	To consume food	DO NOT EAT IN THE WORK AREA.	
+	###No other verb forms. For safety instructions, use:		
+	SWALLOW (v)	DO NOT SWALLOW THE POTTING COMPOUND.	Do not eat the potting compound.
+EDGE (n)	A line that is the intersection of two surfaces of a solid object	THE DISTANCE BETWEEN THE EDGE OF THE PANEL AND THE PARTITION MUST NOT BE MORE THAN 0.05 mm.	
+EFFECT (n)	The result of a cause	WHEN DUST MIXES WITH OIL, IT HAS AN ABRASIVE EFFECT.	
+effect (v)	DO (v)	DO THE TIGHTENING PROCEDURE.	Effect the tightening procedure.
+effective (adj)	GOOD (adj)	THIS MATERIAL GIVES GOOD PROTECTION FROM CORROSION.	This material provides effective protection from corrosion.
+efficacious (adj)	GOOD (adj)	THIS IS A GOOD PROCEDURE TO REMOVE PAINT.	This is an efficacious way to remove paint.
+efficient (adj)	SATISFACTORY (adj)	THE TRANSMISSION CONTROL PROTOCOL IS NOT SATISFACTORY FOR THE TRANSMISSION OF INTERACTIVE TRAFFIC.	The Transmission Control Protocol is not efficient for the transmission of interactive traffic.

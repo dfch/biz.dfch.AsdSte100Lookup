@@ -1,0 +1,9 @@
+﻿DECREASE (v), DECREASES, DECREASED, DECREASED	To make or become smaller or lower	DECREASE THE HEADING INDICATIONS.	
+decrement (n)	INCREMENT (n)	TURN THE ADJUSTER COUNTERCLOCKWISE IN INCREMENTS OF 60 DEG.	Turn the adjuster anticlockwise in decrements of 60 deg.
+DEDICATED (adj)	That is used only for one purpose	A DEDICATED TOOL IS NECESSARY FOR THE INSTALLATION OF THE UNIT.	
+DE-ENERGIZE (v), DE-ENERGIZES, DE-ENERGIZED, DE-ENERGIZED	To remove electrical power from	DE-ENERGIZE THE AC AND DC BUSBARS.	
+DEEP (adj) (DEEPER, DEEPEST)	That has a specified depth	MAKE SURE THAT THE HOLE IS 20 mm DEEP.	
+DEFECTIVE (adj)	Unserviceable for operation	REPLACE THE DEFECTIVE BOOSTER PUMP.	
+define (v)	CALCULATE (v)	CALCULATE THE QUANTITY OF FUEL THAT IS NECESSARY FOR THE FLIGHT.	Define the amount of fuel required for the flight.
+	GIVE (v)	THE BRAKE INDICATOR GIVES THE WEAR ON THE BRAKE SHOE.	The brake indicator defines the wear on the brake shoe.
+	SPECIFIED (adj)	THE FLAP ANGLES ARE SPECIFIED IN TABLE 1.	Table 1 defines the flap angles.

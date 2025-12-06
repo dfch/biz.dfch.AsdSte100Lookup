@@ -1,0 +1,4 @@
+﻿TWIST (v), TWISTS, TWISTED, TWISTED	1. To use a force that turns something and causes a distortion	DO NOT TWIST THE CABLES.
+	2. To turn or change shape as a result of torsion	IF THE CABLE TWISTS, DISCONNECT THE TWO CONNECTORS.
+TYPE (n)	A specified group	FIND THE TYPE AND DIMENSIONS OF THE DAMAGE.
+TYPICAL (adj)	That has the important qualities of a group	THIS INSTALLATION PROCEDURE IS TYPICAL FOR THIS TYPE OF FASTENER.

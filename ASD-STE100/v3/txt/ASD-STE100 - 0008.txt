@@ -1,0 +1,12 @@
+﻿additional (adj)	MORE (adj)	THIS CHAPTER GIVES MORE INFORMATION ABOUT SAFETY.	This chapter gives additional information about safety.
+adequate (adj)	SUFFICIENT (adj)	MAKE SURE THAT CONTAINERS HAVE SUFFICIENT CAPACITY AND DIAMETER.	Make sure that containers have adequate capacity and diameter.
+adhere (v)	BOND (v)	THE SEAL MUST BOND CORRECTLY.	The seal must adhere correctly.
+	OBEY (v)	OBEY THE SAFETY INSTRUCTIONS.	Adhere to the safety instructions.
+adhesion (n)	BOND (n)	CLEAN THE SURFACE TO MAKE SURE THAT THE BOND IS SATISFACTORY.	Clean the surface to ensure there will be good adhesion.
+ADJACENT (adj)	That which is near to an object, with no other object of the same type between the two	DO NOT OPERATE THE ADJACENT CONTROL.	
+ADJACENT TO (Prep)	To be near to an object, with no other object of the same type between the two	THE FUEL PUMP IS INSTALLED ADJACENT TO THE BULKHEAD.	
+adjoining (adj)	ADJACENT (adj)	ALIGN THE BRACKETS WITH THE ADJACENT COMPONENTS.	Align the brackets with the adjoining components.
+ADJUST (v), ADJUSTS, ADJUSTED, ADJUSTED	To put in or come to a specified position or value	ADJUST THE FREQUENCY TO THE VALUE GIVEN IN TABLE 1.	
+		THE INTERNAL LOGIC ADJUSTS TO SUDDEN CHANGES IN TEMPERATURE.	
+ADJUSTABLE (adj)	That you can adjust	THE TWO STOP BOLTS ARE ADJUSTABLE.	
+ADJUSTMENT (n)	The effect of adjusting	MAKE SURE THAT THE ADJUSTMENT IS IN THE LIMITS GIVEN IN TABLE 1.	

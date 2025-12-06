@@ -1,0 +1,13 @@
+﻿relay (v)	SEND (v)	SEND THE INFORMATION TO THE ENGINEERING DEPARTMENT.	Relay the information to the engineering department.
+RELEASE (v), RELEASES, RELEASED, RELEASED	To make free, to let go	RELEASE THE INSTRUMENT PANEL TO GET ACCESS TO THE CONNECTIONS.	
+relevant (adj)	RELATED (adj)	REMOVE THE ROD END FROM THE RELATED PIVOT.	Withdraw the rod end from the relevant pivot.
+	THEIR (adj)	INSTALL THE BOLTS IN THEIR HOLES.	Install the bolts in the relevant holes.
+	ITS (adj)	INSTALL THE COMPUTER IN ITS RACK.	Install the computer in the relevant rack.
+relieve (v)	RELEASE (v)	RELEASE THE TENSION IN THE CABLE.	Relieve the tension in the cable.
+remain (v)	STAY (v)	THE FLAGS MUST STAY OUT OF VIEW.	The flags must remain out of view.
+REMAINING (adj)	That continues to stay	REMOVE THE REMAINING SEALANT WITH SOLVENT.	
+remnant (n)	REMAINING (adj)	REMOVE THE REMAINING SEALANT FROM THE FLOOR COVERING.	Remove sealant remnants from the floor covering.
+removable (adj)	REMOVE (v)	FIND THE PART OF THE BARREL THAT YOU CAN REMOVE.	Find the removable part of the barrel.
+REMOVAL (n)	A procedure which removes an object	THE SUPERVISOR MUST GIVE THE APPLICABLE PROCEDURE FOR CORROSION REMOVAL.	
+REMOVE (v), REMOVES, REMOVED, REMOVED	To take or move something away from its initial position	REMOVE THE INDICATOR FROM THE PANEL.	
+render (v)	MAKE (v)	MAKE THE SYSTEM ELECTRICALLY SAFE.	Render the system electrically safe.

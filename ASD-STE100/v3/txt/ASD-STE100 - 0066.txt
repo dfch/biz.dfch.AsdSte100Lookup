@@ -1,0 +1,11 @@
+﻿design (v)	HAVE (v)	THE MAIN LANDING GEAR DOORS HAVE STEPS FOR ACCESS TO THE LANDING GEAR BAY.	The main landing gear doors are designed with steps for access to the landing gear bay.
+desired (adj)	NECESSARY (adj)	ADD THE NECESSARY QUANTITY OF OIL.	Add the desired quantity of oil.
+	CORRECT (adj)	TIGHTEN THE TURNBUCKLE UNTIL THE TENSION IN THE CABLE IS CORRECT.	Tighten the turnbuckle until you have the desired tension in the cable.
+destroy (v)	BREAK (v)	BREAK THE CONTAINER TO MAKE SURE THAT YOU CANNOT USE IT AGAIN.	To prevent further use, destroy the container.
+detach (v)	DISCONNECT (v)	DISCONNECT THE PIPELINE FROM THE UNION.	Detach the pipeline from the union.
+	DISENGAGE (v)	BEFORE YOU MOVE THE CONTROLS, DISENGAGE THE LOCKS.	Before moving the controls, detach the locks.
+	REMOVE (v)	DO NOT REMOVE THE PROTECTIVE LAYER.	Do not detach the protective film.
+detail (n)	INSTRUCTION (n)	THIS PROCEDURE GIVES THE INSTRUCTIONS TO ATTACH THE PYLON.	This procedure gives details on how to attach the pylon.
+detail (v)	GIVE (v)	THIS SECTION GIVES THE REMOVAL / INSTALLATION INSTRUCTIONS.	This section details the Removal / Installation instructions.
+	REFER (v)	DO THE LEAK TEST (REFER TO PARAGRAPH 4.0).	Do the leak test as detailed in paragraph 4.0.
+	SPECIFIED (adj)	DO THE LEAK TEST AS SPECIFIED IN PARAGRAPH 4.0.	Do the leak test as detailed in paragraph 4.0.

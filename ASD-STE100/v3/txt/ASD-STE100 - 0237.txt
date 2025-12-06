@@ -1,0 +1,11 @@
+﻿STRONG (adj) (STRONGER, STRONGEST)	With much strength, power, or concentration	WHEN WINDS ARE STRONG, MOOR THE AIRCRAFT CAREFULLY.	
+STRUCTURAL (adj)	Related to the structure	THE CHASSIS IS A STRUCTURAL COMPONENT OF THE VEHICLE.	
+STRUCTURALLY (adv)	Related to the structure	THE LIST GIVES YOU STRUCTURALLY IMPORTANT ITEMS.	
+STRUCTURE (n)	1. A construction	ATTACH THE WIRES TO THE STRUCTURE.	
+	2. The arrangement of something	THE INTRODUCTION GIVES YOU THE STRUCTURE OF THE MAINTENANCE MANUAL.	
+SUBASSEMBLY (n)	An assembly that is a part of a larger assembly	DO NOT CHANGE THE POSITION OF THE SUBASSEMBLIES.	
+submerge (v)	PUT (v)	PUT THE FILTER ELEMENT FULLY INTO THE FLUID.	Submerge the filter element in the fluid.
+submit (v)	SEND (v)	SEND THE METAL PARTICLES TO A LABORATORY FOR ANALYSIS.	Submit the metal particles to a laboratory for analysis.
+SUBSEQUENT (adj)	Following in an unspecified time or sequence	A SUBSEQUENT REPAIR WILL BE FOR THE NEW CONFIGURATION ONLY.	
+	###Use NEXT (adj) for the first occurrence that follows immediately in time or sequence.
+	NEXT (adj)	DO THE NEXT INSPECTION.	Do the immediately subsequent inspection.

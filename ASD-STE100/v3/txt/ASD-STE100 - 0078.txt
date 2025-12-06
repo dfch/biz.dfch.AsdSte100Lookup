@@ -1,0 +1,10 @@
+﻿EACH (adj)	Every one of two or more objects or persons, seen together as a group but identified separately	MAKE SURE THAT THE SWITCH IN EACH PANEL IS SET TO “OFF.”	
+EACH (pron)	Every one of two or more objects or persons, seen together as a group but identified separately	INSTALL TWO SPACERS,EACH WITH A THICKNESS OF 3.5 mm.	
+EACH OTHER (pron)	Each of two or more in reciprocal action or relation	WHEN YOU REMOVE THE PROBES, DO NOT LET THEM TOUCH EACH OTHER.	
+early (adj)	SHORT (adj)	IF THE FILTERS BECOME CLOGGED AFTER AN UNUSUALLY SHORT TIME, SEND THEM TO THE LABORATORY FOR ANALYSIS OF THE CONTAMINATION.	If the filters clog at an unusually early stage, send them to the laboratory for analysis of the contamination.
+earth (n)	GROUND (n)	MAKE SURE THAT THE ELECTRICAL SUPPLY GOES TO GROUND.	Make sure the electric supply goes to earth.
+earth (v)	GROUND (v)	MAKE SURE THAT THE FUEL TANKS ARE CORRECTLY GROUNDED.	Make sure the fuel tanks are correctly earthed.
+ease (n)	EASILY (adv)	MAKE SURE THAT YOU CAN MOVE THE HANDLE EASILY.	The handle must move with ease.
+	EASY (adj)	MAKE SURE THAT IT IS EASY TO MOVE THE HANDLE.	The handle must move with ease.
+ease (v)	CAREFULLY REMOVE	CAREFULLY REMOVE THE TRIM COVER FROM THE ADHESIVE TAPE.	Ease the trim cover from the adhesive tape.
+	CAREFULLY MOVE	CAREFULLY MOVE THE PIPE INTO THE CORRECT POSITION.	Ease the pipe into the right position.

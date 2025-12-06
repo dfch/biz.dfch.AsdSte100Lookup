@@ -1,0 +1,10 @@
+﻿LIFE (n)	The time during which you can use an item or object	THE LIFE OF THE CARTRIDGE IN THE FIRE EXTINGUISHER IS 3 YEARS.	
+LIFT (v), LIFTS, LIFTED, LIFTED	To move something up	LIFT THE COVER CAREFULLY.	
+LIGHT (adj) (LIGHTER, LIGHTEST)	That has a small mass, weight, or force	APPLY A LIGHT FORCE ON THE RUDDER PEDALS.	
+	###For other meanings, use:
+	THIN (adj)	APPLY A THIN LAYER OF SEALANT ON THE SEALING SURFACES OF THE CONTAINER.	Apply a light layer of sealant on the sealing surfaces of the container.
+	SMALL (adj)	APPLY A SMALL QUANTITY OF LUBRICANT ON THE MOVING PARTS.	Apply a light quantity of lubricant on the moving parts.
+light (v)	COME ON (v)	MAKE SURE THAT THE FLUID INDICATOR LIGHT COMES ON.	Ensure that the fluid indicator light lights.
+LIGHTING (n)	That which gives light to	A DIMMER UNIT CONTROLS THE PANEL LIGHTING.	
+LIGHTLY (adv)	In a light manner	LIGHTLY RUB THE DEFECTIVE AREA WITH WET ABRASIVE PAPER.	
+LIMIT (n)	A specified maximum or minimum quantity, number, time, or distance	IF THE CLEARANCES ARE NOT IN THE LIMITS GIVEN IN FIG. 4, REFER TO REPAIR SCHEME No. 2.	

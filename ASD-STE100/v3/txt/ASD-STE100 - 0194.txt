@@ -1,0 +1,12 @@
+﻿qualified (adj)	APPROVED (adj)	AN APPROVED PERSON MUST DO THE IMPORTANT CHECKS.	A qualified person must do the important checks.
+QUALITY (n)	Condition, property, or type	THIS MEDICAL EQUIPMENT MUST BE OF GOOD QUALITY.	
+QUANTITY (n)	A specified amount or number	APPLY A SMALL QUANTITY OF LUBRICATING OIL ON THE THREADS OF THE BOLTS.	
+	###For an amount that you can count, use
+	NUMBER (n)	MAKE SURE THAT YOU HAVE THE CORRECT NUMBER OF SHIMS AVAILABLE.	
+quarterly (adv)	INTERVAL (n)	SEND REPORTS TO THE AUTHORITIES AT INTERVALS OF THREE MONTHS.	Send reports to the authorities quarterly.
+questionable (adj)	NOT SURE	IF YOU ARE NOT SURE OF THEIR CONDITION, REJECT THE PARTS.	Reject the parts that are in a questionable condition.
+quick (adj)	QUICKLY (adv)	MAKE SURE THAT THE ROD DOES NOT MOVE QUICKLY.	Make sure that there is no quick movement of the rod.
+QUICKLY (adv)	In a fast manner	MAKE SURE THAT THE PRESSURE DECREASES QUICKLY.	
+quit (v)	GO (v)	BEFORE YOU START THE ENGINE, MAKE SURE THAT ALL PERSONS GO AWAY FROM THE DANGER AREA.	Before you start the engine, make sure that all persons quit the danger area.
+	STOP (v)	IF THE RED LIGHT COMES ON, STOP THE REFUEL PROCEDURE.	If the red light comes on, quit the refuel procedure.
+quote (v)	GIVE (v)	THE TABLE GIVES THE MAXIMUM TOLERANCE FOR THE HOLE.	The table quotes the maximum tolerance for the hole.

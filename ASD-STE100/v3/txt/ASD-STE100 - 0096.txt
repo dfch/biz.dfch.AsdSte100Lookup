@@ -1,0 +1,10 @@
+﻿fabricate (v)	MAKE (v)	USE COPPER TO MAKE THE CHILL BLOCK.	Use copper to fabricate the chill block.
+FACE (n)	The front surface of an object	CLEAN THE FACE OF THE INDICATOR.	
+	###This word is a technical noun when it refers to a part of the body.	WHEN YOU DO MAINTENANCE ON THE WASTE WATER SYSTEM, DO NOT TOUCH YOUR FACE WITH YOUR GLOVES.	
+face (v)	POINT (v)	WHEN YOU INSTALL THE PITOT HEAD, MAKE SURE THAT THE OPENING POINTS FORWARD.	When installing the pitot head, make sure that the opening is facing forward.
+	TURN (v)	BEFORE YOU PUSH THE VALVE STEM DOWN, TURN YOUR FACE AWAY FROM THE DRAIN VALVE.	Face away from the drain valve when pushing the valve stem down.
+facilitate (v)	HELP (v)	IDENTIFY THE COMPONENT WITH A CODE TO HELP YOU TO CORRECTLY INSTALL IT AGAIN.	Mark the component with a code that will facilitate its correct reinstallation.
+	MAKE ... EASIER (v)	THIS MAKES FAULT ISOLATION EASIER.	This facilitates fault isolation.
+facility (n)	###Be accurate. Use the name of the facility as a technical noun.	WEIGH THE AIRCRAFT ON A WEIGHBRIDGE.	You need a special facility to weigh the aircraft.
+FACT (n)	Something that occurred or is correct	GET ALL THE FACTS ABOUT THE INCIDENT FROM THE PILOT.	
+factor (n)	CAUSE (n)	THERE CAN BE MANY CAUSES FOR CORROSION.	Corrosion can be caused by several factors.

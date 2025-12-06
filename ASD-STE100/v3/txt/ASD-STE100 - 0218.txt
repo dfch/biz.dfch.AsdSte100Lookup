@@ -1,0 +1,11 @@
+﻿separate (adj)	ISOLATED (adj)	EACH HYDRAULIC SYSTEM IS FULLY ISOLATED.	All hydraulic systems are completely separate.
+	DIFFERENT (adj)	PUT THE REMAINING PARTS IN A DIFFERENT CONTAINER.	Put the remaining parts in a separate container.
+	NOT CONNECTED (adj)	THESE TWO TRACKS ARE NOT CONNECTED TO THE OTHER TWO.	These two tracks are separate from the other two.
+	NOT ATTACHED (adj)	THE CAP IS NOT ATTACHED TO THE COUPLING.	The cap is separate from the coupling.
+separate (v)	DISCONNECT (v)	DISCONNECT THE LINE FITTINGS.	Separate the line fittings.
+	DIVIDE (v)	YOU CAN DIVIDE THE DRAINS INTO THREE GROUPS.	You can separate the drains into three groups.
+separately (adv)	INDEPENDENTLY (adv)	THE SYSTEM MONITORS THE CONDITION OF THE PARTS INDEPENDENTLY.	The system monitors the condition of the parts separately.
+SEPARATION (n)	The action or result of separating	SEPARATION OF THESE PARTS IS NOT EASY.	
+SEQUENCE (n)	The relation of items that follow one after the other in a list or the relation of steps or events that occur one after the other in time	TIGHTEN THE BOLTS IN THE SEQUENCE THAT IS GIVEN IN FIGURE 3.	
+serious (adj)	IMPORTANT (adj)	VIRUS CONTAMINATION IS AN IMPORTANT PROBLEM.	Virus contamination is a serious problem.
+	DANGEROUS (adj)	HYDRAULIC FLUID IS DANGEROUS FOR YOUR EYES.	Hydraulic fluid can cause serious eye injury.

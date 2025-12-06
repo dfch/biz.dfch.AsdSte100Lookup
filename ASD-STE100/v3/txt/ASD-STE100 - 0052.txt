@@ -1,0 +1,13 @@
+﻿consider (v)	THINK (v)	IF YOU THINK THAT THE INDICATION IS NOT CORRECT, DO THE TEST AGAIN.	If you consider that the indication is not correct, do the test again.
+considerable (adj)	LARGE (adj)	CLEAN YOUR SKIN WITH A LARGE QUANTITY OF WATER.	Clean your skin with a considerable quantity of water.
+	IMPORTANT (adj)	CONTAMINATION OF CABIN AIR CAN BE AN IMPORTANT PROBLEM.	Contamination of cabin air can be a considerable problem.
+	DANGEROUS (adj)	HYDRAULIC FLUID IS DANGEROUS FOR YOUR EYES.	Hydraulic fluid can cause considerable eye injury.
+consist of (v)	HAVE (v)	EACH ANTENNA HAS THREE PARTS.	Each antenna consists of three parts.
+consistent (adj)	AGREE (v)	MAKE SURE THAT THE INDICATIONS AGREE WITH THE POSITION OF THE FLAPS.	Check that the indications are consistent with the position of the flaps.
+CONSTANT (adj)	That continues to be the same, without change	MAKE SURE THAT THE CABIN PRESSURE STAYS CONSTANT.	
+CONSTANTLY (adv)	Incessantly	THE INSTRUMENT WILL CONSTANTLY SHOW THIS VALUE.	
+construct (v)	ASSEMBLE (v)	ASSEMBLE THE UNIT.	Construct the unit.
+consult (v)	REFER (v)	FOR MORE INFORMATION, REFER TO THE USER’S MANUAL.	For more information, consult the User’s Manual.
+CONTACT (v) CONTACTS, CONTACTED, CONTACTED	To start communication	CONTACT CUSTOMER SERVICES.	
+	###For other meanings, use:
+	TOUCH (v)	TIGHTEN THE FIXTURE SCREW UNTIL IT TOUCHES THE SURFACE.	Tighten the fixture screw until it contacts the surface.

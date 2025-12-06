@@ -1,0 +1,9 @@
+﻿garner (v)	COLLECT (v)	THESE COMPUTERS COLLECT DATA FROM THE VHF SYSTEM.	These computers garner data from the VHF system.
+		THE BITE FUNCTION COLLECTS THE FAILURES AND SENDS THE FAILURE MESSAGE TO THE CENTRAL MAINTENANCE COMPUTER.	The BITE function garners the failures and sends the failure message to the Central Maintenance Computer.
+GAS (n)	A fluid that has no shape or volume and that can expand	THE TEMPERATURE SENSING UNIT IS A CAPILLARY TUBE FILLED WITH GAS.	
+gaseous (adj)	GAS (n)	THE TOOL CYLINDER CONTAINS A MIXTURE OF GASES (10% HELIUM AND 90% NITROGEN).	The tool cylinder contains a gaseous mixture of 10% helium and 90% nitrogen.
+gash (v)	DAMAGED (adj)	IF THE THERMAL BLANKET IS DAMAGED, DO REPAIR No. 9.	If the thermal blanket is gashed, do repair No. 9.
+gather (v)	COLLECT (v)	ALL FLUIDS COLLECT AT THE LOWEST POINT IN THE COMPARTMENT.	All fluids gather at the lowest point in the compartment.
+		THREE COMPUTERS COLLECT DATA AND PARAMETERS FROM THE SYSTEMS AND PUT THEM TOGETHER ON THE DATA LINK TO THE DISPLAY UNIT.	Three computers gather data and parameters from the systems and put them together on the data link to the display unit.
+gauge (v)	MEASURE (v)	MEASURE THE DISTANCE BETWEEN THE TOP EDGE AND THE BOTTOM SURFACE.	Gauge the width of the gap between the top edge and the bottom surface.
+GENERAL (adj)	Of, or related to something as a whole, not detailed	THIS SECTION GIVES GENERAL MAINTENANCE PROCEDURES.	

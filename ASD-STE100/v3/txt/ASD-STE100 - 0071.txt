@@ -1,0 +1,12 @@
+﻿disappear (v)	VIEW (n)	THE HORIZONTAL BAR GOES OUT OF VIEW.	The horizontal bar disappears from the window.
+DISARM (v), DISARMS, DISARMED, DISARMED	1. To remove armaments	DISARM THE AIRCRAFT.	
+	2. To prevent automatic operation	DISARM THE LIFT DUMPER.	
+DISASSEMBLE (v), DISASSEMBLES, DISASSEMBLED, DISASSEMBLED	To take an assembly apart	DISASSEMBLE THE VALVE ASSEMBLY.	
+DISCARD (v), DISCARDS, DISCARDED, DISCARDED	To not use again	REMOVE THE O-RINGS AND DISCARD THEM.	
+discharge (v)	RELEASE (v)	RELEASE PRESSURE FROM THE TANKS.	Discharge pressure from the tanks.
+	GO (v)	THE UNWANTED AIR GOES OVERBOARD.	The unwanted air discharges overboard.
+DISCONNECT (v), DISCONNECTS, DISCONNECTED, DISCONNECTED	To separate something from the thing that it is connected to, or to become separated	DISCONNECT THE POWER SUPPLY.	
+		WHEN YOU TOUCH THIS ICON, THE COMPUTER DISCONNECTS FROM THE INTERNET.	
+discontinue (v)	STOP (v)	STOP THE TEST PROCEDURE.	Discontinue the test procedure.
+discover (v)	FIND (v)	IF YOU FIND CORROSION DURING THE INSPECTION, REMOVE IT.	If you discover corrosion during the inspection, remove it.
+discrepancy (n)	DIFFERENCE (n)	IF THERE ISA DIFFERENCE OF MORE THAN 5 mm, MAKE SURE THAT THE ADJUSTMENT IS CORRECT.	If the discrepancy is greater than 5 mm, check the adjustment.

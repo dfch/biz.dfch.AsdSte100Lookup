@@ -1,0 +1,11 @@
+﻿force (v)	PUSH (v) FORCE (TN)	PUSH THE CLIP OUT TO REMOVE IT.	Clip may be removed by forcing it out.
+		DO NOT USE FORCE TO PUSH THE COVER INTO POSITION.	Do not attempt to force the cover into position.
+forecast (v)	POSSIBLE (adj)	IF BAD WEATHER IS POSSIBLE, MOOR THE VESSEL SAFELY.	If unfavorable weather conditions are forecast, moor the vessel securely.
+foreign (adj)	UNWANTED (adj)	THIS COVER WILL KEEP DIRT, PARTICLES, OR OTHER UNWANTED MATERIAL OUT OF THE SYSTEM.	This cover will prevent dirt, particles, or other foreign material from entering the system.
+foremost (adj)	FRONT (n)	YOU CANNOT REMOVE THE HALF CLAMP THAT IS NEAREST TO THE FRONT.	The foremost half clamp is not removable.
+form (n)	SHAPE (n)	THE SEAL HAS THE SHAPE OF AN ELLIPSE.	The seal is in the form of an ellipse.
+form (v)	BE (v)	IF THERE IS CONTAMINATION IN THE FUEL TANKS, REMOVE IT IMMEDIATELY.	If contamination has formed in the fuel tanks, remove it immediately.
+fortify (v)	STRONG (adj)	CARBON-FIBER STRUTS MAKE THE FLOOR STRUCTURE STRONGER.	Carbon-fiber struts fortify the floor structure.
+FORWARD (adj)	Nearer to the front	THE CONTROL UNIT IS INSTALLED IN THE FORWARD PART OF THE CARGO COMPARTMENT.	
+FORWARD (adv)	In the direction of the front	MOVE THE LEVERS FORWARD.	
+FORWARD OF (Prep)	At a position nearer to the front	THE TENSION REGULATOR IS INSTALLED FORWARD OF THE PRESSURE BULKHEAD.	

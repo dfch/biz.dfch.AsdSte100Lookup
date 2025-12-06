@@ -1,0 +1,8 @@
+﻿YES (adv)	Function word that shows the positive answer to a question	DOES THE LIGHT COME ON? YES OR NO?	
+yet (conj)	BUT (conj)	TIGHTEN THE NUTS, BUT KEEP THEM SUFFICIENTLY LOOSE TO REMOVE THEM WITH YOUR HAND.	The nuts should be tightened, yet loose enough to remove by hand.
+yet (adv)	AT THIS TIME (adv)	DO NOT REMOVE THE FIXTURE COVER AT THIS TIME.	Do not remove the fixture cover yet.
+YOU (pron)	The reader or the user	YOU CAN CONTINUE THE TEST.	
+		HOT SURFACES CAN BURN YOU.	
+YOUR (adj)	Related to the reader or the user	IF YOU GET SOLVENT IN YOUR EYES, FLUSH THEM IMMEDIATELY WITH WATER.	
+yourself (pron)	YOU (pron)	DO NOT USE YOUR HANDS TO PREVENT MOVEMENT OF THE LP COMPRESSOR. IF YOU DO, THE LP COMPRESSOR CAN CAUSE YOU INJURY AND CAN CAUSE DAMAGE TO THE EQUIPMENT.	Do not use your hands to prevent movement of the LP compressor. If you do, you can cause injury to yourself and damage to the equipment.
+zero (v)	ZERO (TN)	ADJUST THE METER TO ZERO.	Zero the meter.

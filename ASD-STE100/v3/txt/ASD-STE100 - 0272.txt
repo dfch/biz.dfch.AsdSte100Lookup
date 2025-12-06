@@ -1,0 +1,11 @@
+﻿whether (conj)	IF (conj)	THIS LIMIT IS APPLICABLE IF THE AIRCRAFT IS ON THE LANDING GEAR OR ON JACKS.	This limit applies whether the aircraft is on the landing gear or on jacks.
+WHICH (pron)	The thing or things that	EXAMINE THE EMERGENCY FUEL PUMP, WHICH IS ON THE LEFTSIDE.	
+whichever (adj)	THAT (pron)	USE THE ADHESIVE THAT IS AVAILABLE.	Use whichever adhesive is available.
+whichever (pron)	THAT (pron)	DIFFERENT ADHESIVES ARE PERMITTED. USE THE ONE THAT IS AVAILABLE.	Different adhesives are permitted. Use whichever is available.
+WHILE (conj)	At the same time	MAKE SURE THAT A PERSON HOLDS THE ITEM, WHILE YOU DISCONNECT IT.	
+whilst (conj)	WHILE (conj)	DO NOT OPEN THE HOUSING WHILE THE ELECTRICAL POWER IS CONNECTED.	Do not open the housing whilst the electrical power is connected.
+WHO (pron)	The person or personnel that	THE DECKHAND, WHO OPERATES THE REAR WINCH, MUST LOCK THE FIXTURE.	
+whoever (pron)	WHO (pron)	ALL PERSONS WHO ARE IN THIS AREA MUST USE A RESPIRATOR.	Whoever is in this area must use a respirator.
+whole (adj)	FULL (adj)	DO THE FULL PROCEDURE.	The whole procedure must be done.
+	ALL (adj)	EXAMINE ALL OF THE SYSTEM TO FIND THE CAUSE OF INTERFERENCE.	Examine the whole system to find the cause of interference.
+wholly (adv)	FULLY (adv)	THE SYSTEM IS FULLY AUTOMATIC.	The system is wholly automatic.

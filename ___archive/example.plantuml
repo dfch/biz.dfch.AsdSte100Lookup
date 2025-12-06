@@ -1,0 +1,8 @@
+@startuml
+
+[First component]
+[Another component] as [CMP-2]
+component [CMP-3]
+component [Very Last\ncomponent...] as [CMP-4]
+
+@enduml

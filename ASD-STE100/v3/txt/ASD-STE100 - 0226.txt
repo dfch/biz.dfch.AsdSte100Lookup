@@ -1,0 +1,11 @@
+﻿SMALL (adj) (SMALLER, SMALLEST)	Less than average in dimension, quantity, quality, or capacity	IF THE TEMPERATURE INCREASES SUDDENLY, ADD A SMALL QUANTITY OF REAGENT TO GET A STABLE REACTION.	
+smear (v)	APPLY (v)	APPLY GREASE TO THE TAPER SLEEVE.	Smear grease on the taper sleeve.
+SMELL (v), SMELLS, SMELLED, SMELLED	To sense with the nose	IF YOU SMELL OIL IN THE COMPARTMENT, REPLACE THE RECIRCULATION FILTERS.	
+SMOKE (n)	A gas that has particles of burned material and that you can see	WHEN THE CONCENTRATION OF SMOKE IS MORE THAN THE LIMIT, AN ALARM OPERATES.	
+SMOKE (v), SMOKES, SMOKED, SMOKED	To breathe the fumes of burning material and especially tobacco	DO NOT SMOKE IN THE WORKAREA.	
+SMOOTH (adj) (SMOOTHER, SMOOTHEST)	1. That has a continuous uniform surface	MAKE SURE THAT THE PAINTED SURFACE IS SMOOTH.	
+	2. That has a constant rate of movement	EXAMINE THE LINKAGE FOR SMOOTH MOVEMENT.	
+smooth (v)	SMOOTH (adj)	MAKE THE TAPE SMOOTH.	Smooth the tape out.
+SMOOTHLY (adv)	In a smooth manner	MAKE SURE THAT THE REDUCTION GEAR MOVES SMOOTHLY.	
+snag (v)	CATCH (v)	THE CLOTH WILL CATCH ON BROKEN WIRES.	The cloth will snag on broken wires.
+snap (n)	CLICK (n)	WHEN YOU ATTACH THE SPRING CLIP, MAKE SURE THAT YOU HEAR A CLICK.	Ensure that there is a snap when you fit the spring clip.

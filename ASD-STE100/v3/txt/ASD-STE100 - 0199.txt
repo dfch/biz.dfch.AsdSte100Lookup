@@ -1,0 +1,13 @@
+﻿recoil (v)	MOVE BACK (v)	BE CAREFUL WHEN THE SLIDE MOVES BACK.	Be careful when the slide recoils.
+	WIND (v)	WIND THE PROBE WIRE BACK ON THE SPOOL.	Recoil the probe wire back on the spool.
+	RECOIL (TN)	THE GUN BARREL HAS A QUICK RECOIL.	The gun barrel recoils quickly.
+RECOMMEND (v), RECOMMENDS, RECOMMENDED, RECOMMENDED	To advise that which is best	THE MANUFACTURER RECOMMENDS THAT YOU KEEP THE UNIT IN A DEDICATED AREA.	
+recondition (v)	REPAIR (v)	REPAIR THE SEATS.	Recondition the seats.
+	OVERHAUL (TN)	DO AN OVERHAUL OF THE ENGINE.	Recondition the engine.
+reconstruction (n)	REPAIR (n)	RECORD ALL REPAIRS TO THE SKIN SURFACE.	Record all reconstruction of the skin surface.
+	REPAIR (v)	THIS PROCEDURE TELLS YOU HOW TO REPAIR THE SURFACE.	This procedure is for the reconstruction of the surface.
+RECORD (v), RECORDS, RECORDED, RECORDED	1. To make notes of and keep data to use subsequently	RECORD THE RESULTS.	
+	2. To put data on a storage medium	THE COCKPIT VOICE RECORDER RECORDS SIGNALS FROM FOUR AUDIO INPUTS DURING THE FLIGHT.	
+recover (v)	COLLECT (v)	REMOVE THE NUT AND THE BOLT. THEN, COLLECT THE WASHER.	Remove the nut and the bolt. Then, recover the washer.
+rectify (v)	CORRECT (v)	BEFORE YOU START THE PROCEDURE AGAIN, CORRECT THE DEFECT.	Rectify the defect before you restart the procedure.
+recur (v)	OCCUR (v)	IF THE SYMPTOMS OCCUR AGAIN, DO A SYSTEM TEST.	If the symptoms recur, do a system test.

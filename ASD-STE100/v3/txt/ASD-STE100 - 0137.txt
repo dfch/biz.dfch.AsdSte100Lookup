@@ -1,0 +1,7 @@
+﻿INTERCHANGEABLE (adj)	That you can interchange	RELAYS 2YG AND 8YG ARE FULLY INTERCHANGEABLE ITEMS.	
+interconnect (v)	CONNECT (v)	THE PIPES CONNECT SYSTEM A TO SYSTEM B.	The pipes interconnect system A and system B.
+INTERFACE (n)	The connection between two systems or components	CLEAN THE INTERFACE BETWEEN THE COMPUTER AND THE SENSOR.	
+interfere (v)	HIT (v)	IF YOU INSTALL THE UPPER DRAG STRUT WITH THE HEAD DOWN, IT WILL HIT THE LOWER DRAG STRUT DURING RETRACTION.	Placing the upper drag strut upside down makes it interfere with the lower drag strut.
+	CATCH (v)	MAKE SURE THAT THE RODS CANNOT CATCH ON THE FLAPS.	Make sure the rods cannot interfere with the flaps.
+	TOUCH (v)	IF THE BRACKET TOUCHES THE PLATE, REMOVE THE UNWANTED MATERIAL WITH A FILE.	Should the bracket interfere with the plate, remove surplus material with a file.
+	INTERFERENCE (TN)	MAKE SURE THAT THERE IS NO INTERFERENCE BETWEEN THE RADAR AND THE TACTICAL AIR NAVIGATION SYSTEM (TACAN).	Ensure that the radar does not interfere with the Tactical Air Navigation System (TACAN).

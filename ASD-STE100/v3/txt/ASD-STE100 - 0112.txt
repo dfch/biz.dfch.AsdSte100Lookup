@@ -1,0 +1,14 @@
+﻿generally (adv)	USUALLY (adv)	YOU USUALLY REPLACE MEMORY MODULES DURING MAINTENANCE.	Memory modules are generally replaced during maintenance.
+generate (v)	BE (v)	THERE MUST BE NO ERRORS WHEN YOU OPEN THE FILE.	The file opening must not generate errors.
+	GIVE (v)	IF THE HYDRAULIC PUMP DOES NOT GIVE A PRESSURE OF 3000 psi, USE THE ELECTRIC PUMP.	If the hydraulic pump fails to generate a pressure of 3000 psi, use the electric pump.
+	SUPPLY (v)	THE BATTERIES SUPPLY 28 V DC.	The batteries generate 28 V DC.
+generous (adj)	LARGE (adj)	A LARGE QUANTITY OF COMPOUND IS NECESSARY.	A generous amount of compound will be necessary.
+	THICK (adj)	APPLY A THICK LAYER OF GREASE.	Apply a generous amount of grease.
+	###If it is possible, be accurate.		
+generously (adv)	LARGE (adj)	APPLY A LARGE QUANTITY OF SEALANT TO THE REPAIR PATCH.	Apply sealant generously to the repair patch.
+	THICK (adj)	APPLY A THICK LAYER OF GREASE.	Apply grease generously.
+	###If it is possible, be accurate.		
+gentle (adj)	CAREFULLY (adv)	TURN THE POTENTIOMETER CAREFULLY.	Rotate the potentiometer with a gentle movement.
+	LIGHTLY (adv)	TAP THE SURFACE LIGHTLY.	Give the surface a gentle tap.
+gently (adv)	CAREFULLY (adv)	CAREFULLY PULL THE ELECTRICAL WIRE OUT FROM THE RUBBER SEAL.	Gently pull out the electrical wire from the rubber seal.
+	LIGHTLY (adv)	LIGHTLY TAP THE TOP SURFACE UNTIL THE PARTS ALIGN.	Gently tap the top surface until the parts align.

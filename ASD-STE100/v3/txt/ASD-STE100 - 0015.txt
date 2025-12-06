@@ -1,0 +1,11 @@
+﻿ancillary (adj)	AUXILIARY (adj) SECONDARY (adj)	THE ENGINE AND ALL AUXILIARY EQUIPMENT USE THE SAME LUBRICANT.	The engine and all ancillary equipment use the same lubricant.
+		DO AN OPERATIONAL CHECK OF THE SECONDARY CONTROLS.	Do an operational check of the ancillary controls.
+AND (conj)	Function word used to connect words, phrases, or clauses	MAKE SURE THAT THE FLAPS ARE RETRACTED AND THE AILERON TRIM HANDWHEEL IS IN THE ZERO POSITION.	
+ANGULAR (adj)	That has one or more angles	MAKE SURE THAT THE ANGULAR POSITION IS CORRECT.	
+annotation (n)	WRITE (v)	WRITE THE TEMPERATURE VALUE ON THE ENGINE LOG CARD.	Make an annotation of the temperature on the Engine Log Card.
+	RECORD (v)	RECORD THE TEMPERATURE VALUE ON THE ENGINE LOG CARD.	Make an annotation of the temperature on the Engine Log Card.
+annunciate (v)	SHOW (v)	THE DISPLAY SHOWS A FAULT MESSAGE.	The display annunciates a fault message.
+another (adj)	ONE MORE (adj)	INSTALL ONE MORE WASHER BETWEEN THE NUT AND THE SURFACE.	Install another washer between the nut and the surface.
+	DIFFERENT (adj)	REFER TO DETAIL C ON FIG. 4 FOR A DIFFERENT PROCEDURE TO ATTACH THE CABLE.	Refer to detail C on Fig. 4 for another way of attaching the cable.
+	AGAIN (adv)	BEFORE YOU TRY TO START THE ENGINE AGAIN, MAKE SURE THAT THE AREA IS SAFE.	Before you try another engine start, make sure that the area is safe.
+anticlockwise (adv)	COUNTERCLOCKWISE (adv)	TURN THE CAP COUNTERCLOCKWISE.	Turn the cap anticlockwise.

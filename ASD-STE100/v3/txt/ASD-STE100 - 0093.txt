@@ -1,0 +1,10 @@
+﻿EXPAND (v), EXPANDS, EXPANDED, EXPANDED	To increase in dimension, volume, or time	THE BELLOWS MUST EXPAND.	
+		HEAT EXPANDS THE GAS IN THE CONTAINER.	
+expect (v)	POSSIBLE (adj)	IF IT IS POSSIBLE THAT THE TEMPERATURE WILL DECREASE TO -20 DEGREES C, REMOVE THE BATTERIES.	If temperature is expected to drop to -20 degrees C, remove the batteries.
+expel (v)	REMOVE (v)	REMOVE THE AIR BUBBLES FROM THE COMPOUND WITH A SPATULA.	Expel the air bubbles from the compound with a spatula.
+	BLEED (v)	BLEED ALL NITROGEN FROM THE SYSTEM.	Expel all nitrogen from the system.
+	RELEASE (v)	RELEASE ALL NITROGEN.	Expel all nitrogen.
+EXPIRED (adj)	More than the permitted life	MAKE SURE THAT THE SHELF LIFE IS NOT EXPIRED.	
+explain (v)	TELL (v)	THE TECHNICIAN WILL TELL THE OPERATOR THE PROCEDURE FOR SENSOR CALIBRATION.	The technician will explain the sensor calibration procedure to the operator.
+EXPLOSION (n)	The effect when an explosive material quickly releases its energy	THIS CONDITION CAN CAUSE AN EXPLOSION.	
+EXPLOSIVE (adj)	That can cause an explosion	THE SAFETY PRECAUTIONS THAT FOLLOW ARE APPLICABLE TO EXPLOSIVE ITEMS.	

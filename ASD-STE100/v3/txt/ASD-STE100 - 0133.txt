@@ -1,0 +1,10 @@
+﻿ineffective (adj)	UNSERVICEABLE (adj)	IF THE PUMP IS UNSERVICEABLE, REPLACE IT.	If the pump is ineffective, replace it.
+	UNSATISFACTORY (adj)	IF THE OPERATION OF THE PUMP IS UNSATISFACTORY, REPLACE IT.	If the operation of the pump is ineffective, replace it.
+	NOT OPERATE (v)	IF THE PUMP DOES NOT OPERATE CORRECTLY, REPLACE IT.	If the pump is ineffective, replace it.
+inflammable (adj)	FLAMMABLE (adj)	SOLVENT IS VERY FLAMMABLE.	Solvent is highly inflammable.
+INFLATE (v), INFLATES, INFLATED, INFLATED	To make or become larger as a result of pressurization by a gas	INFLATE THE TIRES WITH NITROGEN.	
+		OPERATION OF THE HANDLE RELEASES THE GAS, AND THE SLIDE-RAFT INFLATES.	
+inform (v)	TELL (v)	TELL THE MANUFACTURER ABOUT THE PROBLEM.	Inform the manufacturer about the problem.
+INFORMATION (n)	Data collected and made available for a specified function	THIS MANUAL CONTAINS INFORMATION ABOUT MAINTENANCE PROCEDURES.	
+ingest (v)	SWALLOW (v)	IF YOU SWALLOW HYDRAULIC FLUID, GET MEDICAL AID IMMEDIATELY.	If you ingest hydraulic fluid, get medical aid immediately.
+ingress (n)	GO INTO (v)	IF WATER GOES INTO THE COMPONENT, DAMAGE WILL OCCUR.	Water ingress will damage the component.

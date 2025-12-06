@@ -1,0 +1,13 @@
+﻿FLAMMABLE (adj)	That burns easily	THE SOLVENT IS FLAMMABLE.	
+FLANGE (n)	An end surface at an angle	MAKE SURE THAT THE FLANGE IS NOT DAMAGED.	
+FLASH (v), FLASHES, FLASHED, FLASHED	To come on and go off frequently	THE RED LIGHTS FLASH IN HALF-SECOND INTERVALS.	
+FLAT (adj) (FLATTER, FLATTEST)	That has a continuous surface in the same plane	LUBRICATE ONE SIDE OF THE FLAT WASHERS.	
+flatness (n)	FLAT (adj)	THE SURFACE MUST BE FLAT TO GET A CORRECT BOND.	A correct bond depends on the surface flatness.
+flatten (v)	FLAT (adj)	MAKE SURE THAT YOU DO NOT CAUSE THE TUBES TO BECOME FLAT.	Make sure that you do not flatten the tubes.
+flaw (n)	DAMAGE (n)	MAKE SURE THAT THERE IS NO DAMAGE TO THE SURFACE FINISH.	Make sure that there are no flaws in the surface finish.
+	DEFECTIVE (adj)	MAKE SURE THAT THE SURFACE FINISH IS NOT DEFECTIVE.	Make sure that there are no flaws in the surface finish.
+	###If it is possible, be accurate.
+flex (v)	BEND (v)	THE WING CAN BEND UP AND DOWN DURING FLIGHT.	The wing can flex up and down during flight.
+FLEXIBLE (adj)	That can easily bend again and again	CONNECT THE FLEXIBLE HOSES TO THE PUMP.	
+FLIGHT (n)	The time an aircraft is in the air	AFTER EACH FLIGHT, READ THE COUNTER UNIT INDICATIONS.	
+flood (v)	USE TOO MUCH (v)	DO NOT USE TOO MUCH SOLVENT ON THE AREA.	Do not flood the area with solvent.

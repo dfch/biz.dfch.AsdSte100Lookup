@@ -1,0 +1,10 @@
+﻿combine (v)	MIX (v)	MIX THE WATER AND THE GLYCOL.	Combine water and glycol.
+	PUT TOGETHER (v)	DO NOT PUT DIFFERENT HPT SEGMENTS TOGETHER.	Do not combine different HPT segments.
+combustible (adj)	FLAMMABLE (adj)	KEEP FLAMMABLE MATERIALS AT A MINIMUM DISTANCE OF 50 FEET FROM THE WORK AREA.	Keep combustible materials at a minimum distance of 50 feet from the work area.
+COME (v), COMES, CAME	To move to your location	FUMES MUST NOT COME INTO THE CABIN.	
+	###No other verb forms.			
+COME ON (v), COMES ON, CAME ON	To become bright with light when an internal power source is energized	THE LIGHTS MUST COME ON.	
+	###No other verb forms.
+commence (v)	START (v)	THE WARNING STARTS AND THE INDICATORS FLASH.	The warning commences and the indicators flash.
+commencement (n)	START (v)	AFTER THE TEST STARTS, MONITOR THE RESULTS ON THE SCREEN.	After the test commencement, monitor the results on the screen.
+common (adj)	SAME (adv)	THE REMOVAL PROCEDURE IS THE SAME FOR THE TWO ITEMS.	The removal procedure is common to both items.

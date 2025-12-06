@@ -1,0 +1,11 @@
+﻿RECYCLE (v), RECYCLES, RECYCLED, RECYCLED	To put a used material through a process to make it possible to use it or its components again	MAKE SURE THAT YOU RECYCLE THE REMOVED INSULATION MATERIAL.
+	###For other meanings, use:
+	CYCLE (n)	DO ONE MORE TEST CYCLE OF THE COMPONENT.	Recycle the component through a test.
+reduce (v)	DECREASE (v)	SLOWLY DECREASE THE SPEED.	Slowly reduce the speed.
+REFER (v), REFERS, REFERRED, REFERRED	1. To tell a person where to find information	REFER TO CHAPTER 28 FOR THE INSTALLATION PROCEDURE.	
+	2. To give information	BEFORE YOU DO THIS PROCEDURE, ENGAGE THE RAMP SERVICE DOOR SAFETY CONNECTOR PIN (THE PIN THAT HOLDS THE RAMP SERVICE DOOR, REFERRED TO IN THIS PROCEDURE AS THE “SAFETY CONNECTOR PIN”).	
+reference (n)	REFER (v)	REFER TO CHAPTER 20 FOR THE STANDARD TORQUE VALUES.	Reference is made to Chapter 20 for the standard torque values.
+referenced (adj)	SHOW (v)	MAKE SURE THAT THE GRAPH SHOWS THIS POINT.	Make sure that this point is referenced on the graph.
+refill (v)	FILL (v)	FILL THE CONTAINER AGAIN.	Refill the container.
+refit (v)	INSTALL (v)	INSTALL THE LINKAGE AGAIN.	Refit the linkage.
+	REPAIR (v)	ON THE SUBMARINE, REPAIR ALL DAMAGE AND REPLACE ALL WORN PARTS.	Refit the submarine.

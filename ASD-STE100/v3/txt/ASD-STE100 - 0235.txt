@@ -1,0 +1,11 @@
+﻿still (adv)	STAY (v)	MAKE SURE THAT THE “OVHT” LIGHT STAYS ON.	Make sure that the “OVHT” light is still illuminated.
+	CONTINUE (v)	MAKE SURE THAT THE ROTOR CONTINUES TO TURN.	Make sure that the rotor still turns.
+stimulate (v)	INCREASE (v)	INCREASE THE AIRFLOW.	Stimulate the airflow.
+stir (v)	MIX (v)	MIX THE BONDING MATERIAL WITH A SPATULA.	Stir the bonding material with a spatula.
+STOP (v), STOPS, STOPPED, STOPPED	1. To cause the end of a procedure, movement, or an operation	STOP THE ENGINE.	
+	2. To come to an end	WHEN THE FLOW STOPS, REMOVE THE DRAIN HOSE.	
+store (v)	KEEP (v)	KEEP THE CARTRIDGES IN A SAFETY AREA.	Cartridges should be stored in a safety area.
+	CONTAIN (v)	THE FIRE EXTINGUISHER BOTTLES CONTAIN A DRY CHEMICAL POWDER AGENT.	The fire extinguisher bottles store a dry chemical powder agent.
+	STORAGE (TN)	WHEN YOU PUT THE UNIT INTO STORAGE, OBEY THE APPLICABLE STORAGE INSTRUCTIONS.	When you store the unit, obey the applicable storage instructions.
+STOW (v), STOWS, STOWED, STOWED	To move or cause to move into a specified position of storage.	STOW THE LIFEVEST SAFELY BELOW THE PASSENGER SEAT.	
+		MAKE SURE THAT THE THRUST REVERSER STOWS WHEN YOU PUSH THE QUADRANT CONTROL FORWARD.	

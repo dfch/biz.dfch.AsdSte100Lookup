@@ -1,0 +1,13 @@
+﻿RECEIVE (v), RECEIVES, RECEIVED, RECEIVED	To get energy, material, or a signal from a different source	MAKE SURE THAT THE CAPTAIN'S BOOMSET RECEIVES THE SIGNALS CORRECTLY.	
+RECESS (n)	An indentation in a surface	WHEN YOU CLEAN THE SURFACES, REMOVE THE STAINS FROM THE RECESSES.	
+recess (v)	RECESS (n)	DO NOT MAKE A RECESS OF MORE THAN 5 mm FOR THE STUDS.	Do not recess studs more than 5 mm.
+		THE FLANGE IS IN A RECESS IN THE FUSELAGE.	The flange is recessed into the fuselage.
+recharge (v)	CHARGE (v)	CHARGE THE BATTERY AGAIN.	Recharge the battery.
+	FILL (v)	FILL THE FLUID RESERVOIR.	Recharge the fluid reservoir.
+	PRESSURIZE (v)	PRESSURIZE THE ACCUMULATOR.	Recharge the accumulator.
+recheck (v)	MEASURE (v)	MEASURE THE DISTANCE BETWEEN THE FACES AGAIN.	Recheck the distance between the faces.
+	EXAMINE (v)	EXAMINE THE CASTING FOR CORROSION AGAIN.	Recheck the casting for corrosion.
+	CHECK (n)	DO A LEAKAGE CHECK OF THE FILTER ASSEMBLY AGAIN.	Recheck the filter assembly for leakage.
+reclaim (v)	REPAIR (v)	REPAIR THE DAMAGED FABRIC AREA.	Reclaim the damaged fabric area.
+recleat (v)	ATTACH (v) (TO A CLEAT [TN])	ATTACH THE TIEDOWN CORD TO A CLEAT.	Recleat the tiedown cord.
+reclose (v)	CLOSE (v)	AFTER SERVICING, CLOSE THE COMPARTMENT AGAIN.	Reclose the compartment after servicing.

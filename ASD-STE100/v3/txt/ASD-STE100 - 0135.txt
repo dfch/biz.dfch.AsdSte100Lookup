@@ -1,0 +1,12 @@
+﻿insert (v)	PUT (v)	PUT THE SLEEVE INTO THE OPENING.	Insert the sleeve into the opening.
+	ENGAGE (v)	MAKE SURE THAT THE SHAFT ENGAGES IN THE MATING PART.	Check that the shaft is inserted in the mating part.
+inside (adj)	INNER (adj)	CLEAN THE INNER SURFACE OF THE CONTAINER.	Clean the inside surface of the container.
+inside (n)	INNER (adj)	PAINT THE INNER SURFACE OF THE PUMP ASSEMBLY.	Paint the inside surface of the pump assembly.
+inside (prep)	IN (prep)	THERE MUST BE LUBRICANT IN THE HOLE.	There must be lubricant inside the hole.
+	INTO (prep)	BEFORE YOU PUT THE TOOLS INTO THE STORAGE BOX, MAKE SURE THAT THEY HAVE THE NECESSARY PROTECTIVE COVERS.	Before you place the tools inside the storage box, make sure they have suitable protective covers.
+inspect (v)	EXAMINE (v)	EXAMINE ALL THE DRAIN HOLES.	Inspect all the drain holes.
+	INSPECTION (n)	DO AN INSPECTION OF THE WORK.	Inspect the work.
+INSPECTION (n)	The procedure which compares an object with its standard or specification	USE A VOLTMETER TO DO THIS INSPECTION.	
+INSTALL (v), INSTALLS, INSTALLED, INSTALLED	To attach an item in or to a second item	INSTALL THE NEW O-RINGS ON THE SPINDLE.	
+INSTALLATION (n)	The procedure which installs an item	REFER TO PARAGRAPH 3 FOR THE INSTALLATION OF THE UNIT.	
+instead (adv)	ALTERNATIVE (n)	USE A SPATULA AS AN ALTERNATIVE.	Use a spatula instead.

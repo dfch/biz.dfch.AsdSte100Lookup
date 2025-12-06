@@ -1,0 +1,11 @@
+﻿POISONOUS (adj)	That contains poison	DO NOT SWALLOW LUBRICATING OIL. IT IS POISONOUS.
+POLISH (v), POLISHES, POLISHED, POLISHED	To make smooth or shiny	POLISH THE WINDOW PANE WITH A SOFT CLOTH.	
+poor (adj)	UNSATISFACTORY (adj)	IF SYSTEM PERFORMANCE IS UNSATISFACTORY, EXAMINE CIRCUIT A.	If system performance is poor, examine circuit A.
+	DEFECTIVE (adj)	DEFECTIVE CONTACTS CAN CAUSE A FAILURE OF THE UNIT.	Poor contacts can cause a failure of the unit.
+	UNSERVICEABLE (adj)	IF THE PART IS UNSERVICEABLE, REPLACE IT.	If the condition of the part is poor, replace it.
+pop (v)	OPEN (v)	IF THE CIRCUIT BREAKER OPENS, DE-ENERGIZE THE CIRCUIT.	If the circuit breaker pops, de-energize the circuit.
+	PROTRUDE (v)	IF THE POP-OUT INDICATOR PROTRUDES, REPLACE THE FILTER ELEMENT.	If the pop-out indicator pops out, replace the filter element.
+	OUT (adv)	IF THE INDICATOR BUTTON CAME OUT, REPLACE THE FILTER.	If the indicator button popped out, replace the filter.
+port (adj)	LEFT (adj)	REMOVE THE WINGTIP BRAKE FROM THE LEFT WING.	Remove the wing tip brake from the port wing.
+portion (n)	PIECE (n)	REMOVE ALL THE PIECES OF THE DAMAGED INSULATION.	Remove all portions of the damaged insulation.
+	PART (n)	ISOLATE THE DEFECTIVE PART OF THE CIRCUIT.	Isolate the defective portion of the circuit.

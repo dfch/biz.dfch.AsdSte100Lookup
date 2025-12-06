@@ -1,0 +1,12 @@
+﻿stationary (adj)	STABLE (adj)	WHEN THE PRESSURE IS STABLE, CLOSE THE VALVE.	When the pressure is stationary, close the valve.
+	STOP (v)	WHEN THE FAN STOPS, MEASURE THE TEMPERATURE.	When the fan is stationary, measure the temperature.
+STAY (v), STAYS, STAYED	To continue to be in a location or condition	MAKE SURE THAT THE ASSEMBLED PARTS STAY ALIGNED.	
+	###No other verb forms.			
+steadily (adv)	CONTINUOUSLY (adv)	IF THE TEMPERATURE INCREASES CONTINUOUSLY, STOP THE ENGINE.	If the temperature increases steadily, stop the engine.
+steady (adj)	STABLE (adj)	MAKE SURE THAT THE SYSTEM PRESSURE IS STABLE.	Make sure that the system pressure is steady.
+STEP (n)	A specified part of a procedure	DO STEPS 13 THRU 16 A MINIMUM OF THREE TIMES.	
+stick (v)	ATTACH (v)	ATTACH THE LABEL TO THE SURFACE.	Stick the label to the surface.
+	FREELY (adv)	MAKE SURE THAT THE FAN BLADES MOVE FREELY.	Check that the fan blades do not stick.
+	CATCH (v)	REMOVE ALL JEWELRY THAT CAN CATCH IN THE MACHINE.	Remove all jewelry that can get stuck in the machine.
+sticky (adj)	TACKY (adj)	WHEN THE CEMENT IS TACKY, PUT THE PATCH ON THE SURFACE.	Put the patch on the surface when the cement is sticky.
+stiff (adj)	MOVE (v)	IF THE PISTON DOES NOT MOVE EASILY IN THE SLEEVE, DO A DIMENSIONAL INSPECTION OF THE PARTS.	If the piston is stiff, check the dimensions of the piston and sleeve.

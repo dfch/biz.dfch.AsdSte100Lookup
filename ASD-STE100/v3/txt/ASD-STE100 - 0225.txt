@@ -1,0 +1,10 @@
+﻿slip (v)	MOVE (v)	MOVE THE CARRIAGE ALONG THE TRACK.	Slip the carriage along the track.
+	REMOVE (v)	REMOVE THE CLAMP FROM THE CABLE.	Slip the clamp from the cable.
+	CAUSE TO FALL (v)	IF OIL SPILLS, CLEAN THE AREA IMMEDIATELY. A WET SURFACE IS DANGEROUS AND CAN CAUSE YOU TO FALL.	If oil spills, clean the area immediately. You can slip and fall.
+	MOVE ACCIDENTALLY (v)	MAKE SURE THAT THE CLUTCH DOES NOT MOVE ACCIDENTALLY.	Make sure that the clutch does not slip.
+SLOPE (n)	A surface that is not level	IF THE VEHICLE IS PARKED ON A SLOPE, MAKE SURE THAT WHEEL CHOCKS ARE IN POSITION.	
+SLOT (n)	A long opening that is not wide	PUSH THE CABLES THROUGH THE SLOT IN FRAME 8 AND ATTACH THEM TO THE CLIPS.	
+SLOW (adj) (SLOWER, SLOWEST)	At low speed	MAKE SURE THAT THE MOVEMENT OF THE ELEVATORS IS SLOW.	
+slow down (v)	DECREASE (v)	DECREASE THE SPEED OF THE SCREWING MACHINE TO PREVENT DAMAGE TO FASTENERS.	Slow down the screwing machine to prevent damage to fasteners.
+SLOWLY (adv)	In a slow manner	TURN THE KNOB SLOWLY.	
+sluggish (adj)	SLOW (adj)	IF THE MOVEMENT OF THE NEEDLE IS TOO SLOW, REPLACE THE SENSOR.	If the movement of the needle is sluggish, replace the sensor.

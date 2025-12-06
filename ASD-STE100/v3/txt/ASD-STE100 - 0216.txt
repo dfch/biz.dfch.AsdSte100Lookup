@@ -1,0 +1,10 @@
+﻿SEE (v), SEES, SAW, SEEN	To know with the eyes	MAKE SURE THAT YOU CAN SEE THE CABLE THROUGH THE INSPECTION HOLE.	
+	###For other meanings, use:
+	REFER (v)	REFER TO TABLE 8001 FOR THE APPLICABLE TORQUE VALUES.	See Table 8001 for the applicable torque values.
+	EXAMINE (v)	EXAMINE THE MEMBRANE FOR HOLES.	Check the membrane to see if there are holes.
+	MAKE SURE (v)	MOVE THE TUBE TO MAKE SURE THAT ITS INNER CONNECTION IS TIGHT.	Move the tube to see if its inner connection is tight.
+seek (v)	GET (v)	GET MEDICAL AID IMMEDIATELY.	Seek medical attention immediately.
+seepage (n)	LEAKAGE (n)	CLEAN THE AREAS WHERE THERE IS HYDRAULIC FLUID LEAKAGE.	Clean the areas where there is hydraulic fluid seepage.
+seized (adj)	CATCH (v)	IF THE CONTROL CABLE IS CAUGHT IN THE PULLEY, RELEASE THE CABLE TENSION.	If the control cable is seized in the pulley, release the cable tension.
+	MOVE (v)	IF YOU CANNOT MOVE THE BOLTS, APPLY SOME PENETRATING OIL.	If the bolts are seized, apply some penetrating oil.
+	TURN (v)	IF THE FLAP CONTROL MOTOR CANNOT TURN, USE THE ALTERNATIVE MODE.	If the flap control motor is seized, use the alternate mode.

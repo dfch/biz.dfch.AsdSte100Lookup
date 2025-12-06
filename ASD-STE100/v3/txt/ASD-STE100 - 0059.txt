@@ -1,0 +1,11 @@
+﻿DAMAGE (n)	The result of an occurrence that causes deterioration of the condition of something	EXAMINE THE SURFACE FOR DAMAGE.
+damage (v)	DAMAGE (n)	DISCONNECT THE SPRING TO PREVENT DAMAGE TO THE ROD.	Disconnect the spring so as not to damage the rod.
+DAMAGED (adj)	That has or can be affected by damage	REPLACE THE DAMAGED PARTS.	
+damp (adj)	MOIST (adj)	REMOVE ALL DIRT FROM THE SEAT WITH A MOIST CLOTH.	Remove all dirt from the seat with a damp cloth.
+dampen (v)	DECREASE (v)	THE MOUNTING PADS DECREASE VIBRATION.	The mounting pads dampen vibration.
+	MAKE MOIST (n)	MAKE THE CLOTH MOIST WITH SOLVENT.	Dampen the cloth with solvent.
+danger (n)	RISK (n)	THERE IS A RISK OF FIRE.	There is a danger of fire.
+	DANGEROUS (adj)	HYDRAULIC FLUID IS DANGEROUS FOR YOUR HEALTH.	Hydraulic fluid is a danger to your health.
+	###“danger” is a technical noun when it identifies a safety instruction. Refer to section 7.
+DANGEROUS (adj)	That can cause injury, damage to health or can kill	IT IS DANGEROUS TO USE AIR IN THIS SYSTEM.	
+dangerously (adv)	DANGEROUS (adj)	DO NOTOPEN THE CARGO DOOR IN STRONG WINDS. STRONG WINDS ARE DANGEROUS.	Do not open the cargo door if the wind-speed is dangerously high.

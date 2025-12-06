@@ -1,0 +1,12 @@
+﻿ACTIVE (adj)	A system, function, or feature in a state of action	DOWNLOAD THE EXPORT FILE FROM THE ACTIVE SERVER UNIT.	
+activity (n)	TASK (n)	A SUBCONTRACTOR CAN DO THESE MAINTENANCE TASKS.	These maintenance activities can be done by a subcontractor.
+	PROCEDURE (n)	DO THIS PROCEDURE AT THE AMBIENT TEMPERATURE.	Do this activity at the ambient temperature.
+	WORK (n)	DO THIS WORK IN A CLEAN AREA.	Do this activity in a clean area.
+actuate (v)	START (v)	START THE MOTOR.	Actuate the motor.
+	OPERATE (v)	OPERATE THE HAND PUMP.	Actuate the hand pump.
+	PUSH (v)	PUSH THE PUSHBUTTON SWITCH.	Actuate the pushbutton switch.
+actuation (n)	OPERATION (n)	MONITOR THE OPERATION OF THE STEERING MOTOR.	Monitor the actuation of the steering motor.
+ADAPT (v), ADAPTS, ADAPTED, ADAPTED	To change or adjust to that which is necessary	ADAPT THE PRESSURE CONNECTION TO THE PITOT HEAD.	
+		THE SYSTEM INTERFACE CIRCUITS ADAPT TO THE PHYSICAL PROPERTIES OF THE CONNECTED SYSTEMS.	
+ADD (v), ADDS, ADDED, ADDED	To increase the number, dimension, or quantity	ADD 5 ml OF HARDENER TO THE COMPOUND.	
+addition (n)	ADD (v)	TO GET THE CORRECT CLEARANCE, ADD SPECIAL SHIMS, AS NECESSARY.	Adjust the clearance by the addition of special shims, as necessary.

@@ -1,0 +1,10 @@
+﻿TOTAL (n)	The full quantity	ADD THE VALUES. THE TOTAL MUST NOT BE MORE THAN 15 mm.	
+TOUCH (v), TOUCHES, TOUCHED, TOUCHED	To be in contact	MAKE SURE THAT THE LOCK NUT TOUCHES THE SPRING.	
+TOW (v), TOWS, TOWED, TOWED	To pull something along	BEFORE YOU TOW THE VEHICLE BACK TO ITS INITIAL POSITION, COMPLETE THE PROCEDURE	
+toward (prep)	TO (prep)	THE ARROW MUST POINT TO THE REAR.	The arrow must point toward the rear.
+	DIRECTION (n)	MANUALLY PUSH THE RAM AIR TURBINE IN THE DIRECTION OF THE RETRACTED POSITION.	Manually push the Ram Air Turbine toward the retracted position.
+toxic (adj)	POISONOUS (adj)	THIS COMPOUND IS POISONOUS.	This compound is toxic.
+trace (n)	SIGN (n)	EXAMINE THE AREA AROUND THE DRAIN HOLES FOR SIGNS OF CORROSION.	Check the area surrounding the drain holes for traces of corrosion.
+trace (v)	FIND (v)	FIND THE BROKEN WIRE.	Trace the broken wire.
+track (v)	MONITOR (v)	MONITOR THE TEMPERATURE.	Track the temperature.
+trained (adj)	APPROVED (adj)	ONLY APPROVED PERSONNEL CAN OPERATE THE BRAKES.	Only trained personnel can operate the brakes.

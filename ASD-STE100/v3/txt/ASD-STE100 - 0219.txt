@@ -1,0 +1,12 @@
+﻿serrated (adj)	SERRATION (n)	USE GLOVES WHEN YOU TOUCH PARTS WITH EDGE SERRATIONS.	Use gloves when handling parts with serrated edges.
+SERRATION (n)	One or more notches or teeth as in a saw	MAKE MARKS THAT SHOW THE LOCATION OF THE SERRATIONS.	
+serve (v)	###Use an accurate verb.	THE RADIO MASTER SWITCH CONTROLS THE BUS BAR.	The radio master switch serves to control the bus bar.
+service (v)	SERVICING (n)	DO THE SERVICING OF THE FIRE EXTINGUISHERS.	Service the fire extinguishers.
+serviceability (n)	SERVICEABLE (adj)	THE TIRE IS SERVICEABLE IF THE CUTS ARE SMALLER THAN 10 mm.	The serviceability of the tire is not affected by any cut smaller than 10 mm.
+SERVICEABLE (adj)	Correct or satisfactory	DO A VISUAL INSPECTION OF THE ADAPTER TO MAKE SURE THAT IT IS SERVICEABLE.	
+SERVICING (n)	The steps necessary to prepare something for operation	BEFORE YOU DO SERVICING OF THE HYDRAULIC SYSTEM, ISOLATE IT.	
+SET (n)	A group of related items that you [can] use for the same purpose	USE THE SET OF TOOLS THAT IS SUPPLIED WITH THE UNIT.	
+SET (v), SETS, SET, SET	To put something into a given adjustment, condition, or mode	SET THE ALTIMETER SCALE TO 1013 mbar.	
+setting (n)	ADJUSTMENT (n)	DO NOT CHANGE THE ADJUSTMENT OF THE SWITCHES.	Do not change the setting of the switches.
+	POSITION (n)	MAKE SURE THAT THE POSITION OF THE FLAPS IS EIGHT DEG.	Check flaps for eight deg. setting.
+	SET (v)	THE MANUFACTURER SETS THE LENGTH OF THE ROD IN THE FACTORY.	Setting of the rod length is achieved in the factory.

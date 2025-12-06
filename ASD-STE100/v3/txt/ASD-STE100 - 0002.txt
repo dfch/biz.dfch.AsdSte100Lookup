@@ -1,0 +1,10 @@
+﻿ABOUT (prep)	Concerned with	FOR DATA ABOUT THE LOCATION OF CIRCUIT BREAKERS, REFER TO THE WIRING LIST.	
+	###For other meanings, use:
+	APPROXIMATELY (adv)	DRAIN APPROXIMATELY 2 LITERS OF FUEL FROM THE TANK.	Drain about 2 liters of fuel from the tank.
+	AROUND (prep)	TURN THE SHAFT AROUND ITS AXIS.	Rotate the shaft about its axis.
+ABOVE (prep)	In (or to) a position farther up than something	LIFT THE CYLINDER ABOVE ITS INSTALLED POSITION.	
+	###For other meanings, use:		
+	MORE THAN (adj)	THE PRESSURE VALUE MUST BE MORE THAN 800 kPa.	The pressure value must be above 800 kPa.
+ABRASIVE (adj)	That can remove material by friction	POLISH THE SURFACE WITH AN ABRASIVE PAPER.	
+abrupt (adj)	SUDDEN (adj)	THE DAMPER PREVENTS SUDDEN MOVEMENT OF THE CONTROL.	The damper prevents abrupt movement of the control.
+	SUDDENLY (adv)	IF THE ROTORS STOP SUDDENLY, EXAMINE THE INTAKE FOR UNWANTED MATERIAL.	If the rotors come to an abrupt stop, examine the intake for unwanted material.

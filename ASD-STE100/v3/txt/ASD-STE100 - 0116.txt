@@ -1,0 +1,13 @@
+﻿gradient (n)	SLOPE (n)	WHEN YOU PARK THE VEHICLE ON ASLOPE, PUT CHOCKS ON THE WHEELS.	When you park the vehicle on a gradient, put chocks on the wheels.
+gradual (adj)	GRADUALLY (adv)	GRADUALLY ADJUST THE TEMPERATURE.	Make a gradual adjustment to the temperature.
+GRADUALLY (adv)	Slowly and continuously	GRADUALLY OPEN THE COCKS ON THE RECHARGING UNIT.	
+graph (v)	GRAPH (TN)	MAKE A GRAPH OF THE TEST RESULTS.	Graph the test results.
+grasp (v)	HOLD (v)	HOLD THE HANDLE.	Grasp the handle.
+grave (adj)	DANGEROUS (adj)	HYDRAULIC FLUID IS DANGEROUS FOR YOUR SKIN.	Hydraulic fluid can cause grave skin problems.
+grease (v)	LUBRICATE (v)	BEFORE YOU INSTALL THE O-RING, LUBRICATE IT WITH GREASE.	Grease the O-ring before installation.
+	GREASE (TN)	APPLY GREASE TO THE FASTENERS.	Grease the fasteners.
+great (adj)	LARGE (adj)	AN INDICATION OF A LARGE QUANTITY OF FUEL SHOWS AN INCORRECT ADJUSTMENT OF THE FLOAT SWITCH.	A great amount of fuel indicates incorrect setting of the float switch.
+	MORE THAN (adj)	IF THE PRESSURE IS MORE THAN 200 psi, CLOSE THE VALVE.	If the pressure is greater than 200 psi, close the valve.
+	VERY (adv)	BE VERY CAREFUL WHEN YOU RELEASE THE PRESSURE.	Take the greatest care when you release the pressure.
+greatly (adv)	VERY MUCH	THIS METHOD CAN INCREASE THE RISK OF INJURY VERY MUCH.	This method can greatly increase the risk of injury.
+grip (n)	HOLD (v)	HOLD THE JACK BODY TIGHTLY WHILE YOU TURN IT.	Make sure you have a tight grip of the jack body while turning it.

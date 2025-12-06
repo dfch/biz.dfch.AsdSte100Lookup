@@ -1,0 +1,10 @@
+﻿UNFOLD (v), UNFOLDS, UNFOLDED, UNFOLDED	To open or to straighten or to cause to open or to straighten from a folded position or condition	UNFOLD THE SHEETING CAREFULLY.	
+		MAKE SURE THAT THE INDICATOR LIGHT COMES ON WHEN THE BLADES UNFOLD.	
+uniform (adj)	CONSTANT (adj)	CURE THE SEALANT AT A CONSTANT TEMPERATURE.	Cure the sealant at a uniform temperature.
+	EQUAL (adj)	THE FUEL LOAD MUST BE EQUAL ON EACH SIDE OF THE AIRCRAFT CENTERLINE.	The fuel load must be uniform on each side of the aircraft centerline.
+uniformly (adv)	EQUALLY (adv)	MAKE SURE THAT THE TWO PISTONS EXTEND EQUALLY.	Make sure that the two pistons extend uniformly.
+unintentional (adj)	ACCIDENTAL (adj)	A GUARD ON THE CONTROL SWITCH OF THE PUMP PREVENTS ACCIDENTAL OPERATION.	A guard on the control switch of the pump prevents unintentional operation.
+unintentionally (adv)	ACCIDENTALLY (adv)	IF YOU ACCIDENTALLY SPRAY RAIN REPELLENT FLUID ONTO A DRY WINDSHIELD, REMOVE THE FLUID WITH SOLVENT.	If rain repellent fluid is unintentionally sprayed onto a dry windshield, remove the fluid with solvent.
+UNIT (n)	1. Equipment that does a function	YOU CAN REPLACE A LARGE NUMBER OF UNITS DURING THIS REPAIR PROCEDURE.	
+	2. A quantity that is a standard of measurement	THIS MANUAL USES SI UNITS.	
+UNKNOWN (adj)	Not known	DO NOT USE FUEL WITH UNKNOWN PROPERTIES.	

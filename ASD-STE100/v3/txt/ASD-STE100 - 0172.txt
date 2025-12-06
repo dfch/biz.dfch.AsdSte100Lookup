@@ -1,0 +1,12 @@
+﻿orient (v)	POINT (v)	MAKE SURE THAT THE BOLT HEADS POINT TO THE REAR.	The bolt heads must be oriented toward the rear.
+origin (n)	SOURCE (n)	THE SOURCE OF THE PROBLEM IS IN THE FUEL SYSTEM.	The origin of the problem is in the fuel system.
+original (adj)	INITIAL (adj)	THE SLIDE GOES BACK TO ITS INITIAL POSITION.	The slide returns to the original position.
+originate (v)	SOURCE (n)	IF THE VALVE IS THE SOURCE OF THE FUEL LEAK, REPLACE THE VALVE SEALS.	If the fuel leak originates at the valve, replace the valve seals.
+OTHER (adj)	Not the same as that given before	CONNECT ONE OF THE STUDS TO THE GROUND AND THE OTHER STUDS TO THE PINS.	
+OTHER (pron)	That which is not the same as that given before	CONNECT ONE PLUG, THEN CONNECT THE OTHER.	
+otherwise (adv)	IF ...NOT (conj)	MAKE SURE THAT THE RODS ARE ADJUSTED CORRECTLY. IF THE ADJUSTMENT IS NOT CORRECT, ADJUST THEM AS FOLLOWS:	Check that the rods are adjusted correctly, otherwise adjust them as follows:
+	DIFFERENTLY (adv)	UNLESS THE INSTRUCTIONS TELL YOU DIFFERENTLY, DO REPAIR SCHEME No. 4.	Unless the instructions tell you otherwise, do repair scheme No. 4.
+OUT (adj)	Away from, or not in, a location or position	IF THE INDICATOR BUTTON IS OUT, REPLACE THE FILTER.	
+OUT (adv)	To a position away from the inside	WHEN THE INDICATOR BUTTON COMES OUT, REPLACE THE FILTER.	
+OUT OF (prep)	1. Through or from the inside to the outside	TILT THE FITTING TO MAKE THE BARREL NUT FALL OUT OF IT.	
+	2. Not in	KEEP THE COMPOUND OUT OF THE SUNLIGHT.	

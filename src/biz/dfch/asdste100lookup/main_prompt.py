@@ -1,0 +1,332 @@
+# Copyright (c) 2025 Ronald Rink, http://d-fens.ch
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+"""MainPrompt class."""
+
+from __future__ import annotations
+import argparse
+from datetime import datetime
+from pathlib import Path
+import shlex
+import tempfile
+
+from .commands.command_base import CommandBase
+from .commands.command_query_type import CommandQueryType
+from .commands.empty_command import EmptyCommand
+from .commands.exit_command import ExitCommand
+from .commands.filter_command import FilterCommand
+from .commands.help_command import HelpCommand
+from .commands.rule_command import RuleCommand
+from .commands.save_command import SaveCommand
+from .commands.unknown_command import UnknownCommand
+from .commands.word_category_command import WordCategoryCommand
+from .commands.word_filter_type import WordFilterType
+
+from .word_category import WordCategory
+from .word_type import WordType
+from .word_status import WordStatus
+
+
+class MainPrompt:  # pylint: disable=R0903
+    """Represents the main prompt processing."""
+
+    _start_of_command: str = "!"
+    _category_command_names = ["category", "c"]
+    _rule_command_names = ["rule", "r"]
+    _save_command_names = ["save", "s"]
+    _exit_command_names = ["exit", "x"]
+    _filter_command_names = ["filter", "f"]
+
+    _parser: argparse.ArgumentParser
+
+    def __init__(self):
+        self._parser = self._build_parser()
+
+    class SuppressErrorMessageArgumentParser(argparse.ArgumentParser):
+        """Suppress error messages while parsing."""
+
+        def error(self, _: str) -> None:  # type: ignore[override]
+            # We raise SystemExit and catch that inside `parse_command()`.
+            raise SystemExit
+
+    def _build_parser(self) -> argparse.ArgumentParser:
+        """Builds the argument parser for the main prompt."""
+
+        result = MainPrompt.SuppressErrorMessageArgumentParser(
+            prog="Main-prompt",
+            description="Enter a search term (regular expression) "
+            "or press <ENTER> to exit. "
+            f"Or start a command with '{self._start_of_command}' "
+            "(eg. '! exit').",
+            add_help=True,
+        )
+
+        subparsers_action = result.add_subparsers(
+            dest="command", required=True, help="Available commands."
+        )
+        category_parser = subparsers_action.add_parser(
+            self._category_command_names[0],
+            aliases=self._category_command_names[1:],
+            help="This command shows all words from the specified category.",
+        )
+
+        category_parser_args = category_parser.add_mutually_exclusive_group(
+            required=True
+        )
+        category_parser_args.add_argument(
+            "-i",
+            "--id",
+            help="Id (short name) of the word category to query.",
+        )
+
+        category_parser_args.add_argument(
+            "-n",
+            "--name",
+            help="Name of the word category to query.",
+        )
+
+        rule_parser = subparsers_action.add_parser(
+            self._rule_command_names[0],
+            aliases=self._rule_command_names[1:],
+            help="This command shows the specified rule.",
+        )
+
+        rule_parser_args = rule_parser.add_mutually_exclusive_group(
+            required=True
+        )
+        rule_parser_args.add_argument(
+            "-i",
+            "--id",
+            help="Id of the rule to query.",
+        )
+
+        rule_parser_args.add_argument(
+            "-n",
+            "--name",
+            help="Name of the rule to query.",
+        )
+
+        rule_parser_args.add_argument(
+            "-s",
+            "--section",
+            help="Section of the rule to query.",
+        )
+
+        rule_parser_args.add_argument(
+            "-c",
+            "--category",
+            help="Category of the rule to query.",
+        )
+
+        rule_parser_args.add_argument(
+            "--summary",
+            help="Summary of the rule to query.",
+        )
+
+        rule_parser.add_argument(
+            "-b",
+            "--brief",
+            action="store_true",
+            help="Display only a brief overview of matching rules.",
+        )
+
+        save_parser = subparsers_action.add_parser(
+            self._save_command_names[0],
+            aliases=self._save_command_names[1:],
+            help="This command writes the last console output to a file.",
+        )
+
+        save_parser_args = save_parser.add_mutually_exclusive_group(
+            required=True
+        )
+
+        save_parser_args.add_argument(
+            "-n",
+            "--name",
+            help="Give the name of the file.",
+        )
+
+        save_parser_args.add_argument(
+            "-a",
+            "--auto",
+            action="store_true",
+            help="Automatically select a unique name for the file.",
+        )
+
+        _ = subparsers_action.add_parser(
+            self._exit_command_names[0],
+            aliases=self._exit_command_names[1:],
+            help="This command stops the programme.",
+        )
+
+        filter_parser = subparsers_action.add_parser(
+            self._filter_command_names[0],
+            aliases=self._filter_command_names[1:],
+            help="Modifies the filter for dictionary queries.",
+        )
+
+        filter_parser_args = filter_parser.add_mutually_exclusive_group(
+            required=True
+        )
+
+        filter_parser_args.add_argument(
+            "-l",
+            "--list",
+            action="store_true",
+            help="Show all filters.",
+        )
+
+        filter_parser_args.add_argument(
+            "-r",
+            "--reset",
+            action="store_true",
+            help="Resets all filters.",
+        )
+
+        filter_parser_args.add_argument(
+            "-t",
+            "--type",
+            "--word_type",
+            metavar="TYPE",
+            type=lambda s: s.lower(),
+            choices=[item.value.lower() for item in WordType],
+            help="Sets the filter for word type. "
+            f"{[item.value.lower() for item in WordType]}.",
+        )
+
+        filter_parser_args.add_argument(
+            "-s",
+            "--status",
+            metavar="STATUS",
+            type=lambda s: s.lower(),
+            choices=[item.value.lower() for item in WordStatus],
+            help="Sets the filter for word status: "
+            f"{[item.value.lower() for item in WordStatus]}.",
+        )
+
+        filter_parser_args.add_argument(
+            "-src",
+            "--source",
+            type=str,
+            help="Sets the filter for word source.",
+        )
+
+        filter_parser_args.add_argument(
+            "-c",
+            "--category",
+            metavar="CAT",
+            type=lambda s: s.lower(),
+            choices=[item.value.lower() for item in WordCategory],
+            help="Sets the filter for word category: "
+            f"{[item.value.lower() for item in WordCategory]}.",
+        )
+
+        filter_parser_args.add_argument(
+            "-n",
+            "--note",
+            type=str,
+            help="Sets the filter for words with a note.",
+        )
+
+        return result
+
+    def parse(self, text: str) -> CommandBase:
+        """Parses a line of text into a command."""
+
+        if not isinstance(text, str) or "" == text.strip():
+            return EmptyCommand("")
+
+        text = text.strip()
+
+        if text in ["?", "-h", "--help"]:
+            return HelpCommand(self._parser.format_help())
+
+        # If the line does not starts with '!', we expect a dictionary lookup.
+        if not text.startswith(self._start_of_command):
+            return UnknownCommand(text)
+
+        # First, split the input line into args.
+        text = text.strip(self._start_of_command)
+        try:
+            args = shlex.split(text)
+        except ValueError:
+            return UnknownCommand(text)
+
+        # Second, try to parse it into the defined arguments.
+        try:
+            ns = self._parser.parse_args(args)
+        # Suppress SONAR warning, as we expect this exception from ArgParse, if
+        # the user types in something else than a defined command or argument.
+        # In that case, we want to parse the contents and display a word from
+        # the dicionary. This is intended.
+        except SystemExit as ex:  # NOSONAR
+            if "0" == str(ex):
+                return HelpCommand("")
+
+            return HelpCommand(self._parser.format_help())
+
+        if ns.command is not None:
+            if ns.command in self._category_command_names:
+                if ns.id is not None:
+                    return WordCategoryCommand(CommandQueryType.ID, ns.id)
+                if ns.name is not None:
+                    return WordCategoryCommand(CommandQueryType.NAME, ns.name)
+
+            if ns.command in self._rule_command_names:
+                if ns.id is not None:
+                    return RuleCommand(CommandQueryType.ID, ns.id)
+                if ns.name is not None:
+                    return RuleCommand(CommandQueryType.NAME, ns.name)
+                if ns.section is not None:
+                    return RuleCommand(CommandQueryType.SECTION, ns.section)
+                if ns.category is not None:
+                    return RuleCommand(CommandQueryType.CATEGORY, ns.category)
+                if ns.summary is not None:
+                    return RuleCommand(CommandQueryType.SUMMARY, ns.summary)
+
+            if ns.command in self._save_command_names:
+                if ns.name is not None:
+                    return SaveCommand(ns.name)
+                if ns.auto is not None and ns.auto:
+                    prefix = "asdste100"
+                    extension = ".svg"
+                    now = datetime.now()
+                    iso8601 = now.strftime("%Y-%m-%d-%H-%M-%S")
+                    file_name = f"{prefix}-{iso8601}{extension}"
+                    file_fullname = Path(tempfile.gettempdir()) / file_name
+                    return SaveCommand(str(file_fullname))
+
+            if ns.command in self._exit_command_names:
+                return ExitCommand(ns.command)
+
+            if ns.command in self._filter_command_names:
+                if ns.reset is not None and ns.reset:
+                    return FilterCommand(WordFilterType.RESET, "")
+                if ns.list is not None and ns.list:
+                    return FilterCommand(WordFilterType.LIST, "")
+                if ns.type is not None:
+                    return FilterCommand(WordFilterType.TYPE, ns.type)
+                if ns.status is not None:
+                    return FilterCommand(WordFilterType.STATUS, ns.status)
+                if ns.category is not None:
+                    return FilterCommand(WordFilterType.CATEGORY, ns.category)
+                if ns.source is not None:
+                    return FilterCommand(WordFilterType.SOURCE, ns.source)
+                if ns.note is not None:
+                    return FilterCommand(WordFilterType.NOTE, ns.note)
+
+                raise ValueError("Invalid command option.")
+
+        return UnknownCommand(text)

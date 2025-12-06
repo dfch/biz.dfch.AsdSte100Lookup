@@ -1,0 +1,11 @@
+﻿hold back (v)	PREVENT (v)	AT FULL THRUST, THE BRAKES MUST PREVENT MOVEMENT OF THE AIRCRAFT.	At full thrust, the brakes must hold the aircraft back.
+hold off (v)	PREVENT (v)	THE PROTECTIVE PAINT WILL PREVENT CORROSION FOR SIX MONTHS.	The protective paint will hold off corrosion for six months.
+HOLE (n)	An empty space in a solid object	MAKE SURE THAT THE HOLES IN THE BUSHING ALIGN WITH THOSE IN THE HOUSING.	
+hook (v)	PUT (v)	PUT THE SLING ON THE SHACKLE.	Hook the sling on the shackle.
+hook up (v)	CONNECT (v)	CONNECT THE TOWING ARM TO THE NOSE GEAR.	Hook the towing arm up to the nose gear.
+HORIZONTAL (adj)	Parallel to the horizon or a baseline	ADJUST THE SLING UNTIL THE FLAP IS HORIZONTAL.	
+HORIZONTALLY (adv)	In a horizontal position	THE VALVE IS INSTALLED HORIZONTALLY.	
+HOT (adj) (HOTTER, HOTTEST)	At a high temperature	DRY THE SURFACE WITH HOT AIR.	
+house (v)	CONTAIN (v)	THE MODULE CONTAINS FIVE COMPONENTS.	The module houses five components.
+HOW (adv)	By which manner	PARAGRAPH 7.0 TELLS YOU HOW TO INSTALL THE UNIT.	
+however (adv)	BUT (conj)	THE DRYING TIME IS USUALLY 24 HOURS. BUT THE PROCEDURE IN THIS STEP WILL DECREASE THE DRYING TIME TO 12 HOURS.	The drying time is usually 24 hours. However, the procedure in this step will decrease the drying time to 12 hours.

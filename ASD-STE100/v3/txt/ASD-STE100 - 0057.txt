@@ -1,0 +1,11 @@
+﻿COUNT (v), COUNTS, COUNTED, COUNTED	To add the number of objects or occurrences to get a total	COUNT THE NUMBER OF TREADS ON THE TIRE.	
+COUNTERCLOCKWISE (adv)	In the opposite direction to clockwise	MAKE SURE THAT YOU TURN THE CONTROL KNOB COUNTERCLOCKWISE	
+couple (v)	CONNECT (v)	CONNECT THE FUELING NOZZLE TO THE AIRCRAFT.	Couple the fueling nozzle to the aircraft.
+	ATTACH (v)	ATTACH THE FUELING NOZZLE TO THE AIRCRAFT.	Couple the fueling nozzle to the aircraft.
+cover (v)	INCLUDE (v)	THIS PROCEDURE INCLUDES THE INSTRUCTIONS TO REMOVE THE CONSTANT SPEED DRIVE (CSD).	This procedure covers the removal of the Constant Speed Drive (CSD).
+	HAVE (v)	THE BOTTOM EDGE OF THE PANEL HAS CARPET ON IT.	The bottom edge of the panel is covered with carpet.
+	COVER (TN)	PUT THE COVER ON THE CONTAINER.	Cover the container.
+crack (v)	OPEN (v)	WHEN THE RELIEF VALVE OPENS, THE PRESSURE DECREASES.	When the relief valve cracks open, the pressure decreases.
+	CRACK (TN)	IF THERE ARE CRACKS IN THE CENTER PLY, REPLACE THE WINDSHIELD PANEL.	If a center ply is cracked, replace the windshield panel.
+create (v)	MAKE (v)	CUT THE BRACKET TO MAKE A CLEARANCE.	Cut the bracket to create a clearance.
+	CAUSE (v)	VIBRATION CAN CAUSE CRACKS.	Vibration can create cracks.

@@ -1,0 +1,14 @@
+﻿beside (prep)	ADJACENT TO (prep)	THE FUEL PUMP IS ADJACENT TO THE STRUCTURAL SUPPORT.	The fuel pump is beside the structural support.
+BETWEEN (prep)	Related to something before and after in time or position	MAKE SURE THAT THE STOPWATCH INDICATION IS BETWEEN 2 AND 4 MINUTES.	
+beware (v)	CAREFUL (adj)	BE CAREFUL OF DANGEROUS VOLTAGES.	Beware of dangerous voltages.
+beyond (prep)	MORE THAN (prep)	REPLACE ALL COMPONENTS THAT ARE WORN MORE THAN THE MAXIMUM LIMITS.	Replace all components that are worn beyond their maximum limits.
+big (adj)	LARGE (adj)	INSTALL THE LARGER BOLTS.	Install the bigger bolts.
+	###If it is possible, give an accurate value.
+bind (v)	FREELY (adv)	MAKE SURE THAT THE VALVES MOVE FREELY.	Check that valves do not bind.
+	WIND AROUND (v)	WIND TWO LAYERS OF TAPE AROUND THE PIPE JOINTS.	Bind the pipe joints with two layers of tape.
+blank (v)	SEAL (v)	SEAL THE HOSE.	Blank the hose.
+	CAP (TN)	PUT A CAP ON THE CONNECTOR.	Blank the connector.
+	COVER (TN)	PUT A COVER ON THE OUTLET PORT.	Blank the outlet port.
+BLEED (v), BLEEDS, BLED, BLED	To let a gas out of	BLEED THE SPEEDBRAKE HYDRAULIC SYSTEM.	
+	###Use DRAIN (v) for liquids. (dfch)
+blend (v)	MIX (v)	MIX THE ADHESIVE WITH THE HARDENER.	Blend the adhesive with the hardener.

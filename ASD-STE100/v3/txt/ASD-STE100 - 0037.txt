@@ -1,0 +1,12 @@
+﻿care (n)	PRECAUTION (n)	WHEN YOU DO WORK WITH HIGH VOLTAGES, OBEY THE SAFETY PRECAUTIONS.	You must take care when you work with high voltages.
+	CAREFUL (adj)	BE CAREFUL WHEN YOU INSTALL THE NUTS.	Take care when installing the nuts.
+	CAREFULLY (adv)	REMOVE THE GEARBOX CAREFULLY.	Remove the gearbox with great care.
+CAREFUL (adj)	With precaution	BE CAREFUL WHEN YOU REMOVE THE COVER.	
+CAREFULLY (adv)	In a careful manner	CAREFULLY APPLY A BEAD OF SEALING COMPOUND.	
+carry (v)	TRANSMIT (v)	THE CABLE TRANSMITS THE ELECTRICAL ENERGY FROM THE IGNITION EXCITER TO THE IGNITER.	The cable carries the electrical energy from the ignition exciter to the igniter.
+	TRANSPORT (TN)	THIS VEHICLE IS FOR THE TRANSPORT OF FIVE PASSENGERS.	This vehicle is meant to carry five passengers.
+carry out (v)	DO (v)	DO THE LEAK TEST.	Carry out the leak test.
+	###You can use a more accurate command verb.		
+	MEASURE (v)	MEASURE THE CLEARANCE OF THE IMPELLER.	Carry out the clearance measurement of the impeller.
+case (n)	CONDITION (n)	FIGURE 1 SHOWS THE DATA FOR ALL OPERATIONAL CONDITIONS.	The data for all operational cases are shown in Figure 1.
+case (conj), in case of	IF (conj)	IF THERE IS A FIRE, OPERATE THE CRASH SWITCHES.	In case of a fire, operate the crash switches.

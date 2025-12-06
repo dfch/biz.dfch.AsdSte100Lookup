@@ -1,0 +1,19 @@
+
+==========
+
+# CAN
+* missing: note
+    "No other verb form."
+
+TRUE    [ASD-STE100 - 0033.txt] ALTERNATIVE_EXAMPLE 'brush (v)': alternative 'BRUSH' has multiple examples.
+TRUE    [ASD-STE100 - 0083.txt] ALTERNATIVE_EXAMPLE 'end (v)': alternative 'COMPLETE' has multiple examples.
+TRUE    [ASD-STE100 - 0109.txt] ALTERNATIVE_EXAMPLE 'fulfill (v)': alternative 'OBEY' has multiple examples.
+TRUE    [ASD-STE100 - 0111.txt] ALTERNATIVE_EXAMPLE 'garner (v)': alternative 'COLLECT' has multiple examples.
+TRUE    [ASD-STE100 - 0111.txt] ALTERNATIVE_EXAMPLE 'gather (v)': alternative 'COLLECT' has multiple examples.
+TRUE    [ASD-STE100 - 0115.txt] ALTERNATIVE_EXAMPLE 'glow (v)': alternative 'BE' has multiple examples.
+TRUE    [ASD-STE100 - 0126.txt] NOTE_ALTERNATIVE_EXAMPLE 'ILLUMINATE (v)': alternative 'COME ON' has multiple examples.
+TRUE    [ASD-STE100 - 0138.txt] NOTE_EXAMPLE 'interference (n)': alternative 'TOUCH' has multiple examples.
+TRUE    [ASD-STE100 - 0170.txt] ALTERNATIVE_EXAMPLE 'operable (adj)': alternative 'OPERATE' has multiple examples.
+TRUE    [ASD-STE100 - 0190.txt] NOTE_ALTERNATIVE_EXAMPLE 'propagation (n)': alternative 'INCREASE' has multiple examples.
+    Fixed by repeating word.
+TRUE    [ASD-STE100 - 0198.txt] ALTERNATIVE_EXAMPLE 'recess (v)': alternative 'RECESS' has multiple examples.

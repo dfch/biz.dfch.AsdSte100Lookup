@@ -1,0 +1,13 @@
+﻿WITH (prep)	Function word that shows association or relationship, help or sharing, a means or instrument	ALIGN THE MARK WITH THE LONGITUDINAL AXIS.	
+		ATTACH THE FLANGE (10) WITH THE FOUR BOLTS (15).	
+		REMOVE THE VALVE (2) WITH THE EXTRACTOR.	
+	###Refer to section 9, GR-2.
+withdraw (v)	REMOVE (v)	REMOVE THE INDICATOR FROM THE INSTRUMENT PANEL.	Withdraw the indicator from the instrument panel.
+within (prep)	IN (prep)	A FILTER PREVENTS CONTAMINATION OF THE COMPONENTS IN THE SYSTEM.	A filter prevents contamination of the components within the system.
+	IN ... OR LESS (prep)	LIGHT L4 COMES ON IN 5 SECONDS OR LESS.	Light L4 illuminates within 5 seconds.
+	IN LESS THAN (prep)	MAKE SURE THAT THE WARNING LIGHT COMES ON IN LESS THAN 3 SECONDS.	Make sure that the warning light illuminates within 3 seconds.
+WITHOUT (prep)	Not with	SMALL DAMAGE IS PERMITTED WITHOUT REPAIR. REFER TO TABLE 1 FOR THE APPLICABLE LIMITS.	
+withstand (v)	RESISTANT (adj)	THIS MATERIAL IS RESISTANT TO FIRE.	This material can withstand fire.
+WORK (n)	That which you do when you use physical strength, or mental power	DO THE WORK IN A CLEAN AREA.	
+work (v)	WORK (n)	BE CAREFUL WHEN YOU DO WORK NEAR FUEL TANKS.	Be careful when you work near fuel tanks.
+would (v)	CAN (v)	SOLVENTS THAT STAY ON THE PART CAN CAUSE CORROSION.	Solvents left on the part would corrode the part.

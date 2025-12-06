@@ -1,0 +1,12 @@
+﻿alignment (n)	ALIGN (v)	MAKE SURE THAT THE KEYWAY IS AT THE TOP AND ALIGNS WITH THE PEG.	Ensure that the keyway is at the top and in alignment with the peg.
+ALL (adj)	Full quantity	DRAIN ALL THE FLUIDS.	
+allocate (v)	GIVE (v)	GIVE THE DIFFERENT MAINTENANCE TASKS TO THE APPROVED TECHNICIANS.	Allocate the different maintenance tasks to the approved technicians.
+allow (v)	LET (v)	DO NOT LET THE CABLE TOUCH THE FLOOR.	Do not allow the cable to touch the floor.
+allowable (adj)	PERMITTED (adj)	THE MAXIMUM PERMITTED DIFFERENCE IS 5 mm.	The maximum allowable difference is 5 mm.
+	APPROVED (adj)	THE VALUES MUST NOT BE MORE THAN THE APPROVED DIFFERENCES GIVEN IN TABLE 1.	The values must not be more than the allowable differences given in table 1.
+ALMOST (adv)	Near the limit or the value	MAKE SURE THAT THE PRESSURE IN THE CABIN IS ALMOST ZERO.	
+ALONG (prep)	In a line parallel with the length or direction of	MOVE THE TENSIOMETER ALONG THE CABLE.	
+already (adv)	IN PROGRESS (adv)	THE DATABASE SYNCHRONIZATION IS IN PROGRESS.	The database is already synchronizing.
+	NO OTHER (adj)	YOU CAN DO THIS REPAIR PROCEDURE ONLY IF THERE IS NO OTHER DAMAGE.	Only do this repair procedure if there is not already damage.
+	###Frequently, an alternative for this word is not necessary.	MAKE SURE THAT THE SOFTWARE IS INSTALLED IN THE REPOSITORY.	Make sure that the software is already installed in the repository.
+ALSO (adv)	In addition	ALSO DO THE APPLICABLE STEPS OF THIS PROCEDURE.	

@@ -1,0 +1,13 @@
+﻿REPLACE (v), REPLACES, REPLACED, REPLACED	To remove an item and to install a new or serviceable item of the same type	REPLACE THE RELAY.	
+REPLACEMENT (n)	The item you install when you replace an item	MAKE SURE THAT THE REPLACEMENT HAS THE CORRECT DIMENSIONS.	
+replenish (v)	FILL (v)	FILL THE ACCUMULATOR WITH OIL.	Replenish the accumulator with oil.
+	ADD (v)	ADD OIL TO THE ACCUMULATOR.	Replenish the oil in the accumulator.
+	REFUEL (v)	REFUEL THE VEHICLE.	Replenish the vehicle with fuel.
+REPORT (n)	The information that is recorded about a subject or occurrence	IF THERE ISA REPORT OF DAMAGE, DO AN ACCURATE INSPECTION.	
+reposition (v)	MOVE (v)	MOVE THE LEVER BACK TO ITS INITIAL POSITION.	Reposition the lever.
+	PUT (v)	PUT THE LEVER BACK TO ITS INITIAL POSITION.	Reposition the lever.
+	SET (v)	SET THE SWITCH BACK TO THE OFF POSITION.	Reposition the switch to OFF.
+represent (v)	SHOW (v)	THE SUCTION SHOWS AS AN ALTIMETER INDICATION.	The suction is represented by an altimeter reading.
+repressurize (v)	PRESSURIZE (v)	PRESSURIZE THE TANK AGAIN.	Repressurize the tank.
+request (n)	TELL (v)	TELL THE FIRE SERVICE TO HELP YOU.	Make a request for external fire support.
+	WRITE (v)	IF AID IS NECESSARY, WRITE TO THE MANUFACTURER.	Any request for assistance should be addressed to the manufacturer.

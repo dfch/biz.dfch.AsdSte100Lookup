@@ -1,0 +1,12 @@
+﻿limitation (n)	LIMIT (n)	WHEN YOU LIFT THE AIRCRAFT ON JACKS, KEEP THE CENTER OF GRAVITY BETWEEN THESE LIMITS:	When you lift the aircraft on jacks, observe these center of gravity limitations:
+limited (adj)	SMALL (adj)	THERE IS ONLY A SMALL NUMBER OF REPAIRS THAT YOU CAN DO.	There is only a limited number of repairs that you can do.
+LINEAR (adj)	In a straight line	MAKE SURE THAT THE RESULTS ARE LINEAR.	
+LINEARLY (adv)	In a straight line	INCREASE THE PRESSURE LINEARLY.	
+link (v)	CONNECT (v)	CONNECT THE CABLES.	Link the cables.
+	ATTACH (v)	ATTACH THE HOIST TO THE POWER UNIT.	Link the hoist to the power unit.
+LIQUID (adj)	That has the properties of a liquid	DURING SERVICING, LIQUID OXYGEN FLOWS THROUGH THE STABILIZING CONTAINER.	
+LIQUID (n)	A material that is not a gas or a solid	THE CONVERTER CHANGES THE LIQUID INTO A GAS.	
+list (v)	RECORD (v)	RECORD THE TEST RESULTS.	List the test results.
+	SHOW (v)	TABLE 1 SHOWS ALTERNATIVE ADHESIVES THAT YOU CAN USE.	Table 1 lists alternative adhesives that you can use.
+	LIST (TN)	MAKE A LIST OF THE PART NUMBERS IN NUMERICAL SEQUENCE.	List the part numbers in numerical sequence.
+LISTEN (v), LISTENS, LISTENED, LISTENED	To use your ears to hear or find	LISTEN FOR THE SIGNAL.	

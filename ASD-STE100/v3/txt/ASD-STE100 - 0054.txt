@@ -1,0 +1,11 @@
+﻿CONTINUOUS (adj)	That continues	MAKE SURE THAT THERE IS CONTINUOUS MOVEMENT OF THE PROBE.
+CONTINUOUSLY (adv)	In a continuous manner	APPLY PRESSURE CONTINUOUSLY.	
+CONTOUR (n)	The outer line of something	CUT ALONG THE CONTOUR TO REMOVE THE DAMAGED SKIN.	
+CONTROL (n)	Something that controls	IN AN EMERGENCY, USE THE MANUAL CONTROL.	
+CONTROL (v), CONTROLS, CONTROLLED, CONTROLLED	To give or send signals that adjust, operate, or keep something to a limit, or that cause something to operate	RADIO MASTER SWITCH 1 CONTROLS THE BUS BAR.	
+conventional (adj)	STANDARD (adj)	PULL THE VEHICLE TO A SAFE AREA WHERE YOU CAN USE THE STANDARD PROCEDURES.	Pull the vehicle to a safe location where more conventional procedures can be applied.
+converse (adj)	OPPOSITE (adj)	THE RESET DEVICE OPERATES IN THE OPPOSITE DIRECTION.	The reset device operates in the converse direction.
+convert (v)	CHANGE (v)	CHANGE THE UNITS FOR THE FUEL LOAD TO U.S. GALLONS.	Convert the fuel load to U.S. gallons.
+convey (v)	MOVE (v)	MOVE THE EQUIPMENT TO A SAFE AREA.	Convey the equipment to a safe area.
+	TELL (v)	TELL THE INFORMATION TO YOUR MANAGER.	Convey the information to your manager.
+COOL (adj)	Moderately cold	WHEN THE AREA IS SUFFICIENTLY COOL, POLISH THE SURFACE.	

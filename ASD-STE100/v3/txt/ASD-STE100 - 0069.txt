@@ -1,0 +1,11 @@
+﻿DIFFERENT (adj)	Not the same	IF THE INDICATIONS ARE DIFFERENT, DO THESE STEPS.	
+DIFFERENTLY (adv)	In a different manner	THE TWO EXTRACTORS OPERATE DIFFERENTLY.	
+differentiate (v)	IDENTIFY (v)	LETTERS IDENTIFY THE WIRE SEGMENTS.	Letters are used to differentiate between the wire segments.
+difficult (adj)	NOT EASY (adj)	IF IT IS NOT EASY TO INSTALL THE RIGGING PIN, ADJUST THE LENGTH OF THE ROD.	If the rigging pin is difficult to install, adjust the length of the rod.
+	NOT EASILY (adv)	IF YOU CANNOT INSTALL THE RIGGING PIN EASILY, ADJUST THE LENGTH OF THE ROD.	If the rigging pin is difficult to install, adjust the length of the rod.
+difficulty (n)	NOT EASY (adj)	IF IT IS NOT EASY TO REMOVE THE BOLT, APPLY PENETRANT OIL	If there is difficulty in removing the bolt, apply penetrant oil.
+	NOT EASILY (adv)	IF YOU CANNOT REMOVE THE BOLT EASILY, APPLY PENETRANT OIL.	If there is difficulty in removing the bolt, apply penetrant oil.
+DIGITAL (adj)	Related to digits	CONNECT THE PRODS OF THE DIGITAL VOLTMETER.	
+DIGITALLY (adv)	Given by digits	THE VALUE IS SHOWN DIGITALLY ON THE DISPLAY.	
+dilute (v)	MIX (v)	MIX THE PRIMER WITH SOLVENT.	Dilute the primer with solvent.
+	ADD (v)	DO NOT ADD MORE THAN AN EQUAL PART OF WATER TO THE ANTIFREEZE.	Do not dilute the antifreeze with more than an equal part of water.

@@ -1,0 +1,10 @@
+﻿LOOSELY (adv)	Not tightly	MAKE SURE THAT THE PARTS ARE LOOSELY ASSEMBLED.
+LOOSEN (v), LOOSENS, LOOSENED, LOOSENED	To cause to be not tight	LOOSEN THE SCREWS THAT ATTACH THE CLAMP TO THE SUPPORT.	
+lose (v)	DECREASE (v)	THE EFFECT OF THE SOLVENT DECREASES QUICKLY.	The solvent loses its effectiveness quickly.
+lost (adj)	DECREASE (v)	IF THE PRESSURE DECREASES QUICKLY, THE SHEAR PINS IN THE LATCH WILL BREAK.	If the pressure is lost rapidly, the shear pins in the latch will break.
+	NOT FIND (v)	IT IS POSSIBLE THAT YOU CANNOT FIND THE RUBBER BUSHINGS.	The rubber bushings may be lost.
+LOW (adj) (LOWER, LOWEST)	That is of small value	THE SWITCH SENSES LOW PRESSURE IN THE DISTRIBUTION CIRCUIT.	
+LOWER (v), LOWERS, LOWERED, LOWERED	To move something down	LOWER THE ANTENNA TO GET ACCESS TO THE CABLE CONNECTOR.	
+lowermost (adj)	BOTTOM (adj)	THE BOTTOM MARK ON THE BOARD IS RED.	The lowermost mark on the board is red.
+LUBRICATE (v), LUBRICATES, LUBRICATED, LUBRICATED	To apply lubricant	LUBRICATE THE O-RINGS WITH HYDRAULIC FLUID.	
+lukewarm (adj)	WARM (adj)	SOAK THE AREA WITH WARM WATER.	Soak the area with lukewarm water.

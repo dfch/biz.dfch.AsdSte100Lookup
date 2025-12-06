@@ -1,0 +1,11 @@
+﻿ATTACH (v), ATTACHES, ATTACHED, ATTACHED	To stay together or to cause different items to stay together	MAKE SURE THAT THE LABEL FULLY ATTACHES TO THE SURFACE AND THAT THERE ARE NO BUBBLES.	
+		TEMPORARILY ATTACH THE CABLE TO THE ADJACENT STRUCTURE.	
+attachment (n)	ATTACH (v)	MAKE SURE THAT THE DUCT IS CORRECTLY ATTACHED TO THE FILTER.	Make sure that the attachment of the duct to the filter is correct.
+attain (v)	SHOW (v)	WHEN THE VOLTMETER SHOWS 28 VOLTS DC, THE RELAY CLOSES.	When 28 volts DC is attained, the relay closes.
+	BE (v)	WHEN THE VOLTAGE IS 28 VOLTS DC, THE RELAY CLOSES.	When 28 volts DC is attained, the relay closes.
+	GET (v)	WHEN YOU GET 28 VOLTS DC, THE RELAY CLOSES.	When 28 volts DC is attained, the relay closes.
+attempt (n)	TRY (v)	TRY TO LIFT THE COVER MANUALLY.	Make an attempt to lift the cover manually.
+attempt (v)	TRY (v)	TRY TO FIND THE DEFECT.	Attempt to find the defect.
+attention (n)	AID (n)	IF YOU GET PAINT SPRAY IN YOUR EYES, GET MEDICAL AID.	If you get paint spray in your eyes, get medical attention.
+	CAREFUL (adj)	BE CAREFUL WHEN YOU REMOVE THE CONTROL UNIT.	Pay attention when you remove the control unit.
+	MONITOR (v)	MONITOR THE RESULTS.	Pay attention to the results.

@@ -1,0 +1,13 @@
+﻿encounter (v)	BE (v)	IF THERE ARE ROUGH AREAS, REMOVE THEM WITH EMERY CLOTH.	If rough spots are encountered, remove them with emery cloth.
+	FIND (v)	IF YOU FIND ROUGH AREAS, REMOVE THEM WITH EMERY CLOTH.	If rough spots are encountered, remove them with emery cloth.
+END (n)	Where time, distance, or sequence are completed	EXAMINE THE SHACKLE AT THE END OF THE SLING.	
+end (v)	STOP (v)	STOP THE TEST.	End the test.
+	COMPLETE (v)	WHEN YOU COMPLETED THE TEST, REMOVE THE SENSOR.	When the test has ended, remove the sensor.
+		WHEN THE TEST IS COMPLETED, REMOVE THE SENSOR.	When the test has ended, remove the sensor.
+ENERGIZE (v), ENERGIZES, ENERGIZED, ENERGIZED	To supply electrical power to	ENERGIZE THE AC AND DC BUSBARS.	
+enforce (v)	OBEY (v)	ALL PERSONNEL MUST OBEY THE SAFETY PRECAUTIONS.	Safety precautions must be enforced.
+ENGAGE (v), ENGAGES, ENGAGED, ENGAGED	To correctly align and come together	ENGAGE THE CLUTCH.	
+		MAKE SURE THAT THE CLUTCH ENGAGES.	
+engagement (n)	ENGAGE (v)	MAKE SURE THAT THE SPLINES ENGAGE FULLY.	Make sure there is full engagement of the splines.
+enlarge (v)	INCREASE (v)	INCREASE THE DIAMETER OF THE RIVET HOLE.	Enlarge the rivet hole diameter.
+	LARGE (adj)	MAKE THE HOLES LARGER.	Enlarge the holes.

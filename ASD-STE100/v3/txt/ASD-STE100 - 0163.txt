@@ -1,0 +1,12 @@
+﻿NAME (n)	The identification you give to a person or an object	PUSH THE BUTTON ADJACENT TO THE NAME OF THE SYSTEM.
+		WRITE YOUR NAME ON THE REGISTRATION FORM.			
+NEAR (adj) (NEARER, NEAREST)	At or to a relatively short distance	PUT THE SYRINGE ON THE NEAREST SURFACE OF THE EXAMINATION TABLE.	
+NEAR (prep)	Approaching in space or condition	BALANCE THE ELEVATOR NEAR ITS MAXIMUM LIMIT.	
+		MAKE SURE THAT THE COMPUTER SCREEN IS NOT NEAR THE WINDOW.	
+nearly (adv)	ALMOST (adv)	MOVE THE POINTER UNTIL IT IS ALMOST IN THE GREEN BAND.	Move the pointer until nearly in the green band.
+NECESSARY (adj)	That must be	TWO HOURS ARE NECESSARY TO COMPLETE THE EXAM.	
+need (v)	NECESSARY (adj)	DURING THIS PROCEDURE, IT IS NOT NECESSARY TO REPLACE THE BACKING RINGS.	The backing rings do not need to be replaced during this procedure.
+neither (adj)	TWO (TN)... NOT	THE TWO UNITS MUST NOT OPERATE.	Neither unit must operate.
+neither (pron)	TWO (TN) ... NOT	THE TWO UNITS MUST NOT OPERATE.	Neither of the units must operate.
+NEUTRAL (adj)	1. That has no effect	MAKE SURE THAT THE CONTROLS ARE IN THE NEUTRAL POSITION.	
+	2. That is not acid or alkaline	CLEAN THE SCREEN WITH A NEUTRAL SOLUTION.	

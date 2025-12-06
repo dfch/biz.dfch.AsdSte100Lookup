@@ -1,0 +1,13 @@
+﻿arrive (v)	GET (v)	TO GET THE CORRECT VALUE, SET THE SWITCH TO POSITION 2.	To arrive at the correct value, set the switch to position 2.
+ARROW (n)	A mark that has a point to show direction	MAKE SURE THAT THE ARROW POINTS IN THE DIRECTION OF THE FUEL FLOW.	
+article (n)	OBJECT (n)	MAKE SURE THAT THERE ARE NO LOOSE OBJECTS IN THE ENGINE AIR INTAKES.	Ensure that there are no loose articles in the engine air intakes.
+AS (prep)	In the manner of, to the same quantity, equally	DO NOT USE THE CYLINDER AS A SUPPORT.	
+as (conj)	BECAUSE (conj)	THE PUMP DID NOT OPERATE BECAUSE THE SHAFT WAS BROKEN.	The pump did not operate as the shaft was broken.
+	WHILE (conj)	WHILE YOU DO EACH STEP OF THE VALVE TEST, MAKE SURE THAT THERE IS NO LEAKAGE.	As you do each step of the valve test, make sure that there is no leakage.
+	###You can use:	
+	AS FOLLOWS (conj)	ASSEMBLE THE VALVE AS FOLLOWS:	
+	AS NECESSARY (conj)	SET THE LENGTH OF THE CONTROL ROD AS NECESSARY.	
+	AS SHOWN (conj)	MEASURE THE DEPTH OF THE DENT AS SHOWN IN FIGURE 4.	
+AS ... AS (conj)	Construction used to show comparison or relation	MOVE THE LEVER AS FAST AS POSSIBLE.	
+	###For “as long as,” refer to “long (as long as).”		
+ascertain (v)	MAKE SURE (v)	MAKE SURE THAT THE LIGHT IS OFF.	Ascertain that the light is off.

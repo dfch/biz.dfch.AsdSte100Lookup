@@ -1,0 +1,7 @@
+﻿note (v)	RECORD (v)	RECORD DIMENSION “A.”	Note dimension A.
+notify (v)	TELL (v)	IF YOU FIND CRACKS, TELL THE CHIEF INSPECTOR.	If cracks are found, notify the chief inspector.
+	CONTACT (v)	IF YOU FIND CRACKS, CONTACT THE CHIEF INSPECTOR.	If cracks are found, notify the chief inspector.
+	WRITE (v)	IF THE UNIT DOES NOT OPERATE CORRECTLY, WRITE TO THE MANUFACTURER.	If the unit does not operate correctly, notify the manufacturer.
+now (adv)	AT THIS TIME (adv)	DO NOT TIGHTEN THE NUTS AT THIS TIME.	Do not tighten the nuts now.
+NUMBER (n)	1. A symbol or word that identifies an integer and/or decimal	NEGATIVE NUMBERS SHOW THAT THE PRESSURE DECREASES.	
+	2. An amount that you can count or calculate	IF THE NUMBER OF FAILURES IS MORE THAN THREE, REPLACE THE UNIT.	

@@ -1,0 +1,10 @@
+﻿MELT (v), MELTS, MELTED, MELTED	THE FUSIBLE PLUGS MUST MELT IN 20 SECONDS OR DO NOT USE A FLAME TO MELT THE ICE.	To change or to cause something to change from solid to liquid because of heat	LESS.
+mention (v)	GIVE (v)	THE REPAIR LIMITS ARE NOT GIVEN BECAUSE SPECIAL EQUIPMENT IS NECESSARY.	The repair limits are not mentioned as special equipment is required.
+mesh (v)	ENGAGE (v)	IF THE GEARS DO NOT ENGAGE CORRECTLY, ADD A SHIM.	If the gears do not mesh correctly, add a shim.
+meteorological (adj)	WEATHER (n)	DO THE TEST IN GOOD WEATHER.	Carry out the test in good meteorological conditions.
+METHOD (n)	A special type of procedure used to get a specified result	THIS PROCEDURE GIVES TWO METHODS FOR THE TEMPORARY REPAIR OF THE WATER TUBES.	
+mid (adj)	MIDDLE (adj)	PUT THE THROTTLE LEVER IN THE MIDDLE POSITION.	Place the throttle lever in mid position.
+MIDDLE (adj)	At a point that is between two other points	REMOVE THE MIDDLE BELLCRANK UNIT.	
+MIDDLE (n)	A point that is at or near the center	LIFT THE SEAT TO THE MIDDLE OF THE TRAVEL.	
+mild (adj)	WEAK (adj)	USE A WEAK SOAP SOLUTION TO CLEAN THE SIDEWALL PANEL.	Use a mild soap solution to clean the sidewall panel.
+minimize (v)	MINIMUM (n)	USE A TRESTLE TO KEEP THE LOADS ON THE WING TO A MINIMUM.	Use a trestle to minimize the loads on the wing.

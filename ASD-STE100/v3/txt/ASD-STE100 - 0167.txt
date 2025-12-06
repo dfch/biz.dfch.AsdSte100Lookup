@@ -1,0 +1,12 @@
+﻿OBEY (v), OBEYS, OBEYED, OBEYED	To do that which the procedures or instructions tell you	OBEY THE PRECAUTIONS THAT FOLLOW.	
+OBJECT (n)	Something that you can see or touch	MAKE SURE THAT THERE ARE NO LOOSE OBJECTS IN THE AIR INTAKE.	
+observe (v)	MONITOR (v)	MONITOR THE RADIO ALTIMETER INDICATOR.	Observe the radio altimeter indicator.
+	SEE (v)	IF YOU SEE OIL IN THE DRAIN, STOP THE TEST.	If you observe oil in the drain, stop the test.
+	OBEY (v)	OBEY ALL SAFETY PRECAUTIONS.	Observe all safety precautions.
+obstruct (v)	CATCH (v)	MAKE SURE THAT THE DRAG STRUTS DO NOT CATCH ON THE LANDING GEAR.	Make sure that the drag struts do not obstruct the landing gear.
+	PREVENT (v)	ADJUST THE LEVER ARMS IF THEY PREVENT MOVEMENT.	Adjust the lever arms if they obstruct movement.
+	BLOCKAGE (n)	REMOVE THE DIRT THAT CAUSES THE BLOCKAGE IN THE TUBE.	Remove the dirt obstructing the tube.
+obstructed (adj)	BLOCKED (adj)	IF THE DRAIN HOLE IS BLOCKED, REMOVE THE UNWANTED MATERIAL.	If the drain hole is obstructed, remove the unwanted material.
+	CLOGGED (adj)	IF THE DRAIN HOLE IS CLOGGED, CLEAN IT.	If the drain hole is obstructed, clean it.
+obstruction (n)	BLOCKAGE (n)	EXAMINE THE DRAIN HOLES FOR BLOCKAGE.	Examine the drain holes for obstruction.
+obtain (v)	GET (v)	ADD 0.05 mm TO GET THE CORRECT CLEARANCE FOR A STANDARD SPHERICAL COUPLING.	Add 0.05 mm to obtain the correct clearance for a standard spherical coupling.

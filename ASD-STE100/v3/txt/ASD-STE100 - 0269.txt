@@ -1,0 +1,9 @@
+﻿WAIT (v), WAITS, WAITED, WAITED	To stop doing something while another thing occurs.	(1) IF THE STATUS OF THE FAULT IS “NOT CONFIRMED”: (a) OPEN THE APPLICABLE CIRCUITBREAKER. (b) WAIT FOR 4 MINUTES. (c) DO THE BITE TEST.
+WALK (v), WALKS, WALKED, WALKED	To move on foot from one location to a different location	DO NOT WALK ON THIS AREA.	
+WANT (v), WANTS, WANTED, WANTED	To intend, to desire	RECORD THE NAME OF THE FILE THAT YOU WANT TO DOWNLOAD.	
+		IF YOU WANT TO STOP THE PROCEDURE, RECORD THE NUMBER OF THE LAST COMPLETED STEP.	
+WARM (adj)	Moderately hot	KEEP THE GASKETS IN A WARM, DRY AREA.	
+warm (v)	WARM (adj)	MAKE THE MIXTURE WARM BEFORE YOU USE IT.	Warm the mixture before use.
+warn (v)	TELL (v)	TELL PERSONNEL TO STAY AWAY FROM THE CONVEYOR SYSTEM.	Warn personnel to stay away from the conveyor system.
+	WARNING (TN)	IF THE INSTRUCTIONS GIVE A WARNING ABOUT DANGEROUS PRESSURE, DO NOT OPEN THE CONTAINER.	If the instructions warn of a dangerous pressure, do not open the container.
+wash (v)	CLEAN (v)	CLEAN YOUR HANDS WITH SOAP.	Wash your hands using soap.

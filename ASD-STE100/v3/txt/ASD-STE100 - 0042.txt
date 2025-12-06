@@ -1,0 +1,13 @@
+﻿circa (prep)	APPROXIMATELY (adv)	PUT A CONTAINER (APPROXIMATELY 5 LITERS) BELOW THE WASTE WATER OUTLET.	Put a container (circa 5 liters) under the waste water outlet.
+circle (v)	AROUND (prep)	THE POINTER MOVES AROUND THE DIAL.	The pointer circles the dial.
+CIRCULAR (adj)	That has the shape of a circle	POLISH THE WINDOW WITH A CIRCULAR MOVEMENT.	
+circulate (v)	SUPPLY (v)	SUPPLY AIR AT 24 °C TO THE AREA.	Circulate air at 24 °C in the area.
+clamp (v)	ATTACH WITH CLAMPS (v)	ATTACH THE ADJACENT CABLES WITH CLAMPS.	Clamp the adjoining cables together.
+	ATTACH WITH A CLAMP (v)
+	PUT A CLAMP (v)	PUT CLAMPS ON THE CABLE TO HOLD IT IN POSITION.	Clamp the cable in position.
+	PUT CLAMPS (v)
+classification (n)	CLASS (TN)	THERE ARE FOUR GENERAL CLASSES OF FASTENERS.	Fasteners can be separated into four general classifications.
+	CATEGORY (TN)	YOU CAN DIVIDE THE FASTENERS INTO FOUR GENERAL CATEGORIES.	Fasteners can be separated into four general classifications.
+CLEAN (adj)	That does not include dirt or unwanted material	MAKE SURE THAT THE AREA IS CLEAN.	
+CLEAN (v), CLEANS, CLEANED, CLEANED	To remove dirt or unwanted materials	CLEAN THE GASKET CONTACT SURFACE.	
+cleanliness (n)	CLEAN (adj)	CONDITIONS FORA SATISFACTORY BOND ARE: -A CLEAN SURFACE -A CORRECT TEMPERATURE -A CORRECT PRESSURE.	A satisfactory bond depends on the cleanliness of the surface, the temperature, and the pressure.

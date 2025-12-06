@@ -1,0 +1,10 @@
+﻿outside (adv)	OUTDOORS (adv)	DO THIS PROCEDURE OUTDOORS.	Do this procedure outside.
+outside (n)	EXTERNAL (adj)	FOLD THE EDGING AGAINST THE EXTERNAL SIDE OF THE INSULATION BLANKET.	Fold the edging against the outside of the insulation blankets.
+	OUTER (adj)	FOLD THE EDGING AGAINST THE OUTER SIDE OF THE INSULATION BLANKET.	Fold the edging against the outside of the insulation blankets.
+outside (prep)	NEAR (prep)	WHEN YOU DO WORK IN A FUEL TANK, A SECOND PERSON MUST BE NEAR THE TANK AT ALL TIMES.	When you do work in a fuel tank, a second person must be outside the tank at all times.
+outwards (adv)	OUT (adv)	MOVE THE DOOR OUT AND FORWARD.	Move the door outwards and forwards.
+over (prep)	ABOVE (prep)	MAKE SURE THAT THE HYDRAULIC FLUID LEVEL IS NOT ABOVE THE “FULL” MARK.	Make sure the hydraulic fluid level is not over the FULL mark.
+	ALONG (prep)	APPLY THE WEIGHT EQUALLY ALONG THE STABILIZER SPAN.	The weight must be evenly spread over the stabilizer span.
+	ON (prep)	INSTALL THE STOP SLEEVE ON THE SLIDING MEMBER.	Install the stop sleeve over the sliding member.
+	MORE THAN (adj)	DO NOT INSTALL SHIMS WITH A THICKNESS OF MORE THAN 0.1 mm.	Do not install shims over 0.1 mm thick.
+	###For movement above land or water, use a technical noun.	BEFORE OVERWATER OPERATION AT LOW ALTITUDES, APPLY CORROSIONPREVENTIVE FLUID TO THE DOOR HINGES OF THE LANDING GEAR.	

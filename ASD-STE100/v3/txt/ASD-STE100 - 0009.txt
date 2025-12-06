@@ -1,0 +1,10 @@
+﻿admit (v)	LET (v)	OPEN THE VALVE TO LET NITROGEN GO INTO THEOLEO STRUT.	Open the valve to admit nitrogen into the oleo strut.
+adopt (v)	USE (v)	IF THE UNIT IS DAMAGED, USE THIS PROCEDURE.	Adopt this procedure if the unit is damaged.
+advance (n)	FORWARD (adj)	THE FORWARD MOVEMENT OF THE CONTROL LEVER MUST BE SLOW AND CONTINUOUS.	The advance of the control lever must be slow and continuous.
+advance (v)	SET (v)	SET THE THROTTLE TO MAXIMUM POWER.	Advance the throttle to maximum power.
+	FORWARD (adv)	MOVE THE LEVER FORWARD.	Advance the lever.
+adverse (adj)	BAD (adj)	REFER TO CHAPTER 6 FOR INSTRUCTIONS ABOUT HOW TO PARK IN BAD WEATHER CONDITIONS.	For parking in adverse weather conditions, refer to Chapter 6.
+	###If it is possible, give accurate and correct conditions.	THIS MEDICATION CAN CAUSE DERMATITIS.	This medication can cause adverse reactions.
+advisable (adj)	RECOMMEND (v)	THE DESIGN AUTHORITY RECOMMENDS THAT YOU TORQUE THE BOLTS AGAIN AT INTERVALS OF SIX MONTHS.	According to the Design Authority, it is advisable to retorque the bolts at intervals of six months.
+advise (v)	TELL (v)	TELL THE RAMP AGENT THAT THE BRAKES ARE SET.	Advise the ramp agent that the brakes are set.
+	RECOMMEND (v)	THE SAFETY OFFICER RECOMMENDS THE APPLICABLE PERSONAL PROTECTIVE EQUIPMENT.	The safety officer advises on applicable personal protective equipment.

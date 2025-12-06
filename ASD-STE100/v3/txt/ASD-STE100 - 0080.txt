@@ -1,0 +1,9 @@
+﻿efficiently (adv)	SATISFACTORILY (adv)	MAKE SURE THAT THE UNIT OPERATES SATISFACTORILY.	Make sure the unit operates efficiently.
+efflux (n)	EXHAUST (n)	MAKE SURE THAT THERE ARE SAFETY BARRIERS AROUND THE ENGINE EXHAUST AREA.	Ensure that there are safety barriers around the engine efflux area.
+effort (n)	FORCE (TN)	DO NOT TIGHTEN THE BOLTS WITH TOO MUCH FORCE.	Do not use too much effort to tighten the bolts.
+	TRY (v)	FIRST, TRY TO TURN THE SHAFT WITH YOUR HANDS.	First, make an effort to turn the shaft with your hands.
+either (adj)	ONE (TN) OF THE TWO (TN)	IF THERE IS MERCURY CONTAMINATION IN ONE OF THE TWO COMPARTMENTS, CLEAN THE AREA IMMEDIATELY.	If there is mercury spillage in either compartment, clean the area immediately.
+either (conj)	OR (conj)	YOU CAN USE A RED PEN OR A GREEN PEN.	You can use either a red pen or a green pen.
+either (pron)	ONE (TN) OR THE OTHER	THERE ARE TWO SOLENOIDS. YOU CAN SUPPLY ELECTRICAL POWER TO ONE OR THE OTHER.	There are two solenoids. You can supply electrical power to either.
+EJECT (v), EJECTS, EJECTED, EJECTED	To move or to cause a person or item to move from an aircraft or equipment with force	IF YOU PULL THE EJECTION SEAT HANDLE, THE SEAT WILL EJECT.	
+ejection (n)	EJECT (v)	PUSH THE APPLICABLE BUTTON TO EJECT THE DISK DRIVE.	Push the applicable button for disk drive ejection.

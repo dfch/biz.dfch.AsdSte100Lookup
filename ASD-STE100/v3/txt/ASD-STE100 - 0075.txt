@@ -1,0 +1,11 @@
+﻿DOWN (adj)	In a position below	MAKE SURE THAT THE ANCHOR IS DOWN.	
+DOWN (adv)	To a position below	THE POINTER MOVES DOWN.	
+DOWN (prep)	To a position below	LET THE SLEEVE MOVE DOWN THE GUIDE TUBE.	
+DOWNSTREAM (adj)	In the direction of the flow	DISCONNECT THE DOWNSTREAM CONNECTION.	
+DOWNSTREAM (adv)	In the direction of the flow	MOVE THE PROBE DOWNSTREAM AND MONITOR THE TEMPERATURE AGAIN.	
+DOWNSTREAM OF (prep)	In the direction of the flow	DISCONNECT THE CONNECTION WHICH IS DOWNSTREAM OF THE VALVE.	
+downward (adv)	DOWN (adv)	MAKE SURE THAT THE AIR OUTLET POINTS DOWN.	Make sure that the air outlet is positioned downward.
+drag (v)	PULL (v)	PULL THE WIRES THROUGH THE CONDUIT.	Drag the wires through the conduit.
+DRAIN (v), DRAINS, DRAINED, DRAINED	To remove liquid	DRAIN THE SYSTEM FULLY.	
+draw (v)	MAKE (v)	MAKE A LINE ON THE BLADE.	Draw a line on the blade.
+	PULL (v)	PULL THE WIRE OUT OF THE CONDUIT.	Draw the wire out of the conduit.

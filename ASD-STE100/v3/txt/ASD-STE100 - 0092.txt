@@ -1,0 +1,13 @@
+﻿exercise (v)	MAKE SURE (v) CAREFUL (adj)	MAKE SURE THAT YOU DO NOT GET ACID ON YOUR SKIN.	Exercise caution not to allow acid to contact skin.
+		BE CAREFUL THAT YOU DO NOT GET ACID ON YOUR SKIN.	Exercise caution not to allow acid to contact skin.
+exert (v)	APPLY (v)	APPLY ALIGHT FORCE TO THE PEDALS.	Exert a light force on the pedals.
+	PUT (v)	PUT PRESSURE ON THE WOUND.	Exert pressure on the wound.
+exhale (v)	BREATHE (v)	BREATHE INTO THE OXYGEN MASK.	Exhale into the oxygen mask.
+EXHAUST (n)	The gas from an engine	THE EXHAUST FROM THE APU IS DANGEROUS.	
+exhaust (v)	REMOVE (v)	USE A FAN TO REMOVE THE GASES.	Exhaust the gases using a fan.
+	DECREASE (v)	DECREASE THE NITROGEN PRESSURE TO 120 psi.	Exhaust the nitrogen pressure to 120 psi.
+	RELEASE (v)	RELEASE THE HYDRAULIC PRESSURE IN THE ACCUMULATOR.	Exhaust all the hydraulic pressure in the accumulator.
+exhaustive (adj)	ALL (adj)	ALL THE TEST CONDITIONS ARE GIVEN IN PARAGRAPH 2.0.	An exhaustive list of test conditions is given at paragraph 2.0.
+	FULL (adj)	THIS IS NOT A FULL LIST.	The list is not exhaustive.
+exist (v)	BE (v)	THERE ARE TWO DIFFERENT PROCEDURES FOR THIS REPAIR.	Two different procedures exist for this repair.
+EXIT (n)	An opening to go out of a space	MAKE SURE THAT ALL THE EMERGENCY EXITS ARE CLEAR OF UNWANTED OBJECTS.	

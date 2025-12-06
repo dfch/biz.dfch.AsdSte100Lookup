@@ -1,0 +1,13 @@
+﻿HAVE (v), HAS, HAD	To possess as a part or quality	THE SYSTEM HAS AN EMERGENCY WARNING DEVICE.	
+	###No other verb forms.
+have to (v)	Note	WHEN ENGINES ARE IN OPERATION, PUT ON A HEARING PROTECTION DEVICE.	When engines are in operation, you have to put on a hearing protection device.
+	###Use a verb in the imperative form
+hazard (n)	DANGEROUS (adj)	TRICHLOROETHYLENE IS DANGEROUS.	Trichloroethylene is a health hazard.
+	###“hazard” can be part of safety regulations.
+hazardous (adj)	DANGEROUS (adj)	ALL PERSONNEL WHO DO WORK WITH DANGEROUS MATERIALS MUST OBEY THE SAFETY INSTRUCTIONS THAT FOLLOW.	All personnel who work with hazardous materials must obey the following safety instructions.
+	###“hazardous” can be part of safety regulations.
+hazy (adj)	HAZE (TN)	IF THERE IS HAZE, DO NOT DO THE TEST.	If the weather is hazy, do not do the test.
+HEAD (n)	The top of something	MAKE SURE THAT THE HEAD OF THE BOLT IS DOWN.	
+head (v)	POINT (v)	POINT THE AIRCRAFT INTO THE WIND.	Head the aircraft into the wind.
+HEAR (v), HEARS, HEARD, HEARD	To know by sound in the ear	MAKE SURE THAT YOU HEAR THE AUDIO SIGNALS IN ALL THE CREW HEADSETS.	
+HEAT (n)	The condition or quality of being hot	USE HEAT TO CURE THE POLYSULPHIDE SEALANT.	

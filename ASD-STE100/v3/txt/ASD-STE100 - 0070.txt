@@ -1,0 +1,10 @@
+﻿dim (v)	DECREASE (v)	DECREASE THE LIGHT GRADUALLY.	Dim the light gradually.
+DIM (adj) (DIMMER, DIMMEST)	Not bright	DURING NIGHT OPERATION, MAKE SURE THAT THE PANEL LIGHTS ARE DIM.	
+DIMENSION (n)	The result when something is measured in one direction	DIMENSION “A” MUST NOT BE MORE THAN 50 PERCENT OF DIMENSION “D.”	
+diminish (v)	DECREASE (v)	IF THE HYDRAULIC PRESSURE DECREASES, CLOSE THE VALVE.	If the hydraulic pressure diminishes, close the valve.
+DIMLY (adv)	Not bright	MAKE SURE THAT THE LIGHT COMES ON DIMLY.	
+dip (v)	MOMENTARILY (adv)	PUT THE ELEMENT INTO THE SOLVENT MOMENTARILY.	Dip the element in solvent.
+direct (v)	POINT (v)	POINT THE OPEN END OF THE DRAIN HOSE AWAY FROM THE STRUCTURE.	Direct the open end of the drain hose away from the structure.
+DIRECTION (n)	The line on which something moves or is pointed	THE ARROW ON THE VALVE BODY SHOWS THE DIRECTION OF THE FLOW.	
+DIRECTLY (adv)	In a direct procedure or by direct effect	DO NOT FILL THE SYSTEM DIRECTLY FROM A HIGH-PRESSURE STORAGE CYLINDER.	
+DIRTY (adj) (DIRTIER, DIRTIEST)	Not clean	A DIRTY CONTACT IN THE CONNECTION UNITS WILL CAUSE THEM TO OPERATE INCORRECTLY.

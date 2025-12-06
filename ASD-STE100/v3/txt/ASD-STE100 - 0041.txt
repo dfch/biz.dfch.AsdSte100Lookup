@@ -1,0 +1,13 @@
+﻿check (v)	MAKE SURE (v)	MAKE SURE THAT IT IS SAFE TO SUPPLY ELECTRICAL POWER.	Check that it is safe to supply electrical power.
+	MEASURE (v)	MEASURE THE DISTANCE BETWEEN THE SURFACES.	Check the distance between the surfaces.
+	EXAMINE (v)	EXAMINE THE CASTING FOR CORROSION.	Check the casting for corrosion.
+	CHECK (n)	DO A LEAKAGE CHECK OF THE VALVE.	Check the valve for leakage.
+CHEMICAL (adj)	Related to a chemical	REMOVE THE CORROSION WITH AN APPROVED CHEMICAL COMPOUND.	
+CHEMICALLY (adv)	Related to a chemical	REMOVE CORROSION CHEMICALLY.	
+chip (n)	PARTICLE (n)	EXAMINE THE FILTER ELEMENT FOR METAL PARTICLES.	Examine the filter element for metal chips.
+chip (v)	DAMAGED (adj)	IF THE ENAMEL IS DAMAGED, REPLACE THE UNIT.	If the enamel is chipped, replace the unit.
+chock (v)	CHOCK (TN)	PUT CHOCKS AGAINST THE WHEELS.	Chock the wheels.
+choice (n)	SELECTION (n)	MAKE A SELECTION FROM THE AVAILABLE SHIMS TO GET THE CORRECT THICKNESS.	Make a choice from the available shims to get the correct thickness.
+	ALTERNATIVE (adj)	TABLE 1 GIVES ALTERNATIVE ADHESIVES WHICH YOU CAN USE.	In Table 1, there is a choice of adhesives which you are allowed to use.
+choose (v)	SELECT (v)	SELECT THE HYDRAULIC SYSTEM THAT YOU WILL PRESSURIZE.	Choose the hydraulic system that you will pressurize.
+	ALTERNATIVE (adj)	TABLE 1 GIVES A LIST OF ALTERNATIVE ADHESIVES.	Table 1 lists the adhesives which you can choose.

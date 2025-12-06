@@ -1,0 +1,10 @@
+﻿enough (adj)	SUFFICIENT (adj)	MAKE SURE THAT THERE IS SUFFICIENT PRESSURE IN THE ACCUMULATOR.	Make sure that there is enough pressure in the accumulator.
+ensue (v)	CAUSE (v)	INCORRECT INSTALLATION WILL CAUSE DAMAGE.	Damage will ensue from incorrect installation.
+ensure (v)	MAKE SURE (v)	MAKE SURE THAT THE CORRECT SEALS ARE INSTALLED.	Ensure that the correct seals are installed.
+enter (v)	GO INTO (v)	DO NOT GO INTO THE LABORATORY WITHOUT APPROVAL.	Do not enter the laboratory without approval.
+	RECORD (v)	RECORD THE DATA IN THE LOGBOOK.	Enter the data in the logbook.
+	ENTRY (n)	MAKE AN ENTRY IN THE LOGBOOK TO SHOW THAT YOU DID THE DEACTIVATION PROCEDURE.	Enter in the logbook that you did the deactivation procedure.
+entire (adj)	FULL (adj)	THE ANTENNA MAKES A SCAN OF THE FULL RANGE OF FREQUENCIES.	The antenna makes a scan of the entire range of frequencies.
+	ALL (adj)	EXAMINE ALL OF THE SYSTEM TO FIND THE CAUSE OF THE INTERFERENCE.	Check the entire system to determine the cause of interference.
+entirely (adv)	FULLY (adv)	THE SYSTEM IS FULLY AUTOMATIC.	The system is entirely automatic.
+ENTRANCE (n)	An opening to go into a space	PUT SAFETY BARRIERS AT THE ENTRANCE TO THE WORK AREA.	

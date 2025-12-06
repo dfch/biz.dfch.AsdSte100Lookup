@@ -1,0 +1,14 @@
+﻿OCCUR (v), OCCURS OCCURRED	To be found or to take place, to come to be	A SUDDEN MOVEMENT OF THE CONTROL SURFACES CAN OCCUR.	
+		IF THE SYMPTOMS OCCUR AGAIN, DO A SYSTEM TEST.	
+OF (prep)	Function word that shows: from, belonging to, having, or containing	REMOVE THE SPLIT PINS FROM THE BOLTS IN THE BOTTOM ENDS OF THE CONTROL RODS.	
+OFF (adj)	Not in operation	MAKE SURE THAT THE BATTERIES ARE OFF.	
+OFF (adv)	1. Not in operation	MAKE SURE THAT THE WARNING LIGHT GOES OFF.	
+	2. Not in contact	THE HANDLE MUST COME OFF EASILY.	
+OFF (prep)	Not in contact with	MAKE SURE THAT THE TIRE IS FULLY OFF THE GROUND.	
+often (adv)	FREQUENTLY (adv)	IF A FAILURE OCCURS FREQUENTLY, DO THE SYSTEM TEST.	If a failure occurs often, do the system test.
+oil (v)	LUBRICATE (v)	LUBRICATE THE LINKAGE WITH OIL.	Oil the linkage.
+	OIL (TN)	PUT OIL ON THE LINKAGE.	Oil the linkage.
+oil-free (adj)	OIL (TN)	USE A SOLUTION THAT CONTAINS NO OIL.	Use an oil-free solution.
+old (adj)	REMAINING (adj)	REMOVE THE REMAINING SEALANT.	Remove the old sealant.
+	USED (adj)	DRAIN THE USED OIL INTO A CONTAINER.	Drain the old oil into a container.
+	EXPIRED (adj)	MAKE SURE THAT THE SHELF LIFE OF THE MATERIAL IS NOT EXPIRED.	Make sure that the material is not too old.

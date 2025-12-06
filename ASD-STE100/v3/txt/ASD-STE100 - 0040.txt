@@ -1,0 +1,14 @@
+﻿CHANGE (v), CHANGES, CHANGED, CHANGED	To become or to cause to become different	IF THE HUMIDITY CHANGES FREQUENTLY, PUT A COVER ON THE UNIT.	
+		CHANGE THE COLOR OF THE DISPLAY.	
+	###For other meanings, use:
+	REPLACE (v)	REPLACE THE DAMAGED VALVE.	Change the damaged valve.
+channel (v)	CHANNEL (TN)	INSTALL THE WIRES IN THE CHANNEL ALONG THE HOUSING.	Channel the wires along the housing.
+characteristic (n)	PROPERTY (n)	THE PROPERTIES OF THESE SEALANTS PREVENT CORROSION.	The characteristics of these sealants prevent corrosion.
+	QUALITY (n)	DO NOT USE THIS MATERIAL BECAUSE IT DOES NOT HAVE THE NECESSARY QUALITIES.	Do not use this material because it doesn't have the necessary characteristics.
+CHARGE (v), CHARGES, CHARGED, CHARGED	To accumulate or add electrical energy	CHARGE THE BATTERY.	
+	MAKE SURE THAT THE BATTERY CHARGES.	
+	###For other meanings, use:		
+	FILL (v)	FILL THE TANK WITH 10 LITERS OF METHANOL.	Charge the tank with 10 liters of methanol.
+	PRESSURIZE (v)	PRESSURIZE THE ACCUMULATOR WITH NITROGEN.	Charge the accumulator with nitrogen.
+CHECK (n)	The procedure you do to make sure that something operates correctly or has no defects	DO A CHECK OF THE HYDRAULIC SYSTEM.	
+		DO A CHECK FOR LOOSE FASTENERS.

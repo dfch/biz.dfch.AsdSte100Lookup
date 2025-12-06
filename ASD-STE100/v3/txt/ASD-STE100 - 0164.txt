@@ -1,0 +1,11 @@
+﻿neutralize (v)	NEUTRAL (adj)	MAKE THE BASIC ELECTROLYTE NEUTRAL WITH VINEGAR OR BORIC ACID.	Neutralize the basic electrolyte with vinegar or boric acid.
+never (adv)	DO NOT	DO NOT LET THE LEVEL IN THE TANK DECREASE TO LESS THAN HALF.	Never allow the level in the tank to drop below half.
+NEW (adj) (NEWER, NEWEST)	Not used before	INSTALL A NEW GASKET ON THE FLANGE.	
+NEXT (adj)	The first occurrence that follows immediately after in time or sequence.	REMOVE THE UNIT BEFORE THE NEXT OPERATING CYCLE.	
+next (adv)	THEN (adv)	HOLD THE FLANGE IN ITS POSITION. THEN, INSTALL THE BOLT.	Hold the flange in its position. Next, install the bolt.
+next to (prep)	ADJACENT TO (prep)	THE PUMP IS ADJACENT TO THE CENTRAL RIB.	The pump is next to the central rib.
+NO (adj)	Not any	MAKE SURE THAT THERE IS NO FUEL LEAKAGE.	
+NO (adv)	Function word that shows the negative answer to a question	DOES THE LIGHT COME ON? YES OR NO?	
+NOISE (n)	An unwanted sound	WHILE THE ENGINE CONTINUES TO TURN, LISTEN FOR UNUSUAL NOISES.	
+noisy (adj)	NOISE (n)	IF THERE IS NOISE WHEN THE PUMP OPERATES, EXAMINE THE FILTER FOR UNWANTED PARTICLES.	If pump operation is noisy, check the pump filter for unwanted particles.
+NONE (pron)	Not one, not anyone	IF NONE OF THE BRACKETS ARE DAMAGED, CONTINUE THE INSPECTION.	

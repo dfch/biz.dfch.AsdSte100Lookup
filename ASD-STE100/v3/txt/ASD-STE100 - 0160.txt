@@ -1,0 +1,12 @@
+﻿MOBILE (adj)	That is made to move easily	CONNECT THE MOBILE GROUND POWER UNIT.	
+MODE (n)	A special condition of operation	MAKE SURE THAT THE “HEADING SELECT” MODE OPERATES.	
+MODERATE (adj)	Between low and high values	APPLY A MODERATE LOAD ON THE BRAKE PEDALS.	
+MODERATELY (adv)	In a moderate manner	YOU CAN APPLY A SECOND LAYER WHEN THE SURFACE IS MODERATELY DRY.	
+modify (v)	CHANGE (v)	SERVICE BULLETIN No. 105 CHANGES THE BOLTS THAT ATTACH THE POWER CONTROL UNIT.	Service Bulletin No. 105 modifies the power control unit attachment bolts.
+	MODIFICATION (TN)	THIS SERVICE BULLETIN GIVES INSTRUCTIONS TO DO A MODIFICATION OF THE OIL PUMP.	This Service Bulletin gives instructions to modify the oil pump.
+MOIST (adj)	Moderately wet	CLEAN THE PANEL WITH A MOIST CLOTH.	
+moisten (v)	MOIST (adj)	MAKE THE CLOTH MOIST WITH SOLVENT.	Moisten the cloth with solvent.
+MOMENTARILY (adv)	For a short time	STOP THE PUMP MOMENTARILY. THEN START IT AGAIN.	
+momentary (adj)	MOMENTARILY (adv)	MAKE SURE THAT THE SPEED INCREASES MOMENTARILY.	Check for momentary increase in speed.
+MONITOR (v), MONITORS, MONITORED, MONITORED	To do a check at something for a period of time to find if there is a change	MONITOR THE INDICATORS ON THE OVERHEAD PANEL.	
+		HEAT SENSORS MONITOR THE AMBIENT TEMPERATURE.	

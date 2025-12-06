@@ -1,0 +1,11 @@
+﻿SPECIALLY (adv)	In a special manner	THIS EXTRACTOR IS SPECIALLY MADE TO REMOVE THESE PINS.
+specific (adj)	APPROVED (adj)	USE APPROVED TOOLS TO PREVENT POSSIBLE DAMAGE.	Use specific tools to preclude the possibility of damage.
+	SPECIFIED (adj)	THESE AREAS HAVE SPECIFIED DAMAGE LIMITS.	These areas have specific damage limits.
+specifically (adv)	SPECIALLY (adv)	THESE MATERIALS ARE SPECIALLY MADE FOR PLASTIC SURFACES.	These materials are specifically designed for plastic surfaces.
+SPECIFIED (adj)	Given in, identified in, or related to a specification, regulation, or procedure	INFLATE THE TIRE WITH NITROGEN TO THE SPECIFIED PRESSURE.	
+speck (n)	PARTICLE (n)	REMOVE ALL PARTICLES OF DUST FROM THE LENS.	Remove all specks of dust from the lens.
+speech (n)	VOICE (n)	IF YOU CANNOT HEAR THE VOICE, REPLACE THE UNIT.	If the speech is not audible, replace the unit.
+SPEED (n)	The rate of movement	ON THIS ROAD, THE MAXIMUM PERMITTED SPEED IS 30MPH.	
+SPHERICAL (adj)	That has the shape of a sphere	THE ACCUMULATORS ARE SPHERICAL AND HAVE BLADDERS.	
+SPILL (v), SPILLS, SPILLED, SPILLED	To accidentally flow, or cause to flow, out of a container	IF THE ELECTROLYTE SPILLS, REMOVE IT IMMEDIATELY.	
+		IF YOU SPILL THE ELECTROLYTE, REMOVE IT IMMEDIATELY.	

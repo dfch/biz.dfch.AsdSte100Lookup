@@ -1,0 +1,10 @@
+﻿absence (n)	NONE (pron)	IF NONE OF THE BRACKETS ARE DAMAGED, CONTINUE THE PROCEDURE.	In the absence of damage to the brackets, continue the procedure.
+	NOT (adv)	IF THE BRACKETS ARE NOT DAMAGED, CONTINUE THE PROCEDURE.	In the absence of damage to the brackets, continue the procedure.
+	NO (adj)	IF THERE IS NO CONTAMINATION IN THE FUEL SAMPLE, CONTINUE THE PROCEDURE.	In the absence of contamination in the fuel sample, continue the procedure.
+absent (adj)	MISSING (adj)	IF ONE OR MORE BLADES ARE MISSING, MAKE AN ENTRY IN THE ENGINE LOGBOOK.	If one or more blades are absent, make an entry in the engine logbook.
+	NO (adj)	IF THERE IS NO CONTAMINATION IN THE FUEL SAMPLE, CONTINUE THE PROCEDURE.	If contamination is absent from the fuel sample, continue the procedure.
+absolutely (adv)	FULLY (adv)	MAKE SURE THAT THE LATCH IS FULLY ENGAGED.	Ensure the latch is absolutely engaged.
+ABSORB (v), ABSORBS, ABSORBED, ABSORBED	1. To take up or into	ABSORB THE FLUID WITH A CLEAN CLOTH.	
+	2. To decrease the effect of	THE SHOCK MOUNT ABSORBS THE VIBRATION.	
+absorption (n)	ABSORB (v)	MEASURE THE TIME THAT IS NECESSARY FOR THE SILICA GEL TO ABSORB THE MOISTURE.	Measure the rate of absorption of the moisture by the silica gel.
+abundant (adj)	LARGE (adj)	CLEAN YOUR SKIN WITH A LARGE QUANTITY OF CLEAN WATER.	Clean your skin with abundant clean water.

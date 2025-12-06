@@ -1,0 +1,13 @@
+﻿dress (v)	USE (v)	BEFORE YOU GO INTO THE WORKAREA, USE THE NECESSARY PROTECTIVE CLOTHING.	Dress suitably before going into the work area.
+	PUT ON (v)	BEFORE YOU GO NEAR THE TEST RIG, PUT ON THE NECESSARY PROTECTIVE CLOTHING.	Dress appropriately before going near the test rig.
+drift (v)	MOVE (v)	THE HORIZON BAR CAN MOVE A SMALL DISTANCE.	The horizon bar may drift slightly.
+	REMOVE (v)	REMOVE THE PIN FROM ITS HOLE. USE A DRIFT.	Drift the pin from its hole.
+	REMOVE WITH A DRIFT (v)
+DRINK (v), DRINKS, DRANK	To consume liquid	DO NOT DRINK IN THE WORK AREA.	
+	###No other verb forms. For safety instructions, use:		
+	SWALLOW (v)	DO NOT SWALLOW THE SOLVENT.	Do not drink the solvent.
+drive (v)	MOVE (v)	THE ACTUATOR MOVES TO ZERO.	The actuator is driven to zero.
+	REMOVE (v)	REMOVE THE LOCKBOLT FROM THE HOLE.	Drive the lockbolt out of the hole.
+	OPERATE (v)	A HYDRAULIC MOTOR OPERATES THE PUMP.	A hydraulic motor drives the pump.
+droop (v)	MOVE (v)	IF YOU DO NOT INSTALL THE RIGGING PIN, THE ELEVATORS WILL MOVE DOWN WHEN THERE IS NO PRESSURE IN THE SYSTEM.	If you do not install the rigging pin, the elevators will droop when there is no pressure in the system.
+DROP (n)	A small quantity of liquid in a spherical shape	MAKE SURE THAT NO DROPS OF ADHESIVE FALL ONTO THE MATERIAL.	

@@ -1,0 +1,12 @@
+﻿under (prep)	BELOW (prep)	INSTALL THE CABLE THROUGH THE GUIDE TUBE BELOW THE CABIN FLOOR.	Install the cable through the guide tube under the cabin floor.
+	IN (prep)	THIS RESULT CAN OCCUR IN DIFFERENT CONDITIONS.	This result can occur under different conditions.
+	LESS THAN (prep)	MAKE SURE THAT THE PRESSURE IS LESS THAN 30 psi.	Make sure the pressure is under 30 psi.
+underneath (prep)	BELOW (prep)	PUT THE CONTAINER BELOW THE DRAIN VALVE.	Place the container underneath the drain valve.
+underside (n)	BOTTOM (n)	EXAMINE THE FOUR ATTACHING HOLES ON THE BOTTOM.	Examine the four attaching holes on the underside.
+undertake (v)	DO (v)	DO THIS TASK IN AN AREA THAT HAS GOOD AIRFLOW.	Undertake this task in an area that has good airflow.
+	###You can use a more accurate verb.
+	START (v)	DO NOT START THE TEST WITHOUT PRECAUTIONS.	Do not undertake the test without precautions.
+undo (v)	LOOSEN (v)	LOOSEN THE BOLTS THAT ATTACH THE UNIT.	Undo the bolts that attach the unit.
+undue (adj)	UNWANTED (adj)	TO PREVENT UNWANTED FRICTION, POLISH THE SURFACE.	To prevent undue friction, polish the surface.
+uneven (adj)	EQUAL (adj)	MAKE SURE THAT THE FUEL LOAD IS EQUAL ON EACH SIDE OF THE AIRCRAFT CENTERLINE.	Avoid uneven fuel load about the aircraft centerline.
+	ROUGH (adj)	IF THE SURFACE IS ROUGH, REPLACE THE SLIDE VALVE.	Replace the slide valve if its surface is uneven.

@@ -1,0 +1,14 @@
+﻿COIL (n)	A sequence of loops	MAKE SURE THAT THE COILS OF THE OXYGEN HOSE DO NOT RUB TOGETHER.
+coil (v)	WIND (v)	WIND THE CABLES CAREFULLY.	Coil the cables carefully.
+coincide (v)	ALIGN (v)	THE FASTENERS MUST ALIGN WITH THE HOLES IN THE TRACK.	The fasteners must coincide with the holes in the track.
+coincident (adj)	SYNCHRONIZED (adj)	MAKE SURE THAT THE MOVEMENT OF THE TWO SURFACES IS SYNCHRONIZED.	Make sure that the movement of the two surfaces is coincident.
+	ALIGN (v)	MAKE SURE THAT THE TWO SURFACES ALIGN.	Make sure that the two surfaces are coincident.
+COLD (adj) (COLDER, COLDEST)	At low temperature	MAKE SURE THAT COLD AIR COMES OUT OF THE OUTLETS.	
+collapse (v)	CLOSE (v)	CLOSE THE BOX.	Collapse the box.
+	FALL (v)	THE BOARDING BRIDGE FELL.	The boarding bridge collapsed.
+COLLECT (v), COLLECTS, COLLECTED, COLLECTED	To come, or cause to come, together in one location	FLUID COLLECTS IN THE BOTTOM OF THE COWLING.	
+		COLLECT ALL LOOSE ITEMS AND PUT THEM IN THE CONTAINER.	
+COLOR (n)	A property of light	THE COLOR CHANGES FROM BLUE TO RED.	
+color code (v)	IDENTIFY (v)	IDENTIFY THE ASSEMBLY WITH THE CORRECT COLOR.	The assembly must be color coded.
+	CODE (n)	PUT A COLOR CODE ON EACH OF THE ASSEMBLIES.	Color code the assemblies.
+colored (adj)	COLOR (n)	THE SCALE HAS TWO AREAS OF DIFFERENT COLOR.	The scale is divided into two colored areas.

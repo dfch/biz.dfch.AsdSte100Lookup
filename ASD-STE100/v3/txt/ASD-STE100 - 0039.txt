@@ -1,0 +1,12 @@
+﻿center (v)	CENTER (TN)	ALIGN THE PISTON WITH THE CENTER OF THE SLEEVE.	Center the piston in the sleeve.
+centralize (v)	CENTER (TN)	SET THE CONTROLS TO THE CENTER POSITION.	Centralize the controls.
+certain (adj)	SURE (adj)	IF YOU ARE NOT SURE THAT THE RESULTS ARE CORRECT, DO THE TEST AGAIN.	If you are not certain that the results are correct, do the test again.
+	SOME (adj)	SOME FUNCTIONS ARE NOT AVAILABLE.	Certain functions are not available.
+	SPECIFIED (adj)	THE SPECIFIED FUNCTIONS ARE NOT AVAILABLE.	Certain functions are not available.
+certify (v)	WRITE (v)	WRITE THE CHANGE IN THE LOGBOOK.	Certify the change in the logbook.
+	APPROVAL (n)	GET APPROVAL FROM YOUR SUPERVISOR FOR THE REPAIR.	Get the supervisor to certify the repair.
+chafe (v)	RUB (v)	DO NOT LET THE WIRES RUB.	Do not let the wires chafe.
+chafed (adj)	WORN (adj)	EXAMINE THE TUBING FOR WORN AREAS.	Examine the tubing for chafed areas.
+chance (n), by chance	RISK (n)	IF THERE IS A RISK OF FUEL LEAKAGE, PUT A CONTAINER BELOW THE UNIT.	If there is a chance of fuel leakage, put a container below the unit.
+	ACCIDENTALLY (adv)	IF THE LEVER MOVED ACCIDENTALLY, DO THE TEST AGAIN.	If, by chance, the lever moved, do the test again.
+CHANGE (n)	That which occurs when something changes	THE COLOR CHANGE SHOWS THAT THE TEMPERATURE IS TOO HIGH.	

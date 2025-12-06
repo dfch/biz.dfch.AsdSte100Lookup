@@ -1,0 +1,11 @@
+﻿CANCEL (v), CANCELS, CANCELED, CANCELED	1. To do the necessary steps to stop a process	IF YOU ACCIDENTALLY PUSH THE SWITCH, CANCEL THE START SEQUENCE.	
+	2. To remove the validity of something	THIS NEW REVISION AUTOMATICALLY CANCELS THE PREVIOUS ONE.	
+CANNOT (v)	Auxiliary modal verb that means to not be able to	THE WHEEL CANNOT MOVE WHEN THE LOCK IS ENGAGED.	
+cap (v)	SEAL (v)	SEAL ALL THE HOSES.	Cap all the hoses.
+	CAP (TN)	PUT CAPS ON THE CONNECTORS.	Cap the connectors.
+	COVER (TN)	PUT A COVER ON THE INLET PORT.	Cap the inlet port.
+capability (n)	FUNCTION (n)	THESE FUNCTIONS OPEN THE APPLICABLE GRAPHIC DEVICE.	These capabilities open the applicable graphic device.
+	CAN (v)	THE COMPUTER CAN CALCULATE THE RESULT AUTOMATICALLY.	The computer has the capability to calculate the result automatically.
+capable (adj)	APPROVED (adj)	AN APPROVED PERSON MUST DO THE IMPORTANT CHECKS.	Vital checks are to be carried out by a capable person.
+	CAN (v)	THE POWER UNIT CAN SUPPLY 28 VDC.	The power unit is capable of producing 28 V DC.
+CAPACITY (n)	The maximum quantity that something can hold or make	THE CAPACITY OF THE TANK IS 564 LITERS.	

@@ -1,0 +1,10 @@
+﻿SOLUTION (n)	1. A liquid that includes a dissolved material	PREPARE THE SOLUTION IN A CONTAINER MADE OF CERAMIC MATERIAL.	
+	2. The answer to a problem	THE TEAM'S WORK WAS IMPORTANT FOR THE SOLUTION OF THE TECHNICAL PROBLEM.	
+solve (v)	SOLUTION (n)	IF THE REMOVAL OF THE VALVE WAS NOT THE SOLUTION TO THE PROBLEM, REPLACE THE UNIT.	If the removal of the valve did not solve the problem, replace the unit.
+SOME (adj)	Related to a quantity not specified	SOME MODELS DO NOT HAVE THIS FUNCTION.	
+SOME (pron)	Related to a quantity not specified	SOME MODELS HAVE THIS FUNCTION, BUT SOME DO NOT.	
+SOMETHING (pron)	A thing that is not determined or specified	IF SOMETHING UNUSUAL OCCURS, DO THE NECESSARY CHECKS TO FIND THE CAUSE.	
+soon (adv)	TIME (n)	WHEN YOU STOP THE POWER SUPPLY, THE TEMPERATURE WILL DECREASE IN A SHORT TIME.	When you stop the power supply, the temperature will decrease soon.
+	###If it is possible, give the time.	WHEN YOU STOP THE POWER SUPPLY, THE TEMPERATURE WILL DECREASE IN APPROXIMATELY 1 MINUTE.	When you stop the power supply, the temperature will decrease soon.
+SOUND (n)	Something that you can hear	INCREASE THE VOLUME OF THE SOUND.	
+sound (v)	OPERATE (v)	THE ALARM BELL OPERATES.	The alarm bell sounds.

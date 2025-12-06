@@ -1,0 +1,62 @@
+[
+    {
+    "version": "9.0.0",
+    "id": "rule1.2",
+    "name": "words-specified",
+    "text": "Use approved words from the dictionary only as the specified part of speech.",
+    "explanation": "In the dictionary, each approved word has a specified part of speech. When you use an approved word, make sure that you use it only as the specified part of speech.",
+    "tags": ["lexicon", "part-of-speech", "compliance"],
+    "notes": [
+        "Examples illustrate both compliant and non-compliant use.",
+        "Dialect: en-US unless otherwise noted."
+    ],
+    "examples": [
+        {
+        "description": "Using 'test' only as the approved noun (not as a verb).",
+        "notes": [
+            "'test' is approved as a noun in our dictionary.",
+            "If verb use is needed, propose adding 'test' (verb) to the dictionary."
+        ],
+        "ste": [
+            {
+            "text": "Perform a test of the system.",
+            "explanation": "'test' is a noun here, which matches the approved POS."
+            },
+            {
+            "text": "Record the results of the test.",
+            "explanation": "Noun usage; compliant."
+            }
+        ],
+        "nonste": [
+            {
+            "text": "Test the system thoroughly.",
+            "explanation": "Verb usage of 'test' is not approved."
+            },
+            {
+            "text": "We will test the component tomorrow.",
+            "explanation": "Another verb usage; non-compliant."
+            }
+        ]
+        },
+        {
+        "description": "Using 'control' only as the approved verb (not as a noun).",
+        "ste": [
+            {
+            "text": "Control the temperature.",
+            "explanation": "Verb usage is compliant."
+            },
+            {
+            "text": "Control the valve with the handle.",
+            "explanation": "Verb usage; compliant."
+            }
+        ],
+        "nonste": [
+            {
+            "text": "The control is on the front panel.",
+            "explanation": "Noun usage; not approved."
+            }
+        ]
+        }
+    ]
+    }
+]

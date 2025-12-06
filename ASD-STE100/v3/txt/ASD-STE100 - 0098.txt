@@ -1,0 +1,10 @@
+﻿fall (n)	DECREASE (v)	WHEN THE PRESSURE DECREASES, THE INDICATOR SHOWS THAT THERE ISA LEAK.	When there is a fall in pressure, the indicator shows a leak.
+FALL (v), FALLS, FELL, FALLEN	To move down by the force of gravity	MAKE SURE THAT THE TOOLS DO NOT FALL INTO THE ENGINE.	
+false (adj)	INCORRECT (adj)	MAKE SURE THAT THERE ARE NO INCORRECT INDICATIONS ON THE INSTRUMENTS.	Make sure there are no false indications on the instruments.
+falter (v)	SMOOTHLY (adv)	MAKE SURE THAT THE GENERATOR OPERATES SMOOTHLY.	Make sure that the generator does not falter.
+	CONSTANT (adj)	MAKE SURE THAT THE PRESSURE STAYS CONSTANT.	Make sure that the pressure does not falter.
+familiar (adj)	KNOW (v)	ALL PERSONNEL MUST FULLY KNOW THE SAFETY PRECAUTIONS.	All personnel must be thoroughly familiar with the safety precautions.
+FAR (adj) (FARTHER, FARTHEST)	At or to a relatively large distance	REMOVE THE BOLT THAT IS FARTHEST FROM THE CENTER.	
+fashion (n)	PROCEDURE (n)	USE THIS PROCEDURE TO DO THE TASK.	Carry out the task in this fashion.
+FAST (adj) (FASTER, FASTEST)	At high speed	A FAST MOVEMENT OF THE THROTTLE WILL CAUSE A SURGE.	
+fast (adv)	QUICKLY (adv)	DO NOT LET THE CABIN ALTITUDE CHANGE TOO QUICKLY.	Do not let the cabin altitude change too fast.

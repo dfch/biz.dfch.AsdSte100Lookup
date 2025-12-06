@@ -1,0 +1,12 @@
+﻿unlatch (v)	RELEASE (v) OPEN (v)	THE SWITCH MUST RELEASE.	Switch must unlatch.
+		THE SWITCH MUST OPEN.	Switch must unlatch.
+UNLESS (conj)	Except if	DO NOT REMOVE THE ADAPTER FROM THE STABILIZER UNLESS A REPAIR IS NECESSARY.	
+unload (v)	RELEASE (v)	RELEASE THE SPRING TENSION.	Unload the spring tension.
+	LOAD (TN)	REMOVE THE LOAD FROM THE SPRING BALANCE.	Unload the spring balance.
+UNLOCK (v), UNLOCKS, UNLOCKED, UNLOCKED	To release or become released from a locked condition	BEFORE YOU UNLOCK THE DOOR, MAKE SURE THAT THE CABIN DIFFERENTIAL PRESSURE IS ZERO.	
+		IF THE LEVER UNLOCKS DURING THE TEST, SET THE LEVER TO THE LOCKED POSITION AGAIN.	
+unnecessary (adj)	NOT NECESSARY (adj)	REMOVE THE GROUND EQUIPMENT THAT IS NOT NECESSARY.	Remove the unnecessary ground equipment.
+unobstructed (adj)	CLOGGED (adj)	MAKE SURE THAT THE DRAIN OPENINGS ARE NOT CLOGGED.	Make sure that the drain openings are unobstructed.
+	CLEAR (adj)	AN ATTENDANT MUST HAVE A CLEAR VIEW OF THE PERSON IN THE TANK.	An attendant must have an unobstructed view of the person in the tank.
+unpack (v)	REMOVE (v)	REMOVE THE PARTS FROM THE SHIPPING CONTAINER.	Unpack the shipping container.
+unpainted (adj)	BARE (adj)	APPLY PROTECTIVE TREATMENT ON THE BARE SURFACES.	Protect the unpainted surfaces.

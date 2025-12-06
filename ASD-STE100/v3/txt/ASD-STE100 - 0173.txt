@@ -1,0 +1,9 @@
+﻿OUTBOARD (adj)	Farther from the longitudinal axis of something	MEASURE THE MOVEMENT OF THE INBOARD AND OUTBOARD FLAPS.	
+OUTBOARD (adv)	In, or to, a position farther from the longitudinal axis of something	MOVE THE JACK OUTBOARD TO DISENGAGE IT FROM THE JACKING POINT.	
+OUTBOARD OF (Prep)	At a position farther from the longitudinal axis	PUT THE ACCESS PLATFORM IN A POSITION THAT IS OUTBOARD OF THE FLAP TRACK.	
+OUTDOORS (adv)	Not in a building	DO THIS WORK OUTDOORS.	
+OUTER (adj)	Located on the outside or farther from the center of an object	APPLY SEALANT ON THE OUTER SURFACE.	
+outline (v)	GIVE (v)	THIS SECTION GIVES YOU THE PROCEDURES THAT ARE NECESSARY TO FIND THE FAULTS.	This section outlines the procedures needed to find the faults.
+OUTPUT (n)	The data, power, energy that comes out of equipment or a system	THE IMPEDANCE MATCHING TRANSFORMERS SUPPLY 60 W OUTPUT TO THE LOUDSPEAKERS.	
+outside (adj)	EXTERNAL (adj)	THE EXTERNAL TEMPERATURE IS SHOWN ON THE CENTRAL DISPLAY UNIT.	The outside temperature is indicated on the central display unit.
+	OUTER (adj)	CLEAN THE OUTER SURFACE WITH WARM WATER.	Clean the outside surface with warm water.

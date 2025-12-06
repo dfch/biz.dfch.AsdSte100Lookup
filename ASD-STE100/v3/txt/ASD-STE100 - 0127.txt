@@ -1,0 +1,8 @@
+﻿impact (v)	HIT (v)	DO NOT LET THE VIBRATOR TOOL HIT THE SURFACE OF THE SEAL.	Do not allow the vibrator tool to impact the seal surface.
+	EFFECT (n)	THESE REPAIRS HAVE AN EFFECT ON THE PERFORMANCE OF THE ENGINE.	These repairs impact engine performance.
+impair (v)	DECREASE (v)	THE LIFE OF THE UNIT WILL DECREASE IF YOU LET THE UNIT BECOME DIRTY.	The life of the unit is impaired if the unit is allowed to get dirty.
+	OPERATE INCORRECTLY (v)	DAMAGE WILL CAUSE THE INSTRUMENT TO OPERATE INCORRECTLY.	Damage will impair operation of the instrument.
+	CAUSE DAMAGE (n)	CONTAMINATION OF THE GREASE CAN CAUSE DAMAGE TO THE BEARING.	Contaminants in the grease may impair the bearing.
+implement (v)	DO (v)	IF THE TEST DOES NOT GIVE SATISFACTORY RESULTS, DO THE FAULT ISOLATION PROCEDURE.	If the test does not give satisfactory results, implement the fault isolation procedure.
+implementation (n)	DO (v)	IT IS MANDATORY TO DO THE PROCEDURE IN THIS SERVICE BULLETIN.	The implementation of the procedure in this Service Bulletin is mandatory.
+IMPORTANT (adj)	That has a significant effect	THESE PROCEDURES ARE VERY IMPORTANT.	

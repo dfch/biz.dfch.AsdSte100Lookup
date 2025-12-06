@@ -1,0 +1,11 @@
+﻿size (n)	DIMENSION (n)	THESE PARTS HAVE DIFFERENT DIMENSIONS.	These parts are of different sizes.
+skid (v)	SKID (TN)	THIS INDICATOR SHOWS THAT THE CAR IS IN A SKID.	This indicator indicates that the car is skidding.
+slack (adj)	TENSION (TN)	MAKE SURE THAT THE TENSION IN THE CONTROL CABLES IS CORRECT.	Check for slack control cables.
+slack (n)	TENSION (TN)	MAKE SURE THAT THE TENSION IN THE CONTROL CABLES IS CORRECT.	Check for slack in the control cables.
+slacken (v)	TENSION (TN)	RELEASE THE TENSION IN THE CONTROL CABLES.	Slacken the control cables.
+slackness (n)	TENSION (TN)	MAKE SURE THAT THE TENSION IN THE CABLES IS CORRECT.	Make sure there is no slackness in the cables.
+slave (v)	CONTROL (v)	THE PILOT'S INDICATORS CONTROL THE COPILOT'S INDICATORS.	The copilot's indicators are slaved to the pilot's indicators.
+slide (v)	MOVE (v)	MOVE THE COMPUTER HORIZONTALLY TO PREVENT DAMAGE.	Slide the computer horizontally to avoid damage.
+slight (adj)	SMALL (adj)	IF THE LEAKAGE IS SMALL, TORQUE THE CONNECTION TO 4.0 Nm. THEN, DO THE TEST AGAIN.	If slight leakage is found, torque the connection to 4.0 Nm. Then repeat the test.
+	LIGHT (adj)	APPLY A LIGHT FORCE TO COMPRESS THE SPRING.	Apply a slight force to compress the spring.
+slightly (adv)	SMALL (adj)	MOVE THE ADAPTER A SMALL DISTANCE FORWARD.	Move the adapter slightly forward.
