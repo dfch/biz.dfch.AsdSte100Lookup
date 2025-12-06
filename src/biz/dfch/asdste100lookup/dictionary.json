@@ -41490,16 +41490,27 @@
     "status": "rejected",
     "name": "lack",
     "type_": "n",
-    "meanings": [
+    "meanings": [],
+    "spellings": [],
+    "alternatives": [
       {
-        "value": "NOT SUFFICIENT",
-        "ste_example": "DAMAGE CAN OCCUR TO THE PUMP IF THERE IS NOT SUFFICIENT OIL IN THE RESERVOIR.",
-        "nonste_example": "Damage can occur to the pump if there is a lack of oil in the reservoir.",
+        "status": "approved",
+        "name": "NOT SUFFICIENT",
+        "type_": "adj",
+        "meanings": [],
+        "spellings": [],
+        "alternatives": [],
+        "source": "STE100:9",
+        "category": "0",
+        "ste_example": [
+          "DAMAGE CAN OCCUR TO THE PUMP IF THERE IS NOT SUFFICIENT OIL IN THE RESERVOIR."
+        ],
+        "nonste_example": [
+          "Damage can occur to the pump if there is a lack of oil in the reservoir."
+        ],
         "note": null
       }
     ],
-    "spellings": [],
-    "alternatives": [],
     "source": "STE100:9",
     "category": "0",
     "ste_example": [],
