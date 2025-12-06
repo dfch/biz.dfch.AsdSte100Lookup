@@ -46,15 +46,12 @@ class FilterCommand(CommandBase):
                 self._filter[WordFilterType.CATEGORY] = ""
                 self._filter[WordFilterType.NOTE] = ""
 
-                return
-
             case WordFilterType.LIST:
                 for key, value in self._filter.items():
                     if isinstance(value, bool):
                         print(key, value)
                     elif isinstance(value, str) and "" != value.strip():
                         print(key, value)
-                return
 
             case (
                 WordFilterType.TYPE
@@ -66,7 +63,6 @@ class FilterCommand(CommandBase):
                 assert isinstance(value, str) and "" != value.strip()
 
                 self._filter[type_] = self.value
-                return
 
             case _:
                 raise ValueError(
