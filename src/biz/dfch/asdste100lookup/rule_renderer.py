@@ -29,7 +29,10 @@ class RuleRenderer:  # pylint: disable=R0903
     """Shows STE100 rules on the console."""
 
     def show(
-        self, console: Console, rules: list[Rule], is_summary_only: bool = False
+        self,
+        console: Console,
+        rules: list[Rule],
+        show_heading_only: bool = False
     ) -> None:
         """Shows rules on the console."""
 
@@ -54,7 +57,7 @@ class RuleRenderer:  # pylint: disable=R0903
             console.print(md)
             console.print("")
 
-            if is_summary_only:
+            if show_heading_only:
                 continue
 
             for content in rule.contents:
@@ -66,10 +69,8 @@ class RuleRenderer:  # pylint: disable=R0903
                     case RuleContentType.EXAMPLE:
                         txt = f"[green]{content.data}[/green]"
                         console.print(
-                            Panel(txt,
-                                  title="STE",
-                                  title_align="left",
-                                  expand=False)
+                            Panel(txt, title="STE",
+                                  title_align="left", expand=False)
                         )
                         console.print("")
                     case RuleContentType.STE:

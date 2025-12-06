@@ -21,6 +21,7 @@ import re
 from ..rule_renderer import RuleRenderer
 from ..rule import Rule
 
+from .command_query_type import CommandQueryType
 from .erase_console_buffer_command import EraseConsoleBufferCommand
 
 
@@ -28,15 +29,49 @@ from .erase_console_buffer_command import EraseConsoleBufferCommand
 class RuleCommand(EraseConsoleBufferCommand):
     """Represents the rule command."""
 
+    _type_: CommandQueryType
+    _show_heading_only: bool
+
+    def __init__(
+        self,
+        type_: CommandQueryType,
+        value: str,
+        show_heading_only: bool = False,
+    ) -> None:
+
+        super().__init__(value)
+
+        self._type_ = type_
+        self._show_heading_only = show_heading_only
+
     def invoke(self, console, dictionary, rules) -> None:
         super().invoke(console, dictionary, rules)
 
+        regex = re.compile(self.value, re.IGNORECASE)
+
         selected_rules: list[Rule] = []
         for rule in rules:
-            if re.search(self.value, rule.id_, re.IGNORECASE):
+            match self._type_:
+                case CommandQueryType.ID:
+                    value = rule.id_
+                case CommandQueryType.NAME:
+                    value = rule.name
+                case CommandQueryType.SECTION:
+                    value = rule.section
+                case CommandQueryType.CATEGORY:
+                    value = rule.category
+                case CommandQueryType.SUMMARY:
+                    value = rule.summary
+                case _:
+                    raise ValueError(
+                        f"Invalid {CommandQueryType.__name__}: "
+                        f"'{self._type_}'."
+                    )
+            if regex.search(value):
                 selected_rules.append(rule)
 
         RuleRenderer().show(
             console=console,
-            rules=selected_rules,  # pylint: disable=R0801
-            is_summary_only=False)
+            rules=selected_rules,
+            show_heading_only=self._show_heading_only,
+        )

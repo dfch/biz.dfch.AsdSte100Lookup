@@ -16,7 +16,6 @@
 """WordCategoryCommand class."""
 
 from dataclasses import dataclass
-from enum import auto, Enum
 import re
 
 from biz.dfch.logging import log  # pylint: disable=E0401
@@ -24,22 +23,17 @@ from biz.dfch.logging import log  # pylint: disable=E0401
 from ..technical_word_category import TechnicalWordCategory
 from ..word import Word
 
+from .command_query_type import CommandQueryType
 from .dictionary_command import DictionaryCommand
-
-
-class WordCategoryCommandQueryType(Enum):
-    """Specifies the query type for `WordCategoryCommand`."""
-    ID = auto()
-    NAME = auto()
 
 
 @dataclass
 class WordCategoryCommand(DictionaryCommand):
     """Represents the category command."""
 
-    type_: WordCategoryCommandQueryType
+    type_: CommandQueryType
 
-    def __init__(self, type_: WordCategoryCommandQueryType, value: str) -> None:
+    def __init__(self, type_: CommandQueryType, value: str) -> None:
         super().__init__(value)
 
         self.type_ = type_
@@ -47,22 +41,21 @@ class WordCategoryCommand(DictionaryCommand):
     def invoke(self, console, dictionary, rules) -> None:
         super().invoke(console, dictionary, rules)
 
-        if WordCategoryCommandQueryType.NAME == self.type_:
+        if CommandQueryType.NAME == self.type_:
             keys = TechnicalWordCategory.get_matching_keys(self.value)
-            print(f"NAME: '[{keys}]'.")
 
-        if WordCategoryCommandQueryType.ID == self.type_:
+        if CommandQueryType.ID == self.type_:
             regex = re.compile(self.value, re.IGNORECASE)
 
         matching_words: dict[int, Word] = {}
         try:
             for word in dictionary:
-                if WordCategoryCommandQueryType.NAME == self.type_:
+                if CommandQueryType.NAME == self.type_:
                     if word.category in keys:
                         matching_words[id(word)] = word
                     continue
 
-                if WordCategoryCommandQueryType.ID == self.type_:
+                if CommandQueryType.ID == self.type_:
                     if regex.search(word.category):
                         matching_words[id(word)] = word
                     continue

@@ -23,6 +23,7 @@ import tempfile
 
 
 from .commands.command_base import CommandBase
+from .commands.command_query_type import CommandQueryType
 from .commands.empty_command import EmptyCommand
 from .commands.exit_command import ExitCommand
 from .commands.help_command import HelpCommand
@@ -30,13 +31,16 @@ from .commands.rule_command import RuleCommand
 from .commands.save_command import SaveCommand
 from .commands.unknown_command import UnknownCommand
 from .commands.word_category_command import WordCategoryCommand
-from .commands.word_category_command import WordCategoryCommandQueryType
 
 
 class MainPrompt:  # pylint: disable=R0903
     """Represents the main prompt processing."""
 
-    _start_of_command = "!"
+    _start_of_command: str = "!"
+    _category_command_names = ["category", "c"]
+    _rule_command_names = ["rule", "r"]
+    _save_command_names = ["save", "s"]
+    _filter_command_names = ["filter", "f"]
 
     _parser: argparse.ArgumentParser
 
@@ -63,19 +67,19 @@ class MainPrompt:  # pylint: disable=R0903
         )
 
         subparsers_action = result.add_subparsers(
-            dest="command",
-            required=True,
-            help="Available commands."
+            dest="command", required=True, help="Available commands."
         )
         category_parser = subparsers_action.add_parser(
-            "category",
-            aliases=["c"],
-            help="This command shows all words from the specified category."
+            self._category_command_names[0],
+            aliases=self._category_command_names[1:],
+            help="This command shows all words from the specified category.",
         )
 
         category_parser_args = category_parser.add_mutually_exclusive_group(
-            required=True)
+            required=True
+        )
         category_parser_args.add_argument(
+            "-i",
             "--id",
             help="Id (short name) of the word category to query.",
         )
@@ -86,15 +90,52 @@ class MainPrompt:  # pylint: disable=R0903
             help="Name of the word category to query.",
         )
 
-        group = result.add_mutually_exclusive_group()
-
-        group.add_argument(
-            "-r",
-            "--rule",
-            dest="rule",
-            type=str,
+        rule_parser = subparsers_action.add_parser(
+            self._rule_command_names[0],
+            aliases=self._rule_command_names[1:],
             help="This command shows the specified rule.",
         )
+
+        rule_parser_args = rule_parser.add_mutually_exclusive_group(
+            required=True
+        )
+        rule_parser_args.add_argument(
+            "-i",
+            "--id",
+            help="Id of the rule to query.",
+        )
+
+        rule_parser_args.add_argument(
+            "-n",
+            "--name",
+            help="Name of the rule to query.",
+        )
+
+        rule_parser_args.add_argument(
+            "-s",
+            "--section",
+            help="Section of the rule to query.",
+        )
+
+        rule_parser_args.add_argument(
+            "-c",
+            "--category",
+            help="Category of the rule to query.",
+        )
+
+        rule_parser_args.add_argument(
+            "--summary",
+            help="Summary of the rule to query.",
+        )
+
+        rule_parser.add_argument(
+            "-b",
+            "--brief",
+            action="store_true",
+            help="Display only a brief overview of matching rules.",
+        )
+
+        group = result.add_mutually_exclusive_group()
 
         file_name = Path(tempfile.gettempdir()) / "asdste100.svg"
         group.add_argument(
@@ -152,16 +193,30 @@ class MainPrompt:  # pylint: disable=R0903
             return HelpCommand(self._parser.format_help())
 
         if ns.command is not None:
-            if ns.command in ["category", "c"]:
-                if ns.name is not None:
-                    return WordCategoryCommand(
-                        WordCategoryCommandQueryType.NAME, ns.name)
+            if ns.command in self._category_command_names:
                 if ns.id is not None:
-                    return WordCategoryCommand(
-                        WordCategoryCommandQueryType.ID, ns.id)
+                    return WordCategoryCommand(CommandQueryType.ID, ns.id)
+                if ns.name is not None:
+                    return WordCategoryCommand(CommandQueryType.NAME, ns.name)
 
-        if ns.rule is not None:
-            return RuleCommand(ns.rule)
+            if ns.command in self._rule_command_names:
+                if ns.id is not None:
+                    return RuleCommand(CommandQueryType.ID, ns.id)
+                if ns.name is not None:
+                    return RuleCommand(CommandQueryType.NAME, ns.name)
+                if ns.section is not None:
+                    return RuleCommand(CommandQueryType.SECTION, ns.section)
+                if ns.category is not None:
+                    return RuleCommand(CommandQueryType.CATEGORY, ns.category)
+                if ns.summary is not None:
+                    return RuleCommand(CommandQueryType.SUMMARY, ns.summary)
+
+            if ns.command in self._save_command_names:
+                if ns.name is not None:
+                    pass
+
+        # if ns.rule is not None:
+        #     return RuleCommand(ns.rule)
         if ns.save is not None:
             return SaveCommand(ns.save)
         if ns.exit is not None:

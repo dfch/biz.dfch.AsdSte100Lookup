@@ -60,6 +60,10 @@ class App:  # pylint: disable=R0903
             # "markdown.h1": "bold magenta",
             # "markdown.h2": "bold cyan",
             "markdown.code": "red",
+            # Not really documented. We take the defintion from rich:
+            # DEFAULT_STYLES: Dict[str, Style]
+            # "markdown.link_url": Style(color="blue", underline=True), ...
+            "markdown.link_url": "cyan",
         }
     )
 
@@ -112,8 +116,7 @@ class App:  # pylint: disable=R0903
         console = Console(theme=self._rule_theme, record=True)
 
         if not (
-            hasattr(self._args, 'no_random_word') and
-            self._args.no_random_word
+            hasattr(self._args, "no_random_word") and self._args.no_random_word
         ):
             # Display a random word at startup.
             while True:
@@ -207,15 +210,15 @@ class App:  # pylint: disable=R0903
         RuleRenderer().show(
             console=console,
             rules=selected_rules,
-            is_summary_only=self._args.summary
+            show_heading_only=self._args.summary,
         )
 
     def on_dictionary(self, dictionary_file_name: str) -> None:
         """This is the handler for the `dictionary` command."""
 
         assert (
-            isinstance(dictionary_file_name, str) and
-            "" != dictionary_file_name.strip()
+            isinstance(dictionary_file_name, str)
+            and "" != dictionary_file_name.strip()
         )
 
         assert dictionary_file_name is not None and "" != dictionary_file_name
@@ -230,9 +233,9 @@ class App:  # pylint: disable=R0903
             dictionary_json = json.load(f)
 
         word_list = [
-            from_dict(data_class=Word,
-                      data=item,
-                      config=self._dictionary_config)
+            from_dict(
+                data_class=Word, data=item, config=self._dictionary_config
+            )
             for item in dictionary_json
         ]
         dictionary = sorted(word_list, key=lambda e: e.name.lower())
