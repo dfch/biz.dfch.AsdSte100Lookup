@@ -17,6 +17,8 @@
 
 from dataclasses import dataclass
 
+from biz.dfch.logging import log
+
 from .command_base import CommandBase
 
 
@@ -27,4 +29,4 @@ class EmptyCommand(CommandBase):
     def invoke(self, console, dictionary, rules) -> None:
         super().invoke(console, dictionary, rules)
 
-        console.print("Exiting ...")
+        log.debug("Exiting ...")

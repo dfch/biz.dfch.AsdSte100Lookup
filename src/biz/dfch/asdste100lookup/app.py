@@ -141,7 +141,6 @@ class App:  # pylint: disable=R0903
             if not isinstance(command, EmptyCommand):
                 continue
 
-            log.debug("Exiting ...")
             break
 
     def on_parse(self) -> None:

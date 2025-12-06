@@ -22,7 +22,6 @@ from pathlib import Path
 import shlex
 import tempfile
 
-
 from .commands.command_base import CommandBase
 from .commands.command_query_type import CommandQueryType
 from .commands.empty_command import EmptyCommand
@@ -41,6 +40,7 @@ class MainPrompt:  # pylint: disable=R0903
     _category_command_names = ["category", "c"]
     _rule_command_names = ["rule", "r"]
     _save_command_names = ["save", "s"]
+    _exit_command_names = ["exit", "x"]
     _filter_command_names = ["filter", "f"]
 
     _parser: argparse.ArgumentParser
@@ -63,7 +63,7 @@ class MainPrompt:  # pylint: disable=R0903
             description="Enter a search term (regular expression) "
             "or press <ENTER> to exit. "
             f"Or start a command with '{self._start_of_command}' "
-            "(eg. '! save').",
+            "(eg. '! exit').",
             add_help=True,
         )
 
@@ -159,12 +159,9 @@ class MainPrompt:  # pylint: disable=R0903
             help="Automatically select a unique name for the file.",
         )
 
-        group = result.add_mutually_exclusive_group()
-
-        group.add_argument(
-            "--exit",
-            dest="exit",
-            action="store_true",
+        _ = subparsers_action.add_parser(
+            self._exit_command_names[0],
+            aliases=self._exit_command_names[1:],
             help="This command stops the programme.",
         )
 
@@ -236,7 +233,7 @@ class MainPrompt:  # pylint: disable=R0903
                     file_fullname = Path(tempfile.gettempdir()) / file_name
                     return SaveCommand(str(file_fullname))
 
-        if ns.exit is not None:
-            return ExitCommand(ns.exit)
+            if ns.command in self._exit_command_names:
+                return ExitCommand(ns.command)
 
         return UnknownCommand(text)
