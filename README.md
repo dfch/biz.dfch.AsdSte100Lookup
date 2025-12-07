@@ -69,6 +69,31 @@ This is mainly used to:
 * enable the tests find the `src`
 * auto-complete modules starting with `biz....`
 
+## Cloning the repository and setting up Python
+
+You can clone the repository via these commands:
+
+```bash
+git clone https://github.com/dfch/biz.dfch.AsdSte100Lookup.git
+cd biz.dfchAsdSte100Lookup
+
+python3.11 -m venv venv
+
+# On Linux (Debian) run:
+source venv/bin/activate
+
+# On Windows with PowerShell run:
+# venv\Scripts\activate.ps1
+
+# On Windows with CMD run:
+# venv\Scripts\activate.bat
+```
+
+* I use `venv` for the Windows-based venv and `venvdeb` for the WSL2-based Debian environment.
+* On Windows I use Python version `3.12.11`.
+* On Debian I use Python version `3.11.2`.
+* The difference in versioning is for no particular reason.
+
 ## Build as one-file executable
 
 1. Download the files from the repository into a directory on your system. We refer to this directory as `<prj-root>`.
@@ -95,6 +120,10 @@ This is mainly used to:
   -p "./src" \
   -p "./src/biz" \
   ./src/biz/__main__.py
+```
+
+```bash
+pyinstaller --clean --onefile --name AsdSte100Lookup --add-data "./src/logging.conf:." --add-data "./src/biz/dfch/asdste100lookup:./biz/dfch/asdste100lookup/" -p "./src" -p "./src/biz" ./src/biz/__main__.py
 ```
 
 ```bash
