@@ -26,3 +26,4 @@ class CommandQueryType(Enum):
     SECTION = auto()
     CATEGORY = auto()
     SUMMARY = auto()
+    ALL = auto()

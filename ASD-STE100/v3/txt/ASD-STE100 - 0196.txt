@@ -1,5 +1,5 @@
 ﻿re- (prefix)	###In general, use the word AGAIN (adv) or BACK (adv) with the basic word to replace words that have “re-” as a prefix.
-reach (v)	GET (v)	WHEN YOU GET THE When the correct CORRECT PRESSURE, pressure is reached, CLOSE THE VALVE. close the valve.
+reach (v)	GET (v)	WHEN YOU GET THE CORRECT PRESSURE, CLOSE THE VALVE.	When the correct pressure is reached, close the valve.
 	TOUCH (v)	MAKE SURE THAT THE EXTENSION BAR TOUCHES THE TARGET PLATE.	Make sure that the extension bar reaches the target plate.
 	BE (v)	WHEN THE FLAPS ARE AT THE 30 DEGREE POSITION, INSTALL THE RIGGING PIN.	When the flaps reach the 30 degree position, install the rigging pin.
 reactivate (v)	ACTIVATE (v)	ACTIVATE THE MODE AGAIN.	Reactivate the mode.

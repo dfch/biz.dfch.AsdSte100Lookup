@@ -34129,16 +34129,27 @@
     "status": "rejected",
     "name": "greatly",
     "type_": "adv",
-    "meanings": [
+    "meanings": [],
+    "spellings": [],
+    "alternatives": [
       {
-        "value": "VERY MUCH",
-        "ste_example": "THIS METHOD CAN INCREASE THE RISK OF INJURY VERY MUCH.",
-        "nonste_example": "This method can greatly increase the risk of injury.",
+        "status": "approved",
+        "name": "VERY MUCH",
+        "type_": "adj",
+        "meanings": [],
+        "spellings": [],
+        "alternatives": [],
+        "source": "STE100:9",
+        "category": "0",
+        "ste_example": [
+          "THIS METHOD CAN INCREASE THE RISK OF INJURY VERY MUCH."
+        ],
+        "nonste_example": [
+          "This method can greatly increase the risk of injury."
+        ],
         "note": null
       }
     ],
-    "spellings": [],
-    "alternatives": [],
     "source": "STE100:9",
     "category": "0",
     "ste_example": [],
@@ -50420,16 +50431,27 @@
     "status": "rejected",
     "name": "overfill",
     "type_": "v",
-    "meanings": [
+    "meanings": [],
+    "spellings": [],
+    "alternatives": [
       {
-        "value": "TOO MUCH",
-        "ste_example": "DO NOT PUT TOO MUCH FLUID IN THE LUBRICATION HOLE.",
-        "nonste_example": "Do not overfill the lubrication hole.",
+        "status": "approved",
+        "name": "TOO MUCH",
+        "type_": "adj",
+        "meanings": [],
+        "spellings": [],
+        "alternatives": [],
+        "source": "STE100:9",
+        "category": "0",
+        "ste_example": [
+          "DO NOT PUT TOO MUCH FLUID IN THE LUBRICATION HOLE."
+        ],
+        "nonste_example": [
+          "Do not overfill the lubrication hole."
+        ],
         "note": null
       }
     ],
-    "spellings": [],
-    "alternatives": [],
     "source": "STE100:9",
     "category": "0",
     "ste_example": [],
@@ -50445,16 +50467,27 @@
     "status": "rejected",
     "name": "overfull",
     "type_": "adj",
-    "meanings": [
+    "meanings": [],
+    "spellings": [],
+    "alternatives": [
       {
-        "value": "TOO FULL",
-        "ste_example": "IF THE TANK IS TOO FULL, YOU CANNOT PRESSURIZE IT CORRECTLY.",
-        "nonste_example": "If the tank is overfull, you cannot pressurize it correctly.",
+        "status": "approved",
+        "name": "TOO FULL",
+        "type_": "adj",
+        "meanings": [],
+        "spellings": [],
+        "alternatives": [],
+        "source": "STE100:9",
+        "category": "0",
+        "ste_example": [
+          "IF THE TANK IS TOO FULL, YOU CANNOT PRESSURIZE IT CORRECTLY."
+        ],
+        "nonste_example": [
+          "If the tank is overfull, you cannot pressurize it correctly."
+        ],
         "note": null
       }
     ],
-    "spellings": [],
-    "alternatives": [],
     "source": "STE100:9",
     "category": "0",
     "ste_example": [],
@@ -50506,16 +50539,27 @@
     "status": "rejected",
     "name": "overheat",
     "type_": "v",
-    "meanings": [
+    "meanings": [],
+    "spellings": [],
+    "alternatives": [
       {
-        "value": "TOO HOT",
-        "ste_example": "IF YOU PRESSURIZE THE OXYGEN BOTTLE QUICKLY, IT WILL BECOME TOO HOT.",
-        "nonste_example": "Rapid charging overheats the oxygen bottle.",
+        "status": "approved",
+        "name": "TOO HOT",
+        "type_": "adj",
+        "meanings": [],
+        "spellings": [],
+        "alternatives": [],
+        "source": "STE100:9",
+        "category": "0",
+        "ste_example": [
+          "IF YOU PRESSURIZE THE OXYGEN BOTTLE QUICKLY, IT WILL BECOME TOO HOT."
+        ],
+        "nonste_example": [
+          "Rapid charging overheats the oxygen bottle."
+        ],
         "note": null
       }
     ],
-    "spellings": [],
-    "alternatives": [],
     "source": "STE100:9",
     "category": "0",
     "ste_example": [],
@@ -51105,16 +51149,27 @@
     "status": "rejected",
     "name": "partly",
     "type_": "adv",
-    "meanings": [
+    "meanings": [],
+    "spellings": [],
+    "alternatives": [
       {
-        "value": "NOT FULLY",
-        "ste_example": "IF THE VALVE DOES NOT FULLY OPEN, EXAMINE THE POSITIONS OF THE END STOPS ON THE ACTUATOR.",
-        "nonste_example": "If the valve opens only partly, examine the positions of the end stops on the actuator.",
+        "status": "approved",
+        "name": "NOT FULLY",
+        "type_": "adv",
+        "meanings": [],
+        "spellings": [],
+        "alternatives": [],
+        "source": "STE100:9",
+        "category": "0",
+        "ste_example": [
+          "IF THE VALVE DOES NOT FULLY OPEN, EXAMINE THE POSITIONS OF THE END STOPS ON THE ACTUATOR."
+        ],
+        "nonste_example": [
+          "If the valve opens only partly, examine the positions of the end stops on the actuator."
+        ],
         "note": null
       }
     ],
-    "spellings": [],
-    "alternatives": [],
     "source": "STE100:9",
     "category": "0",
     "ste_example": [],
@@ -56568,9 +56623,11 @@
         "source": "STE100:9",
         "category": "0",
         "ste_example": [
-          "WHEN YOU GET THE When the correct CORRECT PRESSURE, pressure is reached, CLOSE THE VALVE. close the valve."
+          "WHEN YOU GET THE CORRECT PRESSURE, CLOSE THE VALVE."
         ],
-        "nonste_example": [],
+        "nonste_example": [
+          "When the correct pressure is reached, close the valve."
+        ],
         "note": null
       },
       {
@@ -70397,22 +70454,44 @@
     "status": "rejected",
     "name": "successful",
     "type_": "adj",
-    "meanings": [
+    "meanings": [],
+    "spellings": [],
+    "alternatives": [
       {
-        "value": "CORRECT (adj) SATISFACTORY (adj)",
-        "ste_example": "IF THE TEST RESULTS ARE NOT CORRECT, REPLACE THE UNIT.",
-        "nonste_example": "If the test is not successful, replace the unit.",
+        "status": "approved",
+        "name": "CORRECT",
+        "type_": "adj",
+        "meanings": [],
+        "spellings": [],
+        "alternatives": [],
+        "source": "STE100:9",
+        "category": "0",
+        "ste_example": [
+          "IF THE TEST RESULTS ARE NOT CORRECT, REPLACE THE UNIT."
+        ],
+        "nonste_example": [
+          "If the test is not successful, replace the unit."
+        ],
         "note": null
       },
       {
-        "value": "\u200b",
-        "ste_example": "IF THE TEST RESULTS ARE NOT SATISFACTORY, REPLACE THE UNIT.",
-        "nonste_example": "If the test is not successful, replace the unit.",
+        "status": "approved",
+        "name": "SATISFACTORY",
+        "type_": "adj",
+        "meanings": [],
+        "spellings": [],
+        "alternatives": [],
+        "source": "STE100:9",
+        "category": "0",
+        "ste_example": [
+          "IF THE TEST RESULTS ARE NOT SATISFACTORY, REPLACE THE UNIT."
+        ],
+        "nonste_example": [
+          "If the test is not successful, replace the unit."
+        ],
         "note": null
       }
     ],
-    "spellings": [],
-    "alternatives": [],
     "source": "STE100:9",
     "category": "0",
     "ste_example": [],
@@ -77308,22 +77387,44 @@
     "status": "rejected",
     "name": "upon",
     "type_": "prep",
-    "meanings": [
+    "meanings": [],
+    "spellings": [],
+    "alternatives": [
       {
-        "value": "ON (prep) WHEN (conj)",
-        "ste_example": "PUT THE OHMMETER ON A FLAT SURFACE.",
-        "nonste_example": "Put the ohmmeter upon a flat surface.",
+        "status": "approved",
+        "name": "ON",
+        "type_": "prep",
+        "meanings": [],
+        "spellings": [],
+        "alternatives": [],
+        "source": "STE100:9",
+        "category": "0",
+        "ste_example": [
+          "PUT THE OHMMETER ON A FLAT SURFACE."
+        ],
+        "nonste_example": [
+          "Put the ohmmeter upon a flat surface."
+        ],
         "note": null
       },
       {
-        "value": "\u200b",
-        "ste_example": "WHEN YOU SET THE LEVER TO \u201cUP,\u201d THE HYDRAULIC PRESSURE MUST DECREASE.",
-        "nonste_example": "Upon UP selection, the hydraulic pressure must decrease.",
+        "status": "approved",
+        "name": "WHEN",
+        "type_": "conj",
+        "meanings": [],
+        "spellings": [],
+        "alternatives": [],
+        "source": "STE100:9",
+        "category": "0",
+        "ste_example": [
+          "WHEN YOU SET THE LEVER TO \u201cUP,\u201d THE HYDRAULIC PRESSURE MUST DECREASE."
+        ],
+        "nonste_example": [
+          "Upon UP selection, the hydraulic pressure must decrease."
+        ],
         "note": null
       }
     ],
-    "spellings": [],
-    "alternatives": [],
     "source": "STE100:9",
     "category": "0",
     "ste_example": [],

@@ -13,22 +13,15 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-"""Rule class."""
+"""RuleRenderType class."""
 
-from dataclasses import dataclass, field
-
-from .rule_content_base import RuleContentBase
+from enum import Enum, auto
 
 
-@dataclass
-class Rule:  # pylint: disable=R0902
-    """Represents a ASD-STE100 rule."""
+class RuleRenderType(Enum):
+    """Defines the possible display options for rule display."""
 
-    type_: str
-    id_: str
-    ref: str
-    section: str
-    category: str
-    name: str
-    summary: str
-    contents: list[RuleContentBase] = field(default_factory=list)
+    DEFAULT = auto()
+    LIST = auto()
+    BRIEF = auto()
+    JSON = auto()

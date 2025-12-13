@@ -29,6 +29,7 @@ from .commands.exit_command import ExitCommand
 from .commands.filter_command import FilterCommand
 from .commands.help_command import HelpCommand
 from .commands.rule_command import RuleCommand
+from .rule_render_type import RuleRenderType
 from .commands.save_command import SaveCommand
 from .commands.unknown_command import UnknownCommand
 from .commands.word_category_command import WordCategoryCommand
@@ -135,11 +136,29 @@ class MainPrompt:  # pylint: disable=R0903
             help="Summary of the rule to query.",
         )
 
-        rule_parser.add_argument(
+        rule_parser_args.add_argument(
+            "-a",
+            "--all",
+            action="store_true",
+            help="Overview of all rules.",
+        )
+
+        rule_parser_output_args = rule_parser.add_mutually_exclusive_group(
+            required=False
+        )
+
+        rule_parser_output_args.add_argument(
+            "-l",
+            "--list",
+            action="store_true",
+            help="Only list the id and name of the matching rules.",
+        )
+
+        rule_parser_output_args.add_argument(
             "-b",
             "--brief",
             action="store_true",
-            help="Display only a brief overview of matching rules.",
+            help="Only list a brief overview of the matching rules.",
         )
 
         save_parser = subparsers_action.add_parser(
@@ -270,63 +289,93 @@ class MainPrompt:  # pylint: disable=R0903
         # Suppress SONAR warning, as we expect this exception from ArgParse, if
         # the user types in something else than a defined command or argument.
         # In that case, we want to parse the contents and display a word from
-        # the dicionary. This is intended.
+        # the dictionary. This is intended.
         except SystemExit as ex:  # NOSONAR
             if "0" == str(ex):
                 return HelpCommand("")
 
             return HelpCommand(self._parser.format_help())
 
-        if ns.command is not None:
-            if ns.command in self._category_command_names:
-                if ns.id is not None:
-                    return WordCategoryCommand(CommandQueryType.ID, ns.id)
-                if ns.name is not None:
-                    return WordCategoryCommand(CommandQueryType.NAME, ns.name)
+        if ns.command is None:
+            return UnknownCommand(text)
 
-            if ns.command in self._rule_command_names:
-                if ns.id is not None:
-                    return RuleCommand(CommandQueryType.ID, ns.id)
-                if ns.name is not None:
-                    return RuleCommand(CommandQueryType.NAME, ns.name)
-                if ns.section is not None:
-                    return RuleCommand(CommandQueryType.SECTION, ns.section)
-                if ns.category is not None:
-                    return RuleCommand(CommandQueryType.CATEGORY, ns.category)
-                if ns.summary is not None:
-                    return RuleCommand(CommandQueryType.SUMMARY, ns.summary)
+        if ns.command in self._category_command_names:
+            if ns.id is not None:
+                return WordCategoryCommand(CommandQueryType.ID, ns.id)
+            if ns.name is not None:
+                return WordCategoryCommand(CommandQueryType.NAME, ns.name)
 
-            if ns.command in self._save_command_names:
-                if ns.name is not None:
-                    return SaveCommand(ns.name)
-                if ns.auto is not None and ns.auto:
-                    prefix = "asdste100"
-                    extension = ".svg"
-                    now = datetime.now()
-                    iso8601 = now.strftime("%Y-%m-%d-%H-%M-%S")
-                    file_name = f"{prefix}-{iso8601}{extension}"
-                    file_fullname = Path(tempfile.gettempdir()) / file_name
-                    return SaveCommand(str(file_fullname))
+        if ns.command in self._rule_command_names:
+            display_type = RuleRenderType.DEFAULT
+            if ns.list is not None and True is ns.list:
+                display_type = RuleRenderType.LIST
+            if ns.brief is not None and True is ns.brief:
+                display_type = RuleRenderType.BRIEF
 
-            if ns.command in self._exit_command_names:
-                return ExitCommand(ns.command)
+            if ns.id is not None:
+                return RuleCommand(
+                    CommandQueryType.ID, ns.id, display_type=display_type
+                )
+            if ns.name is not None:
+                return RuleCommand(
+                    CommandQueryType.NAME, ns.name, display_type=display_type
+                )
+            if ns.section is not None:
+                return RuleCommand(
+                    CommandQueryType.SECTION,
+                    ns.section,
+                    display_type=display_type,
+                )
+            if ns.category is not None:
+                return RuleCommand(
+                    CommandQueryType.CATEGORY,
+                    ns.category,
+                    display_type=display_type,
+                )
+            if ns.summary is not None:
+                return RuleCommand(
+                    CommandQueryType.SUMMARY,
+                    ns.summary,
+                    display_type=display_type,
+                )
+            if ns.all is not None:
+                return RuleCommand(
+                    CommandQueryType.ALL,
+                    "",
+                    display_type=RuleRenderType.LIST,
+                )
 
-            if ns.command in self._filter_command_names:
-                if ns.reset is not None and ns.reset:
-                    return FilterCommand(WordFilterType.RESET, "")
-                if ns.list is not None and ns.list:
-                    return FilterCommand(WordFilterType.LIST, "")
-                if ns.type is not None:
-                    return FilterCommand(WordFilterType.TYPE, ns.type)
-                if ns.status is not None:
-                    return FilterCommand(WordFilterType.STATUS, ns.status)
-                if ns.category is not None:
-                    return FilterCommand(WordFilterType.CATEGORY, ns.category)
-                if ns.source is not None:
-                    return FilterCommand(WordFilterType.SOURCE, ns.source)
-                if ns.note is not None:
-                    return FilterCommand(WordFilterType.NOTE, ns.note)
+        if ns.command in self._save_command_names:
+            if ns.name is not None:
+                return SaveCommand(ns.name)
+            if ns.auto is not None and ns.auto:
+                prefix = "asdste100"
+                extension = ".svg"
+                now = datetime.now()
+                iso8601 = now.strftime("%Y-%m-%d-%H-%M-%S")
+                file_name = f"{prefix}-{iso8601}{extension}"
+                file_fullname = Path(tempfile.gettempdir()) / file_name
+                return SaveCommand(str(file_fullname))
 
-                raise ValueError("Invalid command option.")
+        if ns.command in self._exit_command_names:
+            return ExitCommand(ns.command)
+
+        if ns.command in self._filter_command_names:
+            if ns.reset is not None and ns.reset:
+                return FilterCommand(WordFilterType.RESET, "")
+            if ns.list is not None and ns.list:
+                return FilterCommand(WordFilterType.LIST, "")
+            if ns.type is not None:
+                return FilterCommand(WordFilterType.TYPE, ns.type)
+            if ns.status is not None:
+                return FilterCommand(WordFilterType.STATUS, ns.status)
+            if ns.category is not None:
+                return FilterCommand(WordFilterType.CATEGORY, ns.category)
+            if ns.source is not None:
+                return FilterCommand(WordFilterType.SOURCE, ns.source)
+            if ns.note is not None:
+                return FilterCommand(WordFilterType.NOTE, ns.note)
+
+            raise ValueError("Invalid command option.")
 
         return UnknownCommand(text)

@@ -1,5 +1,5 @@
-﻿successful (adj)	CORRECT (adj) SATISFACTORY (adj)	IF THE TEST RESULTS ARE NOT CORRECT, REPLACE THE UNIT.	If the test is not successful, replace the unit.
-		IF THE TEST RESULTS ARE NOT SATISFACTORY, REPLACE THE UNIT.	If the test is not successful, replace the unit.
+﻿successful (adj)	CORRECT (adj)	IF THE TEST RESULTS ARE NOT CORRECT, REPLACE THE UNIT.	If the test is not successful, replace the unit.
+	SATISFACTORY (adj)	IF THE TEST RESULTS ARE NOT SATISFACTORY, REPLACE THE UNIT.	If the test is not successful, replace the unit.
 SUCH (adj)	Of the same group	WHEN YOU DO WORK ON SUCH SYSTEMS, USE GOGGLES.	
 such as (conj)	FOR EXAMPLE (n)	WHEN YOU REMOVE THE STUD, USE APPLICABLE TOOLS. FOR EXAMPLE, USE A PLASTIC MALLET AND A PUNCH.	When you remove the stud, use applicable tools such as a plastic mallet and a punch.
 suck (v)	REMOVE (v) (WITH SUCTION [TN])	REMOVE THE UNWANTED MATERIAL WITH SUCTION.	Suck out the unwanted material.

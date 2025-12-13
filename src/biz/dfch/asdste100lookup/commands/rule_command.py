@@ -18,8 +18,9 @@
 from dataclasses import dataclass
 import re
 
-from ..rule_renderer import RuleRenderer
 from ..rule import Rule
+from ..rule_renderer import RuleRenderer
+from ..rule_renderer import RuleRenderType
 
 from .command_query_type import CommandQueryType
 from .erase_console_buffer_command import EraseConsoleBufferCommand
@@ -31,18 +32,19 @@ class RuleCommand(EraseConsoleBufferCommand):
 
     _type_: CommandQueryType
     _show_heading_only: bool
+    _display_type: RuleRenderType
 
     def __init__(
         self,
         type_: CommandQueryType,
         value: str,
-        show_heading_only: bool = False,
+        display_type: RuleRenderType = RuleRenderType.DEFAULT,
     ) -> None:
 
         super().__init__(value)
 
         self._type_ = type_
-        self._show_heading_only = show_heading_only
+        self._display_type = display_type
 
     def invoke(self, console, dictionary, rules) -> None:
         super().invoke(console, dictionary, rules)
@@ -62,6 +64,9 @@ class RuleCommand(EraseConsoleBufferCommand):
                     value = rule.category
                 case CommandQueryType.SUMMARY:
                     value = rule.summary
+                case CommandQueryType.ALL:
+                    selected_rules.append(rule)
+                    continue
                 case _:
                     raise ValueError(
                         f"Invalid {CommandQueryType.__name__}: "
@@ -73,5 +78,5 @@ class RuleCommand(EraseConsoleBufferCommand):
         RuleRenderer().show(
             console=console,
             rules=selected_rules,
-            show_heading_only=self._show_heading_only,
+            type_=self._display_type,
         )
