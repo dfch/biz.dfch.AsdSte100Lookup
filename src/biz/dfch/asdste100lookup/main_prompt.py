@@ -29,11 +29,12 @@ from .commands.exit_command import ExitCommand
 from .commands.filter_command import FilterCommand
 from .commands.help_command import HelpCommand
 from .commands.rule_command import RuleCommand
-from .rule_render_type import RuleRenderType
 from .commands.save_command import SaveCommand
+from .commands.sentence_info_command import SentenceInfoCommand
 from .commands.unknown_command import UnknownCommand
 from .commands.word_category_command import WordCategoryCommand
 from .commands.word_filter_type import WordFilterType
+from .rule_render_type import RuleRenderType
 
 from .word_category import WordCategory
 from .word_type import WordType
@@ -49,6 +50,7 @@ class MainPrompt:  # pylint: disable=R0903
     _save_command_names = ["save", "s"]
     _exit_command_names = ["exit", "x"]
     _filter_command_names = ["filter", "f"]
+    _sentence_command_names = ["sentence", "1"]
 
     _parser: argparse.ArgumentParser
 
@@ -259,6 +261,23 @@ class MainPrompt:  # pylint: disable=R0903
             help="Sets the filter for words with a note.",
         )
 
+        sentence_parser = subparsers_action.add_parser(
+            self._sentence_command_names[0],
+            aliases=self._sentence_command_names[1:],
+            help="Analyses a sentence.",
+        )
+        sentence_parser.add_argument(
+            "text", nargs="*", help="The sentence text to analyze"
+        )
+        sentence_parser_args = sentence_parser.add_mutually_exclusive_group(
+            required=True
+        )
+        sentence_parser_args.add_argument(
+            "-i", "--info", action="store_true", help="Shows info."
+        )
+        sentence_parser_args.add_argument(
+            "-c", "--count", action="store_true", help="Shows word count."
+        )
         return result
 
     def parse(self, text: str) -> CommandBase:
@@ -377,5 +396,14 @@ class MainPrompt:  # pylint: disable=R0903
                 return FilterCommand(WordFilterType.NOTE, ns.note)
 
             raise ValueError("Invalid command option.")
+
+        if ns.command in self._sentence_command_names:
+            if ns.count is not None and ns.count:
+                _ = True
+            if ns.info is not None and ns.info:
+                _ = True
+            if ns.text is not None:
+                text = " ".join(ns.text)
+            return SentenceInfoCommand(text)
 
         return UnknownCommand(text)
