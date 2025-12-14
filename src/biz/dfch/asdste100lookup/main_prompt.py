@@ -308,7 +308,8 @@ class MainPrompt:  # pylint: disable=R0903
         # Suppress SONAR warning, as we expect this exception from ArgParse, if
         # the user types in something else than a defined command or argument.
         # In that case, we want to parse the contents and display a word from
-        # the dictionary. This is intended.
+        # the dictionary.
+        # This is intended.
         except SystemExit as ex:  # NOSONAR
             if "0" == str(ex):
                 return HelpCommand("")
@@ -319,91 +320,114 @@ class MainPrompt:  # pylint: disable=R0903
             return UnknownCommand(text)
 
         if ns.command in self._category_command_names:
-            if ns.id is not None:
-                return WordCategoryCommand(CommandQueryType.ID, ns.id)
-            if ns.name is not None:
-                return WordCategoryCommand(CommandQueryType.NAME, ns.name)
+            return self._parse_category(ns)
 
         if ns.command in self._rule_command_names:
-            display_type = RuleRenderType.DEFAULT
-            if ns.list is not None and True is ns.list:
-                display_type = RuleRenderType.LIST
-            if ns.brief is not None and True is ns.brief:
-                display_type = RuleRenderType.BRIEF
-
-            if ns.id is not None:
-                return RuleCommand(
-                    CommandQueryType.ID, ns.id, display_type=display_type
-                )
-            if ns.name is not None:
-                return RuleCommand(
-                    CommandQueryType.NAME, ns.name, display_type=display_type
-                )
-            if ns.section is not None:
-                return RuleCommand(
-                    CommandQueryType.SECTION,
-                    ns.section,
-                    display_type=display_type,
-                )
-            if ns.category is not None:
-                return RuleCommand(
-                    CommandQueryType.CATEGORY,
-                    ns.category,
-                    display_type=display_type,
-                )
-            if ns.summary is not None:
-                return RuleCommand(
-                    CommandQueryType.SUMMARY,
-                    ns.summary,
-                    display_type=display_type,
-                )
-            if ns.all is not None:
-                return RuleCommand(
-                    CommandQueryType.ALL,
-                    "",
-                    display_type=RuleRenderType.LIST,
-                )
+            return self._parse_rule(ns)
 
         if ns.command in self._save_command_names:
-            if ns.name is not None:
-                return SaveCommand(ns.name)
-            if ns.auto is not None and ns.auto:
-                prefix = "asdste100"
-                extension = ".svg"
-                now = datetime.now()
-                iso8601 = now.strftime("%Y-%m-%d-%H-%M-%S")
-                file_name = f"{prefix}-{iso8601}{extension}"
-                file_fullname = Path(tempfile.gettempdir()) / file_name
-                return SaveCommand(str(file_fullname))
+            return self._parse_save(ns)
+
+        if ns.command in self._filter_command_names:
+            return self._parse_filter(ns)
+
+        if ns.command in self._sentence_command_names:
+            return self._parse_sentence(ns)
 
         if ns.command in self._exit_command_names:
             return ExitCommand(ns.command)
 
-        if ns.command in self._filter_command_names:
-            if ns.reset is not None and ns.reset:
-                return FilterCommand(WordFilterType.RESET, "")
-            if ns.list is not None and ns.list:
-                return FilterCommand(WordFilterType.LIST, "")
-            if ns.type is not None:
-                return FilterCommand(WordFilterType.TYPE, ns.type)
-            if ns.status is not None:
-                return FilterCommand(WordFilterType.STATUS, ns.status)
-            if ns.category is not None:
-                return FilterCommand(WordFilterType.CATEGORY, ns.category)
-            if ns.source is not None:
-                return FilterCommand(WordFilterType.SOURCE, ns.source)
-            if ns.note is not None:
-                return FilterCommand(WordFilterType.NOTE, ns.note)
-
-            raise ValueError("Invalid command option.")
-
-        if ns.command in self._sentence_command_names:
-            if ns.count is not None and ns.count:
-                _ = True
-            if ns.info is not None and ns.info:
-                _ = True
-            if ns.text is not None:
-                text = " ".join(ns.text)
-            return SentenceInfoCommand(text)
-
         return UnknownCommand(text)
+
+    def _parse_category(self, ns) -> CommandBase:
+        if ns.id is not None:
+            return WordCategoryCommand(CommandQueryType.ID, ns.id)
+        if ns.name is not None:
+            return WordCategoryCommand(CommandQueryType.NAME, ns.name)
+
+        raise ValueError("Invalid command option (category).")
+
+    def _parse_rule(self, ns) -> CommandBase:
+        display_type = RuleRenderType.DEFAULT
+        if ns.list is not None and True is ns.list:
+            display_type = RuleRenderType.LIST
+        if ns.brief is not None and True is ns.brief:
+            display_type = RuleRenderType.BRIEF
+
+        if ns.id is not None:
+            return RuleCommand(
+                CommandQueryType.ID, ns.id, display_type=display_type
+            )
+        if ns.name is not None:
+            return RuleCommand(
+                CommandQueryType.NAME, ns.name, display_type=display_type
+            )
+        if ns.section is not None:
+            return RuleCommand(
+                CommandQueryType.SECTION,
+                ns.section,
+                display_type=display_type,
+            )
+        if ns.category is not None:
+            return RuleCommand(
+                CommandQueryType.CATEGORY,
+                ns.category,
+                display_type=display_type,
+            )
+        if ns.summary is not None:
+            return RuleCommand(
+                CommandQueryType.SUMMARY,
+                ns.summary,
+                display_type=display_type,
+            )
+        if ns.all is not None:
+            return RuleCommand(
+                CommandQueryType.ALL,
+                "",
+                display_type=RuleRenderType.LIST,
+            )
+
+        raise ValueError("Invalid command option (rule).")
+
+    def _parse_save(self, ns) -> CommandBase:
+        if ns.name is not None:
+            return SaveCommand(ns.name)
+        if ns.auto is not None and ns.auto:
+            prefix = "asdste100"
+            extension = ".svg"
+            now = datetime.now()
+            iso8601 = now.strftime("%Y-%m-%d-%H-%M-%S")
+            file_name = f"{prefix}-{iso8601}{extension}"
+            file_fullname = Path(tempfile.gettempdir()) / file_name
+            return SaveCommand(str(file_fullname))
+
+        raise ValueError("Invalid command option (save).")
+
+    def _parse_filter(self, ns) -> CommandBase:
+        if ns.reset is not None and ns.reset:
+            return FilterCommand(WordFilterType.RESET, "")
+        if ns.list is not None and ns.list:
+            return FilterCommand(WordFilterType.LIST, "")
+        if ns.type is not None:
+            return FilterCommand(WordFilterType.TYPE, ns.type)
+        if ns.status is not None:
+            return FilterCommand(WordFilterType.STATUS, ns.status)
+        if ns.category is not None:
+            return FilterCommand(WordFilterType.CATEGORY, ns.category)
+        if ns.source is not None:
+            return FilterCommand(WordFilterType.SOURCE, ns.source)
+        if ns.note is not None:
+            return FilterCommand(WordFilterType.NOTE, ns.note)
+
+        raise ValueError("Invalid command option (filter).")
+
+    def _parse_sentence(self, ns) -> CommandBase:
+        if ns.count is not None and ns.count:
+            _ = True
+        if ns.info is not None and ns.info:
+            _ = True
+        text = ""
+        if ns.text is not None:
+            text = " ".join(ns.text)
+
+        return SentenceInfoCommand(text)
