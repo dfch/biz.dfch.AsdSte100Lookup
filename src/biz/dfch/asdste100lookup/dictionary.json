@@ -52914,7 +52914,7 @@
         "source": "STE100:9",
         "category": "0",
         "ste_example": [
-          "SET THE SWITCH TO \u201cON.\u201d"
+          "SET THE SWITCH TO \u201cON\u201d."
         ],
         "nonste_example": [
           "Position the switch to ON."
