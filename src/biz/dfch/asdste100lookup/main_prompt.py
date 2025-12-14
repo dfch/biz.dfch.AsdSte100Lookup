@@ -45,6 +45,8 @@ class MainPrompt:  # pylint: disable=R0903
     """Represents the main prompt processing."""
 
     _start_of_command: str = "!"
+
+    _help_command_names = ["?", "-h", "--help"]
     _category_command_names = ["category", "c"]
     _rule_command_names = ["rule", "r"]
     _save_command_names = ["save", "s"]
@@ -79,73 +81,90 @@ class MainPrompt:  # pylint: disable=R0903
         subparsers_action = result.add_subparsers(
             dest="command", required=True, help="Available commands."
         )
-        category_parser = subparsers_action.add_parser(
+
+        self._build_parser_category(subparsers_action)
+        self._build_parser_rule(subparsers_action)
+        self._build_parser_save(subparsers_action)
+        self._build_parser_exit(subparsers_action)
+        self._build_parser_filter(subparsers_action)
+        self._build_parser_sentence(subparsers_action)
+
+        return result
+
+    def _build_parser_category(
+        self, subparsers_action
+    ) -> SuppressErrorMessageArgumentParser:
+        parser = subparsers_action.add_parser(
             self._category_command_names[0],
             aliases=self._category_command_names[1:],
             help="This command shows all words from the specified category.",
         )
 
-        category_parser_args = category_parser.add_mutually_exclusive_group(
+        result = parser.add_mutually_exclusive_group(
             required=True
         )
-        category_parser_args.add_argument(
+        result.add_argument(
             "-i",
             "--id",
             help="Id (short name) of the word category to query.",
         )
 
-        category_parser_args.add_argument(
+        result.add_argument(
             "-n",
             "--name",
             help="Name of the word category to query.",
         )
+        return result
 
-        rule_parser = subparsers_action.add_parser(
+    def _build_parser_rule(
+        self, subparsers_action
+    ) -> SuppressErrorMessageArgumentParser:
+        parser = subparsers_action.add_parser(
             self._rule_command_names[0],
             aliases=self._rule_command_names[1:],
             help="This command shows the specified rule.",
         )
 
-        rule_parser_args = rule_parser.add_mutually_exclusive_group(
+        result = parser.add_mutually_exclusive_group(
             required=True
         )
-        rule_parser_args.add_argument(
+        result.add_argument(
             "-i",
             "--id",
             help="Id of the rule to query.",
         )
 
-        rule_parser_args.add_argument(
+        result.add_argument(
             "-n",
             "--name",
             help="Name of the rule to query.",
         )
 
-        rule_parser_args.add_argument(
+        result.add_argument(
             "-s",
             "--section",
             help="Section of the rule to query.",
         )
 
-        rule_parser_args.add_argument(
+        result.add_argument(
             "-c",
             "--category",
             help="Category of the rule to query.",
         )
 
-        rule_parser_args.add_argument(
+        result.add_argument(
             "--summary",
             help="Summary of the rule to query.",
         )
 
-        rule_parser_args.add_argument(
+        result.add_argument(
             "-a",
             "--all",
             action="store_true",
             help="Overview of all rules.",
         )
 
-        rule_parser_output_args = rule_parser.add_mutually_exclusive_group(
+        rule_parser_output_args = parser.add_mutually_exclusive_group(
             required=False
         )
 
@@ -163,60 +182,75 @@ class MainPrompt:  # pylint: disable=R0903
             help="Only list a brief overview of the matching rules.",
         )
 
-        save_parser = subparsers_action.add_parser(
+        return result
+
+    def _build_parser_save(
+        self, subparsers_action
+    ) -> SuppressErrorMessageArgumentParser:
+        parser = subparsers_action.add_parser(
             self._save_command_names[0],
             aliases=self._save_command_names[1:],
             help="This command writes the last console output to a file.",
         )
 
-        save_parser_args = save_parser.add_mutually_exclusive_group(
+        result = parser.add_mutually_exclusive_group(
             required=True
         )
 
-        save_parser_args.add_argument(
+        result.add_argument(
             "-n",
             "--name",
             help="Give the name of the file.",
         )
 
-        save_parser_args.add_argument(
+        result.add_argument(
             "-a",
             "--auto",
             action="store_true",
             help="Automatically select a unique name for the file.",
         )
 
-        _ = subparsers_action.add_parser(
+        return result
+
+    def _build_parser_exit(
+        self, subparsers_action
+    ) -> SuppressErrorMessageArgumentParser:
+        result = subparsers_action.add_parser(
             self._exit_command_names[0],
             aliases=self._exit_command_names[1:],
             help="This command stops the programme.",
         )
 
-        filter_parser = subparsers_action.add_parser(
+        return result
+
+    def _build_parser_filter(
+        self, subparsers_action
+    ) -> SuppressErrorMessageArgumentParser:
+        parser = subparsers_action.add_parser(
             self._filter_command_names[0],
             aliases=self._filter_command_names[1:],
             help="Modifies the filter for dictionary queries.",
         )
 
-        filter_parser_args = filter_parser.add_mutually_exclusive_group(
+        result = parser.add_mutually_exclusive_group(
             required=True
         )
 
-        filter_parser_args.add_argument(
+        result.add_argument(
             "-l",
             "--list",
             action="store_true",
             help="Show all filters.",
         )
 
-        filter_parser_args.add_argument(
+        result.add_argument(
             "-r",
             "--reset",
             action="store_true",
             help="Resets all filters.",
         )
 
-        filter_parser_args.add_argument(
+        result.add_argument(
             "-t",
             "--type",
             "--word_type",
@@ -227,7 +261,7 @@ class MainPrompt:  # pylint: disable=R0903
             f"{[item.value.lower() for item in WordType]}.",
         )
 
-        filter_parser_args.add_argument(
+        result.add_argument(
             "-s",
             "--status",
             metavar="STATUS",
@@ -237,14 +271,14 @@ class MainPrompt:  # pylint: disable=R0903
             f"{[item.value.lower() for item in WordStatus]}.",
         )
 
-        filter_parser_args.add_argument(
+        result.add_argument(
             "-src",
             "--source",
             type=str,
             help="Sets the filter for word source.",
         )
 
-        filter_parser_args.add_argument(
+        result.add_argument(
             "-c",
             "--category",
             metavar="CAT",
@@ -254,22 +288,27 @@ class MainPrompt:  # pylint: disable=R0903
             f"{[item.value.lower() for item in WordCategory]}.",
         )
 
-        filter_parser_args.add_argument(
+        result.add_argument(
             "-n",
             "--note",
             type=str,
             help="Sets the filter for words with a note.",
         )
 
-        sentence_parser = subparsers_action.add_parser(
+        return result
+
+    def _build_parser_sentence(
+        self, subparsers_action
+    ) -> SuppressErrorMessageArgumentParser:
+        result = subparsers_action.add_parser(
             self._sentence_command_names[0],
             aliases=self._sentence_command_names[1:],
             help="Analyses a sentence.",
         )
-        sentence_parser.add_argument(
+        result.add_argument(
             "text", nargs="*", help="The sentence text to analyze"
         )
-        sentence_parser_args = sentence_parser.add_mutually_exclusive_group(
+        sentence_parser_args = result.add_mutually_exclusive_group(
             required=True
         )
         sentence_parser_args.add_argument(
@@ -278,6 +317,7 @@ class MainPrompt:  # pylint: disable=R0903
         sentence_parser_args.add_argument(
             "-c", "--count", action="store_true", help="Shows word count."
         )
+
         return result
 
     def parse(self, text: str) -> CommandBase:
@@ -288,7 +328,7 @@ class MainPrompt:  # pylint: disable=R0903
 
         text = text.strip()
 
-        if text in ["?", "-h", "--help"]:
+        if text in self._help_command_names:
             return HelpCommand(self._parser.format_help())
 
         # If the line does not starts with '!', we expect a dictionary lookup.
