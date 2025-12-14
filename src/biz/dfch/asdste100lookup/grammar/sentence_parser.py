@@ -31,6 +31,13 @@ class SentenceParserErrorType(StrEnum):
 class SentenceParserError(Exception):
     """Raised when the sentence has invalid quoting (nested or unmatched)."""
 
+    type_: SentenceParserErrorType
+
+    def __init__(self, type_: SentenceParserErrorType, *args):
+        super().__init__(*args)
+
+        self.type_ = type_
+
 
 class SentenceParser:
     """

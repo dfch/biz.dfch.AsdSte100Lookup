@@ -20,8 +20,7 @@ from dataclasses import dataclass
 from .erase_console_buffer_command import EraseConsoleBufferCommand
 
 from ..grammar.sentence_parser import SentenceParser
-# from ..grammar.sentence_parser import SentenceParserError
-# from ..grammar.sentence_parser import SentenceParserErrorType
+from ..grammar.sentence_parser import SentenceParserError
 
 
 @dataclass
@@ -31,6 +30,10 @@ class SentenceInfoCommand(EraseConsoleBufferCommand):
     def invoke(self, console, dictionary, rules):
         super().invoke(console, dictionary, rules)
 
-        parser = SentenceParser()
+        try:
+            parser = SentenceParser()
+        except SentenceParserError as ex:
+            raise ValueError(f"SentenceInfo FAILED. [{ex.type_}]") from ex
+
         result = parser.word_count(self.value)
         console.print(f"[{result}] {self.value}")
