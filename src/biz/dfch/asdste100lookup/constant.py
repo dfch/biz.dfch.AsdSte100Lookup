@@ -23,7 +23,7 @@ class Constant:
     """System-wide constants."""
 
     # Note: also adjust in pyproject.toml.
-    _VERSION = "1.7.0"
+    _VERSION = "1.7.1"
     PROG_NAME = "AsdSte100Lookup"
 
     BLOCKING_WHITE_SPACE = "\u200b"
