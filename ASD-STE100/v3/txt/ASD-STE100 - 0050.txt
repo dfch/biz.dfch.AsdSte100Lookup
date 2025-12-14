@@ -1,6 +1,6 @@
 ﻿conclusion (n)	END (n)	AT THE END OF THE TEST, SET THE SWITCH TO “NORMAL.”	At the conclusion of the test, you must switch to NORMAL.
 	RESULT (n)	IF THE RESULTS OF THE TEST ARE UNSATISFACTORY, REPLACE THE UNIT.	If the conclusions of the test are unsatisfactory, replace the unit.
-concurrently (adj)	AT THE SAME TIME	DO THESE TWO PROCEDURES AT THE SAME TIME.	These two procedures must be applied concurrently.
+concurrently (adj)	AT THE SAME TIME (adv)	DO THESE TWO PROCEDURES AT THE SAME TIME.	These two procedures must be applied concurrently.
 CONDENSATION (n)	The result when a gas changes into a liquid	SET THE SWITCH TO THE “ON" POSITION TO REMOVE THE CONDENSATION.	
 CONDITION (n)	1. Something that is necessary for what occurs	THESE INITIAL CONDITIONS ARE NECESSARY TO GET CORRECT RESULTS.	
 	2. The state of an item	DO A CHECK OF THE UNIT CONDITION.	

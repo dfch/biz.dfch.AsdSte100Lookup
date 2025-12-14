@@ -22,6 +22,5 @@ class WordStatus(StrEnum):
     """Represents the status of a word."""
 
     UNKNOWN = "unknown"
-    CUSTOM = "custom"
     APPROVED = "approved"
     REJECTED = "rejected"

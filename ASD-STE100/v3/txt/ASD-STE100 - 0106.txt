@@ -1,5 +1,5 @@
-﻿force (v)	PUSH (v) FORCE (TN)	PUSH THE CLIP OUT TO REMOVE IT.	Clip may be removed by forcing it out.
-		DO NOT USE FORCE TO PUSH THE COVER INTO POSITION.	Do not attempt to force the cover into position.
+﻿force (v)	PUSH (v)	PUSH THE CLIP OUT TO REMOVE IT.	Clip may be removed by forcing it out.
+	FORCE (TN)	DO NOT USE FORCE TO PUSH THE COVER INTO POSITION.	Do not attempt to force the cover into position.
 forecast (v)	POSSIBLE (adj)	IF BAD WEATHER IS POSSIBLE, MOOR THE VESSEL SAFELY.	If unfavorable weather conditions are forecast, moor the vessel securely.
 foreign (adj)	UNWANTED (adj)	THIS COVER WILL KEEP DIRT, PARTICLES, OR OTHER UNWANTED MATERIAL OUT OF THE SYSTEM.	This cover will prevent dirt, particles, or other foreign material from entering the system.
 foremost (adj)	FRONT (n)	YOU CANNOT REMOVE THE HALF CLAMP THAT IS NEAREST TO THE FRONT.	The foremost half clamp is not removable.

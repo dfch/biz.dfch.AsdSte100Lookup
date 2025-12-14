@@ -13,22 +13,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-"""Rule class."""
 
-from dataclasses import dataclass, field
+"""grammar module."""
 
-from .rule_content_base import RuleContentBase
-
-
-@dataclass
-class Rule:  # pylint: disable=R0902
-    """Represents a ASD-STE100 rule."""
-
-    type_: str
-    id_: str
-    ref: str
-    section: str
-    category: str
-    name: str
-    summary: str
-    contents: list[RuleContentBase] = field(default_factory=list)
+# Intentionally left blank.

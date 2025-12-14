@@ -6,8 +6,8 @@ handle (v)	MOVE (v)	MOVE THE ACTUATOR WITH A HOIST.	Handle the actuator with a h
 	USE (v)	BE CAREFUL WHEN YOU USE SOLVENTS.	Be careful when you handle solvents.
 	CAREFUL (adj)	BE CAREFUL WITH INSTRUMENTS.	Handle instruments with care.
 	###This word can be part of a safety sign (rule 8.6).
-hand-tight (adj)	TIGHTEN ... WITH YOUR HAND	INSTALL THE FILTER CASE AND TIGHTEN IT WITH YOUR HAND.	Install the filter case hand-tight.
-hand-tighten (v)	TIGHTEN ... WITH YOUR HAND	TIGHTEN THE SWIVEL NUT WITH YOUR HAND.	Hand-tighten the swivel nut.
+hand-tight (adj)	TIGHTEN ... WITH YOUR HAND (v)	INSTALL THE FILTER CASE AND TIGHTEN IT WITH YOUR HAND.	Install the filter case hand-tight.
+hand-tighten (v)	TIGHTEN ... WITH YOUR HAND (v)	TIGHTEN THE SWIVEL NUT WITH YOUR HAND.	Hand-tighten the swivel nut.
 HANG (v), HANGS, HUNG, HUNG	To attach or to be attached to something above with no support from below	HANG THE SHACKLE ON THE HOIST.	
 		LOWER THE PLATFORM ASSEMBLY UNTIL IT HANGS ON THE SUPPORT FRAME.	
 happen (v)	OCCUR (v)	IF AN ACCIDENT OCCURS, GET MEDICAL AID.	If an accident happens, get medical attention.

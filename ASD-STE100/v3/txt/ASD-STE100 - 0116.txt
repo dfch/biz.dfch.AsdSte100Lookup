@@ -9,5 +9,5 @@ grease (v)	LUBRICATE (v)	BEFORE YOU INSTALL THE O-RING, LUBRICATE IT WITH GREASE
 great (adj)	LARGE (adj)	AN INDICATION OF A LARGE QUANTITY OF FUEL SHOWS AN INCORRECT ADJUSTMENT OF THE FLOAT SWITCH.	A great amount of fuel indicates incorrect setting of the float switch.
 	MORE THAN (adj)	IF THE PRESSURE IS MORE THAN 200 psi, CLOSE THE VALVE.	If the pressure is greater than 200 psi, close the valve.
 	VERY (adv)	BE VERY CAREFUL WHEN YOU RELEASE THE PRESSURE.	Take the greatest care when you release the pressure.
-greatly (adv)	VERY MUCH	THIS METHOD CAN INCREASE THE RISK OF INJURY VERY MUCH.	This method can greatly increase the risk of injury.
+greatly (adv)	VERY MUCH (adj)	THIS METHOD CAN INCREASE THE RISK OF INJURY VERY MUCH.	This method can greatly increase the risk of injury.
 grip (n)	HOLD (v)	HOLD THE JACK BODY TIGHTLY WHILE YOU TURN IT.	Make sure you have a tight grip of the jack body while turning it.

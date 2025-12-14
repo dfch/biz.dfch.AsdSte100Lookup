@@ -60,7 +60,7 @@ class RuleTechnicalWordsParser:
                     value=f"See '{WordSource.STE100_9}' ({current_category})."
                 )
                 word = Word(
-                    status=WordStatus.CUSTOM,
+                    status=WordStatus.APPROVED,
                     source=WordSource.STE100_9,
                     category=WordCategory(current_category),
                     name=category_word.strip(),

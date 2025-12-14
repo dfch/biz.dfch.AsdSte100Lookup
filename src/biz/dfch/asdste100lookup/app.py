@@ -211,7 +211,7 @@ class App:  # pylint: disable=R0903
         RuleRenderer().show(
             console=console,
             rules=selected_rules,
-            show_heading_only=self._args.summary,
+            type_=self._args.summary,
         )
 
     def on_dictionary(self, dictionary_file_name: str) -> None:

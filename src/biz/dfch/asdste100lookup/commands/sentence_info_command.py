@@ -13,22 +13,24 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-"""Rule class."""
+"""SentenceInfoCommand class."""
 
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 
-from .rule_content_base import RuleContentBase
+from .erase_console_buffer_command import EraseConsoleBufferCommand
+
+from ..grammar.sentence_parser import SentenceParser
+# from ..grammar.sentence_parser import SentenceParserError
+# from ..grammar.sentence_parser import SentenceParserErrorType
 
 
 @dataclass
-class Rule:  # pylint: disable=R0902
-    """Represents a ASD-STE100 rule."""
+class SentenceInfoCommand(EraseConsoleBufferCommand):
+    """Represents the sentence info command."""
 
-    type_: str
-    id_: str
-    ref: str
-    section: str
-    category: str
-    name: str
-    summary: str
-    contents: list[RuleContentBase] = field(default_factory=list)
+    def invoke(self, console, dictionary, rules):
+        super().invoke(console, dictionary, rules)
+
+        parser = SentenceParser()
+        result = parser.word_count(self.value)
+        console.print(f"[{result}] {self.value}")

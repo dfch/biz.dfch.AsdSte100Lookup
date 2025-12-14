@@ -1,7 +1,7 @@
 ﻿particular (adj)	ONLY APPLICABLE (adv)	THIS PROCEDURE IS ONLY APPLICABLE TO TYPE A PARTS.	This procedure is particular to type A parts.
 	VERY (adv)	THIS STEP IS VERY IMPORTANT.	This step is of particular importance.
 particularly (adv)	VERY (adv)	THIS PRECAUTION IS VERY IMPORTANT.	This precaution is particularly important.
-partly (adv)	NOT FULLY	IF THE VALVE DOES NOT FULLY OPEN, EXAMINE THE POSITIONS OF THE END STOPS ON THE ACTUATOR.	If the valve opens only partly, examine the positions of the end stops on the actuator.
+partly (adv)	NOT FULLY (adv)	IF THE VALVE DOES NOT FULLY OPEN, EXAMINE THE POSITIONS OF THE END STOPS ON THE ACTUATOR.	If the valve opens only partly, examine the positions of the end stops on the actuator.
 pass (v)	GO (v)	MAKE SURE THAT THE CABLE GOES ONTO THE PULLEY.	Make sure that the cable passes over the pulley.
 	THROUGH (prep)	PUT THE ANTENNA CABLE THROUGH THE TOP SLOTS.	Pass the antenna cable through the top slots.
 	GIVE (v)	GIVE ONE END OF THE CABLE TO A SECOND PERSON.	Pass one end of the cable to another person.

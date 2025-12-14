@@ -19,10 +19,13 @@ from rich import box
 from rich.console import Console
 from rich.markdown import Markdown
 from rich.panel import Panel
+from rich.padding import Padding
 
 from .markdown_utils import MarkDownUtils
 from .rule import Rule
 from .rule_content_type import RuleContentType
+from .rule_grouper import RuleGrouper
+from .rule_render_type import RuleRenderType
 
 
 class RuleRenderer:  # pylint: disable=R0903
@@ -32,12 +35,35 @@ class RuleRenderer:  # pylint: disable=R0903
         self,
         console: Console,
         rules: list[Rule],
-        show_heading_only: bool = False
+        type_: RuleRenderType = RuleRenderType.DEFAULT,
     ) -> None:
         """Shows rules on the console."""
 
         assert isinstance(console, Console)
         assert isinstance(rules, list)
+
+        current_section = ""
+        current_category = ""
+        if RuleRenderType.LIST == type_:
+            grouped = RuleGrouper(rules).invoke()
+            for section, categories in grouped.items():
+                if current_section != section:
+                    current_section = section
+                    console.print(Markdown(f"**{current_section}**"))
+                for category, rules_cat in categories.items():
+                    if current_category != category:
+                        current_category = category
+                        out = Padding(
+                            Markdown(f"*{current_category}*"), (0, 0, 0, 2)
+                        )
+                        console.print(out)
+                    for rule in rules_cat:
+                        out = Padding(
+                            Markdown(f"**{rule.id_}**: {rule.name}"),
+                            (0, 0, 0, 4),
+                        )
+                        console.print(out)
+            return
 
         for rule in rules:
 
@@ -57,7 +83,7 @@ class RuleRenderer:  # pylint: disable=R0903
             console.print(md)
             console.print("")
 
-            if show_heading_only:
+            if RuleRenderType.BRIEF == type_:
                 continue
 
             for content in rule.contents:
@@ -69,8 +95,12 @@ class RuleRenderer:  # pylint: disable=R0903
                     case RuleContentType.EXAMPLE:
                         txt = f"[green]{content.data}[/green]"
                         console.print(
-                            Panel(txt, title="STE",
-                                  title_align="left", expand=False)
+                            Panel(
+                                txt,
+                                title="STE",
+                                title_align="left",
+                                expand=False,
+                            )
                         )
                         console.print("")
                     case RuleContentType.STE:

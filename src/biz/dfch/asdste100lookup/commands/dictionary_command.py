@@ -28,6 +28,7 @@ from ..constant import Constant
 from ..table_row import TableRow
 from ..utils import get_value_or_default
 from ..word import Word
+from ..word_category import WordCategory
 from ..word_note import WordNote
 from ..word_status import WordStatus
 
@@ -40,14 +41,29 @@ class DictionaryCommand(EraseConsoleBufferCommand):
 
     def to_colour(self, text: str, value: str, status: str) -> str:
         """Colourises value in specified text green or red based on status."""
-        if WordStatus.APPROVED == status:
-            result = Colouriser(text).to_green(value)
-        elif WordStatus.CUSTOM == status:
-            result = Colouriser(text).to_darkergreen(value)
-        else:
-            result = Colouriser(text).to_red(value)
 
-        return result
+        assert isinstance(status, str) and "" != status
+
+        if WordStatus.APPROVED == status:
+            return Colouriser(text).to_green(value)
+
+        return Colouriser(text).to_red(value)
+
+    def to_word_colour(
+        self, text: str, value: str, status: str, category: str
+    ) -> str:
+        """Colourises value in specified text green or red based on status."""
+
+        assert isinstance(status, str) and "" != status
+        assert isinstance(category, str) and "" != category
+
+        if status in (WordStatus.REJECTED, WordStatus.UNKNOWN):
+            return Colouriser(text).to_red(value)
+
+        if WordCategory.DEFAULT == category:
+            return Colouriser(text).to_green(value)
+
+        return Colouriser(text).to_darkergreen(value)
 
     def _get_first_or_item(self, item: str | list[str] | None) -> str | None:
         """
@@ -72,9 +88,9 @@ class DictionaryCommand(EraseConsoleBufferCommand):
         return item
 
     def _process_note_value(
-            self,
-            word: Word,
-            note: WordNote,
+        self,
+        word: Word,
+        note: WordNote,
     ) -> list[TableRow]:
 
         assert isinstance(word, Word)
@@ -97,9 +113,7 @@ class DictionaryCommand(EraseConsoleBufferCommand):
         return result
 
     def _process_note_words(
-            self,
-            note: WordNote,
-            row: TableRow
+        self, note: WordNote, row: TableRow
     ) -> list[TableRow]:
 
         assert isinstance(note, WordNote)
@@ -117,38 +131,42 @@ class DictionaryCommand(EraseConsoleBufferCommand):
         row.description = str(Colouriser(note.value, "yellow"))
 
         for nword in nwords:
-            row = TableRow()
-            result.append(row)
-            row.description = self.to_colour(
-                f"{nword.name} ({nword.type_})",
-                nword.name,
-                nword.status,
-            )
-            if self._get_first_or_item(nword.ste_example):
-                row.ste_example = self.to_colour(
-                    cast(str, self._get_first_or_item(
-                        nword.ste_example)),
-                    nword.name,
-                    WordStatus.APPROVED,
-                )
-            if self._get_first_or_item(nword.nonste_example):
-                row.nonste_example = self.to_colour(
-                    cast(
-                        str,
-                        self._get_first_or_item(
-                            nword.nonste_example),
-                    ),
-                    nword.name,
-                    WordStatus.REJECTED,
-                )
+            result.extend(self._process_nword(nword))
 
         return result
 
-    def _process_note(
-            self,
-            word: Word,
-            row: TableRow
-    ) -> list[TableRow]:
+    def _process_nword(self, word: Word) -> list[TableRow]:
+
+        assert isinstance(word, Word)
+
+        result: list[TableRow] = []
+
+        row = TableRow()
+        result.append(row)
+        row.description = self.to_colour(
+            f"{word.name} ({word.type_})",
+            word.name,
+            word.status,
+        )
+        if self._get_first_or_item(word.ste_example):
+            row.ste_example = self.to_colour(
+                cast(str, self._get_first_or_item(word.ste_example)),
+                word.name,
+                WordStatus.APPROVED,
+            )
+        if self._get_first_or_item(word.nonste_example):
+            row.nonste_example = self.to_colour(
+                cast(
+                    str,
+                    self._get_first_or_item(word.nonste_example),
+                ),
+                word.name,
+                WordStatus.REJECTED,
+            )
+
+        return result
+
+    def _process_note(self, word: Word, row: TableRow) -> list[TableRow]:
 
         assert isinstance(word, Word)
         assert isinstance(row, TableRow)
@@ -168,9 +186,7 @@ class DictionaryCommand(EraseConsoleBufferCommand):
         return result
 
     def _process_alternatives(
-            self,
-            word: Word,
-            row: TableRow
+        self, word: Word, row: TableRow
     ) -> list[TableRow]:
 
         assert isinstance(word, Word)
@@ -186,8 +202,7 @@ class DictionaryCommand(EraseConsoleBufferCommand):
                 result.append(row)
 
             row.description = self.to_colour(
-                f"{alt.name.upper()} ({alt.type_})",
-                alt.name, alt.status
+                f"{alt.name.upper()} ({alt.type_})", alt.name, alt.status
             )
 
             # Process examples pairwise.
@@ -210,8 +225,7 @@ class DictionaryCommand(EraseConsoleBufferCommand):
             ):
 
                 if 0 == i:
-                    row.ste_example = self.to_colour(
-                        ste, alt.name, alt.status)
+                    row.ste_example = self.to_colour(ste, alt.name, alt.status)
                     row.nonste_example = self.to_colour(
                         nonste, word.name, WordStatus.REJECTED
                     )
@@ -220,8 +234,7 @@ class DictionaryCommand(EraseConsoleBufferCommand):
                 row = TableRow()
                 result.append(row)
 
-                row.ste_example = self.to_colour(
-                    ste, alt.name, alt.status)
+                row.ste_example = self.to_colour(ste, alt.name, alt.status)
                 row.nonste_example = self.to_colour(
                     nonste, word.name, WordStatus.REJECTED
                 )
@@ -247,12 +260,13 @@ class DictionaryCommand(EraseConsoleBufferCommand):
             row = TableRow()
             rows.append(row)
 
-            if word.status in [WordStatus.APPROVED, WordStatus.CUSTOM]:
+            if WordStatus.APPROVED == word.status:
                 if word.name:
-                    row.word = self.to_colour(
+                    row.word = self.to_word_colour(
                         f"{word.name.upper()} ({word.type_})",
                         word.name,
                         word.status,
+                        word.category,
                     )
                 if self._get_first_or_item(word.ste_example):
                     row.ste_example = self.to_colour(
@@ -262,10 +276,11 @@ class DictionaryCommand(EraseConsoleBufferCommand):
                     )
             elif WordStatus.REJECTED == word.status:
                 if word.name:
-                    row.word = self.to_colour(
+                    row.word = self.to_word_colour(
                         f"{word.name.lower()} ({word.type_})",
                         word.name,
                         word.status,
+                        word.category,
                     )
                 if self._get_first_or_item(word.nonste_example):
                     row.nonste_example = self.to_colour(
@@ -274,8 +289,9 @@ class DictionaryCommand(EraseConsoleBufferCommand):
                         word.status,
                     )
             else:
-                log.error("Word '%s' with status '%s' found.",
-                          word.name, word.status)
+                log.error(
+                    "Word '%s' with status '%s' found.", word.name, word.status
+                )
                 continue
 
             if word.spellings:
@@ -301,7 +317,7 @@ class DictionaryCommand(EraseConsoleBufferCommand):
                         row.nonste_example = self.to_colour(
                             meaning.nonste_example,
                             word.name,
-                            WordStatus.REJECTED
+                            WordStatus.REJECTED,
                         )
 
             if word.alternatives:
@@ -315,7 +331,8 @@ class DictionaryCommand(EraseConsoleBufferCommand):
         for row in rows:
             if row.description:
                 row.description = row.description.replace(
-                    Constant.BLOCKING_WHITE_SPACE, "")
+                    Constant.BLOCKING_WHITE_SPACE, ""
+                )
             log.debug(
                 "'%s', '%s', '%s', '%s'",
                 row.word,

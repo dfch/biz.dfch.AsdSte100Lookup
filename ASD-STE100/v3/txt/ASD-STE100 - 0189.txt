@@ -1,4 +1,4 @@
-﻿product (n)	WHEN YOU CLEAN THIS UNIT, USE THE CORRECT SOLVENT.	When you clean this unit, use the correct product.
+﻿product (n)	​	WHEN YOU CLEAN THIS UNIT, USE THE CORRECT SOLVENT.	When you clean this unit, use the correct product.
 		TRICHLOROETHANE IS A DANGEROUS MATERIAL.	This product is dangerous.
 	###Be accurate. If it is possible, use the name of the product.
 profile (n)	CONTOUR (n)	MAKE SURE THAT THE CONTOUR OF THE TEMPLATE IS THE SAME.	Make sure that the profile of the template is the same.

@@ -2,7 +2,7 @@
 precisely (adv)	ACCURATELY (adv)	ADJUST THE ANGLE OF THE CAMERA ACCURATELY.	The angle of the camera must be adjusted precisely.
 PRECISION (n)	The quality of being accurate	THE TEMPERATURE OF THE OIL HAS AN EFFECT ON THE PRECISION OF THE OIL LEVEL INDICATOR.	
 preferable (adj)	RECOMMEND (v)	IT IS POSSIBLE TO MIX APPROVED ENGINE OILS OF THE SAME TYPE. BUT THE STANDARD PRACTICES MANUAL RECOMMENDS THAT YOU ALWAYS USE THE SAME TYPE OF ENGINE OIL.	It is possible to mix approved engine oils of the same type, but. according to the Standard Practices Manual, it is always preferable to use the same type of engine oil.
-preferably (adv)	IF IT IS POSSIBLE	IF IT IS POSSIBLE, APPLY THIS ADHESIVE OUTDOORS.	Preferably, apply this adhesive outdoors.
+preferably (adv)	IF IT IS POSSIBLE (conj)	IF IT IS POSSIBLE, APPLY THIS ADHESIVE OUTDOORS.	Preferably, apply this adhesive outdoors.
 preheat (v)	HEAT (n)	BEFORE YOU START THIS PROCEDURE, APPLY HEAT TO THE AREA WITH A HEAT LAMP.	Preheat the area with a heat lamp.
 preload (v)	LOAD (TN)	BEFORE YOU START THIS PROCEDURE, APPLY A LOAD OF 10 lb TO THE SPRING.	Preload the spring to 10 lb.
 premature (adj)	BEFORE (conj)	IF THE VALVE OPENS BEFORE THE SET PRESSURE, STOP THE TEST.	If the valve opening is premature, stop the test.

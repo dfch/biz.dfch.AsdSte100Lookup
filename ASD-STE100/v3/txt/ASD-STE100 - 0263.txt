@@ -1,5 +1,5 @@
-﻿upon (prep)	ON (prep) WHEN (conj)	PUT THE OHMMETER ON A FLAT SURFACE.	Put the ohmmeter upon a flat surface.
-		WHEN YOU SET THE LEVER TO “UP,” THE HYDRAULIC PRESSURE MUST DECREASE.	Upon UP selection, the hydraulic pressure must decrease.
+﻿upon (prep)	ON (prep)	PUT THE OHMMETER ON A FLAT SURFACE.	Put the ohmmeter upon a flat surface.
+	WHEN (conj)	WHEN YOU SET THE LEVER TO “UP,” THE HYDRAULIC PRESSURE MUST DECREASE.	Upon UP selection, the hydraulic pressure must decrease.
 upper (adj)	MAXIMUM (adj)	FILL THE CONTAINER TO THE MAXIMUM LEVEL.	Fill the container to the upper level.
 	TOP (adj)	THE AIRFLOW THEN GOES ALONG THE TOP AND BOTTOM SURFACES OF THE SLATS.	The airflow then passes over the upper and lower surfaces of the slats.
 uppermost (adj)	UP (adv)	INSTALL THE BOLTS WITH THEIR HEADS UP.	Install the bolts with their heads in uppermost position.

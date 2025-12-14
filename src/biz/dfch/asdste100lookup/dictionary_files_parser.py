@@ -101,8 +101,9 @@ class DictionaryFilesParser:
 
         word_info: WordInfo = WordInfo(file.name)
         for index, line_info in enumerate(line_infos):
-            log.debug("[%s] [%s] '%s'",
-                      word_info.filename, index, line_info.line)
+            log.debug(
+                "[%s] [%s] '%s'", word_info.filename, index, line_info.line
+            )
             if 0 == index:
                 assert line_info.is_start_of_word
 
@@ -238,7 +239,9 @@ class DictionaryFilesParser:
                 line_info.get_type().name,
                 line_info.line,
             )
-            assert WordState.ERROR != next_state
+            assert (
+                WordState.ERROR != next_state
+            ), f"current_state: {current_state} [{line_info}]."
             previous_state = current_state
             current_state = next_state
 
@@ -355,9 +358,11 @@ class DictionaryFilesParser:
         files = [
             f
             for f in path.iterdir()
-            if (f.is_file() and
-                f.name.startswith(prefix) and
-                f.suffix == extension)
+            if (
+                f.is_file()
+                and f.name.startswith(prefix)
+                and f.suffix == extension
+            )
         ]
 
         word_infos: list[WordInfo] = []
@@ -386,9 +391,7 @@ class DictionaryFilesParser:
             json.dump(parsed_words_dicts, f, indent=2)
 
     def get_next_state(
-            self,
-            current_state: WordState,
-            line_info: LineInfo
+        self, current_state: WordState, line_info: LineInfo
     ) -> WordState:
         """Returns the next state based on the current state and line_info."""
 

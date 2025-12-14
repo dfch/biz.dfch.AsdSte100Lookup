@@ -1,11 +1,11 @@
 ﻿OVERBOARD (adv)	Out of a vessel	RELEASE THE AIR OVERBOARD.	
-overfill (v)	TOO MUCH	DO NOT PUT TOO MUCH FLUID IN THE LUBRICATION HOLE.	Do not overfill the lubrication hole.
-overfull (adj)	TOO FULL	IF THE TANK IS TOO FULL, YOU CANNOT PRESSURIZE IT CORRECTLY.	If the tank is overfull, you cannot pressurize it correctly.
+overfill (v)	TOO MUCH (adj)	DO NOT PUT TOO MUCH FLUID IN THE LUBRICATION HOLE.	Do not overfill the lubrication hole.
+overfull (adj)	TOO FULL (adj)	IF THE TANK IS TOO FULL, YOU CANNOT PRESSURIZE IT CORRECTLY.	If the tank is overfull, you cannot pressurize it correctly.
 overhaul (v)	OVERHAUL (TN)	DO AN OVERHAUL OF THE No. 2 ENGINE.	Overhaul the No. 2 engine.
-overheat (v)	TOO HOT	IF YOU PRESSURIZE THE OXYGEN BOTTLE QUICKLY, IT WILL BECOME TOO HOT.	Rapid charging overheats the oxygen bottle.
+overheat (v)	TOO HOT (adj)	IF YOU PRESSURIZE THE OXYGEN BOTTLE QUICKLY, IT WILL BECOME TOO HOT.	Rapid charging overheats the oxygen bottle.
 OVERLAP (n)	The area in which a part of one surface is on a part of a second surface	IF THE OVERLAP IS MORE THAN 0,01 mm, REPLACE THE PART.	
 overlap (v)	OVERLAP (n)	MAKE AN OVERLAP OF 10 mm.	Overlap the surfaces by 10 mm.
 OVERRIDE (v), OVERRIDES, OVERRODE, OVERRIDDEN	MANUALLY OVERRIDE THE START SEQUENCE.	To prevent the automatic operation of a part or system
-overtighten (v)	TIGHTEN TOO MUCH (adj)	DO NOT TIGHTEN THE FITTINGS TOO MUCH.	Do not overtighten the fittings.
+overtighten (v)	TIGHTEN TOO MUCH (v)	DO NOT TIGHTEN THE FITTINGS TOO MUCH.	Do not overtighten the fittings.
 	TOO TIGHT (adj)	DO NOT MAKE THE FITTINGS TOO TIGHT.	Do not overtighten the fittings.
 	TOO TIGHTLY (adv)	DO NOT INSTALL THE FITTINGS TOO TIGHTLY.	Do not overtighten the fittings.

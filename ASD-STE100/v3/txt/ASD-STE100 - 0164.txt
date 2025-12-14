@@ -1,5 +1,5 @@
 ﻿neutralize (v)	NEUTRAL (adj)	MAKE THE BASIC ELECTROLYTE NEUTRAL WITH VINEGAR OR BORIC ACID.	Neutralize the basic electrolyte with vinegar or boric acid.
-never (adv)	DO NOT	DO NOT LET THE LEVEL IN THE TANK DECREASE TO LESS THAN HALF.	Never allow the level in the tank to drop below half.
+never (adv)	DO NOT (v)	DO NOT LET THE LEVEL IN THE TANK DECREASE TO LESS THAN HALF.	Never allow the level in the tank to drop below half.
 NEW (adj) (NEWER, NEWEST)	Not used before	INSTALL A NEW GASKET ON THE FLANGE.	
 NEXT (adj)	The first occurrence that follows immediately after in time or sequence.	REMOVE THE UNIT BEFORE THE NEXT OPERATING CYCLE.	
 next (adv)	THEN (adv)	HOLD THE FLANGE IN ITS POSITION. THEN, INSTALL THE BOLT.	Hold the flange in its position. Next, install the bolt.
