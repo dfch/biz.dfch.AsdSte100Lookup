@@ -50,10 +50,24 @@ class SentenceParser:
         """
         Args:
             quote_pairs: iterable of (open_quote, close_quote), optional
-                Example default: [('"', '"'), ("'", "'")]
+                Example default:
+                [ ("'", "'"), ('"', '"'), ("‘", "’"), ("“", "”"),
+                    ("‹", "›"), ("«", "»"), ("‚", "‘"), ("„", "“") ]
         """
         if quote_pairs is None:
-            quote_pairs = [('"', '"'), ("'", "'")]
+            quote_pairs = [
+                ("'", "'"),
+                ('"', '"'),
+
+                ("‘", "’"),
+                ("“", "”"),
+
+                ("‹", "›"),
+                ("«", "»"),
+
+                ("‚", "‘"),
+                ("„", "“"),
+            ]
 
         self.quote_pairs: list[tuple[str, str]] = list(quote_pairs)
         self._open_to_close = dict(self.quote_pairs)
