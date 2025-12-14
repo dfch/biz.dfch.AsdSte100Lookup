@@ -1,5 +1,5 @@
-﻿stamp (v)	PUT (v) (WITH A STAMP [TN] OR STAMPS [TN])	PUT THE TEST DATE ON THE CYLINDER NECK WITH THE APPLICABLE STAMP.	Stamp the test date on the cylinder neck.
-	IDENTIFY (v) (WITH A STAMP [TN] OR STAMPS [TN])	IDENTIFY THE MANUFACTURING DATE ON THE NAMEPLATE WITH THE APPLICABLE STAMP.	Stamp the manufacturing date on the nameplate.
+﻿stamp (v)	PUT WITH A STAMP OR STAMPS (v)	PUT THE TEST DATE ON THE CYLINDER NECK WITH THE APPLICABLE STAMP.	Stamp the test date on the cylinder neck.
+	IDENTIFY WITH A STAMP OR STAMPS (v)	IDENTIFY THE MANUFACTURING DATE ON THE NAMEPLATE WITH THE APPLICABLE STAMP.	Stamp the manufacturing date on the nameplate.
 stand (v)	STAY (v)	STAY AWAY FROM SURFACES THAT MOVE.	Do not stand near moving surfaces.
 STANDARD (adj)	Related to equipment and procedures that are normally used	IN THIS PROCEDURE, USE STANDARD TOOLS.	
 starboard (adj)	RIGHT (adj)	ON THE RIGHT WING, MOVE THE AILERONS UP.	On the starboard wing, move the ailerons up.

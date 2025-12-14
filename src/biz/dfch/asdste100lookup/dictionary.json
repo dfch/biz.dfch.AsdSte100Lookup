@@ -14670,16 +14670,27 @@
     "status": "rejected",
     "name": "concurrently",
     "type_": "adj",
-    "meanings": [
+    "meanings": [],
+    "spellings": [],
+    "alternatives": [
       {
-        "value": "AT THE SAME TIME",
-        "ste_example": "DO THESE TWO PROCEDURES AT THE SAME TIME.",
-        "nonste_example": "These two procedures must be applied concurrently.",
+        "status": "approved",
+        "name": "AT THE SAME TIME",
+        "type_": "adv",
+        "meanings": [],
+        "spellings": [],
+        "alternatives": [],
+        "source": "STE100:9",
+        "category": "0",
+        "ste_example": [
+          "DO THESE TWO PROCEDURES AT THE SAME TIME."
+        ],
+        "nonste_example": [
+          "These two procedures must be applied concurrently."
+        ],
         "note": null
       }
     ],
-    "spellings": [],
-    "alternatives": [],
     "source": "STE100:9",
     "category": "0",
     "ste_example": [],
@@ -31025,22 +31036,44 @@
     "status": "rejected",
     "name": "force",
     "type_": "v",
-    "meanings": [
+    "meanings": [],
+    "spellings": [],
+    "alternatives": [
       {
-        "value": "PUSH (v) FORCE (TN)",
-        "ste_example": "PUSH THE CLIP OUT TO REMOVE IT.",
-        "nonste_example": "Clip may be removed by forcing it out.",
+        "status": "approved",
+        "name": "PUSH",
+        "type_": "v",
+        "meanings": [],
+        "spellings": [],
+        "alternatives": [],
+        "source": "STE100:9",
+        "category": "0",
+        "ste_example": [
+          "PUSH THE CLIP OUT TO REMOVE IT."
+        ],
+        "nonste_example": [
+          "Clip may be removed by forcing it out."
+        ],
         "note": null
       },
       {
-        "value": "\u200b",
-        "ste_example": "DO NOT USE FORCE TO PUSH THE COVER INTO POSITION.",
-        "nonste_example": "Do not attempt to force the cover into position.",
+        "status": "approved",
+        "name": "FORCE",
+        "type_": "TN",
+        "meanings": [],
+        "spellings": [],
+        "alternatives": [],
+        "source": "STE100:9",
+        "category": "0",
+        "ste_example": [
+          "DO NOT USE FORCE TO PUSH THE COVER INTO POSITION."
+        ],
+        "nonste_example": [
+          "Do not attempt to force the cover into position."
+        ],
         "note": null
       }
     ],
-    "spellings": [],
-    "alternatives": [],
     "source": "STE100:9",
     "category": "0",
     "ste_example": [],
@@ -34697,16 +34730,27 @@
     "status": "rejected",
     "name": "hand-tight",
     "type_": "adj",
-    "meanings": [
+    "meanings": [],
+    "spellings": [],
+    "alternatives": [
       {
-        "value": "TIGHTEN ... WITH YOUR HAND",
-        "ste_example": "INSTALL THE FILTER CASE AND TIGHTEN IT WITH YOUR HAND.",
-        "nonste_example": "Install the filter case hand-tight.",
+        "status": "approved",
+        "name": "TIGHTEN ... WITH YOUR HAND",
+        "type_": "v",
+        "meanings": [],
+        "spellings": [],
+        "alternatives": [],
+        "source": "STE100:9",
+        "category": "0",
+        "ste_example": [
+          "INSTALL THE FILTER CASE AND TIGHTEN IT WITH YOUR HAND."
+        ],
+        "nonste_example": [
+          "Install the filter case hand-tight."
+        ],
         "note": null
       }
     ],
-    "spellings": [],
-    "alternatives": [],
     "source": "STE100:9",
     "category": "0",
     "ste_example": [],
@@ -34722,16 +34766,27 @@
     "status": "rejected",
     "name": "hand-tighten",
     "type_": "v",
-    "meanings": [
+    "meanings": [],
+    "spellings": [],
+    "alternatives": [
       {
-        "value": "TIGHTEN ... WITH YOUR HAND",
-        "ste_example": "TIGHTEN THE SWIVEL NUT WITH YOUR HAND.",
-        "nonste_example": "Hand-tighten the swivel nut.",
+        "status": "approved",
+        "name": "TIGHTEN ... WITH YOUR HAND",
+        "type_": "v",
+        "meanings": [],
+        "spellings": [],
+        "alternatives": [],
+        "source": "STE100:9",
+        "category": "0",
+        "ste_example": [
+          "TIGHTEN THE SWIVEL NUT WITH YOUR HAND."
+        ],
+        "nonste_example": [
+          "Hand-tighten the swivel nut."
+        ],
         "note": null
       }
     ],
-    "spellings": [],
-    "alternatives": [],
     "source": "STE100:9",
     "category": "0",
     "ste_example": [],
@@ -37729,16 +37784,25 @@
     "status": "rejected",
     "name": "inactive",
     "type_": "adj",
-    "meanings": [
+    "meanings": [],
+    "spellings": [],
+    "alternatives": [
       {
-        "value": "NOT ACTIVE",
-        "ste_example": "THE AUTOTHRUST The autothrust system is SYSTEM IS ENGAGED engaged but inactive. BUT IT IS NOT ACTIVE.",
-        "nonste_example": "",
+        "status": "approved",
+        "name": "NOT ACTIVE",
+        "type_": "adj",
+        "meanings": [],
+        "spellings": [],
+        "alternatives": [],
+        "source": "STE100:9",
+        "category": "0",
+        "ste_example": [
+          "THE AUTOTHRUST The autothrust system is SYSTEM IS ENGAGED engaged but inactive. BUT IT IS NOT ACTIVE."
+        ],
+        "nonste_example": [],
         "note": null
       }
     ],
-    "spellings": [],
-    "alternatives": [],
     "source": "STE100:9",
     "category": "0",
     "ste_example": [],
@@ -47417,16 +47481,27 @@
     "status": "rejected",
     "name": "never",
     "type_": "adv",
-    "meanings": [
+    "meanings": [],
+    "spellings": [],
+    "alternatives": [
       {
-        "value": "DO NOT",
-        "ste_example": "DO NOT LET THE LEVEL IN THE TANK DECREASE TO LESS THAN HALF.",
-        "nonste_example": "Never allow the level in the tank to drop below half.",
+        "status": "approved",
+        "name": "DO NOT",
+        "type_": "v",
+        "meanings": [],
+        "spellings": [],
+        "alternatives": [],
+        "source": "STE100:9",
+        "category": "0",
+        "ste_example": [
+          "DO NOT LET THE LEVEL IN THE TANK DECREASE TO LESS THAN HALF."
+        ],
+        "nonste_example": [
+          "Never allow the level in the tank to drop below half."
+        ],
         "note": null
       }
     ],
-    "spellings": [],
-    "alternatives": [],
     "source": "STE100:9",
     "category": "0",
     "ste_example": [],
@@ -50671,7 +50746,7 @@
       {
         "status": "approved",
         "name": "TIGHTEN TOO MUCH",
-        "type_": "adj",
+        "type_": "v",
         "meanings": [],
         "spellings": [],
         "alternatives": [],
@@ -53325,16 +53400,27 @@
     "status": "rejected",
     "name": "preferably",
     "type_": "adv",
-    "meanings": [
+    "meanings": [],
+    "spellings": [],
+    "alternatives": [
       {
-        "value": "IF IT IS POSSIBLE",
-        "ste_example": "IF IT IS POSSIBLE, APPLY THIS ADHESIVE OUTDOORS.",
-        "nonste_example": "Preferably, apply this adhesive outdoors.",
+        "status": "approved",
+        "name": "IF IT IS POSSIBLE",
+        "type_": "conj",
+        "meanings": [],
+        "spellings": [],
+        "alternatives": [],
+        "source": "STE100:9",
+        "category": "0",
+        "ste_example": [
+          "IF IT IS POSSIBLE, APPLY THIS ADHESIVE OUTDOORS."
+        ],
+        "nonste_example": [
+          "Preferably, apply this adhesive outdoors."
+        ],
         "note": null
       }
     ],
-    "spellings": [],
-    "alternatives": [],
     "source": "STE100:9",
     "category": "0",
     "ste_example": [],
@@ -54402,16 +54488,27 @@
     "status": "rejected",
     "name": "probe",
     "type_": "v",
-    "meanings": [
+    "meanings": [],
+    "spellings": [],
+    "alternatives": [
       {
-        "value": "FIND (v) (WITH A PROBE [TN])",
-        "ste_example": "FIND THE BLOCKAGE IN THE TUBE WITH AN APPLICABLE PROBE.",
-        "nonste_example": "Probe the tube to find the blockage.",
+        "status": "approved",
+        "name": "FIND WITH A PROBE",
+        "type_": "v",
+        "meanings": [],
+        "spellings": [],
+        "alternatives": [],
+        "source": "STE100:9",
+        "category": "0",
+        "ste_example": [
+          "FIND THE BLOCKAGE IN THE TUBE WITH AN APPLICABLE PROBE."
+        ],
+        "nonste_example": [
+          "Probe the tube to find the blockage."
+        ],
         "note": null
       }
     ],
-    "spellings": [],
-    "alternatives": [],
     "source": "STE100:9",
     "category": "0",
     "ste_example": [],
@@ -54727,9 +54824,9 @@
     "type_": "n",
     "meanings": [
       {
-        "value": "WHEN YOU CLEAN THIS UNIT, USE THE CORRECT SOLVENT.",
-        "ste_example": "When you clean this unit, use the correct product.",
-        "nonste_example": "",
+        "value": "\u200b",
+        "ste_example": "WHEN YOU CLEAN THIS UNIT, USE THE CORRECT SOLVENT.",
+        "nonste_example": "When you clean this unit, use the correct product.",
         "note": null
       },
       {
@@ -62987,7 +63084,7 @@
       },
       {
         "status": "approved",
-        "name": "ATTACH [WITH A SCREW]",
+        "name": "ATTACH WITH A SCREW",
         "type_": "v",
         "meanings": [],
         "spellings": [],
@@ -63000,7 +63097,7 @@
       },
       {
         "status": "approved",
-        "name": "ATTACH [WITH SCREWS]",
+        "name": "ATTACH WITH SCREWS",
         "type_": "v",
         "meanings": [],
         "spellings": [],
@@ -68647,22 +68744,44 @@
     "status": "rejected",
     "name": "stamp",
     "type_": "v",
-    "meanings": [
+    "meanings": [],
+    "spellings": [],
+    "alternatives": [
       {
-        "value": "PUT (v) (WITH A STAMP [TN] OR STAMPS [TN])",
-        "ste_example": "PUT THE TEST DATE ON THE CYLINDER NECK WITH THE APPLICABLE STAMP.",
-        "nonste_example": "Stamp the test date on the cylinder neck.",
+        "status": "approved",
+        "name": "PUT WITH A STAMP OR STAMPS",
+        "type_": "v",
+        "meanings": [],
+        "spellings": [],
+        "alternatives": [],
+        "source": "STE100:9",
+        "category": "0",
+        "ste_example": [
+          "PUT THE TEST DATE ON THE CYLINDER NECK WITH THE APPLICABLE STAMP."
+        ],
+        "nonste_example": [
+          "Stamp the test date on the cylinder neck."
+        ],
         "note": null
       },
       {
-        "value": "IDENTIFY (v) (WITH A STAMP [TN] OR STAMPS [TN])",
-        "ste_example": "IDENTIFY THE MANUFACTURING DATE ON THE NAMEPLATE WITH THE APPLICABLE STAMP.",
-        "nonste_example": "Stamp the manufacturing date on the nameplate.",
+        "status": "approved",
+        "name": "IDENTIFY WITH A STAMP OR STAMPS",
+        "type_": "v",
+        "meanings": [],
+        "spellings": [],
+        "alternatives": [],
+        "source": "STE100:9",
+        "category": "0",
+        "ste_example": [
+          "IDENTIFY THE MANUFACTURING DATE ON THE NAMEPLATE WITH THE APPLICABLE STAMP."
+        ],
+        "nonste_example": [
+          "Stamp the manufacturing date on the nameplate."
+        ],
         "note": null
       }
     ],
-    "spellings": [],
-    "alternatives": [],
     "source": "STE100:9",
     "category": "0",
     "ste_example": [],
@@ -70568,16 +70687,27 @@
     "status": "rejected",
     "name": "suck",
     "type_": "v",
-    "meanings": [
+    "meanings": [],
+    "spellings": [],
+    "alternatives": [
       {
-        "value": "REMOVE (v) (WITH SUCTION [TN])",
-        "ste_example": "REMOVE THE UNWANTED MATERIAL WITH SUCTION.",
-        "nonste_example": "Suck out the unwanted material.",
+        "status": "approved",
+        "name": "REMOVE WITH SUCTION",
+        "type_": "v",
+        "meanings": [],
+        "spellings": [],
+        "alternatives": [],
+        "source": "STE100:9",
+        "category": "0",
+        "ste_example": [
+          "REMOVE THE UNWANTED MATERIAL WITH SUCTION."
+        ],
+        "nonste_example": [
+          "Suck out the unwanted material."
+        ],
         "note": null
       }
     ],
-    "spellings": [],
-    "alternatives": [],
     "source": "STE100:9",
     "category": "0",
     "ste_example": [],
@@ -75615,16 +75745,27 @@
     "status": "rejected",
     "name": "uncap",
     "type_": "v",
-    "meanings": [
+    "meanings": [],
+    "spellings": [],
+    "alternatives": [
       {
-        "value": "REMOVE (v) (A CAP [TN] OR CAPS [TN])",
-        "ste_example": "REMOVE THE CAPS FROM THE HOSES.",
-        "nonste_example": "Uncap the hoses.",
+        "status": "approved",
+        "name": "REMOVE A CAP OR CAPS",
+        "type_": "v",
+        "meanings": [],
+        "spellings": [],
+        "alternatives": [],
+        "source": "STE100:9",
+        "category": "0",
+        "ste_example": [
+          "REMOVE THE CAPS FROM THE HOSES."
+        ],
+        "nonste_example": [
+          "Uncap the hoses."
+        ],
         "note": null
       }
     ],
-    "spellings": [],
-    "alternatives": [],
     "source": "STE100:9",
     "category": "0",
     "ste_example": [],
@@ -75640,16 +75781,27 @@
     "status": "rejected",
     "name": "unclip",
     "type_": "v",
-    "meanings": [
+    "meanings": [],
+    "spellings": [],
+    "alternatives": [
       {
-        "value": "REMOVE (v) (FROM A CLIP [TN] OR CLIPS [TN])",
-        "ste_example": "REMOVE THE VISOR FROM THE CLIP.",
-        "nonste_example": "Unclip the visor.",
+        "status": "approved",
+        "name": "REMOVE FROM A CLIP OR CLIPS",
+        "type_": "v",
+        "meanings": [],
+        "spellings": [],
+        "alternatives": [],
+        "source": "STE100:9",
+        "category": "0",
+        "ste_example": [
+          "REMOVE THE VISOR FROM THE CLIP."
+        ],
+        "nonste_example": [
+          "Unclip the visor."
+        ],
         "note": null
       }
     ],
-    "spellings": [],
-    "alternatives": [],
     "source": "STE100:9",
     "category": "0",
     "ste_example": [],

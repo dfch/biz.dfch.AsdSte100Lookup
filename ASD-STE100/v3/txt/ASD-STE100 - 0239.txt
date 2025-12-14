@@ -2,7 +2,7 @@
 	SATISFACTORY (adj)	IF THE TEST RESULTS ARE NOT SATISFACTORY, REPLACE THE UNIT.	If the test is not successful, replace the unit.
 SUCH (adj)	Of the same group	WHEN YOU DO WORK ON SUCH SYSTEMS, USE GOGGLES.	
 such as (conj)	FOR EXAMPLE (n)	WHEN YOU REMOVE THE STUD, USE APPLICABLE TOOLS. FOR EXAMPLE, USE A PLASTIC MALLET AND A PUNCH.	When you remove the stud, use applicable tools such as a plastic mallet and a punch.
-suck (v)	REMOVE (v) (WITH SUCTION [TN])	REMOVE THE UNWANTED MATERIAL WITH SUCTION.	Suck out the unwanted material.
+suck (v)	REMOVE WITH SUCTION (v)	REMOVE THE UNWANTED MATERIAL WITH SUCTION.	Suck out the unwanted material.
 SUDDEN (adj)	That occurs in a short time	SUDDEN MOVEMENT CAN CAUSE DAMAGE TO THE LIMIT STOPS.	
 SUDDENLY (adv)	In a sudden manner	IF THE TEMPERATURE INCREASES SUDDENLY, STOP THE ENGINE.	
 SUFFICIENT (adj)	Not less (or more) than necessary	ADJUST THE CLAMP UNTIL THERE IS SUFFICIENT FRICTION TO KEEP IT IN POSITION.	
