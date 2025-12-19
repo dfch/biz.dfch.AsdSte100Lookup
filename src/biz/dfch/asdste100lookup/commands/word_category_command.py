@@ -33,13 +33,31 @@ class WordCategoryCommand(DictionaryCommand):
 
     type_: CommandQueryType
 
-    def __init__(self, type_: CommandQueryType, value: str) -> None:
+    def __init__(
+        self,
+        type_: CommandQueryType,
+        value: str,
+    ) -> None:
+
         super().__init__(value)
 
         self.type_ = type_
 
     def invoke(self, console, dictionary, rules) -> None:
         super().invoke(console, dictionary, rules)
+
+        if CommandQueryType.LIST == self.type_:
+            technical_nouns_and_verbs: list[str] = []
+
+            descriptions = WordCategory.get_descriptions()
+            for key in descriptions:
+                technical_nouns_and_verbs.append(
+                    f"{key}\t{WordCategory.get_description(key)}"
+                )
+
+            info = "\n".join(technical_nouns_and_verbs)
+            console.print(info)
+            return
 
         if CommandQueryType.NAME == self.type_:
             keys = WordCategory.get_matching_keys(self.value)
