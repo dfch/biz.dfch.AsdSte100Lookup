@@ -39,6 +39,34 @@ _A dictionary lookup for [ASD-STE100 Issue 9](https://www.asd-ste100.org/index.h
   - Copyright by (c) [ASD](https://www.asd-europe.org/).
 * I am in no way afiliated with ASD. ASD does not endorse my work.
 
+## Usage
+
+### Getting help
+
+You can show the help information with `?`:
+
+<img width="2029" height="749" alt="image" src="https://github.com/user-attachments/assets/06db08a3-0460-4e75-8b42-40084d011896" />
+
+You can view more help information for a specified command with `-h`. In the example that follows, you show help information for the `rule` command: `!rule --help`.
+
+<img width="2007" height="682" alt="image" src="https://github.com/user-attachments/assets/92e49c6a-316d-4252-9ba1-0dcfe0425c82" />
+
+*NOTE*: You can use `r` as an alternative to `rule` and you can use `-h` as an alternative to `--help`: `!r -h`.
+
+#### Examples:
+
+Show all rules that start with `R9`:
+
+<img width="2011" height="789" alt="image" src="https://github.com/user-attachments/assets/0c27d10c-30ae-4819-a3c5-ed8d54fe0150" />
+
+Show all rules with a category that containa `word`:
+
+<img width="2018" height="1457" alt="image" src="https://github.com/user-attachments/assets/7bf98688-5825-4ae2-a225-542145d15a97" />
+
+Show rule `R6.3` with its contents:
+
+<img width="2051" height="1462" alt="image" src="https://github.com/user-attachments/assets/f8099e75-7f9b-4b1d-988c-c514d72f8796" />
+
 ## Setting up VSCode
 
 In addition to my *user* `settings.json` this is the project specific `settings.json`:
