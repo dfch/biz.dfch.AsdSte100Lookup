@@ -59,7 +59,9 @@ Show all rules that start with `R9`:
 
 <img width="2011" height="789" alt="image" src="https://github.com/user-attachments/assets/0c27d10c-30ae-4819-a3c5-ed8d54fe0150" />
 
-Show all rules with a category that containa `word`:
+Show all rules with a category that contains `word`:
+
+*NOTE*: It is not necessary to use quotes here. You can also write: `!r -c word -l`.
 
 <img width="2018" height="1457" alt="image" src="https://github.com/user-attachments/assets/7bf98688-5825-4ae2-a225-542145d15a97" />
 
