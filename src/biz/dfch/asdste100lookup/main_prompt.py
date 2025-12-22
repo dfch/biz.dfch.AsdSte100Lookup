@@ -162,6 +162,12 @@ class MainPrompt:  # pylint: disable=R0903
         )
 
         result.add_argument(
+            "-t",
+            "--text",
+            help="Text of the rule to query.",
+        )
+
+        result.add_argument(
             "-a",
             "--all",
             action="store_true",
@@ -420,6 +426,12 @@ class MainPrompt:  # pylint: disable=R0903
             return RuleCommand(
                 CommandQueryType.SUMMARY,
                 ns.summary,
+                display_type=display_type,
+            )
+        if ns.text is not None:
+            return RuleCommand(
+                CommandQueryType.TEXT,
+                ns.text,
                 display_type=display_type,
             )
         if ns.all is not None:
