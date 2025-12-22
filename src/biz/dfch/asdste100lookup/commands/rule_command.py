@@ -54,6 +54,11 @@ class RuleCommand(EraseConsoleBufferCommand):
         selected_rules: list[Rule] = []
         for rule in rules:
             match self._type_:
+                # With `ALL` we select all rules regardless of `value`.
+                case CommandQueryType.ALL:
+                    selected_rules.append(rule)
+                    continue
+
                 case CommandQueryType.ID:
                     value = rule.id_
                 case CommandQueryType.NAME:
@@ -64,9 +69,8 @@ class RuleCommand(EraseConsoleBufferCommand):
                     value = rule.category
                 case CommandQueryType.SUMMARY:
                     value = rule.summary
-                case CommandQueryType.ALL:
-                    selected_rules.append(rule)
-                    continue
+                case CommandQueryType.TEXT:
+                    value = ' '.join([item.data for item in rule.contents])
                 case _:
                     raise ValueError(
                         f"Invalid {CommandQueryType.__name__}: "

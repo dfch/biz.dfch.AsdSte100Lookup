@@ -61,7 +61,7 @@ class WordCategory(StrEnum):
         """Returns a map of all word category descriptions."""
 
         result: dict[WordCategory, str] = {
-            WordCategory.DEFAULT: "Not a technical noun or verb",
+            WordCategory.DEFAULT: "Dictionary noun or verb",
             WordCategory.OFFICIAL_PARTS: "Official parts information",
             WordCategory.VEHICLES_MACHINES: "Vehicles and machines, and locations on them",  # noqa: disable:E0501
             WordCategory.TOOLS_EQUIPMENT: "Tools and support equipment, their parts, and locations on them",  # noqa: disable:E0501
@@ -95,7 +95,7 @@ class WordCategory(StrEnum):
     @staticmethod
     def get_matching_keys(pattern: str) -> list[WordCategory]:
         """
-        Returns all word categories where `pattern` matchs the text from
+        Returns all word categories where `pattern` matches the text from
         the description.
         """
 

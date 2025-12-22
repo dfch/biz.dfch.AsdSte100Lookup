@@ -100,9 +100,7 @@ class MainPrompt:  # pylint: disable=R0903
             help="This command shows all words from the specified category.",
         )
 
-        result = parser.add_mutually_exclusive_group(
-            required=True
-        )
+        result = parser.add_mutually_exclusive_group(required=True)
         result.add_argument(
             "-i",
             "--id",
@@ -114,6 +112,14 @@ class MainPrompt:  # pylint: disable=R0903
             "--name",
             help="Name of the word category to query.",
         )
+
+        result.add_argument(
+            "-l",
+            "--list",
+            action="store_true",
+            help="List the ids and category names.",
+        )
+
         return result
 
     def _build_parser_rule(
@@ -125,9 +131,7 @@ class MainPrompt:  # pylint: disable=R0903
             help="This command shows the specified rule.",
         )
 
-        result = parser.add_mutually_exclusive_group(
-            required=True
-        )
+        result = parser.add_mutually_exclusive_group(required=True)
         result.add_argument(
             "-i",
             "--id",
@@ -158,6 +162,12 @@ class MainPrompt:  # pylint: disable=R0903
         )
 
         result.add_argument(
+            "-t",
+            "--text",
+            help="Text of the rule to query.",
+        )
+
+        result.add_argument(
             "-a",
             "--all",
             action="store_true",
@@ -172,14 +182,14 @@ class MainPrompt:  # pylint: disable=R0903
             "-l",
             "--list",
             action="store_true",
-            help="Only list the id and name of the matching rules.",
+            help="List the id and name of the matching rules.",
         )
 
         rule_parser_output_args.add_argument(
             "-b",
             "--brief",
             action="store_true",
-            help="Only list a brief overview of the matching rules.",
+            help="List a brief overview of the matching rules.",
         )
 
         return result
@@ -193,9 +203,7 @@ class MainPrompt:  # pylint: disable=R0903
             help="This command writes the last console output to a file.",
         )
 
-        result = parser.add_mutually_exclusive_group(
-            required=True
-        )
+        result = parser.add_mutually_exclusive_group(required=True)
 
         result.add_argument(
             "-n",
@@ -232,9 +240,7 @@ class MainPrompt:  # pylint: disable=R0903
             help="Modifies the filter for dictionary queries.",
         )
 
-        result = parser.add_mutually_exclusive_group(
-            required=True
-        )
+        result = parser.add_mutually_exclusive_group(required=True)
 
         result.add_argument(
             "-l",
@@ -380,6 +386,8 @@ class MainPrompt:  # pylint: disable=R0903
         return UnknownCommand(text)
 
     def _parse_category(self, ns) -> CommandBase:
+        if ns.list is not None and True is ns.list:
+            return WordCategoryCommand(CommandQueryType.LIST, "")
         if ns.id is not None:
             return WordCategoryCommand(CommandQueryType.ID, ns.id)
         if ns.name is not None:
@@ -418,6 +426,12 @@ class MainPrompt:  # pylint: disable=R0903
             return RuleCommand(
                 CommandQueryType.SUMMARY,
                 ns.summary,
+                display_type=display_type,
+            )
+        if ns.text is not None:
+            return RuleCommand(
+                CommandQueryType.TEXT,
+                ns.text,
                 display_type=display_type,
             )
         if ns.all is not None:
