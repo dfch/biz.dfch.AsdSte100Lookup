@@ -69,6 +69,11 @@ Show rule `R6.3` with its contents:
 
 <img width="2051" height="1462" alt="image" src="https://github.com/user-attachments/assets/f8099e75-7f9b-4b1d-988c-c514d72f8796" />
 
+Show all rule names that contain the word `hyphen` or `dash`: `!r -t hyphen|dash -l`
+
+<img width="2282" height="636" alt="image" src="https://github.com/user-attachments/assets/8e1492a7-8197-436f-9649-1577483192f4" />
+
+
 ## Setting up VSCode
 
 In addition to my *user* `settings.json` this is the project specific `settings.json`:
