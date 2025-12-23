@@ -3,7 +3,7 @@ penetrate (v)	GO THROUGH	IF THE SCRATCH DOES NOT GO THROUGH THE PROTECTIVE LAYER
 	GO INTO	MAKE SURE THAT THE HYDRAULIC FLUID DOES NOT GO INTO THE RECEPTACLES.	Make sure that the hydraulic fluid does not penetrate the receptacles.
 people (n)	PERSON (n)	KEEP ALL PERSONS OUT OF THE WORK AREA.	Keep all people out of the work area.
 	PERSONNEL (n)	TELL YOUR PERSONNEL ABOUT THESE NEW REGULATIONS.	Tell your people about these new regulations.
-	###To select the correct alternative, refer to the approved meanings of PERSON (n)and PERSONNEL (n).
+	###To select the correct alternative, refer to the approved meanings of PERSON (n) and PERSONNEL (n).
 per (prep)	FOR EACH (prep)	DO NOT USE MORE THAN TWO WASHERS FOR EACH BOLT.	Do not use more than two washers per bolt.
 	REFER (v)	DO THE LEAK TEST: REFER TO PARAGRAPH 7.0.	Do the leak test as per paragraph 7.0.
 perforated (adj)	HOLE (n)	MAKE SURE THAT THERE ARE NO HOLES IN THE MEMBRANE.	Make sure that the membrane is not perforated.
