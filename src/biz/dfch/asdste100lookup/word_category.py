@@ -44,7 +44,7 @@ class WordCategory(StrEnum):
     MEDICAL_TERMS = "TN14"
     DOCUMENTATION = "TN15"
     ENVIRONMENTAL_TERMS = "TN16"
-    COLOURS = "TN17"
+    COLORS = "TN17"
     DAMAGE_TERMS = "TN18"
     ICT_TERMS = "TN19"
     CIVIL_MILITARY_TERMS = "TN20"
@@ -78,7 +78,7 @@ class WordCategory(StrEnum):
             WordCategory.MEDICAL_TERMS: "Medical terms",
             WordCategory.DOCUMENTATION: "Official documents, parts of documentation, standards, and guidelines",  # noqa: disable:E0501
             WordCategory.ENVIRONMENTAL_TERMS: "Environmental and operational conditions",  # noqa: disable:E0501
-            WordCategory.COLOURS: "Colors",
+            WordCategory.COLORS: "Colors",
             WordCategory.DAMAGE_TERMS: "Damage terms",
             WordCategory.ICT_TERMS: "Computer science, information and communication technology",  # noqa: disable:E0501
             WordCategory.CIVIL_MILITARY_TERMS: "Civil and military operations",  # noqa: disable:E0501
