@@ -164,7 +164,7 @@ class DictionaryFilesParser:
 
         match current_state:
             case WordState.WORD_MEANING:
-                meanning = WordMeaning(
+                meaning = WordMeaning(
                     value=description,
                     ste_example=get_value_or_default(ste),
                     nonste_example=get_value_or_default(non_ste),
@@ -174,7 +174,7 @@ class DictionaryFilesParser:
                     name=item.word.name,
                     type_=item.word.type_,
                     source=WordSource.STE100_9,
-                    meanings=[meanning],
+                    meanings=[meaning],
                     spellings=spellings,
                     alternatives=[],
                     note=WordNote(value=""),
@@ -256,19 +256,19 @@ class DictionaryFilesParser:
                     result.note.ste_example = get_value_or_default(ste)
                     result.note.nonste_example = get_value_or_default(non_ste)
                 case WordState.MEANING:
-                    meanning = WordMeaning(
+                    meaning = WordMeaning(
                         value=get_value_or_default(description),
                         ste_example=get_value_or_default(ste),
                         nonste_example=get_value_or_default(non_ste),
                     )
-                    result.meanings.append(meanning)
+                    result.meanings.append(meaning)
                 case WordState.MEANING_EXAMPLE:
-                    meanning = WordMeaning(
+                    meaning = WordMeaning(
                         value=description or Constant.BLOCKING_WHITE_SPACE,
                         ste_example=get_value_or_default(ste),
                         nonste_example=get_value_or_default(non_ste),
                     )
-                    result.meanings.append(meanning)
+                    result.meanings.append(meaning)
                 case WordState.ALTERNATIVE:
                     assert description
                     alt_word = DictionaryInfo.get_single_word(description)

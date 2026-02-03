@@ -13,7 +13,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-"""asdse100lookup package."""
+"""asdste100lookup package."""
 
 from biz.dfch.i18n import LanguageCode
 

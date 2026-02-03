@@ -24,6 +24,7 @@
         "NOSONAR",
         "nword",
         "nwords",
-        "ufeff"
+        "ufeff",
+        "wordinfo"
     ]
 }
