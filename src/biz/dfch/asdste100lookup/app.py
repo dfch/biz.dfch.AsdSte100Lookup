@@ -340,10 +340,10 @@ class App:  # pylint: disable=R0903
             return
 
         self.on_dictionary(
-            use_ste100=self._args.use_ste100,
-            use_technical_nouns=self._args.use_technical_nouns,
-            use_technical_verbs=self._args.use_technical_verbs,
+            use_ste100=True,
+            use_technical_nouns=True,
+            use_technical_verbs=True,
             ste100_file_name=Constant.DICTIONARY_FILE,
             technical_words_file_name=Constant.TECHNICAL_WORDS_FILE,
-            word_files=[Path(f) for f in self._args.input],
+            word_files=[],
         )
