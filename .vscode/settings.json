@@ -15,5 +15,11 @@
         "${workspaceFolder}/src"
     ],
     "python.testing.pytestEnabled": false,
-    "python.testing.unittestEnabled": true
+    "python.testing.unittestEnabled": true,
+    "cSpell.words": [
+        "dfch",
+        "nonste",
+        "NOSONAR",
+        "ufeff"
+    ]
 }
