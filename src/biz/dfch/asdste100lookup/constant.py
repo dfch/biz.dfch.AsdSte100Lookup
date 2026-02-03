@@ -29,4 +29,5 @@ class Constant:
     BLOCKING_WHITE_SPACE = "\u200b"
 
     DICTIONARY_FILE = "dictionary.json"
+    TECHNICAL_WORDS_FILE = "technical_words.json"
     RULES_FILE = "rules.json"

@@ -40,7 +40,6 @@ from .main_prompt import MainPrompt
 from .rule import Rule
 from .rule_content_type import RuleContentType
 from .rule_renderer import RuleRenderer
-from .rule_technical_word_parser import RuleTechnicalWordsParser
 from .word_category import WordCategory
 from .word import Word
 from .word_meaning import WordMeaning
@@ -124,13 +123,14 @@ class App:  # pylint: disable=R0903
                 for word in dictionary
                 if word.category == WordCategory.DEFAULT
             ]
-            # Suppress Sonar warning. This random function is not used in a
-            # security relevant context.
-            word = random.choice(words)  # NOSONAR
+            if 0 < len(words):
+                # Suppress Sonar warning. This random function is not used
+                # in a security relevant context.
+                word = random.choice(words)  # NOSONAR
 
-            text = word.name
-            command: CommandBase = UnknownCommand(text)
-            command.invoke(console=console, dictionary=[word], rules=rules)
+                text = word.name
+                command: CommandBase = UnknownCommand(text)
+                command.invoke(console=console, dictionary=[word], rules=rules)
 
         while True:
             text = input(f"[{len(dictionary)}] Enter search term: ").strip()
@@ -214,23 +214,12 @@ class App:  # pylint: disable=R0903
             type_=self._args.summary,
         )
 
-    def on_dictionary(self, dictionary_file_name: str) -> None:
-        """This is the handler for the `dictionary` command."""
+    def _load_word_list(self, fullname: Path) -> list[Word]:
 
-        assert (
-            isinstance(dictionary_file_name, str)
-            and "" != dictionary_file_name.strip()
-        )
+        assert isinstance(fullname, Path), type(fullname)
+        assert fullname.exists(), fullname
 
-        assert dictionary_file_name is not None and "" != dictionary_file_name
-
-        log.debug("Starting to parse source data ...")
-
-        current_folder = Path(__file__).parent
-
-        # Load STE dictionary.
-        dictionary_fullname = current_folder / dictionary_file_name
-        with open(dictionary_fullname, "r", encoding="utf-8") as f:
+        with open(fullname, "r", encoding="utf-8") as f:
             dictionary_json = json.load(f)
 
         word_list = [
@@ -239,15 +228,76 @@ class App:  # pylint: disable=R0903
             )
             for item in dictionary_json
         ]
-        dictionary = sorted(word_list, key=lambda e: e.name.lower())
+
+        result = sorted(word_list, key=lambda e: e.name.lower())
+
+        return result
+
+    def on_dictionary(
+        self,
+        use_ste100: bool,
+        use_technical_nouns: bool,
+        use_technical_verbs: bool,
+        ste100_file_name: str,
+        technical_words_file_name: str,
+        word_files: list[Path],
+    ) -> None:
+        """This is the handler for the `dictionary` command."""
+
+        assert isinstance(use_ste100, bool)
+        assert isinstance(use_technical_nouns, bool)
+        assert isinstance(use_technical_verbs, bool)
+
+        assert isinstance(ste100_file_name, str)
+        assert ste100_file_name.strip()
+
+        assert isinstance(technical_words_file_name, str)
+        assert technical_words_file_name.strip()
+
+        assert isinstance(word_files, list), type(word_files)
+
+        log.debug("Starting to parse source data ...")
+
+        current_folder = Path(__file__).parent
+
+        dictionary: list[Word] = []
+
+        # Load STE dictionary.
+        if use_ste100:
+            dictionary_fullname = current_folder / ste100_file_name
+            dictionary = self._load_word_list(dictionary_fullname)
 
         # Load rules.
         rules_fullname = current_folder / Constant.RULES_FILE
         rules = self._load_rules(rules_fullname)
 
         # Load technical words and add them to the dictionary.
-        technical_words = RuleTechnicalWordsParser().invoke(rules)
-        dictionary.extend(technical_words)
+        if use_technical_nouns or use_technical_verbs:
+            technical_words_fullname = (
+                current_folder / technical_words_file_name
+            )
+            word_list = self._load_word_list(technical_words_fullname)
+
+            # Put word list together into a single word list.
+            if use_technical_nouns:
+                words = [
+                    w for w in word_list if w.type_ == WordType.TECHNICAL_NOUN
+                ]
+                dictionary.extend(words)
+            if use_technical_verbs:
+                words = [
+                    w for w in word_list if w.type_ == WordType.TECHNICAL_VERB
+                ]
+                dictionary.extend(words)
+
+        for word_file in word_files:
+            assert word_file.exists(), str(word_file)
+            print(f"Load word list '{word_file}' ...")
+            word_list = self._load_word_list(word_file)
+            print(f"Load word list '{word_file}' [{len(word_list)}] OK.")
+            dictionary.extend(word_list)
+
+        # Loop the resulting vocabulary alphabetically.
         dictionary = sorted(dictionary, key=lambda e: e.name.lower())
 
         self.prompt_user_loop(dictionary=dictionary, rules=rules)
@@ -279,7 +329,21 @@ class App:  # pylint: disable=R0903
             return
 
         if self._args.command == "dictionary":
-            self.on_dictionary(self._args.input)
+            self.on_dictionary(
+                use_ste100=self._args.use_ste100,
+                use_technical_nouns=self._args.use_technical_nouns,
+                use_technical_verbs=self._args.use_technical_verbs,
+                ste100_file_name=Constant.DICTIONARY_FILE,
+                technical_words_file_name=Constant.TECHNICAL_WORDS_FILE,
+                word_files=[Path(f) for f in self._args.input],
+            )
             return
 
-        self.on_dictionary(Constant.DICTIONARY_FILE)
+        self.on_dictionary(
+            use_ste100=self._args.use_ste100,
+            use_technical_nouns=self._args.use_technical_nouns,
+            use_technical_verbs=self._args.use_technical_verbs,
+            ste100_file_name=Constant.DICTIONARY_FILE,
+            technical_words_file_name=Constant.TECHNICAL_WORDS_FILE,
+            word_files=[Path(f) for f in self._args.input],
+        )

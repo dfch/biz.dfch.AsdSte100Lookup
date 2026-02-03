@@ -91,10 +91,35 @@ class Args:
         dictionary_parser.add_argument(
             "-i",
             "--input",
-            default=Constant.DICTIONARY_FILE,
+            nargs="+",
+            metavar="PATH",
+            default=[],
             required=False,
-            help="Name of the dictionary file to read entries from "
-            f"(default: {Constant.DICTIONARY_FILE}).",
+            help="A list of dictionary files to read entries from (full path).",
+        )
+
+        dictionary_parser.add_argument(
+            "--ste100",
+            dest="use_ste100",
+            action=argparse.BooleanOptionalAction,
+            default=True,
+            help="Load built-in STE-100 words.",
+        )
+
+        dictionary_parser.add_argument(
+            "--tn",
+            dest="use_technical_nouns",
+            action=argparse.BooleanOptionalAction,
+            default=True,
+            help="Load built-in Technical Nouns (TN).",
+        )
+
+        dictionary_parser.add_argument(
+            "--tv",
+            dest="use_technical_verbs",
+            action=argparse.BooleanOptionalAction,
+            default=True,
+            help="Load built-in Technical Verbs (TV).",
         )
 
         dictionary_parser.add_argument(
@@ -108,13 +133,10 @@ class Args:
         )
         rules_group = rules_parser.add_mutually_exclusive_group()
         rules_group.add_argument(
-            "--list",
-            action="store_true",
-            help="Shows all rules.")
+            "--list", action="store_true", help="Shows all rules."
+        )
         rules_group.add_argument(
-            "--id",
-            type=str,
-            help="Shows rules by specified id (regex match)."
+            "--id", type=str, help="Shows rules by specified id (regex match)."
         )
         rules_group.add_argument(
             "--section",
@@ -129,7 +151,7 @@ class Args:
         rules_parser.add_argument(
             "--summary",
             action="store_true",
-            help="Shows only the summary of a rule."
+            help="Shows only the summary of a rule.",
         )
 
         parse_parser = subparsers.add_parser(

@@ -28,7 +28,12 @@ from .word_type import WordType
 
 
 class RuleTechnicalWordsParser:
-    """Parser for technical nouns and verbs from rule file."""
+    """
+    Parser for technical nouns and verbs from rule file.
+
+    INFO: This class is no longer in operation, because the technical words
+    will load from a separate file.
+    """
 
     def get_technical_words(
         self, rules: list[Rule], rule_id: str, prefix: str, type_: WordType
