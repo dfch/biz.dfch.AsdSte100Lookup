@@ -19,10 +19,10 @@ from biz.dfch.i18n import LanguageCode
 
 from .app import App
 
-from .colouriser import Colouriser
+from .colorizer import Colorizer
 
 __all__ = [
     "App",
+    "Colorizer",
     "LanguageCode",
-    "Colouriser",
 ]

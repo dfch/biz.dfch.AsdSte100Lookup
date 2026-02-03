@@ -13,13 +13,13 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-"""Colouriser class."""
+"""Colorizer class."""
 
 import re
 
 
-class Colouriser:
-    """Creates a colourised string."""
+class Colorizer:
+    """Creates a colorized string."""
 
     value: str
 
@@ -40,7 +40,7 @@ class Colouriser:
     def __repl__(self) -> str:
         return self.__str__()
 
-    def _colourise(self, pattern: str, value: str, is_bright: bool) -> str:
+    def _colorize(self, pattern: str, value: str, is_bright: bool) -> str:
 
         colour = f"bright_{value}" if is_bright else value
 
@@ -69,60 +69,60 @@ class Colouriser:
 
         assert pattern is not None and "" != pattern
 
-        return self._colourise(pattern, "black", is_bright)
+        return self._colorize(pattern, "black", is_bright)
 
     def to_red(self, pattern: str, is_bright: bool = False) -> str:
         """Creates a colorized string in red."""
 
         assert pattern is not None and "" != pattern
 
-        return self._colourise(pattern, "red", is_bright)
+        return self._colorize(pattern, "red", is_bright)
 
     def to_green(self, pattern: str, is_bright: bool = False) -> str:
         """Creates a colorized string in green."""
 
         assert pattern is not None and "" != pattern
 
-        return self._colourise(pattern, "green", is_bright)
+        return self._colorize(pattern, "green", is_bright)
 
     def to_darkergreen(self, pattern: str, is_bright: bool = False) -> str:
         """Creates a colorized string in green."""
 
         assert pattern is not None and "" != pattern
 
-        return self._colourise(pattern, "dark_green", is_bright)
+        return self._colorize(pattern, "dark_green", is_bright)
 
     def to_yellow(self, pattern: str, is_bright: bool = False) -> str:
         """Creates a colorized string in yellow."""
 
         assert pattern is not None and "" != pattern
 
-        return self._colourise(pattern, "yellow", is_bright)
+        return self._colorize(pattern, "yellow", is_bright)
 
     def to_blue(self, pattern: str, is_bright: bool = False) -> str:
         """Creates a colorized string in blue."""
 
         assert pattern is not None and "" != pattern
 
-        return self._colourise(pattern, "blue", is_bright)
+        return self._colorize(pattern, "blue", is_bright)
 
     def to_magenta(self, pattern: str, is_bright: bool = False) -> str:
-        """Creates a colorized string in mangenta."""
+        """Creates a colorized string in magenta."""
 
         assert pattern is not None and "" != pattern
 
-        return self._colourise(pattern, "magenta", is_bright)
+        return self._colorize(pattern, "magenta", is_bright)
 
     def to_cyan(self, pattern: str, is_bright: bool = False) -> str:
         """Creates a colorized string in cyan."""
 
         assert pattern is not None and "" != pattern
 
-        return self._colourise(pattern, "cyan", is_bright)
+        return self._colorize(pattern, "cyan", is_bright)
 
     def to_white(self, pattern: str, is_bright: bool = False) -> str:
         """Creates a colorized string in white."""
 
         assert pattern is not None and "" != pattern
 
-        return self._colourise(pattern, "white", is_bright)
+        return self._colorize(pattern, "white", is_bright)
