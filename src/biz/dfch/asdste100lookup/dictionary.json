@@ -23573,7 +23573,7 @@
     "type_": "adj",
     "meanings": [
       {
-        "value": "ONE (TN) OF THE TWO (TN)",
+        "value": "ONE OF THE TWO (TN)",
         "ste_example": "IF THERE IS MERCURY CONTAMINATION IN ONE OF THE TWO COMPARTMENTS, CLEAN THE AREA IMMEDIATELY.",
         "nonste_example": "If there is mercury spillage in either compartment, clean the area immediately.",
         "note": null
@@ -23634,7 +23634,7 @@
     "type_": "pron",
     "meanings": [
       {
-        "value": "ONE (TN) OR THE OTHER",
+        "value": "ONE OR THE OTHER (TN)",
         "ste_example": "THERE ARE TWO SOLENOIDS. YOU CAN SUPPLY ELECTRICAL POWER TO ONE OR THE OTHER.",
         "nonste_example": "There are two solenoids. You can supply electrical power to either.",
         "note": null
@@ -47366,7 +47366,7 @@
     "type_": "adj",
     "meanings": [
       {
-        "value": "TWO (TN)... NOT",
+        "value": "TWO (TN) ... NOT",
         "ste_example": "THE TWO UNITS MUST NOT OPERATE.",
         "nonste_example": "Neither unit must operate.",
         "note": null
@@ -48957,8 +48957,8 @@
     "type_": "adv",
     "meanings": [
       {
-        "value": "ONE (TN) TIME",
-        "ste_example": "PUSH THE SWITCH ONETIME.",
+        "value": "ONE TIME (adv)",
+        "ste_example": "PUSH THE SWITCH ONE TIME.",
         "nonste_example": "Press the switch once.",
         "note": null
       }
