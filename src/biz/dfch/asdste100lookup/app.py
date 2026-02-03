@@ -60,7 +60,7 @@ class App:  # pylint: disable=R0903
             # "markdown.h1": "bold magenta",
             # "markdown.h2": "bold cyan",
             "markdown.code": "red",
-            # Not really documented. We take the defintion from rich:
+            # Not really documented. We take the definition from rich:
             # DEFAULT_STYLES: Dict[str, Style]
             # "markdown.link_url": Style(color="blue", underline=True), ...
             "markdown.link_url": "cyan",
@@ -124,7 +124,7 @@ class App:  # pylint: disable=R0903
                 for word in dictionary
                 if word.category == WordCategory.DEFAULT
             ]
-            # Suppress Sonar warning. This randon function is not used in a
+            # Suppress Sonar warning. This random function is not used in a
             # security relevant context.
             word = random.choice(words)  # NOSONAR
 
@@ -169,7 +169,7 @@ class App:  # pylint: disable=R0903
         with open(file_path_and_name, "r", encoding="utf-8") as f:
             rules_json = json.load(f)
 
-        # Deserialise.
+        # Deserialize.
         result = [
             from_dict(data_class=Rule, data=item, config=self._rules_config)
             for item in rules_json
@@ -245,9 +245,9 @@ class App:  # pylint: disable=R0903
         rules_fullname = current_folder / Constant.RULES_FILE
         rules = self._load_rules(rules_fullname)
 
-        # Load technical words and add them to the ditionary.
-        techncal_words = RuleTechnicalWordsParser().invoke(rules)
-        dictionary.extend(techncal_words)
+        # Load technical words and add them to the dictionary.
+        technical_words = RuleTechnicalWordsParser().invoke(rules)
+        dictionary.extend(technical_words)
         dictionary = sorted(dictionary, key=lambda e: e.name.lower())
 
         self.prompt_user_loop(dictionary=dictionary, rules=rules)
