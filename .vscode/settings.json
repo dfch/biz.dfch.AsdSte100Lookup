@@ -27,7 +27,11 @@
         "nwords",
         "onefile",
         "pyinstaller",
+        "Pylint",
+        "pytest",
         "ufeff",
+        "venv",
+        "venvdeb",
         "wordinfo"
     ]
 }

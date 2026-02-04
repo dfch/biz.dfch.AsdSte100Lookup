@@ -2,7 +2,7 @@
 
 [![ASD-STE100: Issue 9](https://img.shields.io/badge/ASD--STE100-Issue%209-blue.svg)](https://www.asd-ste100.org/)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-![Python](https://img.shields.io/badge/python-3.11%20%7C%203.12-blue.svg)
+![Python](https://img.shields.io/badge/python-3.11%20%7C%203.12%20%7C%203.13-blue.svg)
 [![Pylint and unittest](https://github.com/dfch/biz.dfch.AsdSte100Lookup/actions/workflows/ci.yml/badge.svg)](https://github.com/dfch/biz.dfch.AsdSte100Lookup/actions/workflows/ci.yml)
 
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=dfch_biz.dfch.AsdSte100Lookup&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=dfch_biz.dfch.AsdSte100Lookup)
@@ -37,7 +37,7 @@ _A dictionary lookup for [ASD-STE100 Issue 9](https://www.asd-ste100.org/index.h
   - Licensed under "GNU General Public License v3" (GPLv3)
 * ASD-STE100
   - Copyright by (c) [ASD](https://www.asd-europe.org/).
-* I am in no way afiliated with ASD. ASD does not endorse my work.
+* I am in no way affiliated with ASD. ASD does not endorse my work.
 
 ## Usage
 
@@ -125,7 +125,7 @@ source venv/bin/activate
 ```
 
 * I use `venv` for the Windows-based venv and `venvdeb` for the WSL2-based Debian environment.
-* On Windows I use Python version `3.12.11`.
+* On Windows I use Python version `3.13.11`.
 * On Debian I use Python version `3.11.2`.
 * The difference in versioning is for no particular reason.
 
@@ -146,7 +146,7 @@ source venv/bin/activate
 
     a. This command builds the program into a single executable file for your operating system. This includes the Python runtime.
 
-    b. The result is in the directory with the name `dist`. The name of the exutable is `AsdSte100Lookup` or `AsdSte100Lookup.exe`.
+    b. The result is in the directory with the name `dist`. The name of the executable is `AsdSte100Lookup` or `AsdSte100Lookup.exe`.
 
 ```bash
 (venv) <prj-root> $ pyinstaller --clean --onefile --name AsdSte100Lookup \
@@ -177,7 +177,7 @@ There are two ways to use the program.
 1. Use the executable from the previous step.
 2. Use the Python interpreter.
 
-    a. Activate the "virtual environement" for your operating system.
+    a. Activate the "virtual environment" for your operating system.
     b. Make sure all necessary libraries are available.
     c. Use this command to change into the `src` directory: `cd src`.
     d. Operate this command: `python -m biz`.
