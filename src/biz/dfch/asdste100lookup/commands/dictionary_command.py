@@ -23,7 +23,7 @@ from rich.table import Table
 
 from biz.dfch.logging import log  # pylint: disable=E0401
 
-from ..colouriser import Colouriser
+from ..colorizer import Colorizer
 from ..constant import Constant
 from ..table_row import TableRow
 from ..utils import get_value_or_default
@@ -40,30 +40,30 @@ class DictionaryCommand(EraseConsoleBufferCommand):
     """Shows dictionary words on the console."""
 
     def to_colour(self, text: str, value: str, status: str) -> str:
-        """Colourises value in specified text green or red based on status."""
+        """Colorizes value in specified text green or red based on status."""
 
         assert isinstance(status, str) and "" != status
 
         if WordStatus.APPROVED == status:
-            return Colouriser(text).to_green(value)
+            return Colorizer(text).to_green(value)
 
-        return Colouriser(text).to_red(value)
+        return Colorizer(text).to_red(value)
 
     def to_word_colour(
         self, text: str, value: str, status: str, category: str
     ) -> str:
-        """Colourises value in specified text green or red based on status."""
+        """Colorizes value in specified text green or red based on status."""
 
         assert isinstance(status, str) and "" != status
         assert isinstance(category, str) and "" != category
 
         if status in (WordStatus.REJECTED, WordStatus.UNKNOWN):
-            return Colouriser(text).to_red(value)
+            return Colorizer(text).to_red(value)
 
         if WordCategory.DEFAULT == category:
-            return Colouriser(text).to_green(value)
+            return Colorizer(text).to_green(value)
 
-        return Colouriser(text).to_darkergreen(value)
+        return Colorizer(text).to_darkergreen(value)
 
     def _get_first_or_item(self, item: str | list[str] | None) -> str | None:
         """
@@ -99,7 +99,7 @@ class DictionaryCommand(EraseConsoleBufferCommand):
         result: list[TableRow] = []
 
         row = TableRow()
-        row.description = str(Colouriser(note.value, "yellow"))
+        row.description = str(Colorizer(note.value, "yellow"))
         if note.ste_example:
             row.ste_example = self.to_colour(
                 note.ste_example, word.name, WordStatus.APPROVED
@@ -128,7 +128,7 @@ class DictionaryCommand(EraseConsoleBufferCommand):
             row = TableRow()
             result.append(row)
 
-        row.description = str(Colouriser(note.value, "yellow"))
+        row.description = str(Colorizer(note.value, "yellow"))
 
         for nword in nwords:
             result.extend(self._process_nword(nword))
@@ -295,11 +295,11 @@ class DictionaryCommand(EraseConsoleBufferCommand):
                 continue
 
             if word.spellings:
-                colourised_spellings: list[str] = [
-                    str(Colouriser(x, "blue")) for x in word.spellings
+                colorized_spellings: list[str] = [
+                    str(Colorizer(x, "blue")) for x in word.spellings
                 ]
 
-                spellings = "\n".join(colourised_spellings)
+                spellings = "\n".join(colorized_spellings)
                 row.word = f"{row.word}\n{spellings}"
 
             if word.meanings:
