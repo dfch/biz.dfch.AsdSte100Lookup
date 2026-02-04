@@ -219,15 +219,20 @@ class App:  # pylint: disable=R0903
         assert isinstance(fullname, Path), type(fullname)
         assert fullname.exists(), fullname
 
+        word_list: list[Word] = []
         with open(fullname, "r", encoding="utf-8") as f:
-            dictionary_json = json.load(f)
-
-        word_list = [
-            from_dict(
-                data_class=Word, data=item, config=self._dictionary_config
-            )
-            for item in dictionary_json
-        ]
+            for idx, line in enumerate(f, 1):
+                line = line.strip()
+                try:
+                    item = json.loads(line)
+                    word = from_dict(
+                            data_class=Word,
+                            data=item,
+                            config=self._dictionary_config
+                        )
+                    word_list.append(word)
+                except Exception as ex:  # pylint: disable=W0718
+                    print(f"[ERROR] {fullname}[#{idx}]: '{ex}'.")
 
         result = sorted(word_list, key=lambda e: e.name.lower())
 
