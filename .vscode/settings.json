@@ -29,6 +29,7 @@
         "pyinstaller",
         "Pylint",
         "pytest",
+        "PYTHONPATH",
         "ufeff",
         "venv",
         "venvdeb",
