@@ -20,8 +20,9 @@ from dataclasses import dataclass
 
 from rich.console import Console
 
+from biz.dfch.asdste100vocab import Word
+
 from ..rule import Rule
-from ..word import Word
 
 
 @dataclass

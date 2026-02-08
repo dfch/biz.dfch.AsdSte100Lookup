@@ -17,8 +17,8 @@
 
 from dataclasses import dataclass
 
-from .word_status import WordStatus
-from .word_type import WordType
+from biz.dfch.asdste100vocab import WordStatus
+from biz.dfch.asdste100vocab import WordType
 
 
 @dataclass

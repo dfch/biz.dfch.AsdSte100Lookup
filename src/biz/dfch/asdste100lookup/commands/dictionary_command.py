@@ -21,16 +21,17 @@ from typing import cast
 
 from rich.table import Table
 
+from biz.dfch.asdste100vocab import Word
+from biz.dfch.asdste100vocab import WordCategory
+from biz.dfch.asdste100vocab import WordNote
+from biz.dfch.asdste100vocab import WordStatus
+
 from biz.dfch.logging import log  # pylint: disable=E0401
 
 from ..colorizer import Colorizer
 from ..constant import Constant
 from ..table_row import TableRow
 from ..utils import get_value_or_default
-from ..word import Word
-from ..word_category import WordCategory
-from ..word_note import WordNote
-from ..word_status import WordStatus
 
 from .erase_console_buffer_command import EraseConsoleBufferCommand
 

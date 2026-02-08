@@ -30,6 +30,14 @@ from rich.theme import Theme
 from biz.dfch.logging import log
 from biz.dfch.version import Version
 
+from biz.dfch.asdste100vocab import Vocab
+from biz.dfch.asdste100vocab import Word
+from biz.dfch.asdste100vocab import WordCategory
+from biz.dfch.asdste100vocab import WordNote
+from biz.dfch.asdste100vocab import WordMeaning
+from biz.dfch.asdste100vocab import WordStatus
+from biz.dfch.asdste100vocab import WordType
+
 from .commands.command_base import CommandBase
 from .commands.empty_command import EmptyCommand
 from .commands.unknown_command import UnknownCommand
@@ -40,12 +48,6 @@ from .main_prompt import MainPrompt
 from .rule import Rule
 from .rule_content_type import RuleContentType
 from .rule_renderer import RuleRenderer
-from .word_category import WordCategory
-from .word import Word
-from .word_meaning import WordMeaning
-from .word_note import WordNote
-from .word_status import WordStatus
-from .word_type import WordType
 
 
 class App:  # pylint: disable=R0903
@@ -226,10 +228,10 @@ class App:  # pylint: disable=R0903
                 try:
                     item = json.loads(line)
                     word = from_dict(
-                            data_class=Word,
-                            data=item,
-                            config=self._dictionary_config
-                        )
+                        data_class=Word,
+                        data=item,
+                        config=self._dictionary_config,
+                    )
                     word_list.append(word)
                 except Exception as ex:  # pylint: disable=W0718
                     print(f"[ERROR] {fullname}[#{idx}]: '{ex}'.")
@@ -265,35 +267,49 @@ class App:  # pylint: disable=R0903
 
         current_folder = Path(__file__).parent
 
-        dictionary: list[Word] = []
+        # dictionary: list[Word] = []
 
-        # Load STE dictionary.
-        if use_ste100:
-            dictionary_fullname = current_folder / ste100_file_name
-            dictionary = self._load_word_list(dictionary_fullname)
+        def predicate(word: Word) -> bool:
+            if word.type_ == WordType.TECHNICAL_NOUN:
+                return use_technical_nouns
+            if word.type_ == WordType.TECHNICAL_VERB:
+                return use_technical_verbs
+            return True
+
+        dictionary = Vocab(
+            use_ste100=use_ste100,
+            use_ste100_technical_word=use_technical_nouns
+            or use_technical_verbs,
+            predicate=predicate
+        )
+
+        # # Load STE dictionary.
+        # if use_ste100:
+        #     dictionary_fullname = current_folder / ste100_file_name
+        #     dictionary = self._load_word_list(dictionary_fullname)
 
         # Load rules.
         rules_fullname = current_folder / Constant.RULES_FILE
         rules = self._load_rules(rules_fullname)
 
-        # Load technical words and add them to the dictionary.
-        if use_technical_nouns or use_technical_verbs:
-            technical_words_fullname = (
-                current_folder / technical_words_file_name
-            )
-            word_list = self._load_word_list(technical_words_fullname)
+        # # Load technical words and add them to the dictionary.
+        # if use_technical_nouns or use_technical_verbs:
+        #     technical_words_fullname = (
+        #         current_folder / technical_words_file_name
+        #     )
+        #     word_list = self._load_word_list(technical_words_fullname)
 
-            # Put word list together into a single word list.
-            if use_technical_nouns:
-                words = [
-                    w for w in word_list if w.type_ == WordType.TECHNICAL_NOUN
-                ]
-                dictionary.extend(words)
-            if use_technical_verbs:
-                words = [
-                    w for w in word_list if w.type_ == WordType.TECHNICAL_VERB
-                ]
-                dictionary.extend(words)
+        #     # Put word list together into a single word list.
+        #     if use_technical_nouns:
+        #         words = [
+        #             w for w in word_list if w.type_ == WordType.TECHNICAL_NOUN
+        #         ]
+        #         dictionary.extend(words)
+        #     if use_technical_verbs:
+        #         words = [
+        #             w for w in word_list if w.type_ == WordType.TECHNICAL_VERB
+        #         ]
+        #         dictionary.extend(words)
 
         for word_file in word_files:
             assert word_file.exists(), str(word_file)

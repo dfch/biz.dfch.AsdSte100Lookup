@@ -21,18 +21,20 @@ from pathlib import Path
 
 from biz.dfch.logging import log
 
+from biz.dfch.asdste100vocab import Word
+from biz.dfch.asdste100vocab import WordNote
+from biz.dfch.asdste100vocab import WordMeaning
+from biz.dfch.asdste100vocab import WordSource
+from biz.dfch.asdste100vocab import WordStatus
+
 from .constant import Constant
 from .dictionary_info import DictionaryInfo
 from .line_info import LineInfo
 from .line_info_type import LineInfoType
 from .utils import get_value_or_default
-from .word import Word
+
 from .word_info import WordInfo
-from .word_meaning import WordMeaning
-from .word_note import WordNote
-from .word_source import WordSource
 from .word_state import WordState
-from .word_status import WordStatus
 
 
 class DictionaryFilesParser:

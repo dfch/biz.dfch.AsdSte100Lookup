@@ -22,6 +22,10 @@ from pathlib import Path
 import shlex
 import tempfile
 
+from biz.dfch.asdste100vocab import WordCategory
+from biz.dfch.asdste100vocab import WordStatus
+from biz.dfch.asdste100vocab import WordType
+
 from .commands.command_base import CommandBase
 from .commands.command_query_type import CommandQueryType
 from .commands.empty_command import EmptyCommand
@@ -35,10 +39,6 @@ from .commands.unknown_command import UnknownCommand
 from .commands.word_category_command import WordCategoryCommand
 from .commands.word_filter_type import WordFilterType
 from .rule_render_type import RuleRenderType
-
-from .word_category import WordCategory
-from .word_type import WordType
-from .word_status import WordStatus
 
 
 class MainPrompt:  # pylint: disable=R0903

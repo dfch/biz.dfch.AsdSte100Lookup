@@ -19,10 +19,11 @@ from enum import StrEnum
 import re
 from typing import Type, TypeVar
 
+from biz.dfch.asdste100vocab import WordStatus
+from biz.dfch.asdste100vocab import WordType
+
 from .dictionary_word import DictionaryWord
 from .utils import get_value_or_default
-from .word_status import WordStatus
-from .word_type import WordType
 
 
 T = TypeVar("T", bound=StrEnum)

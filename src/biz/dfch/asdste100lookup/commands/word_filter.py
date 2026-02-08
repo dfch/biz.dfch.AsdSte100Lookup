@@ -17,11 +17,12 @@
 
 import re
 
+from biz.dfch.asdste100vocab import Word
+from biz.dfch.asdste100vocab import WordCategory
+from biz.dfch.asdste100vocab import WordStatus
+from biz.dfch.asdste100vocab import WordType
+
 from ..utils.enum_utils import enum_key_from_value
-from ..word import Word
-from ..word_category import WordCategory
-from ..word_status import WordStatus
-from ..word_type import WordType
 
 from .word_filter_type import WordFilterType
 
