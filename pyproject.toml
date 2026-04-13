@@ -1,7 +1,7 @@
 [project]
 name = "biz-dfch-asdste100lookup"
 dependencies = [
-    "biz-dfch-ste100vocab>=0.1.1"
+    "biz-dfch-ste100vocab>=0.1.2"
 ]
 
 [tool.black]
