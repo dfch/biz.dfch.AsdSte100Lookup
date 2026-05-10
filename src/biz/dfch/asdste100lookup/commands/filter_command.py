@@ -47,11 +47,12 @@ class FilterCommand(CommandBase):
                 self._filter[WordFilterType.NOTE] = ""
 
             case WordFilterType.LIST:
-                for key, value in self._filter.items():
-                    if isinstance(value, bool):
-                        print(key, value)
-                    elif isinstance(value, str) and "" != value.strip():
-                        print(key, value)
+                for key, filter_value in self._filter.items():
+                    if isinstance(filter_value, bool) or (
+                        isinstance(filter_value, str)
+                        and "" != filter_value.strip()
+                    ):
+                        print(key, filter_value)
 
             case (
                 WordFilterType.TYPE
