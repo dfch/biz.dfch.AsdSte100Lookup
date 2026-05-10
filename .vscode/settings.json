@@ -16,6 +16,7 @@
     ],
     "python.testing.pytestEnabled": false,
     "python.testing.unittestEnabled": true,
+    "flake8.importStrategy": "fromEnvironment",
     "cSpell.words": [
         "altgraph",
         "asdste",
@@ -27,6 +28,7 @@
         "fillvalue",
         "httplib",
         "mdurl",
+        "mypy",
         "nonste",
         "NOSONAR",
         "nword",
@@ -37,6 +39,7 @@
         "pyinstaller",
         "Pylint",
         "pyparsing",
+        "pyproject",
         "pytest",
         "PYTHONPATH",
         "pywin",

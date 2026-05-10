@@ -1,8 +1,90 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "biz-dfch-asdste100lookup"
-dependencies = [
-    "biz-dfch-ste100vocab>=0.1.2"
+version = "1.10.0"
+description = "An ASD-STE100 (Simplified Technical English) dictionary lookup tool."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "GPL-3.0-or-later"
+license-files = [
+    "LICENSE",
 ]
+authors = [
+    {name = "Ronald Rink"},
+]
+maintainers = [
+    { name = "Ronald Rink" },
+]
+
+keywords = [
+    "ASD-STE100",
+    "STE100",
+    "STE100 Issue 9",
+    "Simplified Technical English",
+    "simplified-technical-english",
+    "cnl",
+    "controlled language",
+    "controlled natural language",
+    "technical writing",
+    "technical-writing",
+    "text processing",
+]
+
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "Natural Language :: English",
+    "Topic :: Text Processing :: Linguistic",
+    "Topic :: Text Processing :: Markup",
+    "Topic :: Text Processing :: Markup :: Markdown",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+
+dependencies = [
+    "biz-dfch-ste100vocab>=0.1.2",
+]
+
+# Install project in editable mode:
+# python -m pip install -e ".[dev,build]"
+[project.optional-dependencies]
+test = [
+    "coverage",
+    "parameterized>=0.9.0",
+    "pylint>=4.0.0",
+]
+
+dev = [
+    "biz-dfch-asdste100lookup[test]",
+    "black",
+    "flake8>=7.3.0",
+]
+
+build = [
+    "pyinstaller>=6.16.0",
+    "rich",
+]
+
+[project.urls]
+Homepage = "https://github.com/dfch/biz.dfch.AsdSte100Lookup"
+Issues = "https://github.com/dfch/biz.dfch.AsdSte100Lookup/issues"
 
 [tool.black]
 line-length = 80
+
+[tool.setuptools.packages.find]
+where = ["src"]
+namespaces = true
+
+[[tool.mypy.overrides]]
+module = ["parameterized.*"]
+ignore_missing_imports = true
