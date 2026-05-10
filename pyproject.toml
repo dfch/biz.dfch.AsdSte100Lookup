@@ -54,8 +54,12 @@ dependencies = [
     "biz-dfch-ste100vocab>=0.1.2",
 ]
 
-# Install project in editable mode:
-# python -m pip install -e ".[dev,build]"
+# Install with `uv`:
+# uv sync --extra dev --extra build --python 3.13
+# Examine if you can operate `unittest` correctly:
+# uv run python -m unittest discover -v -s tests -t . -p "test_*.py"
+# Examine if you can operate `pylint` correctly:
+# uv run pylint $(git ls-files '*.py')
 [project.optional-dependencies]
 test = [
     "coverage",
