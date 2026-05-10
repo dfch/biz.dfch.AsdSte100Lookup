@@ -25,4 +25,4 @@ class TestUnittestFramework(unittest.TestCase):
     def test_unittest_succeeds(self):
         """Make sure, that `unittest` operates correctly."""
 
-        self.assertIsNotNone(unittest)
+        self.assertEqual("unittest", unittest.__name__,)

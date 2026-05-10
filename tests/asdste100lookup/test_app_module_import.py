@@ -17,6 +17,9 @@
 """TestAppModuleImport class."""
 
 import unittest
+from unittest.mock import patch
+
+import argparse
 
 from biz.dfch.asdste100lookup.app import App
 
@@ -29,4 +32,7 @@ class TestAppModuleImport(unittest.TestCase):
     def test_unittest_succeeds(self):
         """Make sure, that the `App` module import operates correctly."""
 
-        self.assertIsNotNone(App)
+        parser = argparse.ArgumentParser()
+        with patch("sys.argv", ["arbitrary-prog"]):
+            sut = App(parser)
+        self.assertIsNotNone(sut)
