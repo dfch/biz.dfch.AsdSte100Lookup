@@ -54,29 +54,34 @@ class WordFilter:  # pylint: disable=R0903
         ):
             return dictionary
 
+        type_: WordType | None = None
         if "" != self._filters[WordFilterType.TYPE]:
             key = enum_key_from_value(
                 WordType, self._filters[WordFilterType.TYPE]
             )
             type_ = WordType[key]
 
+        status: WordStatus | None = None
         if "" != self._filters[WordFilterType.STATUS]:
             key = enum_key_from_value(
                 WordStatus, self._filters[WordFilterType.STATUS]
             )
             status = WordStatus[key]
 
+        category: WordCategory | None = None
         if "" != self._filters[WordFilterType.CATEGORY]:
             key = enum_key_from_value(
                 WordCategory, self._filters[WordFilterType.CATEGORY]
             )
             category = WordCategory[key]
 
+        regex_source = None
         if "" != self._filters[WordFilterType.SOURCE]:
             regex_source = re.compile(
                 self._filters[WordFilterType.SOURCE], re.IGNORECASE
             )
 
+        regex_note = None
         if "" != self._filters[WordFilterType.NOTE]:
             regex_note = re.compile(
                 self._filters[WordFilterType.NOTE], re.IGNORECASE
@@ -85,25 +90,24 @@ class WordFilter:  # pylint: disable=R0903
         result: list[Word] = []
 
         for word in dictionary:
-            if "" != self._filters[WordFilterType.TYPE]:
-                if word.type_ != type_:
-                    continue
+            if type_ is not None and word.type_ != type_:
+                continue
 
-            if "" != self._filters[WordFilterType.STATUS]:
-                if word.status != status:
-                    continue
+            if status is not None and word.status != status:
+                continue
 
-            if "" != self._filters[WordFilterType.CATEGORY]:
-                if word.category != category:
-                    continue
+            if category is not None and word.category != category:
+                continue
 
-            if "" != self._filters[WordFilterType.SOURCE]:
-                if not regex_source.search(word.source):
-                    continue
+            if regex_source is not None and not regex_source.search(
+                word.source
+            ):
+                continue
 
-            if "" != self._filters[WordFilterType.NOTE]:
-                if not word.note or not regex_note.search(word.note.value):
-                    continue
+            if regex_note is not None and (
+                not word.note or not regex_note.search(word.note.value)
+            ):
+                continue
 
             result.append(word)
 
