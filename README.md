@@ -189,25 +189,11 @@ NOTE: If you use `uv` the name for the virtual environment is `.venv`. Use a dif
     b. The result is in the directory with the name `dist`. The name of the executable is `AsdSte100Lookup` or `AsdSte100Lookup.exe`.
 
 ```
-(venv) <prj-root> $ pyinstaller --clean --onefile --name AsdSte100Lookup \
-  --add-data "./src/logging.conf:." \
-  --add-data "./src/biz/dfch/asdste100lookup:./biz/dfch/asdste100lookup/" \
-  -p "./src" \
-  -p "./src/biz" \
-  ./src/biz/__main__.py
+uv run pyinstaller --clean AsdSte100Lookup.spec
 ```
 
 ```
-pyinstaller --clean --onefile --name AsdSte100Lookup --add-data "./src/logging.conf:." --add-data "./src/biz/dfch/asdste100lookup:./biz/dfch/asdste100lookup/" -p "./src" -p "./src/biz" ./src/biz/__main__.py
-```
-
-```
-(venv) <prj-root> $ pyinstaller --clean --onefile --name AsdSte100Lookup `
-  --add-data "./src/logging.conf:." `
-  --add-data "./src/biz/dfch/asdste100lookup:./biz/dfch/asdste100lookup/" `
-  -p "./src" `
-  -p "./src/biz" `
-  ./src/biz/__main__.py
+pyinstaller --clean AsdSte100Lookup.spec
 ```
 
 ## Run

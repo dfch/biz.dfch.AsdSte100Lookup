@@ -35,7 +35,7 @@ wheels = [
 
 [[package]]
 name = "biz-dfch-asdste100lookup"
-version = "1.13.0"
+version = "2.0.0"
 source = { editable = "." }
 dependencies = [
     { name = "argparse" },
