@@ -35,7 +35,12 @@ import unittest
 class TestCopyright(unittest.TestCase):
     """Change copyright year to include specified year."""
 
-    current_year = str(datetime.now().year)
+    current_year: str
+
+    def __init__(self, methodName: str = "runTest") -> None:
+        super().__init__(methodName)
+
+        self.current_year = "2026"
 
     # Matches:
     # "# Copyright 2024 abc, xyz, http://d-fens.ch"
