@@ -40,7 +40,7 @@ class TestCopyright(unittest.TestCase):
     def __init__(self, methodName: str = "runTest") -> None:
         super().__init__(methodName)
 
-        self.current_year = "2026"
+        self.current_year = str(datetime.now().year)
 
     # Matches:
     # "# Copyright 2024 abc, xyz, http://d-fens.ch"
