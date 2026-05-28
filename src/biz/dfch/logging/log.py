@@ -20,6 +20,10 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
+# pylint: disable=E1101
+# pylint: disable=E0401
+# pylint: disable=E0611
+
 """Module log"""
 
 import logging
@@ -34,11 +38,13 @@ _LOGGER_FILE = "logging.conf"
 
 try:
     logging.config.fileConfig(I18n.Factory.get().get_runtime_path(_LOGGER_FILE))
-    log = logging.getLogger(_LOGGER_NAME)
+    log = logging.getLogger(_LOGGER_NAME)  # type: ignore
 
 except Exception as ex:
 
-    print(f"{_LOGGER_NAME}: An error occurred while trying to load "
-          f"'{_LOGGER_FILE}': '{ex}'")
+    print(
+        f"{_LOGGER_NAME}: An error occurred while trying to load "
+        f"'{_LOGGER_FILE}': '{ex}'"
+    )
 
     raise

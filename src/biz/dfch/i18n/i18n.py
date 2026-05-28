@@ -130,14 +130,17 @@ class I18n:
             base_path = getattr(sys, "_MEIPASS", None)
             assert base_path
         else:
-            base_path = os.path.join(os.getcwd(), self._path)
+            cwd = Path(os.getcwd())
+            base_path_path = cwd / self._path
+            if not base_path_path.exists():
+                base_path_path = cwd / "src" / self._path
+            base_path = str(base_path_path.resolve())
 
-        return os.path.normpath(os.path.join(base_path, relative_path))
+        path = (Path(base_path) / relative_path).resolve()
+        return str(path)
 
     def get_resource_path(
-            self,
-            item: str,
-            code: LanguageCode | None = None
+        self, item: str, code: LanguageCode | None = None
     ) -> str:
         """Returns the normalised resource path for an item.
 
