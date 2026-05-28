@@ -23,7 +23,11 @@
 """Package logging."""
 
 from .log import log
+from .log import get_project_src
+from .log import get_project_root
 
 __all__ = [
     "log",
+    "get_project_root",
+    "get_project_src",
 ]

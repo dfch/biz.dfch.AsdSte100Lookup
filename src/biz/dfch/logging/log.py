@@ -28,16 +28,59 @@
 
 import logging
 import logging.config
-
-from biz.dfch.i18n import I18n
+import os
+from pathlib import Path
+import sys
 
 _LOGGER_NAME = "biz.dfch.asdste100lookup"
 # Note: When using `pyinstaller --onefile` make sure this file is available.
 _LOGGER_FILE = "logging.conf"
 
 
+def get_project_root(marker: str = "pyproject.toml") -> Path:
+    """
+    Get the project root directory.
+
+    We walk up the directory tree from this file, until we find the file marker.
+    """
+
+    current = Path(__file__).resolve()
+    for parent in [current, *current.parents]:
+        if (parent / marker).exists():
+            return parent
+    raise FileNotFoundError(
+        f"Could not find project root (looking for '{marker}')"
+    )
+
+
+def get_project_src() -> Path:
+    """Get the project source directory.
+
+    Returns:
+        result (str): The runtime project source path. That depends on the
+            environment (frozen or source).
+    """
+
+    root = get_project_root()
+    result = Path(root / "src").resolve()
+
+    return result
+
+    # if getattr(sys, "frozen", False):
+    #     # Determine whether we run as binary "onefile".
+    #     base_path = getattr(sys, "_MEIPASS", None)
+    #     assert base_path
+    # else:
+    #     cwd = Path(os.getcwd())
+    #     base_path_path = cwd / _path
+    #     if not base_path_path.exists():
+    #         base_path_path = cwd / "src" / _path
+    #     base_path = str(base_path_path.resolve())
+
+
 try:
-    logging.config.fileConfig(I18n.Factory.get().get_runtime_path(_LOGGER_FILE))
+    print(get_project_src() / _LOGGER_FILE)
+    logging.config.fileConfig(get_project_src() / _LOGGER_FILE)
     log = logging.getLogger(_LOGGER_NAME)  # type: ignore
 
 except Exception as ex:

@@ -29,6 +29,8 @@ import sys
 from threading import Lock
 from typing import ClassVar
 
+from biz.dfch.logging import log, get_project_src
+
 from .language_code import LanguageCode
 
 
@@ -37,7 +39,7 @@ class I18n:
 
     _RES_PATH = "res"
 
-    _path: str
+    _path: Path
 
     def __init__(self, value: str):
 
@@ -46,7 +48,19 @@ class I18n:
 
         assert value is not None and isinstance(value, str)
 
-        self._path = value
+        self._path = self._get_path(value)
+
+    @staticmethod
+    def _get_path(value: str) -> Path:
+        assert value is not None and isinstance(value, str)
+
+        src = get_project_src()
+
+        result = Path(src / value).resolve()
+        assert result.exists(), f"Path must exist: '{result}'."
+        assert result.is_dir(), f"Path must be a directory: '{result}'."
+
+        return result
 
     class Factory:  # pylint: disable=R0903
         """Factory class for creating `I18n` instances."""
@@ -64,7 +78,7 @@ class I18n:
                 value = ""
 
             with I18n.Factory._sync_root:
-                I18n._path = value  # pylint: disable=W0212
+                I18n._path = I18n._get_path(value)  # pylint: disable=W0212
 
         @staticmethod
         def create(value: str | None = None) -> I18n:
@@ -108,37 +122,6 @@ class I18n:
 
             return I18n.Factory.__instance
 
-    def get_runtime_path(self, relative_path: str) -> str:
-        """Resolves a relative path to the runtime path.
-
-        Args:
-            relative_path (str): The relative (to __main__.py) path to
-                translate.
-
-        Returns:
-            str: The runtime path depending on the environment (frozen or
-                source).
-
-        Raises:
-            AssertionError: If relative_path is None or "".
-        """
-
-        assert relative_path and relative_path.strip()
-
-        if getattr(sys, "frozen", False):
-            # Determine whether we run as binary "onefile".
-            base_path = getattr(sys, "_MEIPASS", None)
-            assert base_path
-        else:
-            cwd = Path(os.getcwd())
-            base_path_path = cwd / self._path
-            if not base_path_path.exists():
-                base_path_path = cwd / "src" / self._path
-            base_path = str(base_path_path.resolve())
-
-        path = (Path(base_path) / relative_path).resolve()
-        return str(path)
-
     def get_resource_path(
         self, item: str, code: LanguageCode | None = None
     ) -> str:
@@ -160,11 +143,9 @@ class I18n:
 
         path = Path(item)
 
-        if code is not None:
-            if code is LanguageCode.DEFAULT:
-                code = LanguageCode.EN
-            result = os.path.join(I18n._RES_PATH, code.name, path)
+        if code is None:
+            result = self._path / I18n._RES_PATH / path
         else:
-            result = os.path.join(I18n._RES_PATH, path)
+            result = self._path / I18n._RES_PATH / code.name / path
 
-        return self.get_runtime_path(result)
+        return str(result)
