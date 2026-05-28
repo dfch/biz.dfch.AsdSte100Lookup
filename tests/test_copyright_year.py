@@ -100,6 +100,8 @@ class TestCopyright(unittest.TestCase):
             "git",
             "log",
             f'--since="{self.current_year}-01-01"',
+            "--author-date-order",
+            "--no-merges",
             "--name-only",
             "--pretty=format:",
         ]
