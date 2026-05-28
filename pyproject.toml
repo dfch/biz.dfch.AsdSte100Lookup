@@ -6,7 +6,8 @@ build-backend = "setuptools.build_meta"
 # Note: also change "version" in `constant.py`.
 # Note: also operate `uv lock`.
 name = "biz-dfch-asdste100lookup"
-version = "1.11.0"
+
+version = "1.12.0"
 description = "An ASD-STE100 (Simplified Technical English) dictionary lookup tool."
 readme = "README.md"
 requires-python = ">=3.11"
@@ -53,8 +54,11 @@ classifiers = [
 ]
 
 dependencies = [
-    "biz-dfch-ste100vocab>=0.1.2",
+    "biz-dfch-ste100vocab>=0.2.4",
 ]
+
+[project.scripts]
+ste100 = "biz.dfch.asdste100lookup.__main__:main"
 
 # Install with `uv`:
 # uv sync --extra dev --extra build --python 3.13

@@ -1,4 +1,6 @@
 {
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/Scripts/python.exe",  
+    "python.terminal.activateEnvironment": true,  
     "python.testing.unittestArgs": [
         "-v",
         "-s",
@@ -19,6 +21,7 @@
     "flake8.importStrategy": "fromEnvironment",
     "cSpell.words": [
         "altgraph",
+        "asctime",
         "asdste",
         "colorama",
         "ctypes",
@@ -29,6 +32,7 @@
         "fillvalue",
         "httplib",
         "isort",
+        "levelname",
         "macholib",
         "mccabe",
         "mdurl",
@@ -58,6 +62,7 @@
         "ufeff",
         "venv",
         "venvdeb",
+        "venvpi",
         "wordinfo"
     ]
 }
