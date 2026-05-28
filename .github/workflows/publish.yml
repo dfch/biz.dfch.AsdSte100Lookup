@@ -3,8 +3,6 @@ name: Publish Release
 on:
   push:
     tags: ['v*']
-  release:
-    types: [published]
 
 permissions:
   contents: write
@@ -12,11 +10,15 @@ permissions:
 jobs:
   build-linux:
     runs-on: ubuntu-latest
+    environment: prod
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        # v4.2.2 SHA
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
 
       - name: Install uv
-        uses: astral-sh/setup-uv@v5
+        # uses: astral-sh/setup-uv@v5 v5.2.1
+        uses: astral-sh/setup-uv@885a38dcfca427bdcc54a0199b27202602b11546
         with:
           enable-cache: true
 
@@ -24,7 +26,7 @@ jobs:
         run: uv python install
 
       - name: Install dependencies
-        run: uv sync
+        run: uv sync --extra build
 
       - name: Build Executable and Rename
         run: |
@@ -35,6 +37,8 @@ jobs:
 
       - name: Upload binaries to Release
         run: |
-          gh release upload ${{ github.ref_name }} dist/AsdSte100Lookup-linux-x64 --clobber
+          # Use a wildcard to pick up the renamed file automatically
+          # and ensure the release exists (gh release upload will fail if release doesn't exist)
+          gh release upload ${{ github.ref_name }} dist/AsdSte100Lookup-linux-* --clobber
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
