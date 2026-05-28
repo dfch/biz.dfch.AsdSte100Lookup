@@ -28,6 +28,10 @@ import subprocess
 import unittest
 
 
+@unittest.skipIf(
+    os.getenv("GITHUB_ACTIONS") == "true",
+    "This 'test' does change source files. Do only start it locally.",
+)
 class TestCopyright(unittest.TestCase):
     """Change copyright year to include specified year."""
 
@@ -51,6 +55,7 @@ class TestCopyright(unittest.TestCase):
         # suffix
         r"(http://d-fens\.ch)$"
     )
+
     def update_line(self, value: str) -> str | None:
         """Change a line if the current year is not in `line`."""
 
@@ -126,10 +131,6 @@ class TestCopyright(unittest.TestCase):
 
         return result
 
-    @unittest.skipIf(
-        os.getenv("GITHUB_ACTIONS") == "true",
-        "This 'test' does change source files. Do only start it locally.",
-    )
     def test_update_copyright_year(self):
         """
         Change the copyright year to the current year, if the git history shows
