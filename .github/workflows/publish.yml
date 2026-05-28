@@ -33,12 +33,14 @@ jobs:
           uv run pyinstaller --clean AsdSte100Lookup.spec
           OS=$(uname -s | tr '[:upper:]' '[:lower:]')
           ARCH=$(uname -m)
-          mv dist/AsdSte100Lookup dist/AsdSte100Lookup-${OS}-${ARCH}
+          VERSION=${{ github.ref_name }}
+          
+          mv dist/AsdSte100Lookup dist/AsdSte100Lookup-${VERSION}-${OS}-${ARCH}
 
       - name: Upload binaries to Release
         run: |
-          # Use a wildcard to pick up the renamed file automatically
-          # and ensure the release exists (gh release upload will fail if release doesn't exist)
-          gh release upload ${{ github.ref_name }} dist/AsdSte100Lookup-linux-* --clobber
+          VERSION=${{ github.ref_name }}
+
+          gh release upload ${VERSION} dist/AsdSte100Lookup-${VERSION}-* --clobber
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
