@@ -6,7 +6,7 @@ from pathlib import Path
 import biz.dfch.asdste100vocab as vocab
 
 a = Analysis(
-    ["src/biz/__main__.py"],
+    ["src/main.py"],
     pathex=["./src", "./src/biz"],
     binaries=[],
     datas=[
