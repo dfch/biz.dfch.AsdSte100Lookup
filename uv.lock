@@ -30,6 +30,8 @@ version = "1.12.0"
 source = { editable = "." }
 dependencies = [
     { name = "biz-dfch-ste100vocab" },
+    { name = "dacite" },
+    { name = "rich" },
 ]
 
 [package.optional-dependencies]
@@ -56,10 +58,12 @@ requires-dist = [
     { name = "biz-dfch-ste100vocab", specifier = ">=0.2.4" },
     { name = "black", marker = "extra == 'dev'" },
     { name = "coverage", marker = "extra == 'test'" },
+    { name = "dacite", specifier = ">=1.9.2" },
     { name = "flake8", marker = "extra == 'dev'", specifier = ">=7.3.0" },
     { name = "parameterized", marker = "extra == 'test'", specifier = ">=0.9.0" },
     { name = "pyinstaller", marker = "extra == 'build'", specifier = ">=6.16.0" },
     { name = "pylint", marker = "extra == 'test'", specifier = ">=4.0.0" },
+    { name = "rich", specifier = ">=15.0.0" },
     { name = "rich", marker = "extra == 'build'" },
 ]
 provides-extras = ["test", "dev", "build"]

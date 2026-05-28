@@ -13,9 +13,30 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-"""Application entry point as module."""
+# pylint: disable=C0415
+# pylint: disable=E0401
+# noqa: E501
 
-from main import main
+"""Application entry point as script."""
+
+# DFTODO: Currently, we define the relative part hard coded. It is
+# important that we create the I18n instance before any imports to log.
+# Maybe we find a better solution for this in some time.
+from biz.dfch.i18n import I18n
+
+I18n.Factory.create("biz/dfch/asdste100lookup")
+
+from biz.dfch.asdste100lookup.args import Args
+from biz.dfch.asdste100lookup.app import App
+
+
+def main():
+    """main"""
+
+    parser = Args().invoke()
+
+    App(parser).invoke()
+
 
 if __name__ == "__main__":
     main()

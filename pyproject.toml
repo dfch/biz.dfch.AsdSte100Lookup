@@ -55,10 +55,12 @@ classifiers = [
 
 dependencies = [
     "biz-dfch-ste100vocab>=0.2.4",
+    "dacite>=1.9.2",
+    "rich>=15.0.0",
 ]
 
 [project.scripts]
-ste100 = "biz.dfch.asdste100lookup.__main__:main"
+ste100 = "main:main"
 
 # Install with `uv`:
 # uv sync --extra dev --extra build --python 3.13
