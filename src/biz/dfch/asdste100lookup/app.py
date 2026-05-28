@@ -1,4 +1,4 @@
-# Copyright (c) 2025 Ronald Rink, http://d-fens.ch
+# Copyright (c) 2025 - 2026 Ronald Rink, http://d-fens.ch
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -22,6 +22,8 @@ import json
 from pathlib import Path
 import random
 import re
+import urllib.request
+from urllib.parse import ParseResult, urlparse
 
 from dacite import from_dict, Config
 from rich.console import Console
@@ -109,7 +111,7 @@ class App:  # pylint: disable=R0903
     ) -> None:
         """Main program loop."""
 
-        assert isinstance(dictionary, list)
+        assert isinstance(dictionary, list), type(dictionary)
         for item in dictionary:
             assert isinstance(item, Word)
 
@@ -216,25 +218,47 @@ class App:  # pylint: disable=R0903
             type_=self._args.summary,
         )
 
-    def _load_word_list(self, fullname: Path) -> list[Word]:
+    @staticmethod
+    def _resolve_input(value: str) -> Path | ParseResult:
+        assert isinstance(value, str)
+        assert value.strip()
 
-        assert isinstance(fullname, Path), type(fullname)
-        assert fullname.exists(), fullname
+        result = urlparse(value)
+
+        if result.scheme in ("http", "https"):
+            return result
+
+        return Path(value)
+
+    def _load_word_list(self, source: Path | ParseResult) -> list[Word]:
+
+        assert isinstance(source, (Path, ParseResult)), type(source)
 
         word_list: list[Word] = []
-        with open(fullname, "r", encoding="utf-8") as f:
-            for idx, line in enumerate(f, 1):
-                line = line.strip()
-                try:
-                    item = json.loads(line)
-                    word = from_dict(
-                        data_class=Word,
-                        data=item,
-                        config=self._dictionary_config,
-                    )
-                    word_list.append(word)
-                except Exception as ex:  # pylint: disable=W0718
-                    print(f"[ERROR] {fullname}[#{idx}]: '{ex}'.")
+
+        if isinstance(source, ParseResult):
+            with urllib.request.urlopen(source.geturl()) as response:
+                lines = [line.decode("utf-8") for line in response]
+        else:
+            assert source.exists(), str(source)
+            with open(source, "r", encoding="utf-8") as f:
+                lines = f.readlines()
+
+        for idx, line in enumerate(lines, 1):
+            line = line.strip()
+            if not line:
+                continue
+
+            try:
+                item = json.loads(line)
+                word = from_dict(
+                    data_class=Word,
+                    data=item,
+                    config=self._dictionary_config,
+                )
+                word_list.append(word)
+            except Exception as ex:  # pylint: disable=W0718
+                print(f"[ERROR] {source}[#{idx}]: '{ex}'.")
 
         result = sorted(word_list, key=lambda e: e.name.lower())
 
@@ -247,7 +271,7 @@ class App:  # pylint: disable=R0903
         use_technical_verbs: bool,
         ste100_file_name: str,
         technical_words_file_name: str,
-        word_files: list[Path],
+        word_files: list[Path | ParseResult],
     ) -> None:
         """This is the handler for the `dictionary` command."""
 
@@ -267,8 +291,6 @@ class App:  # pylint: disable=R0903
 
         current_folder = Path(__file__).parent
 
-        # dictionary: list[Word] = []
-
         def predicate(word: Word) -> bool:
             if word.type_ == WordType.TECHNICAL_NOUN:
                 return use_technical_nouns
@@ -280,48 +302,23 @@ class App:  # pylint: disable=R0903
             use_ste100=use_ste100,
             use_ste100_technical_word=use_technical_nouns
             or use_technical_verbs,
-            predicate=predicate
+            predicate=predicate,
         )
-
-        # # Load STE dictionary.
-        # if use_ste100:
-        #     dictionary_fullname = current_folder / ste100_file_name
-        #     dictionary = self._load_word_list(dictionary_fullname)
 
         # Load rules.
         rules_fullname = current_folder / Constant.RULES_FILE
         rules = self._load_rules(rules_fullname)
 
-        # # Load technical words and add them to the dictionary.
-        # if use_technical_nouns or use_technical_verbs:
-        #     technical_words_fullname = (
-        #         current_folder / technical_words_file_name
-        #     )
-        #     word_list = self._load_word_list(technical_words_fullname)
-
-        #     # Put word list together into a single word list.
-        #     if use_technical_nouns:
-        #         words = [
-        #             w for w in word_list if w.type_ == WordType.TECHNICAL_NOUN
-        #         ]
-        #         dictionary.extend(words)
-        #     if use_technical_verbs:
-        #         words = [
-        #             w for w in word_list if w.type_ == WordType.TECHNICAL_VERB
-        #         ]
-        #         dictionary.extend(words)
-
         for word_file in word_files:
-            assert word_file.exists(), str(word_file)
             print(f"Load word list '{word_file}' ...")
             word_list = self._load_word_list(word_file)
             print(f"Load word list '{word_file}' [{len(word_list)}] OK.")
             dictionary.extend(word_list)
 
         # Loop the resulting vocabulary alphabetically.
-        dictionary = sorted(dictionary, key=lambda e: e.name.lower())
+        dictionary.sort()
 
-        self.prompt_user_loop(dictionary=dictionary, rules=rules)
+        self.prompt_user_loop(dictionary=list(dictionary), rules=rules)
 
     def invoke(self) -> None:
         """Main entry point for this class."""
@@ -350,13 +347,15 @@ class App:  # pylint: disable=R0903
             return
 
         if self._args.command == "dictionary":
+            word_files = [App._resolve_input(f) for f in self._args.input]
+
             self.on_dictionary(
                 use_ste100=self._args.use_ste100,
                 use_technical_nouns=self._args.use_technical_nouns,
                 use_technical_verbs=self._args.use_technical_verbs,
                 ste100_file_name=Constant.DICTIONARY_FILE,
                 technical_words_file_name=Constant.TECHNICAL_WORDS_FILE,
-                word_files=[Path(f) for f in self._args.input],
+                word_files=word_files,
             )
             return
 
