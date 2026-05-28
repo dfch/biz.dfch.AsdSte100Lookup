@@ -28,7 +28,6 @@
 
 import logging
 import logging.config
-import os
 from pathlib import Path
 import sys
 
