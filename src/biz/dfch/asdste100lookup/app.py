@@ -40,6 +40,7 @@ from biz.dfch.asdste100vocab import WordMeaning
 from biz.dfch.asdste100vocab import WordStatus
 from biz.dfch.asdste100vocab import WordType
 
+from .builtin_rules import BuiltInRules
 from .commands.command_base import CommandBase
 from .commands.empty_command import EmptyCommand
 from .commands.unknown_command import UnknownCommand
@@ -187,7 +188,7 @@ class App:  # pylint: disable=R0903
         console = Console(theme=self._rule_theme)
 
         current_folder = Path(__file__).parent
-        rules_fullname = current_folder / Constant.RULES_FILE
+        rules_fullname = current_folder / BuiltInRules.STE100_RULES.value
         rules = self._load_rules(rules_fullname)
 
         selected_rules: list[Rule] = []
@@ -269,8 +270,6 @@ class App:  # pylint: disable=R0903
         use_ste100: bool,
         use_technical_nouns: bool,
         use_technical_verbs: bool,
-        ste100_file_name: str,
-        technical_words_file_name: str,
         word_files: list[Path | ParseResult],
     ) -> None:
         """This is the handler for the `dictionary` command."""
@@ -278,12 +277,6 @@ class App:  # pylint: disable=R0903
         assert isinstance(use_ste100, bool)
         assert isinstance(use_technical_nouns, bool)
         assert isinstance(use_technical_verbs, bool)
-
-        assert isinstance(ste100_file_name, str)
-        assert ste100_file_name.strip()
-
-        assert isinstance(technical_words_file_name, str)
-        assert technical_words_file_name.strip()
 
         assert isinstance(word_files, list), type(word_files)
 
@@ -306,7 +299,7 @@ class App:  # pylint: disable=R0903
         )
 
         # Load rules.
-        rules_fullname = current_folder / Constant.RULES_FILE
+        rules_fullname = current_folder / BuiltInRules.STE100_RULES.value
         rules = self._load_rules(rules_fullname)
 
         for word_file in word_files:
@@ -329,7 +322,8 @@ class App:  # pylint: disable=R0903
         log_level = Args.get_effective_log_level_name(self._args)
         import logging  # pylint: disable=C0415
 
-        for handler in logging.getLogger().handlers:
+        # pylint: disable=E1101
+        for handler in logging.getLogger().handlers:  # type: ignore
             handler.setLevel(log_level)
 
         # Print program information.
@@ -353,8 +347,6 @@ class App:  # pylint: disable=R0903
                 use_ste100=self._args.use_ste100,
                 use_technical_nouns=self._args.use_technical_nouns,
                 use_technical_verbs=self._args.use_technical_verbs,
-                ste100_file_name=Constant.DICTIONARY_FILE,
-                technical_words_file_name=Constant.TECHNICAL_WORDS_FILE,
                 word_files=word_files,
             )
             return
@@ -363,7 +355,5 @@ class App:  # pylint: disable=R0903
             use_ste100=True,
             use_technical_nouns=True,
             use_technical_verbs=True,
-            ste100_file_name=Constant.DICTIONARY_FILE,
-            technical_words_file_name=Constant.TECHNICAL_WORDS_FILE,
             word_files=[],
         )

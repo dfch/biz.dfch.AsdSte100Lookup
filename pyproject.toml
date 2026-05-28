@@ -3,11 +3,9 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-# Note: also change "version" in `constant.py`.
-# Note: also operate `uv lock`.
 name = "biz-dfch-asdste100lookup"
 
-version = "1.12.0"
+version = "2.0.0"
 description = "An ASD-STE100 (Simplified Technical English) dictionary lookup tool."
 readme = "README.md"
 requires-python = ">=3.11"
@@ -54,7 +52,8 @@ classifiers = [
 ]
 
 dependencies = [
-    "biz-dfch-ste100vocab>=0.2.4",
+    "argparse>=1.4.0",
+    "biz-dfch-ste100vocab>=0.2.5",
     "dacite>=1.9.2",
     "rich>=15.0.0",
 ]
@@ -82,7 +81,7 @@ dev = [
 ]
 
 build = [
-    "pyinstaller>=6.16.0",
+    "pyinstaller>=6.20.0",
     "rich",
 ]
 

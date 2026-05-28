@@ -16,6 +16,15 @@ wheels = [
 ]
 
 [[package]]
+name = "argparse"
+version = "1.4.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/18/dd/e617cfc3f6210ae183374cd9f6a26b20514bbb5a792af97949c5aacddf0f/argparse-1.4.0.tar.gz", hash = "sha256:62b089a55be1d8949cd2bc7e0df0bddb9e028faefc8c32038cc84862aefdd6e4", size = 70508, upload-time = "2015-09-12T20:22:16.217Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/f2/94/3af39d34be01a24a6e65433d19e107099374224905f1e0cc6bbe1fd22a2f/argparse-1.4.0-py2.py3-none-any.whl", hash = "sha256:c31647edb69fd3d465a847ea3157d37bed1f95f19760b11a47aa91c04b666314", size = 23000, upload-time = "2015-09-14T16:03:16.137Z" },
+]
+
+[[package]]
 name = "astroid"
 version = "4.0.4"
 source = { registry = "https://pypi.org/simple" }
@@ -26,9 +35,10 @@ wheels = [
 
 [[package]]
 name = "biz-dfch-asdste100lookup"
-version = "1.12.0"
+version = "1.13.0"
 source = { editable = "." }
 dependencies = [
+    { name = "argparse" },
     { name = "biz-dfch-ste100vocab" },
     { name = "dacite" },
     { name = "rich" },
@@ -54,14 +64,15 @@ test = [
 
 [package.metadata]
 requires-dist = [
+    { name = "argparse", specifier = ">=1.4.0" },
     { name = "biz-dfch-asdste100lookup", extras = ["test"], marker = "extra == 'dev'" },
-    { name = "biz-dfch-ste100vocab", specifier = ">=0.2.4" },
+    { name = "biz-dfch-ste100vocab", specifier = ">=0.2.5" },
     { name = "black", marker = "extra == 'dev'" },
     { name = "coverage", marker = "extra == 'test'" },
     { name = "dacite", specifier = ">=1.9.2" },
     { name = "flake8", marker = "extra == 'dev'", specifier = ">=7.3.0" },
     { name = "parameterized", marker = "extra == 'test'", specifier = ">=0.9.0" },
-    { name = "pyinstaller", marker = "extra == 'build'", specifier = ">=6.16.0" },
+    { name = "pyinstaller", marker = "extra == 'build'", specifier = ">=6.20.0" },
     { name = "pylint", marker = "extra == 'test'", specifier = ">=4.0.0" },
     { name = "rich", specifier = ">=15.0.0" },
     { name = "rich", marker = "extra == 'build'" },
@@ -70,14 +81,14 @@ provides-extras = ["test", "dev", "build"]
 
 [[package]]
 name = "biz-dfch-ste100vocab"
-version = "0.2.4"
+version = "0.2.5"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "dacite" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/ff/f2/8f99812c5c0f7a4dac3faf67272fb9614d89162fd06f3bc8772cd90ce07d/biz_dfch_ste100vocab-0.2.4.tar.gz", hash = "sha256:cf8512a7bfff925c545e0c848ee5ebd9ddd6f9aaa75d1be20a1cd73b5995314e", size = 173193, upload-time = "2026-05-28T05:54:35.975Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/60/c2/ae6f51a8ccc78e9488d73e1e5c9067709d07b8ae0022ec4d53ba6ae40822/biz_dfch_ste100vocab-0.2.5.tar.gz", hash = "sha256:c31e7aed0439cc37774d3392f9343d3cae54c8d0d78f62f193c7bc9077055da1", size = 173352, upload-time = "2026-05-28T14:13:01.732Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/22/73/74391f6c5fab166e62de5250b696461dd7c61a7f4f87e6047e460380ff2a/biz_dfch_ste100vocab-0.2.4-py3-none-any.whl", hash = "sha256:35c263ee51983f7ffd01fe5617e5f810addd89cd88fa22b6bdde66ab71327bb9", size = 181231, upload-time = "2026-05-28T05:54:34.741Z" },
+    { url = "https://files.pythonhosted.org/packages/9f/54/f172f84206b8414c94509cb401ba1303bdcdac2ef1d919ace3b1b8df43a0/biz_dfch_ste100vocab-0.2.5-py3-none-any.whl", hash = "sha256:c32fdc0be9b984afc123f35ffd4e9cf283bb6baf1ce97b8bdd6fab433e1ad7fd", size = 181334, upload-time = "2026-05-28T14:13:00.372Z" },
 ]
 
 [[package]]

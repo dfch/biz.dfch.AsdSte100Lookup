@@ -22,13 +22,4 @@ from dataclasses import dataclass
 class Constant:
     """System-wide constants."""
 
-    # Note: also change "version" in `pyproject.toml`.
-    # Note: also operate `uv lock`.
-    _VERSION = "1.12.0"
-    PROG_NAME = "AsdSte100Lookup"
-
     BLOCKING_WHITE_SPACE = "\u200b"
-
-    DICTIONARY_FILE = "dictionary.jsonl"
-    TECHNICAL_WORDS_FILE = "technical_words.jsonl"
-    RULES_FILE = "rules.json"

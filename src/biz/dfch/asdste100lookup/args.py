@@ -16,10 +16,11 @@
 """Arg parsing module."""
 
 from __future__ import annotations
+import tomllib
 
 import argparse
 
-from .constant import Constant
+from biz.dfch.logging import get_project_root
 
 
 class Args:
@@ -41,6 +42,15 @@ class Args:
     ]
     _DEFAULT_LOG_LEVEL = "ERROR"
 
+    def _get_version(self) -> str:
+        try:
+            toml = get_project_root() / "pyproject.toml"
+            with open(toml, "rb") as f:
+                data = tomllib.load(f)
+                return data.get("project", {}).get("version", "0.0.0")
+        except Exception:  # pylint: disable=W0718
+            return "0.0.0"
+
     def __init__(self):
 
         common = argparse.ArgumentParser(add_help=False)
@@ -58,14 +68,15 @@ class Args:
             help="Increase verbosity (-v = WARNING, -vv = INFO, -vvv = DEBUG).",
         )
 
+        prog_name = "AsdSte100Lookup"
         self._parser = argparse.ArgumentParser(
-            description=f"{Constant.PROG_NAME}, "
-            f"v{Constant._VERSION}"
+            description=f"{prog_name}, "
+            f"v{self._get_version()}"
             ". "
             "A dictionary lookup tool for ASD-STE100.",
             formatter_class=argparse.RawDescriptionHelpFormatter,
-            prog=Constant.PROG_NAME,
-            epilog="Copyright 2025 Ronald Rink, "
+            prog=prog_name,
+            epilog="Copyright 2025 - 2026 Ronald Rink, "
             "https://github.com/dfch/biz.dfch.AsdSte100Lookup"
             ". "
             "Licensed under GPLv3."
@@ -189,10 +200,8 @@ class Args:
         parse_parser.add_argument(
             "-o",
             "--output",
-            default=Constant.DICTIONARY_FILE,
             required=False,
-            help="Name of the dictionary file to save entries to "
-            f"(default: {Constant.DICTIONARY_FILE}).",
+            help="Name of the dictionary file to save entries to.",
         )
 
     @staticmethod
