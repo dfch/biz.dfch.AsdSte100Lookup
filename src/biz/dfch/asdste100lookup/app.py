@@ -45,7 +45,6 @@ from .commands.command_base import CommandBase
 from .commands.empty_command import EmptyCommand
 from .commands.unknown_command import UnknownCommand
 
-from .constant import Constant
 from .dictionary_files_parser import DictionaryFilesParser
 from .main_prompt import MainPrompt
 from .rule import Rule
