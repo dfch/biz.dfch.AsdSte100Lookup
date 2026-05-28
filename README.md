@@ -2,7 +2,7 @@
 
 [![ASD-STE100: Issue 9](https://img.shields.io/badge/ASD--STE100-Issue%209-blue.svg)](https://www.asd-ste100.org/)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-![Python](https://img.shields.io/badge/python-3.11%20%7C%203.12-blue.svg)
+![Python](https://img.shields.io/badge/python-3.11%20%7C%203.12%20%7C%203.13-blue.svg)
 [![Pylint and unittest](https://github.com/dfch/biz.dfch.AsdSte100Lookup/actions/workflows/ci.yml/badge.svg)](https://github.com/dfch/biz.dfch.AsdSte100Lookup/actions/workflows/ci.yml)
 
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=dfch_biz.dfch.AsdSte100Lookup&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=dfch_biz.dfch.AsdSte100Lookup)
@@ -37,7 +37,7 @@ _A dictionary lookup for [ASD-STE100 Issue 9](https://www.asd-ste100.org/index.h
   - Licensed under "GNU General Public License v3" (GPLv3)
 * ASD-STE100
   - Copyright by (c) [ASD](https://www.asd-europe.org/).
-* I am in no way afiliated with ASD. ASD does not endorse my work.
+* I am in no way affiliated with ASD. ASD does not endorse my work.
 
 ## Usage
 
@@ -104,16 +104,20 @@ This is mainly used to:
 * enable the tests find the `src`
 * auto-complete modules starting with `biz....`
 
-## Cloning the repository and setting up Python
+## pip: Cloning the repository and setting up Python
 
-You can clone the repository via these commands:
+You can clone the repository and setup the environment with these commands:
 
-```bash
+```
 git clone https://github.com/dfch/biz.dfch.AsdSte100Lookup.git
 cd biz.dfchAsdSte100Lookup
+```
 
+```
 python3.11 -m venv venv
+```
 
+```
 # On Linux (Debian) run:
 source venv/bin/activate
 
@@ -124,10 +128,46 @@ source venv/bin/activate
 # venv\Scripts\activate.bat
 ```
 
-* I use `venv` for the Windows-based venv and `venvdeb` for the WSL2-based Debian environment.
-* On Windows I use Python version `3.12.11`.
+* I use `venv` for the Windows-based venv and `venvdeb` for the WSL2 Debian environment (because I develop in the same directory).
+* On Windows I use Python version `3.13.11`.
 * On Debian I use Python version `3.11.2`.
 * The difference in versioning is for no particular reason.
+
+## uv: Cloning the repository and setting up Python
+
+### Install `uv` if it is not available on your system
+
+1. Install `uv`
+    ```
+    sudo apt-get install -y curl
+    ```
+
+    ```
+    curl -LsSf https://astral.sh/uv/install.sh | sh
+    ```
+
+    ```
+    echo 'eval "$(uv generate-shell-completion bash)"' >> ~/.bashrc
+    ```
+2. Restart shell
+3. Install Python version (in this example: v3.13)
+    `uv python install 3.13`
+4. Examine installed Python version
+    `uv run python --version`
+
+NOTE: If you use `uv` the name for the virtual environment is `.venv`. Use a different project folder for Windows and Debian in WSL2. Otherwise you use the same environment for both operating systems.
+
+### Setup the project
+
+1. Clone the repository
+    ```
+    git clone https://github.com/dfch/biz.dfch.AsdSte100Lookup.git
+    cd biz.dfchAsdSte100Lookup
+    ```
+2. Create environment and sync files
+    ```
+    uv sync --extra dev --extra build
+    ```
 
 ## Build as one-file executable
 
@@ -146,28 +186,14 @@ source venv/bin/activate
 
     a. This command builds the program into a single executable file for your operating system. This includes the Python runtime.
 
-    b. The result is in the directory with the name `dist`. The name of the exutable is `AsdSte100Lookup` or `AsdSte100Lookup.exe`.
+    b. The result is in the directory with the name `dist`. The name of the executable is `AsdSte100Lookup` or `AsdSte100Lookup.exe`.
 
-```bash
-(venv) <prj-root> $ pyinstaller --clean --onefile --name AsdSte100Lookup \
-  --add-data "./src/logging.conf:." \
-  --add-data "./src/biz/dfch/asdste100lookup:./biz/dfch/asdste100lookup/" \
-  -p "./src" \
-  -p "./src/biz" \
-  ./src/biz/__main__.py
+```
+uv run pyinstaller --clean AsdSte100Lookup.spec
 ```
 
-```bash
-pyinstaller --clean --onefile --name AsdSte100Lookup --add-data "./src/logging.conf:." --add-data "./src/biz/dfch/asdste100lookup:./biz/dfch/asdste100lookup/" -p "./src" -p "./src/biz" ./src/biz/__main__.py
 ```
-
-```bash
-(venv) <prj-root> $ pyinstaller --clean --onefile --name AsdSte100Lookup `
-  --add-data "./src/logging.conf:." `
-  --add-data "./src/biz/dfch/asdste100lookup:./biz/dfch/asdste100lookup/" `
-  -p "./src" `
-  -p "./src/biz" `
-  ./src/biz/__main__.py
+pyinstaller --clean AsdSte100Lookup.spec
 ```
 
 ## Run
@@ -177,7 +203,7 @@ There are two ways to use the program.
 1. Use the executable from the previous step.
 2. Use the Python interpreter.
 
-    a. Activate the "virtual environement" for your operating system.
+    a. Activate the "virtual environment" for your operating system.
     b. Make sure all necessary libraries are available.
     c. Use this command to change into the `src` directory: `cd src`.
     d. Operate this command: `python -m biz`.

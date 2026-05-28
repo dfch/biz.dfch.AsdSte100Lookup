@@ -1,0 +1,40 @@
+name: Publish Release
+
+on:
+  push:
+    tags: ['v*']
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+
+jobs:
+  build-linux:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - name: Set up Python
+        run: uv python install
+
+      - name: Install dependencies
+        run: uv sync
+
+      - name: Build Executable and Rename
+        run: |
+          uv run pyinstaller --clean AsdSte100Lookup.spec
+          OS=$(uname -s | tr '[:upper:]' '[:lower:]')
+          ARCH=$(uname -m)
+          mv dist/AsdSte100Lookup dist/AsdSte100Lookup-${OS}-${ARCH}
+
+      - name: Upload binaries to Release
+        run: |
+          gh release upload ${{ github.ref_name }} dist/AsdSte100Lookup-linux-x64 --clobber
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

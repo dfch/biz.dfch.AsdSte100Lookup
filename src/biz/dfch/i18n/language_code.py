@@ -28,8 +28,8 @@ from enum import StrEnum
 class LanguageCode(StrEnum):
     """Defines supported language codes."""
 
-    DEFAULT = "default"
     EN = "English"
     DE = "Deutsch"
     FR = "Français"
     IT = "Italiano"
+    DEFAULT = EN

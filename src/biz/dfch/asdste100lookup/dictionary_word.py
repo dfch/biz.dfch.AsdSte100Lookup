@@ -1,4 +1,4 @@
-# Copyright (c) 2025 Ronald Rink, http://d-fens.ch
+# Copyright (c) 2025 - 2026 Ronald Rink, http://d-fens.ch
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -17,8 +17,8 @@
 
 from dataclasses import dataclass
 
-from .word_status import WordStatus
-from .word_type import WordType
+from biz.dfch.asdste100vocab import WordStatus
+from biz.dfch.asdste100vocab import WordType
 
 
 @dataclass

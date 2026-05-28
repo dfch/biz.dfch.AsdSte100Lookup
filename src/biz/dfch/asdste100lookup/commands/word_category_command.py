@@ -1,4 +1,4 @@
-# Copyright (c) 2025 Ronald Rink, http://d-fens.ch
+# Copyright (c) 2025 - 2026 Ronald Rink, http://d-fens.ch
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -20,8 +20,8 @@ import re
 
 from biz.dfch.logging import log  # pylint: disable=E0401
 
-from ..word_category import WordCategory
-from ..word import Word
+from biz.dfch.asdste100vocab import Word
+from biz.dfch.asdste100vocab import WordCategory
 
 from .command_query_type import CommandQueryType
 from .dictionary_command import DictionaryCommand

@@ -1,4 +1,4 @@
-# Copyright (c) 2025 Ronald Rink, http://d-fens.ch
+# Copyright (c) 2025 - 2026 Ronald Rink, http://d-fens.ch
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -25,4 +25,4 @@ class TestUnittestFramework(unittest.TestCase):
     def test_unittest_succeeds(self):
         """Make sure, that `unittest` operates correctly."""
 
-        self.assertIsNotNone(unittest)
+        self.assertEqual("unittest", unittest.__name__,)

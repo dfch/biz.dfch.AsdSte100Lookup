@@ -1,4 +1,4 @@
-# Copyright (c) 2025 Ronald Rink, http://d-fens.ch
+# Copyright (c) 2025 - 2026 Ronald Rink, http://d-fens.ch
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -13,13 +13,23 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-"""WordSource enum."""
+# pylint: disable=C0415
+# pylint: disable=E0401
+# noqa: E501
 
-from enum import StrEnum
+"""Application entry point as script."""
+
+from biz.dfch.asdste100lookup.args import Args
+from biz.dfch.asdste100lookup.app import App
 
 
-class WordSource(StrEnum):
-    """Defines common word sources."""
+def main():
+    """main"""
 
-    UNKNOWN = "Unknown"
-    STE100_9 = "STE100:9"
+    parser = Args().invoke()
+
+    App(parser).invoke()
+
+
+if __name__ == "__main__":
+    main()
