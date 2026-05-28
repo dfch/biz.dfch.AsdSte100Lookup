@@ -97,7 +97,7 @@ class TestCopyright(unittest.TestCase):
         result: list[Path] = []
 
         cmd = [
-            "git.exe",
+            "git",
             "log",
             f'--since="{self.current_year}-01-01"',
             "--name-only",
