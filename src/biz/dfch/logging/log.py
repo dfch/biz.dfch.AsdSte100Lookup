@@ -29,7 +29,6 @@
 import logging
 import logging.config
 from pathlib import Path
-import sys
 
 _LOGGER_NAME = "biz.dfch.asdste100lookup"
 # Note: When using `pyinstaller --onefile` make sure this file is available.
@@ -65,20 +64,8 @@ def get_project_src() -> Path:
 
     return result
 
-    # if getattr(sys, "frozen", False):
-    #     # Determine whether we run as binary "onefile".
-    #     base_path = getattr(sys, "_MEIPASS", None)
-    #     assert base_path
-    # else:
-    #     cwd = Path(os.getcwd())
-    #     base_path_path = cwd / _path
-    #     if not base_path_path.exists():
-    #         base_path_path = cwd / "src" / _path
-    #     base_path = str(base_path_path.resolve())
-
 
 try:
-    print(get_project_src() / _LOGGER_FILE)
     logging.config.fileConfig(get_project_src() / _LOGGER_FILE)
     log = logging.getLogger(_LOGGER_NAME)  # type: ignore
 
