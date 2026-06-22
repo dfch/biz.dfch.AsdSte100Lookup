@@ -35,7 +35,7 @@ wheels = [
 
 [[package]]
 name = "biz-dfch-asdste100lookup"
-version = "2.0.2"
+version = "2.0.4"
 source = { editable = "." }
 dependencies = [
     { name = "argparse" },
@@ -66,7 +66,7 @@ test = [
 requires-dist = [
     { name = "argparse", specifier = ">=1.4.0" },
     { name = "biz-dfch-asdste100lookup", extras = ["test"], marker = "extra == 'dev'" },
-    { name = "biz-dfch-ste100vocab", specifier = ">=0.2.5" },
+    { name = "biz-dfch-ste100vocab", specifier = ">=0.6.2" },
     { name = "black", marker = "extra == 'dev'" },
     { name = "coverage", marker = "extra == 'test'" },
     { name = "dacite", specifier = ">=1.9.2" },
@@ -81,14 +81,11 @@ provides-extras = ["test", "dev", "build"]
 
 [[package]]
 name = "biz-dfch-ste100vocab"
-version = "0.5.1"
+version = "0.6.2"
 source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "dacite" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/63/31/8aa0c7f85ca5bd839142fe2220098e5b8f8ded449b3185d063e5d2f33864/biz_dfch_ste100vocab-0.5.1.tar.gz", hash = "sha256:84cdb841c4b33b68f71413f0fc7fcf7e745555c8827534dbbd857e57f8caca11", size = 174560, upload-time = "2026-06-07T18:54:41.385Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/97/65/ce67d6c334cb4d4caaee545469848cd2143d240e09534e3f611199753f12/biz_dfch_ste100vocab-0.6.2.tar.gz", hash = "sha256:11bfa0f1ecc90684322966936ceab801958429d46a08aff0034deba9247aeed8", size = 337699, upload-time = "2026-06-22T10:02:04.27Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/d8/a0/f029dbe15b31debffc85f1950fbf3ec25e3653f2d73ae8677410e66c225a/biz_dfch_ste100vocab-0.5.1-py3-none-any.whl", hash = "sha256:13e17e2d608627bbb17a7467571e34b5ab0c8420e73c1fd66b0e810073fe37dc", size = 182570, upload-time = "2026-06-07T18:54:39.915Z" },
+    { url = "https://files.pythonhosted.org/packages/b8/64/769857a631bbd5fd91d57dac57df9d72f436962bbe7f65dc1365f46ca92c/biz_dfch_ste100vocab-0.6.2-py3-none-any.whl", hash = "sha256:252c8404641cd1673d3faf4ec88145268aa0bb4836d3e45cec0386b39f645b7c", size = 355408, upload-time = "2026-06-22T10:02:02.918Z" },
 ]
 
 [[package]]
