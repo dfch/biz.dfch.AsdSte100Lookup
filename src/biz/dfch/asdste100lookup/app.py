@@ -45,7 +45,6 @@ from .commands.command_base import CommandBase
 from .commands.empty_command import EmptyCommand
 from .commands.unknown_command import UnknownCommand
 
-from .dictionary_files_parser import DictionaryFilesParser
 from .main_prompt import MainPrompt
 from .rule import Rule
 from .rule_content_type import RuleContentType
@@ -146,23 +145,6 @@ class App:  # pylint: disable=R0903
                 continue
 
             break
-
-    def on_parse(self) -> None:
-        """This is the handler for the `dictionary` command."""
-
-        # How elegant!
-        root_dir = Path(__file__).resolve().parent.parent.parent.parent.parent
-        import_path = self._args.path
-        path = root_dir.joinpath(import_path)
-        prefix = self._args.prefix
-        extension = self._args.extension
-        dictionary_file_name = self._args.output
-        DictionaryFilesParser().invoke(
-            path=path,
-            prefix=prefix,
-            extension=extension,
-            dictionary_file_name=dictionary_file_name,
-        )
 
     def _load_rules(self, file_path_and_name: Path) -> list[Rule]:
         """Loads rules from file."""
@@ -330,10 +312,6 @@ class App:  # pylint: disable=R0903
         print(self._parser.description)
         log.debug(self._parser.epilog)
         print(self._parser.epilog)
-
-        if self._args.command == "parse":
-            self.on_parse()
-            return
 
         if self._args.command == "rules":
             self.on_rules()

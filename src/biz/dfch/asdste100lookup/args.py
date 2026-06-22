@@ -165,45 +165,6 @@ class Args:
             help="Shows only the summary of a rule.",
         )
 
-        parse_parser = subparsers.add_parser(
-            "parse", parents=[common], help="Parses input dictionary files."
-        )
-
-        parse_path_default = "ASD-STE100/v3/txt"
-        parse_parser.add_argument(
-            "-p",
-            "--path",
-            default=parse_path_default,
-            required=False,
-            help="Path with dictionary files "
-            f"(default: '{parse_path_default}').",
-        )
-
-        parse_prefix_default = "ASD-STE100 - "
-        parse_parser.add_argument(
-            "--prefix",
-            default=parse_prefix_default,
-            required=False,
-            help="Prefix of files in path "
-            f"(default: '{parse_prefix_default}').",
-        )
-        parse_extension_default = ".txt"
-        parse_parser.add_argument(
-            "-ext",
-            "--extension",
-            default=parse_extension_default,
-            required=False,
-            help="Extension of files in path "
-            f"(default: '{parse_extension_default}').",
-        )
-
-        parse_parser.add_argument(
-            "-o",
-            "--output",
-            required=False,
-            help="Name of the dictionary file to save entries to.",
-        )
-
     @staticmethod
     def get_effective_log_level_name(args) -> str:
         """Returns the effective log level name."""
