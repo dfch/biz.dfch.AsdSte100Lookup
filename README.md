@@ -33,7 +33,7 @@ _A dictionary lookup for [ASD-STE100 Issue 9](https://www.asd-ste100.org/index.h
 * The program lets you use regular expressions as the input.
 * The program is written in Python (and tested with v3.11.2 on Microsoft Windows 11 and WSLv2 Debian x64).
 * The program
-  - Copyright by (c) 2025 Ronald Rink.
+  - Copyright by (c) 2025 - 2026 Ronald Rink.
   - Licensed under "GNU General Public License v3" (GPLv3)
 * ASD-STE100
   - Copyright by (c) [ASD](https://www.asd-europe.org/).
@@ -210,6 +210,8 @@ There are two ways to use the program.
 
 3. After some time you see a prompt. Use this prompt to examine the dictionary.
 4. You can use regular expressions in the prompt.
+
+NOTE: There is a Linux x86_64 executable artifact in each recent "release" in the Github repository.
 
 ## Images
 
