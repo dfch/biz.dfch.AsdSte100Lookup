@@ -53,7 +53,7 @@ classifiers = [
 
 dependencies = [
     "argparse>=1.4.0",
-    "biz-dfch-ste100vocab>=0.2.5",
+    "biz-dfch-ste100vocab>=0.6.2",
     "dacite>=1.9.2",
     "rich>=15.0.0",
 ]
