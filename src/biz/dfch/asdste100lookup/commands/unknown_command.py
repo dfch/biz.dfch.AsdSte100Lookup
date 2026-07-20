@@ -32,7 +32,7 @@ from .word_filter import WordFilter
 class UnknownCommand(DictionaryCommand):
     """Represents an unknown command."""
 
-    def invoke(self, console, dictionary, rules) -> None:
+    def invoke(self, console, dictionary, rules) -> None:  # NOSONAR python:S3776
         super().invoke(console, dictionary, rules)
 
         matching_words: dict[int, Word] = {}

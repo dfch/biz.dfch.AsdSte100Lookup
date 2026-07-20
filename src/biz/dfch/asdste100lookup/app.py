@@ -163,7 +163,7 @@ class App:  # pylint: disable=R0903
 
         return result
 
-    def on_rules(self) -> None:
+    def on_rules(self) -> None:  # NOSONAR python:S3776
         """This is the handler for the `rules` command."""
 
         console = Console(theme=self._rule_theme)

@@ -223,7 +223,7 @@ class DictionaryCommand(EraseConsoleBufferCommand):
 
         return result
 
-    def show(self, items: list[Word], prompt: str) -> Table:
+    def show(self, items: list[Word], prompt: str) -> Table:  # NOSONAR python:S3776
         """Creates a table of the specified words."""
 
         assert isinstance(items, list)
