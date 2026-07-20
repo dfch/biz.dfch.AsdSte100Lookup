@@ -23,10 +23,10 @@ jobs:
           enable-cache: true
 
       - name: Set up Python
-        run: uv python install
+        run: uv python install 3.13
 
       - name: Install dependencies
-        run: uv sync --frozen --no-build --extra build
+        run: uv sync --frozen --extra build --python 3.13
 
       - name: Build Executable and Rename
         run: |
