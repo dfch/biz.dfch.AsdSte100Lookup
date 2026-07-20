@@ -50,9 +50,7 @@ class DictionaryCommand(EraseConsoleBufferCommand):
 
         return Colorizer(text).to_red(value)
 
-    def to_word_colour(
-        self, text: str, value: str, status: str, category: str
-    ) -> str:
+    def to_word_colour(self, text: str, value: str, status: str, category: str) -> str:
         """Colorizes value in specified text green or red based on status."""
 
         assert isinstance(status, str) and "" != status
@@ -113,9 +111,7 @@ class DictionaryCommand(EraseConsoleBufferCommand):
 
         return result
 
-    def _process_note_words(
-        self, note: WordNote, row: TableRow
-    ) -> list[TableRow]:
+    def _process_note_words(self, note: WordNote, row: TableRow) -> list[TableRow]:
 
         assert isinstance(note, WordNote)
         assert isinstance(row, TableRow)
@@ -125,7 +121,6 @@ class DictionaryCommand(EraseConsoleBufferCommand):
         nwords = note.words
 
         if row.description or row.ste_example or row.nonste_example:
-
             row = TableRow()
             result.append(row)
 
@@ -186,9 +181,7 @@ class DictionaryCommand(EraseConsoleBufferCommand):
 
         return result
 
-    def _process_alternatives(
-        self, word: Word, row: TableRow
-    ) -> list[TableRow]:
+    def _process_alternatives(self, word: Word, row: TableRow) -> list[TableRow]:
 
         assert isinstance(word, Word)
         assert isinstance(row, TableRow)
@@ -213,7 +206,6 @@ class DictionaryCommand(EraseConsoleBufferCommand):
             for i, (ste, nonste) in enumerate(
                 zip_longest(ste_list, nonste_list, fillvalue=" ")
             ):
-
                 if 0 == i:
                     row.ste_example = self.to_colour(ste, alt.name, alt.status)
                     row.nonste_example = self.to_colour(
@@ -231,7 +223,7 @@ class DictionaryCommand(EraseConsoleBufferCommand):
 
         return result
 
-    def show(self, items: list[Word], prompt: str) -> Table:
+    def show(self, items: list[Word], prompt: str) -> Table:  # NOSONAR python:S3776
         """Creates a table of the specified words."""
 
         assert isinstance(items, list)
@@ -246,7 +238,6 @@ class DictionaryCommand(EraseConsoleBufferCommand):
 
         rows: list[TableRow] = []
         for word in items:
-
             row = TableRow()
             rows.append(row)
 
@@ -272,16 +263,41 @@ class DictionaryCommand(EraseConsoleBufferCommand):
                         word.status,
                         word.category,
                     )
-                if self._get_first_or_item(word.nonste_example):
-                    row.nonste_example = self.to_colour(
-                        cast(str, self._get_first_or_item(word.nonste_example)),
-                        prompt,
-                        word.status,
-                    )
-            else:
-                log.error(
-                    "Word '%s' with status '%s' found.", word.name, word.status
+                ste_list = (
+                    word.ste_example
+                    if isinstance(word.ste_example, list)
+                    else ([word.ste_example] if word.ste_example else [])
                 )
+                nonste_list = (
+                    word.nonste_example
+                    if isinstance(word.nonste_example, list)
+                    else ([word.nonste_example] if word.nonste_example else [])
+                )
+                for i, (ste, nonste) in enumerate(
+                    zip_longest(ste_list, nonste_list, fillvalue=" ")
+                ):
+                    if 0 == i:
+                        if ste.strip():
+                            row.ste_example = self.to_colour(
+                                ste, word.name, WordStatus.APPROVED
+                            )
+                        if nonste.strip():
+                            row.nonste_example = self.to_colour(
+                                nonste, word.name, WordStatus.REJECTED
+                            )
+                        continue
+                    row = TableRow()
+                    rows.append(row)
+                    if ste.strip():
+                        row.ste_example = self.to_colour(
+                            ste, word.name, WordStatus.APPROVED
+                        )
+                    if nonste.strip():
+                        row.nonste_example = self.to_colour(
+                            nonste, word.name, WordStatus.REJECTED
+                        )
+            else:
+                log.error("Word '%s' with status '%s' found.", word.name, word.status)
                 continue
 
             if word.spellings:

@@ -34,7 +34,6 @@ from .commands.filter_command import FilterCommand
 from .commands.help_command import HelpCommand
 from .commands.rule_command import RuleCommand
 from .commands.save_command import SaveCommand
-from .commands.sentence_info_command import SentenceInfoCommand
 from .commands.unknown_command import UnknownCommand
 from .commands.word_category_command import WordCategoryCommand
 from .commands.word_filter_type import WordFilterType
@@ -52,8 +51,6 @@ class MainPrompt:  # pylint: disable=R0903
     _save_command_names = ["save", "s"]
     _exit_command_names = ["exit", "x"]
     _filter_command_names = ["filter", "f"]
-    _sentence_command_names = ["sentence", "1"]
-
     _parser: argparse.ArgumentParser
 
     def __init__(self):
@@ -87,8 +84,6 @@ class MainPrompt:  # pylint: disable=R0903
         self._build_parser_save(subparsers_action)
         self._build_parser_exit(subparsers_action)
         self._build_parser_filter(subparsers_action)
-        self._build_parser_sentence(subparsers_action)
-
         return result
 
     def _build_parser_category(
@@ -174,9 +169,7 @@ class MainPrompt:  # pylint: disable=R0903
             help="Overview of all rules.",
         )
 
-        rule_parser_output_args = parser.add_mutually_exclusive_group(
-            required=False
-        )
+        rule_parser_output_args = parser.add_mutually_exclusive_group(required=False)
 
         rule_parser_output_args.add_argument(
             "-l",
@@ -303,29 +296,6 @@ class MainPrompt:  # pylint: disable=R0903
 
         return result
 
-    def _build_parser_sentence(
-        self, subparsers_action
-    ) -> SuppressErrorMessageArgumentParser:
-        result = subparsers_action.add_parser(
-            self._sentence_command_names[0],
-            aliases=self._sentence_command_names[1:],
-            help="Analyses a sentence.",
-        )
-        result.add_argument(
-            "text", nargs="*", help="The sentence text to analyze"
-        )
-        sentence_parser_args = result.add_mutually_exclusive_group(
-            required=True
-        )
-        sentence_parser_args.add_argument(
-            "-i", "--info", action="store_true", help="Shows info."
-        )
-        sentence_parser_args.add_argument(
-            "-c", "--count", action="store_true", help="Shows word count."
-        )
-
-        return result
-
     def parse(self, text: str) -> CommandBase:
         """Parses a line of text into a command."""
 
@@ -377,9 +347,6 @@ class MainPrompt:  # pylint: disable=R0903
         if ns.command in self._filter_command_names:
             return self._parse_filter(ns)
 
-        if ns.command in self._sentence_command_names:
-            return self._parse_sentence(ns)
-
         if ns.command in self._exit_command_names:
             return ExitCommand(ns.command)
 
@@ -403,9 +370,7 @@ class MainPrompt:  # pylint: disable=R0903
             display_type = RuleRenderType.BRIEF
 
         if ns.id is not None:
-            return RuleCommand(
-                CommandQueryType.ID, ns.id, display_type=display_type
-            )
+            return RuleCommand(CommandQueryType.ID, ns.id, display_type=display_type)
         if ns.name is not None:
             return RuleCommand(
                 CommandQueryType.NAME, ns.name, display_type=display_type
@@ -474,14 +439,3 @@ class MainPrompt:  # pylint: disable=R0903
             return FilterCommand(WordFilterType.NOTE, ns.note)
 
         raise ValueError("Invalid command option (filter).")
-
-    def _parse_sentence(self, ns) -> CommandBase:
-        if ns.count is not None and ns.count:
-            _ = True
-        if ns.info is not None and ns.info:
-            _ = True
-        text = ""
-        if ns.text is not None:
-            text = " ".join(ns.text)
-
-        return SentenceInfoCommand(text)

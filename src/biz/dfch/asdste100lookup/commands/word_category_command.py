@@ -47,41 +47,39 @@ class WordCategoryCommand(DictionaryCommand):
         super().invoke(console, dictionary, rules)
 
         if CommandQueryType.LIST == self.type_:
-            technical_nouns_and_verbs: list[str] = []
-
-            descriptions = WordCategory.get_descriptions()
-            for key in descriptions:
-                technical_nouns_and_verbs.append(
-                    f"{key}\t{WordCategory.get_description(key)}"
-                )
-
-            info = "\n".join(technical_nouns_and_verbs)
-            console.print(info)
+            self._list_categories(console)
             return
+
+        words = self._match_words(dictionary)
+        self._print_results(console, words)
+
+    def _list_categories(self, console) -> None:
+        descriptions = WordCategory.get_descriptions()
+        lines = [f"{key}\t{WordCategory.get_description(key)}" for key in descriptions]
+        console.print("\n".join(lines))
+
+    def _match_words(self, dictionary) -> list[Word]:
+        keys = None
+        regex = None
 
         if CommandQueryType.NAME == self.type_:
             keys = WordCategory.get_matching_keys(self.value)
-
-        if CommandQueryType.ID == self.type_:
+        elif CommandQueryType.ID == self.type_:
             regex = re.compile(self.value, re.IGNORECASE)
 
-        matching_words: dict[int, Word] = {}
+        matching: dict[int, Word] = {}
         try:
             for word in dictionary:
-                if CommandQueryType.NAME == self.type_:
-                    if word.category in keys:
-                        matching_words[id(word)] = word
-                    continue
-
-                if CommandQueryType.ID == self.type_:
-                    if regex.search(word.category):
-                        matching_words[id(word)] = word
-                    continue
-
+                if keys is not None and word.category in keys:
+                    matching[id(word)] = word
+                elif regex is not None and regex.search(word.category):
+                    matching[id(word)] = word
         except re.error as ex:
             log.error("Invalid regex: '%s'", ex)
 
-        words = list(matching_words.values())
+        return list(matching.values())
+
+    def _print_results(self, console, words: list[Word]) -> None:
         result = self.show(items=words, prompt=self.value)
 
         if 0 == len(result.rows):
@@ -89,10 +87,9 @@ class WordCategoryCommand(DictionaryCommand):
             return
 
         categories = {word.category for word in words}
-        cat_descriptions: list[str] = []
-        for c in categories:
-            cat_descriptions.append(f"{c}: {WordCategory(c).get_description()}")
-        cat_descriptions = sorted(cat_descriptions)
+        cat_descriptions = sorted(
+            f"{c}: {WordCategory(c).get_description()}" for c in categories
+        )
         info = "\n".join(cat_descriptions)
 
         console.print(info)
