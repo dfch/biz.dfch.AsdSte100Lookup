@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "biz-dfch-asdste100lookup"
 
-version = "2.0.4"
+version = "2.0.5"
 description = "An ASD-STE100 (Simplified Technical English) dictionary lookup tool."
 readme = "README.md"
 requires-python = ">=3.11"
@@ -53,7 +53,7 @@ classifiers = [
 
 dependencies = [
     "argparse>=1.4.0",
-    "biz-dfch-ste100vocab>=0.6.2",
+    "biz-dfch-ste100vocab>=0.7.0",
     "dacite>=1.9.2",
     "rich>=15.0.0",
 ]
