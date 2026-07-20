@@ -23,13 +23,11 @@
 """Module i18n."""
 
 from __future__ import annotations
-import os
 from pathlib import Path
-import sys
 from threading import Lock
 from typing import ClassVar
 
-from biz.dfch.logging import log, get_project_src
+from biz.dfch.logging import get_project_src
 
 from .language_code import LanguageCode
 
