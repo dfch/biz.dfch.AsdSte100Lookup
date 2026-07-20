@@ -45,35 +45,44 @@ class WordFilter:  # pylint: disable=R0903
 
         assert isinstance(dictionary, list)
 
-        if (
-            "" == self._filters[WordFilterType.TYPE]
-            and "" == self._filters[WordFilterType.STATUS]
-            and "" == self._filters[WordFilterType.SOURCE]
-            and "" == self._filters[WordFilterType.CATEGORY]
-            and "" == self._filters[WordFilterType.NOTE]
-        ):
+        if self._no_filters_active():
             return dictionary
 
+        resolved = self._resolve_filters()
+        return [word for word in dictionary if self._matches_word(word, **resolved)]
+
+    def _no_filters_active(self) -> bool:
+        return all(
+            "" == self._filters[f]
+            for f in (
+                WordFilterType.TYPE,
+                WordFilterType.STATUS,
+                WordFilterType.SOURCE,
+                WordFilterType.CATEGORY,
+                WordFilterType.NOTE,
+            )
+        )
+
+    def _resolve_filters(self) -> dict:
         type_: WordType | None = None
         if "" != self._filters[WordFilterType.TYPE]:
-            key = enum_key_from_value(
-                WordType, self._filters[WordFilterType.TYPE]
-            )
-            type_ = WordType[key]
+            type_ = WordType[
+                enum_key_from_value(WordType, self._filters[WordFilterType.TYPE])
+            ]
 
         status: WordStatus | None = None
         if "" != self._filters[WordFilterType.STATUS]:
-            key = enum_key_from_value(
-                WordStatus, self._filters[WordFilterType.STATUS]
-            )
-            status = WordStatus[key]
+            status = WordStatus[
+                enum_key_from_value(WordStatus, self._filters[WordFilterType.STATUS])
+            ]
 
         category: WordCategory | None = None
         if "" != self._filters[WordFilterType.CATEGORY]:
-            key = enum_key_from_value(
-                WordCategory, self._filters[WordFilterType.CATEGORY]
-            )
-            category = WordCategory[key]
+            category = WordCategory[
+                enum_key_from_value(
+                    WordCategory, self._filters[WordFilterType.CATEGORY]
+                )
+            ]
 
         regex_source = None
         if "" != self._filters[WordFilterType.SOURCE]:
@@ -83,32 +92,35 @@ class WordFilter:  # pylint: disable=R0903
 
         regex_note = None
         if "" != self._filters[WordFilterType.NOTE]:
-            regex_note = re.compile(
-                self._filters[WordFilterType.NOTE], re.IGNORECASE
-            )
+            regex_note = re.compile(self._filters[WordFilterType.NOTE], re.IGNORECASE)
 
-        result: list[Word] = []
+        return {
+            "type_": type_,
+            "status": status,
+            "category": category,
+            "regex_source": regex_source,
+            "regex_note": regex_note,
+        }
 
-        for word in dictionary:
-            if type_ is not None and word.type_ != type_:
-                continue
-
-            if status is not None and word.status != status:
-                continue
-
-            if category is not None and word.category != category:
-                continue
-
-            if regex_source is not None and not regex_source.search(
-                word.source
-            ):
-                continue
-
-            if regex_note is not None and (
-                not word.note or not regex_note.search(word.note.value)
-            ):
-                continue
-
-            result.append(word)
-
-        return result
+    @staticmethod
+    def _matches_word(
+        word: Word,
+        type_: WordType | None,
+        status: WordStatus | None,
+        category: WordCategory | None,
+        regex_source,
+        regex_note,
+    ) -> bool:
+        if type_ is not None and word.type_ != type_:
+            return False
+        if status is not None and word.status != status:
+            return False
+        if category is not None and word.category != category:
+            return False
+        if regex_source is not None and not regex_source.search(word.source):
+            return False
+        if regex_note is not None and (
+            not word.note or not regex_note.search(word.note.value)
+        ):
+            return False
+        return True

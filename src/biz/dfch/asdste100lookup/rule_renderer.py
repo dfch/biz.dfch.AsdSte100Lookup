@@ -42,115 +42,102 @@ class RuleRenderer:  # pylint: disable=R0903
         assert isinstance(console, Console)
         assert isinstance(rules, list)
 
-        current_section = ""
-        current_category = ""
         if RuleRenderType.LIST == type_:
-            grouped = RuleGrouper(rules).invoke()
-            for section, categories in grouped.items():
-                if current_section != section:
-                    current_section = section
-                    console.print(Markdown(f"**{current_section}**"))
-                for category, rules_cat in categories.items():
-                    if current_category != category:
-                        current_category = category
-                        out = Padding(
-                            Markdown(f"*{current_category}*"), (0, 0, 0, 2)
-                        )
-                        console.print(out)
-                    for rule in rules_cat:
-                        out = Padding(
-                            Markdown(f"**{rule.id_}**: {rule.name}"),
-                            (0, 0, 0, 4),
-                        )
-                        console.print(out)
+            self._show_list(console, rules)
             return
 
         for rule in rules:
+            self._show_rule_header(console, rule)
+            if RuleRenderType.BRIEF != type_:
+                self._show_contents(console, rule)
 
-            p = Panel(
-                Markdown(rule.name),
-                title=f"{rule.type_.capitalize()} {rule.id_}",
-                title_align="left",
-                subtitle=f"{rule.section}, {rule.category}, {rule.ref}",
-                subtitle_align="left",
-                border_style="bright_yellow",
-                padding=(1, 1),
-                box=box.HEAVY_EDGE,
-            )
-            console.print(p)
-            md = Markdown(f"**{rule.summary}**")
-            console.print("")
-            console.print(md)
-            console.print("")
+    def _show_list(self, console: Console, rules: list[Rule]) -> None:
+        current_section = ""
+        current_category = ""
+        grouped = RuleGrouper(rules).invoke()
+        for section, categories in grouped.items():
+            if current_section != section:
+                current_section = section
+                console.print(Markdown(f"**{current_section}**"))
+            for category, rules_cat in categories.items():
+                if current_category != category:
+                    current_category = category
+                    console.print(
+                        Padding(Markdown(f"*{current_category}*"), (0, 0, 0, 2))
+                    )
+                for rule in rules_cat:
+                    console.print(
+                        Padding(Markdown(f"**{rule.id_}**: {rule.name}"), (0, 0, 0, 4))
+                    )
 
-            if RuleRenderType.BRIEF == type_:
-                continue
+    def _show_rule_header(self, console: Console, rule: Rule) -> None:
+        p = Panel(
+            Markdown(rule.name),
+            title=f"{rule.type_.capitalize()} {rule.id_}",
+            title_align="left",
+            subtitle=f"{rule.section}, {rule.category}, {rule.ref}",
+            subtitle_align="left",
+            border_style="bright_yellow",
+            padding=(1, 1),
+            box=box.HEAVY_EDGE,
+        )
+        console.print(p)
+        console.print("")
+        console.print(Markdown(f"**{rule.summary}**"))
+        console.print("")
 
-            for content in rule.contents:
-                match content.type_:
-                    case RuleContentType.TEXT:
-                        md = Markdown(content.data)
-                        console.print(md)
-                        console.print("")
-                    case RuleContentType.EXAMPLE:
-                        txt = f"[green]{content.data}[/green]"
-                        console.print(
-                            Panel(
-                                txt,
-                                title="STE",
-                                title_align="left",
-                                expand=False,
-                            )
-                        )
-                        console.print("")
-                    case RuleContentType.STE:
-                        panel = MarkDownUtils.to_panel(
-                            content.data, title="STE", style="green"
-                        )
-                        console.print(panel)
-                        console.print("")
-                    case RuleContentType.NONSTE:
-                        panel = MarkDownUtils.to_panel(
-                            content.data, title="Non-STE", style="red"
-                        )
-                        console.print(panel)
-                        console.print("")
-                    case RuleContentType.NOT_RECOMMENDED:
-                        panel = MarkDownUtils.to_panel(
-                            content.data, title="Not recommended", style="red"
-                        )
-                        console.print(panel)
-                        console.print("")
-                    case RuleContentType.NOTE:
-                        md = Markdown(content.data)
-                        console.print(
-                            Panel(
-                                md,
-                                title="💡",
-                                title_align="left",
-                                border_style="yellow",
-                                expand=False,
-                            )
-                        )
-                        console.print("")
-                    case RuleContentType.GOOD:
-                        panel = MarkDownUtils.to_panel(
-                            content.data, title="Example", style="green"
-                        )
-                        console.print(panel)
-                        console.print("")
-                    case RuleContentType.GENERAL:
-                        panel = MarkDownUtils.to_panel(
-                            content.data, title="Example", style="blue"
-                        )
-                        console.print(panel)
-                        console.print("")
-                    case RuleContentType.COMMENT:
-                        md = Markdown(f"_{content.data}_")
-                        console.print(md)
-                        console.print("")
-                    case _:
-                        console.print("default")
-                        md = Markdown(content.data)
-                        console.print(md)
-                        console.print("")
+    def _show_contents(self, console: Console, rule: Rule) -> None:
+        for content in rule.contents:
+            self._show_content(console, content)
+
+    def _show_content(self, console: Console, content) -> None:
+        match content.type_:
+            case RuleContentType.TEXT:
+                console.print(Markdown(content.data))
+            case RuleContentType.EXAMPLE:
+                console.print(
+                    Panel(
+                        f"[green]{content.data}[/green]",
+                        title="STE",
+                        title_align="left",
+                        expand=False,
+                    )
+                )
+            case RuleContentType.STE:
+                console.print(
+                    MarkDownUtils.to_panel(content.data, title="STE", style="green")
+                )
+            case RuleContentType.NONSTE:
+                console.print(
+                    MarkDownUtils.to_panel(content.data, title="Non-STE", style="red")
+                )
+            case RuleContentType.NOT_RECOMMENDED:
+                console.print(
+                    MarkDownUtils.to_panel(
+                        content.data, title="Not recommended", style="red"
+                    )
+                )
+            case RuleContentType.NOTE:
+                console.print(
+                    Panel(
+                        Markdown(content.data),
+                        title="💡",
+                        title_align="left",
+                        border_style="yellow",
+                        expand=False,
+                    )
+                )
+            case RuleContentType.GOOD:
+                console.print(
+                    MarkDownUtils.to_panel(content.data, title="Example", style="green")
+                )
+            case RuleContentType.GENERAL:
+                console.print(
+                    MarkDownUtils.to_panel(content.data, title="Example", style="blue")
+                )
+            case RuleContentType.COMMENT:
+                console.print(Markdown(f"_{content.data}_"))
+            case _:
+                console.print("default")
+                console.print(Markdown(content.data))
+        console.print("")
