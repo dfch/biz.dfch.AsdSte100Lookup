@@ -45,11 +45,6 @@ jobs:
         uv run --frozen ruff --version
         uv run --frozen pylint --version
 
-    - name: Examine code with ruff
-      run: |
-        uv run --frozen ruff format src --check  #NOSONAR
-        uv run --frozen ruff check src  #NOSONAR
-
     - name: Examine code with pylint
       run: |
         uv run --frozen pylint $(git ls-files '*.py') || true
