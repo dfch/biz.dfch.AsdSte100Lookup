@@ -220,8 +220,8 @@ NOTE: There is a Linux x86_64 executable artifact in each recent "release" in th
 Before releasing, make sure the CI pipeline is green on the `dev` branch:
 
 ```
-uv run --frozen ruff format --check src/
-uv run --frozen ruff check src/
+uv run --frozen ruff format --check
+uv run --frozen ruff check
 uv run --frozen pylint $(git ls-files '*.py') || true
 uv run --frozen python -m unittest discover -v -s tests -t . -p "test_*.py"
 ```

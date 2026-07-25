@@ -35,7 +35,7 @@ wheels = [
 
 [[package]]
 name = "biz-dfch-asdste100lookup"
-version = "2.1.1"
+version = "2.1.2"
 source = { editable = "." }
 dependencies = [
     { name = "argparse" },
@@ -65,7 +65,7 @@ test = [
 requires-dist = [
     { name = "argparse", specifier = ">=1.4.0" },
     { name = "biz-dfch-asdste100lookup", extras = ["test"], marker = "extra == 'dev'" },
-    { name = "biz-dfch-ste100vocab", specifier = ">=0.7.0" },
+    { name = "biz-dfch-ste100vocab", specifier = ">=0.7.1" },
     { name = "coverage", marker = "extra == 'test'" },
     { name = "dacite", specifier = ">=1.9.2" },
     { name = "parameterized", marker = "extra == 'test'", specifier = ">=0.9.0" },
@@ -79,15 +79,15 @@ provides-extras = ["test", "dev", "build"]
 
 [[package]]
 name = "biz-dfch-ste100vocab"
-version = "0.7.0"
+version = "0.7.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "dacite" },
     { name = "dotenv" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/38/e7/bfc98a03e8499af559fc35c4a68787a5afbc8f475447288acbaa4fc7990f/biz_dfch_ste100vocab-0.7.0.tar.gz", hash = "sha256:90cd89f485255d17d09a7a05c53d54c0519de0de5fb7cd21bdd91d2695841c99", size = 496165, upload-time = "2026-07-20T13:53:09.311Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/81/c5/7c11bbda913cf1042cc81d75f86904df2a6794ab20b60bcd46511c1b7a10/biz_dfch_ste100vocab-0.7.1.tar.gz", hash = "sha256:756aef3585b571444779ce3511e043ea634c1bc494fb1d589ba76e474bbea62e", size = 497181, upload-time = "2026-07-25T17:26:06.725Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/39/e1/0aab4105c8af9640dcc53dc73f11ead63da15c574a0deb85eca13fd3f3dd/biz_dfch_ste100vocab-0.7.0-py3-none-any.whl", hash = "sha256:181c6151a7f50363f11a72d4803fe9a3687601b621f801bfc2f4f2ae7336a97a", size = 523949, upload-time = "2026-07-20T13:53:07.633Z" },
+    { url = "https://files.pythonhosted.org/packages/1b/f3/4b2c23f5da787915e0608b89cfb05fb5c470de51eaefedf2e267290d9b86/biz_dfch_ste100vocab-0.7.1-py3-none-any.whl", hash = "sha256:40485be2b29cfc6704ffe57267d06ff60ee4b55bcab5dbf74d81cfb83258f230", size = 524368, upload-time = "2026-07-25T17:26:05.028Z" },
 ]
 
 [[package]]
