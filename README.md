@@ -215,7 +215,7 @@ NOTE: There is a Linux x86_64 executable artifact in each recent "release" in th
 
 ## Make a Release
 
-### 1. Ensure all tests pass
+### 1. Make sure that all tests pass
 
 Before releasing, make sure the CI pipeline is green on the `dev` branch:
 
@@ -226,7 +226,7 @@ uv run --frozen pylint $(git ls-files '*.py') || true
 uv run --frozen python -m unittest discover -v -s tests -t . -p "test_*.py"
 ```
 
-### 2. Bump the version
+### 2. Increase the version
 
 Update the version in `pyproject.toml`:
 ```toml
