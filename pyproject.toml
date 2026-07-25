@@ -76,8 +76,7 @@ test = [
 
 dev = [
     "biz-dfch-asdste100lookup[test]",
-    "black",
-    "flake8>=7.3.0",
+    "ruff>=0.16.0",
 ]
 
 build = [
@@ -89,8 +88,8 @@ build = [
 Homepage = "https://github.com/dfch/biz.dfch.AsdSte100Lookup"
 Issues = "https://github.com/dfch/biz.dfch.AsdSte100Lookup/issues"
 
-[tool.black]
-line-length = 80
+[tool.ruff]
+line-length = 120
 
 [tool.setuptools.packages.find]
 where = ["src"]
