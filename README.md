@@ -255,8 +255,14 @@ This will create a binary artifact of the application and add it to the `release
 
 ```
 export VERSION=2.1.1
-git tag v${VERSION}$
-git push origin v${VERSION}$>
+git tag v${VERSION}
+git push origin v${VERSION}
+```
+
+Then, select the `dev` branch to continue your work.
+
+```
+git checkout dev
 ```
 
 Pushing the tag automatically triggers the `publish.yml` workflow, which will:
