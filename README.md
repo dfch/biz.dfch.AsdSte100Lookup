@@ -155,7 +155,7 @@ source venv/bin/activate
 4. Examine installed Python version
     `uv run python --version`
 
-NOTE: If you use `uv` the name for the virtual environment is `.venv`. Use a different project folder for Windows and Debian in WSL2. Otherwise you use the same environment for both operating systems.
+NOTE: If you use `uv` the standard name for the virtual environment is `.venv`. Use a different project folder or virtual environment folder for Windows and Debian in WSL2.
 
 ### Setup the project
 
