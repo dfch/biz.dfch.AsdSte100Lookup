@@ -45,10 +45,13 @@ jobs:
         uv run --frozen ruff --version
         uv run --frozen pylint --version
 
-    - name: Analyzing the code with pylint
+    - name: Examine code with ruff
       run: |
-        uv run --frozen --no-build ruff format src --check
-        uv run --frozen --no-build ruff check src
+        uv run --frozen ruff format src --check # NOSONAR
+        uv run --frozen ruff check src  # NOSONAR
+
+    - name: Examine code with pylint
+      run: |
         uv run --frozen pylint $(git ls-files '*.py') || true
 
     - name: Run unit tests
