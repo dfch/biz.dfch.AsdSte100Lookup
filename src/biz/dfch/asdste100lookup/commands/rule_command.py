@@ -15,13 +15,11 @@
 
 """RuleCommand class."""
 
-from dataclasses import dataclass
 import re
+from dataclasses import dataclass
 
 from ..rule import Rule
-from ..rule_renderer import RuleRenderer
-from ..rule_renderer import RuleRenderType
-
+from ..rule_renderer import RuleRenderer, RuleRenderType
 from .command_query_type import CommandQueryType
 from .erase_console_buffer_command import EraseConsoleBufferCommand
 
@@ -70,12 +68,9 @@ class RuleCommand(EraseConsoleBufferCommand):
                 case CommandQueryType.SUMMARY:
                     value = rule.summary
                 case CommandQueryType.TEXT:
-                    value = ' '.join([item.data for item in rule.contents])
+                    value = " ".join([item.data for item in rule.contents])
                 case _:
-                    raise ValueError(
-                        f"Invalid {CommandQueryType.__name__}: "
-                        f"'{self._type_}'."
-                    )
+                    raise ValueError(f"Invalid {CommandQueryType.__name__}: '{self._type_}'.")
             if regex.search(value):
                 selected_rules.append(rule)
 

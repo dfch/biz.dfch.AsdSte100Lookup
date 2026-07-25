@@ -18,8 +18,8 @@
 from rich import box
 from rich.console import Console
 from rich.markdown import Markdown
-from rich.panel import Panel
 from rich.padding import Padding
+from rich.panel import Panel
 
 from .markdown_utils import MarkDownUtils
 from .rule import Rule
@@ -62,13 +62,9 @@ class RuleRenderer:  # pylint: disable=R0903
             for category, rules_cat in categories.items():
                 if current_category != category:
                     current_category = category
-                    console.print(
-                        Padding(Markdown(f"*{current_category}*"), (0, 0, 0, 2))
-                    )
+                    console.print(Padding(Markdown(f"*{current_category}*"), (0, 0, 0, 2)))
                 for rule in rules_cat:
-                    console.print(
-                        Padding(Markdown(f"**{rule.id_}**: {rule.name}"), (0, 0, 0, 4))
-                    )
+                    console.print(Padding(Markdown(f"**{rule.id_}**: {rule.name}"), (0, 0, 0, 4)))
 
     def _show_rule_header(self, console: Console, rule: Rule) -> None:
         p = Panel(
@@ -104,19 +100,11 @@ class RuleRenderer:  # pylint: disable=R0903
                     )
                 )
             case RuleContentType.STE:
-                console.print(
-                    MarkDownUtils.to_panel(content.data, title="STE", style="green")
-                )
+                console.print(MarkDownUtils.to_panel(content.data, title="STE", style="green"))
             case RuleContentType.NONSTE:
-                console.print(
-                    MarkDownUtils.to_panel(content.data, title="Non-STE", style="red")
-                )
+                console.print(MarkDownUtils.to_panel(content.data, title="Non-STE", style="red"))
             case RuleContentType.NOT_RECOMMENDED:
-                console.print(
-                    MarkDownUtils.to_panel(
-                        content.data, title="Not recommended", style="red"
-                    )
-                )
+                console.print(MarkDownUtils.to_panel(content.data, title="Not recommended", style="red"))
             case RuleContentType.NOTE:
                 console.print(
                     Panel(
@@ -128,13 +116,9 @@ class RuleRenderer:  # pylint: disable=R0903
                     )
                 )
             case RuleContentType.GOOD:
-                console.print(
-                    MarkDownUtils.to_panel(content.data, title="Example", style="green")
-                )
+                console.print(MarkDownUtils.to_panel(content.data, title="Example", style="green"))
             case RuleContentType.GENERAL:
-                console.print(
-                    MarkDownUtils.to_panel(content.data, title="Example", style="blue")
-                )
+                console.print(MarkDownUtils.to_panel(content.data, title="Example", style="blue"))
             case RuleContentType.COMMENT:
                 console.print(Markdown(f"_{content.data}_"))
             case _:

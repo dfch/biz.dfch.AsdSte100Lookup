@@ -35,9 +35,5 @@ class SaveCommand(CommandBase):
             console.print(f"File cannot be saved: '{file_name}'")
             console.print(f"[red]{ex}[/red]")
 
-        text = (
-            f"[link={file_name.as_uri()}]"
-            "Console output saved: "
-            f"'{file_name}'.[/link]"
-        )
+        text = f"[link={file_name.as_uri()}]Console output saved: '{file_name}'.[/link]"
         console.print(text)

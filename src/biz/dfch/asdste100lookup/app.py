@@ -19,10 +19,10 @@ from __future__ import annotations
 
 import argparse
 import json
-from pathlib import Path
 import random
 import re
 import urllib.request
+from pathlib import Path
 from urllib.parse import ParseResult, urlparse
 
 try:
@@ -32,26 +32,26 @@ except ImportError:
     # `readline` is not available on Windows.
     pass
 
-from dacite import from_dict, Config
+from biz.dfch.asdste100vocab import (
+    Vocab,
+    Word,
+    WordCategory,
+    WordMeaning,
+    WordNote,
+    WordStatus,
+    WordType,
+)
+from dacite import Config, from_dict
 from rich.console import Console
 from rich.theme import Theme
 
 from biz.dfch.logging import log
 from biz.dfch.version import Version
 
-from biz.dfch.asdste100vocab import Vocab
-from biz.dfch.asdste100vocab import Word
-from biz.dfch.asdste100vocab import WordCategory
-from biz.dfch.asdste100vocab import WordNote
-from biz.dfch.asdste100vocab import WordMeaning
-from biz.dfch.asdste100vocab import WordStatus
-from biz.dfch.asdste100vocab import WordType
-
 from .builtin_rules import BuiltInRules
 from .commands.command_base import CommandBase
 from .commands.empty_command import EmptyCommand
 from .commands.unknown_command import UnknownCommand
-
 from .main_prompt import MainPrompt
 from .rule import Rule
 from .rule_content_type import RuleContentType
@@ -102,9 +102,7 @@ class App:  # pylint: disable=R0903
 
     def __init__(self, parser: argparse.ArgumentParser):
 
-        Version().ensure_minimum_version(
-            self._VERSION_REQUIRED_MAJOR, self._VERSION_REQUIRED_MINOR
-        )
+        Version().ensure_minimum_version(self._VERSION_REQUIRED_MAJOR, self._VERSION_REQUIRED_MINOR)
 
         assert isinstance(parser, argparse.ArgumentParser)
         self._parser = parser
@@ -124,15 +122,9 @@ class App:  # pylint: disable=R0903
         prompt = MainPrompt()
         console = Console(theme=self._rule_theme, record=True)
 
-        if not (
-            hasattr(self._args, "no_random_word") and self._args.no_random_word
-        ):
+        if not (hasattr(self._args, "no_random_word") and self._args.no_random_word):
             # Display a random word at startup.
-            words = [
-                word
-                for word in dictionary
-                if word.category == WordCategory.DEFAULT
-            ]
+            words = [word for word in dictionary if word.category == WordCategory.DEFAULT]
             if 0 < len(words):
                 # Suppress Sonar warning. This random function is not used
                 # in a security relevant context.
@@ -163,10 +155,7 @@ class App:  # pylint: disable=R0903
             rules_json = json.load(f)
 
         # Deserialize.
-        result = [
-            from_dict(data_class=Rule, data=item, config=self._rules_config)
-            for item in rules_json
-        ]
+        result = [from_dict(data_class=Rule, data=item, config=self._rules_config) for item in rules_json]
 
         return result
 
@@ -181,25 +170,21 @@ class App:  # pylint: disable=R0903
 
         selected_rules: list[Rule] = []
         for rule in rules:
-
             if self._args.list:
                 selected_rules.append(rule)
                 continue
 
-            if self._args.id:
-                if re.search(self._args.id, rule.id_, re.IGNORECASE):
-                    selected_rules.append(rule)
-                    continue
+            if self._args.id and re.search(self._args.id, rule.id_, re.IGNORECASE):
+                selected_rules.append(rule)
+                continue
 
-            if self._args.section:
-                if re.search(self._args.section, rule.section, re.IGNORECASE):
-                    selected_rules.append(rule)
-                    continue
+            if self._args.section and re.search(self._args.section, rule.section, re.IGNORECASE):
+                selected_rules.append(rule)
+                continue
 
-            if self._args.category:
-                if re.search(self._args.category, rule.category, re.IGNORECASE):
-                    selected_rules.append(rule)
-                    continue
+            if self._args.category and re.search(self._args.category, rule.category, re.IGNORECASE):
+                selected_rules.append(rule)
+                continue
 
         RuleRenderer().show(
             console=console,
@@ -246,7 +231,7 @@ class App:  # pylint: disable=R0903
                     config=self._dictionary_config,
                 )
                 word_list.append(word)
-            except Exception as ex:  # pylint: disable=W0718
+            except Exception as ex:  # pylint: disable=W0718  # noqa: BLE001
                 print(f"[ERROR] {source}[#{idx}]: '{ex}'.")
 
         result = sorted(word_list, key=lambda e: e.name.lower())
@@ -281,8 +266,7 @@ class App:  # pylint: disable=R0903
 
         dictionary = Vocab(
             use_ste100=use_ste100,
-            use_ste100_technical_word=use_technical_nouns
-            or use_technical_verbs,
+            use_ste100_technical_word=use_technical_nouns or use_technical_verbs,
             predicate=predicate,
         )
 

@@ -23,6 +23,7 @@
 """Module i18n."""
 
 from __future__ import annotations
+
 from pathlib import Path
 from threading import Lock
 from typing import ClassVar
@@ -120,9 +121,7 @@ class I18n:
 
             return I18n.Factory.__instance
 
-    def get_resource_path(
-        self, item: str, code: LanguageCode | None = None
-    ) -> str:
+    def get_resource_path(self, item: str, code: LanguageCode | None = None) -> str:
         """Returns the normalised resource path for an item.
 
         Args:

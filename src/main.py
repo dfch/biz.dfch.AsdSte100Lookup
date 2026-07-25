@@ -15,12 +15,11 @@
 
 # pylint: disable=C0415
 # pylint: disable=E0401
-# noqa: E501
 
 """Application entry point as script."""
 
-from biz.dfch.asdste100lookup.args import Args
 from biz.dfch.asdste100lookup.app import App
+from biz.dfch.asdste100lookup.args import Args
 
 
 def main():

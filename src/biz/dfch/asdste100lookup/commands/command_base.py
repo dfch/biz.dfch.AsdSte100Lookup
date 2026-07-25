@@ -18,9 +18,8 @@
 from abc import ABC, abstractmethod
 from dataclasses import dataclass
 
-from rich.console import Console
-
 from biz.dfch.asdste100vocab import Word
+from rich.console import Console
 
 from ..rule import Rule
 
@@ -35,9 +34,7 @@ class CommandBase(ABC):
         self.value = value
 
     @abstractmethod
-    def invoke(
-        self, console: Console, dictionary: list[Word], rules: list[Rule]
-    ) -> None:
+    def invoke(self, console: Console, dictionary: list[Word], rules: list[Rule]) -> None:
         """Invokes the command."""
 
         assert isinstance(console, Console)

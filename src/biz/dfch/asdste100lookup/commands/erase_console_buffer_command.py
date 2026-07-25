@@ -18,12 +18,10 @@
 from abc import abstractmethod
 from dataclasses import dataclass
 
+from biz.dfch.asdste100vocab import Word
 from rich.console import Console
 
-from biz.dfch.asdste100vocab import Word
-
 from ..rule import Rule
-
 from .command_base import CommandBase
 
 
@@ -32,9 +30,7 @@ class EraseConsoleBufferCommand(CommandBase):
     """Represents the command that erases the console export buffer."""
 
     @abstractmethod
-    def invoke(
-        self, console: Console, dictionary: list[Word], rules: list[Rule]
-    ) -> None:
+    def invoke(self, console: Console, dictionary: list[Word], rules: list[Rule]) -> None:
         """Erases the console export buffer."""
 
         super().invoke(console=console, dictionary=dictionary, rules=rules)

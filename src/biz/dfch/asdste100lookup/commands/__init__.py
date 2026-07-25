@@ -16,6 +16,7 @@
 """commands package."""
 
 from .command_base import CommandBase
+from .command_query_type import CommandQueryType
 from .dictionary_command import DictionaryCommand
 from .empty_command import EmptyCommand
 from .erase_console_buffer_command import EraseConsoleBufferCommand
@@ -29,9 +30,9 @@ from .word_category_command import WordCategoryCommand
 from .word_filter import WordFilter
 from .word_filter_type import WordFilterType
 
-
 __all__ = [
     "CommandBase",
+    "CommandQueryType",
     "DictionaryCommand",
     "EmptyCommand",
     "EraseConsoleBufferCommand",

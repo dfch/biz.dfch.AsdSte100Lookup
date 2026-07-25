@@ -19,12 +19,8 @@ from dataclasses import dataclass
 from itertools import zip_longest
 from typing import cast
 
+from biz.dfch.asdste100vocab import Word, WordCategory, WordNote, WordStatus
 from rich.table import Table
-
-from biz.dfch.asdste100vocab import Word
-from biz.dfch.asdste100vocab import WordCategory
-from biz.dfch.asdste100vocab import WordNote
-from biz.dfch.asdste100vocab import WordStatus
 
 from biz.dfch.logging import log  # pylint: disable=E0401
 
@@ -32,7 +28,6 @@ from ..colorizer import Colorizer
 from ..constant import Constant
 from ..table_row import TableRow
 from ..utils import get_value_or_default
-
 from .erase_console_buffer_command import EraseConsoleBufferCommand
 
 
@@ -100,13 +95,9 @@ class DictionaryCommand(EraseConsoleBufferCommand):
         row = TableRow()
         row.description = str(Colorizer(note.value or "", "yellow"))
         if note.ste_example:
-            row.ste_example = self.to_colour(
-                note.ste_example, word.name, WordStatus.APPROVED
-            )
+            row.ste_example = self.to_colour(note.ste_example, word.name, WordStatus.APPROVED)
         if note.nonste_example:
-            row.nonste_example = self.to_colour(
-                note.nonste_example, word.name, WordStatus.REJECTED
-            )
+            row.nonste_example = self.to_colour(note.nonste_example, word.name, WordStatus.REJECTED)
         result.append(row)
 
         return result
@@ -195,31 +186,23 @@ class DictionaryCommand(EraseConsoleBufferCommand):
                 row = TableRow()
                 result.append(row)
 
-            row.description = self.to_colour(
-                f"{alt.name.upper()} ({alt.type_})", alt.name, alt.status
-            )
+            row.description = self.to_colour(f"{alt.name.upper()} ({alt.type_})", alt.name, alt.status)
 
             # Process examples pairwise.
             ste_list = alt.ste_example
             nonste_list = alt.nonste_example
 
-            for i, (ste, nonste) in enumerate(
-                zip_longest(ste_list, nonste_list, fillvalue=" ")
-            ):
+            for i, (ste, nonste) in enumerate(zip_longest(ste_list, nonste_list, fillvalue=" ")):
                 if 0 == i:
                     row.ste_example = self.to_colour(ste, alt.name, alt.status)
-                    row.nonste_example = self.to_colour(
-                        nonste, word.name, WordStatus.REJECTED
-                    )
+                    row.nonste_example = self.to_colour(nonste, word.name, WordStatus.REJECTED)
                     continue
 
                 row = TableRow()
                 result.append(row)
 
                 row.ste_example = self.to_colour(ste, alt.name, alt.status)
-                row.nonste_example = self.to_colour(
-                    nonste, word.name, WordStatus.REJECTED
-                )
+                row.nonste_example = self.to_colour(nonste, word.name, WordStatus.REJECTED)
 
         return result
 
@@ -273,37 +256,25 @@ class DictionaryCommand(EraseConsoleBufferCommand):
                     if isinstance(word.nonste_example, list)
                     else ([word.nonste_example] if word.nonste_example else [])
                 )
-                for i, (ste, nonste) in enumerate(
-                    zip_longest(ste_list, nonste_list, fillvalue=" ")
-                ):
+                for i, (ste, nonste) in enumerate(zip_longest(ste_list, nonste_list, fillvalue=" ")):
                     if 0 == i:
                         if ste.strip():
-                            row.ste_example = self.to_colour(
-                                ste, word.name, WordStatus.APPROVED
-                            )
+                            row.ste_example = self.to_colour(ste, word.name, WordStatus.APPROVED)
                         if nonste.strip():
-                            row.nonste_example = self.to_colour(
-                                nonste, word.name, WordStatus.REJECTED
-                            )
+                            row.nonste_example = self.to_colour(nonste, word.name, WordStatus.REJECTED)
                         continue
                     row = TableRow()
                     rows.append(row)
                     if ste.strip():
-                        row.ste_example = self.to_colour(
-                            ste, word.name, WordStatus.APPROVED
-                        )
+                        row.ste_example = self.to_colour(ste, word.name, WordStatus.APPROVED)
                     if nonste.strip():
-                        row.nonste_example = self.to_colour(
-                            nonste, word.name, WordStatus.REJECTED
-                        )
+                        row.nonste_example = self.to_colour(nonste, word.name, WordStatus.REJECTED)
             else:
                 log.error("Word '%s' with status '%s' found.", word.name, word.status)
                 continue
 
             if word.spellings:
-                colorized_spellings: list[str] = [
-                    str(Colorizer(x, "blue")) for x in word.spellings
-                ]
+                colorized_spellings: list[str] = [str(Colorizer(x, "blue")) for x in word.spellings]
 
                 spellings = "\n".join(colorized_spellings)
                 row.word = f"{row.word}\n{spellings}"
@@ -324,9 +295,7 @@ class DictionaryCommand(EraseConsoleBufferCommand):
                     ):
                         if 0 == i:
                             if ste.strip():
-                                row.ste_example = self.to_colour(
-                                    ste, word.name, word.status
-                                )
+                                row.ste_example = self.to_colour(ste, word.name, word.status)
                             if nonste.strip():
                                 row.nonste_example = self.to_colour(
                                     nonste,
@@ -338,9 +307,7 @@ class DictionaryCommand(EraseConsoleBufferCommand):
                         row = TableRow()
                         rows.append(row)
                         if ste.strip():
-                            row.ste_example = self.to_colour(
-                                ste, word.name, word.status
-                            )
+                            row.ste_example = self.to_colour(ste, word.name, word.status)
                         if nonste.strip():
                             row.nonste_example = self.to_colour(
                                 nonste,
@@ -358,9 +325,7 @@ class DictionaryCommand(EraseConsoleBufferCommand):
 
         for row in rows:
             if row.description:
-                row.description = row.description.replace(
-                    Constant.BLOCKING_WHITE_SPACE, ""
-                )
+                row.description = row.description.replace(Constant.BLOCKING_WHITE_SPACE, "")
             log.debug(
                 "'%s', '%s', '%s', '%s'",
                 row.word,

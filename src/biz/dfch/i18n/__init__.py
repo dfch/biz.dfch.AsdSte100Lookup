@@ -25,7 +25,4 @@
 from .i18n import I18n
 from .language_code import LanguageCode
 
-__all__ = [
-    "I18n",
-    "LanguageCode"
-]
+__all__ = ["I18n", "LanguageCode"]

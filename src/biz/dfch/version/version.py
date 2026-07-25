@@ -47,4 +47,4 @@ class Version:  # pylint: disable=R0903
         if sys.version_info >= (major, minor):
             return
 
-        raise EnvironmentError(f"'{sys.version_info}' < '{major}.{minor}'")
+        raise OSError(f"'{sys.version_info}' < '{major}.{minor}'")

@@ -37,7 +37,7 @@ class MarkDownUtils:
         Returns:
             (str): The maximum character width of a text rendered
                 with `MarkDown()`.
-         """
+        """
 
         if not value or "" == value:
             return 0
@@ -54,11 +54,7 @@ class MarkDownUtils:
         return result
 
     @staticmethod
-    def to_panel(
-        value: str = "",
-        title: str = "",
-        style: str = "green"
-    ) -> Panel:
+    def to_panel(value: str = "", title: str = "", style: str = "green") -> Panel:
         """Converts a markdown to text to a `Panel`."""
 
         if value is None:
