@@ -31,7 +31,7 @@ jobs:
       with:
         enable-cache: true
 
-    - name: Verify tools
+    - name: Verify tools 1
       run: |
         uv --version
         uv run --frozen python --version
@@ -39,6 +39,11 @@ jobs:
     - name: Install dependencies
       run: |
         uv sync --frozen --python "${{ matrix.python-version }}" --extra dev --extra build
+
+    - name: Verify tools 2
+      run: |
+        uv run --frozen ruff --version
+        uv run --frozen pylint --version
 
     - name: Analyzing the code with pylint
       run: |
