@@ -20,12 +20,12 @@
 
 """Module update copyright."""
 
-from datetime import datetime
-from pathlib import Path
 import os
 import re
 import subprocess
 import unittest
+from datetime import datetime
+from pathlib import Path
 
 
 @unittest.skipIf(

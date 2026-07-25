@@ -16,10 +16,9 @@
 
 """TestAppModuleImport class."""
 
+import argparse
 import unittest
 from unittest.mock import patch
-
-import argparse
 
 from biz.dfch.asdste100lookup.app import App
 

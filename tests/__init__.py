@@ -16,8 +16,8 @@
 
 """tests module."""
 
-import sys
 import os
+import sys
 
 # Adjust path, to include src tree.
 sys.path.insert(0, os.path.abspath(
