@@ -25,6 +25,13 @@ import re
 import urllib.request
 from urllib.parse import ParseResult, urlparse
 
+try:
+    # Enable CLI shortcuts on `input()`.
+    import readline  # noqa: F401
+except ImportError:
+    # `readline` is not available on Windows.
+    pass
+
 from dacite import from_dict, Config
 from rich.console import Console
 from rich.theme import Theme
