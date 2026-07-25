@@ -1,4 +1,4 @@
-# Copyright (c) 2025 Ronald Rink, http://d-fens.ch
+# Copyright (c) 2025 - 2026 Ronald Rink, http://d-fens.ch
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -25,7 +25,8 @@ sys.path.insert(0, os.path.abspath(
 
 
 # Only import after adjusting the path.
-from biz.dfch.i18n import I18n  # pylint: disable=C0413  # noqa: E402
+from biz.dfch.i18n import I18n
+
 I18n.Factory.create()
 
 

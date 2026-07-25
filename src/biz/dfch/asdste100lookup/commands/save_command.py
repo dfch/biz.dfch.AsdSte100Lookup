@@ -1,4 +1,4 @@
-# Copyright (c) 2025 Ronald Rink, http://d-fens.ch
+# Copyright (c) 2025 - 2026 Ronald Rink, http://d-fens.ch
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -31,13 +31,9 @@ class SaveCommand(CommandBase):
         file_name = Path(self.value).resolve()
         try:
             console.save_svg(str(file_name), title="ASD-STE100")
-        except Exception as ex:  # pylint: disable=W0718
+        except Exception as ex:  # pylint: disable=W0718  # noqa: BLE001
             console.print(f"File cannot be saved: '{file_name}'")
             console.print(f"[red]{ex}[/red]")
 
-        text = (
-            f"[link={file_name.as_uri()}]"
-            "Console output saved: "
-            f"'{file_name}'.[/link]"
-        )
+        text = f"[link={file_name.as_uri()}]Console output saved: '{file_name}'.[/link]"
         console.print(text)

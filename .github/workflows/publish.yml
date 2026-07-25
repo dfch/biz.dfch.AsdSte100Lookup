@@ -11,10 +11,19 @@ jobs:
   build-linux:
     runs-on: ubuntu-latest
     environment: prod
+    strategy:
+      matrix:
+        python-version: ["3.13"]
     steps:
       - name: Checkout
-        # v4.2.2 SHA
-        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        # uses: actions/checkout@v5
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8
+
+      - name: Set up Python
+        # uses: actions/setup-python@v6
+        uses: actions/setup-python@e797f83bcb11b83ae66e0230d6156d7c80228e7c
+        with:
+          python-version: ${{ matrix.python-version }}
 
       - name: Install uv
         # uses: astral-sh/setup-uv@v5 v5.2.1
@@ -22,20 +31,26 @@ jobs:
         with:
           enable-cache: true
 
-      - name: Set up Python
-        run: uv python install 3.13
+      - name: Verify tools
+        run: |
+          uv --version
+          uv run --frozen python --version
+          uv run --frozen pyinstaller --version
+          sha256sum --version
+          gh --version
 
       - name: Install dependencies
-        run: uv sync --frozen --extra build --python 3.13
+        run: uv sync --frozen --no-build --extra build --python "${{ matrix.python-version }}"
 
       - name: Build Executable and Rename
         run: |
-          uv run pyinstaller --clean AsdSte100Lookup.spec
+          uv run --frozen --no-build --python "${{ matrix.python-version }}" pyinstaller --clean AsdSte100Lookup.spec
           OS=$(uname -s | tr '[:upper:]' '[:lower:]')
           ARCH=$(uname -m)
           VERSION=${{ github.ref_name }}
           
           mv dist/AsdSte100Lookup dist/AsdSte100Lookup-${VERSION}-${OS}-${ARCH}
+          sha256sum dist/AsdSte100Lookup-${VERSION}-${OS}-${ARCH} > dist/AsdSte100Lookup-${VERSION}-${OS}-${ARCH}.sha256
 
       - name: Upload binaries to Release
         run: |

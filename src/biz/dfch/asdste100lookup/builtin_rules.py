@@ -26,10 +26,4 @@ class BuiltInRules(Enum):
     """ASD STE100 builtin rules."""
 
     DATA_DIR = "data"
-    STE100_RULES = Path(
-        str(
-            resources.files(__package__).joinpath(
-                "data", "asdste100_issue9_rules.jsonl"
-            )
-        )
-    )
+    STE100_RULES = Path(str(resources.files(__package__).joinpath("data", "asdste100_issue9_rules.jsonl")))

@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "biz-dfch-asdste100lookup"
 
-version = "2.0.5"
+version = "2.1.0"
 description = "An ASD-STE100 (Simplified Technical English) dictionary lookup tool."
 readme = "README.md"
 requires-python = ">=3.11"
@@ -76,8 +76,7 @@ test = [
 
 dev = [
     "biz-dfch-asdste100lookup[test]",
-    "black",
-    "flake8>=7.3.0",
+    "ruff>=0.16.0",
 ]
 
 build = [
@@ -89,8 +88,21 @@ build = [
 Homepage = "https://github.com/dfch/biz.dfch.AsdSte100Lookup"
 Issues = "https://github.com/dfch/biz.dfch.AsdSte100Lookup/issues"
 
-[tool.black]
-line-length = 80
+[tool.ruff]
+line-length = 120
+
+[tool.pylint.format]
+max-line-length = 120
+
+[tool.pylint.imports]
+allow-any-import-level = true
+
+[tool.pylint.messages_control]
+disable = [
+    "C0411",  # wrong-import-order
+    "C0412",  # ungrouped-imports
+    "C0413",  # wrong-import-position
+]
 
 [tool.setuptools.packages.find]
 where = ["src"]

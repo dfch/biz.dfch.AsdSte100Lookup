@@ -16,27 +16,29 @@
 """MainPrompt class."""
 
 from __future__ import annotations
+
 import argparse
-from datetime import datetime
-from pathlib import Path
 import shlex
 import tempfile
+from datetime import UTC, datetime
+from pathlib import Path
+from typing import ClassVar
 
-from biz.dfch.asdste100vocab import WordCategory
-from biz.dfch.asdste100vocab import WordStatus
-from biz.dfch.asdste100vocab import WordType
+from biz.dfch.asdste100vocab import WordCategory, WordStatus, WordType
 
-from .commands.command_base import CommandBase
-from .commands.command_query_type import CommandQueryType
-from .commands.empty_command import EmptyCommand
-from .commands.exit_command import ExitCommand
-from .commands.filter_command import FilterCommand
-from .commands.help_command import HelpCommand
-from .commands.rule_command import RuleCommand
-from .commands.save_command import SaveCommand
-from .commands.unknown_command import UnknownCommand
-from .commands.word_category_command import WordCategoryCommand
-from .commands.word_filter_type import WordFilterType
+from .commands import (
+    CommandBase,
+    CommandQueryType,
+    EmptyCommand,
+    ExitCommand,
+    FilterCommand,
+    HelpCommand,
+    RuleCommand,
+    SaveCommand,
+    UnknownCommand,
+    WordCategoryCommand,
+    WordFilterType,
+)
 from .rule_render_type import RuleRenderType
 
 
@@ -45,12 +47,12 @@ class MainPrompt:  # pylint: disable=R0903
 
     _start_of_command: str = "!"
 
-    _help_command_names = ["?", "-h", "--help"]
-    _category_command_names = ["category", "c"]
-    _rule_command_names = ["rule", "r"]
-    _save_command_names = ["save", "s"]
-    _exit_command_names = ["exit", "x"]
-    _filter_command_names = ["filter", "f"]
+    _help_command_names: ClassVar[list[str]] = ["?", "-h", "--help"]
+    _category_command_names: ClassVar[list[str]] = ["category", "c"]
+    _rule_command_names: ClassVar[list[str]] = ["rule", "r"]
+    _save_command_names: ClassVar[list[str]] = ["save", "s"]
+    _exit_command_names: ClassVar[list[str]] = ["exit", "x"]
+    _filter_command_names: ClassVar[list[str]] = ["filter", "f"]
     _parser: argparse.ArgumentParser
 
     def __init__(self):
@@ -75,9 +77,7 @@ class MainPrompt:  # pylint: disable=R0903
             add_help=True,
         )
 
-        subparsers_action = result.add_subparsers(
-            dest="command", required=True, help="Available commands."
-        )
+        subparsers_action = result.add_subparsers(dest="command", required=True, help="Available commands.")
 
         self._build_parser_category(subparsers_action)
         self._build_parser_rule(subparsers_action)
@@ -86,9 +86,7 @@ class MainPrompt:  # pylint: disable=R0903
         self._build_parser_filter(subparsers_action)
         return result
 
-    def _build_parser_category(
-        self, subparsers_action
-    ) -> SuppressErrorMessageArgumentParser:
+    def _build_parser_category(self, subparsers_action) -> SuppressErrorMessageArgumentParser:
         parser = subparsers_action.add_parser(
             self._category_command_names[0],
             aliases=self._category_command_names[1:],
@@ -117,9 +115,7 @@ class MainPrompt:  # pylint: disable=R0903
 
         return result
 
-    def _build_parser_rule(
-        self, subparsers_action
-    ) -> SuppressErrorMessageArgumentParser:
+    def _build_parser_rule(self, subparsers_action) -> SuppressErrorMessageArgumentParser:
         parser = subparsers_action.add_parser(
             self._rule_command_names[0],
             aliases=self._rule_command_names[1:],
@@ -187,9 +183,7 @@ class MainPrompt:  # pylint: disable=R0903
 
         return result
 
-    def _build_parser_save(
-        self, subparsers_action
-    ) -> SuppressErrorMessageArgumentParser:
+    def _build_parser_save(self, subparsers_action) -> SuppressErrorMessageArgumentParser:
         parser = subparsers_action.add_parser(
             self._save_command_names[0],
             aliases=self._save_command_names[1:],
@@ -213,9 +207,7 @@ class MainPrompt:  # pylint: disable=R0903
 
         return result
 
-    def _build_parser_exit(
-        self, subparsers_action
-    ) -> SuppressErrorMessageArgumentParser:
+    def _build_parser_exit(self, subparsers_action) -> SuppressErrorMessageArgumentParser:
         result = subparsers_action.add_parser(
             self._exit_command_names[0],
             aliases=self._exit_command_names[1:],
@@ -224,9 +216,7 @@ class MainPrompt:  # pylint: disable=R0903
 
         return result
 
-    def _build_parser_filter(
-        self, subparsers_action
-    ) -> SuppressErrorMessageArgumentParser:
+    def _build_parser_filter(self, subparsers_action) -> SuppressErrorMessageArgumentParser:
         parser = subparsers_action.add_parser(
             self._filter_command_names[0],
             aliases=self._filter_command_names[1:],
@@ -256,8 +246,7 @@ class MainPrompt:  # pylint: disable=R0903
             metavar="TYPE",
             type=lambda s: s.lower(),
             choices=[item.value.lower() for item in WordType],
-            help="Sets the filter for word type. "
-            f"{[item.value.lower() for item in WordType]}.",
+            help=f"Sets the filter for word type. {[item.value.lower() for item in WordType]}.",
         )
 
         result.add_argument(
@@ -266,8 +255,7 @@ class MainPrompt:  # pylint: disable=R0903
             metavar="STATUS",
             type=lambda s: s.lower(),
             choices=[item.value.lower() for item in WordStatus],
-            help="Sets the filter for word status: "
-            f"{[item.value.lower() for item in WordStatus]}.",
+            help=f"Sets the filter for word status: {[item.value.lower() for item in WordStatus]}.",
         )
 
         result.add_argument(
@@ -283,8 +271,7 @@ class MainPrompt:  # pylint: disable=R0903
             metavar="CAT",
             type=lambda s: s.lower(),
             choices=[item.value.lower() for item in WordCategory],
-            help="Sets the filter for word category: "
-            f"{[item.value.lower() for item in WordCategory]}.",
+            help=f"Sets the filter for word category: {[item.value.lower() for item in WordCategory]}.",
         )
 
         result.add_argument(
@@ -372,9 +359,7 @@ class MainPrompt:  # pylint: disable=R0903
         if ns.id is not None:
             return RuleCommand(CommandQueryType.ID, ns.id, display_type=display_type)
         if ns.name is not None:
-            return RuleCommand(
-                CommandQueryType.NAME, ns.name, display_type=display_type
-            )
+            return RuleCommand(CommandQueryType.NAME, ns.name, display_type=display_type)
         if ns.section is not None:
             return RuleCommand(
                 CommandQueryType.SECTION,
@@ -414,7 +399,7 @@ class MainPrompt:  # pylint: disable=R0903
         if ns.auto is not None and ns.auto:
             prefix = "asdste100"
             extension = ".svg"
-            now = datetime.now()
+            now = datetime.now(tz=UTC)
             iso8601 = now.strftime("%Y-%m-%d-%H-%M-%S")
             file_name = f"{prefix}-{iso8601}{extension}"
             file_fullname = Path(tempfile.gettempdir()) / file_name

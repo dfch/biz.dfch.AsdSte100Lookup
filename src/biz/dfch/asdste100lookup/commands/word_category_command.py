@@ -15,13 +15,12 @@
 
 """WordCategoryCommand class."""
 
-from dataclasses import dataclass
 import re
+from dataclasses import dataclass
+
+from biz.dfch.asdste100vocab import Word, WordCategory
 
 from biz.dfch.logging import log  # pylint: disable=E0401
-
-from biz.dfch.asdste100vocab import Word
-from biz.dfch.asdste100vocab import WordCategory
 
 from .command_query_type import CommandQueryType
 from .dictionary_command import DictionaryCommand
@@ -70,9 +69,7 @@ class WordCategoryCommand(DictionaryCommand):
         matching: dict[int, Word] = {}
         try:
             for word in dictionary:
-                if keys is not None and word.category in keys:
-                    matching[id(word)] = word
-                elif regex is not None and regex.search(word.category):
+                if keys is not None and word.category in keys or regex is not None and regex.search(word.category):
                     matching[id(word)] = word
         except re.error as ex:
             log.error("Invalid regex: '%s'", ex)
@@ -87,9 +84,7 @@ class WordCategoryCommand(DictionaryCommand):
             return
 
         categories = {word.category for word in words}
-        cat_descriptions = sorted(
-            f"{c}: {WordCategory(c).get_description()}" for c in categories
-        )
+        cat_descriptions = sorted(f"{c}: {WordCategory(c).get_description()}" for c in categories)
         info = "\n".join(cat_descriptions)
 
         console.print(info)

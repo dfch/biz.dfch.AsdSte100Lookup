@@ -18,7 +18,6 @@
 from dataclasses import dataclass
 from typing import ClassVar
 
-
 from .command_base import CommandBase
 from .word_filter_type import WordFilterType
 
@@ -48,10 +47,7 @@ class FilterCommand(CommandBase):
 
             case WordFilterType.LIST:
                 for key, filter_value in self._filter.items():
-                    if isinstance(filter_value, bool) or (
-                        isinstance(filter_value, str)
-                        and "" != filter_value.strip()
-                    ):
+                    if isinstance(filter_value, bool) or (isinstance(filter_value, str) and "" != filter_value.strip()):
                         print(key, filter_value)
 
             case (
@@ -66,9 +62,7 @@ class FilterCommand(CommandBase):
                 self._filter[type_] = self.value
 
             case _:
-                raise ValueError(
-                    f"Invalid {WordFilterType.__name__}: '{type_}'."
-                )
+                raise ValueError(f"Invalid {WordFilterType.__name__}: '{type_}'.")
 
     # pylint: disable=W0246
     def invoke(self, console, dictionary, rules) -> None:

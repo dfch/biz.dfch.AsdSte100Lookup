@@ -46,9 +46,7 @@ def get_project_root(marker: str = "pyproject.toml") -> Path:
     for parent in [current, *current.parents]:
         if (parent / marker).exists():
             return parent
-    raise FileNotFoundError(
-        f"Could not find project root (looking for '{marker}')"
-    )
+    raise FileNotFoundError(f"Could not find project root (looking for '{marker}')")
 
 
 def get_project_src() -> Path:
@@ -70,10 +68,6 @@ try:
     log = logging.getLogger(_LOGGER_NAME)  # type: ignore
 
 except Exception as ex:
-
-    print(
-        f"{_LOGGER_NAME}: An error occurred while trying to load "
-        f"'{_LOGGER_FILE}': '{ex}'"
-    )
+    print(f"{_LOGGER_NAME}: An error occurred while trying to load '{_LOGGER_FILE}': '{ex}'")
 
     raise

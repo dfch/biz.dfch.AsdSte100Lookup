@@ -18,7 +18,6 @@
 from biz.dfch.i18n import LanguageCode
 
 from .app import App
-
 from .colorizer import Colorizer
 
 __all__ = [

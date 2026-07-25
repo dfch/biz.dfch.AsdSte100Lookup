@@ -1,4 +1,4 @@
-# Copyright (c) 2025 Ronald Rink, http://d-fens.ch
+# Copyright (c) 2025 - 2026 Ronald Rink, http://d-fens.ch
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -45,13 +45,9 @@ class RuleGrouper:  # pylint: disable=R0903
             ...
             }
         """
-        grouped: dict[str, dict[str, list[Rule]]] = defaultdict(
-            lambda: defaultdict(list)
-        )
+        grouped: dict[str, dict[str, list[Rule]]] = defaultdict(lambda: defaultdict(list))
 
         for rule in self.rules:
             grouped[rule.section][rule.category].append(rule)
 
-        return {
-            section: dict(categories) for section, categories in grouped.items()
-        }
+        return {section: dict(categories) for section, categories in grouped.items()}

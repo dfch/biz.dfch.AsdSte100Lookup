@@ -17,13 +17,9 @@
 
 import re
 
-from biz.dfch.asdste100vocab import Word
-from biz.dfch.asdste100vocab import WordCategory
-from biz.dfch.asdste100vocab import WordStatus
-from biz.dfch.asdste100vocab import WordType
+from biz.dfch.asdste100vocab import Word, WordCategory, WordStatus, WordType
 
 from ..utils.enum_utils import enum_key_from_value
-
 from .word_filter_type import WordFilterType
 
 
@@ -66,29 +62,19 @@ class WordFilter:  # pylint: disable=R0903
     def _resolve_filters(self) -> dict:
         type_: WordType | None = None
         if "" != self._filters[WordFilterType.TYPE]:
-            type_ = WordType[
-                enum_key_from_value(WordType, self._filters[WordFilterType.TYPE])
-            ]
+            type_ = WordType[enum_key_from_value(WordType, self._filters[WordFilterType.TYPE])]
 
         status: WordStatus | None = None
         if "" != self._filters[WordFilterType.STATUS]:
-            status = WordStatus[
-                enum_key_from_value(WordStatus, self._filters[WordFilterType.STATUS])
-            ]
+            status = WordStatus[enum_key_from_value(WordStatus, self._filters[WordFilterType.STATUS])]
 
         category: WordCategory | None = None
         if "" != self._filters[WordFilterType.CATEGORY]:
-            category = WordCategory[
-                enum_key_from_value(
-                    WordCategory, self._filters[WordFilterType.CATEGORY]
-                )
-            ]
+            category = WordCategory[enum_key_from_value(WordCategory, self._filters[WordFilterType.CATEGORY])]
 
         regex_source = None
         if "" != self._filters[WordFilterType.SOURCE]:
-            regex_source = re.compile(
-                self._filters[WordFilterType.SOURCE], re.IGNORECASE
-            )
+            regex_source = re.compile(self._filters[WordFilterType.SOURCE], re.IGNORECASE)
 
         regex_note = None
         if "" != self._filters[WordFilterType.NOTE]:
@@ -119,8 +105,6 @@ class WordFilter:  # pylint: disable=R0903
             return False
         if regex_source is not None and not regex_source.search(word.source):
             return False
-        if regex_note is not None and (
-            not word.note or not regex_note.search(word.note.value)
-        ):
+        if regex_note is not None and (not word.note or not regex_note.search(word.note.value)):  # noqa: SIM103
             return False
         return True

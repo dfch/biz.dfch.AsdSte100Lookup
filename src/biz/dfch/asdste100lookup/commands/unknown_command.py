@@ -19,9 +19,9 @@ import re
 from dataclasses import dataclass
 from typing import cast
 
-from biz.dfch.logging import log  # pylint: disable=E0401
-
 from biz.dfch.asdste100vocab import Word
+
+from biz.dfch.logging import log  # pylint: disable=E0401
 
 from .dictionary_command import DictionaryCommand
 from .filter_command import FilterCommand
@@ -69,9 +69,7 @@ class UnknownCommand(DictionaryCommand):
         except re.error as ex:
             log.error("Invalid regex: '%s'", ex)
 
-        result = self.show(
-            items=list(matching_words.values()), prompt=self.value
-        )
+        result = self.show(items=list(matching_words.values()), prompt=self.value)
 
         if 0 == len(result.rows):
             console.print("No match.")

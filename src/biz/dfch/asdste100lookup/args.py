@@ -16,9 +16,10 @@
 """Arg parsing module."""
 
 from __future__ import annotations
-import tomllib
 
 import argparse
+import tomllib
+from typing import ClassVar
 
 from biz.dfch.logging import get_project_root
 
@@ -30,7 +31,7 @@ class Args:
 
     _parser: argparse.ArgumentParser
 
-    LOG_LEVEL_CHOICES = [
+    LOG_LEVEL_CHOICES: ClassVar[list[str]] = [
         "CRITICAL",
         "FATAL",
         "ERROR",
@@ -48,7 +49,7 @@ class Args:
             with open(toml, "rb") as f:
                 data = tomllib.load(f)
                 return data.get("project", {}).get("version", "0.0.0")
-        except Exception:  # pylint: disable=W0718
+        except Exception:  # pylint: disable=W0718  # noqa: BLE001
             return "0.0.0"
 
     def __init__(self):
@@ -70,10 +71,7 @@ class Args:
 
         prog_name = "AsdSte100Lookup"
         self._parser = argparse.ArgumentParser(
-            description=f"{prog_name}, "
-            f"v{self._get_version()}"
-            ". "
-            "A dictionary lookup tool for ASD-STE100.",
+            description=f"{prog_name}, v{self._get_version()}. A dictionary lookup tool for ASD-STE100.",
             formatter_class=argparse.RawDescriptionHelpFormatter,
             prog=prog_name,
             epilog="Copyright 2025 - 2026 Ronald Rink, "
@@ -91,13 +89,9 @@ class Args:
             ".",
         )
 
-        subparsers = self._parser.add_subparsers(
-            dest="command", help="Available commands."
-        )
+        subparsers = self._parser.add_subparsers(dest="command", help="Available commands.")
 
-        dictionary_parser = subparsers.add_parser(
-            "dictionary", parents=[common], help="Queries the dictionary."
-        )
+        dictionary_parser = subparsers.add_parser("dictionary", parents=[common], help="Queries the dictionary.")
 
         dictionary_parser.add_argument(
             "-i",
@@ -139,16 +133,10 @@ class Args:
             help="Prevent display of random word at startup.",
         )
 
-        rules_parser = subparsers.add_parser(
-            "rules", parents=[common], help="Shows the rules."
-        )
+        rules_parser = subparsers.add_parser("rules", parents=[common], help="Shows the rules.")
         rules_group = rules_parser.add_mutually_exclusive_group()
-        rules_group.add_argument(
-            "--list", action="store_true", help="Shows all rules."
-        )
-        rules_group.add_argument(
-            "--id", type=str, help="Shows rules by specified id (regex match)."
-        )
+        rules_group.add_argument("--list", action="store_true", help="Shows all rules.")
+        rules_group.add_argument("--id", type=str, help="Shows rules by specified id (regex match).")
         rules_group.add_argument(
             "--section",
             type=str,
