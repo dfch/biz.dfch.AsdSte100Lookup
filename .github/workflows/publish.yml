@@ -30,7 +30,7 @@ jobs:
 
       - name: Build Executable and Rename
         run: |
-          uv run pyinstaller --clean AsdSte100Lookup.spec
+          uv run --frozen --no-build pyinstaller --clean AsdSte100Lookup.spec
           OS=$(uname -s | tr '[:upper:]' '[:lower:]')
           ARCH=$(uname -m)
           VERSION=${{ github.ref_name }}
