@@ -254,8 +254,9 @@ git push origin main
 This will create a binary artifact of the application and add it to the `release`.
 
 ```
-git tag v<version>
-git push origin v<version>
+export VERSION=2.1.1
+git tag v${VERSION}$
+git push origin v${VERSION}$>
 ```
 
 Pushing the tag automatically triggers the `publish.yml` workflow, which will:
