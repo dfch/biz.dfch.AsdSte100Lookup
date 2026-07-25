@@ -39,7 +39,7 @@ jobs:
           gh --version
 
       - name: Install dependencies
-        run: uv sync --frozen --no-build --extra build --python "${{ matrix.python-version }}"
+        run: uv sync --frozen --extra build --python "${{ matrix.python-version }}" # NOSONAR
 
       - name: Verify build tools 2
         run: |
@@ -47,7 +47,7 @@ jobs:
 
       - name: Build Executable and Rename
         run: |
-          uv run --frozen --no-build --python "${{ matrix.python-version }}" pyinstaller --clean AsdSte100Lookup.spec
+          uv run --frozen --python "${{ matrix.python-version }}" pyinstaller --clean AsdSte100Lookup.spec # NOSONAR
           OS=$(uname -s | tr '[:upper:]' '[:lower:]')
           ARCH=$(uname -m)
           VERSION=${{ github.ref_name }}
