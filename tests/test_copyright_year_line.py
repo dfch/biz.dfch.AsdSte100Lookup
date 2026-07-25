@@ -21,41 +21,27 @@ class TestTestCopyrightLine(unittest.TestCase):
     def test_single_year_with_names(self):
         """Single year, with name and company."""
         result = self._update("# Copyright 2024 abc, xyz, http://d-fens.ch")
-        self.assertEqual(
-            result, "# Copyright 2024 - 2026 abc, xyz, http://d-fens.ch"
-        )
+        self.assertEqual(result, "# Copyright 2024 - 2026 abc, xyz, http://d-fens.ch")
 
     def test_two_years_with_names(self):
         """Two years, with name and company."""
-        result = self._update(
-            "# Copyright 2024, 2025 abc, xyz, http://d-fens.ch"
-        )
-        self.assertEqual(
-            result, "# Copyright 2024 - 2026 abc, xyz, http://d-fens.ch"
-        )
+        result = self._update("# Copyright 2024, 2025 abc, xyz, http://d-fens.ch")
+        self.assertEqual(result, "# Copyright 2024 - 2026 abc, xyz, http://d-fens.ch")
 
     def test_three_years_with_names(self):
         """Three years, with name and company."""
-        result = self._update(
-            "# Copyright 2024, 2025, 2026 abc, xyz, http://d-fens.ch"
-        )
+        result = self._update("# Copyright 2024, 2025, 2026 abc, xyz, http://d-fens.ch")
         self.assertIsNone(result)
 
     def test_range_with_names(self):
         """Year range, with name and company."""
-        result = self._update(
-            "# Copyright 2024 - 2025 abc, xyz, http://d-fens.ch"
-        )
-        self.assertEqual(
-            result, "# Copyright 2024 - 2026 abc, xyz, http://d-fens.ch"
-        )
+        result = self._update("# Copyright 2024 - 2025 abc, xyz, http://d-fens.ch")
+        self.assertEqual(result, "# Copyright 2024 - 2026 abc, xyz, http://d-fens.ch")
 
     def test_single_year_no_extra_names(self):
         """Single year, with name."""
         result = self._update("# Copyright 2024 abc, http://d-fens.ch")
-        self.assertEqual(
-            result, "# Copyright 2024 - 2026 abc, http://d-fens.ch"
-        )
+        self.assertEqual(result, "# Copyright 2024 - 2026 abc, http://d-fens.ch")
 
     def test_already_current_year(self):
         """Year range, with name. And current year"""
