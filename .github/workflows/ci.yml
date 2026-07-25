@@ -47,8 +47,8 @@ jobs:
 
     - name: Examine code with ruff
       run: |
-        uv run --frozen ruff format src --check # NOSONAR
-        uv run --frozen ruff check src  # NOSONAR
+        uv run --frozen ruff format src --check  #NOSONAR
+        uv run --frozen ruff check src  #NOSONAR
 
     - name: Examine code with pylint
       run: |
