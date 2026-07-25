@@ -24,7 +24,7 @@ import os
 import re
 import subprocess
 import unittest
-from datetime import datetime
+from datetime import UTC, datetime
 from pathlib import Path
 
 
@@ -40,7 +40,7 @@ class TestCopyright(unittest.TestCase):
     def __init__(self, methodName: str = "runTest") -> None:
         super().__init__(methodName)
 
-        self.current_year = str(datetime.now().year)
+        self.current_year = str(datetime.now(tz=UTC).year)
 
     # Matches:
     # "# Copyright 2024 abc, xyz, http://d-fens.ch"
@@ -121,13 +121,7 @@ class TestCopyright(unittest.TestCase):
             text=True,
             check=True,
         )
-        file_names = sorted(
-            {
-                e.strip()
-                for e in git_result.stdout.splitlines()
-                if e.strip().lower().endswith(".py")
-            }
-        )
+        file_names = sorted({e.strip() for e in git_result.stdout.splitlines() if e.strip().lower().endswith(".py")})
         for file_name in file_names:
             full_name = path / file_name
             if not Path.exists(full_name):
