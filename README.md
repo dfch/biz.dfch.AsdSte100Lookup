@@ -254,7 +254,7 @@ git push origin main
 This will create a binary artifact of the application and add it to the `release`.
 
 ```
-export VERSION=2.1.1
+export VERSION=2.1.2
 git tag v${VERSION}
 git push origin v${VERSION}
 ```
