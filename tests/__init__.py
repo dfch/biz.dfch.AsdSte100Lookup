@@ -25,7 +25,8 @@ sys.path.insert(0, os.path.abspath(
 
 
 # Only import after adjusting the path.
-from biz.dfch.i18n import I18n  # pylint: disable=C0413  # noqa: E402
+from biz.dfch.i18n import I18n
+
 I18n.Factory.create()
 
 

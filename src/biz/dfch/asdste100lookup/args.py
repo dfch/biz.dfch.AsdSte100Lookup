@@ -19,6 +19,7 @@ from __future__ import annotations
 
 import argparse
 import tomllib
+from typing import ClassVar
 
 from biz.dfch.logging import get_project_root
 
@@ -30,7 +31,7 @@ class Args:
 
     _parser: argparse.ArgumentParser
 
-    LOG_LEVEL_CHOICES = [
+    LOG_LEVEL_CHOICES: ClassVar[list[str]] = [
         "CRITICAL",
         "FATAL",
         "ERROR",
@@ -48,7 +49,7 @@ class Args:
             with open(toml, "rb") as f:
                 data = tomllib.load(f)
                 return data.get("project", {}).get("version", "0.0.0")
-        except Exception:  # pylint: disable=W0718
+        except Exception:  # pylint: disable=W0718  # noqa: BLE001
             return "0.0.0"
 
     def __init__(self):

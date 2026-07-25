@@ -20,8 +20,9 @@ from __future__ import annotations
 import argparse
 import shlex
 import tempfile
-from datetime import datetime
+from datetime import UTC, datetime
 from pathlib import Path
+from typing import ClassVar
 
 from biz.dfch.asdste100vocab import WordCategory, WordStatus, WordType
 
@@ -46,12 +47,12 @@ class MainPrompt:  # pylint: disable=R0903
 
     _start_of_command: str = "!"
 
-    _help_command_names = ["?", "-h", "--help"]
-    _category_command_names = ["category", "c"]
-    _rule_command_names = ["rule", "r"]
-    _save_command_names = ["save", "s"]
-    _exit_command_names = ["exit", "x"]
-    _filter_command_names = ["filter", "f"]
+    _help_command_names: ClassVar[list[str]] = ["?", "-h", "--help"]
+    _category_command_names: ClassVar[list[str]] = ["category", "c"]
+    _rule_command_names: ClassVar[list[str]] = ["rule", "r"]
+    _save_command_names: ClassVar[list[str]] = ["save", "s"]
+    _exit_command_names: ClassVar[list[str]] = ["exit", "x"]
+    _filter_command_names: ClassVar[list[str]] = ["filter", "f"]
     _parser: argparse.ArgumentParser
 
     def __init__(self):
@@ -398,7 +399,7 @@ class MainPrompt:  # pylint: disable=R0903
         if ns.auto is not None and ns.auto:
             prefix = "asdste100"
             extension = ".svg"
-            now = datetime.now()
+            now = datetime.now(tz=UTC)
             iso8601 = now.strftime("%Y-%m-%d-%H-%M-%S")
             file_name = f"{prefix}-{iso8601}{extension}"
             file_fullname = Path(tempfile.gettempdir()) / file_name

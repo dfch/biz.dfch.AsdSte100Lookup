@@ -27,7 +27,7 @@ from urllib.parse import ParseResult, urlparse
 
 try:
     # Enable CLI shortcuts on `input()`.
-    import readline  # noqa: F401
+    import readline  # noqa: F401  # pylint:disable=W0611
 except ImportError:
     # `readline` is not available on Windows.
     pass

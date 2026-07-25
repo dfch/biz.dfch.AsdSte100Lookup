@@ -31,7 +31,7 @@ class SaveCommand(CommandBase):
         file_name = Path(self.value).resolve()
         try:
             console.save_svg(str(file_name), title="ASD-STE100")
-        except Exception as ex:  # pylint: disable=W0718
+        except Exception as ex:  # pylint: disable=W0718  # noqa: BLE001
             console.print(f"File cannot be saved: '{file_name}'")
             console.print(f"[red]{ex}[/red]")
 

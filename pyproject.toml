@@ -91,6 +91,19 @@ Issues = "https://github.com/dfch/biz.dfch.AsdSte100Lookup/issues"
 [tool.ruff]
 line-length = 120
 
+[tool.pylint.format]
+max-line-length = 120
+
+[tool.pylint.imports]
+allow-any-import-level = true
+
+[tool.pylint.messages_control]
+disable = [
+    "C0411",  # wrong-import-order
+    "C0412",  # ungrouped-imports
+    "C0413",  # wrong-import-position
+]
+
 [tool.setuptools.packages.find]
 where = ["src"]
 namespaces = true
