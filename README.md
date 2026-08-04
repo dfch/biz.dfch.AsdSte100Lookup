@@ -39,6 +39,18 @@ _A dictionary lookup for [ASD-STE100 Issue 9](https://www.asd-ste100.org/index.h
   - Copyright by (c) [ASD](https://www.asd-europe.org/).
 * I am in no way affiliated with ASD. ASD does not endorse my work.
 
+## Table of Contents
+
+- [Usage](#usage)
+- [Setting up VSCode](#setting-up-vscode)
+- [pip: Cloning the repository and setting up Python](#pip-cloning-the-repository-and-setting-up-python)
+- [uv: Cloning the repository and setting up Python](#uv-cloning-the-repository-and-setting-up-python)
+- [Build as one-file executable](#build-as-one-file-executable)
+- [Run](#run)
+- [Related Projects](#related-projects)
+- [Make a Release](#make-a-release)
+- [Images](#images)
+
 ## Usage
 
 ### Getting help
@@ -212,6 +224,16 @@ There are two ways to use the program.
 4. You can use regular expressions in the prompt.
 
 NOTE: There is a Linux x86_64 executable artifact in each recent "release" in the Github repository.
+
+## Related Projects
+
+This program is part of the ASD-STE100 tooling family:
+
+* [biz.dfch.AsdSte100Vocab](https://github.com/dfch/biz.dfch.AsdSte100Vocab) — the ASD-STE100 Issue 9 vocabulary library
+* [biz.dfch.AsdSte100Rules](https://github.com/dfch/biz.dfch.AsdSte100Rules) — the ASD-STE100 Issue 9 ruleset library
+* [biz.dfch.AsdSte100Nlp](https://github.com/dfch/biz.dfch.AsdSte100Nlp) — WordNet-based synonym lookup for ASD-STE100 words
+* [biz.dfch.AsdSte100Lookup](https://github.com/dfch/biz.dfch.AsdSte100Lookup) — this repo: an interactive CLI to look up words and rules
+* [biz.dfch.AsdSte100Mcp](https://github.com/dfch/biz.dfch.AsdSte100Mcp) — an MCP server exposing vocabulary and rules lookup tools
 
 ## Make a Release
 

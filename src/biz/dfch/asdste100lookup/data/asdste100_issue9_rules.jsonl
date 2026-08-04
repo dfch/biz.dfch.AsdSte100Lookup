@@ -6144,25 +6144,4 @@
             }
         ]
     }
-    ,
-    {
-        "type_": "information",
-        "id_": "Rnnn.0",
-        "ref": "Issue 9 page 1-nnn-1",
-        "section": "nnn",
-        "category": "nnn",
-        "name": "nnn",
-        "summary": "nnn",
-        "contents": [
-            {
-                "type_": "text",
-                "data": "nnn"
-            }
-            ,
-            {
-                "type_": "text",
-                "data": "nnn"
-            }
-        ]
-    }
 ]
